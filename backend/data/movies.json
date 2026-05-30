@@ -76205,7 +76205,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Pooja Bhatt",
-    "music_director": "Nadeem-Shravan"
+    "music_director": "Nadeem-Shravan",
+    "genres": [
+      "romance"
+    ]
   },
   {
     "id": "aamir_akele_hum",
@@ -76249,7 +76252,10 @@
     "has_parent_child_drama": true,
     "has_one_sided_love": false,
     "lead_actress": "Manisha Koirala",
-    "music_director": "Anu Malik"
+    "music_director": "Anu Malik",
+    "genres": [
+      "drama"
+    ]
   },
   {
     "id": "aamir_raja_hindustani",
@@ -76293,7 +76299,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Karisma Kapoor",
-    "music_director": "Nadeem-Shravan"
+    "music_director": "Nadeem-Shravan",
+    "genres": [
+      "romance"
+    ]
   },
   {
     "id": "aamir_ghulam",
@@ -76337,7 +76346,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Rani Mukerji",
-    "music_director": "Jatin-Lalit"
+    "music_director": "Jatin-Lalit",
+    "genres": [
+      "action"
+    ]
   },
   {
     "id": "aamir_mangal_pandey",
@@ -76381,7 +76393,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Rani Mukerji",
-    "music_director": "A. R. Rahman"
+    "music_director": "A. R. Rahman",
+    "genres": [
+      "historical"
+    ]
   },
   {
     "id": "salman_saajan",
@@ -76425,7 +76440,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Madhuri Dixit",
-    "music_director": "Nadeem-Shravan"
+    "music_director": "Nadeem-Shravan",
+    "genres": [
+      "romance"
+    ]
   },
   {
     "id": "salman_judwaa",
@@ -76469,7 +76487,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Karisma Kapoor",
-    "music_director": "Anu Malik"
+    "music_director": "Anu Malik",
+    "genres": [
+      "comedy"
+    ]
   },
   {
     "id": "salman_pyaar_kiya",
@@ -76513,7 +76534,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Kajol",
-    "music_director": "Anand-Milind"
+    "music_director": "Anand-Milind",
+    "genres": [
+      "romance"
+    ]
   },
   {
     "id": "ab_zanjeer",
@@ -76557,7 +76581,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Jaya Bachchan",
-    "music_director": "Kalyanji-Anandji"
+    "music_director": "Kalyanji-Anandji",
+    "genres": [
+      "action"
+    ]
   },
   {
     "id": "ab_namak_haraam",
@@ -76601,7 +76628,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Simi Garewal",
-    "music_director": "R. D. Burman"
+    "music_director": "R. D. Burman",
+    "genres": [
+      "drama"
+    ]
   },
   {
     "id": "ab_muqaddar_ka_sikandar",
@@ -76645,7 +76675,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": true,
     "lead_actress": "Raakhee",
-    "music_director": "Kalyanji-Anandji"
+    "music_director": "Kalyanji-Anandji",
+    "genres": [
+      "drama"
+    ]
   },
   {
     "id": "ab_kaala_patthar",
@@ -76689,7 +76722,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Rakhee",
-    "music_director": "Rajesh Roshan"
+    "music_director": "Rajesh Roshan",
+    "genres": [
+      "drama"
+    ]
   },
   {
     "id": "ab_lawaaris",
@@ -76733,7 +76769,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Zeenat Aman",
-    "music_director": "Kalyanji-Anandji"
+    "music_director": "Kalyanji-Anandji",
+    "genres": [
+      "drama"
+    ]
   },
   {
     "id": "ab_naseeb",
@@ -76777,7 +76816,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Hema Malini",
-    "music_director": "Laxmikant-Pyarelal"
+    "music_director": "Laxmikant-Pyarelal",
+    "genres": [
+      "action"
+    ]
   },
   {
     "id": "ab_kaalia",
@@ -76821,7 +76863,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Parveen Babi",
-    "music_director": "Kalyanji-Anandji"
+    "music_director": "Kalyanji-Anandji",
+    "genres": [
+      "action"
+    ]
   },
   {
     "id": "ab_khuda_gawah",
@@ -76865,7 +76910,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Sridevi",
-    "music_director": "Laxmikant-Pyarelal"
+    "music_director": "Laxmikant-Pyarelal",
+    "genres": [
+      "action"
+    ]
   },
   {
     "id": "ab_paa",
@@ -76909,7 +76957,10 @@
     "has_parent_child_drama": true,
     "has_one_sided_love": false,
     "lead_actress": "Vidya Balan",
-    "music_director": "Ilaiyaraaja"
+    "music_director": "Ilaiyaraaja",
+    "genres": [
+      "drama"
+    ]
   },
   {
     "id": "srk_raju_ban_gaya",
@@ -76953,7 +77004,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Juhi Chawla",
-    "music_director": "Jatin-Lalit"
+    "music_director": "Jatin-Lalit",
+    "genres": [
+      "comedy"
+    ]
   },
   {
     "id": "srk_koyla",
@@ -76997,7 +77051,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Madhuri Dixit",
-    "music_director": "Rajesh Roshan"
+    "music_director": "Rajesh Roshan",
+    "genres": [
+      "action"
+    ]
   },
   {
     "id": "kamal_ek_duuje",
@@ -77041,7 +77098,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Rati Agnihotri",
-    "music_director": "Laxmikant-Pyarelal"
+    "music_director": "Laxmikant-Pyarelal",
+    "genres": [
+      "romance"
+    ]
   },
   {
     "id": "kamal_sadma",
@@ -77085,7 +77145,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Sridevi",
-    "music_director": "Ilaiyaraaja"
+    "music_director": "Ilaiyaraaja",
+    "genres": [
+      "drama"
+    ]
   },
   {
     "id": "kamal_gunaa",
@@ -77129,7 +77192,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Roshini",
-    "music_director": "Ilaiyaraaja"
+    "music_director": "Ilaiyaraaja",
+    "genres": [
+      "action"
+    ]
   },
   {
     "id": "kamal_vettaiyaadu",
@@ -77173,7 +77239,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Jyothika",
-    "music_director": "Harris Jayaraj"
+    "music_director": "Harris Jayaraj",
+    "genres": [
+      "thriller"
+    ]
   },
   {
     "id": "kamal_papanasam",
@@ -77217,7 +77286,10 @@
     "has_parent_child_drama": true,
     "has_one_sided_love": false,
     "lead_actress": "Gautami",
-    "music_director": "Ghibran"
+    "music_director": "Ghibran",
+    "genres": [
+      "thriller"
+    ]
   },
   {
     "id": "rajini_murattu_kaalai",
@@ -77261,7 +77333,10 @@
     "has_parent_child_drama": false,
     "has_one_sided_love": false,
     "lead_actress": "Madhavi",
-    "music_director": "Ilaiyaraaja"
+    "music_director": "Ilaiyaraaja",
+    "genres": [
+      "action"
+    ]
   },
   {
     "id": "hi_phool_aur_kaante_1991",
@@ -98328,7 +98403,7 @@
     "lead_actor": "Balakrishna",
     "lead_actress": "N/A",
     "music_director": "S. Thaman",
-    "imdb_rating": 0.0,
+    "imdb_rating": 1.0,
     "lead_gender": "male",
     "genres": [
       "action",
@@ -98985,7 +99060,7 @@
     "lead_actor": "Nani",
     "lead_actress": "N/A",
     "music_director": "N/A",
-    "imdb_rating": 0.0,
+    "imdb_rating": 1.0,
     "lead_gender": "male",
     "genres": [
       "drama"
@@ -104602,7 +104677,7 @@
     "lead_actor": "Vijay Deverakonda",
     "lead_actress": "N/A",
     "music_director": "N/A",
-    "imdb_rating": 0.0,
+    "imdb_rating": 1.0,
     "lead_gender": "male",
     "genres": [
       "action",
@@ -111930,7 +112005,7 @@
     "lead_actor": "Sivakarthikeyan",
     "lead_actress": "N/A",
     "music_director": "N/A",
-    "imdb_rating": 0.0,
+    "imdb_rating": 1.0,
     "lead_gender": "male",
     "genres": [
       "action",
