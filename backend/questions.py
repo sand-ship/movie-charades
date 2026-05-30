@@ -152,6 +152,32 @@ QUESTIONS.extend([
              _attr_true("has_village_setting"), weight=0.3),
     Question("q_mass_entertainer","Is it a commercial mass masala entertainer?",
              _attr_true("is_mass_entertainer"), weight=0.3),
+
+    # Otherworldly / mythology / superpowers
+    Question("q_supernatural",  "Does it involve gods, supernatural beings, or the afterlife?",
+             _attr_true("has_supernatural"), weight=0.3),
+    Question("q_superpowers",   "Does a character have superhuman or magical powers?",
+             _attr_true("has_superpowers"), weight=0.3),
+    Question("q_mythology",     "Is it based on or inspired by Hindu mythology?",
+             _attr_true("is_mythology_based"), weight=0.3),
+
+    # Kids / child protagonist
+    Question("q_child_protag",  "Is a child the central character or hero of the story?",
+             _attr_true("has_child_protagonist"), weight=0.3),
+
+    # More narrative tropes
+    Question("q_multiple_stories", "Does it follow multiple parallel storylines or characters?",
+             _attr_true("has_multiple_storylines"), weight=0.3),
+    Question("q_underdog",      "Is the lead an underdog fighting against the system or odds?",
+             _attr_true("has_underdog_story"), weight=0.3),
+    Question("q_heist",         "Does it involve a heist, con, or elaborate plan?",
+             _attr_true("has_heist"), weight=0.3),
+    Question("q_period_drama",  "Is it a period film set more than 50 years before its release?",
+             _attr_true("is_period_drama"), weight=0.3),
+    Question("q_courtroom",     "Does it feature a significant courtroom or trial scene?",
+             _attr_true("has_courtroom"), weight=0.3),
+    Question("q_flashback",     "Is a major portion of the story told through flashbacks?",
+             _attr_true("has_major_flashback"), weight=0.3),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}

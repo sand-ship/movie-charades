@@ -6,9 +6,10 @@ from typing import Optional
 
 from questions import QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS, GENRE_QUESTION_IDS
 
-MAX_QUESTIONS = 36  # hard ceiling (incl. ~6 auto-answered siblings → ~30 real questions)
-MIN_NON_GROUP_QUESTIONS = 6  # fallback when not all 3 group pickers answered
-MIN_NON_GROUP_AFTER_ALL_PICKERS = 6  # ask at least this many real questions before guessing
+MAX_QUESTIONS = 42  # hard ceiling (incl. ~6 auto-answered siblings → ~36 real questions)
+MIN_NON_GROUP_QUESTIONS = 10        # fallback when not all 3 group pickers answered
+MIN_NON_GROUP_AFTER_ALL_PICKERS = 15 # ask at least 15 real questions — builds suspense,
+                                     # gives tropes room to fire before the guess
 ENDGAME_POOL = 25  # at/under this many candidates, switch to *identifying* questions
                    # (heroine / actor / director / music director / sub-genre tropes).
                    # Raised from 12 — classic-era pools stay larger (many similar films)
@@ -88,6 +89,33 @@ class GameEngine:
         # all candidates answer the same way teaches us nothing.
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
+
+        # When pool == 1 and we haven't hit the question minimum yet, keep asking
+        # confirming questions about the sole candidate — builds suspense and lets
+        # the player verify the answer themselves before we reveal it.
+        asked_set = set(session.asked)
+        non_group = sum(1 for qid in asked_set
+                        if qid not in LANGUAGE_QUESTION_IDS
+                        and qid not in ERA_QUESTION_IDS
+                        and qid not in GENRE_QUESTION_IDS)
+        all_pickers_done = (bool(asked_set & LANGUAGE_QUESTION_IDS) and
+                            bool(asked_set & ERA_QUESTION_IDS) and
+                            bool(asked_set & GENRE_QUESTION_IDS))
+        min_q = MIN_NON_GROUP_AFTER_ALL_PICKERS if all_pickers_done else MIN_NON_GROUP_QUESTIONS
+
+        if not splitting and non_group < min_q and len(cands) == 1:
+            # Ask interesting confirming questions about the one remaining film
+            confirm = [q for q in unanswered
+                       if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))
+                       and q.id not in LANGUAGE_QUESTION_IDS
+                       and q.id not in ERA_QUESTION_IDS
+                       and q.id not in GENRE_QUESTION_IDS]
+            if confirm:
+                # Prefer questions the film answers "yes" to — more interesting for the player
+                yes_qs = [q for q in confirm if q.evaluate(cands[0])]
+                pool = yes_qs if yes_qs else confirm
+                return pool[0]
+
         if not splitting:
             return None  # nothing left discriminates → caller will guess
 
@@ -208,16 +236,15 @@ class GameEngine:
             bool(asked_set & ERA_QUESTION_IDS) and
             bool(asked_set & GENRE_QUESTION_IDS)
         )
-        if session.remaining_count() == 1:
-            return True  # narrowed to one — nothing left to ask
         min_q = MIN_NON_GROUP_AFTER_ALL_PICKERS if all_pickers_done else MIN_NON_GROUP_QUESTIONS
         if non_group < min_q:
             return False
-        # Otherwise keep asking: next_question returns the best *discriminating*
-        # question (and switches to identifying questions in the endgame). When it
-        # can no longer split the pool it returns None and main.py guesses — so we
-        # interrogate down to a single film instead of committing at 2-3 on a
-        # dominant score. MAX_QUESTIONS is the hard backstop.
+        # Even when the pool is 1 we keep asking confirming questions until the
+        # minimum is met — the player should feel properly interrogated, not rushed.
+        # next_question will keep generating questions about the single candidate
+        # (confirming tropes, songs, lead actress, director) until it runs out,
+        # at which point it returns None and main.py triggers the guess.
+        # MAX_QUESTIONS is the hard backstop.
         return False
 
     def top_guesses(self, session: Session, n: int = 3) -> list[dict]:
