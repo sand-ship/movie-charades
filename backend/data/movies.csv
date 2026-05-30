@@ -1,0 +1,588 @@
+id,title,year,language,era,director,lead_actor,lead_gender,imdb_rating,has_action,has_comedy,has_romance,has_songs,has_villain,has_thriller_elements,has_social_message,is_anti_hero,is_family_film,is_based_on_true_story,is_biographical,is_franchise,is_remake,is_sports_film,is_historical,is_horror,is_sci_fi,is_pan_india_blockbuster
+tt0048473,Pather Panchali,1955,hindi,classic,Satyajit Ray,,male,8.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0048956,Aparajito,1956,hindi,classic,Satyajit Ray,,male,8.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0052572,Apur Sansar,1959,hindi,classic,Satyajit Ray,,male,8.4,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+mughal_e_azam_1960,Mughal-E-Azam,1960,hindi,classic,K. Asif,Dilip Kumar,male,8.1,True,False,True,True,True,False,False,False,True,True,False,False,False,False,True,False,False,False
+tt0066763,Anand,1971,hindi,classic,Hrishikesh Mukherjee,,male,8.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+sholay_1975,Sholay,1975,hindi,classic,Ramesh Sippy,Amitabh Bachchan,male,8.1,True,True,True,True,True,False,False,False,True,False,False,False,False,False,False,False,False,True
+tt0079221,Gol Maal,1979,hindi,classic,Hrishikesh Mukherjee,,male,8.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0083987,Gandhi,1982,hindi,classic,Richard Attenborough,,male,8.0,False,False,False,True,True,False,False,False,False,True,True,False,False,False,True,False,False,True
+tt0085743,Jaane Bhi Do Yaaro,1983,hindi,classic,Kundan Shah,,male,8.3,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0093578,Mr. India,1987,hindi,classic,Shekhar Kapur,,male,7.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0104561,Jo Jeeta Wohi Sikandar,1992,hindi,90s,Mansoor Khan,,male,8.1,False,False,False,True,True,False,False,False,False,False,False,False,False,True,False,False,False,False
+tt0106333,Baazigar,1993,hindi,90s,Abbas Alibhai Burmawalla,,male,7.6,True,False,True,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt0109555,Darr,1993,hindi,90s,Yash Chopra,,male,7.6,False,False,True,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt0110222,Kabhi Haan Kabhi Naa,1993,hindi,90s,Kundan Shah,,male,7.6,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+andaz_apna_apna_1994,Andaz Apna Apna,1994,hindi,90s,Rajkumar Santoshi,Aamir Khan,male,8.0,True,True,True,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False
+tt0110076,Hum Aapke Hain Koun..!,1994,hindi,90s,Sooraj R. Barjatya,,male,7.5,False,True,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+ddlj_1995,Dilwale Dulhania Le Jayenge,1995,hindi,90s,Aditya Chopra,Shah Rukh Khan,male,8.1,False,True,True,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False
+tt0113526,Karan Arjun,1995,hindi,90s,Rakesh Roshan,,male,6.8,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0118983,Dil To Pagal Hai,1997,hindi,90s,Yash Chopra,,male,7.0,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0118751,Border,1997,hindi,90s,J. P. Dutta,,male,8.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0119861,Pardes,1997,hindi,90s,Subhash Ghai,,male,6.9,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0120540,Yes Boss,1997,hindi,90s,Aziz Mirza,,male,6.7,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0172684,Kuch Kuch Hota Hai,1998,hindi,90s,Karan Johar,,male,7.5,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0164538,Dil Se..,1998,hindi,90s,Mani Ratnam,,male,7.5,True,False,True,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt0195231,Satya,1998,hindi,90s,Ram Gopal Varma,,male,8.2,False,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt0200087,Sarfarosh,1999,hindi,90s,John Matthew Matthan,,male,8.1,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt0211934,Baadshah,1999,hindi,90s,Abbas Alibhai Burmawalla,,male,6.9,False,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt0150992,Hum Dil De Chuke Sanam,1999,hindi,90s,Sanjay Leela Bhansali,,male,7.4,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0220832,Vaastav: The Reality,1999,hindi,90s,Mahesh Manjrekar,,male,8.0,True,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+hera_pheri_2000,Hera Pheri,2000,hindi,2000s,Priyadarshan,Akshay Kumar,male,8.2,False,True,False,True,True,False,False,False,False,False,False,True,True,False,False,False,False,False
+tt0213890,Mohabbatein,2000,hindi,2000s,Aditya Chopra,,male,7.1,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0234000,Kaho Naa... Pyaar Hai,2000,hindi,2000s,Rakesh Roshan,,male,6.9,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0222012,Hey Ram,2000,hindi,2000s,Kamal Haasan,,male,8.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+dil_chahta_hai_2001,Dil Chahta Hai,2001,hindi,2000s,Farhan Akhtar,Aamir Khan,male,8.1,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+lagaan_2001,Lagaan,2001,hindi,2000s,Ashutosh Gowariker,Aamir Khan,male,8.1,False,False,True,True,True,False,True,False,True,False,False,False,False,True,True,False,False,False
+kabhi_khushi_kabhie_gham_2001,Kabhi Khushi Kabhie Gham,2001,hindi,2000s,Karan Johar,Shah Rukh Khan,male,7.4,False,True,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+tt0248126,Sometimes Happiness Sometimes Sadness...,2001,hindi,2000s,Karan Johar,,male,7.5,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0265343,Monsoon Wedding,2001,hindi,2000s,Mira Nair,,male,7.3,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0291376,Nayak,2001,hindi,2000s,S. Shankar,,male,7.8,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0284137,Gadar: Ek Prem Katha,2001,hindi,2000s,Anil Sharma,,male,7.3,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0249371,Aśoka,2001,hindi,2000s,Santosh Sivan,,male,6.4,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0238936,Devdas,2002,hindi,2000s,Sanjay Leela Bhansali,,male,7.6,False,False,True,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt0319736,The Legend of Bhagat Singh,2002,hindi,2000s,Rajkumar Santoshi,,male,8.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0296574,Company,2002,hindi,2000s,Ram Gopal Varma,,male,7.9,True,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt0374887,Munna Bhai M.B.B.S.,2003,hindi,2000s,Rajkumar Hirani,,male,8.2,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0347304,Kal Ho Naa Ho,2003,hindi,2000s,Nikhil Advani,,male,7.9,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0254481,Koi... Mil Gaya,2003,hindi,2000s,Rakesh Roshan,,male,7.2,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0374271,Tere Naam,2003,hindi,2000s,Satish Kaushik,,male,7.2,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0373856,Gangaajal,2003,hindi,2000s,Prakash Jha,,male,7.8,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0371735,Hungama,2003,hindi,2000s,Priyadarshan,,male,7.6,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0337578,Baghban,2003,hindi,2000s,Ravi Chopra,,male,7.4,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0346723,Chalte Chalte,2003,hindi,2000s,Aziz Mirza,,male,6.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0379370,Maqbool,2003,hindi,2000s,Vishal Bhardwaj,,male,8.0,True,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+swades_2004,Swades,2004,hindi,2000s,Ashutosh Gowariker,Shah Rukh Khan,male,8.2,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False
+tt0420332,Veer-Zaara,2004,hindi,2000s,Yash Chopra,,male,7.8,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0347473,Main Hoon Na,2004,hindi,2000s,Farah Khan,,male,7.1,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt0323013,Lakshya,2004,hindi,2000s,Farhan Akhtar,,male,7.8,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0400234,Black Friday,2004,hindi,2000s,Anurag Kashyap,,male,8.4,True,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt0422091,Dhoom,2004,hindi,2000s,Sanjay Gadhvi,,male,6.7,True,False,False,True,True,True,False,False,True,False,False,False,False,False,False,False,False,False
+tt0418362,Will You Marry Me?,2004,hindi,2000s,David Dhawan,,male,6.7,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0388789,Born into Brothels,2004,hindi,2000s,Zana Briski,,male,7.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0347332,Khakee,2004,hindi,2000s,Rajkumar Santoshi,,male,7.4,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt0378072,Hum Tum,2004,hindi,2000s,Kunal Kohli,,male,7.0,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0375611,Black,2005,hindi,2000s,Sanjay Leela Bhansali,,male,8.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0453671,Garam Masala,2005,hindi,2000s,Priyadarshan,,male,6.8,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0432047,Sarkar,2005,hindi,2000s,Ram Gopal Varma,,male,7.6,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt0453729,Iqbal,2005,hindi,2000s,Nagesh Kukunoor,,male,8.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0240200,Water,2005,hindi,2000s,Deepa Mehta,,male,7.7,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0451850,Paheli,2005,hindi,2000s,Amol Palekar,,male,6.4,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False
+rang_de_basanti_2006,Rang De Basanti,2006,hindi,2000s,Rakeysh Omprakash Mehra,Aamir Khan,male,8.1,True,True,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+golmaal_2006,Golmaal: Fun Unlimited,2006,hindi,2000s,Rohit Shetty,Ajay Devgn,male,7.7,False,True,True,True,True,False,False,False,True,False,False,True,True,False,False,False,False,False
+tt0460791,The Fall,2006,hindi,2000s,Tarsem Singh,,male,7.8,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False
+tt0456144,Lage Raho Munna Bhai,2006,hindi,2000s,Rajkumar Hirani,,male,8.0,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0461936,Don,2006,hindi,2000s,Farhan Akhtar,,male,7.2,True,False,True,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt0439662,Fanaa,2006,hindi,2000s,Kunal Kohli,,male,7.1,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0441048,Dhoom 2,2006,hindi,2000s,Sanjay Gadhvi,,male,6.6,True,False,False,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False
+tt0419058,Phir Hera Pheri,2006,hindi,2000s,Neeraj Vora,,male,7.4,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0432637,Krrish,2006,hindi,2000s,Rakesh Roshan,,male,6.5,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0466460,Khosla Ka Ghosla,2006,hindi,2000s,Dibakar Banerjee,,male,8.2,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0449999,Kabhi Alvida Naa Kehna,2006,hindi,2000s,Karan Johar,,male,6.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0488414,Omkara,2006,hindi,2000s,Vishal Bhardwaj,,male,8.0,False,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt0433416,The Namesake,2006,hindi,2000s,Mira Nair,,male,7.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0805184,Bhagam Bhag,2006,hindi,2000s,Priyadarshan,,male,6.8,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0464160,Chup Chup Ke,2006,hindi,2000s,Priyadarshan,,male,7.1,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+taare_zameen_par_2007,Taare Zameen Par,2007,hindi,2000s,Aamir Khan,Darsheel Safary,male,8.4,False,False,False,True,False,False,True,False,True,False,False,False,False,False,False,False,False,False
+tt0871510,Chak De! India,2007,hindi,2000s,Shimit Amin,,male,8.1,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1093370,Jab We Met,2007,hindi,2000s,Imtiaz Ali,,male,7.9,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1024943,Om Shanti Om,2007,hindi,2000s,Farah Khan,,male,6.8,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False
+tt0995031,Bhool Bhulaiyaa,2007,hindi,2000s,Priyadarshan,,male,7.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,True,False,False
+tt0488798,Welcome,2007,hindi,2000s,Anees Bazmee,,male,7.2,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0499375,Guru,2007,hindi,2000s,Mani Ratnam,,male,7.7,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0795434,Namastey London,2007,hindi,2000s,Vipul Amrutlal Shah,,male,7.1,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0845448,Dhamaal,2007,hindi,2000s,Indra Kumar,,male,7.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0806088,Heyy Babyy,2007,hindi,2000s,Sajid Khan,,male,6.1,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0800956,Life in a... Metro,2007,hindi,2000s,Anurag Basu,,male,7.4,False,False,True,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False
+tt0807758,Partner,2007,hindi,2000s,David Dhawan,,male,5.9,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+a_wednesday_2008,A Wednesday,2008,hindi,2000s,Neeraj Pandey,Naseeruddin Shah,male,8.1,False,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False
+tt1280558,A Wednesday!,2008,hindi,2000s,Neeraj Pandey,,male,8.1,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt1166100,Ghajini,2008,hindi,2000s,A. R. Murugadoss,,male,7.4,True,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt1182937,Rab Ne Bana Di Jodi,2008,hindi,2000s,Aditya Chopra,,male,7.2,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0449994,Jodhaa Akbar,2008,hindi,2000s,Ashutosh Gowariker,,male,7.5,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0473367,Jaane Tu... Ya Jaane Na,2008,hindi,2000s,Abbas Tyrewala,,male,7.4,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1230165,Rock On!!,2008,hindi,2000s,Abhishek Kapoor,,male,7.7,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1292703,Oye Lucky! Lucky Oye!,2008,hindi,2000s,Dibakar Banerjee,,male,7.7,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1146325,Singh Is Kinng,2008,hindi,2000s,Anees Bazmee,,male,5.8,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1185420,Dostana,2008,hindi,2000s,Tarun Mansukhani,,male,6.4,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1017456,Race,2008,hindi,2000s,Abbas Alibhai Burmawalla,,male,6.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+3_idiots_2009,3 Idiots,2009,hindi,2000s,Rajkumar Hirani,Aamir Khan,male,8.4,False,True,True,True,True,False,True,False,True,False,False,False,False,False,False,False,False,True
+tt1324059,Wake Up Sid,2009,hindi,2000s,Ayan Mukerji,,male,7.6,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1327035,Dev.D,2009,hindi,2000s,Anurag Kashyap,,male,7.9,False,True,True,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt1084972,Wanted,2009,hindi,2000s,Prabhu Deva,,male,6.6,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1434447,Rocket Singh: Salesman of the Year,2009,hindi,2000s,Shimit Amin,,male,7.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1274295,Kaminey,2009,hindi,2000s,Vishal Bhardwaj,,male,7.4,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1252596,Ajab Prem Ki Ghazab Kahani,2009,hindi,2000s,Rajkumar Santoshi,,male,6.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1275863,Love Aaj Kal,2009,hindi,2000s,Imtiaz Ali,,male,6.8,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1261047,Gulaal,2009,hindi,2000s,Anurag Kashyap,,male,8.0,False,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt1230448,Billu,2009,hindi,2000s,Priyadarshan,,male,6.4,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1023114,The Way Back,2010,hindi,2010s,Peter Weir,,male,7.3,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1188996,My Name Is Khan,2010,hindi,2010s,Karan Johar,,male,7.9,True,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt1639426,Udaan,2010,hindi,2010s,Vikramaditya Motwane,,male,8.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1620933,Paan Singh Tomar,2010,hindi,2010s,Tigmanshu Dhulia,,male,8.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1620719,Dabangg,2010,hindi,2010s,Abhinav Kashyap,,male,6.3,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1395054,Once Upon a Time in Mumbaai,2010,hindi,2010s,Milan Luthria,,male,7.4,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1438298,Guzaarish,2010,hindi,2010s,Sanjay Leela Bhansali,,male,7.4,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1291465,Raajneeti,2010,hindi,2010s,Prakash Jha,,male,7.1,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt1610452,Band Baaja Baaraat,2010,hindi,2010s,Maneesh Sharma,,male,7.2,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1573072,Housefull,2010,hindi,2010s,Sajid Khan,,male,5.7,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1572311,Tees Maar Khan,2010,hindi,2010s,Farah Khan,,male,3.0,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1373156,Karthik Calling Karthik,2010,hindi,2010s,Vijay Lalwani,,male,7.2,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt1455811,Khatta Meetha,2010,hindi,2010s,Priyadarshan,,male,6.2,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+znmd_2011,Zindagi Na Milegi Dobara,2011,hindi,2010s,Zoya Akhtar,Hrithik Roshan,male,8.1,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0433035,Real Steel,2011,hindi,2010s,Shawn Levy,,male,7.1,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,True
+tt1285241,Don 2,2011,hindi,2010s,Farhan Akhtar,,male,7.1,True,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt1839596,Rockstar,2011,hindi,2010s,Imtiaz Ali,,male,7.8,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1562871,Ra.One,2011,hindi,2010s,Anubhav Sinha,,male,5.0,False,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt2317337,Vicky Donor,2011,hindi,2010s,Shoojit Sircar,,male,7.7,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1934231,Delhi Belly,2011,hindi,2010s,Abhinay Deo,,male,7.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1729637,Bodyguard,2011,hindi,2010s,Siddique,,male,4.8,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1926313,Pyaar Ka Punchnama,2011,hindi,2010s,Luv Ranjan,,male,7.6,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1948150,Singham,2011,hindi,2010s,Rohit Shetty,,male,6.8,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1708532,Ready,2011,hindi,2010s,Anees Bazmee,,male,5.0,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1656171,Dam 999,2011,hindi,2010s,Sohan Roy,,male,3.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1694542,Tanu Weds Manu,2011,hindi,2010s,Aanand L. Rai,,male,6.8,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1985981,Desi Boyz,2011,hindi,2010s,Rohit Dhawan,,male,5.7,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+gangs_of_wasseypur_2012,Gangs of Wasseypur,2012,hindi,2010s,Anurag Kashyap,Manoj Bajpayee,male,8.2,True,True,True,True,True,True,False,True,False,True,False,True,False,False,False,False,False,False
+kahaani_2012,Kahaani,2012,hindi,2010s,Sujoy Ghosh,Vidya Balan,female,8.1,False,False,False,False,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt1343727,Dredd,2012,hindi,2010s,Pete Travis,,male,7.1,True,False,False,True,True,False,False,False,False,False,False,True,False,False,False,False,False,True
+tt1954470,Gangs of Wasseypur – Part 1,2012,hindi,2010s,Anurag Kashyap,,male,8.2,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt2082197,Barfi!,2012,hindi,2010s,Anurag Basu,,male,8.1,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2283748,OMG – Oh My God!,2012,hindi,2010s,Umesh Shukla,,male,8.1,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False
+tt2176013,Jab Tak Hai Jaan,2012,hindi,2010s,Yash Chopra,,male,6.7,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1787988,Talaash: The Answer Lies Within,2012,hindi,2010s,Reema Kagti,,male,7.3,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt2181931,English Vinglish,2012,hindi,2010s,Gauri Shinde,,male,7.8,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2016894,Ek Tha Tiger,2012,hindi,2010s,Kabir Khan,,male,5.7,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt1849718,Agneepath,2012,hindi,2010s,Karan Malhotra,,male,6.9,True,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt2077833,Rowdy Rathore,2012,hindi,2010s,Prabhu Deva,,male,5.8,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt2172071,Student of the Year,2012,hindi,2010s,Karan Johar,,male,5.3,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2112131,Dabangg 2,2012,hindi,2010s,Arbaaz Khan,,male,4.8,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2181831,Shahid,2012,hindi,2010s,Hansal Mehta,,male,8.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1629715,Miss Lovely,2012,hindi,2010s,Ashim Ahluwalia,,male,7.3,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1980986,Housefull 2,2012,hindi,2010s,Sajid Khan,,male,5.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2168910,Cocktail,2012,hindi,2010s,Homi Adajania,,male,6.3,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2356180,Bhaag Milkha Bhaag,2013,hindi,2010s,Rakeysh Omprakash Mehra,,male,8.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2112124,Chennai Express,2013,hindi,2010s,Rohit Shetty,,male,6.3,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2350496,The Lunchbox,2013,hindi,2010s,Ritesh Batra,,male,7.8,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2377938,Special 26,2013,hindi,2010s,Neeraj Pandey,,male,8.0,False,False,False,True,True,True,False,False,False,False,False,False,False,False,True,False,False,False
+tt2178470,Yeh Jawaani Hai Deewani,2013,hindi,2010s,Ayan Mukerji,,male,7.3,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1833673,Dhoom 3,2013,hindi,2010s,Vijay Krishna Acharya,,male,5.4,True,True,False,True,True,True,False,False,True,False,False,False,False,False,False,False,False,False
+tt1837703,The Fifth Estate,2013,hindi,2010s,Bill Condon,,male,6.2,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt2199711,Vishwaroopam,2013,hindi,2010s,Kamal Haasan,,male,7.9,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2213054,Kai Po Che!,2013,hindi,2010s,Abhishek Kapoor,,male,7.8,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2203308,Aashiqui 2,2013,hindi,2010s,Mohit Suri,,male,7.1,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2359810,Raanjhnaa,2013,hindi,2010s,Aanand L. Rai,,male,7.6,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1029231,Krrish 3,2013,hindi,2010s,Rakesh Roshan,,male,5.4,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2855648,Madras Cafe,2013,hindi,2010s,Shoojit Sircar,,male,7.6,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt2882328,Ugly,2013,hindi,2010s,Anurag Kashyap,,male,7.9,False,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt2621000,Jolly LLB,2013,hindi,2010s,Subhash Kapoor,,male,7.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2215477,Goliyon Ki Rasleela Ram-Leela,2013,hindi,2010s,Sanjay Leela Bhansali,,male,6.4,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1375789,Race 2,2013,hindi,2010s,Abbas Alibhai Burmawalla,,male,5.4,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2224317,Lootera,2013,hindi,2010s,Vikramaditya Motwane,,male,7.4,False,False,True,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt2436516,Go Goa Gone,2013,hindi,2010s,Raj Nidimoru,,male,6.7,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,True,False,False
+tt2229842,Table No. 21,2013,hindi,2010s,Aditya Datt,,male,7.2,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+pk_2014,PK,2014,hindi,2010s,Rajkumar Hirani,Aamir Khan,male,8.1,False,True,True,True,True,False,True,False,True,False,False,False,False,False,False,False,True,True
+queen_2014,Queen,2014,hindi,2010s,Vikas Bahl,Kangana Ranaut,female,8.1,False,True,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False
+tt2980648,The Hundred-Foot Journey,2014,hindi,2010s,Lasse Hallström,,male,7.3,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2372222,Kick,2014,hindi,2010s,Sajid Nadiadwala,,male,5.9,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2574698,Gunday,2014,hindi,2010s,Ali Abbas Zafar,,male,2.8,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3390572,Haider,2014,hindi,2010s,Vishal Bhardwaj,,male,8.0,False,False,True,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt2461132,Happy New Year,2014,hindi,2010s,Farah Khan,,male,5.0,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2652092,The Good Lie,2014,hindi,2010s,Philippe Falardeau,,male,7.4,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2980794,Highway,2014,hindi,2010s,Imtiaz Ali,,male,7.6,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2556308,Holiday: A Soldier Is Never Off Duty,2014,hindi,2010s,A. R. Murugadoss,,male,7.2,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt2372678,2 States,2014,hindi,2010s,Abhishek Varman,,male,6.9,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2905838,Bang Bang!,2014,hindi,2010s,Siddharth Anand,,male,5.7,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3175038,Ek Villain,2014,hindi,2010s,Mohit Suri,,male,6.6,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1188982,Jai Ho,2014,hindi,2010s,Sohail Khan,,male,5.1,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3173910,Hasee Toh Phasee,2014,hindi,2010s,Vinil Mathew,,male,6.8,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3495000,Mardaani,2014,hindi,2010s,Pradeep Sarkar,,male,7.3,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt3678938,Humpty Sharma Ki Dulhania,2014,hindi,2010s,Shashank Khaitan,,male,6.0,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+piku_2015,Piku,2015,hindi,2010s,Shoojit Sircar,Deepika Padukone,female,7.9,False,True,False,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+tt3682448,Bridge of Spies,2015,hindi,2010s,Steven Spielberg,,male,7.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,True,False,False,True
+tt3863552,Bajrangi Bhaijaan,2015,hindi,2010s,Kabir Khan,,male,8.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt4430212,Drishyam,2015,hindi,2010s,Nishikant Kamat,,male,8.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3848892,Baby,2015,hindi,2010s,Neeraj Pandey,,male,7.9,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt4934950,Talvar,2015,hindi,2010s,Meghna Gulzar,,male,8.1,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt3735246,Bajirao Mastani,2015,hindi,2010s,Sanjay Leela Bhansali,,male,7.3,True,False,True,True,True,False,False,True,False,False,False,False,False,False,True,False,False,False
+tt4535650,Dilwale,2015,hindi,2010s,Rohit Shetty,,male,5.1,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3148502,Tamasha,2015,hindi,2010s,Imtiaz Ali,,male,7.4,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt4635372,Masaan,2015,hindi,2010s,Neeraj Ghaywan,,male,8.1,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2140465,Tanu Weds Manu Returns,2015,hindi,2010s,Aanand L. Rai,,male,7.6,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2424988,Gabbar Is Back,2015,hindi,2010s,Radhakrishna Jagarlamudi,,male,7.0,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3678782,Badlapur,2015,hindi,2010s,Sriram Raghavan,,male,7.4,False,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt3595298,Prem Ratan Dhan Payo,2015,hindi,2010s,Sooraj R. Barjatya,,male,4.4,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3447364,Detective Byomkesh Bakshi,2015,hindi,2010s,Dibakar Banerjee,,male,7.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3495030,Dum Laga Ke Haisha,2015,hindi,2010s,Sharat Katariya,,male,7.4,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt4110568,Dil Dhadakne Do,2015,hindi,2010s,Zoya Akhtar,,male,7.1,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3449292,Manjhi: The Mountain Man,2015,hindi,2010s,Ketan Mehta,,male,8.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3802576,Brothers,2015,hindi,2010s,Karan Malhotra,,male,6.4,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt3742284,NH10,2015,hindi,2010s,Navdeep Singh,,male,7.2,False,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+dangal_2016,Dangal,2016,hindi,2010s,Nitesh Tiwari,Aamir Khan,female,8.3,False,False,False,True,False,False,True,False,True,True,True,False,False,True,False,False,False,True
+pink_2016,Pink,2016,hindi,2010s,Aniruddha Roy Chowdhury,Amitabh Bachchan,female,8.1,False,False,False,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False
+tt4169250,M.S.Dhoni : The Untold Story,2016,hindi,2010s,Neeraj Pandey,,male,8.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt4387040,Airlift,2016,hindi,2010s,Raja Krishna Menon,,male,7.9,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt4832640,Sultan,2016,hindi,2010s,Ali Abbas Zafar,,male,7.1,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3495026,FAN,2016,hindi,2010s,Maneesh Sharma,,male,6.8,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt5946128,Dear Zindagi,2016,hindi,2010s,Gauri Shinde,,male,7.4,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt4434004,Udta Punjab,2016,hindi,2010s,Abhishek Chaubey,,male,7.7,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt4900716,Kapoor & Sons,2016,hindi,2010s,Shakun Batra,,male,7.7,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt5165344,Rustom,2016,hindi,2010s,Tinu Suresh Desai,,male,7.0,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt4559006,Ae Dil Hai Mushkil,2016,hindi,2010s,Karan Johar,,male,5.9,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt5286444,Neerja,2016,hindi,2010s,Ram Madhvani,,male,7.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0315642,Wazir,2016,hindi,2010s,Bejoy Nambiar,,male,7.1,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt3702652,The Other Side of the Door,2016,hindi,2010s,Johannes Roberts,,male,5.3,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,True,False,False
+tt5713232,Madaari,2016,hindi,2010s,Nishikant Kamat,,male,7.6,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt1615160,The Foreigner,2017,hindi,2010s,Martin Campbell,,male,7.0,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3405236,Raees,2017,hindi,2010s,Rahul Dholakia,,male,6.6,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt5956100,Tiger Zinda Hai,2017,hindi,2010s,Ali Abbas Zafar,,male,5.9,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt5764096,Hindi Medium,2017,hindi,2010s,Saket Chaudhary,,male,7.9,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt5460276,Kaabil,2017,hindi,2010s,Sanjay Gupta,,male,7.2,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6108090,Secret Superstar,2017,hindi,2010s,Advait Chandan,,male,7.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt5982852,Jolly LLB 2,2017,hindi,2010s,Subhash Kapoor,,male,7.2,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6967980,Bareilly Ki Barfi,2017,hindi,2010s,Ashwiny Iyer Tiwari,,male,7.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6826438,Parmanu: The Story Of Pokhran,2017,hindi,2010s,Abhishek Sharma,,male,7.6,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt5785170,Toilet - Ek Prem Katha,2017,hindi,2010s,Shree Narayan Singh,,male,7.2,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt5997666,Jab Harry Met Sejal,2017,hindi,2010s,Imtiaz Ali,,male,5.1,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt5882970,Tubelight,2017,hindi,2010s,Kabir Khan,,male,4.0,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6484982,Newton,2017,hindi,2010s,Amit Masurkar,,male,7.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6692354,Ittefaq,2017,hindi,2010s,,,male,7.2,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt6299040,The Ghazi Attack,2017,hindi,2010s,Sankalp Reddy,,male,7.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6277440,Badrinath Ki Dulhania,2017,hindi,2010s,Shashank Khaitan,,male,6.1,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+andhadhun_2018,Andhadhun,2018,hindi,2010s,Sriram Raghavan,Ayushmann Khurrana,male,8.2,False,True,True,True,True,True,False,True,False,False,False,False,True,False,False,False,False,False
+tumbbad_2018,Tumbbad,2018,hindi,2010s,Rahi Anil Barve,Sohum Shah,male,8.2,False,False,False,False,False,True,True,False,False,False,False,False,False,False,True,True,False,False
+raazi_2018,Raazi,2018,hindi,2010s,Meghna Gulzar,Alia Bhatt,female,7.9,False,False,True,True,False,True,False,True,False,True,True,False,False,False,True,False,False,False
+tt5461944,Hotel Mumbai,2018,hindi,2010s,Anthony Maras,,male,7.6,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt6452574,Sanju,2018,hindi,2010s,Rajkumar Hirani,,male,7.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7431594,Race 3,2018,hindi,2010s,Remo D'Souza,,male,1.9,False,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt8108202,Stree,2018,hindi,2010s,Amar Kaushik,,male,7.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,True,False,False
+tt5935704,Padmaavat,2018,hindi,2010s,Sanjay Leela Bhansali,,male,7.1,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7725596,Badhaai Ho,2018,hindi,2010s,Amit Sharma,,male,7.9,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6527426,Zero,2018,hindi,2010s,Aanand L. Rai,,male,5.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7218518,Pad Man,2018,hindi,2010s,R. Balki,,male,7.8,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7581902,Sonu Ke Titu Ki Sweety,2018,hindi,2010s,Luv Ranjan,,male,7.1,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7363076,Raid,2018,hindi,2010s,Raj Kumar Gupta,,male,7.4,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt5970844,Thugs of Hindostan,2018,hindi,2010s,Vijay Krishna Acharya,,male,4.1,True,False,False,True,True,False,False,False,False,False,False,False,False,False,True,False,False,False
+tt7618184,Mulk,2018,hindi,2010s,Anubhav Sinha,,male,7.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7700730,October,2018,hindi,2010s,Shoojit Sircar,,male,7.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7919680,Karwaan,2018,hindi,2010s,Akarsh Khurana,,male,7.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6903440,Manikarnika—The Queen of Jhansi,2018,hindi,2010s,Radhakrishna Jagarlamudi,,male,6.4,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7027278,Kedarnath,2018,hindi,2010s,Abhishek Kapoor,,male,6.8,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6173990,Gold,2018,hindi,2010s,Reema Kagti,,male,7.3,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6588966,Hichki,2018,hindi,2010s,Sidharth Malhotra,,male,7.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt9052870,Chhichhore,2019,hindi,2010s,Nitesh Tiwari,,male,8.3,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2395469,Gully Boy,2019,hindi,2010s,Zoya Akhtar,,male,7.9,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7485048,Super 30,2019,hindi,2010s,Vikas Bahl,,male,7.9,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt10324144,Article 15,2019,hindi,2010s,Anubhav Sinha,,male,8.1,False,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt7430722,War,2019,hindi,2010s,Siddharth Anand,,male,6.6,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt8108268,The Tashkent Files,2019,hindi,2010s,Vivek Agnihotri,,male,8.0,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt8130968,Badla,2019,hindi,2010s,Sujoy Ghosh,,male,7.8,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt7721800,Bharat,2019,hindi,2010s,Ali Abbas Zafar,,male,4.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt9614460,Chhapaak,2019,hindi,2010s,Meghna Gulzar,,male,5.4,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6264938,Kesari,2019,hindi,2010s,Anurag Singh,,male,7.4,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt8504014,Good Newwz,2019,hindi,2010s,Raj Mehta,,male,6.8,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7255568,Student of the Year 2,2019,hindi,2010s,Punit Malhotra,,male,2.3,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7059844,Dabangg 3,2019,hindi,2010s,Prabhu Deva,,male,3.0,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6988116,Kalank,2019,hindi,2010s,Abhishek Varman,,male,3.8,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt8144834,Section 375,2019,hindi,2010s,,,male,8.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt9248972,Mission Mangal,2019,hindi,2010s,Jagan Shakti,,male,6.6,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt9248940,Dream Girl,2019,hindi,2010s,Raaj Shaandilyaa,,male,7.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt9420648,Bala,2019,hindi,2010s,Amar Kaushik,,male,7.3,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7721946,Housefull 4,2019,hindi,2010s,Farhad Samji,,male,3.7,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt10295212,Shershaah,2021,hindi,2020s,Vishnuvardhan,,male,8.3,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt9531772,Sooryavanshi,2021,hindi,2020s,Rohit Shetty,,male,5.8,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6571548,The White Tiger,2021,hindi,2020s,Ramin Bahrani,,male,7.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt10895576,Mimi,2021,hindi,2020s,Laxman Utekar,,male,7.8,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt13510660,Dhamaka,2021,hindi,2020s,Ram Madhvani,,male,6.7,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt13491110,Antim: The Final Truth,2021,hindi,2020s,Mahesh Manjrekar,,male,6.1,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7518786,83,2021,hindi,2020s,Kabir Khan,,male,7.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt9851854,Major,2021,hindi,2020s,,,male,8.1,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt9766332,Atrangi Re,2021,hindi,2020s,Aanand L. Rai,,male,6.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt10309902,Chehre,2021,hindi,2020s,Rumi Jaffery,,male,6.2,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt10083640,Bhoot Police,2021,hindi,2020s,,,male,6.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt11314148,Shiddat,2021,hindi,2020s,Kunal Deshmukh,,male,7.6,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt11260832,Bell Bottom,2021,hindi,2020s,Ranjit Tewari,,male,6.1,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt13529034,Meenakshi Sundareshwar,2021,hindi,2020s,,,male,6.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt9614452,The Big Bull,2021,hindi,2020s,Kookie V. Gulati,,male,5.6,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt10739666,Satyameva Jayate 2,2021,hindi,2020s,Milap Zaveri,,male,3.3,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt12861850,Chandigarh Kare Aashiqui,2021,hindi,2020s,Abhishek Kapoor,,male,6.7,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt10811166,The Kashmir Files,2022,hindi,2020s,Vivek Agnihotri,,male,8.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,True,False,False,True
+tt10028196,Laal Singh Chaddha,2022,hindi,2020s,Advait Chandan,,male,5.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6277462,Brahmāstra Part One: Shiva,2022,hindi,2020s,Ayan Mukerji,,male,5.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False
+tt10083340,Gangubai Kathiawadi,2022,hindi,2020s,Sanjay Leela Bhansali,,male,7.8,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt13664684,Karthikeya 2,2022,hindi,2020s,Chandoo Mondeti,,male,7.8,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt14107554,Dasvi,2022,hindi,2020s,,,male,7.3,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt9263550,Rocketry: The Nambi Effect,2022,hindi,2020s,Anant Mahadevan,,male,8.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt8426926,Shamshera,2022,hindi,2020s,Karan Malhotra,,male,4.7,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15501640,Drishyam 2,2022,hindi,2020s,Abhishek Pathak,,male,8.2,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt4435072,Liger,2022,hindi,2020s,Puri Jagannadh,,male,2.6,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt10733228,Gehraiyaan,2022,hindi,2020s,Shakun Batra,,male,5.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt10393870,Jayeshbhai Jordaar,2022,hindi,2020s,Divyang Thakkar,,male,6.0,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt13449624,Jug Jugg Jeeyo,2022,hindi,2020s,Raj Mehta,,male,6.1,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3679040,Kisi Ka Bhai Kisi Ki Jaan,2022,hindi,2020s,Farhad Samji,,male,3.9,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt10699086,Bachchhan Pandey,2022,hindi,2020s,Farhad Samji,,male,5.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6455162,Bhool Bhulaiyaa 2,2022,hindi,2020s,Anees Bazmee,,male,5.7,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,True,False,False
+tt15600222,An Action Hero,2022,hindi,2020s,,,male,7.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt8960382,Radhe Shyam,2022,hindi,2020s,Radha Krishna Kumar,,male,5.2,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt12834962,Raksha Bandhan,2022,hindi,2020s,Aanand L. Rai,,male,5.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt11460992,Runway 34,2022,hindi,2020s,Ajay Devgn,,male,7.0,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt14099334,Bhediya,2022,hindi,2020s,Amar Kaushik,,male,6.7,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,True,False,False
+tt11873440,Heropanti 2,2022,hindi,2020s,Ahmed Khan,,male,2.2,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15654262,Chup: Revenge of the Artist,2022,hindi,2020s,R. Balki,,male,7.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt13131350,Vikram Vedha,2022,hindi,2020s,Gayatri,,male,7.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt13028258,A Thursday,2022,hindi,2020s,,,male,7.6,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt11112808,Cirkus,2022,hindi,2020s,Rohit Shetty,,male,4.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15128068,"Monica, O My Darling",2022,hindi,2020s,Vasan Bala,,male,7.4,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt14152140,Darlings,2022,hindi,2020s,,,male,6.7,False,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt15315164,Cuttputlli,2022,hindi,2020s,,,male,5.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt11934846,Badhaai Do,2022,hindi,2020s,Harshavardhan Kulkarni,,male,7.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt13919802,Anek,2022,hindi,2020s,Anubhav Sinha,,male,6.3,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt14042066,Dobaaraa,2022,hindi,2020s,Anurag Kashyap,,male,4.9,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt11783766,Ram Setu,2022,hindi,2020s,Abhishek Sharma,,male,5.3,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt13130760,HIT: The First Case,2022,hindi,2020s,Sailesh Kolanu,,male,6.8,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt11947158,Ek Villain Returns,2022,hindi,2020s,Mohit Suri,,male,4.4,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt5301942,Jersey,2022,hindi,2020s,Gowtham Tinnanuri,,male,7.3,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt23849204,12th Fail,2023,hindi,2020s,Vidhu Vinod Chopra,,male,8.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt12844910,Pathaan,2023,hindi,2020s,Siddharth Anand,,male,5.8,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt12915716,Adipurush,2023,hindi,2020s,Om Raut,,male,2.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt13751694,Animal,2023,hindi,2020s,Sandeep Vanga,,male,6.2,True,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt15354916,Jawan,2023,hindi,2020s,Atlee,,male,6.9,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15428134,Dunki,2023,hindi,2020s,Rajkumar Hirani,,male,6.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt24268454,The Kerala Story,2023,hindi,2020s,,,male,6.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt21626284,Laapataa Ladies,2023,hindi,2020s,Kiran Rao,,male,8.3,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt18411490,Tiger 3,2023,hindi,2020s,Maneesh Sharma,,male,5.6,True,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt22297828,Chor Nikal Ke Bhaga,2023,hindi,2020s,,,male,7.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15979666,The Archies,2023,hindi,2020s,Zoya Akhtar,,male,4.2,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt27989067,Lust Stories 2,2023,hindi,2020s,Konkona Sen Sharma,,male,5.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt14993250,Rocky Aur Rani Ki Prem Kahani,2023,hindi,2020s,Karan Johar,,male,6.5,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15732324,OMG 2 – Oh My God! 2,2023,hindi,2020s,Amit Rai,,male,7.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt28259207,Kill,2023,hindi,2020s,Nikhil Nagesh Bhat,,male,7.4,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt13131232,Mission Majnu,2023,hindi,2020s,,,male,6.9,True,False,False,True,True,True,False,False,False,False,False,False,False,False,True,False,False,False
+tt13130948,Shehzada,2023,hindi,2020s,Rohit Dhawan,,male,4.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt14914988,Satyaprem Ki Katha,2023,hindi,2020s,Sameer Vidwans,,male,6.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15434074,Kho Gaye Hum Kahan,2023,hindi,2020s,,,male,7.3,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt24485052,Sirf Ek Bandaa Kaafi Hai,2023,hindi,2020s,,,male,8.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt8672856,Tu Jhoothi Main Makkaar,2023,hindi,2020s,Luv Ranjan,,male,6.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt32058735,Bhool Chuk Maaf,2023,hindi,2020s,,,male,5.8,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15441054,Gadar 2,2023,hindi,2020s,Anil Sharma,,male,5.1,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt23554840,The Vaccine War,2023,hindi,2020s,Vivek Agnihotri,,male,7.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt10786774,Sam Bahadur,2023,hindi,2020s,Meghna Gulzar,,male,7.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt19755170,Bawaal,2023,hindi,2020s,Nitesh Tiwari,,male,6.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15576460,Zara Hatke Zara Bachke,2023,hindi,2020s,Laxman Utekar,,male,5.9,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15748830,Suspect X,2023,hindi,2020s,Sujoy Ghosh,,male,7.0,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt13491678,72 Hoorain,2023,hindi,2020s,Sanjay Puran Singh Chauhan,,male,6.9,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15516726,Selfiee,2023,hindi,2020s,Raj Mehta,,male,5.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt9214772,Monkey Man,2024,hindi,2020s,Dev Patel,,male,6.8,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt26932223,Bhool Bhulaiyaa 3,2024,hindi,2020s,Anees Bazmee,,male,4.6,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,True,False,False
+tt11976134,Singham Again,2024,hindi,2020s,Rohit Shetty,,male,4.3,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt12735488,Kalki 2898 AD,2024,hindi,2020s,Nag Ashwin,,male,7.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt28075881,Do Patti,2024,hindi,2020s,,,male,6.3,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt27459160,Teri Baaton Mein Aisa Uljha Jiya,2024,hindi,2020s,Aradhana Sah,,male,6.2,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt13818368,Fighter,2024,hindi,2020s,Siddharth Anand,,male,6.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt27028399,Murder Mubarak,2024,hindi,2020s,Homi Adajania,,male,5.8,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt27510174,Stree 2,2024,hindi,2020s,Amar Kaushik,,male,6.9,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,True,False,False
+tt26745657,Madgaon Express,2024,hindi,2020s,Kunal Khemu,,male,7.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt26659814,Auron Mein Kahan Dum Tha,2024,hindi,2020s,Neeraj Pandey,,male,6.2,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt21383812,Crew,2024,hindi,2020s,Rajesh Krishnan,,male,5.8,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15392282,Merry Christmas,2024,hindi,2020s,Sriram Raghavan,,male,6.9,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt27995594,Munjya,2024,hindi,2020s,Aditya Sarpotdar,,male,6.3,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt27056012,Khel Khel Mein,2024,hindi,2020s,Muddassar Aziz,,male,6.5,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt30970235,Article 370,2024,hindi,2020s,Aditya Suhas Jambhale,,male,7.8,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt31522415,Sikandar Ka Muqaddar,2024,hindi,2020s,Neeraj Pandey,,male,6.0,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt19838634,Ulajh,2024,hindi,2020s,Sudhanshu Saria,,male,5.9,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt30889755,The Sabarmati Report,2024,hindi,2020s,Dheeraj Sarna,,male,6.4,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt11821912,Devara: Part 1,2024,hindi,2020s,Koratala Siva,,male,6.0,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt10869778,Maidaan,2024,hindi,2020s,Amit Sharma,,male,7.9,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt31514262,Wild Wild Punjab,2024,hindi,2020s,,,male,6.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt26658272,Amar Singh Chamkila,2024,hindi,2020s,Imtiaz Ali,,male,7.8,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt4501268,Maharaj,2024,hindi,2020s,Siddharth P. Malhotra,,male,6.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+mungaru_male_2006,Mungaru Male,2006,kannada,2000s,Yogaraj Bhat,Ganesh,male,7.8,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+milana_2007,Milana,2007,kannada,2000s,Om Prakash Rao,Puneeth Rajkumar,male,7.5,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+ta_ra_rum_pum_kannada,Jothe Jotheyali,2008,kannada,2000s,Ravi Varma,Sudeep,male,7.0,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+googly_2013,Googly,2013,kannada,2010s,Pawan Kumar,Yash,male,7.5,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+ulidavaru_kandante_2014,Ulidavaru Kandante,2014,kannada,2010s,Rakshit Shetty,Rakshit Shetty,male,8.7,True,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt4432480,RangiTaranga,2015,kannada,2010s,Anup Bhandari,,male,8.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+masterpiece_2015,Masterpiece,2015,kannada,2010s,Om Prakash Rao,Yash,male,6.8,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+kirik_party_2016,Kirik Party,2016,kannada,2010s,Rishab Shetty,Rakshit Shetty,male,8.2,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+kgf1_2018,KGF Chapter 1,2018,kannada,2010s,Prashanth Neel,Yash,male,8.2,True,False,True,True,True,False,False,False,False,False,False,True,False,False,True,False,False,True
+tt7838252,K.G.F: Chapter 1,2018,kannada,2010s,Prashanth Neel,,male,8.1,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7466810,777 Charlie,2021,kannada,2020s,Kiranraj K,,male,8.7,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+kgf2_2022,KGF Chapter 2,2022,kannada,2020s,Prashanth Neel,Yash,male,8.4,True,False,False,True,True,False,False,False,False,False,False,True,False,False,True,False,False,True
+tt10698680,K.G.F: Chapter 2,2022,kannada,2020s,Prashanth Neel,,male,8.2,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15327088,Kantara,2022,kannada,2020s,Rishab Shetty,,male,8.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt12015102,Vikrant Rona,2022,kannada,2020s,Anup Bhandari,,male,6.9,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt27719898,Kaiva,2023,kannada,2020s,Jayatheertha,,male,7.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+kranti_2023,Kranti,2023,kannada,2020s,V. Somashekar,Darshan Thoogudeepa,male,7.1,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt27051027,Love Li,2024,kannada,2020s,Chetan Keshav,,male,6.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+chemmeen_1965,Chemmeen,1965,malayalam,classic,Ramu Kariat,Madhu,male,8.0,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False
+irupathiyonnaam_noottaandu_1988,Irupathiyonnaam Noottaandu,1988,malayalam,classic,I. V. Sasi,Mohanlal,male,7.8,True,False,False,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+kireedam_1989,Kireedam,1989,malayalam,classic,Sibi Malayil,Mohanlal,male,8.5,True,False,False,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+in_harihar_nagar_1990,In Harihar Nagar,1990,malayalam,90s,Siddique-Lal,Mukesh,male,8.4,False,True,True,True,True,True,False,False,False,False,False,True,False,False,False,False,False,False
+njan_gandharvan_1991,Njan Gandharvan,1991,malayalam,90s,Priyadarshan,Mohanlal,male,8.2,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False
+manichitrathazhu_1993,Manichitrathazhu,1993,malayalam,90s,Fazil,Mohanlal,male,8.5,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,True,False,False
+spadikam_1995,Spadikam,1995,malayalam,90s,Bhadran,Mohanlal,male,8.3,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+classmates_2006,Classmates,2006,malayalam,2000s,Lal Jose,Prithviraj,male,7.9,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+christian_brothers_2011,Christian Brothers,2011,malayalam,2010s,Jose Padmareddy,Mohanlal,male,6.5,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2218988,Ustad Hotel,2012,malayalam,2010s,Anwar Rasheed,,male,8.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+drishyam_2013,Drishyam,2013,malayalam,2010s,Jeethu Joseph,Mohanlal,male,8.4,False,False,False,True,False,True,False,False,True,False,False,True,False,False,False,False,False,False
+tt3668162,Bengaluru Days,2014,malayalam,2010s,Anjali Menon,,male,8.3,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+bangalore_days_2014,Bangalore Days,2014,malayalam,2010s,Anjali Menon,Nivin Pauly,male,8.3,False,True,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+premam_2015,Premam,2015,malayalam,2010s,Alphonse Puthren,Nivin Pauly,male,8.3,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+oppam_2016,Oppam,2016,malayalam,2010s,Priyadarshan,Mohanlal,male,7.6,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+kumbalangi_nights_2019,Kumbalangi Nights,2019,malayalam,2010s,Madhu C. Narayanan,Fahadh Faasil,male,8.4,False,True,True,True,True,False,True,False,True,False,False,False,False,False,False,False,False,False
+lucifer_2019,Lucifer,2019,malayalam,2010s,Prithviraj Sukumaran,Mohanlal,male,7.5,True,False,False,True,True,True,False,False,False,False,False,True,False,False,False,False,False,False
+joji_2021,Joji,2021,malayalam,2020s,Dileesh Pothan,Fahadh Faasil,male,7.7,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt12361178,Drishyam 2,2021,malayalam,2020s,Jeethu Joseph,,male,8.4,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt7268738,Minnal Murali,2021,malayalam,2020s,Basil Joseph,,male,7.8,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False
+tt10534500,#Home,2021,malayalam,2020s,Rojin Thomas,,male,8.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7026666,Kurup,2021,malayalam,2020s,Srinath Rajendran,,male,7.0,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt13391710,Jana Gana Mana,2022,malayalam,2020s,Dijo Jose Antony,,male,8.3,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt11375428,Hridayam,2022,malayalam,2020s,Vineeth Sreenivasan,,male,8.0,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt14002046,Bheeshma Parvam,2022,malayalam,2020s,Amal Neerad,,male,7.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt9006564,2018,2023,malayalam,2020s,Jude Anthany Joseph,,male,8.3,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt26660021,Aavesham,2024,malayalam,2020s,Jithu Madhavan,,male,7.8,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt27431598,Bramayugam,2024,malayalam,2020s,Rahul Sadasivan,,male,7.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt15980138,Kishkindha Kaandam,2024,malayalam,2020s,,,male,8.0,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt5312232,Sairat,2016,marathi,2010s,Nagraj Manjule,,male,8.3,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+mouna_ragam_1986,Mouna Ragam,1986,tamil,classic,Mani Ratnam,Revathi,female,8.0,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0093603,Nayagan,1987,tamil,classic,Mani Ratnam,,male,8.6,False,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+apoorva_sagodharargal_1989,Apoorva Sagodharargal,1989,tamil,classic,Singeetam Srinivasa Rao,Kamal Haasan,male,8.2,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0101649,Thalapathi,1991,tamil,90s,Mani Ratnam,,male,8.5,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt0112553,Bombay,1995,tamil,90s,Mani Ratnam,,male,8.1,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+muthu_1995,Muthu,1995,tamil,90s,K. S. Ravikumar,Rajinikanth,male,7.7,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0116630,Indian,1996,tamil,90s,S. Shankar,,male,8.1,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+minsara_kanavu_1997,Minsara Kanavu,1997,tamil,90s,Rajiv Menon,Prabhu Deva,male,7.5,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+padayappa_1999,Padayappa,1999,tamil,90s,K. S. Ravikumar,Rajinikanth,male,7.8,True,True,True,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False
+alaipayuthey_2000,Alaipayuthey,2000,tamil,90s,Mani Ratnam,Madhavan,male,8.1,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+kandukondain_2000,Kandukondain Kandukondain,2000,tamil,90s,Rajiv Menon,Ajith Kumar,male,7.5,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+mounam_pesiyadhe_2002,Mounam Pesiyadhe,2002,tamil,2000s,Mani Ratnam,Madhavan,male,7.7,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0367495,Anbe Sivam,2003,tamil,2000s,Sundar C,,male,8.6,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+kaakha_kaakha_2003,Kaakha Kaakha,2003,tamil,2000s,Gautham Menon,Suriya,male,8.2,True,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt0422320,Ghilli,2004,tamil,2000s,Dharani,,male,8.2,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0376127,Anniyan,2005,tamil,2000s,S. Shankar,,male,8.4,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0449951,Ghajini,2005,tamil,2000s,A. R. Murugadoss,,male,7.6,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+chandramukhi_2005,Chandramukhi,2005,tamil,2000s,P. Vasu,Rajinikanth,male,7.3,False,True,True,True,True,False,False,False,True,False,False,False,False,False,False,True,False,False
+sillunu_oru_kaadhal_2006,Sillunu Oru Kaadhal,2006,tamil,2000s,Krishnasamy,Suriya,male,7.6,False,False,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+tt0479751,Sivaji,2007,tamil,2000s,S. Shankar,,male,7.6,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt1451409,Pokkiri,2007,tamil,2000s,Prabhu Deva,,male,7.6,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+paruthiveeran_2007,Paruthiveeran,2007,tamil,2000s,Ameer Sultan,Karthi,male,8.1,False,False,True,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False
+tt1180583,Vaaranam Aayiram,2008,tamil,2000s,Gautham Vasudev Menon,,male,8.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+dasavathaaram_2008,Dasavathaaram,2008,tamil,2000s,K. S. Ravikumar,Kamal Haasan,male,6.8,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,True,False
+enthiran_2010,Enthiran,2010,tamil,2010s,Shankar,Rajinikanth,male,7.0,True,True,True,True,True,False,False,False,True,False,False,True,False,False,False,False,True,True
+vinnaithaandi_2010,Vinnaithaandi Varuvaayaa,2010,tamil,2000s,Gautham Menon,Simbu,male,7.7,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+singam_2010,Singam,2010,tamil,2010s,Hari,Suriya,male,7.4,True,True,False,True,True,False,False,False,False,False,False,True,False,False,False,False,False,False
+tt1705772,Mankatha,2011,tamil,2010s,Venkat Prabhu,,male,7.7,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+aadukalam_2011,Aadukalam,2011,tamil,2010s,Vetrimaaran,Dhanush,male,8.2,True,False,True,True,True,False,True,False,False,False,False,False,False,True,False,False,False,False
+thuppakki_2012,Thuppakki,2012,tamil,2010s,A. R. Murugadoss,Vijay,male,8.3,True,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt2258337,Eega,2012,tamil,2010s,S. S. Rajamouli,,male,7.7,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False
+tt2180477,Nanban,2012,tamil,2010s,S. Shankar,,male,7.8,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+3_2012,3,2012,tamil,2010s,Aishwarya R. Dhanush,Dhanush,male,7.6,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt3801314,Kaththi,2014,tamil,2010s,A. R. Murugadoss,,male,8.1,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2678948,Jilla,2014,tamil,2010s,R. T. Neason,,male,6.2,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt2302966,I,2015,tamil,2010s,S. Shankar,,male,7.4,True,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt4987556,Thani Oruvan,2015,tamil,2010s,M. Raja,,male,8.4,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt4991384,Visaranai,2015,tamil,2010s,Vetrimaaran,,male,8.4,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+vedalam_2015,Vedalam,2015,tamil,2010s,Siva,Ajith Kumar,male,6.9,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt4981966,24,2016,tamil,2010s,Vikram Kumar,,male,7.9,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt5440700,Theri,2016,tamil,2010s,Atlee,,male,7.4,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6380520,Dhuruvangal Pathinaaru,2016,tamil,2010s,Karthick Naren,,male,8.2,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt5071886,Kabali,2016,tamil,2010s,Pa Ranjith,,male,6.1,False,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt5867800,Aruvi,2016,tamil,2010s,Arun Prabu Purushothaman,,male,8.3,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+vikram_vedha_2017,Vikram Vedha,2017,tamil,2010s,Pushkar-Gayathri,Vijay Sethupathi,male,8.4,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+mersal_2017,Mersal,2017,tamil,2010s,Atlee,Vijay,male,7.6,True,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+tt7019842,'96,2017,tamil,2010s,C. Prem Kumar,,male,8.5,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7060460,Theeran Athikaram Ondru,2017,tamil,2010s,H. Vinoth,,male,8.2,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7738784,Peranbu,2017,tamil,2010s,Ram,,male,8.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt6878378,Vivegam,2017,tamil,2010s,Siva,,male,6.1,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+96_2018,96,2018,tamil,2010s,C. Prem Kumar,Vijay Sethupathi,male,8.5,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+pariyerum_perumal_2018,Pariyerum Perumal,2018,tamil,2010s,Mari Selvaraj,Kathir,male,8.5,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+tt5080556,2.0,2018,tamil,2010s,S. Shankar,,male,6.0,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt5959980,Vada Chennai,2018,tamil,2010s,Vetrimaaran,,male,8.4,True,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt7715202,Sarkar,2018,tamil,2010s,A. R. Murugadoss,,male,6.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7019942,Super Deluxe,2018,tamil,2010s,Thiagarajan Kumararaja,,male,8.2,False,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+super_deluxe_2019,Super Deluxe,2019,tamil,2010s,Thiagarajan Kumararaja,Vijay Sethupathi,ensemble,8.4,False,True,False,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False
+tt9900782,Kaithi,2019,tamil,2010s,Lokesh Kanagaraj,,male,8.4,True,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt9477520,Asuran,2019,tamil,2010s,Vetrimaaran,,male,8.4,False,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,False
+tt9260636,Bigil,2019,tamil,2010s,Atlee,,male,6.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7725626,Viswasam,2019,tamil,2010s,Siva,,male,7.1,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+soorarai_pottru_2020,Soorarai Pottru,2020,tamil,2020s,Sudha Kongara,Suriya,male,8.7,False,True,True,True,True,False,True,False,False,True,True,False,False,False,False,False,False,False
+master_2021,Master,2021,tamil,2020s,Lokesh Kanagaraj,Vijay,male,7.7,True,True,False,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+karnan_2021,Karnan,2021,tamil,2020s,Mari Selvaraj,Dhanush,male,8.5,True,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+tt15097216,Jai Bhim,2021,tamil,2020s,T. J. Gnanavel,,male,8.6,False,False,False,True,True,False,False,True,False,False,False,False,False,False,False,False,False,True
+vikram_2022,Vikram,2022,tamil,2020s,Lokesh Kanagaraj,Kamal Haasan,male,8.4,True,False,False,True,True,True,False,True,False,False,False,True,False,False,False,False,False,True
+tt11301946,Beast,2022,tamil,2020s,Nelson Dilipkumar,,male,5.2,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt10701074,Ponniyin Selvan: I,2022,tamil,2020s,Mani Ratnam,,male,7.5,True,False,False,True,True,False,False,False,False,False,False,False,False,False,True,False,False,False
+tt11497716,The Legend,2022,tamil,2020s,J.D.,,male,4.5,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt10806040,Valimai,2022,tamil,2020s,H. Vinoth,,male,6.0,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt22488728,Love Today,2022,tamil,2020s,Pradeep Ranganathan,,male,8.0,False,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+ponniyin_selvan_1_2022,Ponniyin Selvan: Part 1,2022,tamil,2020s,Mani Ratnam,Vikram,male,7.3,True,False,True,True,True,True,False,False,False,False,False,True,False,False,True,False,False,False
+tt15654328,Leo,2023,tamil,2020s,Lokesh Kanagaraj,,male,7.2,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt11663228,Jailer,2023,tamil,2020s,Nelson Dilipkumar,,male,7.2,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt11998558,Varisu,2023,tamil,2020s,Vamsi Paidipally,,male,5.9,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt22444570,Ponniyin Selvan: II,2023,tamil,2020s,Mani Ratnam,,male,7.2,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt26548265,Maharaja,2024,tamil,2020s,Nithilan Saminathan,,male,8.3,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt26758372,Meiyazhagan,2024,tamil,2020s,C. Prem Kumar,,male,8.5,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt8066940,Indian 2,2024,tamil,2020s,S. Shankar,,male,3.8,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+khaidi_1983,Khaidi,1983,telugu,classic,A. Kodandarami Reddy,Chiranjeevi,male,7.2,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+jagadeka_veerudu_1990,Jagadeka Veerudu Atiloka Sundari,1990,telugu,classic,S. V. Krishna Reddy,Chiranjeevi,male,7.4,True,True,True,True,True,False,False,False,True,False,False,False,False,False,False,False,True,False
+gharana_mogudu_1992,Gharana Mogudu,1992,telugu,90s,K. Raghavendra Rao,Chiranjeevi,male,7.3,True,True,True,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False
+premikudu_1994,Premikudu,1994,telugu,90s,Raghavendra Rao,Venkatesh,male,7.1,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+coolie_no1_telugu_1995,Coolie No. 1,1995,telugu,90s,V. V. Vinayak,Venkatesh,male,6.8,False,True,True,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+thammudu_1997,Thammudu,1997,telugu,90s,Puri Jagannadh,Pawan Kalyan,male,7.2,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tholi_prema_1998,Tholi Prema,1998,telugu,90s,Karunakaran,Pawan Kalyan,male,7.8,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+kushi_2001,Kushi,2001,telugu,2000s,S. J. Suresh,Pawan Kalyan,male,7.4,False,True,True,True,False,False,False,False,True,False,False,False,True,False,False,False,False,False
+student_no1_2001,Student No. 1,2001,telugu,2000s,S. S. Rajamouli,Jr. NTR,male,7.3,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+idiot_2002,Idiot,2002,telugu,2000s,Puri Jagannadh,Ravi Teja,male,7.3,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+okkadu_2003,Okkadu,2003,telugu,2000s,Gunasekhar,Mahesh Babu,male,7.5,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+simhadri_2003,Simhadri,2003,telugu,2000s,S. S. Rajamouli,Jr. NTR,male,7.6,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+arya_2004,Arya,2004,telugu,2000s,Sukumar,Allu Arjun,male,7.5,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt0471571,Athadu,2005,telugu,2000s,Trivikram Srinivas,,male,8.2,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+nuvvostanante_nenoddantana_2005,Nuvvostanante Nenoddantana,2005,telugu,2000s,Prabhu Deva,Siddharth,male,7.6,False,True,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+bunny_2005,Bunny,2005,telugu,2000s,Devaraj Mohan,Allu Arjun,male,6.8,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+chatrapathi_2005,Chatrapathi,2005,telugu,2000s,S. S. Rajamouli,Prabhas,male,7.5,True,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+tt0816258,Pokiri,2006,telugu,2000s,Puri Jagannadh,,male,8.0,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+bommarillu_2006,Bommarillu,2006,telugu,2000s,Sukumar,Siddharth,male,8.0,False,True,True,True,False,False,True,False,True,False,False,False,False,False,False,False,False,False
+happy_days_2007,Happy Days,2007,telugu,2000s,Sekhar Kammula,Varun Sandesh,male,8.0,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+jalsa_2008,Jalsa,2008,telugu,2000s,Trivikram Srinivas,Pawan Kalyan,male,7.4,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt1447500,Magadheera,2009,telugu,2000s,S. S. Rajamouli,,male,7.7,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False
+brindavanam_2010,Brindavanam,2010,telugu,2010s,Vasu Varma,Jr. NTR,male,7.1,True,True,True,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False
+tt1756476,Dookudu,2011,telugu,2010s,Srinu Vaitla,,male,7.4,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+julayi_2012,Julayi,2012,telugu,2010s,Trivikram Srinivas,Allu Arjun,male,7.2,True,True,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+attarintiki_daredi_2013,Attarintiki Daredi,2013,telugu,2010s,Trivikram Srinivas,Pawan Kalyan,male,7.7,False,True,True,True,False,False,False,False,True,False,False,False,False,False,False,False,False,False
+tt2375559,1: Nenokkadine,2014,telugu,2010s,Sukumar,,male,7.9,True,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+race_gurram_2014,Race Gurram,2014,telugu,2010s,Surender Reddy,Allu Arjun,male,7.3,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+bahubali_1_2015,Baahubali: The Beginning,2015,telugu,2010s,S. S. Rajamouli,Prabhas,male,8.0,True,False,True,True,True,False,False,False,True,False,False,True,False,False,True,False,False,True
+srimanthudu_2015,Srimanthudu,2015,telugu,2010s,Koratala Siva,Mahesh Babu,male,7.6,True,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+son_of_satyamurthy_2015,S/O Satyamurthy,2015,telugu,2010s,Trivikram Srinivas,Allu Arjun,male,7.5,False,True,True,True,False,False,True,False,True,False,False,False,False,False,False,False,False,False
+nannaku_prematho_2016,Nannaku Prematho,2016,telugu,2010s,Sukumar,Jr. NTR,male,7.5,True,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+janatha_garage_2016,Janatha Garage,2016,telugu,2010s,Koratala Siva,Jr. NTR,male,7.3,True,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+bahubali_2_2017,Baahubali 2: The Conclusion,2017,telugu,2010s,S. S. Rajamouli,Prabhas,male,8.2,True,False,True,True,True,False,False,False,True,False,False,True,False,False,True,False,False,True
+arjun_reddy_2017,Arjun Reddy,2017,telugu,2010s,Sandeep Reddy Vanga,Vijay Deverakonda,male,8.0,False,False,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False
+fidaa_2017,Fidaa,2017,telugu,2010s,Sekhar Kammula,Sai Pallavi,female,7.9,False,True,True,True,False,False,True,False,True,False,False,False,False,False,False,False,False,False
+dj_duvvada_2017,DJ: Duvvada Jagannadham,2017,telugu,2010s,Harish Shankar,Allu Arjun,male,6.9,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7392212,Rangasthalam,2018,telugu,2010s,Sukumar,,male,8.2,True,False,False,True,True,False,False,True,False,False,False,False,False,False,True,False,False,False
+tt6980546,Bharat Ane Nenu,2018,telugu,2010s,Koratala Siva,,male,7.4,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt8590896,Geetha Govindam,2018,telugu,2010s,Parasuram,,male,7.7,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt7465992,Mahanati,2018,telugu,2010s,Nag Ashwin,,male,8.4,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+agnyaathavaasi_2018,Agnyaathavaasi,2018,telugu,2010s,Trivikram Srinivas,Pawan Kalyan,male,5.6,True,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+jersey_2019,Jersey,2019,telugu,2010s,Gowtam Tinnanuri,Nani,male,8.6,False,False,True,True,False,False,False,False,True,False,False,False,False,True,False,False,False,False
+tt6836936,Saaho,2019,telugu,2010s,ARUN NAYAK AK,,male,5.1,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt10214826,Agent Sai Srinivasa Athreya,2019,telugu,2010s,,,male,8.3,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+maharshi_2019,Maharshi,2019,telugu,2010s,Vamshi Paidipally,Mahesh Babu,male,7.1,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+ala_vaikunthapurramuloo_2020,Ala Vaikunthapurramuloo,2020,telugu,2020s,Trivikram Srinivas,Allu Arjun,male,7.7,True,True,True,True,True,False,False,False,True,False,False,False,False,False,False,False,False,False
+bheeshma_2020,Bheeshma,2020,telugu,2020s,Venkat Kudumula,Nithiin,male,6.9,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+pushpa_2021,Pushpa: The Rise,2021,telugu,2020s,Sukumar,Allu Arjun,male,7.6,True,True,True,True,True,False,False,True,False,False,False,True,False,False,False,False,False,True
+tt10152736,Thalaivi,2021,telugu,2020s,A. L. Vijay,,male,5.9,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt13349716,Shyam Singha Roy,2021,telugu,2020s,,,male,7.6,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+uppena_2021,Uppena,2021,telugu,2020s,Bucchi Babu Sana,Panja Vaisshnav Tej,male,7.6,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False,False
+vakeel_saab_2021,Vakeel Saab,2021,telugu,2020s,Venu Sriram,Pawan Kalyan,male,7.2,False,False,False,True,True,True,True,True,False,False,False,False,True,False,False,False,False,False
+krack_2021,Krack,2021,telugu,2020s,Gopichand Malineni,Ravi Teja,male,7.3,True,True,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+rrr_2022,RRR,2022,telugu,2020s,S. S. Rajamouli,Ram Charan,male,7.9,True,False,False,True,True,False,True,False,False,False,False,False,False,False,True,False,False,True
+tt20850406,Sita Ramam,2022,telugu,2020s,Hanu Raghavapudi,,male,8.5,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+virata_parvam_2022,Virata Parvam,2022,telugu,2020s,Venu Udugula,Rana Daggubati,male,7.3,False,False,True,True,True,False,True,True,False,True,False,False,False,False,True,False,False,False
+tt13927994,Salaar,2023,telugu,2020s,Prashanth Neel,,male,6.7,True,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt25433734,Hi Nanna,2023,telugu,2020s,Shouryuv,,male,8.3,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+waltair_veerayya_2023,Waltair Veerayya,2023,telugu,2020s,Bobby Kolli,Chiranjeevi,male,6.4,True,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False
+tt16539454,Pushpa 2: The Rule,2024,telugu,2020s,Sukumar,,male,6.0,False,False,False,True,True,True,False,True,False,False,False,False,False,False,False,False,False,False
+tt27540542,Lucky Baskhar,2024,telugu,2020s,Venky Atluri,,male,8.0,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False
+tt15433956,Hanu Man,2024,telugu,2020s,Prasanth Varma,,male,7.7,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False

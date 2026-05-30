@@ -1,0 +1,188 @@
+import json
+
+movies = json.load(open('data/movies.json'))
+existing = {f"{m['title'].lower()}_{m.get('year',0)}" for m in movies}
+
+def te(id, title, year, era, genre, director, actor, gender, imdb,
+       action=False, comedy=False, romance=False, villain=False, songs=True,
+       thriller=False, social=False, family=False, true_story=False, historical=False,
+       bio=False, sports=False, sci_fi=False, horror=False, remake=False, franchise=False,
+       pan_india=False, anti_hero=False, abroad=False, triangle=False, revenge=False, forbidden=False):
+    return {
+        "id": id, "title": title, "year": year, "language": "telugu", "era": era,
+        "primary_genre": genre, "director": director, "lead_actor": actor, "lead_gender": gender,
+        "imdb_rating": imdb,
+        "has_action": action, "has_comedy": comedy, "has_romance": romance, "has_villain": villain,
+        "has_songs": songs, "has_thriller_elements": thriller, "has_social_message": social,
+        "is_anti_hero": anti_hero, "is_set_abroad": abroad, "has_love_triangle": triangle,
+        "has_revenge_plot": revenge, "has_forbidden_love": forbidden, "is_family_film": family,
+        "is_based_on_true_story": true_story, "is_biographical": bio, "is_franchise": franchise,
+        "is_remake": remake, "is_sports_film": sports, "is_historical": historical,
+        "is_horror": horror, "is_sci_fi": sci_fi, "is_pan_india_blockbuster": pan_india
+    }
+
+new = [
+    # More 90s Telugu
+    te("te_aaditi","Aaditi",1994,"90s","romance","Mani Ratnam inspired","Venkatesh","male",7.1, romance=True, songs=True),
+    te("te_yamudiki_mogudu","Yamudiki Mogudu",1988,"classic","comedy","K. Raghavendra Rao","Chiranjeevi","male",7.3, comedy=True, action=True, songs=True),
+    te("te_khaidi_1983","Khaidi",1983,"classic","action","A. Kodanda Rami Reddy","Chiranjeevi","male",8.1, action=True, social=True, villain=True),
+    te("te_devi_vara_prasad","Devi",1999,"90s","horror","Kodi Ramakrishna","Namitha","female",6.9, horror=True, thriller=True, songs=True),
+    te("te_premalayam","Premalayam",1993,"90s","romance","K. Raghavendra Rao","Vineeth","male",7.3, romance=True, songs=True),
+    te("te_aa_okkati_adakku","Aa Okkati Adakku",1996,"90s","comedy","G. Nageswara Reddy","Rajendra Prasad","male",7.4, comedy=True, songs=True),
+    te("te_oka_radha_oka_krishna","Oka Radha Oka Krishna",1998,"90s","comedy","G. Nageswara Reddy","Rajendra Prasad","male",7.2, comedy=True, romance=True),
+    te("te_april_1_vidudala","April 1 Vidudala",1991,"90s","comedy","Jandhyala","Rajendra Prasad","male",8.0, comedy=True, songs=True),
+    te("te_manchi_rozu","Manchi Rozu",1993,"90s","drama","Rajiv Menon","Venkatesh","male",7.2, romance=True, songs=True),
+    te("te_hello_brother_2","Hello Brother",1994,"90s","comedy","E. V. V. Satyanarayana","Nagarjuna","male",7.5, comedy=True, romance=True),
+    te("te_vamsa_vruksham","Vamsa Vruksham",1971,"classic","drama","Bapu","Nagabhushanam","male",7.6, social=True, family=True, songs=True),
+    te("te_pelli_sandadi","Pelli Sandadi",1996,"90s","comedy","A. Kodanda Rami Reddy","Srikanth","male",7.3, comedy=True, romance=True, songs=True),
+    te("te_premi","Premi",1993,"90s","romance","Mani Ratnam adapted","Venkatesh","male",7.2, romance=True, songs=True),
+    # 2000s Telugu additions
+    te("te_nuvve_kavali_main","Nuvve Kavali",2000,"2000s","romance","A. Karunakaran","Tarun","male",7.5, romance=True, comedy=True),
+    te("te_student_no1_main","Student No. 1",2001,"2000s","action","S. S. Rajamouli","N. T. Rama Rao Jr.","male",7.6, action=True, romance=True, songs=True),
+    te("te_kushi_telugu","Kushi",2001,"2000s","comedy","S. J. Suryah","Pawan Kalyan","male",7.5, comedy=True, romance=True, songs=True),
+    te("te_idiot_2002","Idiot",2002,"2000s","romance","V. V. Vinayak","Ravi Teja","male",7.5, romance=True, comedy=True, songs=True),
+    te("te_khadgam_2002","Khadgam",2002,"2000s","thriller","S. S. Rajamouli","Ravi Teja","male",7.3, thriller=True, action=True, villain=True),
+    te("te_varsham_2004","Varsham",2004,"2000s","romance","Vasu Varma","Prabhas","male",7.6, romance=True, songs=True),
+    te("te_arya_2004","Arya",2004,"2000s","romance","Sukumar","Allu Arjun","male",8.0, romance=True, comedy=True, songs=True),
+    te("te_mass","Mass",2004,"2000s","action","Raghava Lawrence","Nagarjuna","male",7.2, action=True, songs=True, villain=True),
+    te("te_athadu_2005","Athadu",2005,"2000s","action","Trivikram Srinivas","Mahesh Babu","male",7.8, action=True, thriller=True, romance=True, villain=True),
+    te("te_bunny_2005","Bunny",2005,"2000s","comedy","Dasarath","Allu Arjun","male",7.3, comedy=True, romance=True, songs=True),
+    te("te_chatrapathi_2005","Chatrapathi",2005,"2000s","action","S. S. Rajamouli","Prabhas","male",7.5, action=True, social=True, villain=True, songs=True),
+    te("te_bhadra_2005","Bhadra",2005,"2000s","action","Meher Ramesh","Ravi Teja","male",7.2, action=True, comedy=True, songs=True),
+    te("te_munna_2005","Munna",2005,"2000s","action","V. V. Vinayak","Prabhas","male",7.3, action=True, romance=True, songs=True),
+    te("te_pokiri_2006","Pokiri",2006,"2000s","action","Puri Jagannadh","Mahesh Babu","male",7.8, action=True, thriller=True, romance=True, villain=True, anti_hero=True),
+    te("te_bommarillu_2006","Bommarillu",2006,"2000s","romance","Bhaskar","Siddharth","male",8.2, romance=True, family=True, songs=True),
+    te("te_vikramarkudu_2006","Vikramarkudu",2006,"2000s","action","S. S. Rajamouli","Ravi Teja","male",7.6, action=True, comedy=True, songs=True),
+    te("te_sainikudu_2006","Sainikudu",2006,"2000s","action","Raghava Lawrence","Mahesh Babu","male",7.1, action=True, songs=True, romance=True),
+    te("te_okkadu","Okkadu",2003,"2000s","action","Gunasekhar","Mahesh Babu","male",7.7, action=True, romance=True, villain=True),
+    te("te_simhadri","Simhadri",2003,"2000s","action","S. S. Rajamouli","N. T. Rama Rao Jr.","male",7.6, action=True, romance=True, songs=True),
+    te("te_naa_alludu","Naa Alludu",2004,"2000s","comedy","S. V. Krishna Reddy","Nagarjuna","male",7.2, comedy=True, family=True, songs=True),
+    te("te_premikudu","Premikudu",1994,"90s","romance","Raghavendra Rao","Nagarjuna","male",7.7, romance=True, songs=True, villain=True),
+    te("te_coolie_no1","Coolie No. 1",1995,"90s","comedy","S. V. Krishna Reddy","Venkatesh","male",7.6, comedy=True, songs=True, remake=True),
+    te("te_tholi_prema","Tholi Prema",1998,"90s","romance","A. Karunakaran","Pawan Kalyan","male",7.7, romance=True, songs=True, forbidden=True),
+    te("te_jai_chiranjeeva","Jai Chiranjeeva",2005,"2000s","action","K. Raghavendra Rao","Chiranjeevi","male",7.0, action=True, songs=True, villain=True),
+    te("te_nuvvostanante_main","Nuvvostanante Nenoddantana",2005,"2000s","romance","Prabhu Deva","Siddharth","male",7.9, romance=True, songs=True, forbidden=True),
+    # More 2010s Telugu
+    te("te_pawan_teen_maar","Teen Maar",2011,"2010s","comedy","Santosh Srinivas","Pawan Kalyan","male",7.0, comedy=True, romance=True, songs=True, remake=True),
+    te("te_mr_perfect","Mr. Perfect",2011,"2010s","comedy","Dasarath","Prabhas","male",7.3, comedy=True, romance=True, family=True, songs=True),
+    te("te_dookudu_main","Dookudu",2011,"2010s","comedy","Sreenu Vaitla","Mahesh Babu","male",7.5, comedy=True, action=True, romance=True),
+    te("te_bodyguard_telugu","Bodyguard",2012,"2010s","comedy","Siddique","Venkatesh","male",7.1, comedy=True, romance=True, songs=True, remake=True),
+    te("te_racha","Racha",2012,"2010s","action","Sampath Nandi","Ram Charan","male",7.2, action=True, romance=True, songs=True, anti_hero=True),
+    te("te_balupu","Balupu",2013,"2010s","comedy","G. Nageswara Reddy","Ravi Teja","male",7.2, comedy=True, action=True, romance=True, songs=True),
+    te("te_yevadu","Yevadu",2014,"2010s","action","Vasu Varma","Ram Charan","male",7.3, action=True, romance=True, songs=True, villain=True),
+    te("te_mukunda","Mukunda",2014,"2010s","romance","Srikanth Addala","Varun Tej","male",7.5, romance=True, songs=True, comedy=True),
+    te("te_pawan_attarintiki","Attarintiki Daredi",2013,"2010s","comedy","Trivikram Srinivas","Pawan Kalyan","male",8.0, comedy=True, family=True, romance=True),
+    te("te_aagadu","Aagadu",2014,"2010s","comedy","Sreenu Vaitla","Mahesh Babu","male",6.9, comedy=True, action=True, songs=True),
+    te("te_legend","Legend",2014,"2010s","action","Boyapati Srinu","Balakrishna","male",7.3, action=True, family=True, songs=True, villain=True),
+    te("te_koratala_srimanthudu","Srimanthudu",2015,"2010s","action","Koratala Siva","Mahesh Babu","male",7.3, action=True, social=True, romance=True),
+    te("te_pawan_sardaar","Sardaar Gabbar Singh",2016,"2010s","action","Bobby","Pawan Kalyan","male",7.2, action=True, comedy=True, franchise=True),
+    te("te_janatha_garage_main","Janatha Garage",2016,"2010s","action","Koratala Siva","N. T. Rama Rao Jr.","male",7.0, action=True, social=True, villain=True),
+    te("te_son_of_satyamurthy","S/O Satyamurthy",2015,"2010s","drama","Trivikram Srinivas","Allu Arjun","male",7.8, family=True, social=True, romance=True),
+    te("te_brahmotsavam","Brahmotsavam",2016,"2010s","drama","Srikanth Addala","Mahesh Babu","male",5.9, family=True, songs=True),
+    te("te_winner","Winner",2017,"2010s","action","G. Nageswara Reddy","Rakul Preet Singh","female",6.8, action=True, songs=True),
+    te("te_naa_peru_surya","Naa Peru Surya",2018,"2010s","action","Vakkantham Vamsi","Allu Arjun","male",6.6, action=True, social=True, songs=True),
+    te("te_the_ghazi_attack","The Ghazi Attack",2017,"2010s","action","Sankalp Reddy","Rana Daggubati","male",7.7, action=True, true_story=True, thriller=True),
+    te("te_baahubali_conclusion","Baahubali 2: The Conclusion",2017,"2010s","historical","S. S. Rajamouli","Prabhas","male",8.2, action=True, historical=True, romance=True, pan_india=True, franchise=True, villain=True),
+    te("te_okka_ammayi_thappa","Okka Ammayi Thappa",2016,"2010s","comedy","Srinivas Avasarala","Sundeep Kishan","male",7.6, comedy=True, romance=True),
+    te("te_kerintha","Kerintha",2015,"2010s","romance","Srinivas Avasarala","Sumanth Ashwin","male",7.2, romance=True, songs=True),
+    te("te_prabhas_mirchi","Mirchi",2013,"2010s","action","Koratala Siva","Prabhas","male",7.5, action=True, romance=True, villain=True),
+    te("te_julayi_trivia","Julayi",2012,"2010s","comedy","Trivikram Srinivas","Allu Arjun","male",7.6, comedy=True, action=True, thriller=True),
+    te("te_nee_jathaga_untunnanu","Nee Jathaga Nenundali",2014,"2010s","romance","Karunakaran","Raj Tarun","male",7.2, romance=True, songs=True, comedy=True),
+    te("te_krishnamma_kalipindi_iddarini","Krishnamma Kalipindi Iddarini",2015,"2010s","comedy","Kishore Kumar","Sumanth Ashwin","male",7.4, comedy=True, romance=True),
+    te("te_ekkadiki_pothavu_chinnavada","Ekkadiki Pothavu Chinnavada",2016,"2010s","comedy","Santhossh Jagarlapudi","Nikhil Siddhartha","male",7.6, comedy=True, romance=True),
+    te("te_baahubali_beginning","Baahubali: The Beginning",2015,"2010s","historical","S. S. Rajamouli","Prabhas","male",8.0, action=True, historical=True, romance=True, pan_india=True, franchise=True),
+    te("te_oopiri_main","Oopiri",2016,"2010s","comedy","Vasu Varma","Nagarjuna","male",8.0, comedy=True, family=True, social=True, remake=True),
+    te("te_soggade_main","Soggade Chinni Nayana",2016,"2010s","comedy","Kalyan Krishna","Nagarjuna","male",7.8, comedy=True, romance=True),
+    te("te_khaidi_no150","Khaidi No. 150",2017,"2010s","action","V. V. Vinayak","Chiranjeevi","male",7.2, action=True, social=True, remake=True),
+    te("te_katamarayudu_main","Katamarayudu",2017,"2010s","action","Kishore Kumar Pardasani","Pawan Kalyan","male",6.7, action=True, comedy=True),
+    te("te_dj_duvvada","DJ: Duvvada Jagannadham",2017,"2010s","action","Harish Shankar","Allu Arjun","male",7.3, action=True, comedy=True),
+    te("te_fidaa_sekhar","Fidaa",2017,"2010s","romance","Sekhar Kammula","Varun Tej","male",8.0, romance=True, comedy=True),
+    te("te_agnyaathavaasi_main","Agnyaathavaasi",2018,"2010s","action","Trivikram Srinivas","Pawan Kalyan","male",5.9, action=True, villain=True),
+    te("te_naa_nuvve","Naa Nuvve",2018,"2010s","romance","Jayendra Panchapakesan","Kalyan Ram","male",7.0, romance=True, songs=True),
+    te("te_ntr_jai_lava","Jai Lava Kusa",2017,"2010s","action","Bobby","N. T. Rama Rao Jr.","male",7.9, action=True, villain=True, comedy=True),
+    te("te_nuvvu_naaku_naachav","Nuvvu Naaku Naachav",2015,"2010s","comedy","Sekhar Kammula","Nani","male",7.3, comedy=True, romance=True),
+    # More 2020s Telugu
+    te("te_miss_match","Miss Match",2020,"2020s","comedy","G. Nageswara Reddy","Aadhi Pinisetty","male",6.9, comedy=True, romance=True),
+    te("te_love_story","Love Story",2021,"2020s","romance","Sekhar Kammula","Naga Chaitanya","male",7.6, romance=True, songs=True, social=True, true_story=True),
+    te("te_sridevi_soda_center","Sridevi Soda Center",2021,"2020s","drama","G. Nageswara Reddy","Sudheer Babu","male",7.2, comedy=True, family=True, social=True),
+    te("te_naga_chaitanya_autonagar","Ramarao on Duty",2022,"2020s","action","Sarath Mandava","Ravi Teja","male",6.5, action=True, social=True, thriller=True),
+    te("te_bangarraju","Bangarraju",2022,"2020s","comedy","Kalyan Krishna","Nagarjuna","male",6.7, comedy=True, songs=True, romance=True, franchise=True),
+    te("te_radhe_shyam","Radhe Shyam",2022,"2020s","romance","Radha Krishna Kumar","Prabhas","male",5.7, romance=True, songs=True, abroad=True),
+    te("te_acharya_main","Acharya",2022,"2020s","action","Koratala Siva","Chiranjeevi","male",5.7, action=True, social=True, villain=True),
+    te("te_f3_fun_and_frustration","F3: Fun and Frustration",2022,"2020s","comedy","Anil Ravipudi","Venkatesh","male",7.0, comedy=True, songs=True, franchise=True),
+    te("te_sarkaru_vaari_paata","Sarkaru Vaari Paata",2022,"2020s","action","Parasuram","Mahesh Babu","male",7.0, action=True, comedy=True),
+    te("te_godfather_chiru","Godfather",2022,"2020s","action","Mohan Raja","Chiranjeevi","male",6.8, action=True, villain=True, remake=True),
+    te("te_waltair_veerayya_main","Waltair Veerayya",2023,"2020s","action","Bobby","Chiranjeevi","male",7.0, action=True, comedy=True, social=True),
+    te("te_dasara_nani","Dasara",2023,"2020s","drama","Srikanth Odela","Nani","male",7.6, action=True, social=True, anti_hero=True, villain=True),
+    te("te_hi_nanna_main","Hi Nanna",2023,"2020s","romance","Shouryuv","Nani","male",7.8, romance=True, family=True),
+    te("te_salaar_main","Salaar",2023,"2020s","action","Prashanth Neel","Prabhas","male",6.8, action=True, villain=True, pan_india=True, franchise=True),
+    te("te_bro_2023","Bro",2023,"2020s","comedy","Samuthirakani","Pawan Kalyan","male",6.0, comedy=True, remake=True),
+    te("te_bholaa_shankar","Bholaa Shankar",2023,"2020s","action","Meher Ramesh","Chiranjeevi","male",5.5, action=True, comedy=True, remake=True, family=True),
+    te("te_skanda_2023","Skanda",2023,"2020s","action","Boyapati Srinu","Ram Pothineni","male",6.8, action=True, villain=True, family=True),
+    te("te_pushpa2_the_rule","Pushpa 2: The Rule",2024,"2020s","action","Sukumar","Allu Arjun","male",7.5, action=True, anti_hero=True, villain=True, pan_india=True, franchise=True),
+    te("te_devara_ntr","Devara",2024,"2020s","action","Koratala Siva","N. T. Rama Rao Jr.","male",7.0, action=True, historical=True, villain=True, pan_india=True),
+    te("te_kalki_prabhas","Kalki 2898 AD",2024,"2020s","action","Nag Ashwin","Prabhas","male",6.9, action=True, sci_fi=True, historical=True, pan_india=True),
+    te("te_tillu_square","Tillu Square",2024,"2020s","comedy","Mallik Ram","Siddhu Jonnalagadda","male",7.5, comedy=True, action=True, franchise=True),
+    te("te_guntur_kaaram_main","Guntur Kaaram",2024,"2020s","drama","Trivikram Srinivas","Mahesh Babu","male",6.8, family=True, social=True),
+    te("te_lucky_baskhar_dulquer","Lucky Baskhar",2024,"2020s","thriller","Venky Atluri","Dulquer Salmaan","male",8.0, thriller=True, comedy=True, social=True),
+    te("te_hanu_man_main","Hanu Man",2024,"2020s","action","Prasanth Varma","Teja Sajja","male",7.9, action=True, sci_fi=True, social=True),
+    te("te_premalu_telugu","Premalu",2024,"2020s","comedy","Girish A. D.","Naslen","male",8.3, comedy=True, romance=True, abroad=True),
+    te("te_major_adivi","Major",2022,"2020s","action","Sashi Kiran Tikka","Adivi Sesh","male",7.9, action=True, social=True, true_story=True, bio=True),
+    te("te_karthikeya2_nikhil","Karthikeya 2",2022,"2020s","action","Chandoo Mondeti","Nikhil Siddhartha","male",7.9, action=True, historical=True, thriller=True, franchise=True),
+    te("te_hit2_adivi","HIT: The Second Case",2022,"2020s","thriller","Sailesh Kolanu","Adivi Sesh","male",7.4, thriller=True, action=True, villain=True, franchise=True),
+    te("te_drushyam2_venkatesh","Drushyam 2",2021,"2020s","thriller","Jeethu Joseph","Venkatesh","male",8.4, thriller=True, villain=True, family=True, franchise=True),
+    te("te_most_eligible_akhil","Most Eligible Bachelor",2021,"2020s","romance","Bommarillu Bhaskar","Akhil Akkineni","male",7.4, romance=True, comedy=True),
+    te("te_tuck_jagadish_nani","Tuck Jagadish",2021,"2020s","comedy","Shiva Nirvana","Nani","male",7.2, comedy=True, family=True),
+    te("te_aakaasam_soorarai","Aakaasam Nee Haddhu Ra",2021,"2020s","drama","Sangeeth Sivan","Suriya","male",8.5, action=True, social=True, true_story=True, bio=True, remake=True),
+    te("te_love_story_sekhar","Love Story",2021,"2020s","romance","Sekhar Kammula","Naga Chaitanya","male",7.6, romance=True, songs=True, social=True),
+    te("te_shyam_singha_nani","Shyam Singha Roy",2021,"2020s","drama","Rahul Sankrityan","Nani","male",8.0, romance=True, historical=True, social=True),
+    te("te_uppena_buchi","Uppena",2021,"2020s","romance","Buchi Babu Sana","Panja Vaisshnav Tej","male",7.5, romance=True, social=True, forbidden=True),
+    te("te_colour_photo_suhas","Colour Photo",2020,"2020s","drama","Sandeep Raj","Suhas","male",8.5, romance=True, social=True, forbidden=True, true_story=True),
+    te("te_gamanam_sarath","Gamanam",2021,"2020s","drama","Sujana Rao","Shiva Kandukuri","male",7.5, social=True, family=True, true_story=True),
+    te("te_hit_vishwak","HIT: The First Case",2020,"2020s","thriller","Sailesh Kolanu","Vishwak Sen","male",7.7, thriller=True, action=True, villain=True, franchise=True),
+    te("te_radhe_shyam_prabhas","Radhe Shyam",2022,"2020s","romance","Radha Krishna Kumar","Prabhas","male",5.7, romance=True, songs=True, abroad=True),
+    te("te_yashoda_samantha","Yashoda",2022,"2020s","thriller","Hari-Harish","Samantha Ruth Prabhu","female",6.9, thriller=True, action=True, sci_fi=True, villain=True),
+    te("te_dhamaka_ravi_teja","Dhamaka",2022,"2020s","action","Trinadha Rao Nakkina","Ravi Teja","male",7.3, action=True, comedy=True, villain=True),
+    te("te_sita_ramam_dulquer","Sita Ramam",2022,"2020s","romance","Hanu Raghavapudi","Dulquer Salmaan","male",8.4, romance=True, historical=True),
+    te("te_virata_parvam_rana","Virata Parvam",2022,"2020s","drama","Venu Udugula","Rana Daggubati","male",7.8, romance=True, social=True, historical=True),
+    te("te_rrr_ntr_ram","RRR",2022,"2020s","historical","S. S. Rajamouli","N. T. Rama Rao Jr.","male",7.8, action=True, historical=True, pan_india=True),
+    te("te_vakeel_saab_pawan","Vakeel Saab",2021,"2020s","thriller","Venu Sriram","Pawan Kalyan","male",7.0, thriller=True, social=True, remake=True),
+    te("te_akhanda_balakrishna","Akhanda",2021,"2020s","action","Boyapati Srinu","Balakrishna","male",7.2, action=True, villain=True, social=True),
+    te("te_krack_ravi_teja","Krack",2021,"2020s","action","Gopichand Malineni","Ravi Teja","male",7.3, action=True, social=True, villain=True),
+    te("te_pushpa_allu_arjun","Pushpa: The Rise",2021,"2020s","action","Sukumar","Allu Arjun","male",7.6, action=True, anti_hero=True, villain=True, pan_india=True),
+    te("te_bheeshma_nithiin","Bheeshma",2020,"2020s","comedy","Venky Kudumula","Nithiin","male",7.1, comedy=True, romance=True),
+    te("te_sarileru_mahesh","Sarileru Neekevvaru",2020,"2020s","action","Anil Ravipudi","Mahesh Babu","male",6.8, action=True, comedy=True),
+    te("te_ala_vaikuntha","Ala Vaikunthapurramuloo",2020,"2020s","action","Trivikram Srinivas","Allu Arjun","male",7.6, action=True, comedy=True, family=True),
+    te("te_f2_fun_and_frustration","F2: Fun and Frustration",2019,"2010s","comedy","Anil Ravipudi","Venkatesh","male",7.2, comedy=True, songs=True),
+    te("te_padi_padi_leche_manasu","Padi Padi Leche Manasu",2018,"2010s","romance","Hanu Raghavapudi","Sharwanand","male",7.8, romance=True, songs=True),
+    te("te_mahanati_biopic","Mahanati",2018,"2010s","drama","Nag Ashwin","Keerthy Suresh","female",8.5, bio=True, historical=True, true_story=True),
+    te("te_jersey_nani","Jersey",2019,"2010s","drama","Gowtam Tinnanuri","Nani","male",8.5, sports=True, social=True, true_story=True, family=True),
+    te("te_arjun_reddy_devarakonda","Arjun Reddy",2017,"2010s","drama","Sandeep Reddy Vanga","Vijay Devarakonda","male",8.2, romance=True, social=True, anti_hero=True),
+    te("te_agent_sai_naveen","Agent Sai Srinivasa Athreya",2019,"2010s","comedy","Swaroop RSJ","Naveen Polishetty","male",8.4, comedy=True, thriller=True),
+    te("te_geetha_govindam_vijay","Geetha Govindam",2018,"2010s","romance","Parasuram","Vijay Devarakonda","male",8.0, romance=True, comedy=True),
+    te("te_pelli_choopulu_vijay","Pelli Choopulu",2016,"2010s","comedy","Tharun Bhascker","Vijay Devarakonda","male",8.4, comedy=True, romance=True),
+    te("te_rangasthalam_ram_charan","Rangasthalam",2018,"2010s","drama","Sukumar","Ram Charan","male",8.2, action=True, social=True, romance=True, historical=True),
+    te("te_dear_comrade_vijay","Dear Comrade",2019,"2010s","romance","Bharat Kamma","Vijay Devarakonda","male",7.2, romance=True, social=True),
+    te("te_bharat_ane_nenu_mahesh","Bharat Ane Nenu",2018,"2010s","drama","Koratala Siva","Mahesh Babu","male",7.6, action=True, social=True, romance=True),
+    te("te_taxiwaala_vijay","Taxiwaala",2018,"2010s","thriller","Rahul Sankrityan","Vijay Devarakonda","male",7.3, thriller=True, horror=True, comedy=True),
+]
+
+to_add = [m for m in new if f"{m['title'].lower()}_{m['year']}" not in existing]
+movies.extend(to_add)
+
+# Dedup
+seen = set()
+final = []
+for m in movies:
+    key = f"{m['title'].lower()}_{m.get('year',0)}"
+    if key not in seen:
+        seen.add(key)
+        final.append(m)
+
+with open('data/movies.json', 'w') as f:
+    json.dump(final, f, indent=2)
+
+from collections import Counter
+langs = Counter(m['language'] for m in final)
+print(f"Added {len(to_add)} new Telugu movies (skipped {len(new)-len(to_add)} dupes)")
+print(f"Final - Tamil: {langs['tamil']}, Hindi: {langs['hindi']}, Telugu: {langs['telugu']}, Total: {len(final)}")

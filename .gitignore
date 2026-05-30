@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+# scratch / caches / backups
+backend/.imdb_cache/
+backend/data/relabel_work/
+backend/data/*.bak
+*.json.bak
