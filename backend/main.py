@@ -228,6 +228,15 @@ def stumped(req: StumpedRequest):
     return {"status": "ok"}
 
 
+@app.get("/admin/stumpers")
+def list_stumpers():
+    """Read-only view of films the genie couldn't guess — your coverage-gap feed."""
+    if not STUMPERS_LOG.exists():
+        return {"count": 0, "entries": []}
+    entries = [json.loads(l) for l in STUMPERS_LOG.read_text().splitlines() if l.strip()]
+    return {"count": len(entries), "entries": list(reversed(entries))}
+
+
 @app.post("/game/feedback")
 def submit_feedback(req: FeedbackRequest):
     session = engine.get_session(req.session_id)
