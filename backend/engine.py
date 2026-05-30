@@ -9,9 +9,10 @@ from questions import QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, 
 MAX_QUESTIONS = 36  # hard ceiling (incl. ~6 auto-answered siblings → ~30 real questions)
 MIN_NON_GROUP_QUESTIONS = 6  # fallback when not all 3 group pickers answered
 MIN_NON_GROUP_AFTER_ALL_PICKERS = 6  # ask at least this many real questions before guessing
-ENDGAME_POOL = 12  # at/under this many candidates, switch to *identifying* questions
-                   # (heroine / actor / director / music director / sub-genre tropes)
-                   # instead of broad 50/50 splitters, which stop helping once narrowed.
+ENDGAME_POOL = 25  # at/under this many candidates, switch to *identifying* questions
+                   # (heroine / actor / director / music director / sub-genre tropes).
+                   # Raised from 12 — classic-era pools stay larger (many similar films)
+                   # and need the actor/director question earlier to break ties.
 
 # Sub-genres folded into the catch-all "Other" theme picker — asked up front to
 # disambiguate it when the user picks Other.
