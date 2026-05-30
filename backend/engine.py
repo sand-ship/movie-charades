@@ -6,7 +6,7 @@ from typing import Optional
 
 from questions import QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS, GENRE_QUESTION_IDS
 
-MAX_QUESTIONS = 30  # hard ceiling (includes auto-answered language/era siblings)
+MAX_QUESTIONS = 36  # hard ceiling (incl. ~6 auto-answered siblings → ~30 real questions)
 MIN_NON_GROUP_QUESTIONS = 6  # fallback when not all 3 group pickers answered
 MIN_NON_GROUP_AFTER_ALL_PICKERS = 6  # ask at least this many real questions before guessing
 ENDGAME_POOL = 12  # at/under this many candidates, switch to *identifying* questions
@@ -15,7 +15,7 @@ ENDGAME_POOL = 12  # at/under this many candidates, switch to *identifying* ques
 
 # Sub-genres folded into the catch-all "Other" theme picker — asked up front to
 # disambiguate it when the user picks Other.
-OTHER_SUBGENRES = {"q_historical", "q_horror", "q_sports", "q_bio", "q_scifi"}
+OTHER_SUBGENRES = {"q_historical", "q_horror", "q_sports", "q_bio"}
 
 # Each mismatched answer scores 0.05x relative to a perfect match (see _score:
 # 0.1 vs 2.0). A cutoff of 0.04 keeps any movie within ONE disagreement of the

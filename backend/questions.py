@@ -122,9 +122,10 @@ QUESTIONS.extend([
     Question("q_genre_romance",  "What is the central theme? (Romance)",    _genre_in("romance")),
     Question("q_genre_drama",    "What is the central theme? (Drama)",      _genre_in("drama", "family")),
     Question("q_genre_thriller", "What is the central theme? (Thriller)",   _genre_in("thriller", "crime", "mystery")),
+    Question("q_genre_scifi",    "What is the central theme? (Sci-Fi / Fantasy)", _genre_in("sci-fi", "fantasy")),
     Question("q_genre_other",    "What is the central theme? (Other)",      _genre_in(
-        "historical", "horror", "sports", "biopic", "biography", "sci-fi",
-        "fantasy", "musical", "social", "western", "war", "adventure", "spy", "tragedy")),
+        "historical", "horror", "sports", "biopic", "biography",
+        "musical", "social", "western", "war", "adventure", "spy", "tragedy")),
 ])
 
 def _attr_true(attr: str) -> Callable[[dict], bool]:
@@ -158,4 +159,5 @@ QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
 LANGUAGE_QUESTION_IDS: set[str] = {'q_hindi', 'q_tamil', 'q_telugu'}
 ERA_QUESTION_IDS: set[str]      = {'q_classic', 'q_90s', 'q_2000s', 'q_2010s', 'q_2020s'}
 GENRE_QUESTION_IDS: set[str]    = {'q_genre_action', 'q_genre_comedy', 'q_genre_romance',
-                                    'q_genre_drama', 'q_genre_thriller', 'q_genre_other'}
+                                    'q_genre_drama', 'q_genre_thriller', 'q_genre_scifi',
+                                    'q_genre_other'}

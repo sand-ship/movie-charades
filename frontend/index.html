@@ -138,6 +138,12 @@
     }
     .stumper-input::placeholder { color: #9a6b6f; }
     .stumper-input:focus { outline: none; border-color: var(--gold); }
+    .btn-submit {
+      flex: unset; width: 100%; max-width: 360px; padding: 15px 24px;
+      background: linear-gradient(135deg, var(--red), var(--gold)); color: #fff;
+      border-radius: 12px; font-size: 1rem; font-weight: 700; letter-spacing: 0.5px;
+      box-shadow: 0 6px 22px rgba(229,9,20,0.4);
+    }
 
     /* ── picker grid ── */
     .picker-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%; }
@@ -249,12 +255,12 @@
       <div class="result-title" id="result-title"></div>
       <div class="result-sub"   id="result-sub"></div>
     </div>
-    <div id="stumper-box" class="hidden" style="display:flex;flex-direction:column;align-items:center;gap:10px;width:100%">
+    <div id="stumper-box" class="hidden" style="display:flex;flex-direction:column;align-items:center;gap:14px;width:100%;padding:20px 0 4px;margin-top:4px;border-top:1px solid rgba(229,9,20,0.25)">
       <input class="stumper-input" id="stumper-input" type="text" placeholder="What was the movie?" autocomplete="off" />
-      <button class="btn-back" id="stumper-submit" onclick="submitStumper()">📩 Tell the genie</button>
+      <button class="btn-submit" id="stumper-submit" onclick="submitStumper()">📩 Tell the genie</button>
       <p class="info" id="stumper-thanks"></p>
     </div>
-    <button class="btn-primary" onclick="playAgain()">🔄 Play Again</button>
+    <button class="btn-primary" style="margin-top:8px" onclick="playAgain()">🔄 Play Again</button>
   </div>
 </div>
 
@@ -269,7 +275,7 @@
   const LANGUAGE_IDS = new Set(['q_hindi','q_tamil','q_telugu']);
   const ERA_IDS      = new Set(['q_classic','q_90s','q_2000s','q_2010s','q_2020s']);
   const GENRE_IDS    = new Set(['q_genre_action','q_genre_comedy','q_genre_romance',
-                                 'q_genre_drama','q_genre_thriller','q_genre_other']);
+                                 'q_genre_drama','q_genre_thriller','q_genre_scifi','q_genre_other']);
 
   // Fallback options if backend returns group:null (stale server or version mismatch)
   const GROUP_OPTIONS = {
@@ -283,7 +289,8 @@
     genre: [
       {id:'q_genre_action',label:'Action'},{id:'q_genre_comedy',label:'Comedy'},
       {id:'q_genre_romance',label:'Romance'},{id:'q_genre_drama',label:'Drama / Family'},
-      {id:'q_genre_thriller',label:'Thriller / Crime'},{id:'q_genre_other',label:'Historical / Horror / Sports'},
+      {id:'q_genre_thriller',label:'Thriller / Crime'},{id:'q_genre_scifi',label:'Sci-Fi / Fantasy'},
+      {id:'q_genre_other',label:'Historical / Horror / Sports'},
     ],
   };
 
