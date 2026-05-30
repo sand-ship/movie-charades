@@ -130,6 +130,15 @@
     }
     .btn-back:not(:disabled):hover { color: var(--gold); border-color: var(--gold); transform: translateY(-2px); }
 
+    .stumper-input {
+      width: 100%; max-width: 360px; padding: 14px 16px;
+      background: rgba(255,255,255,0.06); color: #fff;
+      border: 1px solid rgba(229,9,20,0.35); border-radius: 12px;
+      font-family: 'Poppins', sans-serif; font-size: 1rem; text-align: center;
+    }
+    .stumper-input::placeholder { color: #9a6b6f; }
+    .stumper-input:focus { outline: none; border-color: var(--gold); }
+
     /* ── picker grid ── */
     .picker-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%; }
     .picker-btn {
@@ -239,6 +248,11 @@
       <div class="result-icon"  id="result-icon">🎉</div>
       <div class="result-title" id="result-title"></div>
       <div class="result-sub"   id="result-sub"></div>
+    </div>
+    <div id="stumper-box" class="hidden" style="display:flex;flex-direction:column;align-items:center;gap:10px;width:100%">
+      <input class="stumper-input" id="stumper-input" type="text" placeholder="What was the movie?" autocomplete="off" />
+      <button class="btn-back" id="stumper-submit" onclick="submitStumper()">📩 Tell the genie</button>
+      <p class="info" id="stumper-thanks"></p>
     </div>
     <button class="btn-primary" onclick="playAgain()">🔄 Play Again</button>
   </div>
@@ -442,6 +456,7 @@
   function guessYes() {
     const g = guessRound.list[guessRound.idx];
     sendFeedback(true, g.id);
+    document.getElementById('stumper-box').classList.add('hidden');
     show('result');
     document.getElementById('result-icon').textContent  = '🎉';
     document.getElementById('result-title').textContent = `Got it! ${g.title}`;
@@ -464,7 +479,27 @@
     show('result');
     document.getElementById('result-icon').textContent  = '😔';
     document.getElementById('result-title').textContent = 'You stumped me!';
-    document.getElementById('result-sub').textContent   = "I couldn't crack this one — press Play Again for another round.";
+    document.getElementById('result-sub').textContent   = "I couldn't crack this one. What was the movie?";
+    const box = document.getElementById('stumper-box');
+    box.classList.remove('hidden');
+    document.getElementById('stumper-input').value = '';
+    document.getElementById('stumper-input').disabled = false;
+    document.getElementById('stumper-submit').disabled = false;
+    document.getElementById('stumper-thanks').textContent = '';
+  }
+
+  async function submitStumper() {
+    const input = document.getElementById('stumper-input');
+    const title = input.value.trim();
+    if (!title) return;
+    document.getElementById('stumper-submit').disabled = true;
+    input.disabled = true;
+    await fetch(`${API}/game/stumped`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ session_id: state.sessionId, title }),
+    }).catch(() => {});
+    document.getElementById('stumper-thanks').textContent = `Thanks — I'll learn “${title}”. 🎬`;
   }
 
   async function sendFeedback(wasCorrect, movieId) {

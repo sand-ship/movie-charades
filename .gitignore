@@ -8,3 +8,4 @@ backend/.imdb_cache/
 backend/data/relabel_work/
 backend/data/*.bak
 *.json.bak
+backend/data/stumpers.jsonl

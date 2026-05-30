@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import datetime
 import json
 from pathlib import Path
 from typing import Optional
@@ -67,6 +68,14 @@ class FeedbackRequest(BaseModel):
 
 class BackRequest(BaseModel):
     session_id: str
+
+
+class StumpedRequest(BaseModel):
+    session_id: str
+    title: str
+
+
+STUMPERS_LOG = Path(__file__).resolve().parent / "data" / "stumpers.jsonl"
 
 
 # ── helpers ──────────────────────────────────────────────────────────────
@@ -194,6 +203,28 @@ def go_back(req: BackRequest):
         "question": _question_payload(question) if question else None,
         "guesses": None,
     }
+
+
+@app.post("/game/stumped")
+def stumped(req: StumpedRequest):
+    """Log a title the genie failed to guess — a coverage-gap signal (the film
+    may be missing from the catalog, or mislabeled). Records the player's picks
+    so we can tell which."""
+    title = (req.title or "").strip()
+    if not title:
+        return {"status": "empty"}
+    session = engine.get_session(req.session_id)
+    yes_answers = sorted(q for q, a in (session.answers.items() if session else [])
+                         if a == "yes")
+    record = {
+        "ts": datetime.datetime.utcnow().isoformat() + "Z",
+        "title": title,
+        "yes_answers": yes_answers,
+        "remaining_candidates": session.remaining_count() if session else None,
+    }
+    with STUMPERS_LOG.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    return {"status": "ok"}
 
 
 @app.post("/game/feedback")
