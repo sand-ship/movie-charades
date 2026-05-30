@@ -219,15 +219,17 @@
     <p class="info" id="picker-info"></p>
   </div>
 
-  <!-- GUESS -->
+  <!-- GUESS (stepped right/wrong confirmation) -->
   <div id="screen-guess" class="hidden" style="width:100%;display:flex;flex-direction:column;align-items:center;gap:20px">
-    <div class="card" style="padding-bottom:20px">
-      <div class="question-num">My guess</div>
-      <div class="question-text">Is this your movie?</div>
+    <div class="card">
+      <div class="question-num" id="guess-step">My guess</div>
+      <div class="result-icon">🎬</div>
+      <div class="question-text" id="guess-q">…</div>
+      <div class="guess-meta" id="guess-meta" style="margin-top:10px"></div>
     </div>
-    <div class="guesses" id="guesses-list"></div>
-    <div class="btn-row" style="justify-content:center">
-      <button class="btn-primary" onclick="playAgain()">🔄 Play Again</button>
+    <div class="btn-row">
+      <button class="btn-yes" id="guess-yes" onclick="guessYes()">✅ Yes!</button>
+      <button class="btn-no"  id="guess-no"  onclick="guessNo()">❌ Nope</button>
     </div>
   </div>
 
@@ -414,48 +416,55 @@
     }
   }
 
-  // ── guesses ───────────────────────────────────────────────────────────
+  // ── guesses: stepped right/wrong confirmation ─────────────────────────
+  let guessRound = { list: [], idx: 0 };
+
   function renderGuesses(guesses) {
-    if (!guesses || guesses.length === 0) {
-      show('result');
-      document.getElementById('result-icon').textContent  = '😔';
-      document.getElementById('result-title').textContent = "I give up!";
-      document.getElementById('result-sub').textContent   = "You stumped the genie. What was the movie?";
-      return;
-    }
-
-    const ranks = ['🥇','🥈','🥉'];
-    const list  = document.getElementById('guesses-list');
-    list.innerHTML = '';
-
-    guesses.forEach((g, i) => {
-      const card = document.createElement('div');
-      card.className = `guess-card${i === 0 ? ' top' : ''}`;
-      card.innerHTML = `
-        <div class="rank">${ranks[i] || (i+1)}</div>
-        <div class="guess-info">
-          <div class="guess-title">${g.title} (${g.year})</div>
-          <div class="guess-meta">${cap(g.language)} · Dir: ${g.director || '—'} · ⭐ ${g.imdb_rating}</div>
-        </div>
-        <div class="confidence">${g.confidence}%</div>`;
-      card.onclick = () => confirmGuess(g);
-      list.appendChild(card);
-    });
-
+    if (!guesses || guesses.length === 0) { giveUp(); return; }
+    guessRound = { list: guesses, idx: 0 };
+    showGuess();
     show('guess');
   }
 
-  function confirmGuess(movie) {
-    const correct = confirm(`Is your movie "${movie.title}" (${movie.year})?`);
-    sendFeedback(correct, movie.id);
+  function showGuess() {
+    const g = guessRound.list[guessRound.idx];
+    const n = guessRound.list.length;
+    document.getElementById('guess-step').textContent =
+      n > 1 ? `My guess · ${guessRound.idx + 1} of ${n}` : 'My guess';
+    document.getElementById('guess-q').textContent = `Is it “${g.title}” (${g.year})?`;
+    document.getElementById('guess-meta').innerHTML =
+      `${cap(g.language)} · Dir: ${g.director || '—'} · ⭐ ${g.imdb_rating} · <b>${g.confidence}% sure</b>`;
+    document.getElementById('guess-yes').disabled = false;
+    document.getElementById('guess-no').disabled  = false;
+  }
+
+  // player says it's RIGHT
+  function guessYes() {
+    const g = guessRound.list[guessRound.idx];
+    sendFeedback(true, g.id);
     show('result');
-    document.getElementById('result-icon').textContent  = correct ? '🎉' : '😅';
-    document.getElementById('result-title').textContent = correct
-      ? `Got it! ${movie.title}`
-      : 'Not this time!';
-    document.getElementById('result-sub').textContent = correct
-      ? `${cap(movie.language)} · ${movie.year} · ⭐ ${movie.imdb_rating}`
-      : 'You stumped the genie. Try another movie!';
+    document.getElementById('result-icon').textContent  = '🎉';
+    document.getElementById('result-title').textContent = `Got it! ${g.title}`;
+    document.getElementById('result-sub').textContent   = `${cap(g.language)} · ${g.year} · ⭐ ${g.imdb_rating}`;
+  }
+
+  // player says it's WRONG → try the next guess, or concede
+  function guessNo() {
+    guessRound.idx++;
+    if (guessRound.idx < guessRound.list.length) {
+      document.getElementById('guess-no').disabled = true;
+      showGuess();
+    } else {
+      sendFeedback(false, guessRound.list[0] && guessRound.list[0].id);
+      giveUp();
+    }
+  }
+
+  function giveUp() {
+    show('result');
+    document.getElementById('result-icon').textContent  = '😔';
+    document.getElementById('result-title').textContent = 'You stumped me!';
+    document.getElementById('result-sub').textContent   = "I couldn't crack this one — press Play Again for another round.";
   }
 
   async function sendFeedback(wasCorrect, movieId) {
