@@ -100,7 +100,7 @@ _GENRE_OPTIONS = [
     {"id": "q_genre_drama",    "label": "Drama / Family"},
     {"id": "q_genre_thriller", "label": "Thriller / Crime"},
     {"id": "q_genre_scifi",    "label": "Sci-Fi / Fantasy"},
-    {"id": "q_genre_other",    "label": "Historical / Horror / Sports"},
+    {"id": "q_genre_other",    "label": "Historical / Biopic / Horror / Sports"},
 ]
 
 
