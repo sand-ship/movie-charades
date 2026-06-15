@@ -159,6 +159,26 @@ QUESTIONS.extend([
              _attr_true("has_courtroom"), weight=0.3),
     Question("q_flashback",     "Is a major portion of the story told through flashbacks?",
              _attr_true("has_major_flashback"), weight=0.3),
+
+    # Storyline / narrative tropes
+    Question("q_mentor",        "Does the lead have a mentor or guru who shapes their journey?",
+             _attr_true("has_mentor_figure"), weight=0.3),
+    Question("q_betrayal",      "Is a close friendship destroyed by betrayal?",
+             _attr_true("has_friendship_betrayal"), weight=0.3),
+    Question("q_mistaken_identity", "Does the plot hinge on mistaken identity or impersonation?",
+             _attr_true("has_mistaken_identity"), weight=0.3),
+    Question("q_class_conflict","Is the clash between social classes a central theme?",
+             _attr_true("has_class_conflict"), weight=0.3),
+    Question("q_gangster_world","Is the story set in or driven by the criminal underworld?",
+             _attr_true("has_gangster_world"), weight=0.3),
+    Question("q_slums",         "Is the film primarily set in slums or very poor urban areas?",
+             _attr_true("is_set_in_slums"), weight=0.3),
+    Question("q_rural_urban",   "Does the film explore tension between rural and urban life?",
+             _attr_true("has_rural_vs_urban"), weight=0.3),
+    Question("q_brotherhood",   "Is male friendship or brotherhood the central emotional thread?",
+             _attr_true("has_brothers_in_arms"), weight=0.3),
+    Question("q_enemy_friend",  "Does an enemy become a friend (or a friend become an enemy)?",
+             _attr_true("has_enemy_turned_friend"), weight=0.3),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
