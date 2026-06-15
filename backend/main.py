@@ -2,11 +2,13 @@ from __future__ import annotations
 
 import datetime
 import json
+import os
 from pathlib import Path
 from typing import Optional
 
 import csv
 import io
+import httpx
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse, FileResponse
@@ -76,6 +78,52 @@ class StumpedRequest(BaseModel):
 
 
 STUMPERS_LOG = Path(__file__).resolve().parent / "data" / "stumpers.jsonl"
+
+_SUPA_URL = os.getenv("SUPABASE_URL", "").rstrip("/")
+_SUPA_KEY = os.getenv("SUPABASE_ANON_KEY", "")
+_SUPA_HEADERS = {
+    "apikey": _SUPA_KEY,
+    "Authorization": f"Bearer {_SUPA_KEY}",
+    "Content-Type": "application/json",
+}
+
+
+def _stumper_insert(record: dict) -> None:
+    if _SUPA_URL and _SUPA_KEY:
+        try:
+            httpx.post(
+                f"{_SUPA_URL}/stumpers",
+                json={
+                    "title": record["title"],
+                    "yes_answers": record["yes_answers"],
+                    "remaining_candidates": record["remaining_candidates"],
+                },
+                headers={**_SUPA_HEADERS, "Prefer": "return=minimal"},
+                timeout=5.0,
+            )
+        except Exception:
+            pass
+    else:
+        with STUMPERS_LOG.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+
+def _stumper_list() -> list:
+    if _SUPA_URL and _SUPA_KEY:
+        try:
+            r = httpx.get(
+                f"{_SUPA_URL}/stumpers",
+                params={"order": "id.desc"},
+                headers=_SUPA_HEADERS,
+                timeout=5.0,
+            )
+            return r.json()
+        except Exception:
+            return []
+    else:
+        if not STUMPERS_LOG.exists():
+            return []
+        return [json.loads(l) for l in STUMPERS_LOG.read_text().splitlines() if l.strip()]
 
 
 # ── helpers ──────────────────────────────────────────────────────────────
@@ -223,18 +271,15 @@ def stumped(req: StumpedRequest):
         "yes_answers": yes_answers,
         "remaining_candidates": session.remaining_count() if session else None,
     }
-    with STUMPERS_LOG.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    _stumper_insert(record)
     return {"status": "ok"}
 
 
 @app.get("/admin/stumpers")
 def list_stumpers():
     """Read-only view of films the genie couldn't guess — your coverage-gap feed."""
-    if not STUMPERS_LOG.exists():
-        return {"count": 0, "entries": []}
-    entries = [json.loads(l) for l in STUMPERS_LOG.read_text().splitlines() if l.strip()]
-    return {"count": len(entries), "entries": list(reversed(entries))}
+    entries = _stumper_list()
+    return {"count": len(entries), "entries": entries}
 
 
 @app.post("/game/feedback")
