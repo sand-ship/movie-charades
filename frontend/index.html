@@ -394,7 +394,7 @@
   }
 
   // ── picker (language / era / genre) ──────────────────────────────────
-  const PICKER_LABELS = { language: 'Step 1 of 3 · Language', era: 'Step 2 of 3 · Era', genre: 'Step 3 of 3 · Theme' };
+  const PICKER_LABELS = { language: 'Step 1 of 2 · Language', era: 'Step 2 of 2 · Era', genre: 'Theme' };
   function renderPicker(q, remaining) {
     document.getElementById('picker-num').textContent  = PICKER_LABELS[q.group] || q.group;
     document.getElementById('picker-text').textContent = q.text;

@@ -6,14 +6,11 @@ from typing import Optional
 
 from questions import QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS, GENRE_QUESTION_IDS
 
-MAX_QUESTIONS = 42  # hard ceiling (incl. ~6 auto-answered siblings → ~36 real questions)
-MIN_NON_GROUP_QUESTIONS = 10        # fallback when not all 3 group pickers answered
-MIN_NON_GROUP_AFTER_ALL_PICKERS = 15 # ask at least 15 real questions — builds suspense,
-                                     # gives tropes room to fire before the guess
-ENDGAME_POOL = 25  # at/under this many candidates, switch to *identifying* questions
-                   # (heroine / actor / director / music director / sub-genre tropes).
-                   # Raised from 12 — classic-era pools stay larger (many similar films)
-                   # and need the actor/director question earlier to break ties.
+MAX_QUESTIONS = 42   # hard ceiling (incl. ~4 auto-answered siblings → ~38 real questions)
+MIN_QUESTIONS = 12   # minimum non-language/era questions before guessing
+GENRE_HOLDOFF = 3    # ask at least this many plot questions before the genre picker fires
+ENDGAME_POOL = 8     # at/under this many candidates, prefer soft tropes
+ACTOR_POOL = 5       # at/under this many candidates, allow actor/director as confirmation
 
 # Sub-genres folded into the catch-all "Other" theme picker — asked up front to
 # disambiguate it when the user picks Other.
@@ -67,51 +64,43 @@ class GameEngine:
             return None
 
         asked = set(session.asked)
-        lang_asked  = bool(asked & LANGUAGE_QUESTION_IDS)
-        era_asked   = bool(asked & ERA_QUESTION_IDS)
-        genre_asked = bool(asked & GENRE_QUESTION_IDS)
 
-        # Always ask language → era → genre as group pickers before free questions
-        if not lang_asked:
-            return QUESTION_MAP['q_hindi']       # sentinel; frontend renders full picker
-        if not era_asked:
-            return QUESTION_MAP['q_classic']     # sentinel; frontend renders full picker
-        if not genre_asked:
-            return QUESTION_MAP['q_genre_action'] # sentinel; frontend renders full picker
+        # Language and era are the only mandatory anchors — they're things the
+        # player knows for certain (what language, roughly when).
+        if not (asked & LANGUAGE_QUESTION_IDS):
+            return QUESTION_MAP['q_hindi']    # sentinel; frontend renders full picker
+        if not (asked & ERA_QUESTION_IDS):
+            return QUESTION_MAP['q_classic']  # sentinel; frontend renders full picker
+
+        # Count non-language/era questions asked so far (genre counts here now).
+        non_anchor = sum(1 for qid in asked
+                         if qid not in LANGUAGE_QUESTION_IDS
+                         and qid not in ERA_QUESTION_IDS)
+
+        cands = session.candidates
+
+        # Genre picker joins the natural IG pool — but hold it back until we've
+        # asked GENRE_HOLDOFF plot questions first (charades: describe before
+        # categorise). Once genre has been answered once, suppress the rest.
+        genre_answered = bool(asked & GENRE_QUESTION_IDS)
+        suppress_genre = genre_answered or (non_anchor < GENRE_HOLDOFF)
 
         unanswered = [q for q in QUESTIONS
                       if q.id not in asked
                       and q.id not in LANGUAGE_QUESTION_IDS
                       and q.id not in ERA_QUESTION_IDS
-                      and q.id not in GENRE_QUESTION_IDS]
-        cands = session.candidates
-        # Only ask questions that actually split the remaining pool — a question
-        # all candidates answer the same way teaches us nothing.
+                      and (not suppress_genre or q.id not in GENRE_QUESTION_IDS)]
+
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
 
-        # When pool == 1 and we haven't hit the question minimum yet, keep asking
-        # confirming questions about the sole candidate — builds suspense and lets
-        # the player verify the answer themselves before we reveal it.
-        asked_set = set(session.asked)
-        non_group = sum(1 for qid in asked_set
-                        if qid not in LANGUAGE_QUESTION_IDS
-                        and qid not in ERA_QUESTION_IDS
-                        and qid not in GENRE_QUESTION_IDS)
-        all_pickers_done = (bool(asked_set & LANGUAGE_QUESTION_IDS) and
-                            bool(asked_set & ERA_QUESTION_IDS) and
-                            bool(asked_set & GENRE_QUESTION_IDS))
-        min_q = MIN_NON_GROUP_AFTER_ALL_PICKERS if all_pickers_done else MIN_NON_GROUP_QUESTIONS
-
-        if not splitting and non_group < min_q and len(cands) == 1:
-            # Ask interesting confirming questions about the one remaining film
+        # When pool == 1 and we haven't hit the minimum yet, ask confirming
+        # questions — builds suspense, lets the player verify before the reveal.
+        if not splitting and non_anchor < MIN_QUESTIONS and len(cands) == 1:
             confirm = [q for q in unanswered
-                       if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))
-                       and q.id not in LANGUAGE_QUESTION_IDS
-                       and q.id not in ERA_QUESTION_IDS
+                       if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))
                        and q.id not in GENRE_QUESTION_IDS]
             if confirm:
-                # Prefer questions the film answers "yes" to — more interesting for the player
                 yes_qs = [q for q in confirm if q.evaluate(cands[0])]
                 pool = yes_qs if yes_qs else confirm
                 return pool[0]
@@ -119,28 +108,33 @@ class GameEngine:
         if not splitting:
             return None  # nothing left discriminates → caller will guess
 
-        # The "Other" theme is a catch-all (historical/horror/sports/sci-fi/biopic
-        # ~400 films) so it barely narrows. If the user picked it, immediately
-        # disambiguate with the sub-genre questions before anything else — these
-        # are low-prevalence so information gain would otherwise never ask them.
+        # "Other" genre is a broad catch-all — immediately disambiguate with
+        # sub-genre questions (historical / horror / sports / bio) before anything else.
         if session.answers.get("q_genre_other") == "yes":
             subs = [q for q in splitting if q.id in OTHER_SUBGENRES]
             if subs:
                 return max(subs, key=lambda q: self._information_gain(cands, q))
 
-        # Endgame: once the pool is small, broad 50/50 tropes (action? songs?)
-        # stop helping. What a human asks now is *identifying* — the heroine,
-        # hero, director — plus sub-genre tropes. Prefer those; information gain
-        # alone never picks them because they're low-prevalence. Music director
-        # is deprioritized (many players don't know the composer) — asked only
-        # when nothing else can separate the finalists.
+        # Endgame: once pool is small, exhaust soft tropes first (they describe
+        # the film's character), then unlock actor/director as confirmation only
+        # when the pool is very tight.
         if len(cands) <= ENDGAME_POOL:
-            identifying = [q for q in splitting if self._is_identifying(q)]
-            non_music = [q for q in identifying if not q.id.startswith("q_music_")]
-            preferred = non_music or identifying
-            if preferred:
-                return max(preferred, key=lambda q: self._information_gain(cands, q))
-        return max(splitting, key=lambda q: self._information_gain(cands, q))
+            tropes = [q for q in splitting
+                      if getattr(q, "weight", 1.0) < 1.0
+                      and not q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))
+                      and q.id not in GENRE_QUESTION_IDS]
+            if tropes:
+                return max(tropes, key=lambda q: self._information_gain(cands, q))
+            if len(cands) <= ACTOR_POOL:
+                persons = [q for q in splitting
+                           if q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))]
+                if persons:
+                    return max(persons, key=lambda q: self._information_gain(cands, q))
+
+        # Normal mid-game: actor/director reserved for endgame confirmation only.
+        non_persons = [q for q in splitting
+                       if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))]
+        return max(non_persons or splitting, key=lambda q: self._information_gain(cands, q))
 
     @staticmethod
     def _is_identifying(question: Question) -> bool:
@@ -225,26 +219,12 @@ class GameEngine:
         if session.question_count() >= MAX_QUESTIONS or session.remaining_count() == 0:
             return True
         asked_set = set(session.asked)
-        non_group = sum(
-            1 for qid in asked_set
-            if qid not in LANGUAGE_QUESTION_IDS
-            and qid not in ERA_QUESTION_IDS
-            and qid not in GENRE_QUESTION_IDS
-        )
-        all_pickers_done = (
-            bool(asked_set & LANGUAGE_QUESTION_IDS) and
-            bool(asked_set & ERA_QUESTION_IDS) and
-            bool(asked_set & GENRE_QUESTION_IDS)
-        )
-        min_q = MIN_NON_GROUP_AFTER_ALL_PICKERS if all_pickers_done else MIN_NON_GROUP_QUESTIONS
-        if non_group < min_q:
+        non_anchor = sum(1 for qid in asked_set
+                         if qid not in LANGUAGE_QUESTION_IDS
+                         and qid not in ERA_QUESTION_IDS)
+        if non_anchor < MIN_QUESTIONS:
             return False
-        # Even when the pool is 1 we keep asking confirming questions until the
-        # minimum is met — the player should feel properly interrogated, not rushed.
-        # next_question will keep generating questions about the single candidate
-        # (confirming tropes, songs, lead actress, director) until it runs out,
-        # at which point it returns None and main.py triggers the guess.
-        # MAX_QUESTIONS is the hard backstop.
+        # next_question returning None drives the actual guess trigger.
         return False
 
     def top_guesses(self, session: Session, n: int = 3) -> list[dict]:

@@ -32,9 +32,6 @@ QUESTIONS: list[Question] = [
     Question("q_2000s",     "Was it released in the 2000s?",                    _attr_eq("era", "2000s")),
     Question("q_2010s",     "Was it released in the 2010s?",                    _attr_eq("era", "2010s")),
     Question("q_2020s",     "Was it released after 2020?",                      _attr_eq("era", "2020s")),
-    Question("q_action",    "Is it primarily an action film?",                  _attr_eq("has_action", True)),
-    Question("q_comedy",    "Does it have strong comedy elements?",             _attr_eq("has_comedy", True)),
-    Question("q_romance",   "Is romance a central theme?",                      _attr_eq("has_romance", True)),
     Question("q_villain",   "Does it feature a memorable villain?",             _attr_eq("has_villain", True)),
     Question("q_songs",     "Are songs/music a key part of the film?",          _attr_eq("has_songs", True)),
     Question("q_female",    "Does it have a female protagonist?",               _attr_eq("lead_gender", "female")),
@@ -45,12 +42,9 @@ QUESTIONS: list[Question] = [
     Question("q_sports",    "Is it a sports film?",                             _attr_eq("is_sports_film", True)),
     Question("q_historical","Is it set in a historical period?",                _attr_eq("is_historical", True)),
     Question("q_bio",       "Is it a biographical film?",                       _attr_eq("is_biographical", True)),
-    Question("q_thriller",  "Does it have thriller or suspense elements?",      _attr_eq("has_thriller_elements", True)),
-    Question("q_scifi",     "Does it involve sci-fi or fantasy elements?",      _attr_eq("is_sci_fi", True)),
     Question("q_horror",    "Does it have horror elements?",                    _attr_eq("is_horror", True)),
     Question("q_pan_india",  "Was it a pan-India blockbuster?",                  _attr_eq("is_pan_india_blockbuster", True)),
     Question("q_family",     "Is it a family-friendly film?",                    _attr_eq("is_family_film", True)),
-    Question("q_high_rated", "Is it rated 8.3 or above on IMDB?",               _attr_gte("imdb_rating", 8.3)),
     Question("q_anti_hero",      "Is the lead character a morally grey anti-hero?",  _attr_eq("is_anti_hero", True)),
     Question("q_abroad",         "Is the film set significantly outside India?",      _attr_eq("is_set_abroad", True)),
     Question("q_love_triangle",  "Does it feature a love triangle?",                  _attr_eq("has_love_triangle", True)),
@@ -76,10 +70,9 @@ def make_star_questions(movies: list[dict]) -> list["Question"]:
     """Generate actor/director questions for anyone with 3+ films in the active pool."""
     from collections import Counter
     _SKIP = {"", "n/a", "na", "unknown", "none"}
-    actors    = Counter(m['lead_actor']     for m in movies if m.get('lead_actor'))
-    actresses = Counter(m['lead_actress']   for m in movies if m.get('lead_actress'))
-    directors = Counter(m['director']       for m in movies if m.get('director'))
-    composers = Counter(m['music_director'] for m in movies if m.get('music_director'))
+    actors    = Counter(m['lead_actor']   for m in movies if m.get('lead_actor'))
+    actresses = Counter(m['lead_actress'] for m in movies if m.get('lead_actress'))
+    directors = Counter(m['director']     for m in movies if m.get('director'))
     qs = []
     for name, n in actors.items():
         if n >= 3:
@@ -104,14 +97,6 @@ def make_star_questions(movies: list[dict]) -> list["Question"]:
                 f"q_dir_{safe}",
                 f"Is it directed by {name}?",
                 _in('director', name),
-            ))
-    for name, n in composers.items():
-        if n >= 3 and name.strip().lower() not in _SKIP:
-            safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
-            qs.append(Question(
-                f"q_music_{safe}",
-                f"Is the music by {name}?",
-                _in('music_director', name),
             ))
     return qs
 
