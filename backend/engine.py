@@ -9,8 +9,7 @@ from questions import QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, 
 MAX_QUESTIONS = 42   # hard ceiling (incl. ~4 auto-answered siblings → ~38 real questions)
 MIN_QUESTIONS = 12   # minimum non-language/era questions before guessing
 GENRE_HOLDOFF = 3    # ask at least this many plot questions before the genre picker fires
-ENDGAME_POOL = 8     # at/under this many candidates, prefer soft tropes
-ACTOR_POOL = 5       # at/under this many candidates, allow actor/director as confirmation
+ENDGAME_POOL = 8     # at/under this many candidates, prefer soft tropes over IG ordering
 
 # Sub-genres folded into the catch-all "Other" theme picker — asked up front to
 # disambiguate it when the user picks Other.
@@ -115,9 +114,8 @@ class GameEngine:
             if subs:
                 return max(subs, key=lambda q: self._information_gain(cands, q))
 
-        # Endgame: once pool is small, exhaust soft tropes first (they describe
-        # the film's character), then unlock actor/director as confirmation only
-        # when the pool is very tight.
+        # Endgame: once pool is small, exhaust soft tropes first — they describe
+        # the film's personality better than a name ever could.
         if len(cands) <= ENDGAME_POOL:
             tropes = [q for q in splitting
                       if getattr(q, "weight", 1.0) < 1.0
@@ -125,13 +123,9 @@ class GameEngine:
                       and q.id not in GENRE_QUESTION_IDS]
             if tropes:
                 return max(tropes, key=lambda q: self._information_gain(cands, q))
-            if len(cands) <= ACTOR_POOL:
-                persons = [q for q in splitting
-                           if q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))]
-                if persons:
-                    return max(persons, key=lambda q: self._information_gain(cands, q))
 
-        # Normal mid-game: actor/director reserved for endgame confirmation only.
+        # Actor/director only as absolute last resort — when every genre, trope,
+        # and plot question has been exhausted and nothing else can split the pool.
         non_persons = [q for q in splitting
                        if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))]
         return max(non_persons or splitting, key=lambda q: self._information_gain(cands, q))
