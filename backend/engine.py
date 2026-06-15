@@ -89,7 +89,8 @@ class GameEngine:
                       if q.id not in asked
                       and q.id not in LANGUAGE_QUESTION_IDS
                       and q.id not in ERA_QUESTION_IDS
-                      and (not suppress_genre or q.id not in GENRE_QUESTION_IDS)]
+                      and (not suppress_genre or q.id not in GENRE_QUESTION_IDS)
+                      and (q.requires is None or session.answers.get(q.requires[0]) == q.requires[1])]
 
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]

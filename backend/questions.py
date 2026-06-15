@@ -8,6 +8,7 @@ class Question:
     text: str
     evaluate: Callable[[dict], bool]
     weight: float = 1.0  # 1.0 = hard signal (2×/0.1×), 0.3 = soft trope (1.3×/0.77×)
+    requires: tuple[str, str] | None = None  # (question_id, answer) prerequisite
 
 
 def _attr_eq(attr: str, value: Any) -> Callable[[dict], bool]:
@@ -32,7 +33,9 @@ QUESTIONS: list[Question] = [
     Question("q_2000s",     "Was it released in the 2000s?",                    _attr_eq("era", "2000s")),
     Question("q_2010s",     "Was it released in the 2010s?",                    _attr_eq("era", "2010s")),
     Question("q_2020s",     "Was it released after 2020?",                      _attr_eq("era", "2020s")),
-    Question("q_villain",   "Does it feature a memorable villain?",             _attr_eq("has_villain", True)),
+    Question("q_villain",          "Does it feature a memorable villain?",                           _attr_eq("has_villain", True)),
+    Question("q_strict_antagonist","Is the main conflict driven by a strict but well-meaning character\n(overprotective parent/sibling, authority figure) rather than a villain?",
+             _attr_eq("has_strict_antagonist", True), requires=("q_villain", "no")),
     Question("q_songs",     "Are songs/music a key part of the film?",          _attr_eq("has_songs", True)),
     Question("q_female",    "Does it have a female protagonist?",               _attr_eq("lead_gender", "female")),
     Question("q_social",    "Does it carry a strong social message?",           _attr_eq("has_social_message", True)),
@@ -67,37 +70,30 @@ def _genre_in(*tokens: str) -> Callable[[dict], bool]:
 
 
 def make_star_questions(movies: list[dict]) -> list["Question"]:
-    """Generate actor/director questions for anyone with 3+ films in the active pool."""
+    """Generate actor/director/music questions for anyone meeting the min-film threshold."""
     from collections import Counter
     _SKIP = {"", "n/a", "na", "unknown", "none"}
-    actors    = Counter(m['lead_actor']   for m in movies if m.get('lead_actor'))
-    actresses = Counter(m['lead_actress'] for m in movies if m.get('lead_actress'))
-    directors = Counter(m['director']     for m in movies if m.get('director'))
+    actors    = Counter(m['lead_actor']      for m in movies if m.get('lead_actor'))
+    actresses = Counter(m['lead_actress']    for m in movies if m.get('lead_actress'))
+    directors = Counter(m['director']        for m in movies if m.get('director'))
+    music     = Counter(m['music_director']  for m in movies if m.get('music_director'))
     qs = []
     for name, n in actors.items():
-        if n >= 3:
+        if n >= 3 and name.strip().lower() not in _SKIP:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
-            qs.append(Question(
-                f"q_actor_{safe}",
-                f"Does it star {name}?",
-                _in('lead_actor', name),
-            ))
+            qs.append(Question(f"q_actor_{safe}", f"Does it star {name}?", _in('lead_actor', name)))
     for name, n in actresses.items():
         if n >= 3 and name.strip().lower() not in _SKIP:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
-            qs.append(Question(
-                f"q_actress_{safe}",
-                f"Does it star the actress {name}?",
-                _in('lead_actress', name),
-            ))
+            qs.append(Question(f"q_actress_{safe}", f"Does it star the actress {name}?", _in('lead_actress', name)))
     for name, n in directors.items():
+        if n >= 2 and name.strip().lower() not in _SKIP:
+            safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
+            qs.append(Question(f"q_dir_{safe}", f"Is it directed by {name}?", _in('director', name)))
+    for name, n in music.items():
         if n >= 3 and name.strip().lower() not in _SKIP:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
-            qs.append(Question(
-                f"q_dir_{safe}",
-                f"Is it directed by {name}?",
-                _in('director', name),
-            ))
+            qs.append(Question(f"q_music_{safe}", f"Is the music by {name}?", _in('music_director', name)))
     return qs
 
 
