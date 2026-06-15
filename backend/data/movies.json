@@ -115775,7 +115775,7 @@
     "has_action": false,
     "has_comedy": false,
     "has_romance": true,
-    "has_villain": false,
+    "has_villain": true,
     "has_songs": true,
     "has_thriller_elements": false,
     "has_social_message": true,
@@ -115803,7 +115803,9 @@
     "has_heist": false,
     "is_period_drama": false,
     "has_courtroom": false,
-    "has_major_flashback": false
+    "has_major_flashback": false,
+    "has_village_setting": true,
+    "has_parent_child_drama": true
   },
   {
     "id": "hi_deewana_mastana_1997",

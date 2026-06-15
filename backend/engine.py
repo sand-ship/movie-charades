@@ -7,6 +7,7 @@ from typing import Optional
 from questions import QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS, GENRE_QUESTION_IDS
 
 MAX_QUESTIONS = 42   # hard ceiling (incl. ~4 auto-answered siblings → ~38 real questions)
+MAX_CONSECUTIVE_ACTOR_QS = 3  # give up on actor questions after this many in a row → guess
 MIN_QUESTIONS = 12   # minimum non-language/era questions before guessing
 GENRE_HOLDOFF = 3    # ask at least this many plot questions before the genre picker fires
 ENDGAME_POOL = 8     # at/under this many candidates, prefer soft tropes over IG ordering
@@ -126,9 +127,21 @@ class GameEngine:
 
         # Actor/director only as absolute last resort — when every genre, trope,
         # and plot question has been exhausted and nothing else can split the pool.
+        # Cap at MAX_CONSECUTIVE_ACTOR_QS in a row: if we've already asked that many
+        # without converging, stop and guess rather than grinding through names.
         non_persons = [q for q in splitting
                        if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))]
-        return max(non_persons or splitting, key=lambda q: self._information_gain(cands, q))
+        if non_persons:
+            return max(non_persons, key=lambda q: self._information_gain(cands, q))
+        consecutive = 0
+        for qid in session.asked[::-1]:
+            if qid.startswith(("q_actor_", "q_actress_", "q_dir_")):
+                consecutive += 1
+            else:
+                break
+        if consecutive >= MAX_CONSECUTIVE_ACTOR_QS:
+            return None  # enough name questions — trigger guess
+        return max(splitting, key=lambda q: self._information_gain(cands, q))
 
     @staticmethod
     def _is_identifying(question: Question) -> bool:
