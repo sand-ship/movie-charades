@@ -14799,7 +14799,7 @@
     "is_pan_india_blockbuster": false,
     "lead_gender": "male",
     "has_villain": true,
-    "has_social_message": false,
+    "has_social_message": true,
     "is_based_on_true_story": false,
     "is_remake": false,
     "is_franchise": false,
@@ -14807,7 +14807,7 @@
     "primary_genre": "thriller",
     "is_set_abroad": false,
     "has_love_triangle": false,
-    "has_revenge_plot": false,
+    "has_revenge_plot": true,
     "has_forbidden_love": false,
     "lead_actress": "Sonali Bendre",
     "has_one_sided_love": false,
@@ -14815,7 +14815,7 @@
     "has_double_role": false,
     "is_college_film": false,
     "has_parent_child_drama": false,
-    "has_police_or_law": false,
+    "has_police_or_law": true,
     "has_village_setting": false,
     "is_mass_entertainer": false,
     "music_director": "Dilip Sen-Sameer Sen",
@@ -14828,7 +14828,7 @@
     "has_heist": false,
     "is_period_drama": false,
     "has_courtroom": false,
-    "has_major_flashback": false
+    "has_major_flashback": true
   },
   {
     "id": "tt3678782",
