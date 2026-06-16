@@ -122,22 +122,22 @@ class GameEngine:
         if len(cands) <= ENDGAME_POOL:
             tropes = [q for q in splitting
                       if getattr(q, "weight", 1.0) < 1.0
-                      and not q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))
+                      and not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))
                       and q.id not in GENRE_QUESTION_IDS]
             if tropes:
                 return max(tropes, key=lambda q: self._information_gain(cands, q))
 
-        # Actor/director only as absolute last resort — when every genre, trope,
+        # Actor/director/music only as absolute last resort — when every genre, trope,
         # and plot question has been exhausted and nothing else can split the pool.
         # Cap at MAX_CONSECUTIVE_ACTOR_QS in a row: if we've already asked that many
         # without converging, stop and guess rather than grinding through names.
         non_persons = [q for q in splitting
-                       if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))]
+                       if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))]
         if non_persons:
             return max(non_persons, key=lambda q: self._information_gain(cands, q))
         consecutive = 0
         for qid in session.asked[::-1]:
-            if qid.startswith(("q_actor_", "q_actress_", "q_dir_")):
+            if qid.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_")):
                 consecutive += 1
             else:
                 break
@@ -160,7 +160,7 @@ class GameEngine:
         session.answers[question_id] = answer
 
         # Auto-answer "no" to siblings of mutually-exclusive groups. A film has
-        # exactly one language and one era, so those siblings are safe to settle.
+        # exactly one language, one era, and one lead music director.
         # Genre is NOT mutually exclusive (a film can be comedy AND drama), so we
         # never auto-no genre siblings — that was eliminating multi-genre films.
         if answer == "yes":
@@ -175,6 +175,14 @@ class GameEngine:
                         session.asked.append(sibling_id)
                         session.answers[sibling_id] = "no"
                         added.append(sibling_id)
+
+            # Music director is also mutually exclusive — auto-no other composers
+            if question_id.startswith("q_music_"):
+                for qid in QUESTION_MAP.keys():
+                    if qid.startswith("q_music_") and qid != question_id and qid not in session.asked:
+                        session.asked.append(qid)
+                        session.answers[qid] = "no"
+                        added.append(qid)
 
         session.history.append(added)  # record this turn so Back can undo it
         # Soft pruning: rescore the whole pool and keep every movie within one
