@@ -145,7 +145,7 @@ QUESTIONS.extend([
              _attr_true("has_police_or_law"), weight=0.3),
     Question("q_village_setting","Is the film primarily set in a village or rural area?",
              _attr_true("has_village_setting"), weight=0.3),
-    Question("q_mass_entertainer","Is it a \"mass masala\" film that could play well on single screens—with multi-genre appeal, item numbers, fight sequences, and over-the-top moments?",
+    Question("q_mass_entertainer","Is it a \"mass masala\" film that could play well on single screens?",
              _is_mass_masala, weight=0.3),
 
     # Otherworldly / mythology / superpowers
