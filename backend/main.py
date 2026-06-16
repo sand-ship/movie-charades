@@ -78,6 +78,7 @@ class StumpedRequest(BaseModel):
 
 
 STUMPERS_LOG = Path(__file__).resolve().parent / "data" / "stumpers.jsonl"
+GAMES_LOG    = Path(__file__).resolve().parent / "data" / "games.jsonl"
 
 _SUPA_URL = os.getenv("SUPABASE_URL", "").rstrip("/")
 _SUPA_KEY = os.getenv("SUPABASE_ANON_KEY", "")
@@ -106,6 +107,40 @@ def _stumper_insert(record: dict) -> None:
     else:
         with STUMPERS_LOG.open("a", encoding="utf-8") as f:
             f.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+
+def _game_insert(record: dict) -> None:
+    if _SUPA_URL and _SUPA_KEY:
+        try:
+            httpx.post(
+                f"{_SUPA_URL}/games",
+                json=record,
+                headers={**_SUPA_HEADERS, "Prefer": "return=minimal"},
+                timeout=5.0,
+            )
+        except Exception:
+            pass
+    else:
+        with GAMES_LOG.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+
+def _games_list() -> list:
+    if _SUPA_URL and _SUPA_KEY:
+        try:
+            r = httpx.get(
+                f"{_SUPA_URL}/games",
+                params={"order": "id.desc"},
+                headers=_SUPA_HEADERS,
+                timeout=5.0,
+            )
+            return r.json()
+        except Exception:
+            return []
+    else:
+        if not GAMES_LOG.exists():
+            return []
+        return [json.loads(l) for l in GAMES_LOG.read_text().splitlines() if l.strip()]
 
 
 def _stumper_list() -> list:
@@ -287,8 +322,28 @@ def submit_feedback(req: FeedbackRequest):
     session = engine.get_session(req.session_id)
     if not session:
         raise HTTPException(status_code=404, detail="Session not found")
-    # Future: persist feedback to improve the model
+    top = session.last_guesses[0] if session.last_guesses else {}
+    yes_answers = sorted(q for q, a in session.answers.items() if a == "yes")
+    _game_insert({
+        "ts": datetime.datetime.utcnow().isoformat() + "Z",
+        "outcome": "correct" if req.was_correct else "wrong_guess",
+        "guessed_movie_id": top.get("id"),
+        "guessed_movie_title": top.get("title"),
+        "correct_movie_id": req.correct_movie_id,
+        "yes_answers": yes_answers,
+        "all_answers": dict(session.answers),
+        "questions_asked": list(session.asked),
+        "remaining_candidates": session.remaining_count(),
+        "question_count": session.question_count(),
+    })
     return {"status": "ok", "was_correct": req.was_correct}
+
+
+@app.get("/admin/games")
+def list_games():
+    """All completed game outcomes — correct guesses and wrong guesses."""
+    entries = _games_list()
+    return {"count": len(entries), "entries": entries}
 
 
 @app.get("/game/session/{session_id}")

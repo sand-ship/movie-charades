@@ -34,6 +34,7 @@ class Session:
         self.asked: list[str] = []
         self.answers: dict[str, str] = {}  # question_id -> yes/no/dunno
         self.history: list[list[str]] = []  # per-turn qids added (for Back/undo)
+        self.last_guesses: list[dict] = []  # most recent top_guesses() output
 
     def remaining_count(self) -> int:
         return len(self.candidates)
@@ -260,6 +261,7 @@ class GameEngine:
                 "lead_actor": m["lead_actor"], "imdb_rating": m["imdb_rating"],
                 "confidence": conf,
             })
+        session.last_guesses = result
         return result
 
     def _fit(self, movie: dict, session: Session) -> tuple[int, int]:

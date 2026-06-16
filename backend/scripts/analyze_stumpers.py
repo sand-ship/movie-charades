@@ -29,6 +29,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "movies.json"
 STUMPERS = ROOT / "data" / "stumpers.jsonl"
+GAMES = ROOT / "data" / "games.jsonl"
 
 # Question groups that are structural (language/era/genre picker) —
 # mismatches here are expected and not labeling errors.
@@ -76,18 +77,62 @@ def _fetch_stumpers(url: str) -> list[dict]:
     return data.get("entries", [])
 
 
+def _fetch_wrong_guesses(url: str) -> list[dict]:
+    req = urllib.request.urlopen(f"{url.rstrip('/')}/admin/games", timeout=10)
+    data = json.loads(req.read())
+    return [e for e in data.get("entries", []) if e.get("outcome") == "wrong_guess"]
+
+
 def _load_local_stumpers() -> list[dict]:
     if not STUMPERS.exists():
         return []
     return [json.loads(l) for l in STUMPERS.read_text().splitlines() if l.strip()]
 
 
+def _load_local_wrong_guesses() -> list[dict]:
+    if not GAMES.exists():
+        return []
+    entries = [json.loads(l) for l in GAMES.read_text().splitlines() if l.strip()]
+    return [e for e in entries if e.get("outcome") == "wrong_guess"]
+
+
+def _wrong_guesses_as_stumpers(games: list[dict], movies: list[dict]) -> list[dict]:
+    """Convert wrong-guess game records into stumper-compatible dicts.
+
+    We know what the genie guessed (wrong) and the player's yes_answers.
+    If correct_movie_id is provided, we use it directly; otherwise we try
+    to match via guessed_movie_id to surface label mismatches on that film.
+    """
+    id_map = {m["id"]: m for m in movies}
+    result = []
+    for g in games:
+        correct_id = g.get("correct_movie_id")
+        film = id_map.get(correct_id) if correct_id else None
+        if film is None:
+            continue  # can't diagnose without knowing the correct film
+        result.append({
+            "ts": g.get("ts", "")[:10],
+            "title": film["title"],
+            "yes_answers": g.get("yes_answers", []),
+            "_guessed": g.get("guessed_movie_title"),
+            "_source": "wrong_guess",
+        })
+    return result
+
+
 def analyze(stumpers: list[dict], movies: list[dict], qmap: dict, verbose: bool) -> None:
     if not stumpers:
-        print("No stumpers to analyze.")
+        print("No entries to analyze.")
         return
 
-    print(f"Analyzing {len(stumpers)} stumped game(s)...\n")
+    n_stumpers = sum(1 for e in stumpers if e.get("_source") != "wrong_guess")
+    n_wrong = sum(1 for e in stumpers if e.get("_source") == "wrong_guess")
+    parts = []
+    if n_stumpers:
+        parts.append(f"{n_stumpers} stumped game(s)")
+    if n_wrong:
+        parts.append(f"{n_wrong} wrong guess(es)")
+    print(f"Analyzing {' + '.join(parts)}...\n")
     missing, mismatched, ok = [], [], []
 
     for entry in stumpers:
@@ -123,14 +168,18 @@ def analyze(stumpers: list[dict], movies: list[dict], qmap: dict, verbose: bool)
                 if q.evaluate(film):
                     hidden.append(qid)
 
+        source_tag = " [wrong guess]" if entry.get("_source") == "wrong_guess" else ""
+        guessed_note = f" (genie guessed \"{entry['_guessed']}\")" if entry.get("_guessed") else ""
         if mismatches or hidden:
             mismatched.append({
                 "title": title, "matched_to": film["title"],
                 "film_id": film["id"], "ts": ts,
                 "mismatches": mismatches, "hidden": hidden,
+                "source_tag": source_tag, "guessed_note": guessed_note,
             })
         else:
-            ok.append({"title": title, "matched_to": film["title"], "ts": ts})
+            ok.append({"title": title, "matched_to": film["title"],
+                       "ts": ts, "source_tag": source_tag})
 
     # ── Report ────────────────────────────────────────────────────────────
 
@@ -152,7 +201,7 @@ def analyze(stumpers: list[dict], movies: list[dict], qmap: dict, verbose: bool)
         for e in mismatched:
             match_note = (f" (matched to \"{e['matched_to']}\")"
                           if e['title'].lower() != e['matched_to'].lower() else "")
-            print(f"  [{e['ts']}] \"{e['title']}\"{match_note}  id={e['film_id']}")
+            print(f"  [{e['ts']}] \"{e['title']}\"{match_note}  id={e['film_id']}{e['source_tag']}{e['guessed_note']}")
             for qid in e["mismatches"]:
                 q = qmap.get(qid)
                 print(f"    ✗ player said YES to [{qid}]  \"{q.text if q else '?'}\"")
@@ -166,7 +215,7 @@ def analyze(stumpers: list[dict], movies: list[dict], qmap: dict, verbose: bool)
         print(f"OK — data looks consistent ({len(ok)} film(s))")
         print(f"{'─'*60}")
         for e in ok:
-            print(f"  [{e['ts']}] \"{e['title']}\"")
+            print(f"  [{e['ts']}] \"{e['title']}\"{e['source_tag']}")
 
     print(f"\nSummary: {len(missing)} missing, {len(mismatched)} mismatched, {len(ok)} ok")
 
@@ -184,12 +233,14 @@ def main():
     qmap = _load_question_map(movies)
 
     if args.url:
-        print(f"Fetching stumpers from {args.url}...")
+        print(f"Fetching data from {args.url}...")
         stumpers = _fetch_stumpers(args.url)
+        wrong = _wrong_guesses_as_stumpers(_fetch_wrong_guesses(args.url), movies)
     else:
         stumpers = _load_local_stumpers()
+        wrong = _wrong_guesses_as_stumpers(_load_local_wrong_guesses(), movies)
 
-    analyze(stumpers, movies, qmap, verbose=args.verbose)
+    analyze(stumpers + wrong, movies, qmap, verbose=args.verbose)
 
 
 if __name__ == "__main__":
