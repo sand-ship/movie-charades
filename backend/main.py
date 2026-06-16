@@ -88,6 +88,12 @@ _SUPA_HEADERS = {
     "Content-Type": "application/json",
 }
 
+_ADMIN_KEY = os.getenv("ADMIN_KEY", "")
+
+def _require_admin_key(key: Optional[str] = None) -> None:
+    if not _ADMIN_KEY or key != _ADMIN_KEY:
+        raise HTTPException(status_code=403, detail="Unauthorized")
+
 
 def _stumper_insert(record: dict) -> None:
     if _SUPA_URL and _SUPA_KEY:
@@ -336,8 +342,9 @@ def stumped(req: StumpedRequest):
 
 
 @app.get("/admin/stumpers")
-def list_stumpers():
+def list_stumpers(key: Optional[str] = None):
     """Read-only view of films the genie couldn't guess — your coverage-gap feed."""
+    _require_admin_key(key)
     entries = _stumper_list()
     return {"count": len(entries), "entries": entries}
 
@@ -365,8 +372,9 @@ def submit_feedback(req: FeedbackRequest):
 
 
 @app.get("/admin/games")
-def list_games():
+def list_games(key: Optional[str] = None):
     """All completed game outcomes — correct guesses and wrong guesses."""
+    _require_admin_key(key)
     entries = _games_list()
     return {"count": len(entries), "entries": entries}
 
@@ -414,7 +422,7 @@ def export_csv():
 
 
 @app.get("/admin/analyze-stumpers")
-def analyze_stumpers(verbose: bool = False):
+def analyze_stumpers(key: Optional[str] = None, verbose: bool = False):
     """Analyze stumpers to find label mismatches and missing films.
 
     Returns findings grouped by category:
@@ -422,6 +430,7 @@ def analyze_stumpers(verbose: bool = False):
     - mismatched: films in catalog with label mismatches
     - ok: films with consistent data
     """
+    _require_admin_key(key)
     import difflib
 
     STRUCTURAL = {
