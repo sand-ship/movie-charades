@@ -112,14 +112,22 @@ def _stumper_insert(record: dict) -> None:
 def _game_insert(record: dict) -> None:
     if _SUPA_URL and _SUPA_KEY:
         try:
-            httpx.post(
+            r = httpx.post(
                 f"{_SUPA_URL}/games",
                 json=record,
                 headers={**_SUPA_HEADERS, "Prefer": "return=minimal"},
                 timeout=5.0,
             )
-        except Exception:
-            pass
+            if r.status_code >= 400:
+                print(f"⚠️ Supabase games insert failed: {r.status_code} {r.text}", flush=True)
+                # Fallback to local
+                with GAMES_LOG.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps(record, ensure_ascii=False) + "\n")
+        except Exception as e:
+            print(f"⚠️ Supabase games insert error: {e}", flush=True)
+            # Fallback to local
+            with GAMES_LOG.open("a", encoding="utf-8") as f:
+                f.write(json.dumps(record, ensure_ascii=False) + "\n")
     else:
         with GAMES_LOG.open("a", encoding="utf-8") as f:
             f.write(json.dumps(record, ensure_ascii=False) + "\n")
