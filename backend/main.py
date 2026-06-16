@@ -307,6 +307,23 @@ def stumped(req: StumpedRequest):
         "remaining_candidates": session.remaining_count() if session else None,
     }
     _stumper_insert(record)
+
+    # Also log to games table as a stumped outcome
+    if session:
+        top = session.last_guesses[0] if session.last_guesses else {}
+        _game_insert({
+            "ts": datetime.datetime.utcnow().isoformat() + "Z",
+            "outcome": "stumped",
+            "guessed_movie_id": top.get("id"),
+            "guessed_movie_title": top.get("title"),
+            "correct_movie_id": None,  # unknown until player submits
+            "yes_answers": yes_answers,
+            "all_answers": dict(session.answers),
+            "questions_asked": list(session.asked),
+            "remaining_candidates": session.remaining_count(),
+            "question_count": session.question_count(),
+        })
+
     return {"status": "ok"}
 
 
