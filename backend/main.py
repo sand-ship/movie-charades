@@ -413,6 +413,99 @@ def export_csv():
     )
 
 
+@app.get("/admin/analyze-stumpers")
+def analyze_stumpers(verbose: bool = False):
+    """Analyze stumpers to find label mismatches and missing films.
+
+    Returns findings grouped by category:
+    - missing: films not in catalog
+    - mismatched: films in catalog with label mismatches
+    - ok: films with consistent data
+    """
+    import difflib
+
+    STRUCTURAL = {
+        "q_hindi", "q_tamil", "q_telugu",
+        "q_classic", "q_90s", "q_2000s", "q_2010s", "q_2020s",
+        "q_genre_action", "q_genre_comedy", "q_genre_romance",
+        "q_genre_drama", "q_genre_thriller", "q_genre_scifi", "q_genre_other",
+    }
+
+    def fuzzy_match(title: str) -> dict | None:
+        title_lo = title.strip().lower()
+        for m in movies:
+            if m["title"].lower() == title_lo:
+                return m
+        if len(title_lo) >= 4:
+            for m in movies:
+                mt = m["title"].lower()
+                if len(mt) >= 4 and (title_lo in mt or mt in title_lo):
+                    return m
+        titles = [m["title"].lower() for m in movies]
+        close = difflib.get_close_matches(title_lo, titles, n=1, cutoff=0.85)
+        if close:
+            return next((m for m in movies if m["title"].lower() == close[0]), None)
+        return None
+
+    stumpers = _stumper_list()
+
+    missing, mismatched, ok = [], [], []
+
+    for entry in stumpers:
+        title = entry.get("title", "").strip()
+        yes_answers = set(entry.get("yes_answers", []))
+
+        film = fuzzy_match(title)
+        if film is None:
+            missing.append({"title": title, "yes_answers": sorted(yes_answers)})
+            continue
+
+        mismatches = []
+        for qid in sorted(yes_answers):
+            if qid in STRUCTURAL:
+                continue
+            q = QUESTION_MAP.get(qid)
+            if q is None:
+                continue
+            actual = q.evaluate(film)
+            if not actual:
+                mismatches.append({
+                    "question_id": qid,
+                    "question_text": q.text if q else "?",
+                })
+
+        hidden = []
+        if verbose:
+            for qid, q in QUESTION_MAP.items():
+                if qid in STRUCTURAL or qid in yes_answers:
+                    continue
+                if qid.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_")):
+                    continue
+                if q.evaluate(film):
+                    hidden.append(qid)
+
+        if mismatches or hidden:
+            mismatched.append({
+                "title": title,
+                "matched_to": film["title"],
+                "film_id": film["id"],
+                "mismatches": mismatches,
+                "hidden": hidden,
+            })
+        else:
+            ok.append({"title": title, "matched_to": film["title"]})
+
+    return {
+        "missing_count": len(missing),
+        "mismatched_count": len(mismatched),
+        "ok_count": len(ok),
+        "total_analyzed": len(stumpers),
+        "missing": missing,
+        "mismatched": mismatched,
+        "ok": ok,
+    }
+
+
 @app.get("/health")
 def health():
     return {"status": "ok", "movie_count": len(movies)}
