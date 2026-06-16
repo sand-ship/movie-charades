@@ -176,13 +176,6 @@ class GameEngine:
                         session.answers[sibling_id] = "no"
                         added.append(sibling_id)
 
-            # Music director is also mutually exclusive — auto-no other composers
-            if question_id.startswith("q_music_"):
-                for qid in QUESTION_MAP.keys():
-                    if qid.startswith("q_music_") and qid != question_id and qid not in session.asked:
-                        session.asked.append(qid)
-                        session.answers[qid] = "no"
-                        added.append(qid)
 
         session.history.append(added)  # record this turn so Back can undo it
         # Soft pruning: rescore the whole pool and keep every movie within one

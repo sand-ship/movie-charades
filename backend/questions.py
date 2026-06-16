@@ -93,7 +93,7 @@ def make_star_questions(movies: list[dict]) -> list["Question"]:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
             qs.append(Question(f"q_dir_{safe}", f"Is it directed by {name}?", _in('director', name)))
     for name, n in music.items():
-        if n >= 3 and name.strip().lower() not in _SKIP:
+        if n >= 8 and name.strip().lower() not in _SKIP:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
             qs.append(Question(f"q_music_{safe}", f"Is the music by {name}?", _in('music_director', name)))
     return qs
