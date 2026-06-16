@@ -482,7 +482,7 @@
       document.getElementById('guess-no').disabled = true;
       showGuess();
     } else {
-      sendFeedback(false, guessRound.list[0] && guessRound.list[0].id);
+      sendFeedback(false, null);
       giveUp();
     }
   }
