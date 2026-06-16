@@ -118,14 +118,16 @@ def _attr_true(attr: str) -> Callable[[dict], bool]:
 
 def _is_mass_masala(m: dict) -> bool:
     """True if film is a single-screen masala entertainer: multi-genre, has item numbers,
-    fight sequences, over-the-top moments. Blend of action, comedy, romance, and/or drama."""
+    fight sequences, over-the-top moments. Blend of action, comedy, romance, drama, or patriotic themes."""
     genres = set(m.get('genres') or [])
     has_action = 'action' in genres
     has_comedy = m.get('has_comedy') is True
     has_romance = m.get('has_romance') is True
     has_drama = 'drama' in genres or 'family' in genres
-    # Masala requires: action + comedy, or action + romance, or comedy + romance + drama
-    return (has_action and (has_comedy or has_romance)) or (has_comedy and has_romance and has_drama)
+    has_patriotic = m.get('is_patriotic_film') is True
+    has_songs = m.get('has_songs') is True
+    # Masala requires: action + (comedy or romance), OR comedy + romance + drama, OR action + patriotic + songs
+    return (has_action and (has_comedy or has_romance)) or (has_comedy and has_romance and has_drama) or (has_action and has_patriotic and has_songs)
 
 
 # Soft trope questions (weight=0.3): nudge confidence, never hard-eliminate.
@@ -193,6 +195,8 @@ QUESTIONS.extend([
              _attr_true("has_brothers_in_arms"), weight=0.3),
     Question("q_enemy_friend",  "Does an enemy become a friend (or a friend become an enemy)?",
              _attr_true("has_enemy_turned_friend"), weight=0.3),
+    Question("q_patriotic",     "Does the film have strong patriotic or nationalist themes?",
+             _attr_true("is_patriotic_film"), weight=0.3),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
