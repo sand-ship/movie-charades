@@ -117,7 +117,8 @@ def _attr_true(attr: str) -> Callable[[dict], bool]:
 
 
 def _is_mass_masala(m: dict) -> bool:
-    """True if film blends action, comedy, romance, and/or drama — the essence of masala."""
+    """True if film is a single-screen masala entertainer: multi-genre, has item numbers,
+    fight sequences, over-the-top moments. Blend of action, comedy, romance, and/or drama."""
     genres = set(m.get('genres') or [])
     has_action = 'action' in genres
     has_comedy = m.get('has_comedy') is True
@@ -144,7 +145,7 @@ QUESTIONS.extend([
              _attr_true("has_police_or_law"), weight=0.3),
     Question("q_village_setting","Is the film primarily set in a village or rural area?",
              _attr_true("has_village_setting"), weight=0.3),
-    Question("q_mass_entertainer","Is it a mass masala film with action, comedy, romance, and/or drama?",
+    Question("q_mass_entertainer","Is it a mass masala film that would play well on single screens—with multi-genre appeal, item numbers, fight sequences, and over-the-top moments?",
              _is_mass_masala, weight=0.3),
 
     # Otherworldly / mythology / superpowers
