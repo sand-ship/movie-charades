@@ -118,16 +118,25 @@ def _attr_true(attr: str) -> Callable[[dict], bool]:
 
 def _is_mass_masala(m: dict) -> bool:
     """True if film is a single-screen masala entertainer: multi-genre, has item numbers,
-    fight sequences, over-the-top moments. Blend of action, comedy, romance, drama, or patriotic themes."""
+    fight sequences, over-the-top moments. Blend of action, comedy, romance, drama, patriotic, or musical themes."""
     genres = set(m.get('genres') or [])
     has_action = 'action' in genres
+    has_thriller = 'thriller' in genres or 'crime' in genres
     has_comedy = m.get('has_comedy') is True
     has_romance = m.get('has_romance') is True
     has_drama = 'drama' in genres or 'family' in genres
     has_patriotic = m.get('is_patriotic_film') is True
     has_songs = m.get('has_songs') is True
-    # Masala requires: action + (comedy or romance), OR comedy + romance + drama, OR action + patriotic + songs
-    return (has_action and (has_comedy or has_romance)) or (has_comedy and has_romance and has_drama) or (has_action and has_patriotic and has_songs)
+    has_musical = 'musical' in genres
+    # Masala blends: action + (comedy or romance), OR comedy + romance + drama,
+    # OR action + patriotic + songs, OR thriller + romance + songs, OR romance + musical + songs
+    return (
+        (has_action and (has_comedy or has_romance))
+        or (has_comedy and has_romance and has_drama)
+        or (has_action and has_patriotic and has_songs)
+        or (has_thriller and has_romance and has_songs)
+        or (has_romance and has_musical and has_songs)
+    )
 
 
 # Soft trope questions (weight=0.3): nudge confidence, never hard-eliminate.
