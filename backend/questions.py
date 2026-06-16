@@ -116,12 +116,23 @@ def _attr_true(attr: str) -> Callable[[dict], bool]:
     return lambda m: m.get(attr) is True
 
 
+def _is_mass_masala(m: dict) -> bool:
+    """True if film blends action, comedy, romance, and/or drama — the essence of masala."""
+    genres = set(m.get('genres') or [])
+    has_action = 'action' in genres
+    has_comedy = m.get('has_comedy') is True
+    has_romance = m.get('has_romance') is True
+    has_drama = 'drama' in genres or 'family' in genres
+    # Masala requires: action + comedy, or action + romance, or comedy + romance + drama
+    return (has_action and (has_comedy or has_romance)) or (has_comedy and has_romance and has_drama)
+
+
 # Soft trope questions (weight=0.3): nudge confidence, never hard-eliminate.
 # Fields default to False/None for untagged movies so "no" answers are free.
 QUESTIONS.extend([
     Question("q_one_sided_love", "Is the love story primarily one-sided or unrequited?",
              _attr_true("has_one_sided_love"), weight=0.3),
-    Question("q_item_number",    "Does it feature a prominent item number / special dance song?",
+    Question("q_item_number",    "Does it feature a famous dance/item number?",
              _attr_true("has_item_number"), weight=0.3),
     Question("q_double_role",    "Does the lead actor play a double role?",
              _attr_true("has_double_role"), weight=0.3),
@@ -133,8 +144,8 @@ QUESTIONS.extend([
              _attr_true("has_police_or_law"), weight=0.3),
     Question("q_village_setting","Is the film primarily set in a village or rural area?",
              _attr_true("has_village_setting"), weight=0.3),
-    Question("q_mass_entertainer","Is it a commercial mass masala entertainer?",
-             _attr_true("is_mass_entertainer"), weight=0.3),
+    Question("q_mass_entertainer","Is it a mass masala film with action, comedy, romance, and/or drama?",
+             _is_mass_masala, weight=0.3),
 
     # Otherworldly / mythology / superpowers
     Question("q_supernatural",  "Does it involve gods, supernatural beings, or the afterlife?",
