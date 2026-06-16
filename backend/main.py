@@ -307,7 +307,7 @@ def stumped(req: StumpedRequest):
         return {"status": "empty"}
     session = engine.get_session(req.session_id)
     yes_answers = sorted(q for q, a in (session.answers.items() if session else [])
-                         if a == "yes")
+                         if a in ("yes", "maybe"))
     record = {
         "ts": datetime.datetime.utcnow().isoformat() + "Z",
         "title": title,
@@ -348,7 +348,7 @@ def submit_feedback(req: FeedbackRequest):
     if not session:
         raise HTTPException(status_code=404, detail="Session not found")
     top = session.last_guesses[0] if session.last_guesses else {}
-    yes_answers = sorted(q for q, a in session.answers.items() if a == "yes")
+    yes_answers = sorted(q for q, a in session.answers.items() if a in ("yes", "maybe"))
     _game_insert({
         "ts": datetime.datetime.utcnow().isoformat() + "Z",
         "outcome": "correct" if req.was_correct else "wrong_guess",
