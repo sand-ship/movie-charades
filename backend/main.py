@@ -54,7 +54,7 @@ def index():
 class AnswerRequest(BaseModel):
     session_id: str
     question_id: str
-    answer: str  # "yes" | "no" | "dunno"
+    answer: str  # "yes" | "probably" | "unlikely" | "no" | "dunno"
 
 
 class BatchAnswerRequest(BaseModel):
@@ -225,8 +225,8 @@ def answer_question(req: AnswerRequest):
     session = engine.get_session(req.session_id)
     if not session:
         raise HTTPException(status_code=404, detail="Session not found")
-    if req.answer not in ("yes", "no", "dunno"):
-        raise HTTPException(status_code=422, detail="answer must be 'yes', 'no', or 'dunno'")
+    if req.answer not in ("yes", "probably", "unlikely", "no", "dunno"):
+        raise HTTPException(status_code=422, detail="answer must be 'yes', 'probably', 'unlikely', 'no', or 'dunno'")
 
     engine.apply_answer(session, req.question_id, req.answer)
 

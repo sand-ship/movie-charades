@@ -6,7 +6,7 @@ from typing import Optional
 
 from questions import QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS, GENRE_QUESTION_IDS
 
-MAX_QUESTIONS = 42   # hard ceiling (incl. ~4 auto-answered siblings → ~38 real questions)
+MAX_QUESTIONS = 30   # hard ceiling for game length
 MAX_CONSECUTIVE_ACTOR_QS = 3  # give up on actor questions after this many in a row → guess
 MIN_QUESTIONS = 12   # minimum non-language/era questions before guessing
 GENRE_HOLDOFF = 3    # ask at least this many plot questions before the genre picker fires
@@ -308,15 +308,29 @@ class GameEngine:
             if not q:
                 continue
             match = q.evaluate(movie)
-            w = q.weight           # 1.0 = hard signal, 0.3 = soft trope
-            pos = 1.0 + w          # weight 1.0 → 2.0,  weight 0.3 → 1.3
-            neg = 1.0 - w * 0.9   # weight 1.0 → 0.1,  weight 0.3 → 0.73
+            w = q.weight  # 1.0 = hard signal, 0.3 = soft trope
+            if answer == "dunno":
+                continue  # no effect
+            # Strong answers (yes/no): full weight
+            pos_strong = 1.0 + w
+            neg_strong = 1.0 - w * 0.9
+            # Soft answers (probably/unlikely): half weight
+            pos_soft = 1.0 + w * 0.5
+            neg_soft = 1.0 - w * 0.5 * 0.9
             if answer == "yes" and match:
-                score *= pos
-            elif answer == "no" and not match:
-                score *= pos
+                score *= pos_strong
             elif answer == "yes" and not match:
-                score *= neg
+                score *= neg_strong
+            elif answer == "probably" and match:
+                score *= pos_soft
+            elif answer == "probably" and not match:
+                score *= neg_soft
+            elif answer == "unlikely" and not match:
+                score *= pos_soft
+            elif answer == "unlikely" and match:
+                score *= neg_soft
+            elif answer == "no" and not match:
+                score *= pos_strong
             elif answer == "no" and match:
-                score *= neg
+                score *= neg_strong
         return score
