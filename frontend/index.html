@@ -97,7 +97,7 @@
     .progress-bar  { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--red), var(--gold)); box-shadow: 0 0 12px rgba(229,9,20,0.7); transition: width 0.4s ease; }
 
     /* ── buttons ── */
-    .btn-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; width: 100%; }
+    .btn-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; width: 100%; }
 
     button {
       font-family: 'Poppins', sans-serif;
@@ -110,11 +110,10 @@
     button:disabled { opacity: 0.4; cursor: default; }
     button:not(:disabled):hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.55); }
 
-    .btn-yes      { background: linear-gradient(135deg, #1db954, #11823c); }
-    .btn-probably { background: linear-gradient(135deg, #4a9d6f, #2d6b4a); color: #cef; }
-    .btn-unlikely { background: linear-gradient(135deg, #c9693c, #8a4a2a); color: #fdd; }
-    .btn-no       { background: linear-gradient(135deg, var(--red), var(--red-deep)); }
-    .btn-dunno    { background: rgba(255,255,255,0.12); color: var(--muted); }
+    .btn-yes   { background: linear-gradient(135deg, #1db954, #11823c); }
+    .btn-no    { background: linear-gradient(135deg, var(--red), var(--red-deep)); }
+    .btn-maybe { background: linear-gradient(135deg, #f59e0b, #d97706); }
+    .btn-dunno { background: rgba(255,255,255,0.12); color: var(--muted); }
 
     .btn-primary {
       flex: unset; max-width: 280px; padding: 18px 30px;
@@ -222,11 +221,10 @@
       </div>
     </div>
     <div class="btn-row">
-      <button class="btn-yes"       onclick="answer('yes')"       id="btn-yes">✅ Yes</button>
-      <button class="btn-probably"  onclick="answer('probably')"  id="btn-probably">👍 Probably</button>
-      <button class="btn-unlikely"  onclick="answer('unlikely')"  id="btn-unlikely">👎 Unlikely</button>
-      <button class="btn-no"        onclick="answer('no')"        id="btn-no">❌ No</button>
-      <button class="btn-dunno"     onclick="answer('dunno')"     id="btn-dunno" style="grid-column: 1/-1;">🤷 Don't know</button>
+      <button class="btn-yes"   onclick="answer('yes')"   id="btn-yes">✅ Yes</button>
+      <button class="btn-no"    onclick="answer('no')"    id="btn-no">❌ No</button>
+      <button class="btn-maybe" onclick="answer('maybe')" id="btn-maybe">🤔 Maybe</button>
+      <button class="btn-dunno" onclick="answer('dunno')" id="btn-dunno">🤷 Don't know</button>
     </div>
     <button class="btn-back hidden" id="back-question" onclick="goBack()">← Back · change my last answer</button>
     <p class="info" id="candidates-info"></p>
@@ -318,7 +316,7 @@
   }
 
   function setYesNoEnabled(enabled) {
-    ['btn-yes','btn-probably','btn-unlikely','btn-no','btn-dunno'].forEach(id =>
+    ['btn-yes','btn-no','btn-maybe','btn-dunno'].forEach(id =>
       document.getElementById(id).disabled = !enabled
     );
   }

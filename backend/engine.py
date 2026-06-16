@@ -315,23 +315,19 @@ class GameEngine:
             # Strong answers (yes/no): full weight
             pos_strong = 1.0 + w
             neg_strong = 1.0 - w * 0.9
-            # Soft answers (probably/unlikely): half weight
+            # Soft answer (maybe): half weight
             pos_soft = 1.0 + w * 0.5
             neg_soft = 1.0 - w * 0.5 * 0.9
             if answer == "yes" and match:
                 score *= pos_strong
             elif answer == "yes" and not match:
                 score *= neg_strong
-            elif answer == "probably" and match:
-                score *= pos_soft
-            elif answer == "probably" and not match:
-                score *= neg_soft
-            elif answer == "unlikely" and not match:
-                score *= pos_soft
-            elif answer == "unlikely" and match:
-                score *= neg_soft
             elif answer == "no" and not match:
                 score *= pos_strong
             elif answer == "no" and match:
                 score *= neg_strong
+            elif answer == "maybe" and match:
+                score *= pos_soft
+            elif answer == "maybe" and not match:
+                score *= neg_soft
         return score
