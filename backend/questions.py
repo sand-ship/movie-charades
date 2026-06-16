@@ -81,11 +81,11 @@ def make_star_questions(movies: list[dict]) -> list["Question"]:
     music     = Counter(m['music_director']  for m in movies if m.get('music_director'))
     qs = []
     for name, n in actors.items():
-        if n >= 3 and name.strip().lower() not in _SKIP:
+        if n >= 15 and name.strip().lower() not in _SKIP:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
             qs.append(Question(f"q_actor_{safe}", f"Does it star {name}?", _in('lead_actor', name)))
     for name, n in actresses.items():
-        if n >= 3 and name.strip().lower() not in _SKIP:
+        if n >= 15 and name.strip().lower() not in _SKIP:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
             qs.append(Question(f"q_actress_{safe}", f"Does it star the actress {name}?", _in('lead_actress', name)))
     for name, n in directors.items():
