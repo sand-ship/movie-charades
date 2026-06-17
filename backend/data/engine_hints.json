@@ -1,0 +1,71 @@
+{
+  "density_strategy": {
+    "SPARSE": {
+      "description": "Attribute-sparse films (0-2 narrative attributes)",
+      "count": 610,
+      "strategy": "Prioritize actor/director questions within first 8-10 questions",
+      "question_weights": {
+        "actor_questions": 0.8,
+        "narrative_questions": 0.2
+      }
+    },
+    "MEDIUM": {
+      "description": "Attribute-medium films (3-5 narrative attributes)",
+      "count": 1831,
+      "strategy": "Alternate narrative and actor questions",
+      "question_weights": {
+        "actor_questions": 0.5,
+        "narrative_questions": 0.5
+      }
+    },
+    "DENSE": {
+      "description": "Attribute-dense films (6+ narrative attributes)",
+      "count": 86,
+      "strategy": "Narrative-first, actor as tiebreaker only if pool >5",
+      "question_weights": {
+        "actor_questions": 0.2,
+        "narrative_questions": 0.8
+      }
+    }
+  },
+  "collision_resolution": {
+    "total_clusters": 15,
+    "affected_films": 2199,
+    "strategy": "Pre-ask micro-attribute questions when pool >50 films with identical signature",
+    "example_clusters": [
+      {
+        "size": 429,
+        "signature": {
+          "class": false,
+          "comedy": true,
+          "family": true,
+          "romance": true,
+          "thriller": false
+        },
+        "micro_attribute": "has_parent_child_arc or is_period_film or is_investigation_plot"
+      },
+      {
+        "size": 374,
+        "signature": {
+          "class": true,
+          "comedy": true,
+          "family": true,
+          "romance": true,
+          "thriller": false
+        },
+        "micro_attribute": "has_parent_child_arc or is_period_film or is_investigation_plot"
+      },
+      {
+        "size": 171,
+        "signature": {
+          "class": false,
+          "comedy": false,
+          "family": false,
+          "romance": true,
+          "thriller": true
+        },
+        "micro_attribute": "has_parent_child_arc or is_period_film or is_investigation_plot"
+      }
+    ]
+  }
+}
