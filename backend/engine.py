@@ -1,10 +1,19 @@
 from __future__ import annotations
 
+import json
 import math
 import uuid
 from typing import Optional
+from pathlib import Path
 
 from questions import QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS, GENRE_QUESTION_IDS
+
+# Load engine hints for adaptive questioning strategy
+try:
+    with open(Path(__file__).parent / 'data' / 'engine_hints.json', 'r') as f:
+        ENGINE_HINTS = json.load(f)
+except (FileNotFoundError, json.JSONDecodeError):
+    ENGINE_HINTS = {}
 
 MAX_QUESTIONS = 30   # hard ceiling for game length
 MAX_CONSECUTIVE_ACTOR_QS = 3  # give up on actor questions after this many in a row → guess
@@ -141,6 +150,26 @@ class GameEngine:
 
         if not splitting:
             return None  # nothing left discriminates → caller will guess
+
+        # Adaptive density-aware question routing: prioritize actor questions for sparse films
+        # Check if we're dealing with attribute-sparse films (0-2 narrative attributes)
+        if cands and non_anchor < 10:  # Early game for sparse films
+            avg_density = sum(len([a for a in [
+                'is_lost_and_found_child', 'is_love_triangle', 'is_unrequited_love_turnaround',
+                'is_reincarnation_rebirth', 'is_partition_backdrop', 'is_dance_heavy',
+                'is_brother_conflict', 'is_sacrifice_ending', 'has_heist', 'is_sports_film',
+                'is_based_on_true_story', 'has_courtroom', 'is_sci_fi', 'has_single_protagonist',
+                'has_female_lead', 'is_ensemble_cast', 'has_wedding_plot', 'is_period_film',
+                'has_anti_hero_protagonist', 'has_investigation_plot', 'is_urban_setting',
+                'has_friendship_focus', 'has_parent_child_arc', 'has_supernatural_elements',
+                'is_sequel_or_franchise', 'has_mistaken_identity'
+            ] if m.get(a)]) for m in cands) / len(cands) if cands else 0
+
+            # For sparse films (avg < 3 attrs): ask actor/director questions in early game
+            if avg_density < 3:
+                actor_qs = [q for q in splitting if q.id.startswith(('q_rajini', 'q_venkatesh', 'q_chiranjeevi', 'q_kamal_haasan', 'q_vijay', 'q_amitabh', 'q_ajith', 'q_akshay', 'q_shah_rukh', 'q_pawan_kalyan', 'q_sivakarthikeyan', 'q_ravi_teja', 'q_nani', 'q_salman', 'q_dhanush', 'q_suriya', 'q_kajal', 'q_nayanthara'))]
+                if actor_qs:
+                    return max(actor_qs, key=lambda q: self._information_gain(cands, q))
 
         # "Other" genre is a broad catch-all — immediately disambiguate with
         # sub-genre questions (historical / horror / sports / bio) before anything else.
