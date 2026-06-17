@@ -265,6 +265,42 @@ class GameEngine:
                 )
                 return max(splitting, key=actor_boost)
 
+        # Diversify discriminating fields: avoid asking multiple from same field when previous got "no"
+        # If last Q was "music director NO", pivot to actress/director, not another music director
+        last_discrim_field = None
+        if session.asked:
+            last_qid = session.asked[-1]
+            last_answer = session.answers.get(last_qid)
+
+            if last_answer == "no":
+                # Identify which discriminating field the last Q was from
+                if last_qid.startswith("q_music_"):
+                    last_discrim_field = "music"
+                elif last_qid.startswith("q_dir_"):
+                    last_discrim_field = "director"
+                elif last_qid.startswith("q_actress_"):
+                    last_discrim_field = "actress"
+                elif last_qid.startswith("q_actor_"):
+                    last_discrim_field = "actor"
+
+        # Deprioritize questions from the same field, prioritize different fields
+        if last_discrim_field and splitting:
+            field_map = {
+                "music": lambda q: q.id.startswith("q_music_"),
+                "director": lambda q: q.id.startswith("q_dir_"),
+                "actress": lambda q: q.id.startswith("q_actress_"),
+                "actor": lambda q: q.id.startswith("q_actor_"),
+            }
+
+            # Separate: same field (deprioritized) vs different field (prioritized)
+            same_field = [q for q in splitting if field_map[last_discrim_field](q)]
+            diff_field = [q for q in splitting if not field_map[last_discrim_field](q)]
+
+            # Prefer different fields, fall back to same field if needed
+            priority_pool = diff_field if diff_field else same_field
+            if priority_pool:
+                return max(priority_pool, key=lambda q: self._information_gain(cands, q))
+
         return max(splitting, key=lambda q: self._information_gain(cands, q))
 
     @staticmethod
