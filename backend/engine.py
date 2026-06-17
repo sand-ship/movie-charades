@@ -214,6 +214,11 @@ class GameEngine:
 
         # Calculate when to unlock actor questions
         can_ask_actors = False
+
+        # Fast-track: if structural question answered, enable discriminating fields early
+        if "q_multiple_protagonists" in session.answers:
+            can_ask_actors = True
+
         if len(non_anchor_qs) >= 5:
             # Check if first 5 questions are all "no"
             first_five = non_anchor_qs[:5]

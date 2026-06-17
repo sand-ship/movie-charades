@@ -35,6 +35,7 @@ QUESTIONS: list[Question] = [
     Question("q_2000s",     "Was it released in the 2000s?",                    _attr_eq("era", "2000s")),
     Question("q_2010s",     "Was it released in the 2010s?",                    _attr_eq("era", "2010s")),
     Question("q_2020s",     "Was it released after 2020?",                      _attr_eq("era", "2020s")),
+    Question("q_multiple_protagonists", "Is it structured around one hero or multiple protagonists?", _has_multiple_protagonists, weight=1.0),
     Question("q_villain",          "Does it feature a memorable villain?",                           _attr_eq("has_villain", True)),
     Question("q_strict_antagonist","Is the main conflict driven by a strict but well-meaning character\n(overprotective parent/sibling, authority figure) rather than a villain?",
              _attr_eq("has_strict_antagonist", True), requires=("q_villain", "no")),
@@ -66,6 +67,11 @@ def _actor_appears(name: str) -> Callable[[dict], bool]:
                      m.get('lead_actress') == name or
                      name in (m.get('lead_actors') or []) or
                      name in (m.get('lead_actresses') or []))
+
+def _has_multiple_protagonists(m: dict) -> bool:
+    """Check if film has multiple prominent leads (co-leads, ensemble)."""
+    lead_actors = m.get('lead_actors') or []
+    return len(lead_actors) >= 2
 
 def _genre_in(*tokens: str) -> Callable[[dict], bool]:
     """Match a theme against ANY of a movie's genres (multi-genre films
