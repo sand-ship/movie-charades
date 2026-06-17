@@ -320,102 +320,79 @@ QUESTIONS.extend([
              _actor_appears("Suriya"), weight=1.0),
 
     # ACTOR-HIERARCHICAL SUB-QUESTIONS (only asked after actor confirmed)
-    # Chiranjeevi-specific differentiators
-    Question("q_chiranjeevi_action",   "Is it an action film (not romantic comedy)?",
-             _genre_in("action", "thriller", "crime"), weight=0.5, requires=("q_chiranjeevi", "yes")),
-    Question("q_chiranjeevi_80s90s",   "Is it from the 80s or early 90s era?",
-             _in("era", "80s", "90s"), weight=0.5, requires=("q_chiranjeevi", "yes")),
+    # Focus on SPECIFIC plot elements & characterization, NOT era/genre (already asked in main Qs)
+    # Chiranjeevi-specific: revenge-driven roles vs family/comedy
+    Question("q_chiranjeevi_revenge",   "Does the film center on revenge or an underdog struggle?",
+             _attr_true("has_revenge_plot"), weight=0.5, requires=("q_chiranjeevi", "yes")),
+    Question("q_chiranjeevi_comedy",    "Is it primarily a comedy or lighthearted entertainer?",
+             _genre_in("comedy"), weight=0.5, requires=("q_chiranjeevi", "yes")),
 
-    # Vijay-specific differentiators
-    Question("q_vijay_action",        "Is it an action or action-romance film?",
-             _genre_in("action", "romance"), weight=0.5, requires=("q_vijay", "yes")),
-    Question("q_vijay_recent",        "Is it from 2010 onwards?",
-             _in("era", "2010s", "2020s"), weight=0.5, requires=("q_vijay", "yes")),
+    # Vijay-specific: mass vs romantic
+    Question("q_vijay_mass",           "Is it a mass-appeal action entertainer?",
+             _attr_true("is_mass_entertainer"), weight=0.5, requires=("q_vijay", "yes")),
+    Question("q_vijay_romantic",       "Is romance central to the plot?",
+             _attr_true("has_romance"), weight=0.5, requires=("q_vijay", "yes")),
 
-    # Amitabh-specific differentiators
-    Question("q_amitabh_classic",     "Is it from the 70s or 80s?",
-             _in("era", "70s", "80s"), weight=0.5, requires=("q_amitabh", "yes")),
-    Question("q_amitabh_action",      "Is it an action or thriller film?",
-             _genre_in("action", "thriller", "crime"), weight=0.5, requires=("q_amitabh", "yes")),
+    # Amitabh-specific: villain/grey vs righteous
+    Question("q_amitabh_anti_hero",    "Does he play an anti-hero or morally grey character?",
+             _attr_true("is_anti_hero"), weight=0.5, requires=("q_amitabh", "yes")),
+    Question("q_amitabh_family",       "Is family drama central to the story?",
+             _attr_true("is_family_film"), weight=0.5, requires=("q_amitabh", "yes")),
 
-    # Shah Rukh-specific differentiators
-    Question("q_shah_rukh_romance",   "Is romance central to the story?",
-             _attr_true("has_romance"), weight=0.5, requires=("q_shah_rukh", "yes")),
-    Question("q_shah_rukh_90s2000s",  "Is it from the 90s or 2000s?",
-             _in("era", "90s", "2000s"), weight=0.5, requires=("q_shah_rukh", "yes")),
+    # Shah Rukh-specific: patriarchal resistance vs romantic
+    Question("q_shah_rukh_patriarchy", "Does it center on resistance to patriarchal/family pressure?",
+             _attr_true("has_patriarchal_resistance"), weight=0.5, requires=("q_shah_rukh", "yes")),
+    Question("q_shah_rukh_vulnerability", "Does the lead show emotional vulnerability or breaking?",
+             _attr_true("has_male_vulnerability"), weight=0.5, requires=("q_shah_rukh", "yes")),
 
-    # Salman-specific differentiators
-    Question("q_salman_comedy",       "Is it a comedy or mass entertainer?",
+    # Salman-specific: comedy vs thriller
+    Question("q_salman_comedy_focused", "Is it primarily a comedy?",
              _genre_in("comedy"), weight=0.5, requires=("q_salman", "yes")),
-    Question("q_salman_recent",       "Is it from 2010 onwards?",
-             _in("era", "2010s", "2020s"), weight=0.5, requires=("q_salman", "yes")),
+    Question("q_salman_romance_subplot", "Does it have a romance subplot?",
+             _attr_true("has_romance"), weight=0.5, requires=("q_salman", "yes")),
 
-    # Ajith-specific differentiators
-    Question("q_ajith_action",        "Is it an action or action-thriller film?",
-             _genre_in("action", "thriller"), weight=0.5, requires=("q_ajith", "yes")),
-    Question("q_ajith_recent",        "Is it from 2010 onwards?",
-             _in("era", "2010s", "2020s"), weight=0.5, requires=("q_ajith", "yes")),
+    # Ajith-specific: action-heavy vs balanced
+    Question("q_ajith_intense",        "Is it an intense, hard-hitting action thriller?",
+             _genre_in("thriller", "crime"), weight=0.5, requires=("q_ajith", "yes")),
+    Question("q_ajith_family_theme",   "Does it have family or relationship elements?",
+             _attr_true("is_family_film"), weight=0.5, requires=("q_ajith", "yes")),
 
-    # Nayanthara-specific differentiators
-    Question("q_nayanthara_action",   "Is it an action, thriller, or crime film?",
+    # Nayanthara-specific: heroine-led vs ensemble
+    Question("q_nayanthara_led",       "Is she the central protagonist/heroine?",
+             _attr_eq("lead_gender", "female"), weight=0.5, requires=("q_nayanthara", "yes")),
+    Question("q_nayanthara_action_heavy", "Is it action or thriller-heavy?",
              _genre_in("action", "thriller", "crime"), weight=0.5, requires=("q_nayanthara", "yes")),
-    Question("q_nayanthara_recent",   "Is it from 2010 onwards?",
-             _in("era", "2010s", "2020s"), weight=0.5, requires=("q_nayanthara", "yes")),
 
-    # Rajini-specific differentiators
-    Question("q_rajini_action",       "Is it an action or action-entertainment film?",
-             _genre_in("action"), weight=0.5, requires=("q_rajini", "yes")),
-    Question("q_rajini_80s90s",       "Is it from the 80s or 90s?",
-             _in("era", "80s", "90s"), weight=0.5, requires=("q_rajini", "yes")),
+    # Rajini-specific: stylish vs gritty
+    Question("q_rajini_stylish",       "Is it a stylish, high-octane action film?",
+             _attr_true("is_mass_entertainer"), weight=0.5, requires=("q_rajini", "yes")),
+    Question("q_rajini_social_message", "Does it have a social or patriotic message?",
+             _attr_true("has_patriotic_sacrifice"), weight=0.5, requires=("q_rajini", "yes")),
 
-    # HIERARCHICAL THEMES
-    # Patriotic/National Pride (main + sub-questions)
+    # HIERARCHICAL THEMES (simplified to avoid redundancy)
+    # Keep ONLY the most distinct concepts, eliminate overlapping sub-Qs
+
+    # Patriotic/National Pride - single specific question
     Question("q_patriotic_main",        "Is patriotism or national pride central to the story?",
              _attr_true("has_patriotic_sacrifice"), weight=0.3),
-    Question("q_patriotic_military",    "Does it involve the military, navy, or armed forces?",
-             _attr_true("has_military_plot"), weight=0.3, requires=("q_patriotic_main", "yes")),
-    Question("q_patriotic_sports",      "Does it feature sports (cricket, Olympics, etc.) as patriotic struggle?",
-             _attr_true("is_sports_patriotic"), weight=0.3, requires=("q_patriotic_main", "yes")),
-    Question("q_patriotic_sacrifice",   "Does it center on sacrifice or martyrdom for the nation?",
-             _attr_true("has_patriotic_sacrifice"), weight=0.3, requires=("q_patriotic_main", "yes")),
-    Question("q_patriotic_independence","Is it set during independence struggle or partition?",
-             _attr_true("is_independence_struggle"), weight=0.3, requires=("q_patriotic_main", "yes")),
 
-    # Crime/Criminal underworld (main + sub-questions)
+    # Crime/Criminal underworld - one main, one specific differentiation
     Question("q_crime_main",            "Does the story involve crime or criminals?",
              _attr_true("has_gangster_world"), weight=0.3),
-    Question("q_crime_heist",           "Is the central plot a heist or elaborate crime scheme?",
-             _attr_true("has_heist"), weight=0.3, requires=("q_crime_main", "yes")),
-    Question("q_crime_organized",       "Is it about organized crime, mafia, or criminal empire?",
-             _attr_true("has_gangster_world"), weight=0.3, requires=("q_crime_main", "yes")),
-    # Investigation fits both crime (detective work) and conflict (uncovering truth)
-    Question("q_crime_investigation",   "Is it about investigating or solving a crime?",
-             _attr_true("has_investigation_plot"), weight=0.3,
-             requires=[("q_crime_main", "yes"), ("q_conflict_main", "yes")]),
+    Question("q_crime_investigation",   "Is it about investigating, solving, or uncovering crime?",
+             _attr_true("has_investigation_plot"), weight=0.3, requires=("q_crime_main", "yes")),
 
-    # Romance (main + sub-questions)
+    # Romance - one main, one specific (fated vs unrequited)
     Question("q_romance_main",          "Is romance central to the story?",
-             _attr_true("has_fated_romance"), weight=0.3),
-    # Love triangle fits both romance and conflict (creates tension in both)
-    Question("q_romance_triangle",      "Does it feature a love triangle?",
-             _attr_true("has_love_triangle"), weight=0.3,
-             requires=[("q_romance_main", "yes"), ("q_conflict_main", "yes")]),
-    # Forbidden love fits both romance and conflict (love opposed by external force)
-    Question("q_romance_forbidden",     "Is the romance opposed by family or society?",
-             _attr_true("has_forbidden_love"), weight=0.3,
-             requires=[("q_romance_main", "yes"), ("q_conflict_main", "yes")]),
-    Question("q_romance_fated",         "Does it suggest the couple is 'meant to be' together?",
+             _attr_true("has_romance"), weight=0.3),
+    Question("q_romance_fated",         "Is it fated love (couple 'meant to be' vs obstacles)?",
              _attr_true("has_fated_romance"), weight=0.3, requires=("q_romance_main", "yes")),
-    Question("q_romance_unrequited",    "Is the romance primarily one-sided or unrequited?",
-             _attr_true("has_one_sided_love"), weight=0.3, requires=("q_romance_main", "yes")),
 
-    # Conflict/Opposition (main + sub-questions)
+    # Conflict/Opposition - one main, eliminate redundant sub-Qs
     Question("q_conflict_main",         "Does the protagonist face rigid authority or institutional resistance?",
              _attr_true("has_patriarchal_resistance"), weight=0.3),
-    Question("q_conflict_patriarchal",  "Is it opposition from family or patriarchal figures?",
+    Question("q_conflict_patriarchal",  "Is the opposition specifically from family or patriarchal pressure?",
              _attr_true("has_patriarchal_resistance"), weight=0.3, requires=("q_conflict_main", "yes")),
-    Question("q_conflict_social",       "Is it resistance from society or social norms?",
-             _attr_true("has_class_conflict"), weight=0.3, requires=("q_conflict_main", "yes")),
     Question("q_conflict_class",        "Does it involve class conflict or economic inequality?",
              _attr_true("has_class_conflict"), weight=0.3, requires=("q_conflict_main", "yes")),
 
