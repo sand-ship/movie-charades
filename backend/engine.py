@@ -96,6 +96,22 @@ class GameEngine:
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
 
+        # If the last answer was "maybe", ask a confirmation question to convert to yes/no
+        # This pins down uncertain answers and reduces candidate pool drift
+        if session.asked:
+            last_qid = session.asked[-1]
+            last_ans = session.answers.get(last_qid)
+            if last_ans == "maybe":
+                confirm = [q for q in splitting
+                          if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))
+                          and q.id not in GENRE_QUESTION_IDS
+                          and q.id != last_qid]
+                if confirm:
+                    # Prefer questions that align with the maybe-answer
+                    aligned = [q for q in confirm if q.evaluate(cands[0]) if len(cands) > 0]
+                    pool = aligned if aligned else confirm
+                    return max(pool, key=lambda q: self._information_gain(cands, q))
+
         # When pool == 1 and we haven't hit the minimum yet, ask confirming
         # questions — builds suspense, lets the player verify before the reveal.
         if not splitting and non_anchor < MIN_QUESTIONS and len(cands) == 1:

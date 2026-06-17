@@ -206,6 +206,24 @@ QUESTIONS.extend([
              _attr_true("has_enemy_turned_friend"), weight=0.3),
     Question("q_patriotic",     "Does the film have strong patriotic or nationalist themes?",
              _attr_true("is_patriotic_film"), weight=0.3),
+
+    # Phase 2.2: Wider coverage for Hindi/Tamil/Telugu disambiguation
+    Question("q_separated_family", "Are the main characters searching for separated or lost family members?",
+             _attr_true("is_lost_and_found_child"), weight=0.3),
+    Question("q_love_triangle",    "Is there a love triangle where multiple characters pursue the same person?",
+             _attr_true("is_love_triangle"), weight=0.3),
+    Question("q_reluctant_romance", "Is the main romance about one person pursuing a reluctant partner?",
+             _attr_true("is_unrequited_love_turnaround"), weight=0.3),
+    Question("q_reincarnation",    "Does the plot involve ghosts, spirits, or reincarnation?",
+             _attr_true("is_reincarnation_rebirth"), weight=0.3),
+    Question("q_historical_era",   "Is this set in pre-1947 British-ruled India or an earlier historical period?",
+             _attr_true("is_partition_backdrop"), weight=0.3),
+    Question("q_dance_heavy",      "Does the film heavily feature elaborate dance sequences or musical numbers?",
+             _attr_true("is_dance_heavy"), weight=0.3),
+    Question("q_sibling_rivalry",  "Is sibling or brother rivalry a central plot element?",
+             _attr_true("is_brother_conflict"), weight=0.3),
+    Question("q_sacrifice_ending", "Does the climax involve a significant sacrifice or tragic ending?",
+             _attr_true("is_sacrifice_ending"), weight=0.3),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
