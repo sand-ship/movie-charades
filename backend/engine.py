@@ -118,8 +118,31 @@ class GameEngine:
                       and (not suppress_genre or q.id not in GENRE_QUESTION_IDS)
                       and self._is_question_available(q, session.answers)]
 
+        # Suppress questions incompatible with confirmed genre
+        # Comedy films don't have: patriarchy, gritty, crime, gangster themes
+        if session.answers.get("q_genre_comedy") == "yes":
+            incompatible_with_comedy = {"q_patriarchal_resistance", "q_gritty_realism", "q_crime_protagonist",
+                                       "q_gangster_world", "q_suspense_thriller", "q_investigation"}
+            unanswered = [q for q in unanswered if q.id not in incompatible_with_comedy]
+
+        # Limit music director questions (ask max 2, they're rarely discriminating)
+        music_asked = sum(1 for qid in session.asked if qid.startswith("q_music_"))
+        if music_asked >= 2:
+            unanswered = [q for q in unanswered if not q.id.startswith("q_music_")]
+
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
+
+        # Enforce phase gating: restrict discriminating questions by phase
+        # Phase 1 (Q1-10): Actor only | Phase 2 (Q10-20): Actress/Director | Phase 3 (Q20+): Music
+        current_non_anchor = len([qid for qid in session.asked
+                                 if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS])
+        current_phase = 0 if current_non_anchor < 10 else (1 if current_non_anchor < 20 else 2)
+
+        if current_phase == 0:  # Phase 1: only actor Qs
+            splitting = [q for q in splitting if not q.id.startswith(("q_actress_", "q_director_", "q_music_"))]
+        elif current_phase == 1:  # Phase 2: actress/director only (no music yet)
+            splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
         # If the last answer was "maybe", ask a confirmation question to convert to yes/no
         # This pins down uncertain answers and reduces candidate pool drift
