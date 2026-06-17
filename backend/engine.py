@@ -184,6 +184,31 @@ class GameEngine:
                 break
         if consecutive >= MAX_CONSECUTIVE_ACTOR_QS:
             return None  # enough name questions — trigger guess
+
+        # Safe adaptive boost: after pool stabilizes, prioritize actor questions for sparse films
+        # Only apply if: past stabilization point (non_anchor >= 5) AND pool still large AND low density
+        if non_anchor >= 5 and 10 < len(cands) <= 100 and consecutive < 1:
+            # Quick density check: count narrative attributes in first 5 candidates
+            sparse_count = 0
+            DENSE_ATTRS = ['is_lost_and_found_child', 'is_love_triangle', 'is_partition_backdrop',
+                          'is_dance_heavy', 'has_heist', 'is_sports_film', 'has_courtroom', 'is_sci_fi',
+                          'has_wedding_plot', 'is_period_film', 'has_investigation_plot']
+            for m in cands[:5]:
+                if sum(1 for attr in DENSE_ATTRS if m.get(attr)) <= 2:
+                    sparse_count += 1
+
+            # If 4+ of top 5 candidates are sparse, boost actor question scoring
+            if sparse_count >= 4:
+                actor_boost = lambda q: (
+                    self._information_gain(cands, q) * 1.5
+                    if q.id.startswith(('q_rajini', 'q_venkatesh', 'q_chiranjeevi', 'q_kamal_haasan',
+                                       'q_vijay', 'q_amitabh', 'q_ajith', 'q_akshay', 'q_shah_rukh',
+                                       'q_pawan_kalyan', 'q_sivakarthikeyan', 'q_ravi_teja', 'q_nani',
+                                       'q_salman', 'q_dhanush', 'q_suriya', 'q_kajal', 'q_nayanthara'))
+                    else self._information_gain(cands, q)
+                )
+                return max(splitting, key=actor_boost)
+
         return max(splitting, key=lambda q: self._information_gain(cands, q))
 
     @staticmethod
