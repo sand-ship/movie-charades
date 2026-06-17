@@ -61,8 +61,11 @@ def _in(attr: str, *values: str) -> Callable[[dict], bool]:
     return lambda m: m.get(attr) in values
 
 def _actor_appears(name: str) -> Callable[[dict], bool]:
-    """Check if actor appears as lead or in supporting cast."""
+    """Check if actor/actress appears as lead or in supporting cast."""
     return lambda m: (m.get('lead_actor') == name or
+                     m.get('lead_actress') == name or
+                     name in (m.get('lead_actors') or []) or
+                     name in (m.get('lead_actresses') or []) or
                      name in (m.get('supporting_actors') or []))
 
 def _genre_in(*tokens: str) -> Callable[[dict], bool]:
