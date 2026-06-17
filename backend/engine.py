@@ -264,30 +264,15 @@ class GameEngine:
             if uncertain >= 3:
                 can_ask_actors = True
 
-        # Prefer generic questions first, but switch to discriminating fields if narrowing stalls
+        # Once discriminating fields unlocked (can_ask_actors), prioritize them
+        if can_ask_actors and len(cands) > 5:
+            actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))]
+            if actor_qs:
+                return max(actor_qs, key=lambda q: self._information_gain(cands, q))
+
+        # Before discriminating fields unlocked, prefer generic questions
         if non_persons:
-            best_generic = max(non_persons, key=lambda q: self._information_gain(cands, q))
-            best_generic_ig = self._information_gain(cands, best_generic)
-
-            # If discriminating fields unlocked, check if narrowing is stalled
-            if can_ask_actors and len(cands) > 5:
-                # Pool narrowing ratio: if we have more candidates than half the questions asked, narrowing is slow
-                narrowing_ratio = len(cands) / max(1, len(non_anchor_qs))
-
-                # Switch to actor questions if:
-                # 1. After Q8+, pool still > 5 (not converging fast enough)
-                # 2. OR narrowing ratio > 0.5 (pool larger than half of Qs asked)
-                # 3. OR generic IG is low (< 0.25)
-                if len(non_anchor_qs) >= 8 or narrowing_ratio > 0.5 or best_generic_ig < 0.25:
-                    actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))]
-                    if actor_qs:
-                        best_actor = max(actor_qs, key=lambda q: self._information_gain(cands, q))
-                        best_actor_ig = self._information_gain(cands, best_actor)
-                        # Use actor questions if they're better or comparable (≥ 80% of generic)
-                        if best_actor_ig >= best_generic_ig * 0.8:
-                            return best_actor
-
-            return best_generic
+            return max(non_persons, key=lambda q: self._information_gain(cands, q))
 
         # Only reach actor/director questions if generic questions exhausted AND (threshold met OR after Q25)
         if not can_ask_actors and not directors_enabled:
