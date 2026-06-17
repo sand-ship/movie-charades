@@ -237,7 +237,14 @@ class GameEngine:
             if uncertain >= 3:
                 can_ask_actors = True
 
-        # Prefer generic questions unless actor threshold is met
+        # Once discriminating fields unlocked, prioritize them over generic questions
+        if can_ask_actors:
+            # Ask actor/actress/director questions to break ties in large pools
+            actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))]
+            if actor_qs and len(cands) > 5:  # Only use if pool still large enough
+                return max(actor_qs, key=lambda q: self._information_gain(cands, q))
+
+        # Prefer generic questions otherwise
         if non_persons:
             return max(non_persons, key=lambda q: self._information_gain(cands, q))
 
