@@ -318,7 +318,10 @@ def stumped(req: StumpedRequest):
         "ts": datetime.datetime.utcnow().isoformat() + "Z",
         "title": title,
         "yes_answers": yes_answers,
+        "all_answers": dict(session.answers) if session else {},
+        "questions_asked": list(session.asked) if session else [],
         "remaining_candidates": session.remaining_count() if session else None,
+        "question_count": session.question_count() if session else 0,
     }
     _stumper_insert(record)
 
