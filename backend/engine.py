@@ -237,16 +237,22 @@ class GameEngine:
             if uncertain >= 3:
                 can_ask_actors = True
 
-        # Once discriminating fields unlocked, prioritize them over generic questions
-        if can_ask_actors:
-            # Ask actor/actress/director questions to break ties in large pools
-            actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))]
-            if actor_qs and len(cands) > 5:  # Only use if pool still large enough
-                return max(actor_qs, key=lambda q: self._information_gain(cands, q))
-
-        # Prefer generic questions otherwise
+        # Prefer generic questions first, but boost actor questions if discriminating fields unlocked
         if non_persons:
-            return max(non_persons, key=lambda q: self._information_gain(cands, q))
+            best_generic = max(non_persons, key=lambda q: self._information_gain(cands, q))
+            best_generic_ig = self._information_gain(cands, best_generic)
+
+            # If discriminating fields unlocked and pool still large, consider actor questions
+            if can_ask_actors and len(cands) > 5 and best_generic_ig < 0.3:
+                # Only switch to actor questions if generic IG is very low (pool not narrowing)
+                actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))]
+                if actor_qs:
+                    best_actor = max(actor_qs, key=lambda q: self._information_gain(cands, q))
+                    best_actor_ig = self._information_gain(cands, best_actor)
+                    if best_actor_ig > best_generic_ig * 1.2:  # Only if actor is >20% better
+                        return best_actor
+
+            return best_generic
 
         # Only reach actor/director questions if generic questions exhausted AND (threshold met OR after Q25)
         if not can_ask_actors and not directors_enabled:
