@@ -75,6 +75,9 @@ class BackRequest(BaseModel):
 class StumpedRequest(BaseModel):
     session_id: str
     title: str
+    all_answers: Optional[dict] = None  # Full answer history from frontend
+    questions_asked: Optional[list] = None  # Questions asked from frontend
+    remaining_candidates: Optional[int] = None
 
 
 STUMPERS_LOG = Path(__file__).resolve().parent / "data" / "stumpers.jsonl"
@@ -312,16 +315,23 @@ def stumped(req: StumpedRequest):
     if not title:
         return {"status": "empty"}
     session = engine.get_session(req.session_id)
-    yes_answers = sorted(q for q, a in (session.answers.items() if session else [])
-                         if a == "yes")
+
+    # Use frontend-provided data if session is expired/missing
+    all_answers = req.all_answers if req.all_answers else (dict(session.answers) if session else {})
+    questions_asked = req.questions_asked if req.questions_asked else (list(session.asked) if session else [])
+    remaining_candidates = req.remaining_candidates if req.remaining_candidates is not None else (session.remaining_count() if session else None)
+    question_count = len(questions_asked)
+
+    yes_answers = sorted(q for q, a in all_answers.items() if a == "yes")
+
     record = {
         "ts": datetime.datetime.utcnow().isoformat() + "Z",
         "title": title,
         "yes_answers": yes_answers,
-        "all_answers": dict(session.answers) if session else {},
-        "questions_asked": list(session.asked) if session else [],
-        "remaining_candidates": session.remaining_count() if session else None,
-        "question_count": session.question_count() if session else 0,
+        "all_answers": all_answers,
+        "questions_asked": questions_asked,
+        "remaining_candidates": remaining_candidates,
+        "question_count": question_count,
     }
     _stumper_insert(record)
 
