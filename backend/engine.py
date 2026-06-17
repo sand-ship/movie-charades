@@ -196,7 +196,7 @@ class GameEngine:
                 return max(tropes, key=lambda q: self._information_gain(cands, q))
 
         # Guard: Actor/director questions only when generic questions have failed.
-        # Only ask actor Qs if: (first 5 non-anchor Qs all no) OR (8+ of last 10 are no/maybe)
+        # Only ask actor Qs if: (first 5 Qs all no) OR (5+ of first 10 are maybe/dunno)
         non_persons = [q for q in splitting
                        if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))]
 
@@ -205,14 +205,14 @@ class GameEngine:
                         if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS]
         can_ask_actors = False
         if len(non_anchor_qs) >= 5:
-            # Check if first 5 non-anchor questions are all "no"
+            # Check if first 5 questions are all "no"
             first_five = non_anchor_qs[:5]
             if all(session.answers.get(qid) == "no" for qid in first_five):
                 can_ask_actors = True
-            # OR check if 8+ of last 10 are "no" or "maybe"
-            last_ten = non_anchor_qs[-10:]
-            uncertain = sum(1 for qid in last_ten if session.answers.get(qid) in ("no", "maybe"))
-            if uncertain >= 8:
+            # OR check if 5+ of first 10 are "maybe" or "dunno"
+            first_ten = non_anchor_qs[:10]
+            uncertain = sum(1 for qid in first_ten if session.answers.get(qid) in ("maybe", "dunno"))
+            if uncertain >= 5:
                 can_ask_actors = True
 
         # Prefer generic questions unless actor threshold is met
