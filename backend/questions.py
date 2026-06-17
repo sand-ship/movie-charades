@@ -318,7 +318,7 @@ QUESTIONS.extend([
              _attr_true("has_male_emotional_vulnerability"), weight=0.3),
     Question("q_nri_values_tension",     "Does the protagonist balance Western lifestyle with traditional Indian values?",
              _attr_true("has_nri_cultural_tension"), weight=0.3),
-    Question("q_fated_romance",          "Is the romance presented as cosmic destiny or fate?",
+    Question("q_fated_romance",          "Does the film suggest the couple is 'meant to be' together?",
              _attr_true("has_fated_romance"), weight=0.3),
     Question("q_military_film",          "Is this a military or war narrative?",
              _attr_true("is_military_film"), weight=0.3),
