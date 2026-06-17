@@ -153,7 +153,7 @@ class GameEngine:
                     pool = aligned if aligned else confirm
                     return max(pool, key=lambda q: self._information_gain(cands, q))
 
-        # After actor question gets "yes" with large pool, ask actress/director to narrow filmography
+        # After actor question gets "yes", follow hierarchy: actor sub-Qs → actress/director
         if session.asked:
             last_qid = session.asked[-1]
             last_ans = session.answers.get(last_qid)
@@ -161,7 +161,12 @@ class GameEngine:
                                              'q_vijay', 'q_amitabh', 'q_shah_rukh', 'q_salman',
                                              'q_ajith', 'q_nayanthara', 'q_venkatesh', 'q_kamal_haasan'))
             if is_actor_q and last_ans == "yes" and len(cands) > 3:
-                # Immediately ask actress/director to narrow within actor's filmography
+                # First try hierarchical sub-questions specific to this actor
+                sub_qs = [q for q in splitting if q.requires == (last_qid, "yes")]
+                if sub_qs:
+                    return max(sub_qs, key=lambda q: self._information_gain(cands, q))
+
+                # If no sub-Qs or pool still large after, ask actress/director to narrow
                 discrim_qs = [q for q in splitting if q.id.startswith(('q_actress_', 'q_director_'))]
                 if discrim_qs:
                     return max(discrim_qs, key=lambda q: self._information_gain(cands, q))
