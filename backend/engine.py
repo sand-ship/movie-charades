@@ -160,8 +160,7 @@ class GameEngine:
                 can_ask_actors = True
 
 
-        # Skip back-to-back person questions for better UX: after person YES, ask 1-2 generic
-        # questions, then FORCE director/music before generic questions dominate the pool
+        # After person question YES, suppress all person Qs for 1-2 turns for breathing room
         if session.asked:
             last_qid = session.asked[-1]
             last_ans = session.answers.get(last_qid)
@@ -172,8 +171,8 @@ class GameEngine:
                                              "q_sivakarthikeyan", "q_ravi_teja", "q_nani",
                                              "q_dhanush", "q_suriya", "q_kajal", "q_akshay"))
             if is_person_q and last_ans == "yes":
-                # Count non-person questions since last person YES
-                non_person_since_last = 0
+                # Count only GENERIC questions since last person YES (skip all person Qs including sub-Qs)
+                generic_since_person_yes = 0
                 for qid in session.asked[::-1]:
                     if qid.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_",
                                       "q_rajini", "q_chiranjeevi", "q_vijay", "q_amitabh",
@@ -181,11 +180,11 @@ class GameEngine:
                                       "q_venkatesh", "q_kamal_haasan", "q_pawan_kalyan",
                                       "q_sivakarthikeyan", "q_ravi_teja", "q_nani",
                                       "q_dhanush", "q_suriya", "q_kajal", "q_akshay")):
-                        break  # Stop at the person question
-                    non_person_since_last += 1
+                        break  # Stop counting at ANY person Q (including sub-Qs)
+                    generic_since_person_yes += 1
 
-                # If 0-1 generic questions asked: suppress person Qs, force generic
-                if non_person_since_last <= 1:
+                # If < 2 generic questions: suppress ALL person Qs (actors, sub-Qs, director, music)
+                if generic_since_person_yes < 2:
                     generic_qs = [q for q in splitting
                                  if not q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))
                                  and not q.id.startswith(("q_rajini", "q_chiranjeevi", "q_vijay", "q_amitabh",
@@ -195,8 +194,8 @@ class GameEngine:
                                                          "q_dhanush", "q_suriya", "q_kajal", "q_akshay"))]
                     if generic_qs:
                         return max(generic_qs, key=lambda q: self._information_gain(cands, q))
-                # If 2+ generic questions asked: FORCE director/music (best discriminator for overlaps)
-                elif non_person_since_last >= 2:
+                # If 2+ generic questions: FORCE director/music (best discriminators for overlaps)
+                else:
                     director_music = [q for q in splitting
                                      if q.id.startswith(("q_director_", "q_music_"))]
                     if director_music:
