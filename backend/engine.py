@@ -233,7 +233,13 @@ class GameEngine:
                 or getattr(question, "weight", 1.0) < 1.0)
 
     def apply_answer(self, session: Session, question_id: str, answer: str) -> None:
-        """answer: 'yes' | 'no' | 'dunno'"""
+        """answer: 'yes' | 'no' | 'maybe' | 'dunno'
+        'dunno' is skipped entirely (not recorded) and caller should ask next question.
+        'maybe' is recorded and scored as weak 'yes'."""
+        # Skip dunno entirely — don't record it, just return
+        if answer == "dunno":
+            return
+
         added = [question_id]
         session.asked.append(question_id)
         session.answers[question_id] = answer
@@ -389,14 +395,12 @@ class GameEngine:
                 continue
             match = q.evaluate(movie)
             w = q.weight  # 1.0 = hard signal, 0.3 = soft trope
-            if answer == "dunno":
-                continue  # no effect
             # Strong answers (yes/no): full weight
             pos_strong = 1.0 + w
             neg_strong = 1.0 - w * 0.9
-            # Soft answer (maybe): half weight
-            pos_soft = 1.0 + w * 0.5
-            neg_soft = 1.0 - w * 0.5 * 0.9
+            # Maybe: weak yes (0.5 strength positive, no penalty)
+            pos_maybe = 1.0 + w * 0.5
+            neg_maybe = 1.0  # no penalty when wrong
             if answer == "yes" and match:
                 score *= pos_strong
             elif answer == "yes" and not match:
@@ -406,7 +410,7 @@ class GameEngine:
             elif answer == "no" and match:
                 score *= neg_strong
             elif answer == "maybe" and match:
-                score *= pos_soft
+                score *= pos_maybe
             elif answer == "maybe" and not match:
-                score *= neg_soft
+                score *= neg_maybe
         return score
