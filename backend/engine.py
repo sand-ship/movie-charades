@@ -353,13 +353,13 @@ class GameEngine:
         return result
 
     def _fit(self, movie: dict, session: Session) -> tuple[int, int]:
-        """(agreements, answered) over substantive yes/no answers — excludes
-        'dunno' and the language/era/genre pickers, so confidence reflects the
-        discriminating questions rather than easy auto-answered constraints."""
+        """(agreements, answered) over substantive yes/no/maybe answers — excludes
+        the language/era/genre pickers, so confidence reflects discriminating questions.
+        'maybe' answers count as half-agreement when they match."""
         group = LANGUAGE_QUESTION_IDS | ERA_QUESTION_IDS | GENRE_QUESTION_IDS
         agree = answered = 0
         for qid, ans in session.answers.items():
-            if ans == "dunno" or qid in group:
+            if qid in group:
                 continue
             q = QUESTION_MAP.get(qid)
             if not q:
@@ -368,7 +368,9 @@ class GameEngine:
             match = q.evaluate(movie)
             if (ans == "yes" and match) or (ans == "no" and not match):
                 agree += 1
-        return agree, answered
+            elif ans == "maybe" and match:
+                agree += 0.5  # weak agreement
+        return int(agree), answered
 
     # ── information gain ─────────────────────────────────────────────────
 
