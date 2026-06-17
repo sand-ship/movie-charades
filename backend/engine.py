@@ -165,6 +165,29 @@ class GameEngine:
             if actor_qs:
                 return max(actor_qs, key=lambda q: self._information_gain(cands, q))
 
+        # Skip back-to-back person questions for better UX: if last question was a discriminating
+        # person question (actor/actress/director/music) with YES, ask generic questions instead
+        if session.asked:
+            last_qid = session.asked[-1]
+            last_ans = session.answers.get(last_qid)
+            is_person_q = last_qid.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_",
+                                             "q_rajini", "q_chiranjeevi", "q_vijay", "q_amitabh",
+                                             "q_shah_rukh", "q_salman", "q_ajith", "q_nayanthara",
+                                             "q_venkatesh", "q_kamal_haasan", "q_pawan_kalyan",
+                                             "q_sivakarthikeyan", "q_ravi_teja", "q_nani",
+                                             "q_dhanush", "q_suriya", "q_kajal", "q_akshay"))
+            if is_person_q and last_ans == "yes":
+                # Suppress discriminating person questions, force generic questions
+                generic_qs = [q for q in splitting
+                             if not q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))
+                             and not q.id.startswith(("q_rajini", "q_chiranjeevi", "q_vijay", "q_amitabh",
+                                                     "q_shah_rukh", "q_salman", "q_ajith", "q_nayanthara",
+                                                     "q_venkatesh", "q_kamal_haasan", "q_pawan_kalyan",
+                                                     "q_sivakarthikeyan", "q_ravi_teja", "q_nani",
+                                                     "q_dhanush", "q_suriya", "q_kajal", "q_akshay"))]
+                if generic_qs:
+                    return max(generic_qs, key=lambda q: self._information_gain(cands, q))
+
         # If the last answer was "maybe", ask a confirmation question to convert to yes/no
         # This pins down uncertain answers and reduces candidate pool drift
         if session.asked:
@@ -196,24 +219,6 @@ class GameEngine:
                     aligned = [q for q in confirm if q.evaluate(cands[0]) if len(cands) > 0]
                     pool = aligned if aligned else confirm
                     return max(pool, key=lambda q: self._information_gain(cands, q))
-
-        # After actor question gets "yes", follow hierarchy: actor sub-Qs → actress/director
-        if session.asked:
-            last_qid = session.asked[-1]
-            last_ans = session.answers.get(last_qid)
-            is_actor_q = last_qid.startswith(('q_actor_', 'q_actress_', 'q_rajini', 'q_chiranjeevi',
-                                             'q_vijay', 'q_amitabh', 'q_shah_rukh', 'q_salman',
-                                             'q_ajith', 'q_nayanthara', 'q_venkatesh', 'q_kamal_haasan'))
-            if is_actor_q and last_ans == "yes" and len(cands) > 3:
-                # First try hierarchical sub-questions specific to this actor
-                sub_qs = [q for q in splitting if q.requires == (last_qid, "yes")]
-                if sub_qs:
-                    return max(sub_qs, key=lambda q: self._information_gain(cands, q))
-
-                # If no sub-Qs or pool still large after, ask actress/director to narrow
-                discrim_qs = [q for q in splitting if q.id.startswith(('q_actress_', 'q_director_'))]
-                if discrim_qs:
-                    return max(discrim_qs, key=lambda q: self._information_gain(cands, q))
 
         # When pool == 1 and we haven't hit the minimum yet, ask confirming
         # questions — builds suspense, lets the player verify before the reveal.
