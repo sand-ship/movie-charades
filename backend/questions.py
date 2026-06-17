@@ -26,6 +26,12 @@ def _attr_gte(attr: str, value: float) -> Callable[[dict], bool]:
     return f
 
 
+def _has_multiple_protagonists(m: dict) -> bool:
+    """Check if film has multiple prominent leads (co-leads, ensemble)."""
+    lead_actors = m.get('lead_actors') or []
+    return len(lead_actors) >= 2
+
+
 QUESTIONS: list[Question] = [
     Question("q_hindi",     "Is it a Hindi film?",                              _attr_eq("language", "Hindi")),
     Question("q_tamil",     "Is it a Tamil film?",                              _attr_eq("language", "Tamil")),
@@ -67,11 +73,6 @@ def _actor_appears(name: str) -> Callable[[dict], bool]:
                      m.get('lead_actress') == name or
                      name in (m.get('lead_actors') or []) or
                      name in (m.get('lead_actresses') or []))
-
-def _has_multiple_protagonists(m: dict) -> bool:
-    """Check if film has multiple prominent leads (co-leads, ensemble)."""
-    lead_actors = m.get('lead_actors') or []
-    return len(lead_actors) >= 2
 
 def _genre_in(*tokens: str) -> Callable[[dict], bool]:
     """Match a theme against ANY of a movie's genres (multi-genre films
