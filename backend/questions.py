@@ -224,6 +224,24 @@ QUESTIONS.extend([
              _attr_true("is_brother_conflict"), weight=0.3),
     Question("q_sacrifice_ending", "Does the climax involve a significant sacrifice or tragic ending?",
              _attr_true("is_sacrifice_ending"), weight=0.3),
+
+    # Phase 3: Additional discrimination questions (8 more)
+    Question("q_heist_con",         "Does the plot involve a heist, con, theft, or elaborate scheme?",
+             _attr_true("has_heist"), weight=0.3),
+    Question("q_sports_competition", "Is the central plot about sports, competition, or winning a contest?",
+             _attr_true("is_sports_film"), weight=0.3),
+    Question("q_true_story",         "Is this based on real events or a true story?",
+             _attr_true("is_based_on_true_story"), weight=0.3),
+    Question("q_courtroom_legal",    "Does the film feature significant courtroom scenes or legal conflict?",
+             _attr_true("has_courtroom"), weight=0.3),
+    Question("q_scifi_fantasy",      "Does the film involve sci-fi, fantasy, or supernatural worlds?",
+             _attr_true("is_sci_fi"), weight=0.3),
+    Question("q_single_protagonist", "Is the story tightly focused on one main character's journey?",
+             _attr_true("has_single_protagonist"), weight=0.3),
+    Question("q_female_lead",        "Is the protagonist or central character female?",
+             _attr_true("has_female_lead"), weight=0.3),
+    Question("q_ensemble_large",     "Does the film have a large ensemble cast with multiple major characters?",
+             _attr_true("is_ensemble_cast"), weight=0.3),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
