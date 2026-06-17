@@ -265,62 +265,58 @@ class GameEngine:
                 )
                 return max(splitting, key=actor_boost)
 
-        # Disciplined discriminating field placement: Q1-10, Q10-20, Q20-30 each get ONE discrim field
-        # Pivot to different field on every "no" to spread elimination across dimensions
+        # Discriminating field strategy: Priority-ordered placement across 3 phases
+        # Phase 1 (Q1-10): Actor | Phase 2 (Q10-20): Actress/Director | Phase 3 (Q20-30): Music Director
+        # Rotate based on what's not been asked yet
 
-        # Identify last discriminating field asked to pivot away from it
-        last_discrim_field = None
-        last_discrim_answer = None
-        for qid in reversed(session.asked):
-            if qid.startswith("q_music_"):
-                last_discrim_field = "music"
-                last_discrim_answer = session.answers.get(qid)
-                break
-            elif qid.startswith("q_dir_"):
-                last_discrim_field = "director"
-                last_discrim_answer = session.answers.get(qid)
-                break
-            elif qid.startswith("q_actress_"):
-                last_discrim_field = "actress"
-                last_discrim_answer = session.answers.get(qid)
-                break
-            elif qid.startswith("q_actor_"):
-                last_discrim_field = "actor"
-                last_discrim_answer = session.answers.get(qid)
-                break
-
-        # Count discrim Qs in each phase to enforce "one per phase" rule
+        # Count non-anchor Qs to determine phase
         current_non_anchor = len([qid for qid in session.asked
                                  if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS])
         current_phase = 0 if current_non_anchor < 10 else (1 if current_non_anchor < 20 else 2)
 
-        # Count discrim Qs asked in current phase
-        discrim_in_phase = sum(1 for qid in session.asked
-                               if qid.startswith(("q_music_", "q_dir_", "q_actress_", "q_actor_"))
-                               and (current_non_anchor - len(session.asked) + session.asked.index(qid)) < 10)
+        # Check which discrim fields have been asked
+        discrim_asked = {'actor': False, 'actress': False, 'director': False, 'music': False}
+        for qid in session.asked:
+            if qid.startswith("q_actor_"):
+                discrim_asked['actor'] = True
+            elif qid.startswith("q_actress_"):
+                discrim_asked['actress'] = True
+            elif qid.startswith("q_dir_"):
+                discrim_asked['director'] = True
+            elif qid.startswith("q_music_"):
+                discrim_asked['music'] = True
 
-        # Should ask discrim Q if: we're in a phase boundary OR no discrim asked yet in phase AND last was "no"
-        should_ask_discrim = (discrim_in_phase == 0 and
-                             (current_non_anchor % 10 == 0 or last_discrim_answer == "no"))
+        # Determine which field to ask based on phase and priority
+        priority_field = None
+        if current_phase == 0 and not discrim_asked['actor']:  # Phase 1: Priority is actor
+            priority_field = 'actor'
+        elif current_phase == 1 and not discrim_asked['actress'] and not discrim_asked['director']:  # Phase 2: actress or director
+            priority_field = 'actress' if not discrim_asked['actress'] else 'director'
+        elif current_phase == 2 and not discrim_asked['music']:  # Phase 3: music director
+            priority_field = 'music'
+        elif current_phase == 1 and not discrim_asked['director'] and discrim_asked['actress']:  # Phase 2 fallback: director if actress done
+            priority_field = 'director'
+        elif current_phase == 2 and discrim_asked['music']:  # Phase 3 rotation: go back to earlier fields if music done
+            # Rotate through actress, director, actor in that order
+            if not discrim_asked['actress']:
+                priority_field = 'actress'
+            elif not discrim_asked['director']:
+                priority_field = 'director'
+            elif not discrim_asked['actor']:
+                priority_field = 'actor'
 
-        # If we should ask discrim Q, filter to different field
-        if should_ask_discrim and splitting:
-            all_fields = {'music', 'director', 'actress', 'actor'}
-            avoid_field = {last_discrim_field} if last_discrim_field else set()
-            available_fields = all_fields - avoid_field
-
+        # If we have a priority field, filter to it
+        if priority_field and splitting:
             field_map = {
-                "music": lambda q: q.id.startswith("q_music_"),
-                "director": lambda q: q.id.startswith("q_dir_"),
-                "actress": lambda q: q.id.startswith("q_actress_"),
                 "actor": lambda q: q.id.startswith("q_actor_"),
+                "actress": lambda q: q.id.startswith("q_actress_"),
+                "director": lambda q: q.id.startswith("q_dir_"),
+                "music": lambda q: q.id.startswith("q_music_"),
             }
 
-            discrim_qs = [q for q in splitting
-                         if any(field_map[f](q) for f in available_fields)]
-
-            if discrim_qs:
-                return max(discrim_qs, key=lambda q: self._information_gain(cands, q))
+            priority_qs = [q for q in splitting if field_map[priority_field](q)]
+            if priority_qs:
+                return max(priority_qs, key=lambda q: self._information_gain(cands, q))
 
         return max(splitting, key=lambda q: self._information_gain(cands, q))
 
