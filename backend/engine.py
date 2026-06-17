@@ -244,13 +244,14 @@ class GameEngine:
 
             # If discriminating fields unlocked, check if narrowing is stalled
             if can_ask_actors and len(cands) > 5:
-                # Pool narrowing ratio: if we have more candidates than questions asked, narrowing is slow
+                # Pool narrowing ratio: if we have more candidates than half the questions asked, narrowing is slow
                 narrowing_ratio = len(cands) / max(1, len(non_anchor_qs))
 
                 # Switch to actor questions if:
-                # 1. Narrowing ratio > 1.0 (pool larger than Qs asked - very slow)
-                # 2. OR generic IG is low (< 0.25) and actor questions exist
-                if narrowing_ratio > 1.0 or best_generic_ig < 0.25:
+                # 1. After Q8+, pool still > 5 (not converging fast enough)
+                # 2. OR narrowing ratio > 0.5 (pool larger than half of Qs asked)
+                # 3. OR generic IG is low (< 0.25)
+                if len(non_anchor_qs) >= 8 or narrowing_ratio > 0.5 or best_generic_ig < 0.25:
                     actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))]
                     if actor_qs:
                         best_actor = max(actor_qs, key=lambda q: self._information_gain(cands, q))
