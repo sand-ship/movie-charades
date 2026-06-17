@@ -159,27 +159,6 @@ class GameEngine:
             if uncertain >= 3:
                 can_ask_actors = True
 
-        # If discriminating fields unlocked and pool large, ask them immediately
-        # But respect the consecutive actor question limit (MAX_CONSECUTIVE_ACTOR_QS)
-        if can_ask_actors and len(cands) > 5 and splitting:
-            # Count consecutive actor/person questions at the end of asked list
-            consecutive = 0
-            for qid in session.asked[::-1]:
-                if qid.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_",
-                                  "q_rajini", "q_chiranjeevi", "q_vijay", "q_amitabh",
-                                  "q_shah_rukh", "q_salman", "q_ajith", "q_nayanthara",
-                                  "q_venkatesh", "q_kamal_haasan", "q_pawan_kalyan",
-                                  "q_sivakarthikeyan", "q_ravi_teja", "q_nani",
-                                  "q_dhanush", "q_suriya", "q_kajal", "q_akshay")):
-                    consecutive += 1
-                else:
-                    break
-
-            # Only ask actor questions if we haven't hit the consecutive limit
-            if consecutive < MAX_CONSECUTIVE_ACTOR_QS:
-                actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))]
-                if actor_qs:
-                    return max(actor_qs, key=lambda q: self._information_gain(cands, q))
 
         # Skip back-to-back person questions for better UX: after person YES, ask 1-2 generic
         # questions, then FORCE director/music before generic questions dominate the pool
