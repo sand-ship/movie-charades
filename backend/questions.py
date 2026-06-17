@@ -369,33 +369,6 @@ QUESTIONS.extend([
     Question("q_rajini_social_message", "Does it have a social or patriotic message?",
              _attr_true("has_patriotic_sacrifice"), weight=0.5, requires=("q_rajini", "yes")),
 
-    # HIERARCHICAL THEMES (simplified to avoid redundancy)
-    # Keep ONLY the most distinct concepts, eliminate overlapping sub-Qs
-
-    # Patriotic/National Pride - single specific question
-    Question("q_patriotic_main",        "Is patriotism or national pride central to the story?",
-             _attr_true("has_patriotic_sacrifice"), weight=0.3),
-
-    # Crime/Criminal underworld - one main, one specific differentiation
-    Question("q_crime_main",            "Does the story involve crime or criminals?",
-             _attr_true("has_gangster_world"), weight=0.3),
-    Question("q_crime_investigation",   "Is it about investigating, solving, or uncovering crime?",
-             _attr_true("has_investigation_plot"), weight=0.3, requires=("q_crime_main", "yes")),
-
-    # Romance - one main, one specific (fated vs unrequited)
-    Question("q_romance_main",          "Is romance central to the story?",
-             _attr_true("has_romance"), weight=0.3),
-    Question("q_romance_fated",         "Is it fated love (couple 'meant to be' vs obstacles)?",
-             _attr_true("has_fated_romance"), weight=0.3, requires=("q_romance_main", "yes")),
-
-    # Conflict/Opposition - one main, eliminate redundant sub-Qs
-    Question("q_conflict_main",         "Does the protagonist face rigid authority or institutional resistance?",
-             _attr_true("has_patriarchal_resistance"), weight=0.3),
-    Question("q_conflict_patriarchal",  "Is the opposition specifically from family or patriarchal pressure?",
-             _attr_true("has_patriarchal_resistance"), weight=0.3, requires=("q_conflict_main", "yes")),
-    Question("q_conflict_class",        "Does it involve class conflict or economic inequality?",
-             _attr_true("has_class_conflict"), weight=0.3, requires=("q_conflict_main", "yes")),
-
     # SRK narrative patterns (applicable across languages and actors)
     Question("q_patriarchal_resistance", "Does the protagonist challenge rigid authority/patriarchal institution through emotion?",
              _attr_true("has_patriarchal_resistance"), weight=0.3),
