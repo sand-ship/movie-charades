@@ -153,16 +153,20 @@ class GameEngine:
                     pool = aligned if aligned else confirm
                     return max(pool, key=lambda q: self._information_gain(cands, q))
 
-        # After actor question gets "yes", lock in hierarchical sub-questions
-        # This ensures Chiranjeevi/Vijay/etc. are immediately disambiguated by era/genre
+        # After actor question gets "yes", prioritize actress/director/music to narrow within filmography
         if session.asked:
             last_qid = session.asked[-1]
             last_ans = session.answers.get(last_qid)
             is_actor_q = last_qid.startswith(('q_actor_', 'q_actress_', 'q_rajini', 'q_chiranjeevi',
                                              'q_vijay', 'q_amitabh', 'q_shah_rukh', 'q_salman',
                                              'q_ajith', 'q_nayanthara', 'q_venkatesh', 'q_kamal_haasan'))
-            if is_actor_q and last_ans == "yes":
-                # Find hierarchical sub-questions that require this actor=yes
+            if is_actor_q and last_ans == "yes" and len(cands) > 3:
+                # After narrowing to a specific actor, ask actress/director/music to disambiguate
+                discrim_qs = [q for q in splitting if q.id.startswith(('q_actress_', 'q_director_', 'q_music_'))]
+                if discrim_qs:
+                    return max(discrim_qs, key=lambda q: self._information_gain(cands, q))
+
+                # Fall back to hierarchical sub-questions if no actress/director/music available
                 sub_qs = [q for q in splitting if q.requires == (last_qid, "yes")]
                 if sub_qs:
                     return max(sub_qs, key=lambda q: self._information_gain(cands, q))
