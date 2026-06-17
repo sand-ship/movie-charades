@@ -150,6 +150,20 @@ class GameEngine:
                     pool = aligned if aligned else confirm
                     return max(pool, key=lambda q: self._information_gain(cands, q))
 
+        # After actor question gets "yes", lock in hierarchical sub-questions
+        # This ensures Chiranjeevi/Vijay/etc. are immediately disambiguated by era/genre
+        if session.asked:
+            last_qid = session.asked[-1]
+            last_ans = session.answers.get(last_qid)
+            is_actor_q = last_qid.startswith(('q_actor_', 'q_actress_', 'q_rajini', 'q_chiranjeevi',
+                                             'q_vijay', 'q_amitabh', 'q_shah_rukh', 'q_salman',
+                                             'q_ajith', 'q_nayanthara', 'q_venkatesh', 'q_kamal_haasan'))
+            if is_actor_q and last_ans == "yes":
+                # Find hierarchical sub-questions that require this actor=yes
+                sub_qs = [q for q in splitting if q.requires == (last_qid, "yes")]
+                if sub_qs:
+                    return max(sub_qs, key=lambda q: self._information_gain(cands, q))
+
         # When pool == 1 and we haven't hit the minimum yet, ask confirming
         # questions — builds suspense, lets the player verify before the reveal.
         if not splitting and non_anchor < MIN_QUESTIONS and len(cands) == 1:
