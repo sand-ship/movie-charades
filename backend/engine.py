@@ -95,10 +95,13 @@ class GameEngine:
         if not (asked & ERA_QUESTION_IDS):
             return QUESTION_MAP['q_classic']  # sentinel; frontend renders full picker
 
-        # Count non-language/era questions asked so far (genre counts here now).
+        # Force structural question by Q5 for early discriminating field unlock
         non_anchor = sum(1 for qid in asked
                          if qid not in LANGUAGE_QUESTION_IDS
                          and qid not in ERA_QUESTION_IDS)
+
+        if "q_multiple_protagonists" not in asked and 2 <= non_anchor < 5:
+            return QUESTION_MAP.get("q_multiple_protagonists")
 
         cands = session.candidates
 
@@ -215,19 +218,23 @@ class GameEngine:
         # Calculate when to unlock actor questions
         can_ask_actors = False
 
-        # Fast-track: if structural question answered, enable discriminating fields early
+        # Fast-track: if structural question answered, enable discriminating fields immediately
         if "q_multiple_protagonists" in session.answers:
             can_ask_actors = True
 
+        # At Q5+, unlock discriminating fields if pool is still large
+        if len(non_anchor_qs) >= 5 and len(cands) > 50:
+            can_ask_actors = True
+
         if len(non_anchor_qs) >= 5:
-            # Check if first 5 questions are all "no"
+            # Lowered threshold: 3+ of first 5 "no" (not all 5)
             first_five = non_anchor_qs[:5]
-            if all(session.answers.get(qid) == "no" for qid in first_five):
+            if sum(1 for qid in first_five if session.answers.get(qid) == "no") >= 3:
                 can_ask_actors = True
-            # OR check if 5+ of first 10 are "maybe" or "dunno"
+            # OR lowered threshold: 3+ of first 10 are "maybe" or "dunno" (not 5+)
             first_ten = non_anchor_qs[:10]
             uncertain = sum(1 for qid in first_ten if session.answers.get(qid) in ("maybe", "dunno"))
-            if uncertain >= 5:
+            if uncertain >= 3:
                 can_ask_actors = True
 
         # Prefer generic questions unless actor threshold is met
