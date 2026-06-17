@@ -310,6 +310,20 @@ QUESTIONS.extend([
              _attr_eq("lead_actor", "Dhanush"), weight=1.0),
     Question("q_suriya",              "Does it star Suriya?",
              _attr_eq("lead_actor", "Suriya"), weight=1.0),
+
+    # SRK narrative patterns (applicable across languages and actors)
+    Question("q_patriarchal_resistance", "Does the protagonist challenge rigid authority/patriarchal institution through emotion?",
+             _attr_true("has_patriarchal_resistance"), weight=0.3),
+    Question("q_male_vulnerability",     "Does the male lead's emotional breakdown become a moment of strength?",
+             _attr_true("has_male_emotional_vulnerability"), weight=0.3),
+    Question("q_nri_values_tension",     "Does the protagonist balance Western lifestyle with traditional Indian values?",
+             _attr_true("has_nri_cultural_tension"), weight=0.3),
+    Question("q_fated_romance",          "Is the romance presented as cosmic destiny or fate?",
+             _attr_true("has_fated_romance"), weight=0.3),
+    Question("q_military_film",          "Is this a military or war narrative?",
+             _attr_true("is_military_film"), weight=0.3),
+    Question("q_patriotic_sacrifice",    "Does the story center on sacrifice for nation or patriotic duty?",
+             _attr_true("has_patriotic_sacrifice"), weight=0.3),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
