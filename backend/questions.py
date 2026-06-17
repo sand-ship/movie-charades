@@ -329,6 +329,26 @@ QUESTIONS.extend([
              _attr_true("has_military_plot"), weight=0.3),
     Question("q_patriotic_sacrifice",    "Does the story center on sacrifice for nation or patriotic duty?",
              _attr_true("has_patriotic_sacrifice"), weight=0.3),
+
+    # Ending type
+    Question("q_happy_ending",           "Does it have a happy or satisfying ending?",
+             _attr_true("has_happy_ending"), weight=0.3),
+    Question("q_tragic_ending",          "Does it have a sad, tragic, or bittersweet ending?",
+             _attr_true("has_tragic_ending"), weight=0.3),
+    Question("q_ambiguous_ending",       "Does it have an ambiguous or open-ended ending?",
+             _attr_true("has_ambiguous_ending"), weight=0.3),
+
+    # Director/production style
+    Question("q_yrf_style",              "Does it have a Yash Raj Films aesthetic (grand, romantic, feel-good)?",
+             _attr_true("is_yrf_style"), weight=0.3),
+    Question("q_gritty_realism",         "Is it dark, gritty, or urban-realistic in style?",
+             _attr_true("has_gritty_realism"), weight=0.3),
+    Question("q_intimate_indie",         "Is it intimate, personal, or indie in style (not a big-budget spectacle)?",
+             _attr_true("is_intimate_indie"), weight=0.3),
+
+    # Suspense
+    Question("q_suspense_thriller",      "Does it build tension through suspense or a cat-and-mouse plot?",
+             _attr_true("has_suspense_thriller"), weight=0.3),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
