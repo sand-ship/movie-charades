@@ -106,6 +106,22 @@ class GameEngine:
                           if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))
                           and q.id not in GENRE_QUESTION_IDS
                           and q.id != last_qid]
+
+                # Language-specific confirmation routing for better disambiguation
+                lang = cands[0].get('language', '') if cands else ''
+                if lang == 'Telugu' and last_qid in ['q_genre_romance', 'q_genre_drama']:
+                    # Telugu films are 89% romance-heavy: ask about comedy/action distinction
+                    lang_specific = [q for q in confirm if q.id in ['q_genre_comedy', 'q_genre_action', 'q_mass_entertainer']]
+                    confirm = lang_specific + confirm if lang_specific else confirm
+                elif lang == 'Tamil' and 'class' in last_qid.lower():
+                    # Tamil films have high class-conflict signal: use it
+                    lang_specific = [q for q in confirm if q.id in ['q_class_conflict', 'q_social', 'q_patriotic']]
+                    confirm = lang_specific + confirm if lang_specific else confirm
+                elif lang == 'Hindi' and last_qid in ['q_genre_romance', 'q_genre_drama']:
+                    # Hindi films need thriller distinction
+                    lang_specific = [q for q in confirm if q.id in ['q_genre_thriller', 'q_investigation', 'q_crime_protagonist']]
+                    confirm = lang_specific + confirm if lang_specific else confirm
+
                 if confirm:
                     # Prefer questions that align with the maybe-answer
                     aligned = [q for q in confirm if q.evaluate(cands[0]) if len(cands) > 0]
