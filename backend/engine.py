@@ -234,14 +234,16 @@ class GameEngine:
 
     def apply_answer(self, session: Session, question_id: str, answer: str) -> None:
         """answer: 'yes' | 'no' | 'maybe' | 'dunno'
-        'dunno' is skipped entirely (not recorded) and caller should ask next question.
+        'dunno' is tracked as asked but not scored (doesn't affect candidate filtering).
         'maybe' is recorded and scored as weak 'yes'."""
-        # Skip dunno entirely — don't record it, just return
-        if answer == "dunno":
-            return
-
         added = [question_id]
         session.asked.append(question_id)
+
+        # Dunno: mark as asked (so we don't ask again) but don't score it
+        if answer == "dunno":
+            session.history.append(added)
+            return
+
         session.answers[question_id] = answer
 
         # Auto-answer "no" to siblings of mutually-exclusive groups. A film has
