@@ -1,0 +1,552 @@
+[
+  {
+    "title": "Pathaan",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Deepika Padukone", "John Abraham", "Dimple Kapadia", "Ashutosh Rana", "Prakash Belawadi", "Salman Khan"]
+  },
+  {
+    "title": "Jawan",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Nayanthara", "Vijay Sethupathi", "Deepika Padukone", "Priyamani", "Sanya Malhotra", "Sunil Grover", "Sanjay Dutt", "Ridhi Dogra"]
+  },
+  {
+    "title": "Dunki",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Taapsee Pannu", "Vicky Kaushal", "Boman Irani", "Dia Mirza", "Satish Shah", "Dharmendra"]
+  },
+  {
+    "title": "Zero",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Katrina Kaif", "Anushka Sharma", "Abhay Deol", "R Madhavan", "Mohammed Zeeshan Ayyub", "Tigmanshu Dhulia", "Salman Khan", "Deepika Padukone", "Sridevi", "Karisma Kapoor"]
+  },
+  {
+    "title": "Raees",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Mahira Khan", "Mohammed Zeeshan Ayyub", "Sheeba Chaddha", "Atul Kulkarni", "Narendra Jha", "Jaideep Ahlawat", "Sunny Leone"]
+  },
+  {
+    "title": "Jab Harry Met Sejal",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Anushka Sharma", "Aru Verma", "Evelyn Sharma", "Chandan Roy Sanyal", "Sayani Gupta"]
+  },
+  {
+    "title": "FAN",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Sayani Gupta", "Deepika Amin", "Waluscha de Sousa", "Shriya Pilgaonkar"]
+  },
+  {
+    "title": "Dilwale",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Kajol", "Boman Irani", "Varun Sharma", "Johnny Lever", "Pankaj Tripathi", "Kabir Bedi", "Vinod Khanna", "Sanjay Mishra"]
+  },
+  {
+    "title": "Happy New Year",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Deepika Padukone", "Abhishek Bachchan", "Sonu Sood", "Boman Irani", "Anupam Kher", "Jackie Shroff"]
+  },
+  {
+    "title": "Chennai Express",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Deepika Padukone", "Nikitin Dheer", "Sathyaraj", "Mukesh Tiwari"]
+  },
+  {
+    "title": "Jab Tak Hai Jaan",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Katrina Kaif", "Anupam Kher", "Javed Sheikh"]
+  },
+  {
+    "title": "Don 2",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Priyanka Chopra", "Boman Irani", "Om Puri"]
+  },
+  {
+    "title": "Ra.One",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Kareena Kapoor", "Arjun Rampal", "Tom Wu"]
+  },
+  {
+    "title": "My Name Is Khan",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Kajol", "Sheila Vand", "Christopher Collet"]
+  },
+  {
+    "title": "Billu",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Priyanka Chopra", "Irrfan Khan"]
+  },
+  {
+    "title": "Rab Ne Bana Di Jodi",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Anushka Sharma", "Kirron Kher", "Vinay Pathak"]
+  },
+  {
+    "title": "Chak De! India",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Vidya Malviya", "Shilpa Shukla", "Chirag Paswan"]
+  },
+  {
+    "title": "Om Shanti Om",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Deepika Padukone", "Kirron Kher", "Arjun Rampal"]
+  },
+  {
+    "title": "Don",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Priyanka Chopra", "Boman Irani", "Arlene Dahl"]
+  },
+  {
+    "title": "Kabhi Alvida Naa Kehna",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Rani Mukerji", "Abhishek Bachchan", "Amitabh Bachchan"]
+  },
+  {
+    "title": "Paheli",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Rani Mukerji", "Amrita Rao"]
+  },
+  {
+    "title": "Swades",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Gayatri Joshi", "Krishnam Raju"]
+  },
+  {
+    "title": "Veer-Zaara",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Preity Zinta", "Rani Mukerji", "Anupam Kher"]
+  },
+  {
+    "title": "Main Hoon Na",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Sushmita Sen", "Suniel Shetty", "Zayed Khan"]
+  },
+  {
+    "title": "Kal Ho Naa Ho",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Preity Zinta", "Saif Ali Khan", "Jaya Bachchan"]
+  },
+  {
+    "title": "Chalte Chalte",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Rani Mukerji", "Johnny Lever"]
+  },
+  {
+    "title": "Devdas",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Aishwarya Rai", "Madhuri Dixit", "Jackie Shroff"]
+  },
+  {
+    "title": "Shakti: The Power",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Kaif", "Naseeruddin Shah"]
+  },
+  {
+    "title": "Kabhi Khusi Kabhie Gham",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Amitabh Bachchan", "Jaya Bachchan", "Kareena Kapoor"]
+  },
+  {
+    "title": "Asoka",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Kareena Kapoor", "Danny Denzongpa", "Rahul Dev"]
+  },
+  {
+    "title": "Mohabbatein",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Amitabh Bachchan", "Uday Chopra", "Jimmy Shergill"]
+  },
+  {
+    "title": "Josh",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Aishwarya Rai", "Chandrachur Singh"]
+  },
+  {
+    "title": "Baadshah",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Twinkle Khanna", "Johnny Lever"]
+  },
+  {
+    "title": "Kuch Kuch Hota Hai",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Kajol", "Rani Mukerji", "Salman Khan"]
+  },
+  {
+    "title": "Dil Se",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Manisha Koirala", "Preity Zinta"]
+  },
+  {
+    "title": "Duplicate",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Juhi Chawla", "Rajpal Yadav"]
+  },
+  {
+    "title": "Dil To Pagal Hai",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Madhuri Dixit", "Karisma Kapoor"]
+  },
+  {
+    "title": "Pardes",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Mahima Chaudhry", "Anupam Kher"]
+  },
+  {
+    "title": "Yes Boss",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Juhi Chawla", "Javed Jaffrey"]
+  },
+  {
+    "title": "Koyla",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Madhuri Dixit", "Amrish Puri"]
+  },
+  {
+    "title": "English Babu Desi Mem",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Madhuri Dixit", "Akshay Kumar"]
+  },
+  {
+    "title": "Chaahat",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Pooja Bhatt", "Naseeruddin Shah"]
+  },
+  {
+    "title": "Dilwale Dulhania Le Jayenge",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Kajol", "Anupam Kher", "Farida Jalal"]
+  },
+  {
+    "title": "Ram Jaane",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Juhi Chawla", "Deepak Tijori"]
+  },
+  {
+    "title": "Anjaam",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Madhuri Dixit", "Anupam Kher"]
+  },
+  {
+    "title": "Baazigar",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Kajol", "Shilpa Shetty"]
+  },
+  {
+    "title": "Darr",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Sunny Deol", "Juhi Chawla"]
+  },
+  {
+    "title": "Kabhi Haan Kabhi Naa",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Deepa Sahi", "Naseeruddin Shah"]
+  },
+  {
+    "title": "Deewana",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Divya Bharati", "Amitabh Bachchan"]
+  },
+  {
+    "title": "Raju Ban Gaya Gentleman",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Juhi Chawla", "Naseeruddin Shah"]
+  },
+  {
+    "title": "Chamatkar",
+    "lead_actor": "Shah Rukh Khan",
+    "supporting_actors": ["Naseeruddin Shah"]
+  },
+  {
+    "title": "Kisi Ka Bhai Kisi Ki Jaan",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Pooja Hegde", "Venkatesh", "Jagapati Babu"]
+  },
+  {
+    "title": "Tiger 3",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Katrina Kaif", "Emraan Hashmi", "Rattanpreet Kaur"]
+  },
+  {
+    "title": "Notebook",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Pranutan Behl"]
+  },
+  {
+    "title": "Radhe",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Disha Patani", "Randeep Hooda", "Jackie Shroff"]
+  },
+  {
+    "title": "Bharat",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Katrina Kaif", "Tabu", "Disha Patani"]
+  },
+  {
+    "title": "Tubelight",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Zhu Zhu", "Kabir Khan"]
+  },
+  {
+    "title": "Sultan",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Anushka Sharma", "Amit Sadh", "Randeep Hooda"]
+  },
+  {
+    "title": "Ek Tha Tiger",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Katrina Kaif", "Ranvir Shorey"]
+  },
+  {
+    "title": "Dabangg 3",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Sonakshi Sinha", "Sudeep", "Kichcha Sudeep"]
+  },
+  {
+    "title": "Race 3",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Jacqueline Fernandez", "Anil Kapoor", "Bobby Deol"]
+  },
+  {
+    "title": "Being Human",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Tabu", "Aryan Vaid", "Om Puri"]
+  },
+  {
+    "title": "Prem Ratan Dhan Payo",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Sonam Kapoor", "Swara Bhaskar", "Anupam Kher"]
+  },
+  {
+    "title": "Bajrangi Bhaijaan",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Kareena Kapoor", "Nawazuddin Siddiqui", "Harshali Malhotra"]
+  },
+  {
+    "title": "Kick",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Jacqueline Fernandez", "Randeep Hooda", "Nawazuddin Siddiqui"]
+  },
+  {
+    "title": "Jai Ho",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Daisy Shah", "Tabu", "Somy Ali"]
+  },
+  {
+    "title": "Bodyguard",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Kareena Kapoor", "Shilpa Shetty", "Raj Babbar"]
+  },
+  {
+    "title": "Veer",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Jacqueline Fernandez", "Mithun Chakraborty"]
+  },
+  {
+    "title": "Dabangg",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Sonakshi Sinha", "Sanjay Leela Bhansali", "Vinod Khanna"]
+  },
+  {
+    "title": "Wanted",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Anil Kapoor", "Prakash Raj"]
+  },
+  {
+    "title": "No Entry",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Fardeen Khan", "Anil Kapoor", "Bipasha Basu"]
+  },
+  {
+    "title": "Partner",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Govinda", "Katrina Kaif", "Boman Irani"]
+  },
+  {
+    "title": "Mujhse Shaadi Karogi",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Akshay Kumar", "Priyanka Chopra", "Amrita Rao"]
+  },
+  {
+    "title": "Tere Naam",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Bhoomika Chawla", "Saurabh Shukla"]
+  },
+  {
+    "title": "Hum Saath Saath Hain",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Karisma Kapoor", "Tabu", "Saif Ali Khan"]
+  },
+  {
+    "title": "Hello Brother",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Rani Mukerji", "Sonali Bendre"]
+  },
+  {
+    "title": "Pyaar Kiya To Darna Kya",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Kajol", "Pooja Bhatt"]
+  },
+  {
+    "title": "Biwi No.1",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Karisma Kapoor", "Govinda", "Sushmita Sen"]
+  },
+  {
+    "title": "Hum Aapke Hain Kaun",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Madhuri Dixit", "Renuka Shahane"]
+  },
+  {
+    "title": "Maine Pyaar Kiya",
+    "lead_actor": "Salman Khan",
+    "supporting_actors": ["Bhagyashree", "Alok Nath"]
+  },
+  {
+    "title": "Lagaan",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Gracy Singh", "Rachel Shelley", "Paul Blackthorne"]
+  },
+  {
+    "title": "Laal Singh Chaddha",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Kareena Kapoor", "Mona Singh", "Chupke Dube"]
+  },
+  {
+    "title": "Thugs of Hindostan",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Amitabh Bachchan", "Katrina Kaif", "Lloyd Owen"]
+  },
+  {
+    "title": "Dangal",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Fatima Sana Shaikh", "Sanya Malhotra", "Aparshakti Khurana"]
+  },
+  {
+    "title": "PK",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Anushka Sharma", "Saurabh Shukla", "Sushant Singh Rajput"]
+  },
+  {
+    "title": "Dhoom 3",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Katrina Kaif", "Abhishek Bachchan", "Uday Chopra"]
+  },
+  {
+    "title": "Talaash: The Answer Lies Within",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Kareena Kapoor", "Rani Mukerji", "Rajesh Sharma"]
+  },
+  {
+    "title": "Dhobi Ghat",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Priyanka Chopra", "Monica Dogra"]
+  },
+  {
+    "title": "3 Idiots",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Madhavan", "Sharman Joshi", "Kareena Kapoor"]
+  },
+  {
+    "title": "Ghajini",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Asin", "Jia Ali", "Pradeep Rawat"]
+  },
+  {
+    "title": "Taare Zameen Par",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Darsheel Safary", "Tisca Chopra", "Vipin Sharma"]
+  },
+  {
+    "title": "Rang De Basanti",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Siddharth", "Kunal Kapoor", "Soha Ali Khan"]
+  },
+  {
+    "title": "Fanaa",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Kajol", "Ravi Jhankal", "Nirmal Pandey"]
+  },
+  {
+    "title": "Mangal Pandey: The Rising",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Rani Mukerji", "Amitabh Bachchan", "Ajay Devgn"]
+  },
+  {
+    "title": "Dil Chahta Hai",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Akshaye Khanna", "Saif Ali Khan", "Preity Zinta"]
+  },
+  {
+    "title": "Sarfarosh",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Naseeruddin Shah", "Sonali Bendre"]
+  },
+  {
+    "title": "Mann",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Manisha Koirala", "Deepak Tijori"]
+  },
+  {
+    "title": "Ghulam",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Rani Mukerji", "Ajay Devgn"]
+  },
+  {
+    "title": "Earth",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Nandita Das", "Rahul Bhat"]
+  },
+  {
+    "title": "Raja Hindustani",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Karisma Kapoor", "Ashish Vidyarthi"]
+  },
+  {
+    "title": "Rangeela",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Urmila Matondkar", "Ajay Devgn"]
+  },
+  {
+    "title": "Akele Hum Akele Tum",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Manisha Koirala", "Anupam Kher"]
+  },
+  {
+    "title": "Andaz Apna Apna",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Salman Khan", "Raveena Tandon", "Paresh Rawal"]
+  },
+  {
+    "title": "Hum Hain Rahi Pyar Ke",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Juhi Chawla", "Deepak Tijori"]
+  },
+  {
+    "title": "Jo Jeeta Wohi Sikandar",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Ayesha Jhulka", "Deepak Tijori"]
+  },
+  {
+    "title": "Dil Hai Ke Manta Nahin",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Pooja Bhatt", "Anupam Kher"]
+  },
+  {
+    "title": "Dil",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Madhuri Dixit", "Anupam Kher"]
+  },
+  {
+    "title": "Raakh",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Pooja Bhatt"]
+  },
+  {
+    "title": "Qayamat Se Qayamat Tak",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Juhi Chawla", "Goga Kapoor"]
+  },
+  {
+    "title": "Sitaare Zameen Par",
+    "lead_actor": "Aamir Khan",
+    "supporting_actors": ["Fatima Sana Shaikh", "Zaira Wasim"]
+  }
+]

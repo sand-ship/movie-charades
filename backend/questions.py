@@ -325,8 +325,8 @@ QUESTIONS.extend([
              _attr_true("has_nri_cultural_tension"), weight=0.3),
     Question("q_fated_romance",          "Does the film suggest the couple is 'meant to be' together?",
              _attr_true("has_fated_romance"), weight=0.3),
-    Question("q_military_film",          "Is this a military or war narrative?",
-             _attr_true("is_military_film"), weight=0.3),
+    Question("q_military_plot",          "Does the plot involve the military, army, navy, or intelligence agencies?",
+             _attr_true("has_military_plot"), weight=0.3),
     Question("q_patriotic_sacrifice",    "Does the story center on sacrifice for nation or patriotic duty?",
              _attr_true("has_patriotic_sacrifice"), weight=0.3),
 ])
