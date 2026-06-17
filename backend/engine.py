@@ -144,6 +144,27 @@ class GameEngine:
         elif current_phase == 1:  # Phase 2: actress/director only (no music yet)
             splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
+        # ACTOR GUARD: Check first, before all other logic
+        can_ask_actors = False
+        if "q_multiple_protagonists" in session.answers:
+            can_ask_actors = True
+        if len(non_anchor_qs) >= 5 and len(cands) > 50:
+            can_ask_actors = True
+        if len(non_anchor_qs) >= 5:
+            first_five = non_anchor_qs[:5]
+            if sum(1 for qid in first_five if session.answers.get(qid) == "no") >= 3:
+                can_ask_actors = True
+            first_ten = non_anchor_qs[:10]
+            uncertain = sum(1 for qid in first_ten if session.answers.get(qid) in ("maybe", "dunno"))
+            if uncertain >= 3:
+                can_ask_actors = True
+
+        # If discriminating fields unlocked and pool large, ask them immediately
+        if can_ask_actors and len(cands) > 5 and splitting:
+            actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))]
+            if actor_qs:
+                return max(actor_qs, key=lambda q: self._information_gain(cands, q))
+
         # If the last answer was "maybe", ask a confirmation question to convert to yes/no
         # This pins down uncertain answers and reduces candidate pool drift
         if session.asked:
@@ -242,35 +263,7 @@ class GameEngine:
             non_persons = [q for q in splitting
                           if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))]
 
-        # Calculate when to unlock actor questions
-        can_ask_actors = False
-
-        # Fast-track: if structural question answered, enable discriminating fields immediately
-        if "q_multiple_protagonists" in session.answers:
-            can_ask_actors = True
-
-        # At Q5+, unlock discriminating fields if pool is still large
-        if len(non_anchor_qs) >= 5 and len(cands) > 50:
-            can_ask_actors = True
-
-        if len(non_anchor_qs) >= 5:
-            # Lowered threshold: 3+ of first 5 "no" (not all 5)
-            first_five = non_anchor_qs[:5]
-            if sum(1 for qid in first_five if session.answers.get(qid) == "no") >= 3:
-                can_ask_actors = True
-            # OR lowered threshold: 3+ of first 10 are "maybe" or "dunno" (not 5+)
-            first_ten = non_anchor_qs[:10]
-            uncertain = sum(1 for qid in first_ten if session.answers.get(qid) in ("maybe", "dunno"))
-            if uncertain >= 3:
-                can_ask_actors = True
-
-        # Once discriminating fields unlocked (can_ask_actors), prioritize them
-        if can_ask_actors and len(cands) > 5:
-            actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))]
-            if actor_qs:
-                return max(actor_qs, key=lambda q: self._information_gain(cands, q))
-
-        # Before discriminating fields unlocked, prefer generic questions
+        # Prefer generic questions before discriminating fields unlocked
         if non_persons:
             return max(non_persons, key=lambda q: self._information_gain(cands, q))
 
