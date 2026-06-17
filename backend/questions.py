@@ -292,6 +292,24 @@ QUESTIONS.extend([
              _attr_eq("director", "Puri Jagannadh"), weight=1.0),
     Question("q_dir_mani_ratnam",     "Is it directed by Mani Ratnam?",
              _attr_eq("director", "Mani Ratnam"), weight=1.0),
+
+    # Phase 6: Additional prolific actors (identified from failure analysis)
+    Question("q_pawan_kalyan",        "Does it star Pawan Kalyan?",
+             _attr_eq("lead_actor", "Pawan Kalyan"), weight=1.0),
+    Question("q_sivakarthikeyan",     "Does it star Sivakarthikeyan?",
+             _attr_eq("lead_actor", "Sivakarthikeyan"), weight=1.0),
+    Question("q_shah_rukh",           "Does it star Shah Rukh Khan?",
+             _attr_eq("lead_actor", "Shah Rukh Khan"), weight=1.0),
+    Question("q_ravi_teja",           "Does it star Ravi Teja?",
+             _attr_eq("lead_actor", "Ravi Teja"), weight=1.0),
+    Question("q_nani",                "Does it star Nani?",
+             _attr_eq("lead_actor", "Nani"), weight=1.0),
+    Question("q_salman",              "Does it star Salman Khan?",
+             _attr_eq("lead_actor", "Salman Khan"), weight=1.0),
+    Question("q_dhanush",             "Does it star Dhanush?",
+             _attr_eq("lead_actor", "Dhanush"), weight=1.0),
+    Question("q_suriya",              "Does it star Suriya?",
+             _attr_eq("lead_actor", "Suriya"), weight=1.0),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
