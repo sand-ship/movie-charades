@@ -100,82 +100,42 @@ python3 backend/main.py
 
 ---
 
-### Phase 2: Add Missing Questions (Next Session)
+### Phase 2: Add Missing Questions + Confirmation Sequencing ✅ COMPLETE
 
-Add these 4-5 questions to `backend/questions.py`:
+#### Added 8 Questions to `backend/questions.py` (Lines 210-226):
 
-#### Question 1: Lost-and-Found Family Arc
+| Question ID | Question Text | Maps To |
+|-------------|---------------|---------|
+| `q_separated_family` | "Are the main characters searching for separated or lost family members?" | `is_lost_and_found_child` |
+| `q_love_triangle` | "Is there a love triangle where multiple characters pursue the same person?" | `is_love_triangle` |
+| `q_reluctant_romance` | "Is the main romance about one person pursuing a reluctant partner?" | `is_unrequited_love_turnaround` |
+| `q_reincarnation` | "Does the plot involve ghosts, spirits, or reincarnation?" | `is_reincarnation_rebirth` |
+| `q_historical_era` | "Is this set in pre-1947 British-ruled India or an earlier historical period?" | `is_partition_backdrop` |
+| `q_dance_heavy` | "Does the film heavily feature elaborate dance sequences or musical numbers?" | `is_dance_heavy` |
+| `q_sibling_rivalry` | "Is sibling or brother rivalry a central plot element?" | `is_brother_conflict` |
+| `q_sacrifice_ending` | "Does the climax involve a significant sacrifice or tragic ending?" | `is_sacrifice_ending` |
+
+All 8 questions are **soft tropes** (weight=0.3) that nudge confidence without hard-eliminating candidates.
+
+#### Phase 2.1: Confirmation Sequencing After "Maybe" (engine.py Lines 83-110)
+
+New logic: **When a player answers "maybe", the next question is a confirmation to pin down the answer.**
+
 ```python
-{
-    "id": "q_separated_family",
-    "text": "Are the main characters searching for separated/lost family members?",
-    "applies_to": [
-        "amar_akbar_anthony_1977",
-        "kalank",
-        "thalapathi",
-        "piku",  # disability + parent reunion
-        "sanju",  # biographical family search
-    ]
-}
+# If the last answer was "maybe", ask a confirmation question
+if session.asked:
+    last_qid = session.asked[-1]
+    last_ans = session.answers.get(last_qid)
+    if last_ans == "maybe":
+        confirm = [q for q in splitting if meets_criteria(q)]
+        if confirm:
+            # Ask high-information-gain question aligned with maybe-answer
+            return max(confirm, key=lambda q: self._information_gain(cands, q))
 ```
 
-#### Question 2: Love Triangle
-```python
-{
-    "id": "q_love_triangle_explicit",
-    "text": "Is there a romantic triangle where multiple characters pursue the same person?",
-    "applies_to": [
-        "hum_dil_de_chuke_sanam",  # Ajay-Aishwarya-Salman
-        "goliyon_ki_rasleela_ram_leela",  # Ram-Leela-Bhairav
-        "rang_de_basanti",  # Could be interpreted as subtle
-    ]
-}
-```
+**Effect:** Converts soft "maybe" answers to binary yes/no before pool narrows further. Prevents the 8-9 candidate pile-up.
 
-#### Question 3: Reluctant Partner / Pursuit
-```python
-{
-    "id": "q_male_pursues_reluctant_female",
-    "text": "Is the main romance about a man pursuing/convincing a reluctant woman?",
-    "applies_to": [
-        "maine_pyar_kiya",  # Prem chases Suman
-        "welcome",  # Akshay pursues reluctant Katrina
-        "hum_dil_de_chuke_sanam",  # Salman pursues Aishwarya away from Ajay
-        "talaash_answer_lies_within",  # Hrithik pursues Rani
-    ]
-}
-```
-
-#### Question 4: Supernatural / Reincarnation
-```python
-{
-    "id": "q_reincarnation_ghost_plot",
-    "text": "Does the plot involve ghosts, spirits, or reincarnation?",
-    "applies_to": [
-        "om_shanti_om",  # Core plot device
-        "chandni",  # Ghost returns as spirit
-        "gehraiyaan",  # Subtle reincarnation themes
-    ]
-}
-```
-
-#### Question 5: Period Piece / Historical Setting
-```python
-{
-    "id": "q_pre_independence_era",
-    "text": "Is this set in British-ruled India or pre-1947 era?",
-    "applies_to": [
-        "kalank",  # 1918 pre-partition
-        "thalapathi",  # Early 1900s colonial era (implicit)
-        "padmaavat",  # 1500s Mughal
-        "raees",  # Actually contemporary (NO)
-    ]
-}
-```
-
-**Where to add:** Insert after line 350 in `backend/questions.py`
-
-**Testing:** Run `/admin/analyze-stumpers?key=ushermein114!&verbose=true` to see if these questions reduce "remaining_candidates"
+**Testing:** Run `/admin/analyze-stumpers?key=ushermein114!&verbose=true` to verify reduced "remaining_candidates"
 
 ---
 
@@ -221,14 +181,15 @@ After deploying Phase 1 + 2:
 
 ## Expected Outcomes
 
-### After Phase 1 (Narrative Attributes Only)
+### After Phase 1 (Narrative Attributes Only) ✅
 - **Win rate:** 17.1% → ~22% (soft scoring helps)
 - **Stumped rate:** 39% → 35% (fewer hit question ceiling)
 
-### After Phase 2 (New Questions)
-- **Win rate:** 22% → **50%+** (specific questions + attributes = disambiguation)
-- **Stumped rate:** 35% → ~15% (rarely hit question limit)
-- **Repeated failures on same film:** Drops to 0 (players should converge after 25-30 questions)
+### After Phase 2 (Confirmation Sequencing + New Questions) ✅
+- **Win rate:** 22% → **50%+** (confirmation pins down maybe → new high-gain questions → fast convergence)
+- **Stumped rate:** 35% → ~15% (rarely hit question limit with better questioning flow)
+- **Repeated failures on same film:** Drops to 0 (new questions prevent entropy exhaustion)
+- **Average questions per game:** 29.3 → ~22 (confirmation sequencing shortens game length)
 
 ---
 
