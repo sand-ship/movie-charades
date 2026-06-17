@@ -265,57 +265,49 @@ class GameEngine:
                 )
                 return max(splitting, key=actor_boost)
 
-        # Disciplined discriminating field placement:
-        # Q1-10: One discrim field | Q10-20: One discrim field | Q20-30: One discrim field
-        # Always pivot to different field on "no"
-        non_anchor = len([qid for qid in session.asked
-                         if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS])
+        # Disciplined discriminating field placement: Q1-10, Q10-20, Q20-30 each get ONE discrim field
+        # Pivot to different field on every "no" to spread elimination across dimensions
 
-        # Identify which discriminating fields have been asked in each phase
-        discrim_fields = {'music': set(), 'director': set(), 'actress': set(), 'actor': set()}
-        discrim_asked_phases = {0: set(), 1: set(), 2: set()}  # phases: Q1-10, Q10-20, Q20-30
-
-        for qid in session.asked:
-            phase = 0 if non_anchor < 10 else (1 if non_anchor < 20 else 2)
-            if qid.startswith("q_music_"):
-                discrim_fields['music'].add(qid)
-                discrim_asked_phases[phase].add('music')
-            elif qid.startswith("q_dir_"):
-                discrim_fields['director'].add(qid)
-                discrim_asked_phases[phase].add('director')
-            elif qid.startswith("q_actress_"):
-                discrim_fields['actress'].add(qid)
-                discrim_asked_phases[phase].add('actress')
-            elif qid.startswith("q_actor_"):
-                discrim_fields['actor'].add(qid)
-                discrim_asked_phases[phase].add('actor')
-
-        # Determine current phase and if we should ask a discriminating question
-        current_phase = 0 if non_anchor < 10 else (1 if non_anchor < 20 else 2)
-        should_ask_discrim = len(discrim_asked_phases[current_phase]) == 0
-
-        # Identify which field was last asked (if any) to pivot away from it
+        # Identify last discriminating field asked to pivot away from it
         last_discrim_field = None
-        if session.asked:
-            for qid in reversed(session.asked):
-                if qid.startswith("q_music_"):
-                    last_discrim_field = "music"
-                    break
-                elif qid.startswith("q_dir_"):
-                    last_discrim_field = "director"
-                    break
-                elif qid.startswith("q_actress_"):
-                    last_discrim_field = "actress"
-                    break
-                elif qid.startswith("q_actor_"):
-                    last_discrim_field = "actor"
-                    break
+        last_discrim_answer = None
+        for qid in reversed(session.asked):
+            if qid.startswith("q_music_"):
+                last_discrim_field = "music"
+                last_discrim_answer = session.answers.get(qid)
+                break
+            elif qid.startswith("q_dir_"):
+                last_discrim_field = "director"
+                last_discrim_answer = session.answers.get(qid)
+                break
+            elif qid.startswith("q_actress_"):
+                last_discrim_field = "actress"
+                last_discrim_answer = session.answers.get(qid)
+                break
+            elif qid.startswith("q_actor_"):
+                last_discrim_field = "actor"
+                last_discrim_answer = session.answers.get(qid)
+                break
 
-        # Filter discrim questions based on strategy
+        # Count discrim Qs in each phase to enforce "one per phase" rule
+        current_non_anchor = len([qid for qid in session.asked
+                                 if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS])
+        current_phase = 0 if current_non_anchor < 10 else (1 if current_non_anchor < 20 else 2)
+
+        # Count discrim Qs asked in current phase
+        discrim_in_phase = sum(1 for qid in session.asked
+                               if qid.startswith(("q_music_", "q_dir_", "q_actress_", "q_actor_"))
+                               and (current_non_anchor - len(session.asked) + session.asked.index(qid)) < 10)
+
+        # Should ask discrim Q if: we're in a phase boundary OR no discrim asked yet in phase AND last was "no"
+        should_ask_discrim = (discrim_in_phase == 0 and
+                             (current_non_anchor % 10 == 0 or last_discrim_answer == "no"))
+
+        # If we should ask discrim Q, filter to different field
         if should_ask_discrim and splitting:
-            # Prioritize discriminating questions for this phase
-            all_fields = ['music', 'director', 'actress', 'actor']
-            available_fields = [f for f in all_fields if f != last_discrim_field]
+            all_fields = {'music', 'director', 'actress', 'actor'}
+            avoid_field = {last_discrim_field} if last_discrim_field else set()
+            available_fields = all_fields - avoid_field
 
             field_map = {
                 "music": lambda q: q.id.startswith("q_music_"),
@@ -324,14 +316,12 @@ class GameEngine:
                 "actor": lambda q: q.id.startswith("q_actor_"),
             }
 
-            # Get discriminating questions from available fields (not last field)
             discrim_qs = [q for q in splitting
                          if any(field_map[f](q) for f in available_fields)]
 
             if discrim_qs:
                 return max(discrim_qs, key=lambda q: self._information_gain(cands, q))
 
-        # Otherwise ask regular questions
         return max(splitting, key=lambda q: self._information_gain(cands, q))
 
     @staticmethod
