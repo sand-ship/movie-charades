@@ -242,6 +242,28 @@ QUESTIONS.extend([
              _attr_true("has_female_lead"), weight=0.3),
     Question("q_ensemble_large",     "Does the film have a large ensemble cast with multiple major characters?",
              _attr_true("is_ensemble_cast"), weight=0.3),
+
+    # Phase 4: Tier 2 discrimination (10 questions targeting mid-rated film distinctions)
+    Question("q_wedding_marriage",   "Is a wedding, marriage, or engagement a major plot point?",
+             _attr_true("has_wedding_plot"), weight=0.3),
+    Question("q_period_historical",  "Is the film set in a historical period (not contemporary)?",
+             _attr_true("is_period_film"), weight=0.3),
+    Question("q_crime_protagonist",  "Is the protagonist a criminal, gangster, or morally grey character?",
+             _attr_true("has_anti_hero_protagonist"), weight=0.3),
+    Question("q_investigation",      "Does the film involve a murder, investigation, or mystery to solve?",
+             _attr_true("has_investigation_plot"), weight=0.3),
+    Question("q_urban_setting",      "Is the film primarily set in a major city or metropolitan area?",
+             _attr_true("is_urban_setting"), weight=0.3),
+    Question("q_friendship_focus",   "Is friendship or brotherhood the emotional core (rather than romance)?",
+             _attr_true("has_friendship_focus"), weight=0.3),
+    Question("q_parent_child",       "Are parent-child relationships central to the plot?",
+             _attr_true("has_parent_child_arc"), weight=0.3),
+    Question("q_supernatural_magic", "Does the film involve ghosts, magic, or the supernatural (beyond reincarnation)?",
+             _attr_true("has_supernatural_elements"), weight=0.3),
+    Question("q_sequel_franchise",   "Is this a sequel, prequel, or part of a film franchise/series?",
+             _attr_true("is_sequel_or_franchise"), weight=0.3),
+    Question("q_mistaken_identity",  "Does the plot involve mistaken identity or disguise as a key element?",
+             _attr_true("has_mistaken_identity"), weight=0.3),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
