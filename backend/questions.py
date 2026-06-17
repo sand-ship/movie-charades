@@ -41,7 +41,7 @@ QUESTIONS: list[Question] = [
     Question("q_2000s",     "Was it released in the 2000s?",                    _attr_eq("era", "2000s")),
     Question("q_2010s",     "Was it released in the 2010s?",                    _attr_eq("era", "2010s")),
     Question("q_2020s",     "Was it released after 2020?",                      _attr_eq("era", "2020s")),
-    Question("q_multiple_protagonists", "Is it structured around one hero or multiple protagonists?", _has_multiple_protagonists, weight=1.0),
+    Question("q_multiple_protagonists", "Does it have multiple protagonists?", _has_multiple_protagonists, weight=1.0),
     Question("q_villain",          "Does it feature a memorable villain?",                           _attr_eq("has_villain", True)),
     Question("q_strict_antagonist","Is the main conflict driven by a strict but well-meaning character\n(overprotective parent/sibling, authority figure) rather than a villain?",
              _attr_eq("has_strict_antagonist", True), requires=("q_villain", "no")),
