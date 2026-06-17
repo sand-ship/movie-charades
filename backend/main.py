@@ -20,7 +20,7 @@ from questions import LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS, GENRE_QUESTION_ID
 # ── load data ────────────────────────────────────────────────────────────
 DATA_PATH = Path(__file__).parent / "data" / "movies.json"
 _all_movies = json.loads(DATA_PATH.read_text())
-movies = [m for m in _all_movies if m.get("language") in {"hindi", "tamil", "telugu"}]
+movies = [m for m in _all_movies if m.get("language") in {"Hindi", "Tamil", "Telugu"}]
 
 # Register actor/director questions derived from the active pool
 from questions import QUESTIONS

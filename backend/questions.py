@@ -27,9 +27,9 @@ def _attr_gte(attr: str, value: float) -> Callable[[dict], bool]:
 
 
 QUESTIONS: list[Question] = [
-    Question("q_hindi",     "Is it a Hindi film?",                              _attr_eq("language", "hindi")),
-    Question("q_tamil",     "Is it a Tamil film?",                              _attr_eq("language", "tamil")),
-    Question("q_telugu",    "Is it a Telugu film?",                             _attr_eq("language", "telugu")),
+    Question("q_hindi",     "Is it a Hindi film?",                              _attr_eq("language", "Hindi")),
+    Question("q_tamil",     "Is it a Tamil film?",                              _attr_eq("language", "Tamil")),
+    Question("q_telugu",    "Is it a Telugu film?",                             _attr_eq("language", "Telugu")),
     Question("q_classic",   "Was it released before 1990?",                     _attr_eq("era", "classic")),
     Question("q_90s",       "Was it released in the 90s?",                      _attr_eq("era", "90s")),
     Question("q_2000s",     "Was it released in the 2000s?",                    _attr_eq("era", "2000s")),

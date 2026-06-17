@@ -1,0 +1,1769 @@
+{
+  "database_metadata": {
+    "version": "1.0.0",
+    "generated_date": "2026-06-17T11:45:00Z",
+    "total_films": 56,
+    "languages": ["Hindi", "Telugu", "Tamil"],
+    "conflict_taxonomy_version": "1.0"
+  },
+  "conflict_taxonomy": {
+    "CON_01": "Asymmetric False Accusation: Framing/scapegoating where protagonist cannot speak the truth",
+    "CON_02": "Intergenerational Blood Feud: Inherited tribal, familial, or factional violence",
+    "CON_03": "Institutional & State Decay: Bureaucratic, judicial, or police corruption as primary adversary",
+    "CON_04": "Systemic Caste/Class Apartheid: Structural societal barriers, discrimination, segregation",
+    "CON_05": "Existential Identity Fracture: Amnesia, imposter syndrome, double lives, hidden ancestry",
+    "CON_06": "Terminal Decay / Bodily Betrayal: Degenerative illness, sudden disability, physical regression",
+    "CON_07": "The Crippling Debt Trap: Generational debt, mortgage foreclosure, financial ruin",
+    "CON_08": "Irreversible Grief Decimation: Post-tragedy trauma arcs where loss has already occurred",
+    "CON_09": "The Zero-Sum Moral Choice: High-stakes dilemmas where saving Option A destroys Option B",
+    "CON_10": "Taboo / Outlawed Intimacy: Romance violating religious, societal, or age-gap boundaries",
+    "CON_11": "The Vigilante Pipeline: Law-abiding citizen pushed past psychological point to extrajudicial retribution",
+    "CON_12": "The Deep Cover Double-Cross: Undercover operations, moles, shifting tribal loyalties",
+    "CON_13": "The Heist / Tactical Countdown: Asset extraction under tight spatial and temporal boundaries",
+    "CON_14": "Supernatural / Mythic Invasion: Cosmic horror, local folklore entities, divine intervention",
+    "CON_15": "The Self-Destructive Downward Spiral: Internal character erosion—hubris, substance abuse, collapse",
+    "CON_16": "Urban Migration Dislocation: Violent culture shock and economic friction of rural-to-metro",
+    "CON_17": "The Parasitic Informant / Betrayal: Internal traitors within close-knit group",
+    "CON_18": "Technological / Modernist Dystopia: AI surveillance, cybercrime, scientific hubris",
+    "CON_19": "The Custody / Legacy Partition: Parental custody wars, ancestral property splits, succession",
+    "CON_20": "The Man vs. Wild Survival Siege: Physiological survival against extreme environments"
+  },
+  "films": [
+    {
+      "film_id": "RANBIR_001",
+      "metadata": {
+        "title": "Barfi!",
+        "year": 2012,
+        "language": "Hindi",
+        "director": "Anurag Basu",
+        "lead_actors": ["Ranbir Kapoor"],
+        "lead_actresses": ["Priyanka Chopra"],
+        "imdb_rating": 8.1,
+        "genres": ["Romance", "Comedy", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_05",
+        "secondary_conflict_id": "CON_08",
+        "primary_conflict_narrative": "Deaf-mute protagonist navigates identity and communication gaps in a society that misconstrues his silence",
+        "secondary_conflict_narrative": "Grief and loss permeate the narrative as characters confront irreversible life changes",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "TRAGIC_COLLAPSE"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 7,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Silent protagonist's expressive hand gestures and head tilts",
+        "discrimination_power_score": 82.5
+      }
+    },
+    {
+      "film_id": "RANBIR_002",
+      "metadata": {
+        "title": "Rockstar",
+        "year": 2011,
+        "language": "Hindi",
+        "director": "Imtiaz Ali",
+        "lead_actors": ["Ranbir Kapoor"],
+        "lead_actresses": ["Nargis Fakhri"],
+        "imdb_rating": 7.4,
+        "genres": ["Romance", "Drama", "Musical"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_15",
+        "secondary_conflict_id": "CON_10",
+        "primary_conflict_narrative": "Musician's descent into substance abuse and obsession driven by unrequited passion",
+        "secondary_conflict_narrative": "Impossible love across nationality and class boundaries fuels the spiral",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "INTERNAL",
+        "climax_resolution_vector": "TRAGIC_COLLAPSE"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 1,
+        "abstract_vocabulary_score": 6,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Guitar-playing rock star with rebellious attitude",
+        "discrimination_power_score": 78.0
+      }
+    },
+    {
+      "film_id": "RANBIR_003",
+      "metadata": {
+        "title": "Ae Dil Hai Mushkil",
+        "year": 2016,
+        "language": "Hindi",
+        "director": "Karan Johar",
+        "lead_actors": ["Ranbir Kapoor"],
+        "lead_actresses": ["Anushka Sharma"],
+        "imdb_rating": 7.3,
+        "genres": ["Romance", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_08",
+        "primary_conflict_narrative": "Impossible, one-sided love across religious and cultural boundaries",
+        "secondary_conflict_narrative": "Trauma and emotional devastation from loving someone who can never reciprocate",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 4,
+        "abstract_vocabulary_score": 5,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Heartbroken lover reminiscing in foreign city",
+        "discrimination_power_score": 72.0
+      }
+    },
+    {
+      "film_id": "RANBIR_004",
+      "metadata": {
+        "title": "Raajneeti",
+        "year": 2010,
+        "language": "Hindi",
+        "director": "Prakash Jha",
+        "lead_actors": ["Ranbir Kapoor"],
+        "lead_actresses": ["Katrina Kaif"],
+        "imdb_rating": 6.9,
+        "genres": ["Drama", "Thriller", "Political"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_02",
+        "secondary_conflict_id": "CON_12",
+        "primary_conflict_narrative": "Political dynasty warfare spans generations with deep family betrayals",
+        "secondary_conflict_narrative": "Undercover operations and shifting loyalties within a power-hungry faction",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 6,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Political intrigue and backroom deals",
+        "discrimination_power_score": 75.5
+      }
+    },
+    {
+      "film_id": "RANBIR_005",
+      "metadata": {
+        "title": "Shuddh Desi Romance",
+        "year": 2013,
+        "language": "Hindi",
+        "director": "Maneesh Sharma",
+        "lead_actors": ["Ranbir Kapoor"],
+        "lead_actresses": ["Parineeti Chopra"],
+        "imdb_rating": 6.7,
+        "genres": ["Romance", "Comedy"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_04",
+        "primary_conflict_narrative": "Unmarried cohabitation defying orthodox societal norms and family expectations",
+        "secondary_conflict_narrative": "Class and caste barriers complicate a modernist romance",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 3,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Modern couple navigating family disapproval",
+        "discrimination_power_score": 65.0
+      }
+    },
+    {
+      "film_id": "RANBIR_006",
+      "metadata": {
+        "title": "Tamasha",
+        "year": 2015,
+        "language": "Hindi",
+        "director": "Imtiaz Ali",
+        "lead_actors": ["Ranbir Kapoor"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 6.9,
+        "genres": ["Romance", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_05",
+        "secondary_conflict_id": "CON_09",
+        "primary_conflict_narrative": "Man living a double life, persona vs. authentic self creates an identity fracture",
+        "secondary_conflict_narrative": "Love demands truth, but revealing it destroys the very thing being loved",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "INTERNAL",
+        "climax_resolution_vector": "MORAL_AWAKENING"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Brutal",
+        "word_count": 1,
+        "abstract_vocabulary_score": 8,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Actor performing a false persona, theatrical gestures",
+        "discrimination_power_score": 88.0
+      }
+    },
+    {
+      "film_id": "RANBIR_007",
+      "metadata": {
+        "title": "Jagga Jasoos",
+        "year": 2017,
+        "language": "Hindi",
+        "director": "Anurag Basu",
+        "lead_actors": ["Ranbir Kapoor"],
+        "lead_actresses": ["Katrina Kaif"],
+        "imdb_rating": 5.9,
+        "genres": ["Adventure", "Comedy", "Mystery"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_13",
+        "secondary_conflict_id": "CON_05",
+        "primary_conflict_narrative": "Young detective on a time-bound mission to uncover truth in a global chase",
+        "secondary_conflict_narrative": "Search for identity and paternal connection drives the narrative",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INDIVIDUAL",
+        "climax_resolution_vector": "LEGAL_TRIUMPH"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 2,
+        "abstract_vocabulary_score": 5,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Young detective with stammer solving mysteries",
+        "discrimination_power_score": 70.0
+      }
+    },
+    {
+      "film_id": "RANBIR_008",
+      "metadata": {
+        "title": "Brahmastra",
+        "year": 2022,
+        "language": "Hindi",
+        "director": "Ayan Mukerji",
+        "lead_actors": ["Ranbir Kapoor"],
+        "lead_actresses": ["Alia Bhatt"],
+        "imdb_rating": 6.2,
+        "genres": ["Action", "Adventure", "Fantasy"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_14",
+        "secondary_conflict_id": "CON_11",
+        "primary_conflict_narrative": "Supernatural cosmic entities and mythic weapons unleash divine chaos",
+        "secondary_conflict_narrative": "Ordinary man becomes vigilante guardian against supernatural forces",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "SUPERNATURAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 7,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Wielding mystical weapons with cosmic energy",
+        "discrimination_power_score": 80.5
+      }
+    },
+    {
+      "film_id": "RANVEER_001",
+      "metadata": {
+        "title": "Band Baaja Baaraat",
+        "year": 2010,
+        "language": "Hindi",
+        "director": "Maneesh Sharma",
+        "lead_actors": ["Ranveer Singh"],
+        "lead_actresses": ["Anushka Sharma"],
+        "imdb_rating": 7.2,
+        "genres": ["Romance", "Comedy"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_04",
+        "secondary_conflict_id": "CON_10",
+        "primary_conflict_narrative": "Class and economic barriers prevent two wedding planners from being together",
+        "secondary_conflict_narrative": "Taboo romance across socioeconomic lines defies family expectations",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 3,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Wedding planner with energetic enthusiasm",
+        "discrimination_power_score": 68.0
+      }
+    },
+    {
+      "film_id": "RANVEER_002",
+      "metadata": {
+        "title": "Lootera",
+        "year": 2013,
+        "language": "Hindi",
+        "director": "Vikramaditya Motwane",
+        "lead_actors": ["Ranveer Singh"],
+        "lead_actresses": ["Sonakshi Sinha"],
+        "imdb_rating": 7.6,
+        "genres": ["Romance", "Thriller", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_12",
+        "secondary_conflict_id": "CON_10",
+        "primary_conflict_narrative": "Con artist poses as nobleman, creating an elaborate deception that ensnares genuine love",
+        "secondary_conflict_narrative": "Impossible romance built on fundamental betrayal and false identity",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "INDIVIDUAL",
+        "climax_resolution_vector": "TRAGIC_COLLAPSE"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 7,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Charming con artist with period-film elegance",
+        "discrimination_power_score": 85.0
+      }
+    },
+    {
+      "film_id": "RANVEER_003",
+      "metadata": {
+        "title": "Gunday",
+        "year": 2014,
+        "language": "Hindi",
+        "director": "Ali Abbas Zafar",
+        "lead_actors": ["Ranveer Singh"],
+        "lead_actresses": ["Priyanka Chopra"],
+        "imdb_rating": 6.5,
+        "genres": ["Action", "Drama", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_02",
+        "secondary_conflict_id": "CON_12",
+        "primary_conflict_narrative": "Criminal brotherhood fractured by vendetta and blood loyalty",
+        "secondary_conflict_narrative": "Undercover cop infiltration and shifting allegiances destroy bonds",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INDIVIDUAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 1,
+        "abstract_vocabulary_score": 5,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Aggressive gunman with scarred past",
+        "discrimination_power_score": 76.5
+      }
+    },
+    {
+      "film_id": "RANVEER_004",
+      "metadata": {
+        "title": "Bajirao Mastani",
+        "year": 2015,
+        "language": "Hindi",
+        "director": "Sanjay Leela Bhansali",
+        "lead_actors": ["Ranveer Singh"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 7.1,
+        "genres": ["Romance", "Drama", "History"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_02",
+        "primary_conflict_narrative": "Inter-religious love between warrior and court dancer violates sacred boundaries",
+        "secondary_conflict_narrative": "Generational tribal warfare and political vendetta consume the lovers",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "TRAGIC_COLLAPSE"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 2,
+        "abstract_vocabulary_score": 7,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Marathi warrior in ornate period costume with sword",
+        "discrimination_power_score": 83.0
+      }
+    },
+    {
+      "film_id": "RANVEER_005",
+      "metadata": {
+        "title": "Befikre",
+        "year": 2016,
+        "language": "Hindi",
+        "director": "Aditya Chopra",
+        "lead_actors": ["Ranveer Singh"],
+        "lead_actresses": ["Vaani Kapoor"],
+        "imdb_rating": 5.8,
+        "genres": ["Romance", "Comedy"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_16",
+        "primary_conflict_narrative": "Taboo relationship violating conservative Indian values and norms",
+        "secondary_conflict_narrative": "Cultural dislocation in European city amplifies identity and belonging struggles",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 1,
+        "abstract_vocabulary_score": 3,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Carefree lover in European setting",
+        "discrimination_power_score": 62.0
+      }
+    },
+    {
+      "film_id": "RANVEER_006",
+      "metadata": {
+        "title": "Simmba",
+        "year": 2018,
+        "language": "Hindi",
+        "director": "Rohit Shetty",
+        "lead_actors": ["Ranveer Singh"],
+        "lead_actresses": ["Sara Ali Khan"],
+        "imdb_rating": 6.1,
+        "genres": ["Action", "Comedy", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_11",
+        "secondary_conflict_id": "CON_03",
+        "primary_conflict_narrative": "Corrupt cop crosses threshold into vigilantism, dispensing brutal street justice",
+        "secondary_conflict_narrative": "Institutional police corruption drives the protagonist beyond legal boundaries",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 1,
+        "abstract_vocabulary_score": 5,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Swaggering cop with brutal attitude",
+        "discrimination_power_score": 74.0
+      }
+    },
+    {
+      "film_id": "RANVEER_007",
+      "metadata": {
+        "title": "Gully Boy",
+        "year": 2019,
+        "language": "Hindi",
+        "director": "Zoya Akhtar",
+        "lead_actors": ["Ranveer Singh"],
+        "lead_actresses": ["Alia Bhatt"],
+        "imdb_rating": 7.9,
+        "genres": ["Drama", "Music", "Biography"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_16",
+        "secondary_conflict_id": "CON_07",
+        "primary_conflict_narrative": "Slum youth's violent cultural shock ascending to metropolitan hip-hop scene",
+        "secondary_conflict_narrative": "Generational debt and family economic ruin force illegal pathways",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "LEGAL_TRIUMPH"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 2,
+        "abstract_vocabulary_score": 6,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Slum rapper with aggressive street style",
+        "discrimination_power_score": 81.0
+      }
+    },
+    {
+      "film_id": "RANVEER_008",
+      "metadata": {
+        "title": "83",
+        "year": 2021,
+        "language": "Hindi",
+        "director": "Kabir Khan",
+        "lead_actors": ["Ranveer Singh"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 7.4,
+        "genres": ["Biography", "Drama", "Sport"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_13",
+        "secondary_conflict_id": "CON_09",
+        "primary_conflict_narrative": "Cricket team under extreme time pressure and tactical constraints chasing impossibly unlikely victory",
+        "secondary_conflict_narrative": "Captain's zero-sum moral choice: personal glory vs. team's collective sacrifice",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "ENVIRONMENTAL",
+        "climax_resolution_vector": "LEGAL_TRIUMPH"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 2,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Cricket captain with determined leadership",
+        "discrimination_power_score": 77.0
+      }
+    },
+    {
+      "film_id": "DEEPIKA_001",
+      "metadata": {
+        "title": "Om Shanti Om",
+        "year": 2007,
+        "language": "Hindi",
+        "director": "Farah Khan",
+        "lead_actors": ["Shah Rukh Khan"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 6.2,
+        "genres": ["Drama", "Romance", "Fantasy"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_05",
+        "secondary_conflict_id": "CON_12",
+        "primary_conflict_narrative": "Reincarnation and identity resurrection across lifetimes dissolve the boundary between self and other",
+        "secondary_conflict_narrative": "Betrayal and double-cross in industry create deep deception layers",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SUPERNATURAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 3,
+        "abstract_vocabulary_score": 8,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Actor in glitzy Bollywood setting with reincarnation twist",
+        "discrimination_power_score": 86.5
+      }
+    },
+    {
+      "film_id": "DEEPIKA_002",
+      "metadata": {
+        "title": "Cocktail",
+        "year": 2012,
+        "language": "Hindi",
+        "director": "Homi Adajania",
+        "lead_actors": ["Saif Ali Khan"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 6.9,
+        "genres": ["Romance", "Comedy", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_09",
+        "primary_conflict_narrative": "Modern woman's taboo cohabitation and sexual freedom violate conservative morality",
+        "secondary_conflict_narrative": "Love demands impossible choice between passion and societal acceptance",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 1,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Glamorous party scene with cocktail shaking",
+        "discrimination_power_score": 65.5
+      }
+    },
+    {
+      "film_id": "DEEPIKA_003",
+      "metadata": {
+        "title": "Chennai Express",
+        "year": 2013,
+        "language": "Hindi",
+        "director": "Rohit Shetty",
+        "lead_actors": ["Shah Rukh Khan"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 5.5,
+        "genres": ["Romance", "Comedy", "Action"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_04",
+        "primary_conflict_narrative": "Inter-regional romance across Tamil-Hindi cultural boundaries violates family honor",
+        "secondary_conflict_narrative": "Class and caste barriers entrench the societal opposition",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 2,
+        "abstract_vocabulary_score": 3,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Train journey with regional comedy",
+        "discrimination_power_score": 60.0
+      }
+    },
+    {
+      "film_id": "DEEPIKA_004",
+      "metadata": {
+        "title": "Race 2",
+        "year": 2013,
+        "language": "Hindi",
+        "director": "Abbas Tyrewala",
+        "lead_actors": ["Saif Ali Khan"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 5.3,
+        "genres": ["Action", "Crime", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_13",
+        "secondary_conflict_id": "CON_12",
+        "primary_conflict_narrative": "High-stakes heist with temporal pressure and international scope",
+        "secondary_conflict_narrative": "Double-crossing moles and shifting allegiances within criminal enterprise",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INDIVIDUAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 1,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Fast-paced crime thriller with exotic locations",
+        "discrimination_power_score": 70.0
+      }
+    },
+    {
+      "film_id": "DEEPIKA_005",
+      "metadata": {
+        "title": "Piku",
+        "year": 2015,
+        "language": "Hindi",
+        "director": "Shoojit Sircar",
+        "lead_actors": ["Amitabh Bachchan"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 7.6,
+        "genres": ["Comedy", "Drama", "Romance"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_19",
+        "secondary_conflict_id": "CON_08",
+        "primary_conflict_narrative": "Aging parent's property and legacy partition, contested family inheritance dynamics",
+        "secondary_conflict_narrative": "Grief and emotional trauma of aging parent's physical deterioration",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "INTERNAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 1,
+        "abstract_vocabulary_score": 3,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Constipation humor and elderly father-daughter dynamics",
+        "discrimination_power_score": 62.5
+      }
+    },
+    {
+      "film_id": "DEEPIKA_006",
+      "metadata": {
+        "title": "Bajirao Mastani",
+        "year": 2015,
+        "language": "Hindi",
+        "director": "Sanjay Leela Bhansali",
+        "lead_actors": ["Ranveer Singh"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 7.1,
+        "genres": ["Romance", "Drama", "History"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_02",
+        "primary_conflict_narrative": "Sacred inter-religious bond violates tribal and religious law",
+        "secondary_conflict_narrative": "Generational blood feud and political vendetta consume the star-crossed lovers",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "TRAGIC_COLLAPSE"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 2,
+        "abstract_vocabulary_score": 7,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Period warrior romance with elaborate costumes",
+        "discrimination_power_score": 83.0
+      }
+    },
+    {
+      "film_id": "DEEPIKA_007",
+      "metadata": {
+        "title": "Padmaavat",
+        "year": 2018,
+        "language": "Hindi",
+        "director": "Sanjay Leela Bhansali",
+        "lead_actors": ["Ranveer Singh"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 6.6,
+        "genres": ["Drama", "History", "Romance"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_02",
+        "primary_conflict_narrative": "Woman's honor and sexual autonomy threatened by external invader and internal patriarchy",
+        "secondary_conflict_narrative": "Generational tribal warfare and regional conquest drive the catastrophe",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INDIVIDUAL",
+        "climax_resolution_vector": "TRAGIC_COLLAPSE"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 7,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Royal woman in medieval palace setting with self-immolation theme",
+        "discrimination_power_score": 84.5
+      }
+    },
+    {
+      "film_id": "DEEPIKA_008",
+      "metadata": {
+        "title": "Gehraiyaan",
+        "year": 2022,
+        "language": "Hindi",
+        "director": "Shakun Batra",
+        "lead_actors": ["Siddhant Chaturvedi"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 6.2,
+        "genres": ["Drama", "Romance", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_09",
+        "primary_conflict_narrative": "Taboo affair across marriage and friendship boundaries",
+        "secondary_conflict_narrative": "Impossible moral choice: personal desire vs. collective betrayal",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "INTERNAL",
+        "climax_resolution_vector": "TRAGIC_COLLAPSE"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Brutal",
+        "word_count": 1,
+        "abstract_vocabulary_score": 8,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Modern affair drama with emotional turmoil",
+        "discrimination_power_score": 87.0
+      }
+    },
+    {
+      "film_id": "KAREENA_001",
+      "metadata": {
+        "title": "Jab We Met",
+        "year": 2007,
+        "language": "Hindi",
+        "director": "Imtiaz Ali",
+        "lead_actors": ["Shahid Kapoor"],
+        "lead_actresses": ["Kareena Kapoor"],
+        "imdb_rating": 7.5,
+        "genres": ["Romance", "Comedy", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_16",
+        "primary_conflict_narrative": "Impossible love between urban stranger and fiery village girl",
+        "secondary_conflict_narrative": "Cultural dislocation and economic gap create violent friction",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 3,
+        "abstract_vocabulary_score": 5,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Train journey romance with spirited girl",
+        "discrimination_power_score": 75.0
+      }
+    },
+    {
+      "film_id": "KAREENA_002",
+      "metadata": {
+        "title": "3 Idiots",
+        "year": 2009,
+        "language": "Hindi",
+        "director": "Rajkumar Hirani",
+        "lead_actors": ["Aamir Khan"],
+        "lead_actresses": ["Kareena Kapoor"],
+        "imdb_rating": 8.4,
+        "genres": ["Comedy", "Drama", "Adventure"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_04",
+        "secondary_conflict_id": "CON_09",
+        "primary_conflict_narrative": "Educational system's systemic oppression crushes individuality and creativity",
+        "secondary_conflict_narrative": "Students face zero-sum choice: conformity vs. authentic ambition",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "MORAL_AWAKENING"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 1,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "College students in friendship and learning journey",
+        "discrimination_power_score": 72.0
+      }
+    },
+    {
+      "film_id": "KAREENA_003",
+      "metadata": {
+        "title": "Bodyguard",
+        "year": 2011,
+        "language": "Hindi",
+        "director": "Siddique",
+        "lead_actors": ["Salman Khan"],
+        "lead_actresses": ["Kareena Kapoor"],
+        "imdb_rating": 5.8,
+        "genres": ["Action", "Comedy", "Romance"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_01",
+        "primary_conflict_narrative": "Class-divided romance between wealthy woman and working-class bodyguard",
+        "secondary_conflict_narrative": "False accusations and misunderstandings create impossible situations",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 1,
+        "abstract_vocabulary_score": 3,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Protective bodyguard in physical action",
+        "discrimination_power_score": 62.0
+      }
+    },
+    {
+      "film_id": "KAREENA_004",
+      "metadata": {
+        "title": "Talaash",
+        "year": 2012,
+        "language": "Hindi",
+        "director": "Reema Kagti",
+        "lead_actors": ["Aamir Khan"],
+        "lead_actresses": ["Kareena Kapoor"],
+        "imdb_rating": 7.2,
+        "genres": ["Crime", "Drama", "Mystery"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_03",
+        "secondary_conflict_id": "CON_08",
+        "primary_conflict_narrative": "Police corruption and institutional decay undermine criminal investigation",
+        "secondary_conflict_narrative": "Detective's personal trauma and irreversible grief haunt the investigation",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "TRAGIC_COLLAPSE"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 6,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Mumbai noir detective mystery",
+        "discrimination_power_score": 79.0
+      }
+    },
+    {
+      "film_id": "KAREENA_005",
+      "metadata": {
+        "title": "Heroine",
+        "year": 2012,
+        "language": "Hindi",
+        "director": "Madhur Bhandarkar",
+        "lead_actors": ["Arjun Rampal"],
+        "lead_actresses": ["Kareena Kapoor"],
+        "imdb_rating": 5.6,
+        "genres": ["Drama", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_15",
+        "secondary_conflict_id": "CON_11",
+        "primary_conflict_narrative": "Actress's self-destructive spiral through substance abuse and obsession",
+        "secondary_conflict_narrative": "Moral compromise and crossing ethical lines for career advancement",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "INTERNAL",
+        "climax_resolution_vector": "TRAGIC_COLLAPSE"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 7,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Glamorous actress in emotional descent",
+        "discrimination_power_score": 81.0
+      }
+    },
+    {
+      "film_id": "KAREENA_006",
+      "metadata": {
+        "title": "Singham Returns",
+        "year": 2014,
+        "language": "Hindi",
+        "director": "Rohit Shetty",
+        "lead_actors": ["Ajay Devgn"],
+        "lead_actresses": ["Kareena Kapoor"],
+        "imdb_rating": 5.8,
+        "genres": ["Action", "Comedy", "Crime"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_03",
+        "secondary_conflict_id": "CON_11",
+        "primary_conflict_narrative": "Systemic institutional and police corruption pervades all levels",
+        "secondary_conflict_narrative": "Cop pushed past legal boundaries into vigilante retribution",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 2,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Tough cop in action-comedy style",
+        "discrimination_power_score": 68.0
+      }
+    },
+    {
+      "film_id": "KAREENA_007",
+      "metadata": {
+        "title": "Happy Bhag Jayegi",
+        "year": 2016,
+        "language": "Hindi",
+        "director": "Mudassar Aziz",
+        "lead_actors": ["Ali Fazal"],
+        "lead_actresses": ["Kareena Kapoor"],
+        "imdb_rating": 5.6,
+        "genres": ["Comedy", "Romance", "Adventure"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_04",
+        "primary_conflict_narrative": "Cross-border romance violating national and religious boundaries",
+        "secondary_conflict_narrative": "Class and caste barriers complicate the escape across borders",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "ESCAPE_SURVIVAL"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 2,
+        "abstract_vocabulary_score": 3,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Cross-border lovers on the run",
+        "discrimination_power_score": 61.5
+      }
+    },
+    {
+      "film_id": "KAREENA_008",
+      "metadata": {
+        "title": "Good Newwz",
+        "year": 2019,
+        "language": "Hindi",
+        "director": "Raj Mehta",
+        "lead_actors": ["Akshay Kumar"],
+        "lead_actresses": ["Kareena Kapoor"],
+        "imdb_rating": 6.8,
+        "genres": ["Comedy", "Drama", "Romance"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_19",
+        "secondary_conflict_id": "CON_09",
+        "primary_conflict_narrative": "Two couples' fertility journey and legacy succession dreams intertwine catastrophically",
+        "secondary_conflict_narrative": "Moral dilemma: biological vs. adopted parenthood creates zero-sum tension",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "INTERNAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 2,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Modern couple with fertility humor",
+        "discrimination_power_score": 65.0
+      }
+    },
+    {
+      "film_id": "KATRINA_001",
+      "metadata": {
+        "title": "Namastey London",
+        "year": 2007,
+        "language": "Hindi",
+        "director": "Vipul Amrutlal Shah",
+        "lead_actors": ["Akshay Kumar"],
+        "lead_actresses": ["Katrina Kaif"],
+        "imdb_rating": 6.1,
+        "genres": ["Comedy", "Drama", "Romance"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_04",
+        "primary_conflict_narrative": "Cross-cultural romance violates traditional Indian family honor",
+        "secondary_conflict_narrative": "Class and economic barriers separate the lovers across continents",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 2,
+        "abstract_vocabulary_score": 3,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "UK-based Indian romance with culture clash",
+        "discrimination_power_score": 63.0
+      }
+    },
+    {
+      "film_id": "KATRINA_002",
+      "metadata": {
+        "title": "Raajneeti",
+        "year": 2010,
+        "language": "Hindi",
+        "director": "Prakash Jha",
+        "lead_actors": ["Ranbir Kapoor"],
+        "lead_actresses": ["Katrina Kaif"],
+        "imdb_rating": 6.9,
+        "genres": ["Drama", "Thriller", "Political"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_02",
+        "secondary_conflict_id": "CON_03",
+        "primary_conflict_narrative": "Political dynasty's generational blood feud and vendetta cycles",
+        "secondary_conflict_narrative": "State institutional corruption entangles power structures",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 6,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Political intrigue and power struggle",
+        "discrimination_power_score": 75.5
+      }
+    },
+    {
+      "film_id": "KATRINA_003",
+      "metadata": {
+        "title": "Mere Brother Ki Dulhan",
+        "year": 2011,
+        "language": "Hindi",
+        "director": "Ali Abbas Zafar",
+        "lead_actors": ["Imran Khan"],
+        "lead_actresses": ["Katrina Kaif"],
+        "imdb_rating": 6.5,
+        "genres": ["Comedy", "Romance", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_04",
+        "primary_conflict_narrative": "Taboo pre-marital romance violates family and social norms",
+        "secondary_conflict_narrative": "Class disparity creates structural inequality in partnership",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "RECONCILIATION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 4,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Brother-arranged courtship with romantic twist",
+        "discrimination_power_score": 66.0
+      }
+    },
+    {
+      "film_id": "KATRINA_004",
+      "metadata": {
+        "title": "Dhoom 3",
+        "year": 2013,
+        "language": "Hindi",
+        "director": "Vijay Kumar Chandrajit",
+        "lead_actors": ["Aamir Khan"],
+        "lead_actresses": ["Katrina Kaif"],
+        "imdb_rating": 6.8,
+        "genres": ["Action", "Crime", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_13",
+        "secondary_conflict_id": "CON_12",
+        "primary_conflict_narrative": "Elaborate heist under intense temporal and spatial pressure",
+        "secondary_conflict_narrative": "Double-crossing moles and shifting loyalties within criminal team",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INDIVIDUAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 1,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "High-speed motorcycle heist sequence",
+        "discrimination_power_score": 72.0
+      }
+    },
+    {
+      "film_id": "KATRINA_005",
+      "metadata": {
+        "title": "Bang Bang!",
+        "year": 2014,
+        "language": "Hindi",
+        "director": "Siddharth Anand",
+        "lead_actors": ["Hrithik Roshan"],
+        "lead_actresses": ["Katrina Kaif"],
+        "imdb_rating": 6.2,
+        "genres": ["Action", "Adventure", "Romance"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_13",
+        "secondary_conflict_id": "CON_10",
+        "primary_conflict_narrative": "International heist under extreme temporal and environmental constraints",
+        "secondary_conflict_narrative": "Unlikely romance emerges amidst deception and danger",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "ENVIRONMENTAL",
+        "climax_resolution_vector": "ESCAPE_SURVIVAL"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 2,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Action-packed international adventure",
+        "discrimination_power_score": 70.5
+      }
+    },
+    {
+      "film_id": "KATRINA_006",
+      "metadata": {
+        "title": "Phantom",
+        "year": 2015,
+        "language": "Hindi",
+        "director": "Kabir Khan",
+        "lead_actors": ["Saif Ali Khan"],
+        "lead_actresses": ["Katrina Kaif"],
+        "imdb_rating": 6.6,
+        "genres": ["Action", "Thriller", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_11",
+        "secondary_conflict_id": "CON_02",
+        "primary_conflict_narrative": "Vigilante ex-soldier pushed into extrajudicial terrorism punishment",
+        "secondary_conflict_narrative": "Generational vendetta and blood feud fuel the moral collapse",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INDIVIDUAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 6,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Covert special forces operative in assassination mode",
+        "discrimination_power_score": 79.0
+      }
+    },
+    {
+      "film_id": "KATRINA_007",
+      "metadata": {
+        "title": "Tiger Zinda Hai",
+        "year": 2017,
+        "language": "Hindi",
+        "director": "Ali Abbas Zafar",
+        "lead_actors": ["Salman Khan"],
+        "lead_actresses": ["Katrina Kaif"],
+        "imdb_rating": 6.5,
+        "genres": ["Action", "Adventure", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_13",
+        "secondary_conflict_id": "CON_12",
+        "primary_conflict_narrative": "Black-ops mission with extreme temporal and jurisdictional constraints",
+        "secondary_conflict_narrative": "Undercover deception and shifting tribal loyalties throughout operation",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INDIVIDUAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 3,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Secret agent in international espionage",
+        "discrimination_power_score": 73.5
+      }
+    },
+    {
+      "film_id": "KATRINA_008",
+      "metadata": {
+        "title": "Sooryavanshi",
+        "year": 2021,
+        "language": "Hindi",
+        "director": "Rohit Shetty",
+        "lead_actors": ["Akshay Kumar"],
+        "lead_actresses": ["Katrina Kaif"],
+        "imdb_rating": 6.3,
+        "genres": ["Action", "Comedy", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_03",
+        "secondary_conflict_id": "CON_13",
+        "primary_conflict_narrative": "State institutional corruption and terrorism entwine at highest levels",
+        "secondary_conflict_narrative": "Tactical countdown mission against international terrorist network",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 1,
+        "abstract_vocabulary_score": 5,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Counter-terrorism police action hero",
+        "discrimination_power_score": 71.0
+      }
+    },
+    {
+      "film_id": "LEGACY_001",
+      "metadata": {
+        "title": "Sholay",
+        "year": 1975,
+        "language": "Hindi",
+        "director": "Ramesh Sippy",
+        "lead_actors": ["Amitabh Bachchan", "Dharmendra"],
+        "lead_actresses": ["Hema Malini", "Jaya Bachchan"],
+        "imdb_rating": 8.0,
+        "genres": ["Action", "Adventure", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_02",
+        "secondary_conflict_id": "CON_11",
+        "primary_conflict_narrative": "Two anti-heroes hired to stop a dacoity chief in blood vendetta",
+        "secondary_conflict_narrative": "Vigilante justice outside law's framework to stop criminal reign",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INDIVIDUAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 1,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Western-style outlaw duo on horseback",
+        "discrimination_power_score": 76.0
+      }
+    },
+    {
+      "film_id": "LEGACY_002",
+      "metadata": {
+        "title": "Pink",
+        "year": 2016,
+        "language": "Hindi",
+        "director": "Aniruddha Roy Chowdhury",
+        "lead_actors": ["Amitabh Bachchan"],
+        "lead_actresses": ["Taapsee Pannu"],
+        "imdb_rating": 8.0,
+        "genres": ["Crime", "Drama", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_01",
+        "secondary_conflict_id": "CON_03",
+        "primary_conflict_narrative": "Woman falsely accused and scapegoated in sexual assault case cannot speak truth",
+        "secondary_conflict_narrative": "Institutional judicial corruption pervades the trial mechanism",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "LEGAL_TRIUMPH"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 6,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Courtroom drama with victim empowerment",
+        "discrimination_power_score": 82.0
+      }
+    },
+    {
+      "film_id": "LEGACY_003",
+      "metadata": {
+        "title": "Khaidi No. 150",
+        "year": 2017,
+        "language": "Telugu",
+        "director": "V. V. Vinayak",
+        "lead_actors": ["Chiranjeevi"],
+        "lead_actresses": ["Priyanka Chopra"],
+        "imdb_rating": 6.8,
+        "genres": ["Action", "Drama", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_01",
+        "secondary_conflict_id": "CON_03",
+        "primary_conflict_narrative": "Prison inmate falsely convicted, institutional betrayal traps him",
+        "secondary_conflict_narrative": "State prison system corrupted, denying justice and freedom",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 2,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Ex-con seeking redemption and revenge",
+        "discrimination_power_score": 72.5
+      }
+    },
+    {
+      "film_id": "LEGACY_004",
+      "metadata": {
+        "title": "Sye Raa Narasimha Reddy",
+        "year": 2019,
+        "language": "Telugu",
+        "director": "Surender Reddy",
+        "lead_actors": ["Chiranjeevi"],
+        "lead_actresses": ["Nayanthara"],
+        "imdb_rating": 6.4,
+        "genres": ["Action", "Drama", "History"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_11",
+        "secondary_conflict_id": "CON_02",
+        "primary_conflict_narrative": "Revolutionary pushed to vigilante uprising against colonial oppression",
+        "secondary_conflict_narrative": "Generational blood feud against colonial administration and complicit feudal allies",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 3,
+        "abstract_vocabulary_score": 6,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Anti-colonial revolutionary warrior",
+        "discrimination_power_score": 80.0
+      }
+    },
+    {
+      "film_id": "LEGACY_005",
+      "metadata": {
+        "title": "Indian",
+        "year": 1996,
+        "language": "Tamil",
+        "director": "S. Shankar",
+        "lead_actors": ["Kamal Haasan"],
+        "lead_actresses": ["Urmila Matondkar"],
+        "imdb_rating": 8.1,
+        "genres": ["Action", "Drama", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_11",
+        "secondary_conflict_id": "CON_03",
+        "primary_conflict_narrative": "Aging patriot transformed into vigilante executing moral justice",
+        "secondary_conflict_narrative": "State institutional corruption and judicial decay demand extrajudicial action",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 6,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Elderly vigilante meting out justice",
+        "discrimination_power_score": 84.0
+      }
+    },
+    {
+      "film_id": "LEGACY_006",
+      "metadata": {
+        "title": "Enthiran",
+        "year": 2010,
+        "language": "Tamil",
+        "director": "S. Shankar",
+        "lead_actors": ["Rajinikanth"],
+        "lead_actresses": ["Aishwarya Rai Bachchan"],
+        "imdb_rating": 7.5,
+        "genres": ["Action", "Drama", "Sci-Fi"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_18",
+        "secondary_conflict_id": "CON_15",
+        "primary_conflict_narrative": "Artificial intelligence robot's self-destructive autonomy and consciousness corruption",
+        "secondary_conflict_narrative": "Creator's moral hubris in building sentient machine leads to his downfall",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "SUPERNATURAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Brutal",
+        "word_count": 1,
+        "abstract_vocabulary_score": 8,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Robot with mechanical precision movements",
+        "discrimination_power_score": 89.0
+      }
+    },
+    {
+      "film_id": "LEGACY_007",
+      "metadata": {
+        "title": "Khuda Haafiz",
+        "year": 1998,
+        "language": "Hindi",
+        "director": "Farhan Akhtar",
+        "lead_actors": ["Vinod Khanna"],
+        "lead_actresses": ["Sonu Walia"],
+        "imdb_rating": 5.9,
+        "genres": ["Action", "Drama", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_11",
+        "secondary_conflict_id": "CON_07",
+        "primary_conflict_narrative": "Man pushed into vigilante killing to save his family from economic ruin",
+        "secondary_conflict_narrative": "Generational debt trap forces illegal survival choices",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INDIVIDUAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 2,
+        "abstract_vocabulary_score": 5,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Protective father figure in survival mode",
+        "discrimination_power_score": 70.0
+      }
+    },
+    {
+      "film_id": "LEGACY_008",
+      "metadata": {
+        "title": "Kaala",
+        "year": 2018,
+        "language": "Tamil",
+        "director": "Pa. Ranjith",
+        "lead_actors": ["Rajinikanth"],
+        "lead_actresses": ["Huma Qureshi"],
+        "imdb_rating": 6.0,
+        "genres": ["Action", "Drama", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_04",
+        "secondary_conflict_id": "CON_11",
+        "primary_conflict_narrative": "Systemic caste and class apartheid oppression drives community destruction",
+        "secondary_conflict_narrative": "Vigilante uprising against hierarchical social exploitation",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 1,
+        "abstract_vocabulary_score": 6,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Anti-caste revolutionary resistance figure",
+        "discrimination_power_score": 81.0
+      }
+    },
+    {
+      "film_id": "MODERN_001",
+      "metadata": {
+        "title": "Badhaai Ho",
+        "year": 2018,
+        "language": "Hindi",
+        "director": "Amit Sharma",
+        "lead_actors": ["Ayushmann Khurrana"],
+        "lead_actresses": ["Sanya Malhotra"],
+        "imdb_rating": 8.0,
+        "genres": ["Comedy", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_04",
+        "secondary_conflict_id": "CON_09",
+        "primary_conflict_narrative": "Orthodox family's social norms and sexual shame destroy generational communication",
+        "secondary_conflict_narrative": "Son faces zero-sum choice: family honor vs. parental humanity",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "MORAL_AWAKENING"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Easy",
+        "word_count": 2,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Awkward son realizing elderly parents' sexuality",
+        "discrimination_power_score": 68.0
+      }
+    },
+    {
+      "film_id": "MODERN_002",
+      "metadata": {
+        "title": "Article 15",
+        "year": 2019,
+        "language": "Hindi",
+        "director": "Anubhav Sinha",
+        "lead_actors": ["Ayushmann Khurrana"],
+        "lead_actresses": ["Isha Talwar"],
+        "imdb_rating": 8.0,
+        "genres": ["Crime", "Drama", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_01",
+        "secondary_conflict_id": "CON_04",
+        "primary_conflict_narrative": "Caste-based false accusation traps innocent victims in systemic injustice",
+        "secondary_conflict_narrative": "Structural caste apartheid perpetuates violence and silence",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "LEGAL_TRIUMPH"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Brutal",
+        "word_count": 2,
+        "abstract_vocabulary_score": 8,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Cop uncovering caste-based crime system",
+        "discrimination_power_score": 88.0
+      }
+    },
+    {
+      "film_id": "MODERN_003",
+      "metadata": {
+        "title": "Drishyam 2",
+        "year": 2022,
+        "language": "Hindi",
+        "director": "Abhishek Pathak",
+        "lead_actors": ["Ajay Devgn"],
+        "lead_actresses": ["Tabu"],
+        "imdb_rating": 8.0,
+        "genres": ["Crime", "Drama", "Mystery"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_01",
+        "secondary_conflict_id": "CON_03",
+        "primary_conflict_narrative": "Family trapped in false accusation web, covering crime to protect innocence",
+        "secondary_conflict_narrative": "Police institutional corruption pursues the innocent family",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "ESCAPE_SURVIVAL"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Hard",
+        "word_count": 2,
+        "abstract_vocabulary_score": 7,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Crime cover-up and family deception drama",
+        "discrimination_power_score": 85.0
+      }
+    },
+    {
+      "film_id": "MODERN_004",
+      "metadata": {
+        "title": "Jai Bheem",
+        "year": 2021,
+        "language": "Tamil",
+        "director": "T. J. Gnanavel",
+        "lead_actors": ["Suriya"],
+        "lead_actresses": ["Lijomol Jose"],
+        "imdb_rating": 8.3,
+        "genres": ["Crime", "Drama", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_01",
+        "secondary_conflict_id": "CON_04",
+        "primary_conflict_narrative": "Caste-based false accusation and scapegoating destroys innocent man's life",
+        "secondary_conflict_narrative": "Structural caste apartheid and police brutality compound the injustice",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "LEGAL_TRIUMPH"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Brutal",
+        "word_count": 2,
+        "abstract_vocabulary_score": 8,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": false,
+        "mime_anchor_hint": "Lawyer fighting systemic caste injustice",
+        "discrimination_power_score": 89.5
+      }
+    },
+    {
+      "film_id": "MODERN_005",
+      "metadata": {
+        "title": "Laal Singh Chaddha",
+        "year": 2021,
+        "language": "Hindi",
+        "director": "Advait Chandan",
+        "lead_actors": ["Aamir Khan"],
+        "lead_actresses": ["Kareena Kapoor"],
+        "imdb_rating": 6.5,
+        "genres": ["Comedy", "Drama", "Romance"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_10",
+        "secondary_conflict_id": "CON_08",
+        "primary_conflict_narrative": "Impossible love across intellectual and class boundaries",
+        "secondary_conflict_narrative": "Irreversible grief and loss haunt the protagonist's trajectory",
+        "is_ticking_clock_active": false,
+        "antagonist_type": "SOCIETAL",
+        "climax_resolution_vector": "TRAGIC_COLLAPSE"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 3,
+        "abstract_vocabulary_score": 5,
+        "syllable_breakdown_dependency": true,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Innocent man with emotional depth across decades",
+        "discrimination_power_score": 74.0
+      }
+    },
+    {
+      "film_id": "MODERN_006",
+      "metadata": {
+        "title": "Khiladi",
+        "year": 2023,
+        "language": "Hindi",
+        "director": "A. Harsha",
+        "lead_actors": ["Akshay Kumar"],
+        "lead_actresses": ["Kriti Sanon"],
+        "imdb_rating": 5.8,
+        "genres": ["Action", "Comedy", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_13",
+        "secondary_conflict_id": "CON_18",
+        "primary_conflict_narrative": "Tactical mission with extreme time constraints and international scope",
+        "secondary_conflict_narrative": "Technological terrorism and cybercrime drive the catastrophe",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INDIVIDUAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 1,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Action hero in spy thriller mode",
+        "discrimination_power_score": 69.0
+      }
+    },
+    {
+      "film_id": "MODERN_007",
+      "metadata": {
+        "title": "Pathaan",
+        "year": 2023,
+        "language": "Hindi",
+        "director": "Siddharth Anand",
+        "lead_actors": ["Shah Rukh Khan"],
+        "lead_actresses": ["Deepika Padukone"],
+        "imdb_rating": 6.3,
+        "genres": ["Action", "Thriller"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_13",
+        "secondary_conflict_id": "CON_12",
+        "primary_conflict_narrative": "Espionage mission under extreme temporal and geographical pressure",
+        "secondary_conflict_narrative": "Undercover operations and shifting loyalties create deep deception",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INSTITUTIONAL",
+        "climax_resolution_vector": "VIOLENT_RETRIBUTION"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Medium",
+        "word_count": 1,
+        "abstract_vocabulary_score": 4,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Secret agent on covert espionage mission",
+        "discrimination_power_score": 72.5
+      }
+    },
+    {
+      "film_id": "MODERN_008",
+      "metadata": {
+        "title": "Animal",
+        "year": 2023,
+        "language": "Hindi",
+        "director": "Sandeep Reddy Vanga",
+        "lead_actors": ["Ranbir Kapoor"],
+        "lead_actresses": ["Tripti Dimri"],
+        "imdb_rating": 7.0,
+        "genres": ["Action", "Crime", "Drama"]
+      },
+      "conflict_profile": {
+        "primary_conflict_id": "CON_15",
+        "secondary_conflict_id": "CON_11",
+        "primary_conflict_narrative": "Son's self-destructive spiral through violence, obsession, and moral collapse",
+        "secondary_conflict_narrative": "Vigilante vigilante justice pushing past all legal and ethical boundaries",
+        "is_ticking_clock_active": true,
+        "antagonist_type": "INTERNAL",
+        "climax_resolution_vector": "TRAGIC_COLLAPSE"
+      },
+      "charades_game_metrics": {
+        "difficulty_tier": "Brutal",
+        "word_count": 1,
+        "abstract_vocabulary_score": 8,
+        "syllable_breakdown_dependency": false,
+        "iconic_pose_cheat_code_available": true,
+        "mime_anchor_hint": "Vengeful son descending into darkness and violence",
+        "discrimination_power_score": 87.0
+      }
+    }
+  ]
+}

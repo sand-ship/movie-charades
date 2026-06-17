@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CharadesConflictDatabase",
+  "description": "High-discrimination Charades Database Engine for Indian Cinema with rigid Conflict Taxonomy",
+  "type": "object",
+  "properties": {
+    "database_metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string" },
+        "generated_date": { "type": "string" },
+        "total_films": { "type": "integer" },
+        "languages": { "type": "array", "items": { "type": "string" } },
+        "conflict_taxonomy_version": { "type": "string" }
+      },
+      "required": ["version", "generated_date", "total_films", "languages", "conflict_taxonomy_version"]
+    },
+    "conflict_taxonomy": {
+      "type": "object",
+      "properties": {
+        "CON_01": { "type": "string" },
+        "CON_02": { "type": "string" },
+        "CON_03": { "type": "string" },
+        "CON_04": { "type": "string" },
+        "CON_05": { "type": "string" },
+        "CON_06": { "type": "string" },
+        "CON_07": { "type": "string" },
+        "CON_08": { "type": "string" },
+        "CON_09": { "type": "string" },
+        "CON_10": { "type": "string" },
+        "CON_11": { "type": "string" },
+        "CON_12": { "type": "string" },
+        "CON_13": { "type": "string" },
+        "CON_14": { "type": "string" },
+        "CON_15": { "type": "string" },
+        "CON_16": { "type": "string" },
+        "CON_17": { "type": "string" },
+        "CON_18": { "type": "string" },
+        "CON_19": { "type": "string" },
+        "CON_20": { "type": "string" }
+      }
+    },
+    "films": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "film_id": { "type": "string" },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string" },
+              "year": { "type": "integer", "minimum": 1900, "maximum": 2030 },
+              "language": { "type": "string", "enum": ["Hindi", "Telugu", "Tamil"] },
+              "director": { "type": "string" },
+              "lead_actors": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+              "lead_actresses": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+              "imdb_rating": { "type": "number", "minimum": 0, "maximum": 10 },
+              "genres": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+            },
+            "required": ["title", "year", "language", "director", "lead_actors", "lead_actresses", "imdb_rating", "genres"]
+          },
+          "conflict_profile": {
+            "type": "object",
+            "properties": {
+              "primary_conflict_id": { "type": "string", "pattern": "^CON_(0[1-9]|1[0-9]|20)$" },
+              "secondary_conflict_id": { "type": "string", "pattern": "^CON_(0[1-9]|1[0-9]|20)$" },
+              "primary_conflict_narrative": { "type": "string" },
+              "secondary_conflict_narrative": { "type": "string" },
+              "is_ticking_clock_active": { "type": "boolean" },
+              "antagonist_type": { "type": "string", "enum": ["INDIVIDUAL", "SOCIETAL", "INSTITUTIONAL", "INTERNAL", "ENVIRONMENTAL", "SUPERNATURAL"] },
+              "climax_resolution_vector": { "type": "string", "enum": ["VIOLENT_RETRIBUTION", "TRAGIC_COLLAPSE", "LEGAL_TRIUMPH", "RECONCILIATION", "ESCAPE_SURVIVAL", "MORAL_AWAKENING"] }
+            },
+            "required": ["primary_conflict_id", "secondary_conflict_id", "primary_conflict_narrative", "secondary_conflict_narrative", "is_ticking_clock_active", "antagonist_type", "climax_resolution_vector"]
+          },
+          "charades_game_metrics": {
+            "type": "object",
+            "properties": {
+              "difficulty_tier": { "type": "string", "enum": ["Easy", "Medium", "Hard", "Brutal"] },
+              "word_count": { "type": "integer", "minimum": 1, "maximum": 10 },
+              "abstract_vocabulary_score": { "type": "integer", "minimum": 1, "maximum": 10 },
+              "syllable_breakdown_dependency": { "type": "boolean" },
+              "iconic_pose_cheat_code_available": { "type": "boolean" },
+              "mime_anchor_hint": { "type": "string" },
+              "discrimination_power_score": { "type": "number", "minimum": 0, "maximum": 100 }
+            },
+            "required": ["difficulty_tier", "word_count", "abstract_vocabulary_score", "syllable_breakdown_dependency", "iconic_pose_cheat_code_available", "mime_anchor_hint", "discrimination_power_score"]
+          }
+        },
+        "required": ["film_id", "metadata", "conflict_profile", "charades_game_metrics"]
+      }
+    }
+  },
+  "required": ["database_metadata", "conflict_taxonomy", "films"]
+}
