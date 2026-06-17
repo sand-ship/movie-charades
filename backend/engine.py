@@ -201,11 +201,12 @@ class GameEngine:
         non_anchor_qs = [qid for qid in session.asked
                         if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS]
 
-        # After 25 questions, director/music questions become available
+        # After 25 questions, director/actress/music questions become available
+        # (actress is more memorable to players than music director)
         if len(non_anchor_qs) >= 25:
             directors_enabled = True
             non_persons = [q for q in splitting
-                          if not q.id.startswith(("q_actor_", "q_actress_"))]  # Keep q_dir_ and q_music_
+                          if not q.id.startswith(("q_actor_",))]  # Keep q_actress_, q_dir_, q_music_
         else:
             directors_enabled = False
             non_persons = [q for q in splitting
