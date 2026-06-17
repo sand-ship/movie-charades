@@ -319,6 +319,55 @@ QUESTIONS.extend([
     Question("q_suriya",              "Does it star Suriya?",
              _actor_appears("Suriya"), weight=1.0),
 
+    # ACTOR-HIERARCHICAL SUB-QUESTIONS (only asked after actor confirmed)
+    # Chiranjeevi-specific differentiators
+    Question("q_chiranjeevi_action",   "Is it an action film (not romantic comedy)?",
+             _genre_in("action", "thriller", "crime"), weight=0.5, requires=("q_chiranjeevi", "yes")),
+    Question("q_chiranjeevi_80s90s",   "Is it from the 80s or early 90s era?",
+             _in("era", "80s", "90s"), weight=0.5, requires=("q_chiranjeevi", "yes")),
+
+    # Vijay-specific differentiators
+    Question("q_vijay_action",        "Is it an action or action-romance film?",
+             _genre_in("action", "romance"), weight=0.5, requires=("q_vijay", "yes")),
+    Question("q_vijay_recent",        "Is it from 2010 onwards?",
+             _in("era", "2010s", "2020s"), weight=0.5, requires=("q_vijay", "yes")),
+
+    # Amitabh-specific differentiators
+    Question("q_amitabh_classic",     "Is it from the 70s or 80s?",
+             _in("era", "70s", "80s"), weight=0.5, requires=("q_amitabh", "yes")),
+    Question("q_amitabh_action",      "Is it an action or thriller film?",
+             _genre_in("action", "thriller", "crime"), weight=0.5, requires=("q_amitabh", "yes")),
+
+    # Shah Rukh-specific differentiators
+    Question("q_shah_rukh_romance",   "Is romance central to the story?",
+             _attr_true("has_romance"), weight=0.5, requires=("q_shah_rukh", "yes")),
+    Question("q_shah_rukh_90s2000s",  "Is it from the 90s or 2000s?",
+             _in("era", "90s", "2000s"), weight=0.5, requires=("q_shah_rukh", "yes")),
+
+    # Salman-specific differentiators
+    Question("q_salman_comedy",       "Is it a comedy or mass entertainer?",
+             _genre_in("comedy"), weight=0.5, requires=("q_salman", "yes")),
+    Question("q_salman_recent",       "Is it from 2010 onwards?",
+             _in("era", "2010s", "2020s"), weight=0.5, requires=("q_salman", "yes")),
+
+    # Ajith-specific differentiators
+    Question("q_ajith_action",        "Is it an action or action-thriller film?",
+             _genre_in("action", "thriller"), weight=0.5, requires=("q_ajith", "yes")),
+    Question("q_ajith_recent",        "Is it from 2010 onwards?",
+             _in("era", "2010s", "2020s"), weight=0.5, requires=("q_ajith", "yes")),
+
+    # Nayanthara-specific differentiators
+    Question("q_nayanthara_action",   "Is it an action, thriller, or crime film?",
+             _genre_in("action", "thriller", "crime"), weight=0.5, requires=("q_nayanthara", "yes")),
+    Question("q_nayanthara_recent",   "Is it from 2010 onwards?",
+             _in("era", "2010s", "2020s"), weight=0.5, requires=("q_nayanthara", "yes")),
+
+    # Rajini-specific differentiators
+    Question("q_rajini_action",       "Is it an action or action-entertainment film?",
+             _genre_in("action"), weight=0.5, requires=("q_rajini", "yes")),
+    Question("q_rajini_80s90s",       "Is it from the 80s or 90s?",
+             _in("era", "80s", "90s"), weight=0.5, requires=("q_rajini", "yes")),
+
     # HIERARCHICAL THEMES
     # Patriotic/National Pride (main + sub-questions)
     Question("q_patriotic_main",        "Is patriotism or national pride central to the story?",
