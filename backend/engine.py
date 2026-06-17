@@ -15,7 +15,7 @@ try:
 except (FileNotFoundError, json.JSONDecodeError):
     ENGINE_HINTS = {}
 
-MAX_QUESTIONS = 30   # hard ceiling for game length
+MAX_QUESTIONS = 35   # hard ceiling for game length (raised to accommodate director Qs)
 MAX_CONSECUTIVE_ACTOR_QS = 2  # limit actor Qs to 2 in a row to avoid battery effect
 MIN_QUESTIONS = 12   # minimum non-language/era questions before guessing
 GENRE_HOLDOFF = 3    # ask at least this many plot questions before the genre picker fires
@@ -197,12 +197,21 @@ class GameEngine:
 
         # Guard: Actor/director questions only when generic questions have failed.
         # Only ask actor Qs if: (first 5 Qs all no) OR (5+ of first 10 are maybe/dunno)
-        non_persons = [q for q in splitting
-                       if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))]
-
-        # Calculate when to unlock actor questions
+        # EXCEPTION: After Q25, enable director/music questions for disambiguation
         non_anchor_qs = [qid for qid in session.asked
                         if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS]
+
+        # After 25 questions, director/music questions become available
+        if len(non_anchor_qs) >= 25:
+            directors_enabled = True
+            non_persons = [q for q in splitting
+                          if not q.id.startswith(("q_actor_", "q_actress_"))]  # Keep q_dir_ and q_music_
+        else:
+            directors_enabled = False
+            non_persons = [q for q in splitting
+                          if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))]
+
+        # Calculate when to unlock actor questions
         can_ask_actors = False
         if len(non_anchor_qs) >= 5:
             # Check if first 5 questions are all "no"
@@ -219,8 +228,8 @@ class GameEngine:
         if non_persons:
             return max(non_persons, key=lambda q: self._information_gain(cands, q))
 
-        # Only reach actor/director questions if generic questions exhausted AND threshold met
-        if not can_ask_actors:
+        # Only reach actor/director questions if generic questions exhausted AND (threshold met OR after Q25)
+        if not can_ask_actors and not directors_enabled:
             return None  # Give up rather than ask actor Qs without threshold
         consecutive = 0
         for qid in session.asked[::-1]:
