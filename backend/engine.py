@@ -265,26 +265,58 @@ class GameEngine:
                 )
                 return max(splitting, key=actor_boost)
 
-        # Diversify discriminating fields: avoid asking multiple from same field when previous got "no"
-        # If last Q was "music director NO", pivot to actress/director, not another music director
+        # Disciplined discriminating field placement:
+        # Q1-10: One discrim field | Q10-20: One discrim field | Q20-30: One discrim field
+        # Always pivot to different field on "no"
+        non_anchor = len([qid for qid in session.asked
+                         if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS])
+
+        # Identify which discriminating fields have been asked in each phase
+        discrim_fields = {'music': set(), 'director': set(), 'actress': set(), 'actor': set()}
+        discrim_asked_phases = {0: set(), 1: set(), 2: set()}  # phases: Q1-10, Q10-20, Q20-30
+
+        for qid in session.asked:
+            phase = 0 if non_anchor < 10 else (1 if non_anchor < 20 else 2)
+            if qid.startswith("q_music_"):
+                discrim_fields['music'].add(qid)
+                discrim_asked_phases[phase].add('music')
+            elif qid.startswith("q_dir_"):
+                discrim_fields['director'].add(qid)
+                discrim_asked_phases[phase].add('director')
+            elif qid.startswith("q_actress_"):
+                discrim_fields['actress'].add(qid)
+                discrim_asked_phases[phase].add('actress')
+            elif qid.startswith("q_actor_"):
+                discrim_fields['actor'].add(qid)
+                discrim_asked_phases[phase].add('actor')
+
+        # Determine current phase and if we should ask a discriminating question
+        current_phase = 0 if non_anchor < 10 else (1 if non_anchor < 20 else 2)
+        should_ask_discrim = len(discrim_asked_phases[current_phase]) == 0
+
+        # Identify which field was last asked (if any) to pivot away from it
         last_discrim_field = None
         if session.asked:
-            last_qid = session.asked[-1]
-            last_answer = session.answers.get(last_qid)
-
-            if last_answer == "no":
-                # Identify which discriminating field the last Q was from
-                if last_qid.startswith("q_music_"):
+            for qid in reversed(session.asked):
+                if qid.startswith("q_music_"):
                     last_discrim_field = "music"
-                elif last_qid.startswith("q_dir_"):
+                    break
+                elif qid.startswith("q_dir_"):
                     last_discrim_field = "director"
-                elif last_qid.startswith("q_actress_"):
+                    break
+                elif qid.startswith("q_actress_"):
                     last_discrim_field = "actress"
-                elif last_qid.startswith("q_actor_"):
+                    break
+                elif qid.startswith("q_actor_"):
                     last_discrim_field = "actor"
+                    break
 
-        # Deprioritize questions from the same field, prioritize different fields
-        if last_discrim_field and splitting:
+        # Filter discrim questions based on strategy
+        if should_ask_discrim and splitting:
+            # Prioritize discriminating questions for this phase
+            all_fields = ['music', 'director', 'actress', 'actor']
+            available_fields = [f for f in all_fields if f != last_discrim_field]
+
             field_map = {
                 "music": lambda q: q.id.startswith("q_music_"),
                 "director": lambda q: q.id.startswith("q_dir_"),
@@ -292,15 +324,14 @@ class GameEngine:
                 "actor": lambda q: q.id.startswith("q_actor_"),
             }
 
-            # Separate: same field (deprioritized) vs different field (prioritized)
-            same_field = [q for q in splitting if field_map[last_discrim_field](q)]
-            diff_field = [q for q in splitting if not field_map[last_discrim_field](q)]
+            # Get discriminating questions from available fields (not last field)
+            discrim_qs = [q for q in splitting
+                         if any(field_map[f](q) for f in available_fields)]
 
-            # Prefer different fields, fall back to same field if needed
-            priority_pool = diff_field if diff_field else same_field
-            if priority_pool:
-                return max(priority_pool, key=lambda q: self._information_gain(cands, q))
+            if discrim_qs:
+                return max(discrim_qs, key=lambda q: self._information_gain(cands, q))
 
+        # Otherwise ask regular questions
         return max(splitting, key=lambda q: self._information_gain(cands, q))
 
     @staticmethod
