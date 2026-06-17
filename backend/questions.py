@@ -60,6 +60,11 @@ QUESTIONS: list[Question] = [
 def _in(attr: str, *values: str) -> Callable[[dict], bool]:
     return lambda m: m.get(attr) in values
 
+def _actor_appears(name: str) -> Callable[[dict], bool]:
+    """Check if actor appears as lead or in supporting cast."""
+    return lambda m: (m.get('lead_actor') == name or
+                     name in (m.get('supporting_actors') or []))
+
 def _genre_in(*tokens: str) -> Callable[[dict], bool]:
     """Match a theme against ANY of a movie's genres (multi-genre films
     qualify under each of their genres), falling back to primary_genre."""
@@ -83,11 +88,11 @@ def make_star_questions(movies: list[dict]) -> list["Question"]:
     for name, n in actors.items():
         if n >= 15 and name.strip().lower() not in _SKIP:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
-            qs.append(Question(f"q_actor_{safe}", f"Does it star {name}?", _in('lead_actor', name)))
+            qs.append(Question(f"q_actor_{safe}", f"Does it star {name}?", _actor_appears(name)))
     for name, n in actresses.items():
         if n >= 15 and name.strip().lower() not in _SKIP:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
-            qs.append(Question(f"q_actress_{safe}", f"Does it star the actress {name}?", _in('lead_actress', name)))
+            qs.append(Question(f"q_actress_{safe}", f"Does it star the actress {name}?", _actor_appears(name)))
     for name, n in directors.items():
         if n >= 2 and name.strip().lower() not in _SKIP:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
@@ -265,25 +270,25 @@ QUESTIONS.extend([
 
     # Phase 5: Actor & Director recommendations for Tier 2 (endgame discrimination)
     Question("q_rajini",              "Does it star Rajinikanth?",
-             _attr_eq("lead_actor", "Rajinikanth"), weight=1.0),
+             _actor_appears("Rajinikanth"), weight=1.0),
     Question("q_venkatesh",           "Does it star Venkatesh?",
-             _attr_eq("lead_actor", "Venkatesh"), weight=1.0),
+             _actor_appears("Venkatesh"), weight=1.0),
     Question("q_chiranjeevi",         "Does it star Chiranjeevi?",
-             _attr_eq("lead_actor", "Chiranjeevi"), weight=1.0),
+             _actor_appears("Chiranjeevi"), weight=1.0),
     Question("q_kamal_haasan",        "Does it star Kamal Haasan?",
-             _attr_eq("lead_actor", "Kamal Haasan"), weight=1.0),
+             _actor_appears("Kamal Haasan"), weight=1.0),
     Question("q_vijay",               "Does it star Vijay?",
-             _attr_eq("lead_actor", "Vijay"), weight=1.0),
+             _actor_appears("Vijay"), weight=1.0),
     Question("q_amitabh",             "Does it star Amitabh Bachchan?",
-             _attr_eq("lead_actor", "Amitabh Bachchan"), weight=1.0),
+             _actor_appears("Amitabh Bachchan"), weight=1.0),
     Question("q_ajith",               "Does it star Ajith Kumar?",
-             _attr_eq("lead_actor", "Ajith Kumar"), weight=1.0),
+             _actor_appears("Ajith Kumar"), weight=1.0),
     Question("q_akshay",              "Does it star Akshay Kumar?",
-             _attr_eq("lead_actor", "Akshay Kumar"), weight=1.0),
+             _actor_appears("Akshay Kumar"), weight=1.0),
     Question("q_kajal",               "Does it star Kajal Aggarwal?",
-             _attr_eq("lead_actress", "Kajal Aggarwal"), weight=1.0),
+             _actor_appears("Kajal Aggarwal"), weight=1.0),
     Question("q_nayanthara",          "Does it star Nayanthara?",
-             _attr_eq("lead_actress", "Nayanthara"), weight=1.0),
+             _actor_appears("Nayanthara"), weight=1.0),
     Question("q_dir_balachander",     "Is it directed by K. Balachander?",
              _attr_eq("director", "K. Balachander"), weight=1.0),
     Question("q_dir_muthuraman",      "Is it directed by S. P. Muthuraman?",
@@ -295,21 +300,21 @@ QUESTIONS.extend([
 
     # Phase 6: Additional prolific actors (identified from failure analysis)
     Question("q_pawan_kalyan",        "Does it star Pawan Kalyan?",
-             _attr_eq("lead_actor", "Pawan Kalyan"), weight=1.0),
+             _actor_appears("Pawan Kalyan"), weight=1.0),
     Question("q_sivakarthikeyan",     "Does it star Sivakarthikeyan?",
-             _attr_eq("lead_actor", "Sivakarthikeyan"), weight=1.0),
+             _actor_appears("Sivakarthikeyan"), weight=1.0),
     Question("q_shah_rukh",           "Does it star Shah Rukh Khan?",
-             _attr_eq("lead_actor", "Shah Rukh Khan"), weight=1.0),
+             _actor_appears("Shah Rukh Khan"), weight=1.0),
     Question("q_ravi_teja",           "Does it star Ravi Teja?",
-             _attr_eq("lead_actor", "Ravi Teja"), weight=1.0),
+             _actor_appears("Ravi Teja"), weight=1.0),
     Question("q_nani",                "Does it star Nani?",
-             _attr_eq("lead_actor", "Nani"), weight=1.0),
+             _actor_appears("Nani"), weight=1.0),
     Question("q_salman",              "Does it star Salman Khan?",
-             _attr_eq("lead_actor", "Salman Khan"), weight=1.0),
+             _actor_appears("Salman Khan"), weight=1.0),
     Question("q_dhanush",             "Does it star Dhanush?",
-             _attr_eq("lead_actor", "Dhanush"), weight=1.0),
+             _actor_appears("Dhanush"), weight=1.0),
     Question("q_suriya",              "Does it star Suriya?",
-             _attr_eq("lead_actor", "Suriya"), weight=1.0),
+             _actor_appears("Suriya"), weight=1.0),
 
     # SRK narrative patterns (applicable across languages and actors)
     Question("q_patriarchal_resistance", "Does the protagonist challenge rigid authority/patriarchal institution through emotion?",
