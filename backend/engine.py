@@ -153,7 +153,7 @@ class GameEngine:
                     pool = aligned if aligned else confirm
                     return max(pool, key=lambda q: self._information_gain(cands, q))
 
-        # After actor question gets "yes", ask phase-appropriate discriminating questions
+        # After actor question gets "yes" with large pool, ask actress/director to narrow filmography
         if session.asked:
             last_qid = session.asked[-1]
             last_ans = session.answers.get(last_qid)
@@ -161,20 +161,10 @@ class GameEngine:
                                              'q_vijay', 'q_amitabh', 'q_shah_rukh', 'q_salman',
                                              'q_ajith', 'q_nayanthara', 'q_venkatesh', 'q_kamal_haasan'))
             if is_actor_q and last_ans == "yes" and len(cands) > 3:
-                # Count current phase to know which discrim field to ask next
-                current_non_anchor = len([qid for qid in session.asked
-                                         if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS])
-                current_phase = 0 if current_non_anchor < 10 else (1 if current_non_anchor < 20 else 2)
-
-                # In phase 2+, after actor YES, ask next phase's discriminating field
-                if current_phase >= 1:  # Phase 2: ask actress/director
-                    discrim_qs = [q for q in splitting if q.id.startswith(('q_actress_', 'q_director_'))]
-                    if discrim_qs:
-                        return max(discrim_qs, key=lambda q: self._information_gain(cands, q))
-                else:  # Phase 1: ask hierarchical sub-Qs
-                    sub_qs = [q for q in splitting if q.requires == (last_qid, "yes")]
-                    if sub_qs:
-                        return max(sub_qs, key=lambda q: self._information_gain(cands, q))
+                # Immediately ask actress/director to narrow within actor's filmography
+                discrim_qs = [q for q in splitting if q.id.startswith(('q_actress_', 'q_director_'))]
+                if discrim_qs:
+                    return max(discrim_qs, key=lambda q: self._information_gain(cands, q))
 
         # When pool == 1 and we haven't hit the minimum yet, ask confirming
         # questions — builds suspense, lets the player verify before the reveal.
