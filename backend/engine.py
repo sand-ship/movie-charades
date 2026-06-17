@@ -237,20 +237,27 @@ class GameEngine:
             if uncertain >= 3:
                 can_ask_actors = True
 
-        # Prefer generic questions first, but boost actor questions if discriminating fields unlocked
+        # Prefer generic questions first, but switch to discriminating fields if narrowing stalls
         if non_persons:
             best_generic = max(non_persons, key=lambda q: self._information_gain(cands, q))
             best_generic_ig = self._information_gain(cands, best_generic)
 
-            # If discriminating fields unlocked and pool still large, consider actor questions
-            if can_ask_actors and len(cands) > 5 and best_generic_ig < 0.3:
-                # Only switch to actor questions if generic IG is very low (pool not narrowing)
-                actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))]
-                if actor_qs:
-                    best_actor = max(actor_qs, key=lambda q: self._information_gain(cands, q))
-                    best_actor_ig = self._information_gain(cands, best_actor)
-                    if best_actor_ig > best_generic_ig * 1.2:  # Only if actor is >20% better
-                        return best_actor
+            # If discriminating fields unlocked, check if narrowing is stalled
+            if can_ask_actors and len(cands) > 5:
+                # Pool narrowing ratio: if we have more candidates than questions asked, narrowing is slow
+                narrowing_ratio = len(cands) / max(1, len(non_anchor_qs))
+
+                # Switch to actor questions if:
+                # 1. Narrowing ratio > 1.0 (pool larger than Qs asked - very slow)
+                # 2. OR generic IG is low (< 0.25) and actor questions exist
+                if narrowing_ratio > 1.0 or best_generic_ig < 0.25:
+                    actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_"))]
+                    if actor_qs:
+                        best_actor = max(actor_qs, key=lambda q: self._information_gain(cands, q))
+                        best_actor_ig = self._information_gain(cands, best_actor)
+                        # Use actor questions if they're better or comparable (≥ 80% of generic)
+                        if best_actor_ig >= best_generic_ig * 0.8:
+                            return best_actor
 
             return best_generic
 
