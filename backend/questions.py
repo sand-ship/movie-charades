@@ -216,7 +216,7 @@ QUESTIONS.extend([
              _attr_true("is_unrequited_love_turnaround"), weight=0.3),
     Question("q_reincarnation",    "Does the plot involve ghosts, spirits, or reincarnation?",
              _attr_true("is_reincarnation_rebirth"), weight=0.3),
-    Question("q_historical_era",   "Is this set in pre-1947 British-ruled India or an earlier historical period?",
+    Question("q_partition_era",    "Is this set in pre-1947 British-ruled India (colonial or partition era)?",
              _attr_true("is_partition_backdrop"), weight=0.3),
     Question("q_dance_heavy",      "Does the film heavily feature elaborate dance sequences or musical numbers?",
              _attr_true("is_dance_heavy"), weight=0.3),

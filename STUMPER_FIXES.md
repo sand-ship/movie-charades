@@ -110,7 +110,7 @@ python3 backend/main.py
 | `q_love_triangle` | "Is there a love triangle where multiple characters pursue the same person?" | `is_love_triangle` |
 | `q_reluctant_romance` | "Is the main romance about one person pursuing a reluctant partner?" | `is_unrequited_love_turnaround` |
 | `q_reincarnation` | "Does the plot involve ghosts, spirits, or reincarnation?" | `is_reincarnation_rebirth` |
-| `q_historical_era` | "Is this set in pre-1947 British-ruled India or an earlier historical period?" | `is_partition_backdrop` |
+| `q_partition_era` | "Is this set in pre-1947 British-ruled India (colonial or partition era)?" | `is_partition_backdrop` |
 | `q_dance_heavy` | "Does the film heavily feature elaborate dance sequences or musical numbers?" | `is_dance_heavy` |
 | `q_sibling_rivalry` | "Is sibling or brother rivalry a central plot element?" | `is_brother_conflict` |
 | `q_sacrifice_ending` | "Does the climax involve a significant sacrifice or tragic ending?" | `is_sacrifice_ending` |
