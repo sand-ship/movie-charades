@@ -67,6 +67,19 @@ class GameEngine:
     def get_session(self, session_id: str) -> Optional[Session]:
         return self._sessions.get(session_id)
 
+    @staticmethod
+    def _is_question_available(question: Question, answered: dict) -> bool:
+        """Check if a question's requires conditions are met (OR logic for multiple)."""
+        if question.requires is None:
+            return True
+        # Handle both old format (tuple) and new format (list of tuples)
+        if isinstance(question.requires, tuple):
+            # Single requirement: (question_id, answer)
+            return answered.get(question.requires[0]) == question.requires[1]
+        else:
+            # Multiple requirements (list): OR logic - any condition met = available
+            return any(answered.get(cond[0]) == cond[1] for cond in question.requires)
+
     # ── core algorithm ───────────────────────────────────────────────────
 
     def next_question(self, session: Session) -> Optional[Question]:
@@ -100,7 +113,7 @@ class GameEngine:
                       and q.id not in LANGUAGE_QUESTION_IDS
                       and q.id not in ERA_QUESTION_IDS
                       and (not suppress_genre or q.id not in GENRE_QUESTION_IDS)
-                      and (q.requires is None or session.answers.get(q.requires[0]) == q.requires[1])]
+                      and self._is_question_available(q, session.answers)]
 
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]

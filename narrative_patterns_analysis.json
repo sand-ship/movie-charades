@@ -1,0 +1,8299 @@
+[
+  {
+    "title": "Sholay",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Mughal-E-Azam",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Dilwale Dulhania Le Jayenge",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Dil Chahta Hai",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Lagaan",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Hera Pheri",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "3 Idiots",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Taare Zameen Par",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rang De Basanti",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Swades",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gangs of Wasseypur",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Kahaani",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Dangal",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "PK",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Queen",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pink",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raazi",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Piku",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Baahubali: The Beginning",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Baahubali 2: The Conclusion",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "RRR",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Arjun Reddy",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pushpa: The Rise",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Jersey",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "96",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pariyerum Perumal",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Drishyam",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Premam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kumbalangi Nights",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "KGF Chapter 1",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "KGF Chapter 2",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Ala Vaikunthapurramuloo",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mersal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kabhi Khushi Kabhie Gham",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Zindagi Na Milegi Dobara",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Gandhi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Jai Bhim",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Laal Singh Chaddha",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "12th Fail",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "K.G.F: Chapter 2",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Pathaan",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Adipurush",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Shershaah",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "My Name Is Khan",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Kantara",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Animal",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Brahmastra Part One: Shiva",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Gangs of Wasseypur \u2013 Part 1",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Bajrangi Bhaijaan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Jawan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "K.G.F: Chapter 1",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Munna Bhai M.B.B.S.",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Barfi!",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Chak De! India",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Dunki",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sita Ramam",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Maharaja",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Kal Ho Naa Ho",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hotel Mumbai",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bhaag Milkha Bhaag",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Singham Again",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "M.S. Dhoni: The Untold Story",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Chhichhore",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ghajini",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "OMG \u2013 Oh My God!",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "The White Tiger",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "The Lunchbox",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sanju",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Gangubai Kathiawadi",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Veer-Zaara",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Jab We Met",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Karthikeya 2",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sometimes Happiness Sometimes Sadness...",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Kuch Kuch Hota Hai",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Jab Tak Hai Jaan",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dasvi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Airlift",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Gunday",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Haider",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rab Ne Bana Di Jodi",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sultan",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Yeh Jawaani Hai Deewani",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Shamshera",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Om Shanti Om",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Teri Baaton Mein Aisa Uljha Jiya",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Rockstar",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Raees",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "The Archies",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dhoom 3",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Lage Raho Munna Bhai",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Devdas",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Drishyam 2",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Rocky Aur Rani Kii Prem Kahaani",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Udaan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Liger",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Talaash: The Answer Lies Within",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Vicky Donor",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Stree",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "777 Charlie",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "OMG 2 \u2013 Oh My God! 2",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dear Zindagi",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gully Boy",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Stree 2",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mimi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mission Majnu",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "'96",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "English Vinglish",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Main Hoon Na",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Happy New Year",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Jayeshbhai Jordaar",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Dhamaka",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Talvar",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Jug Jugg Jeeyo",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Antim: The Final Truth",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "83",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bajirao Mastani",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Super 30",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Lucky Baskhar",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Dilwale",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Article 15",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Auron Mein Kahan Dum Tha",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Padmaavat",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Badhaai Ho",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Paan Singh Tomar",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kai Po Che!",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "The Tashkent Files",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Ponniyin Selvan: I",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Aashiqui 2",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raanjhnaa",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Black",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Anand",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mohabbatein",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Wake Up Sid",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Fanaa",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Jodhaa Akbar",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Tamasha",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hindi Medium",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Masaan",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Minnal Murali",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dev.D",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Udta Punjab",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Kapoor & Sons",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bharat",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dil Se..",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Zero",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Kaabil",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kaththi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Highway",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pad Man",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Shehzada",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Phir Hera Pheri",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Baazigar",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Satyaprem Ki Katha",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kho Gaye Hum Kahan",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raksha Bandhan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Runway 34",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Thalaivi",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rustom",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Koi... Mil Gaya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sirf Ek Bandaa Kaafi Hai",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rangasthalam",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Tanu Weds Manu Returns",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Tu Jhoothi Main Makkaar",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Hanu Man",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Eega",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Jaane Tu... Ya Jaane Na",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Bhediya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ae Dil Hai Mushkil",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Agneepath",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Sarfarosh",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Bareilly Ki Barfi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Khel Khel Mein",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "2 States",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Article 370",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Anbe Sivam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Bengaluru Days",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Chhapaak",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Magadheera",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Lakshya",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Jo Jeeta Wohi Sikandar",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Chup: Revenge of the Artist",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Monsoon Wedding",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "A Thursday",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bigil",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Khosla Ka Ghosla",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sonu Ke Titu Ki Sweety",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Darr",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Dil To Pagal Hai",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Shiddat",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Theri",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Hi Nanna",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Guru",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kesari",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Toilet - Ek Prem Katha",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bhool Chuk Maaf",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Detective Byomkesh Bakshi",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Gadar 2",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "The Vaccine War",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Ek Villain",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Jolly LLB",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Neerja",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rocket Singh: Salesman of the Year",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Cirkus",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kabhi Alvida Naa Kehna",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Bell Bottom",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Hum Aapke Hain Koun..!",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Jab Harry Met Sejal",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Namastey London",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Tubelight",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Omkara",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Sivaji",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sarkar",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raid",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Goliyon Ki Rasleela Ram-Leela",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pyaar Ka Punchnama",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Rock On!!",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Maidaan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Darlings",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Badhaai Do",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "The Namesake",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Anek",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Meiyazhagan",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Jai Ho",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Tere Naam",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Dum Laga Ke Haisha",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mulk",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Singham",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Newton",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Student of the Year",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kalank",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dil Dhadakne Do",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gol Maal",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Jana Gana Mana",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sam Bahadur",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Shahid",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Manjhi: The Mountain Man",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Once Upon a Time in Mumbaai",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hum Dil De Chuke Sanam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "October",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Hridayam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Guzaarish",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dam 999",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mission Mangal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Karwaan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kabhi Haan Kabhi Naa",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Border",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Mr. India",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raajneeti",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ponniyin Selvan: II",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Miss Lovely",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "#Home",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Band Baaja Baaraat",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Oye Lucky! Lucky Oye!",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nayak",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gangaajal",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Hungama",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Meenakshi Sundareshwar",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kaminey",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Dhuruvangal Pathinaaru",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Ajab Prem Ki Ghazab Kahani",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Baghban",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Peranbu",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ustad Hotel",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Dream Girl",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kaho Naa... Pyaar Hai",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "HIT: The First Case",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Iqbal",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Love Today",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "The Legend of Bhagat Singh",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Nanban",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Love Aaj Kal",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Lootera",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Bala",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bramayugam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Chalte Chalte",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Geetha Govindam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Karan Arjun",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Bawaal",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Khakee",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Amar Singh Chamkila",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dostana",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gulaal",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pardes",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Ittefaq",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "The Big Bull",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Shyam Singha Roy",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Zara Hatke Zara Bachke",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "2018",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Manikarnika\u2014The Queen of Jhansi",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gadar: Ek Prem Katha",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Karthik Calling Karthik",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kishkindha Kaandam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mahanati",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Satyameva Jayate 2",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sairat",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Athadu",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Desi Boyz",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Cocktail",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "A\u015boka",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Kedarnath",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hum Tum",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Madaari",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Chandigarh Kare Aashiqui",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Vaastav: The Reality",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thalapathi",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Maharaj",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Water",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Khatta Meetha",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Chup Chup Ke",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Maqbool",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Humpty Sharma Ki Dulhania",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gold",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kabali",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hichki",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hey Ram",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Bombay",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Life in a... Metro",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Billu",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "NH10",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Badrinath Ki Dulhania",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Okkadu",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Bommarillu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Happy Days",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Srimanthudu",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Maharshi",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Uppena",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Jagadeka Veerudu Atiloka Sundari",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Tholi Prema",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Coolie No. 1",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Simhadri",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Nuvvostanante Nenoddantana",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Chatrapathi",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "S/O Satyamurthy",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nannaku Prematho",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "DJ: Duvvada Jagannadham",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Agnyaathavaasi",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Virata Parvam",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Waltair Veerayya",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Mouna Ragam",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Minsara Kanavu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Padayappa",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Alaipayuthey",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kandukondain Kandukondain",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mounam Pesiyadhe",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sillunu Oru Kaadhal",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Paruthiveeran",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Dasavathaaram",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Vinnaithaandi Varuvaayaa",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "3",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aadukalam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ponniyin Selvan: Part 1",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Chemmeen",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kireedam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Spadikam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Irupathiyonnaam Noottaandu",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Njan Gandharvan",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Bangalore Days",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mungaru Male",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Googly",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mother India",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Guide",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aradhana",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Pakeezah",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Amar Akbar Anthony",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Trishul",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Arth",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Coolie",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Mashaal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mard",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Tezaab",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ram Lakhan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Chandni",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Dil",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Saudagar",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Damini",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "1942: A Love Story",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Krantiveer",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Rangeela",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pyaar To Hona Hi Tha",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Taal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hum Saath-Saath Hain",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Saathiya",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aitraaz",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Parineeta",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Fashion",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Luck By Chance",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ishqiya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "The Dirty Picture",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mary Kom",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sanam Teri Kasam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Shubh Mangal Saavdhan",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Uri: The Surgical Strike",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kabir Singh",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Thappad",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gunjan Saxena: The Kargil Girl",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Rashmi Rocket",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "14 Phere",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sardar Udham",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Dhaakad",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Do Bigha Zamin",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pyaasa",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kaagaz Ke Phool",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sahib Bibi Aur Ghulam",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Namak Halaal",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Sadak",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hum Hain Rahi Pyar Ke",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Anjaam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bachna Ae Haseeno",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Atithi Tum Kab Jaoge?",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Vivah",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nuvve Kavali",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mr. Perfect",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aravindha Sametha Veera Raghava",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Dear Comrade",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sarileru Neekevvaru",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Colour Photo",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sarkaru Vaari Paata",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ante Sundaraniki",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Oopiri",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Soggade Chinni Nayana",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Iruvar",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kadhal Konden",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "7G Rainbow Colony",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Virumandi",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ullam Ketkumae",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kuruvi",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Yaaradi Nee Mohini",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aadhalal Kadhal Seiveer",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Mynaa",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thanga Magan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thunivu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thenali",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pithamagan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Thillalangadi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sethupathi",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Ayan",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Vaanam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Inaindha Kaigal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Moondru Mudichu",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "16 Vayathinile",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raja Paarvai",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ninaithale Inikkum",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Varuthapadatha Valibar Sangam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Oru Nalla Naal Paathu Solren",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Maamannan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Iraivi",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nenjam Marappathillai",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Jagame Thandhiram",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Prince",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Etharkkum Thunindhavan",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Abhimaan",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kabhi Kabhi",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Swami",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Silsila",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Waqt: The Race Against Time",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Lajja",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ram Teri Ganga Maili",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gangs of Wasseypur Part 2",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Khoobsurat",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rang Birangi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Naram Garam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Qayamat Se Qayamat Tak",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mullum Malarum",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aval Appadithan",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sigappu Rojakkal",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Nenjathai Killathe",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Meendum Kokila",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Idhaya Kovil",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Punnagai Mannan",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Vedham Pudhithu",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pagal Nilavu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Payanangal Mudivathillai",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Oomai Vizhigal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Udhiri Pookal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pudhu Pudhu Arthangal",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kizhakku Cheemayile",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Duet",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Karuththamma",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mahanadhi",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kadhal Rojave",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "May Madham",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Avvai Shanmughi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kadhala Kadhala",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mudalvan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "En Swasa Kaatre",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sangamam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Autograph",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kaadhal",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mozhi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Polladhavan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Saroja",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Kuselan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aayitha Ezhuthu",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Veyil",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kattradhu Thamizh",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pudhupettai",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Unnale Unnale",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Madrasapattinam",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Naan Mahaan Alla",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Mayakkam Enna",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Neethaane En Ponvasantham",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Ethir Neechal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raja Rani",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Lingaa",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Veeram",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Kaaviya Thalaivan",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sathuranga Vettai",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Puli",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Oh My Kadavule",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Velai Illa Pattadhari 2",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Meyaadha Maan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Comali",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Ispade Rajavum Idhaya Raniyum",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Seethakathi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kanchana 2",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Vendhu Thanindha Kaadu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Veetla Vishesham",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kanguva",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Lubber Pandhu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Oor Iravu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pathu Thala",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Vaathi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Apoorva Ragangal",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Arangetram",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nool Veli",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Oru Oodal Kural",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Moondram Pirai",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Poove Unakkaga",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kadhal Desam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Uyire",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Thenmavin Kombathu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Roja",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Minnale",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Velai Illa Pattadhari",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "OK Kanmani",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kadhalil Sodhappuvadhu Yeppadi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Oh! Manapenne",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Avargal",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kavikkuyil",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Annaamalai",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Parasakthi",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Veerapandiya Kattabomman",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Thiruvilayadal",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nadodi Mannan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Paasa Malar",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kakka Muttai",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Joker",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "NGK",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ratchasi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Jigarthanda DoubleX",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Maaveeran",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Viduthalai",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nenjuku Needhi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Angadi Theru",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Naan Ee",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Jigarthanda",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Trisha Illana Nayanthara",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Saivam",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kathai Thiraikathai Vasanam Iyakkam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Saahasam",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Mandela",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dange",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pasanga",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pasanga 2",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pammal K Sambandam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Beautiful",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Naadodigal",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Azhagu Kutti Chellam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Oru Kidayin Karunai Manu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mudhalvan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mazhai",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Paarththale Paravasam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pattali",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Oruvar Meethu Eruvarum",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Porinju Mariam Jose",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Manasellam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Madras",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Attakathi",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Deiva Thirumagal",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Anegan",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Natchathiram Nagargirathu",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Naduvula Konjam Pakkatha Kaanom",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Manikandan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Vaazhai",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Enga Veetu Pillai",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Adimai Penn",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sathyaa",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Puthiya Theerpu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Good Night",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kadaisi Vivasayi",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gypsy",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Neeraj",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thavamai Thavamirundhu",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sangam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Oru Naal Koothu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pasamalar",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nadodigal",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Michael Madana Kama Rajan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pozhil Vilayum",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Saattai",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Koottathil Oruthan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Karthigai",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Priya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Azhiyadha Kolangal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Neranja Manasu",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Panakkaran",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Uzhaippali",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Muthalvan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kadhal Kavithai",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kulir 100 Degree",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pulan Visaranai",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Per Sollum Pillai",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mahaan",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Priyamudan",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Veedu",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nizhalgal",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Kizhakku Vasal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Valkai",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Naalu Per Naalu Kadhal",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Poi Solla Villai",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Manam Kothi Paravai",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Engal Thanga",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Raja Chinna Roja",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Missamma",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Patala Bhairavi",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Devadasu",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Manchi Manasulu",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Daana Veera Soora Karna",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Sagara Sangamam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Swayam Krushi",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Rudraveena",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Abhinandana",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Samsaram Oka Chadarangam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sankarabharanam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Karthavyam",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ankusham",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Govinda Govinda",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aapattbandavudu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pedarayudu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Anthapuram",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Annamayya",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Krishna",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Swayamvaram",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Suswagatam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nee Manasu Naaku Telusu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Manmadhudu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Naa Autograph",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aadavari Matalaku Ardhale Verule",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Arjun",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Cameraman Gangatho Rambabu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Seethamma Vakitlo Sirimalle Chettu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Gopala Gopala",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kanche",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Pelli Choopulu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "A..Aa",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Srirastu Subhamastu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Vunnadhi Okate Zindagi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nenu Sailaja",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Shatamanam Bhavati",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Most Eligible Bachelor",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Tuck Jagadish",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Acharya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Premalu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Gamanam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nenu Social",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aaditi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Premalayam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Oka Radha Oka Krishna",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Manchi Rozu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Vamsa Vruksham",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Premi",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Naa Alludu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Okka Ammayi Thappa",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kerintha",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nee Jathaga Nenundali",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Krishnamma Kalipindi Iddarini",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nuvvu Naaku Naachav",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Love Story",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ramarao on Duty",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Padi Padi Leche Manasu",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Tenali Ramakrishna",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gundamma Katha",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Lava Kusa",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Sri Krishnarjuna Yuddham",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mooga Manasulu",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Annadammula Anubandham",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "O Seeta Katha",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Anthuleni Katha",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Siri Siri Muvva",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Premabhishekam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Subhalekha",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sitaara",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sirivennela",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Swathi Mutyam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Seetharamaiah Gari Manavaralu",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Preminchukundam Raa",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Ninne Pelladatha",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Suryavamsam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Ravoyi Chandamama",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "President Gari Pellam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nuvve Nuvve",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Lakshyam",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Bujjigadu",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Ye Maaya Chesave",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Oosaravelli",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Iddarammayilatho",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Ninnu Kori",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "MCA Middle Class Abbayi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Krishnarjuna Yuddham",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Majili",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kondapolam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Naandhi",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Sreekaram",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Tiger Nageswara Rao",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Appu Chesi Pappu Koodu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Prem Nagar",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Chanakya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Muddula Priyudu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Subha Sankalpam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Seetha Rama Kalyanam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Orange",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Leader",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pilla Zamindar",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Krishnam Vande Jagadgurum",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dictator",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nota",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Prati Roju Pandaage",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Pakka Commercial",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Veera Simha Reddy",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Bhagavanth Kesari",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Satamanam Bhavati",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Chalo",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "RX 100",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Saahasam Swasaga Saagipo",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Republic",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rang De",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Cinema Bandi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aa Ammayi Gurinchi Meeku Cheppali",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mem Famous",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Writer Padmabhushan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Chi La Sow",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Palletoori Pilla",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Shavukaru",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aayana",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mondi Mogudu Penki Pellam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Oka Chinna Maata",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Inti Guttu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Malliswari",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nuvvu Naaku Nachav",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Shankar Dada MBBS",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Oka Oorilo",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Oh My Friend",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Manam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Gunde Jaari Gallanthayyinde",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Malli Malli Idi Rani Roju",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Jyo Achyutananda",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Savaari",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kousalya Supraja Rama",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Maha Samudram",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Konda Polam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Vimanam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gam Gam Ganesha",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Seetharama Kalyanam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pathala Bhairavi",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Poru Gadu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "NTR: Kathanayakudu",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Geetanjali",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Oye!",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "100% Love",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Andala Rakshasi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sahasam",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Ra Ra Krishnayya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pilla Nuvvu Leni Jeevitham",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Babu Bangaram",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Krishnashtami",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Malli Raava",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mahanubhavudu",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Sammohanam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Ee Nagaraniki Emaindi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "NTR: Mahanayakudu",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Middle Class Melodies",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Orey Bujjiga",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Thellavarithe Guruvaram",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Dil Hai Ke Manta Nahin",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Akele Hum Akele Tum",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raja Hindustani",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ghulam",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mangal Pandey: The Rising",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Saajan",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Zanjeer",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Namak Haraam",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Muqaddar Ka Sikandar",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Kaala Patthar",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Lawaaris",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Kaalia",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Khuda Gawah",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Paa",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raju Ban Gaya Gentleman",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Koyla",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ek Duuje Ke Liye",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sadma",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Gunaa",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Papanasam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Dil Hai Betaab",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Vijaypath",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Kanoon",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Diljale",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Zakhm",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thakshak",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Yuva",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Raincoat",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Apaharan",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Halla Bol",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "London Dreams",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Aakrosh",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Satyagraha",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Singham Returns",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Shivaay",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Baadshaho",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "De De Pyaar De",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Tanhaji: The Unsung Warrior",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Shaitaan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Raid 2",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Kadhal Kottai",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Amarkalam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mugavaree",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Varalaru",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dil Ki Baazi",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "De Dana Dan",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "OMG: Oh My God!",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Toilet: Ek Prem Katha",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Samrat Prithviraj",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "OMG 2",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sarfira",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sky Force",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Kesari Chapter 2: The Untold Story of Jallianwala Bagh",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Jolly LLB 3",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Apoorva Raagangal",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aadu Puli Attam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ilamai Oonjaladukirathu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Maro Charitra",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sattam En Kayil",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Manidharil Ithanai Nirangala",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thappu Thalangal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sigappukkal Mookkuthi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Varumayin Niram Sivappu",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ellam Inbamayyam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Vazhvey Maayam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sattam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Oru Kaidhiyin Diary",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Japanil Kalyanaraman",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Uyarndha Ullam",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Saagar",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Swathi Muthyam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nayakan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Pushpaka Vimana",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Guna",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Singaravelan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sathi Leelavathi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Avvai Shanmugi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Chachi 420",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aalavandhan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Virumaandi",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Vasool Raja MBBS",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Uttama Villain",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Raja Kumarudu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aakhari Poratam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Geethanjali",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nirnayam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Varasudu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nuvvu Vasthavani",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sri Ramadasu",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Rajanna",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Greeku Veerudu",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Om Namo Venkatesaya",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Bhuvana Oru Kelvi Kuri",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Netrikann",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Andhaa Kaanoon",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nallavanukku Nallavan",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Padikkadavan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mr. Bharath",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Velaikaran",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dharmathin Thalaivan",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Annamalai",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Yejaman",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Veera",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Baashha",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Arunachalam",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sivaji: The Boss",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kochadaiiyaan",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Vettaiyan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sanam Bewafa",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Patthar Ke Phool",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Dil Tera Aashiq",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Khamoshi: The Musical",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Jab Pyaar Kisise Hota Hai",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Chori Chori Chupke Chupke",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Garv: Pride & Honour",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Lucky: No Time for Love",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "God Tussi Great Ho",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Veer",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Sikandar",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Chamatkar",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ram Jaane",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "English Babu Desi Mem",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Chaahat",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dil Se",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Asoka",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Chak De India",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Naalaiya Theerpu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rajavin Parvaiyile",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kadhalukku Mariyadhai",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Vasantha Vasal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thullatha Manamum Thullum",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mugavari",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Shahjahan",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Kaavalan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raakh",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mann",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Earth",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Dhobi Ghat",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Talaash",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sitaare Zameen Par",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rudhramadevi",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Punadhirallu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Idi Katha Kaadu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Manchi Manushulu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pranalata",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nyayam Kavali",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Maga Maharaju",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Prema Tarangalu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Intlo Ramayya Veedilo Krishnayya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mangamma Gari Manavadu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Trisulam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kothalo Rayi Gundello Pranam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Prathighatana",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Donga Mogudu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pasivadi Pranam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sitarama Kalyanam",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Manchi Donga",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rao Gari Illu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kodama Simham",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pratibandh",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aapadbandhavudu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dharma Kshetram",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Jagadeka Veerudu Vikramarka",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Ravanudainatey",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nomu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sneham Kosam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Annayya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Stalin",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Khaidi No.150",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Vishwambhara",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kaho Naa Pyaar Hai",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Mission Kashmir",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kites",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Mohenjo Daro",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Ninnu Choodalani",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rakhi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aravinda Sametha Veera Raghava",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Anjaana Anjaani",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Roy",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Bombay Velvet",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Jagga Jasoos",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Kill Dil",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Befikre",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Simmba",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Deewar",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Chupke Chupke",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kabhi Kabhie",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Inquilaab",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Sharaabi",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Shahenshah",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Aaj Ka Arjun",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Mrityudaata",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Sooryavansham",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Dev",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Cheeni Kum",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aarakshan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bhoothnath Returns",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Gulabo Sitabo",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Jhund",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Uunchai",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Section 84",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Karma",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mr India",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Parinda",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Eeshwar",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kishen Kanhaiya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Lamhe",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Roop Ki Rani Choron Ka Raja",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Judaai",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Virasat",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pukar",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hamara Dil Aapke Paas Hai",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Slumdog Millionaire",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Fanney Khan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Malang",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "AK vs AK",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sahasame Jeevitham",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Devatha",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Janani Janmabhoomi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Muddula Krishna",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kaliyuga Pandavulu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Balakrishna Panditha",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nandanavanam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Muddula Mavayya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Muvva Gopaludu",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Nari Nari Naduma Murari",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bhairava Dweepam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Bobbili Simham",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sriramula Kalyanam",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Allari Krishnayya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Krishnaarjunulu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Maa Babu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Chennakesava Reddy",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Veerabhadra",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Pandurangadu",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Sri Rama Rajyam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Daaku Maharaaj",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Ashta Chamma",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Bheemili Kabaddi Jattu",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ala Modalaindi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aha Naa Pellanta",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Yeto Vellipoyindi Manasu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Paisa",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aaha Kalyanam",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Yevade Subramanyam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Krishna Gaadi Veera Prema Gaadha",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Gokulamlo Seeta",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Komaram Puli",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bheemla Nayak",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hari Hara Veera Mallu",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Game Changer",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Peddi",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dubai Seenu",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rama Rao on Duty",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ta Ra Rum Pum",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Happy Ending",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Phantom",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rangoon",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Baazaar",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rocky",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Naam",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hathyar",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Khalnayak",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bhoomi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Panipat",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Sadak 2",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "KGF: Chapter 2",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Toolsidas Junior",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Dacait",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Ghayal",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Ghatak",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Maa Tujhhe Salaam",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Yamla Pagla Deewana",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Singh Saab the Great",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Ghayal Once Again",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Mohalla Assi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Border 2",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Paap Ki Duniya",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Narsimha",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Dillagi",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Dushman",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Barsaat",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Kshatriya",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Ghaav: The Wound",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Tahalka",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Mitti",
+    "patterns": [
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Arjun Pandit",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Lahoo Ke Do Rang",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Ab Tumhare Hawale Watan Saathiyo",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Prema",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Chanti",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Dharma Chakram",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pavithra Bandham",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raja",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kalisundam Raa",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Vasantham",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Lakshmi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rana Naidu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Life Is Beautiful",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Family Star",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "VD12",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ayothi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thulluvadho Ilamai",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kadhal Kondein",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Devathaiyai Kanden",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Adukalam",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raanjhanaa",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pa Paandi",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Velaiilla Pattadhari 2",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Maaran",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thiruchitrambalam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Captain Miller",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kubera",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Idli Kadai",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "M. Kumaran Son of Mahalakshmi",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Santosh Subramaniam",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nimirndhu Nil",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Vanamagan",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Ponniyin Selvan I",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Ponniyin Selvan II",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Komban",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thozha",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sardar",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Viruman",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Japan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Vaa Vaathiyaar",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kannathil Muthamittal",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Aaytha Ezhuthu",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Evano Oruvan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "13B",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Irudhi Suttru",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Saala Khadoos",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Maara",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Shool",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Zubeidaa",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pinjar",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Gangs of Wasseypur 2",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Chakravyuh",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aligarh",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Budhia Singh: Born to Run",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bhonsle",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sonchiriya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Joram",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bhaiyya Ji",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Despatch",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "The Fable",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gurgaon",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kaagaz",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sherdil: The Pilibhit Saga",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Main Atal Hoon",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nene Raju Nene Mantri",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aranya",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kadalora Kavithaigal",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Poovizhi Vasalile",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kadamai Kanniyam Kattupaadu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Makkal En Pakkam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Annanagar Mudhal Theru",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "En Bommukutty Ammavukku",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Chinnappadass",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thaai Naadu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Velai Kidaichuduchu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nadigan",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pudhu Manithan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rickshaw Mama",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Amaidhi Padai",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thai Maaman",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Senathipathi",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Vallal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Periya Marudhu",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Manithan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mahaprabhu",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Kaaval Geethai",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Rojakkootam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Naadodi Thendral",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pasumpon",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Periya Manushan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Puratchikkaaran",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Maaman Magal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Maha Nadigan",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Unnai Kann Theduthey",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kadhal Azhivathillai",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Eeswaran",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Vendhu Thanindhathu Kaadu",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Marina",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Velaikkaran",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Seemaraja",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mr. Local",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hero",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Madharaasi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Pannaiyarum Padminiyum",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Dharma Durai",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aandavan Kattalai",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Laabam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sethu",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Raavanan",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thaarai Thappattai",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Thangalaan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Veera Dheera Sooran",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Anaganaga Oka Roju",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Seeta Aur Geeta",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Guddi",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bawarchi",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mili",
+    "patterns": [
+      "has_fated_romance"
+    ]
+  },
+  {
+    "title": "Golmaal",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Khubsoorat",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bemisaal",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Roti",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dharam Veer",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Parvarish",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kalicharan",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Vishwanath",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Karz",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kisna: The Warrior Poet",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Masoom",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Bandit Queen",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Saransh",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Janam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Daddy",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Aashiqui",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sir",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Phir Teri Kahani Yaad Aayee",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Woh Lamhe",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "Rann",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Ponniyin Selvan: Part I",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Ponniyin Selvan: Part II",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "No Smoking",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Raman Raghav 2.0",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mukkabaaz",
+    "patterns": [
+      "has_fated_romance",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Manmarziyaan",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Matru Ki Bijlee Ka Mandola",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Love Aaj Kal 2",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension"
+    ]
+  },
+  {
+    "title": "New York",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Neerkumizhi",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "47 Natkal",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Manathil Uruthi Vendum",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kalki",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Azhiyatha Kolangal",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Uthiripookkal",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kizhakke Pogum Rail",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Alaigal Oivathillai",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Muthal Mariyathai",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "O Kadhal Kanmani",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Nanda",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Paradesi",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Naachiyaar",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ramana",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Natchathiram Nagargiradhu",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Viduthalai Part 1",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Viduthalai Part 2",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Veyyil",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Jail",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aatma Gowravam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Chelleli Kapuram",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Saptapadi",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Swarnakamalam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Sutradharulu",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Swathi Kiranam",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Meghasandesam",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Bobbili Puli",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Ooriki Monagadu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aakali Rajyam",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gaayam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Gulabi",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Chandralekha",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Godavari",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Subhapradam",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Aparichitudu",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Dollar Dreams",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "KGF: Chapter 1",
+    "patterns": [
+      "has_fated_romance",
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Nattamai",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Swarg",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Raja Babu",
+    "patterns": [
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Hero No. 1",
+    "patterns": [
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Sindhooram",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Rudra Veena",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Shaandaar",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Ishq Vishk",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Vaah! Life Ho Toh Aisi!",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Kismat Konnection",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Dil Bole Hadippa!",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Chance Pe Dance",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Paathshaala",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Badmaash Company",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Mausam",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Teri Meri Kahaani",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Batti Gul Meter Chalu",
+    "patterns": [
+      "has_male_emotional_vulnerability",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Kabhi Khushi Kabhie Gham...",
+    "patterns": [
+      "has_fated_romance",
+      "has_nri_cultural_tension",
+      "has_patriarchal_resistance"
+    ]
+  },
+  {
+    "title": "Jagadeka Veerudu Athiloka Sundari",
+    "patterns": [
+      "has_patriotic_sacrifice"
+    ]
+  },
+  {
+    "title": "Srikanth",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Ki & Ka",
+    "patterns": [
+      "has_male_emotional_vulnerability"
+    ]
+  },
+  {
+    "title": "Mere Brother Ki Dulhan",
+    "patterns": [
+      "has_nri_cultural_tension"
+    ]
+  }
+]

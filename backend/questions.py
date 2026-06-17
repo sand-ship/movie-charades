@@ -10,7 +10,7 @@ class Question:
     text: str
     evaluate: Callable[[dict], bool]
     weight: float = 1.0  # 1.0 = hard signal (2×/0.1×), 0.3 = soft trope (1.3×/0.77×)
-    requires: tuple[str, str] | None = None  # (question_id, answer) prerequisite
+    requires: tuple[str, str] | list[tuple[str, str]] | None = None  # Single (q_id, answer) or list with OR logic
 
 
 def _attr_eq(attr: str, value: Any) -> Callable[[dict], bool]:
@@ -315,6 +315,57 @@ QUESTIONS.extend([
              _actor_appears("Dhanush"), weight=1.0),
     Question("q_suriya",              "Does it star Suriya?",
              _actor_appears("Suriya"), weight=1.0),
+
+    # HIERARCHICAL THEMES
+    # Patriotic/National Pride (main + sub-questions)
+    Question("q_patriotic_main",        "Is patriotism or national pride central to the story?",
+             _attr_true("has_patriotic_sacrifice"), weight=0.3),
+    Question("q_patriotic_military",    "Does it involve the military, navy, or armed forces?",
+             _attr_true("has_military_plot"), weight=0.3, requires=("q_patriotic_main", "yes")),
+    Question("q_patriotic_sports",      "Does it feature sports (cricket, Olympics, etc.) as patriotic struggle?",
+             _attr_true("is_sports_patriotic"), weight=0.3, requires=("q_patriotic_main", "yes")),
+    Question("q_patriotic_sacrifice",   "Does it center on sacrifice or martyrdom for the nation?",
+             _attr_true("has_patriotic_sacrifice"), weight=0.3, requires=("q_patriotic_main", "yes")),
+    Question("q_patriotic_independence","Is it set during independence struggle or partition?",
+             _attr_true("is_independence_struggle"), weight=0.3, requires=("q_patriotic_main", "yes")),
+
+    # Crime/Criminal underworld (main + sub-questions)
+    Question("q_crime_main",            "Does the story involve crime or criminals?",
+             _attr_true("has_gangster_world"), weight=0.3),
+    Question("q_crime_heist",           "Is the central plot a heist or elaborate crime scheme?",
+             _attr_true("has_heist"), weight=0.3, requires=("q_crime_main", "yes")),
+    Question("q_crime_organized",       "Is it about organized crime, mafia, or criminal empire?",
+             _attr_true("has_gangster_world"), weight=0.3, requires=("q_crime_main", "yes")),
+    # Investigation fits both crime (detective work) and conflict (uncovering truth)
+    Question("q_crime_investigation",   "Is it about investigating or solving a crime?",
+             _attr_true("has_investigation_plot"), weight=0.3,
+             requires=[("q_crime_main", "yes"), ("q_conflict_main", "yes")]),
+
+    # Romance (main + sub-questions)
+    Question("q_romance_main",          "Is romance central to the story?",
+             _attr_true("has_fated_romance"), weight=0.3),
+    # Love triangle fits both romance and conflict (creates tension in both)
+    Question("q_romance_triangle",      "Does it feature a love triangle?",
+             _attr_true("has_love_triangle"), weight=0.3,
+             requires=[("q_romance_main", "yes"), ("q_conflict_main", "yes")]),
+    # Forbidden love fits both romance and conflict (love opposed by external force)
+    Question("q_romance_forbidden",     "Is the romance opposed by family or society?",
+             _attr_true("has_forbidden_love"), weight=0.3,
+             requires=[("q_romance_main", "yes"), ("q_conflict_main", "yes")]),
+    Question("q_romance_fated",         "Does it suggest the couple is 'meant to be' together?",
+             _attr_true("has_fated_romance"), weight=0.3, requires=("q_romance_main", "yes")),
+    Question("q_romance_unrequited",    "Is the romance primarily one-sided or unrequited?",
+             _attr_true("has_one_sided_love"), weight=0.3, requires=("q_romance_main", "yes")),
+
+    # Conflict/Opposition (main + sub-questions)
+    Question("q_conflict_main",         "Does the protagonist face rigid authority or institutional resistance?",
+             _attr_true("has_patriarchal_resistance"), weight=0.3),
+    Question("q_conflict_patriarchal",  "Is it opposition from family or patriarchal figures?",
+             _attr_true("has_patriarchal_resistance"), weight=0.3, requires=("q_conflict_main", "yes")),
+    Question("q_conflict_social",       "Is it resistance from society or social norms?",
+             _attr_true("has_class_conflict"), weight=0.3, requires=("q_conflict_main", "yes")),
+    Question("q_conflict_class",        "Does it involve class conflict or economic inequality?",
+             _attr_true("has_class_conflict"), weight=0.3, requires=("q_conflict_main", "yes")),
 
     # SRK narrative patterns (applicable across languages and actors)
     Question("q_patriarchal_resistance", "Does the protagonist challenge rigid authority/patriarchal institution through emotion?",
