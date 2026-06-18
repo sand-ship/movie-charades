@@ -150,16 +150,24 @@ class GameEngine:
         elif current_phase == 1:  # Phase 2: actress/director only (no music yet)
             splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
-        # ACTOR GUARD: Available by Q5-10 for distinctive films, but not aggressively
+        # ACTOR UNLOCK: Relax gating for regional cinema where actors discriminate well
         can_ask_actors = False
 
-        # Unlock actors EARLY (Q5+) ONLY for very rare/distinctive films:
-        # Condition: First 5 questions have 3+ "NO" answers (film is uncommon)
+        # Unlock actors at Q6+ if: 3+ NOs (rare film) OR 2-3 MAYBEs (ambiguous film)
         if len(non_anchor_qs) >= 5:
             first_five = non_anchor_qs[:5]
-            if sum(1 for qid in first_five if session.answers.get(qid) == "no") >= 3:
-                # Film is rare/distinctive → actors can help identify it
+            nos = sum(1 for qid in first_five if session.answers.get(qid) == "no")
+            maybes = sum(1 for qid in first_five if session.answers.get(qid) == "maybe")
+            if nos >= 3 or 2 <= maybes <= 3:
                 can_ask_actors = True
+
+        # Force actor at Q10 if not asked yet
+        if len(non_anchor_qs) >= 10:
+            actor_asked = any(qid.startswith(("q_actor_", "q_actress_")) for qid in session.asked)
+            if not actor_asked:
+                actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
+                if actor_qs:
+                    return max(actor_qs, key=lambda q: self._information_gain(cands, q))
 
 
         # After person question YES, suppress all person Qs for 1-2 turns for breathing room
