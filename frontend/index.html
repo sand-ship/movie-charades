@@ -368,7 +368,7 @@
 
   function updateConfidenceMeter(confidence) {
     const bar = document.getElementById('progress');
-    if (!confidence && confidence !== 0) return;
+    if (confidence == null) return;
     const pct = Math.round(confidence * 100);
     bar.style.width = `${pct}%`;
     bar.classList.remove('warm', 'hot');
@@ -383,7 +383,6 @@
   function renderQuestion(q, remaining, confidence) {
     document.getElementById('q-num').textContent  = `Question ${state.userQNum + 1}`;
     document.getElementById('q-text').textContent = q.text;
-    document.getElementById('progress').style.width = `${(state.userQNum / 18) * 100}%`;
     updateConfidenceMeter(confidence);
     document.getElementById('candidates-info').textContent = '';
     setYesNoEnabled(true);
