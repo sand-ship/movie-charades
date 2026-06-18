@@ -96,12 +96,10 @@
     .progress-wrap { width: 100%; background: rgba(255,255,255,0.08); border-radius: 999px; height: 7px; margin-top: 22px; overflow: hidden; }
     .progress-bar  {
       height: 100%; border-radius: 999px;
-      background: linear-gradient(90deg, #1e3a8a 0%, #0369a1 15%, #059669 30%, #16a34a 40%, #eab308 55%, #ea580c 70%, #dc2626 85%, #fef3c7 100%);
+      background: linear-gradient(90deg, #1e3a8a);
       box-shadow: 0 0 12px rgba(30,58,138,0.6);
-      transition: width 0.4s ease, box-shadow 0.4s ease;
+      transition: width 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
       width: 10%;
-      background-size: 200% 100%;
-      background-position: 0% 0%;
     }
 
     /* ── buttons ── */
@@ -371,8 +369,17 @@
     if (confidence == null) return;
     const pct = Math.round(confidence * 100);
     bar.style.width = `${pct}%`;
-    const glow = Math.min(30, pct / 2.5);
-    bar.style.boxShadow = `0 0 ${glow}px rgba(254,243,199,${pct / 100})`;
+
+    if (pct < 33) {
+      bar.style.background = 'linear-gradient(90deg, #1e3a8a)';
+      bar.style.boxShadow = '0 0 12px rgba(30,58,138,0.6)';
+    } else if (pct < 66) {
+      bar.style.background = 'linear-gradient(90deg, #1e3a8a, #059669, #eab308, #ea580c)';
+      bar.style.boxShadow = '0 0 18px rgba(234,88,12,0.8), 0 0 8px rgba(234,88,12,0.4)';
+    } else {
+      bar.style.background = 'linear-gradient(90deg, #1e3a8a, #059669, #eab308, #ea580c, #dc2626, #fef3c7)';
+      bar.style.boxShadow = '0 0 28px rgba(254,243,199,0.9), 0 0 14px rgba(220,38,38,0.8)';
+    }
   }
 
   // ── yes/no question ───────────────────────────────────────────────────
