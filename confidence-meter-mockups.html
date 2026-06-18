@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confidence Meter Options</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #e50914;
+      --red-deep: #8c0610;
+      --gold: #f5c518;
+      --ink: #0a0506;
+      --muted: #e6a6ab;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      font-family: 'Poppins', system-ui, sans-serif;
+      color: #fff;
+      background: linear-gradient(180deg, rgba(32,9,12,0.86), rgba(12,5,7,0.92));
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+    }
+    .option {
+      background: linear-gradient(180deg, rgba(32,9,12,0.86), rgba(12,5,7,0.92));
+      border: 1px solid rgba(229,9,20,0.42);
+      border-radius: 18px;
+      padding: 34px 28px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 20px 55px rgba(0,0,0,0.6);
+    }
+    .option-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--gold);
+    }
+    .option-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+      line-height: 1.4;
+    }
+
+    /* Shared card styling */
+    .card-demo {
+      background: linear-gradient(180deg, rgba(32,9,12,0.86), rgba(12,5,7,0.92));
+      border: 1px solid rgba(229,9,20,0.32);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 16px 0;
+      text-align: left;
+    }
+    .question-text {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .progress-wrap {
+      width: 100%;
+      background: rgba(255,255,255,0.08);
+      border-radius: 999px;
+      height: 7px;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--red), var(--gold));
+      box-shadow: 0 0 12px rgba(229,9,20,0.7);
+      width: 35%;
+      transition: width 0.4s ease;
+    }
+
+    /* === OPTION 1: Horizontal bar narrowing === */
+    .confidence-narrowing {
+      height: 6px;
+      background: transparent;
+      border-radius: 999px;
+      margin-top: 12px;
+      position: relative;
+      overflow: visible;
+    }
+    .narrowing-bar {
+      height: 100%;
+      background: linear-gradient(90deg, rgba(229,9,20,0.8), rgba(245,197,24,0.8));
+      border-radius: 999px;
+      box-shadow: 0 0 16px rgba(245,197,24,0.6), 0 0 8px rgba(229,9,20,0.8);
+      width: 20%;
+      margin: 0 auto;
+      transition: width 0.4s ease;
+    }
+    .narrowing-bar.mid {
+      width: 55%;
+    }
+    .narrowing-bar.near {
+      width: 100%;
+    }
+
+    /* === OPTION 2: Circular aperture === */
+    .aperture-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 12px;
+      height: 80px;
+    }
+    .aperture {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, rgba(100,150,200,0.6), rgba(70,100,150,0.8));
+      box-shadow: 0 0 20px rgba(100,150,200,0.5), 0 0 10px rgba(70,100,150,0.6), inset 0 0 10px rgba(0,0,0,0.5);
+      transition: background 0.4s ease, box-shadow 0.4s ease;
+    }
+    .aperture.mid {
+      background: radial-gradient(circle at 35% 35%, rgba(220,100,80,0.7), rgba(180,80,50,0.9));
+      box-shadow: 0 0 24px rgba(220,100,80,0.6), 0 0 12px rgba(180,80,50,0.7), inset 0 0 10px rgba(0,0,0,0.5);
+    }
+    .aperture.near {
+      background: radial-gradient(circle at 35% 35%, rgba(245,197,24,0.9), rgba(229,9,20,0.95));
+      box-shadow: 0 0 30px rgba(245,197,24,0.8), 0 0 15px rgba(229,9,20,0.9), inset 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    /* === OPTION 3: Film-strip countdown === */
+    .filmstrip-meter {
+      display: flex;
+      gap: 4px;
+      justify-content: center;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .film-frame {
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(229,9,20,0.5);
+      border-radius: 2px;
+      background: rgba(255,255,255,0.06);
+      transition: background 0.3s ease;
+    }
+    .film-frame.filled {
+      background: linear-gradient(135deg, var(--red), var(--gold));
+      border-color: var(--gold);
+      box-shadow: 0 0 8px rgba(245,197,24,0.5);
+    }
+
+    /* === Progress bar: temperature spectrum === */
+    .progress-bar.glow-shift {
+      background: linear-gradient(90deg, #1e3a8a);
+      box-shadow: 0 0 12px rgba(30,58,138,0.6);
+      transition: background 0.4s ease, box-shadow 0.4s ease;
+      width: 20% !important;
+    }
+    .progress-bar.glow-shift.mid {
+      background: linear-gradient(90deg, #1e3a8a, #059669, #eab308, #ea580c);
+      box-shadow: 0 0 18px rgba(234,88,12,0.8), 0 0 8px rgba(234,88,12,0.4);
+      width: 50% !important;
+    }
+    .progress-bar.glow-shift.near {
+      background: linear-gradient(90deg, #1e3a8a, #059669, #eab308, #ea580c, #dc2626, #fef3c7);
+      box-shadow: 0 0 28px rgba(254,243,199,0.9), 0 0 14px rgba(220,38,38,0.8);
+      width: 100% !important;
+    }
+
+    /* === Confetti === */
+    .confetti-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 10;
+    }
+    .confetti {
+      position: absolute;
+      pointer-events: none;
+      animation: fall 3s ease-in forwards;
+    }
+    @keyframes fall {
+      0% {
+        opacity: 1;
+        transform: translateY(-10px) rotateZ(0deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(100vh) rotateZ(720deg);
+      }
+    }
+    .confetti-hidden {
+      display: none;
+    }
+
+    /* Controls */
+    .controls {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    button {
+      padding: 8px 14px;
+      border: 1px solid rgba(229,9,20,0.5);
+      border-radius: 6px;
+      background: rgba(229,9,20,0.2);
+      color: var(--gold);
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    button:hover {
+      background: rgba(229,9,20,0.4);
+      border-color: var(--gold);
+    }
+    button.active {
+      background: var(--gold);
+      color: var(--ink);
+    }
+
+    .label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="confetti-container" id="confetti-container"></div>
+
+<div class="container">
+
+
+
+  <!-- APPROACH: Progress bar color shift (cool → warm) -->
+  <div class="option">
+    <div class="option-title">The Approach</div>
+    <div class="option-desc">Progress bar shifts color: blue (cold) → red/gold (warm) as genie confidence grows</div>
+
+    <div class="card-demo">
+      <div class="question-text">Is it a Hindi film?</div>
+      <div class="progress-wrap">
+        <div class="progress-bar glow-shift" id="opt4"></div>
+      </div>
+      <div class="label">Same bar, warming up with each question answered</div>
+    </div>
+
+    <div class="controls">
+      <button onclick="updateOption4('start')" class="active">Q1 (cold start)</button>
+      <button onclick="updateOption4('mid')">Q10 (warming)</button>
+      <button onclick="updateOption4('near')">Q18 (hot — close!)</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function updateOption4(state) {
+    const bar = document.getElementById('opt4');
+    bar.classList.remove('mid', 'near');
+    if (state === 'mid') bar.classList.add('mid');
+    if (state === 'near') {
+      bar.classList.add('near');
+      triggerConfetti();
+    }
+    updateButtons(event.target);
+  }
+
+  function updateButtons(btn) {
+    btn.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  function triggerConfetti() {
+    const container = document.getElementById('confetti-container');
+    const colors = ['#e50914', '#f5c518', '#eab308', '#dc2626', '#fef3c7'];
+
+    for (let i = 0; i < 50; i++) {
+      const confetti = document.createElement('div');
+      confetti.className = 'confetti';
+      confetti.style.left = Math.random() * 100 + '%';
+      confetti.style.width = Math.random() * 8 + 4 + 'px';
+      confetti.style.height = confetti.style.width;
+      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+      confetti.style.animationDelay = Math.random() * 0.3 + 's';
+
+      container.appendChild(confetti);
+    }
+
+    // Clean up after animation
+    setTimeout(() => {
+      container.innerHTML = '';
+    }, 3500);
+  }
+</script>
+
+</body>
+</html>
