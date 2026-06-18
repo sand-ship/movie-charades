@@ -135,15 +135,15 @@ def make_star_questions(movies: list[dict]) -> list["Question"]:
 
 
 QUESTIONS.extend([
-    Question("q_genre_action",   "What is the central theme? (Action)",     _genre_in("action")),
-    Question("q_genre_comedy",   "What is the central theme? (Comedy)",     _genre_in("comedy")),
-    Question("q_genre_romance",  "What is the central theme? (Romance)",    _genre_in("romance")),
-    Question("q_genre_drama",    "What is the central theme? (Drama)",      _genre_in("drama", "family")),
-    Question("q_genre_thriller", "What is the central theme? (Thriller)",   _genre_in("thriller", "crime", "mystery")),
-    Question("q_genre_scifi",    "What is the central theme? (Sci-Fi / Fantasy)", _genre_in("sci-fi", "fantasy")),
-    Question("q_genre_other",    "What is the central theme? (Other)",      _genre_in(
-        "historical", "horror", "sports", "biopic", "biography",
-        "musical", "social", "western", "war", "adventure", "spy", "tragedy")),
+    Question("q_genre_picker",        "What's the core genre?",                          lambda m: True, weight=1.0),  # Picker UI sentinel
+    Question("q_genre_action",        "Is it Action/Thriller/Adventure?",                _genre_in("action", "thriller", "adventure")),
+    Question("q_genre_comedy",        "Is it Comedy?",                                   _genre_in("comedy")),
+    Question("q_genre_romance",       "Is it Romance (Love Stories)?",                   _genre_in("romance")),
+    Question("q_genre_drama",         "Is it Drama (Personal/Family)?",                  _genre_in("drama", "family")),
+    Question("q_genre_social",        "Is it Social/Political?",                         _attr_eq("has_social_message", True)),
+    Question("q_genre_historical",    "Is it Historical/Biopic?",                        lambda m: m.get('is_historical') or m.get('is_biographical')),
+    Question("q_genre_horror",        "Is it Horror/Supernatural?",                      _attr_eq("is_horror", True)),
+    Question("q_genre_scifi",         "Is it Sci-Fi/Fantasy?",                           _attr_eq("is_sci_fi", True)),
 ])
 
 def _attr_true(attr: str) -> Callable[[dict], bool]:
@@ -436,5 +436,5 @@ QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
 LANGUAGE_QUESTION_IDS: set[str] = {'q_hindi', 'q_tamil', 'q_telugu'}
 ERA_QUESTION_IDS: set[str]      = {'q_classic', 'q_90s', 'q_2000s', 'q_2010s', 'q_2020s'}
 GENRE_QUESTION_IDS: set[str]    = {'q_genre_action', 'q_genre_comedy', 'q_genre_romance',
-                                    'q_genre_drama', 'q_genre_thriller', 'q_genre_scifi',
-                                    'q_genre_other'}
+                                    'q_genre_drama', 'q_genre_social', 'q_genre_historical',
+                                    'q_genre_horror', 'q_genre_scifi'}

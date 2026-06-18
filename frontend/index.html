@@ -281,8 +281,8 @@
 
   const LANGUAGE_IDS = new Set(['q_hindi','q_tamil','q_telugu']);
   const ERA_IDS      = new Set(['q_classic','q_90s','q_2000s','q_2010s','q_2020s']);
-  const GENRE_IDS    = new Set(['q_genre_action','q_genre_comedy','q_genre_romance',
-                                 'q_genre_drama','q_genre_thriller','q_genre_scifi','q_genre_other']);
+  const GENRE_IDS    = new Set(['q_genre_picker','q_genre_action','q_genre_comedy','q_genre_romance',
+                                 'q_genre_drama','q_genre_social','q_genre_historical','q_genre_horror','q_genre_scifi']);
 
   // Fallback options if backend returns group:null (stale server or version mismatch)
   const GROUP_OPTIONS = {
@@ -294,10 +294,14 @@
       {id:'q_2000s',label:'2000s'},{id:'q_2010s',label:'2010s'},{id:'q_2020s',label:'2020s'},
     ],
     genre: [
-      {id:'q_genre_action',label:'Action'},{id:'q_genre_comedy',label:'Comedy'},
-      {id:'q_genre_romance',label:'Romance'},{id:'q_genre_drama',label:'Drama / Family'},
-      {id:'q_genre_thriller',label:'Thriller / Crime'},{id:'q_genre_scifi',label:'Sci-Fi / Fantasy'},
-      {id:'q_genre_other',label:'Historical / Biopic / Horror / Sports'},
+      {id:'q_genre_action',label:'Action/Thriller/Adventure'},
+      {id:'q_genre_comedy',label:'Comedy'},
+      {id:'q_genre_romance',label:'Romance (Love Stories)'},
+      {id:'q_genre_drama',label:'Drama (Personal/Family)'},
+      {id:'q_genre_social',label:'Social/Political'},
+      {id:'q_genre_historical',label:'Historical/Biopic'},
+      {id:'q_genre_horror',label:'Horror/Supernatural'},
+      {id:'q_genre_scifi',label:'Sci-Fi/Fantasy'},
     ],
   };
 
@@ -433,8 +437,16 @@
         body: JSON.stringify({ session_id: state.sessionId, answers }),
       });
       handleResponse(await res.json());
+    } else if (group === 'genre' && state.questionId === 'q_genre_picker') {
+      // For genre picker: send picker question with selected genre as answer
+      const res = await fetch(`${API}/game/answer`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ session_id: state.sessionId, question_id: 'q_genre_picker', answer: chosenId }),
+      });
+      handleResponse(await res.json());
     } else {
-      // Answer "yes" to chosen — backend auto-no's the siblings
+      // For language/era pickers: answer "yes" to chosen, implicitly "no" to siblings
       const res = await fetch(`${API}/game/answer`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

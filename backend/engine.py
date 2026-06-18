@@ -103,6 +103,11 @@ class GameEngine:
         if "q_multiple_protagonists" not in asked and 2 <= non_anchor < 5:
             return QUESTION_MAP.get("q_multiple_protagonists")
 
+        # Genre picker: return it when holdoff is satisfied and no genre answered yet
+        genre_answered = bool(asked & GENRE_QUESTION_IDS)
+        if "q_genre_picker" not in asked and non_anchor >= GENRE_HOLDOFF and not genre_answered:
+            return QUESTION_MAP.get("q_genre_picker")
+
         cands = session.candidates
 
         # Genre picker joins the natural IG pool — but hold it back until we've

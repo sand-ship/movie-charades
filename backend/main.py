@@ -194,13 +194,14 @@ _ERA_OPTIONS = [
 ]
 
 _GENRE_OPTIONS = [
-    {"id": "q_genre_action",   "label": "Action"},
-    {"id": "q_genre_comedy",   "label": "Comedy"},
-    {"id": "q_genre_romance",  "label": "Romance"},
-    {"id": "q_genre_drama",    "label": "Drama / Family"},
-    {"id": "q_genre_thriller", "label": "Thriller / Crime"},
-    {"id": "q_genre_scifi",    "label": "Sci-Fi / Fantasy"},
-    {"id": "q_genre_other",    "label": "Historical / Biopic / Horror / Sports"},
+    {"id": "q_genre_action",     "label": "Action/Thriller/Adventure"},
+    {"id": "q_genre_comedy",     "label": "Comedy"},
+    {"id": "q_genre_romance",    "label": "Romance (Love Stories)"},
+    {"id": "q_genre_drama",      "label": "Drama (Personal/Family)"},
+    {"id": "q_genre_social",     "label": "Social/Political"},
+    {"id": "q_genre_historical", "label": "Historical/Biopic"},
+    {"id": "q_genre_horror",     "label": "Horror/Supernatural"},
+    {"id": "q_genre_scifi",      "label": "Sci-Fi/Fantasy"},
 ]
 
 
@@ -211,6 +212,9 @@ def _question_payload(q) -> dict:
     if q.id in ERA_QUESTION_IDS:
         return {"id": q.id, "text": "Which era was it released in?",
                 "group": "era", "options": _ERA_OPTIONS}
+    if q.id == "q_genre_picker":
+        return {"id": q.id, "text": "What's the core genre?",
+                "group": "genre", "options": _GENRE_OPTIONS}
     if q.id in GENRE_QUESTION_IDS:
         return {"id": q.id, "text": "What is the central theme?",
                 "group": "genre", "options": _GENRE_OPTIONS}
@@ -242,10 +246,21 @@ def answer_question(req: AnswerRequest):
     session = engine.get_session(req.session_id)
     if not session:
         raise HTTPException(status_code=404, detail="Session not found")
-    if req.answer not in ("yes", "no", "maybe", "dunno"):
-        raise HTTPException(status_code=422, detail="answer must be 'yes', 'no', 'maybe', or 'dunno'")
 
-    engine.apply_answer(session, req.question_id, req.answer)
+    # Handle genre picker: convert picker selection to genre answer
+    if req.question_id == "q_genre_picker":
+        # req.answer is the selected genre ID (e.g., 'q_genre_action')
+        selected_genre = req.answer
+        if selected_genre not in GENRE_QUESTION_IDS:
+            raise HTTPException(status_code=422, detail=f"Invalid genre selection: {selected_genre}")
+        # Record that this genre was selected (answers=yes)
+        engine.apply_answer(session, selected_genre, "yes")
+        # Mark picker as asked so it doesn't appear again
+        session.asked.append("q_genre_picker")
+    else:
+        if req.answer not in ("yes", "no", "maybe", "dunno"):
+            raise HTTPException(status_code=422, detail="answer must be 'yes', 'no', 'maybe', or 'dunno'")
+        engine.apply_answer(session, req.question_id, req.answer)
 
     if engine.should_guess(session):
         guesses = engine.top_guesses(session)
