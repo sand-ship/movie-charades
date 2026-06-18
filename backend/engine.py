@@ -18,7 +18,7 @@ except (FileNotFoundError, json.JSONDecodeError):
 MAX_QUESTIONS = 35   # hard ceiling for game length (raised to accommodate director Qs)
 MAX_CONSECUTIVE_ACTOR_QS = 1  # limit actor Qs to 1 in a row for breathing room (force plot after each)
 MIN_QUESTIONS = 12   # minimum non-language/era questions before guessing
-GENRE_HOLDOFF = 3    # ask at least this many plot questions before the genre picker fires
+GENRE_HOLDOFF = 0    # genre picker fires immediately after language/era for early pool narrowing
 ENDGAME_POOL = 8     # at/under this many candidates, prefer soft tropes over IG ordering
 
 # Sub-genres folded into the catch-all "Other" theme picker — asked up front to
@@ -100,13 +100,14 @@ class GameEngine:
                          if qid not in LANGUAGE_QUESTION_IDS
                          and qid not in ERA_QUESTION_IDS)
 
-        if "q_multiple_protagonists" not in asked and 2 <= non_anchor < 5:
-            return QUESTION_MAP.get("q_multiple_protagonists")
-
         # Genre picker: return it when holdoff is satisfied and no genre answered yet
+        # (With GENRE_HOLDOFF=0, this fires immediately after language/era)
         genre_answered = bool(asked & GENRE_QUESTION_IDS)
         if "q_genre_picker" not in asked and non_anchor >= GENRE_HOLDOFF and not genre_answered:
             return QUESTION_MAP.get("q_genre_picker")
+
+        if "q_multiple_protagonists" not in asked and 2 <= non_anchor < 5:
+            return QUESTION_MAP.get("q_multiple_protagonists")
 
         cands = session.candidates
 
