@@ -395,7 +395,7 @@ QUESTIONS.extend([
              _attr_true("has_patriotic_sacrifice"), weight=0.5, requires=("q_rajini", "yes")),
 
     # SRK narrative patterns (applicable across languages and actors)
-    Question("q_patriarchal_resistance", "Does the protagonist challenge rigid authority/patriarchal institution through emotion?",
+    Question("q_patriarchal_resistance", "Does emotion become the way the protagonist resists authority?",
              _attr_true("has_patriarchal_resistance"), weight=0.3),
     Question("q_male_vulnerability",     "Does the male lead's emotional breakdown become a moment of strength?",
              _attr_true("has_male_emotional_vulnerability"), weight=0.3),
