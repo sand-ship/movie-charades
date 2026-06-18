@@ -106,7 +106,7 @@ class GameEngine:
             "scifi": {"q_superpowers", "q_scifi_fantasy"},
             "action": {"q_villain", "q_revenge", "q_betrayal"},
             "romance": {"q_forbidden_love", "q_reluctant_romance", "q_love_triangle", "q_infidelity"},
-            "comedy": {"q_mass_entertainer", "q_protagonist_married", "q_rural_setting", "q_urban_setting", "q_double_role", "q_conman", "q_class_pretense"},
+            "comedy": {"q_mass_entertainer", "q_protagonist_married", "q_rural_setting", "q_urban_setting", "q_double_role", "q_conman", "q_class_pretense", "q_costar_sanjay_dutt", "q_costar_anil_kapoor", "q_costar_karisma_kapoor"},
             "drama": {"q_patriarchal_resistance", "q_social", "q_male_vulnerability", "q_parent_child", "q_protagonist_married"},
             "horror": {"q_horror"},
         }

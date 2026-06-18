@@ -69,6 +69,9 @@ QUESTIONS: list[Question] = [
     Question("q_double_role",    "Does the lead play a double role or two characters?", _attr_eq("has_double_role", True)),
     Question("q_conman",         "Does the plot involve conmen or con artists?",      _attr_eq("has_conman", True)),
     Question("q_class_pretense", "Does the protagonist pretend to be from a different class/background?", _attr_eq("has_class_pretense", True)),
+    Question("q_costar_sanjay_dutt", "Does Sanjay Dutt appear in the film?", _actor_appears("Sanjay Dutt")),
+    Question("q_costar_anil_kapoor", "Does Anil Kapoor appear in the film?", _actor_appears("Anil Kapoor")),
+    Question("q_costar_karisma_kapoor", "Does Karisma Kapoor appear in the film?", _actor_appears("Karisma Kapoor")),
 ]
 
 def _in(attr: str, *values: str) -> Callable[[dict], bool]:
