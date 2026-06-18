@@ -431,8 +431,11 @@
     const pct = Math.round(confidence * 100);
     bar.style.width = `${pct}%`;
 
-    if (pct < 33) {
-      bar.style.background = 'linear-gradient(90deg, #1e3a8a)';
+    if (pct === 0) {
+      bar.style.background = '#1e3a8a';
+      bar.style.boxShadow = 'none';
+    } else if (pct < 33) {
+      bar.style.background = '#1e3a8a';
       bar.style.boxShadow = '0 0 12px rgba(30,58,138,0.6)';
     } else if (pct < 66) {
       bar.style.background = 'linear-gradient(90deg, #1e3a8a, #059669, #eab308, #ea580c)';
