@@ -145,13 +145,12 @@ class GameEngine:
             splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
         # ACTOR GUARD: Check first, before all other logic
+        # Reserved for endgame (Q25+) to avoid early exhaustion
         can_ask_actors = False
         if "q_multiple_protagonists" in session.answers:
             can_ask_actors = True
-        if len(non_anchor_qs) >= 5 and len(cands) > 15:
-            can_ask_actors = True
-        # ESCALATION: Force actors/directors after Q20 if pool still large
-        if len(non_anchor_qs) >= 20 and len(cands) > 5:
+        # Only unlock actors after Q20 if pool becomes very small (< 10)
+        if len(non_anchor_qs) >= 20 and len(cands) <= 10:
             can_ask_actors = True
         if len(non_anchor_qs) >= 5:
             first_five = non_anchor_qs[:5]
@@ -316,10 +315,11 @@ class GameEngine:
             return max(non_persons, key=lambda q: self._information_gain(cands, q))
 
         # Only reach actor/director questions if generic questions exhausted AND (threshold met OR after Q15)
-        # BUT: if we've asked 28+ questions and pool is still large, don't give up—force actors
+        # DESPERATE ESCALATION: After Q30, force actors/directors regardless of pool size
         if not can_ask_actors and not directors_enabled:
-            if len(non_anchor_qs) >= 28 and len(cands) > 3:
-                can_ask_actors = True  # Force escalation before hitting Q30 ceiling
+            if len(non_anchor_qs) >= 30:
+                can_ask_actors = True  # Desperate: ask actors in endgame
+                directors_enabled = True  # Also enable directors
             else:
                 return None  # Give up rather than ask actor Qs without threshold
         consecutive = 0
