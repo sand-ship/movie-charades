@@ -62,6 +62,10 @@ QUESTIONS: list[Question] = [
     Question("q_love_triangle",  "Does it feature a love triangle?",                  _attr_eq("has_love_triangle", True)),
     Question("q_revenge",        "Is revenge a central driving force in the plot?",   _attr_eq("has_revenge_plot", True)),
     Question("q_forbidden_love", "Is the romance opposed by family or society?",      _attr_eq("has_forbidden_love", True)),
+    Question("q_protagonist_married", "Is the protagonist married?",                  _attr_eq("is_protagonist_married", True)),
+    Question("q_infidelity",     "Does it involve infidelity or an affair?",          _attr_eq("has_infidelity", True)),
+    Question("q_rural_setting",  "Is it set in a rural area?",                        _attr_eq("has_rural_setting", True)),
+    Question("q_urban_setting",  "Is the story set in a city or metropolitan area?",  _attr_eq("has_urban_setting", True)),
 ]
 
 def _in(attr: str, *values: str) -> Callable[[dict], bool]:

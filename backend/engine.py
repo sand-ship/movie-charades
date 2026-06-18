@@ -105,9 +105,9 @@ class GameEngine:
         genre_to_qids = {
             "scifi": {"q_superpowers", "q_scifi_fantasy"},
             "action": {"q_villain", "q_revenge", "q_betrayal"},
-            "romance": {"q_forbidden_love", "q_reluctant_romance", "q_love_triangle"},
-            "comedy": {"q_mass_entertainer"},
-            "drama": {"q_patriarchal_resistance", "q_social", "q_male_vulnerability", "q_parent_child"},
+            "romance": {"q_forbidden_love", "q_reluctant_romance", "q_love_triangle", "q_infidelity"},
+            "comedy": {"q_mass_entertainer", "q_protagonist_married", "q_rural_setting", "q_urban_setting"},
+            "drama": {"q_patriarchal_resistance", "q_social", "q_male_vulnerability", "q_parent_child", "q_protagonist_married"},
             "horror": {"q_horror"},
         }
 
