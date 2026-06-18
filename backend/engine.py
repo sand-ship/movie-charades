@@ -41,7 +41,7 @@ class Session:
         self.id = str(uuid.uuid4())
         self.candidates: list[dict] = list(movies)
         self.asked: list[str] = []
-        self.answers: dict[str, str] = {}  # question_id -> yes/no/dunno
+        self.answers: dict[str, str] = {}  # question_id -> yes/no/maybe
         self.history: list[list[str]] = []  # per-turn qids added (for Back/undo)
         self.last_guesses: list[dict] = []  # most recent top_guesses() output
 
@@ -153,12 +153,12 @@ class GameEngine:
         # ACTOR UNLOCK: Relax gating for regional cinema where actors discriminate well
         can_ask_actors = False
 
-        # Unlock actors at Q6+ if: 3+ NOs (rare film) OR 2-3 MAYBEs (ambiguous film)
+        # Unlock actors at Q6+ if: 3+ NOs (rare film) OR 2-3 unsures (ambiguous film)
         if len(non_anchor_qs) >= 5:
             first_five = non_anchor_qs[:5]
             nos = sum(1 for qid in first_five if session.answers.get(qid) == "no")
-            maybes = sum(1 for qid in first_five if session.answers.get(qid) == "maybe")
-            if nos >= 3 or 2 <= maybes <= 3:
+            unsures = sum(1 for qid in first_five if session.answers.get(qid) == "maybe")
+            if nos >= 3 or 2 <= unsures <= 3:
                 can_ask_actors = True
 
         # Force actor at Q10 if not asked yet
@@ -211,7 +211,7 @@ class GameEngine:
                     if director_music:
                         return max(director_music, key=lambda q: self._information_gain(cands, q))
 
-        # If the last answer was "maybe", ask a confirmation question to convert to yes/no
+        # If the last answer was "unsure", ask a confirmation question to convert to yes/no
         # This pins down uncertain answers and reduces candidate pool drift
         if session.asked:
             last_qid = session.asked[-1]
@@ -281,7 +281,7 @@ class GameEngine:
                 return max(tropes, key=lambda q: self._information_gain(cands, q))
 
         # Guard: Actor/director questions only when generic questions have failed.
-        # Only ask actor Qs if: (first 5 Qs all no) OR (5+ of first 10 are maybe/dunno)
+        # Only ask actor Qs if: (first 5 Qs all no) OR (5+ of first 10 are unsure)
         # EXCEPTION: After Q25, enable director/music questions for disambiguation
         non_anchor_qs = [qid for qid in session.asked
                         if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS]
@@ -427,16 +427,14 @@ class GameEngine:
                 or getattr(question, "weight", 1.0) < 1.0)
 
     def apply_answer(self, session: Session, question_id: str, answer: str) -> None:
-        """answer: 'yes' | 'no' | 'maybe' | 'dunno'
-        'dunno' is tracked as asked but not scored (doesn't affect candidate filtering).
-        'maybe' is recorded and scored as weak 'yes'."""
+        """answer: 'yes' | 'no' | 'unsure'
+        'unsure' is recorded and scored as weak signal (0.5x weight compared to hard yes/no)."""
         added = [question_id]
         session.asked.append(question_id)
 
-        # Dunno: mark as asked (so we don't ask again) but don't score it
-        if answer == "dunno":
-            session.history.append(added)
-            return
+        # Map 'unsure' to 'maybe' for internal consistency with scoring logic
+        if answer == "unsure":
+            answer = "maybe"
 
         session.answers[question_id] = answer
 
@@ -547,9 +545,9 @@ class GameEngine:
         return result
 
     def _fit(self, movie: dict, session: Session) -> tuple[int, int]:
-        """(agreements, answered) over substantive yes/no/maybe answers — excludes
+        """(agreements, answered) over substantive yes/no/unsure answers — excludes
         the language/era/genre pickers, so confidence reflects discriminating questions.
-        'maybe' answers count as half-agreement when they match."""
+        'unsure' answers count as half-agreement when they match."""
         group = LANGUAGE_QUESTION_IDS | ERA_QUESTION_IDS | GENRE_QUESTION_IDS
         agree = answered = 0
         for qid, ans in session.answers.items():

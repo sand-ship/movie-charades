@@ -54,7 +54,7 @@ def index():
 class AnswerRequest(BaseModel):
     session_id: str
     question_id: str
-    answer: str  # "yes" | "no" | "maybe" | "dunno"
+    answer: str  # "yes" | "no" | "unsure"
 
 
 class BatchAnswerRequest(BaseModel):
@@ -258,8 +258,8 @@ def answer_question(req: AnswerRequest):
         # Mark picker as asked so it doesn't appear again
         session.asked.append("q_genre_picker")
     else:
-        if req.answer not in ("yes", "no", "maybe", "dunno"):
-            raise HTTPException(status_code=422, detail="answer must be 'yes', 'no', 'maybe', or 'dunno'")
+        if req.answer not in ("yes", "no", "unsure"):
+            raise HTTPException(status_code=422, detail="answer must be 'yes', 'no', or 'unsure'")
         engine.apply_answer(session, req.question_id, req.answer)
 
     if engine.should_guess(session):

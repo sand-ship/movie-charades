@@ -110,10 +110,9 @@
     button:disabled { opacity: 0.4; cursor: default; }
     button:not(:disabled):hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.55); }
 
-    .btn-yes   { background: linear-gradient(135deg, #1db954, #11823c); }
-    .btn-no    { background: linear-gradient(135deg, var(--red), var(--red-deep)); }
-    .btn-maybe { background: linear-gradient(135deg, #f59e0b, #d97706); }
-    .btn-dunno { background: rgba(255,255,255,0.12); color: var(--muted); }
+    .btn-yes    { background: linear-gradient(135deg, #1db954, #11823c); }
+    .btn-no     { background: linear-gradient(135deg, var(--red), var(--red-deep)); }
+    .btn-unsure { background: linear-gradient(135deg, #f59e0b, #d97706); }
 
     .btn-primary {
       flex: unset; max-width: 280px; padding: 18px 30px;
@@ -221,10 +220,9 @@
       </div>
     </div>
     <div class="btn-row">
-      <button class="btn-yes"   onclick="answer('yes')"   id="btn-yes">✅ Yes</button>
-      <button class="btn-no"    onclick="answer('no')"    id="btn-no">❌ No</button>
-      <button class="btn-maybe" onclick="answer('maybe')" id="btn-maybe">🤔 Maybe</button>
-      <button class="btn-dunno" onclick="answer('dunno')" id="btn-dunno">🤷 Don't know</button>
+      <button class="btn-yes"    onclick="answer('yes')"     id="btn-yes">✅ Yes</button>
+      <button class="btn-no"     onclick="answer('no')"      id="btn-no">❌ No</button>
+      <button class="btn-unsure" onclick="answer('unsure')"  id="btn-unsure">🤔 Unsure</button>
     </div>
     <button class="btn-back hidden" id="back-question" onclick="goBack()">← Back · change my last answer</button>
     <p class="info" id="candidates-info"></p>
@@ -320,7 +318,7 @@
   }
 
   function setYesNoEnabled(enabled) {
-    ['btn-yes','btn-no','btn-maybe','btn-dunno'].forEach(id =>
+    ['btn-yes','btn-no','btn-unsure'].forEach(id =>
       document.getElementById(id).disabled = !enabled
     );
   }
