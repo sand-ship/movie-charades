@@ -195,9 +195,14 @@
     .logo-img:hover { opacity: 1; }
     .dots::after { content: ''; animation: dots 1.2s steps(3, end) infinite; }
     @keyframes dots { 0% { content: ''; } 33% { content: '.'; } 66% { content: '..'; } 100% { content: '...'; } }
+
+    /* ── confetti ── */
+    .confetti-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 999; }
+    .confetti { position: fixed; pointer-events: none; }
   </style>
 </head>
 <body>
+<div class="confetti-container" id="confetti-container"></div>
 <div class="bg">
   <div class="reel r1"></div>
   <div class="reel r2"></div>
@@ -315,6 +320,62 @@
     if (ERA_IDS.has(q.id))      return 'era';
     if (GENRE_IDS.has(q.id))    return 'genre';
     return null;
+  }
+
+  function triggerConfetti() {
+    const container = document.getElementById('confetti-container');
+    const yesBtn = document.getElementById('guess-yes');
+    const rect = yesBtn.getBoundingClientRect();
+    const startX = rect.left + rect.width / 2;
+    const startY = rect.top + rect.height / 2;
+
+    const colors = ['#e50914', '#f5c518', '#1db954', '#eab308', '#dc2626', '#fef3c7'];
+    const pieces = [];
+
+    for (let i = 0; i < 60; i++) {
+      const confetti = document.createElement('div');
+      confetti.className = 'confetti';
+      const angle = (Math.random() * Math.PI * 2);
+      const velocity = 5 + Math.random() * 8;
+      const vx = Math.cos(angle) * velocity;
+      const vy = Math.sin(angle) * velocity - 3;
+      const gravity = 0.2;
+
+      confetti.style.left = startX + 'px';
+      confetti.style.top = startY + 'px';
+      confetti.style.width = (Math.random() * 8 + 4) + 'px';
+      confetti.style.height = confetti.style.width;
+      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+      confetti.style.position = 'fixed';
+
+      container.appendChild(confetti);
+      pieces.push({ el: confetti, x: startX, y: startY, vx, vy, life: 2500, gravity });
+    }
+
+    const start = Date.now();
+    const animate = () => {
+      const now = Date.now();
+      const dt = (now - start) / 1000;
+
+      pieces.forEach(p => {
+        if (p.life <= 0) return;
+        p.vy += p.gravity;
+        p.x += p.vx;
+        p.y += p.vy;
+        p.life -= 16;
+        const alpha = Math.max(0, p.life / 2500);
+
+        p.el.style.left = p.x + 'px';
+        p.el.style.top = p.y + 'px';
+        p.el.style.opacity = alpha;
+        p.el.style.transform = `rotateZ(${dt * 720}deg) scale(${alpha})`;
+      });
+
+      if (pieces.some(p => p.life > 0)) requestAnimationFrame(animate);
+      else container.innerHTML = '';
+    };
+    animate();
   }
 
   function show(screenId) {
@@ -503,6 +564,7 @@
 
   // player says it's RIGHT
   function guessYes() {
+    triggerConfetti();
     const g = guessRound.list[guessRound.idx];
     sendFeedback(true, g.id);
     document.getElementById('stumper-box').classList.add('hidden');
