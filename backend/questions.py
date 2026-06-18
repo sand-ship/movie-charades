@@ -66,6 +66,9 @@ QUESTIONS: list[Question] = [
     Question("q_infidelity",     "Does it involve infidelity or an affair?",          _attr_eq("has_infidelity", True)),
     Question("q_rural_setting",  "Is it set in a rural area?",                        _attr_eq("has_rural_setting", True)),
     Question("q_urban_setting",  "Is the story set in a city or metropolitan area?",  _attr_eq("has_urban_setting", True)),
+    Question("q_double_role",    "Does the lead play a double role or two characters?", _attr_eq("has_double_role", True)),
+    Question("q_conman",         "Does the plot involve conmen or con artists?",      _attr_eq("has_conman", True)),
+    Question("q_class_pretense", "Does the protagonist pretend to be from a different class/background?", _attr_eq("has_class_pretense", True)),
 ]
 
 def _in(attr: str, *values: str) -> Callable[[dict], bool]:
