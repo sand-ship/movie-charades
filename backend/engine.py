@@ -148,7 +148,7 @@ class GameEngine:
         can_ask_actors = False
         if "q_multiple_protagonists" in session.answers:
             can_ask_actors = True
-        if len(non_anchor_qs) >= 5 and len(cands) > 50:
+        if len(non_anchor_qs) >= 5 and len(cands) > 15:
             can_ask_actors = True
         if len(non_anchor_qs) >= 5:
             first_five = non_anchor_qs[:5]
@@ -280,6 +280,18 @@ class GameEngine:
             directors_enabled = False
             non_persons = [q for q in splitting
                           if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))]
+
+        # Actor discrimination enabled early (Q5+, 15+ candidates)?
+        # If actors don't split the pool, still ask them for direct identification.
+        # This handles cases where pool is already narrowed by generic questions.
+        if can_ask_actors:
+            actors_in_splitting = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
+            if actors_in_splitting:
+                return max(actors_in_splitting, key=lambda q: self._information_gain(cands, q))
+            # If no actors split, ask ANY unanswered actor question (direct identification)
+            all_actors = [q for q in unanswered if q.id.startswith(("q_actor_", "q_actress_"))]
+            if all_actors:
+                return max(all_actors, key=lambda q: self._information_gain(cands, q))
 
         # Prefer generic questions before discriminating fields unlocked
         if non_persons:
