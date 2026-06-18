@@ -46,7 +46,7 @@ QUESTIONS: list[Question] = [
     Question("q_strict_antagonist","Is the main conflict driven by a strict but well-meaning character\n(overprotective parent/sibling, authority figure) rather than a villain?",
              _attr_eq("has_strict_antagonist", True), requires=("q_villain", "no")),
     Question("q_songs",     "Are songs/music a key part of the film?",          _attr_eq("has_songs", True)),
-    Question("q_female",    "Does it have a female protagonist?",               _attr_eq("lead_gender", "female")),
+    Question("q_female",    "Is the main character female?",                    _attr_eq("lead_gender", "female")),
     Question("q_social",    "Does it carry a strong social message?",           _attr_eq("has_social_message", True)),
     Question("q_true",      "Is it based on a true story?",                     _attr_eq("is_based_on_true_story", True)),
     Question("q_franchise", "Is it part of a series or franchise?",             _attr_eq("is_franchise", True)),
