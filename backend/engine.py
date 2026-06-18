@@ -150,6 +150,9 @@ class GameEngine:
             can_ask_actors = True
         if len(non_anchor_qs) >= 5 and len(cands) > 15:
             can_ask_actors = True
+        # ESCALATION: Force actors/directors after Q20 if pool still large
+        if len(non_anchor_qs) >= 20 and len(cands) > 5:
+            can_ask_actors = True
         if len(non_anchor_qs) >= 5:
             first_five = non_anchor_qs[:5]
             if sum(1 for qid in first_five if session.answers.get(qid) == "no") >= 3:
@@ -207,6 +210,7 @@ class GameEngine:
             last_qid = session.asked[-1]
             last_ans = session.answers.get(last_qid)
             if last_ans == "maybe":
+                # Ask clarifying questions specifically for the uncertain attribute
                 confirm = [q for q in splitting
                           if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))
                           and q.id not in GENRE_QUESTION_IDS
@@ -228,10 +232,15 @@ class GameEngine:
                     confirm = lang_specific + confirm if lang_specific else confirm
 
                 if confirm:
-                    # Prefer questions that align with the maybe-answer
+                    # Prefer questions that align with the maybe-answer to push toward yes/no
                     aligned = [q for q in confirm if q.evaluate(cands[0]) if len(cands) > 0]
                     pool = aligned if aligned else confirm
                     return max(pool, key=lambda q: self._information_gain(cands, q))
+                # If no follow-up clarification possible, force actor question to break tie
+                if can_ask_actors:
+                    all_actors = [q for q in unanswered if q.id.startswith(("q_actor_", "q_actress_"))]
+                    if all_actors:
+                        return max(all_actors, key=lambda q: self._information_gain(cands, q))
 
         # When pool == 1 and we haven't hit the minimum yet, ask confirming
         # questions — builds suspense, lets the player verify before the reveal.
@@ -270,9 +279,9 @@ class GameEngine:
         non_anchor_qs = [qid for qid in session.asked
                         if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS]
 
-        # After 25 questions, director/actress/music questions become available
-        # (actress is more memorable to players than music director)
-        if len(non_anchor_qs) >= 25:
+        # After 15 questions, director/actress/music questions become available
+        # (earlier than Q25 to ensure escalation if pool still large)
+        if len(non_anchor_qs) >= 15:
             directors_enabled = True
             non_persons = [q for q in splitting
                           if not q.id.startswith(("q_actor_",))]  # Keep q_actress_, q_dir_, q_music_
@@ -297,9 +306,13 @@ class GameEngine:
         if non_persons:
             return max(non_persons, key=lambda q: self._information_gain(cands, q))
 
-        # Only reach actor/director questions if generic questions exhausted AND (threshold met OR after Q25)
+        # Only reach actor/director questions if generic questions exhausted AND (threshold met OR after Q15)
+        # BUT: if we've asked 28+ questions and pool is still large, don't give up—force actors
         if not can_ask_actors and not directors_enabled:
-            return None  # Give up rather than ask actor Qs without threshold
+            if len(non_anchor_qs) >= 28 and len(cands) > 3:
+                can_ask_actors = True  # Force escalation before hitting Q30 ceiling
+            else:
+                return None  # Give up rather than ask actor Qs without threshold
         consecutive = 0
         for qid in session.asked[::-1]:
             if qid.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_")):

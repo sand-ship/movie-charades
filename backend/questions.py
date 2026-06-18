@@ -86,28 +86,49 @@ def _genre_in(*tokens: str) -> Callable[[dict], bool]:
 
 
 def make_star_questions(movies: list[dict]) -> list["Question"]:
-    """Generate actor/director/music questions for anyone meeting the min-film threshold."""
+    """Generate actor/director/music questions for anyone meeting the min-film threshold.
+    For Telugu/Tamil/Kannada, use lower thresholds (8+ films) for top regional actors."""
     from collections import Counter
     _SKIP = {"", "n/a", "na", "unknown", "none"}
     actors    = Counter(m['lead_actor']      for m in movies if m.get('lead_actor'))
     actresses = Counter(m['lead_actress']    for m in movies if m.get('lead_actress'))
     directors = Counter(m['director']        for m in movies if m.get('director'))
     music     = Counter(m['music_director']  for m in movies if m.get('music_director'))
+
+    # Identify language distribution
+    language_films = Counter(m.get('language') for m in movies if m.get('language'))
+    has_regional = 'Telugu' in language_films or 'Tamil' in language_films or 'Kannada' in language_films
+
     qs = []
     for name, n in actors.items():
-        if n >= 15 and name.strip().lower() not in _SKIP:
+        if name.strip().lower() in _SKIP:
+            continue
+        # Regional threshold (8+) if we have Telugu/Tamil/Kannada films, else global (15+)
+        threshold = 8 if has_regional else 15
+        if n >= threshold:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
             qs.append(Question(f"q_actor_{safe}", f"Does it star {name}?", _actor_appears(name)))
+
     for name, n in actresses.items():
-        if n >= 15 and name.strip().lower() not in _SKIP:
+        if name.strip().lower() in _SKIP:
+            continue
+        threshold = 8 if has_regional else 15
+        if n >= threshold:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
             qs.append(Question(f"q_actress_{safe}", f"Does it star the actress {name}?", _actor_appears(name)))
+
     for name, n in directors.items():
-        if n >= 2 and name.strip().lower() not in _SKIP:
+        if name.strip().lower() in _SKIP:
+            continue
+        # Lower director threshold (1+ instead of 2+) for more discrimination
+        if n >= 1:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
             qs.append(Question(f"q_dir_{safe}", f"Is it directed by {name}?", _in('director', name)))
+
     for name, n in music.items():
-        if n >= 8 and name.strip().lower() not in _SKIP:
+        if name.strip().lower() in _SKIP:
+            continue
+        if n >= 8:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
             qs.append(Question(f"q_music_{safe}", f"Is the music by {name}?", _in('music_director', name)))
     return qs
