@@ -16,7 +16,7 @@ except (FileNotFoundError, json.JSONDecodeError):
     ENGINE_HINTS = {}
 
 MAX_QUESTIONS = 35   # hard ceiling for game length (raised to accommodate director Qs)
-MAX_CONSECUTIVE_ACTOR_QS = 2  # limit actor Qs to 2 in a row to avoid battery effect
+MAX_CONSECUTIVE_ACTOR_QS = 1  # limit actor Qs to 1 in a row for breathing room (force plot after each)
 MIN_QUESTIONS = 12   # minimum non-language/era questions before guessing
 GENRE_HOLDOFF = 3    # ask at least this many plot questions before the genre picker fires
 ENDGAME_POOL = 8     # at/under this many candidates, prefer soft tropes over IG ordering
@@ -291,16 +291,25 @@ class GameEngine:
                           if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))]
 
         # Actor discrimination enabled early (Q5+, 15+ candidates)?
-        # If actors don't split the pool, still ask them for direct identification.
-        # This handles cases where pool is already narrowed by generic questions.
+        # But respect consecutive actor limit (breathe with plot questions between)
         if can_ask_actors:
-            actors_in_splitting = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
-            if actors_in_splitting:
-                return max(actors_in_splitting, key=lambda q: self._information_gain(cands, q))
-            # If no actors split, ask ANY unanswered actor question (direct identification)
-            all_actors = [q for q in unanswered if q.id.startswith(("q_actor_", "q_actress_"))]
-            if all_actors:
-                return max(all_actors, key=lambda q: self._information_gain(cands, q))
+            # Check consecutive actor limit BEFORE asking actors
+            consecutive = 0
+            for qid in session.asked[::-1]:
+                if qid.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_")):
+                    consecutive += 1
+                else:
+                    break
+
+            # Only ask actor if not at consecutive limit
+            if consecutive < MAX_CONSECUTIVE_ACTOR_QS:
+                actors_in_splitting = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
+                if actors_in_splitting:
+                    return max(actors_in_splitting, key=lambda q: self._information_gain(cands, q))
+                # If no actors split, ask ANY unanswered actor question (direct identification)
+                all_actors = [q for q in unanswered if q.id.startswith(("q_actor_", "q_actress_"))]
+                if all_actors:
+                    return max(all_actors, key=lambda q: self._information_gain(cands, q))
 
         # Prefer generic questions before discriminating fields unlocked
         if non_persons:
