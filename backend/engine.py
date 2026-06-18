@@ -144,9 +144,16 @@ class GameEngine:
         elif current_phase == 1:  # Phase 2: actress/director only (no music yet)
             splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
-        # ACTOR GUARD: Reserved for endgame (Q30+) to avoid early exhaustion
-        # DO NOT unlock actors early - wait for desperate escalation at Q30
+        # ACTOR GUARD: Available by Q5-10 for distinctive films, but not aggressively
         can_ask_actors = False
+
+        # Unlock actors EARLY (Q5+) ONLY for very rare/distinctive films:
+        # Condition: First 5 questions have 3+ "NO" answers (film is uncommon)
+        if len(non_anchor_qs) >= 5:
+            first_five = non_anchor_qs[:5]
+            if sum(1 for qid in first_five if session.answers.get(qid) == "no") >= 3:
+                # Film is rare/distinctive → actors can help identify it
+                can_ask_actors = True
 
 
         # After person question YES, suppress all person Qs for 1-2 turns for breathing room
