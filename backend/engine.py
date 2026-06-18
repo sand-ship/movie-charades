@@ -80,6 +80,43 @@ class GameEngine:
             # Multiple requirements (list): OR logic - any condition met = available
             return any(answered.get(cond[0]) == cond[1] for cond in question.requires)
 
+    def _get_established_genres(self, session: Session) -> set[str]:
+        """Return genres the player has already confirmed (via YES answers to genre Qs)."""
+        genres = set()
+        if session.answers.get("q_genre_scifi") == "yes":
+            genres.add("scifi")
+        if session.answers.get("q_genre_action") == "yes":
+            genres.add("action")
+        if session.answers.get("q_genre_romance") == "yes":
+            genres.add("romance")
+        if session.answers.get("q_genre_comedy") == "yes":
+            genres.add("comedy")
+        if session.answers.get("q_genre_drama") == "yes":
+            genres.add("drama")
+        if session.answers.get("q_genre_horror") == "yes":
+            genres.add("horror")
+        return genres
+
+    def _get_genre_aligned_questions(self, genres: set[str], unanswered: list[Question]) -> list[Question]:
+        """Return questions aligned to the established genres."""
+        if not genres:
+            return []
+
+        genre_to_qids = {
+            "scifi": {"q_superpowers", "q_scifi_fantasy"},
+            "action": {"q_villain", "q_revenge"},
+            "romance": {"q_forbidden_love", "q_reluctant_romance"},
+            "comedy": {"q_mass_entertainer"},
+            "drama": {"q_patriarchal_resistance", "q_social", "q_male_vulnerability"},
+            "horror": {"q_horror"},
+        }
+
+        aligned_qids = set()
+        for genre in genres:
+            aligned_qids.update(genre_to_qids.get(genre, set()))
+
+        return [q for q in unanswered if q.id in aligned_qids]
+
     # ── core algorithm ───────────────────────────────────────────────────
 
     def next_question(self, session: Session) -> Optional[Question]:
@@ -138,6 +175,14 @@ class GameEngine:
 
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
+
+        # Genre-aware prioritization: after genre is established, ask genre-aligned questions
+        established_genres = self._get_established_genres(session)
+        if established_genres and len(session.asked) < 20:  # Early/mid game
+            aligned = self._get_genre_aligned_questions(established_genres, splitting)
+            if aligned:
+                # Ask the highest-IG genre question
+                return max(aligned, key=lambda q: self._information_gain(cands, q))
 
         # Enforce phase gating: restrict discriminating questions by phase
         # Phase 1 (Q1-10): Actor only | Phase 2 (Q10-20): Actress/Director | Phase 3 (Q20+): Music
