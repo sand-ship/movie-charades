@@ -233,8 +233,6 @@ QUESTIONS.extend([
              _attr_true("has_gangster_world"), weight=0.3),
     Question("q_slums",         "Is the film primarily set in slums or very poor urban areas?",
              _attr_true("is_set_in_slums"), weight=0.3),
-    Question("q_rural_urban",   "Does the film explore tension between rural and urban life?",
-             _attr_true("has_rural_vs_urban"), weight=0.3),
     Question("q_brotherhood",   "Is male friendship or brotherhood the central emotional thread?",
              _attr_true("has_brothers_in_arms"), weight=0.3),
     Question("q_enemy_friend",  "Does an enemy become a friend (or a friend become an enemy)?",
