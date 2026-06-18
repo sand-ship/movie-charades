@@ -144,22 +144,9 @@ class GameEngine:
         elif current_phase == 1:  # Phase 2: actress/director only (no music yet)
             splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
-        # ACTOR GUARD: Check first, before all other logic
-        # Reserved for endgame (Q25+) to avoid early exhaustion
+        # ACTOR GUARD: Reserved for endgame (Q30+) to avoid early exhaustion
+        # DO NOT unlock actors early - wait for desperate escalation at Q30
         can_ask_actors = False
-        if "q_multiple_protagonists" in session.answers:
-            can_ask_actors = True
-        # Only unlock actors after Q20 if pool becomes very small (< 10)
-        if len(non_anchor_qs) >= 20 and len(cands) <= 10:
-            can_ask_actors = True
-        if len(non_anchor_qs) >= 5:
-            first_five = non_anchor_qs[:5]
-            if sum(1 for qid in first_five if session.answers.get(qid) == "no") >= 3:
-                can_ask_actors = True
-            first_ten = non_anchor_qs[:10]
-            uncertain = sum(1 for qid in first_ten if session.answers.get(qid) in ("maybe", "dunno"))
-            if uncertain >= 3:
-                can_ask_actors = True
 
 
         # After person question YES, suppress all person Qs for 1-2 turns for breathing room
