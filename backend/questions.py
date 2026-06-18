@@ -32,6 +32,18 @@ def _has_multiple_protagonists(m: dict) -> bool:
     return len(lead_actors) >= 2
 
 
+def _in(attr: str, *values: str) -> Callable[[dict], bool]:
+    return lambda m: m.get(attr) in values
+
+
+def _actor_appears(name: str) -> Callable[[dict], bool]:
+    """Check if actor/actress is a lead (stars in film, not just cameo/supporting)."""
+    return lambda m: (m.get('lead_actor') == name or
+                     m.get('lead_actress') == name or
+                     name in (m.get('lead_actors') or []) or
+                     name in (m.get('lead_actresses') or []))
+
+
 QUESTIONS: list[Question] = [
     Question("q_hindi",     "Is it a Hindi film?",                              _attr_eq("language", "Hindi")),
     Question("q_tamil",     "Is it a Tamil film?",                              _attr_eq("language", "Tamil")),
@@ -73,16 +85,6 @@ QUESTIONS: list[Question] = [
     Question("q_costar_anil_kapoor", "Does Anil Kapoor appear in the film?", _actor_appears("Anil Kapoor")),
     Question("q_costar_karisma_kapoor", "Does Karisma Kapoor appear in the film?", _actor_appears("Karisma Kapoor")),
 ]
-
-def _in(attr: str, *values: str) -> Callable[[dict], bool]:
-    return lambda m: m.get(attr) in values
-
-def _actor_appears(name: str) -> Callable[[dict], bool]:
-    """Check if actor/actress is a lead (stars in film, not just cameo/supporting)."""
-    return lambda m: (m.get('lead_actor') == name or
-                     m.get('lead_actress') == name or
-                     name in (m.get('lead_actors') or []) or
-                     name in (m.get('lead_actresses') or []))
 
 def _genre_in(*tokens: str) -> Callable[[dict], bool]:
     """Match a theme against ANY of a movie's genres (multi-genre films
