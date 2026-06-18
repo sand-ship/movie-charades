@@ -98,16 +98,16 @@ class GameEngine:
         return genres
 
     def _get_genre_aligned_questions(self, genres: set[str], unanswered: list[Question]) -> list[Question]:
-        """Return questions aligned to the established genres."""
+        """Return questions aligned to the established genres (primary + secondary)."""
         if not genres:
             return []
 
         genre_to_qids = {
             "scifi": {"q_superpowers", "q_scifi_fantasy"},
-            "action": {"q_villain", "q_revenge"},
-            "romance": {"q_forbidden_love", "q_reluctant_romance"},
+            "action": {"q_villain", "q_revenge", "q_betrayal"},
+            "romance": {"q_forbidden_love", "q_reluctant_romance", "q_love_triangle"},
             "comedy": {"q_mass_entertainer"},
-            "drama": {"q_patriarchal_resistance", "q_social", "q_male_vulnerability"},
+            "drama": {"q_patriarchal_resistance", "q_social", "q_male_vulnerability", "q_parent_child"},
             "horror": {"q_horror"},
         }
 
@@ -177,11 +177,13 @@ class GameEngine:
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
 
         # Genre-aware prioritization: after genre is established, ask genre-aligned questions
+        # Cycle through all confirmed genres (primary + secondary), not just primary
         established_genres = self._get_established_genres(session)
-        if established_genres and len(session.asked) < 20:  # Early/mid game
+        if established_genres and len(session.asked) < 25:  # Early/mid game (extended to 25 for more coverage)
             aligned = self._get_genre_aligned_questions(established_genres, splitting)
             if aligned:
                 # Ask the highest-IG genre question
+                # This cycles through all confirmed genres, so romance, action, drama get asked too
                 return max(aligned, key=lambda q: self._information_gain(cands, q))
 
         # Enforce phase gating: restrict discriminating questions by phase
