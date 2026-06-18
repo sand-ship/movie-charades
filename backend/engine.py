@@ -176,15 +176,33 @@ class GameEngine:
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
 
-        # Genre-aware prioritization: after genre is established, ask genre-aligned questions
-        # Cycle through all confirmed genres (primary + secondary), not just primary
+        # Genre-aware prioritization: primary → secondary → primary → generic → discriminating
         established_genres = self._get_established_genres(session)
-        if established_genres and len(session.asked) < 25:  # Early/mid game (extended to 25 for more coverage)
-            aligned = self._get_genre_aligned_questions(established_genres, splitting)
-            if aligned:
-                # Ask the highest-IG genre question
-                # This cycles through all confirmed genres, so romance, action, drama get asked too
-                return max(aligned, key=lambda q: self._information_gain(cands, q))
+        if established_genres:
+            non_anchor_qs = [qid for qid in session.asked
+                           if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS]
+            q_count = len(non_anchor_qs)
+
+            # Phase 1 (Q1-5): Primary genre questions
+            if q_count < 5:
+                aligned = self._get_genre_aligned_questions(established_genres, splitting)
+                if aligned:
+                    return max(aligned, key=lambda q: self._information_gain(cands, q))
+
+            # Phase 2 (Q5-7): One secondary genre question (if multiple genres confirmed)
+            elif q_count < 7 and len(established_genres) > 1:
+                # Ask from secondary genres (not the first one)
+                primary_genre = next(iter(established_genres))  # Arbitrary "primary"
+                secondary_genres = established_genres - {primary_genre}
+                secondary_aligned = self._get_genre_aligned_questions(secondary_genres, splitting)
+                if secondary_aligned:
+                    return max(secondary_aligned, key=lambda q: self._information_gain(cands, q))
+
+            # Phase 3 (Q7-10): Another primary genre question
+            elif q_count < 10:
+                aligned = self._get_genre_aligned_questions(established_genres, splitting)
+                if aligned:
+                    return max(aligned, key=lambda q: self._information_gain(cands, q))
 
         # Enforce phase gating: restrict discriminating questions by phase
         # Phase 1 (Q1-10): Actor only | Phase 2 (Q10-20): Actress/Director | Phase 3 (Q20+): Music
