@@ -222,10 +222,14 @@ def _question_payload(q) -> dict:
 
 
 def _session_state(session) -> dict:
+    remaining = session.remaining_count()
+    total = len(engine.pool)
+    confidence = 1.0 - (remaining / total) if total > 0 else 0.0
     return {
         "session_id": session.id,
         "question_count": session.question_count(),
-        "remaining_candidates": session.remaining_count(),
+        "remaining_candidates": remaining,
+        "confidence": confidence,
         "can_go_back": len(session.history) > 0,
     }
 

@@ -94,7 +94,15 @@
     .question-text { font-family: 'Oswald', sans-serif; font-size: 1.6rem; font-weight: 600; line-height: 1.35; min-height: 64px; }
 
     .progress-wrap { width: 100%; background: rgba(255,255,255,0.08); border-radius: 999px; height: 7px; margin-top: 22px; overflow: hidden; }
-    .progress-bar  { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--red), var(--gold)); box-shadow: 0 0 12px rgba(229,9,20,0.7); transition: width 0.4s ease; }
+    .progress-bar  {
+      height: 100%; border-radius: 999px;
+      background: linear-gradient(90deg, #1e3a8a);
+      box-shadow: 0 0 12px rgba(30,58,138,0.6);
+      transition: width 0.4s ease, background 0.5s ease, box-shadow 0.5s ease;
+      width: 10%;
+    }
+    .progress-bar.warm { background: linear-gradient(90deg, #1e3a8a, #059669, #eab308, #ea580c); box-shadow: 0 0 18px rgba(234,88,12,0.8); }
+    .progress-bar.hot  { background: linear-gradient(90deg, #1e3a8a, #059669, #eab308, #ea580c, #dc2626, #fef3c7); box-shadow: 0 0 28px rgba(254,243,199,0.9), 0 0 14px rgba(220,38,38,0.8); }
 
     /* ── buttons ── */
     .btn-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; width: 100%; }
@@ -352,17 +360,31 @@
     if (grp) {
       q.group   = grp;
       q.options = q.options || GROUP_OPTIONS[grp];
-      renderPicker(q, data.remaining_candidates);
+      renderPicker(q, data.remaining_candidates, data.confidence);
     } else {
-      renderQuestion(q, data.remaining_candidates);
+      renderQuestion(q, data.remaining_candidates, data.confidence);
+    }
+  }
+
+  function updateConfidenceMeter(confidence) {
+    const bar = document.getElementById('progress');
+    if (!confidence && confidence !== 0) return;
+    const pct = Math.round(confidence * 100);
+    bar.style.width = `${pct}%`;
+    bar.classList.remove('warm', 'hot');
+    if (pct >= 75) {
+      bar.classList.add('hot');
+    } else if (pct >= 40) {
+      bar.classList.add('warm');
     }
   }
 
   // ── yes/no question ───────────────────────────────────────────────────
-  function renderQuestion(q, remaining) {
+  function renderQuestion(q, remaining, confidence) {
     document.getElementById('q-num').textContent  = `Question ${state.userQNum + 1}`;
     document.getElementById('q-text').textContent = q.text;
     document.getElementById('progress').style.width = `${(state.userQNum / 18) * 100}%`;
+    updateConfidenceMeter(confidence);
     document.getElementById('candidates-info').textContent = '';
     setYesNoEnabled(true);
     document.getElementById('back-question').classList.toggle('hidden', !state.canBack);
@@ -399,10 +421,11 @@
 
   // ── picker (language / era / genre) ──────────────────────────────────
   const PICKER_LABELS = { language: 'Step 1 of 2 · Language', era: 'Step 2 of 2 · Era', genre: 'Theme' };
-  function renderPicker(q, remaining) {
+  function renderPicker(q, remaining, confidence) {
     document.getElementById('picker-num').textContent  = PICKER_LABELS[q.group] || q.group;
     document.getElementById('picker-text').textContent = q.text;
     document.getElementById('picker-info').textContent = '';
+    updateConfidenceMeter(confidence);
 
     const grid = document.getElementById('picker-grid');
     grid.innerHTML = '';
