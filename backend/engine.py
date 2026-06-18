@@ -491,9 +491,20 @@ class GameEngine:
                     return False
         return True
 
+    def _genre_ok(self, movie: dict, session: Session) -> bool:
+        """Hard-gate on genre: if player says YES to a genre, only keep films with that genre."""
+        genre_answers = {qid: ans for qid, ans in session.answers.items() if qid.startswith("q_genre_")}
+
+        for qid, ans in genre_answers.items():
+            if ans == "yes":
+                q = QUESTION_MAP.get(qid)
+                if q and not q.evaluate(movie):
+                    return False  # Film doesn't match the genre player selected
+        return True
+
     def _prune(self, session: Session) -> None:
-        # Hard constraints first (decisive facts), then soft scoring within them.
-        eligible = [m for m in self.movies if self._hard_ok(m, session)]
+        # Hard constraints first (decisive facts + genre), then soft scoring within them.
+        eligible = [m for m in self.movies if self._hard_ok(m, session) and self._genre_ok(m, session)]
         if not eligible:  # contradictory answers — don't wipe the board
             eligible = list(self.movies)
         scored = [(m, self._score(m, session)) for m in eligible]
