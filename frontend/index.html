@@ -405,6 +405,7 @@
 
   // ── route response to right screen ────────────────────────────────────
   function handleResponse(data) {
+    console.log(`[handleResponse] confidence=${data.confidence}, remaining=${data.remaining_candidates}`);
     state.canBack = !!data.can_go_back;
     if (data.phase === 'guess' || data.guesses) {
       renderGuesses(data.guesses);
@@ -429,6 +430,7 @@
     const bar = document.getElementById('progress');
     if (confidence == null) return;
     const pct = Math.round(confidence * 100);
+    console.log(`[confidence] raw=${confidence}, pct=${pct}%`);
     bar.style.width = `${pct}%`;
 
     if (pct < 33) {
