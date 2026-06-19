@@ -380,7 +380,7 @@ QUESTIONS.extend([
              _attr_true("is_yrf_style"), weight=0.3),
     Question("q_gritty_realism",         "Is it dark, gritty, or urban-realistic in style?",
              _attr_true("has_gritty_realism"), weight=0.3),
-    Question("q_intimate_indie",         "Is it intimate, personal, or indie in style (not a big-budget spectacle)?",
+    Question("q_intimate_indie",         "Is it intimate, personal, or indie in style (art film)?",
              _attr_true("is_intimate_indie"), weight=0.3),
 
     # Suspense
