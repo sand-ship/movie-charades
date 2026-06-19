@@ -223,17 +223,22 @@ def _question_payload(q) -> dict:
     return {"id": q.id, "text": q.text, "group": None, "options": None}
 
 
-def _session_state(session) -> dict:
+def _session_state(session, include_reasoning: bool = False) -> dict:
     remaining = session.remaining_count()
     total = len(engine.movies)
     confidence = 1.0 - (remaining / total) if total > 0 else 0.0
-    return {
+    state = {
         "session_id": session.id,
         "question_count": session.question_count(),
         "remaining_candidates": remaining,
         "confidence": confidence,
         "can_go_back": len(session.history) > 0,
     }
+    if include_reasoning and session.reasoning_log:
+        state["reasoning_log"] = session.reasoning_log[-5:]  # Last 5 reasoning entries
+        if session.strategic_analysis:
+            state["strategic_guidance"] = session.strategic_analysis.get("strategy", "")
+    return state
 
 
 # ── routes ───────────────────────────────────────────────────────────────

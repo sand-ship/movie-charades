@@ -8,6 +8,7 @@ from pathlib import Path
 
 from questions import (QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS,
                        GENRE_QUESTION_IDS, ENDING_QUESTION_IDS, SETTING_QUESTION_IDS, VILLAIN_QUESTION_IDS)
+from reasoning import CotReasoner
 
 # Load engine hints for adaptive questioning strategy
 try:
@@ -45,6 +46,8 @@ class Session:
         self.answers: dict[str, str] = {}  # question_id -> yes/no/maybe
         self.history: list[list[str]] = []  # per-turn qids added (for Back/undo)
         self.last_guesses: list[dict] = []  # most recent top_guesses() output
+        self.reasoning_log: list[dict] = []  # COT reasoning per turn
+        self.strategic_analysis: Optional[dict] = None  # current strategic guidance
 
     def remaining_count(self) -> int:
         return len(self.candidates)
@@ -57,6 +60,7 @@ class GameEngine:
     def __init__(self, movies: list[dict]):
         self.movies = movies
         self._sessions: dict[str, Session] = {}
+        self.reasoner = CotReasoner()
 
     # ── session management ──────────────────────────────────────────────
 
@@ -118,34 +122,70 @@ class GameEngine:
 
         return [q for q in unanswered if q.id in aligned_qids]
 
+    # ── strategic reasoning ──────────────────────────────────────────────
+
+    def _should_analyze_strategy(self, session: Session) -> bool:
+        """Check if we should trigger strategic analysis (every 5 questions or at transitions)."""
+        q_count = len(session.asked)
+        c_count = len(session.candidates)
+
+        if q_count in [8, 15, 20, 25]:
+            return True
+        if c_count <= 10 and c_count % 5 == 0:
+            return True
+        if not session.strategic_analysis and q_count >= 8:
+            return True
+        return False
+
+    def _update_strategic_analysis(self, session: Session) -> None:
+        """Update strategic guidance based on current game state."""
+        if len(session.candidates) <= 1:
+            return
+        session.strategic_analysis = self.reasoner.analyze_candidate_space(
+            candidates=session.candidates,
+            answers=session.answers,
+            question_count=len(session.asked),
+        )
+        session.reasoning_log.append({
+            "turn": len(session.asked),
+            "analysis": session.strategic_analysis,
+        })
+
     # ── core algorithm ───────────────────────────────────────────────────
 
     def next_question(self, session: Session) -> Optional[Question]:
         if session.question_count() >= MAX_QUESTIONS:
             return None
 
+        # Trigger strategic analysis at key transitions
+        if self._should_analyze_strategy(session):
+            self._update_strategic_analysis(session)
+
         asked = set(session.asked)
 
-        # Language and era are the only mandatory anchors — they're things the
-        # player knows for certain (what language, roughly when).
         if not (asked & LANGUAGE_QUESTION_IDS):
-            return QUESTION_MAP['q_hindi']    # sentinel; frontend renders full picker
+            q = QUESTION_MAP['q_hindi']
+            self._log_question_reasoning(session, q, "language anchor (step 1)")
+            return q
         if not (asked & ERA_QUESTION_IDS):
-            return QUESTION_MAP['q_classic']  # sentinel; frontend renders full picker
+            q = QUESTION_MAP['q_classic']
+            self._log_question_reasoning(session, q, "era anchor (step 2)")
+            return q
 
-        # Force structural question by Q5 for early discriminating field unlock
         non_anchor = sum(1 for qid in asked
                          if qid not in LANGUAGE_QUESTION_IDS
                          and qid not in ERA_QUESTION_IDS)
 
-        # Genre picker: return it when holdoff is satisfied and no genre answered yet
-        # (With GENRE_HOLDOFF=0, this fires immediately after language/era)
         genre_answered = bool(asked & GENRE_QUESTION_IDS)
         if "q_genre_picker" not in asked and non_anchor >= GENRE_HOLDOFF and not genre_answered:
-            return QUESTION_MAP.get("q_genre_picker")
+            q = QUESTION_MAP.get("q_genre_picker")
+            self._log_question_reasoning(session, q, "genre anchor (step 3)")
+            return q
 
         if "q_multiple_protagonists" not in asked and 2 <= non_anchor < 5:
-            return QUESTION_MAP.get("q_multiple_protagonists")
+            q = QUESTION_MAP.get("q_multiple_protagonists")
+            self._log_question_reasoning(session, q, "structural question (protagonist count)")
+            return q
 
         cands = session.candidates
 
@@ -393,16 +433,18 @@ class GameEngine:
 
         # Prefer generic questions before discriminating fields unlocked
         if non_persons:
-            return max(non_persons, key=lambda q: self._information_gain(cands, q))
+            best_q = max(non_persons, key=lambda q: self._information_gain(cands, q))
+            self._log_question_reasoning(session, best_q, "generic plot/trope question")
+            return best_q
 
         # Only reach actor/director questions if generic questions exhausted AND (threshold met OR after Q15)
         # DESPERATE ESCALATION: After Q30, force actors/directors regardless of pool size
         if not can_ask_actors and not directors_enabled:
             if len(non_anchor_qs) >= 30:
-                can_ask_actors = True  # Desperate: ask actors in endgame
-                directors_enabled = True  # Also enable directors
+                can_ask_actors = True
+                directors_enabled = True
             else:
-                return None  # Give up rather than ask actor Qs without threshold
+                return None
         consecutive = 0
         for qid in session.asked[::-1]:
             if qid.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_")):
@@ -410,12 +452,10 @@ class GameEngine:
             else:
                 break
         if consecutive >= MAX_CONSECUTIVE_ACTOR_QS:
-            return None  # enough name questions — trigger guess
+            return None
 
         # Safe adaptive boost: after pool stabilizes, prioritize actor questions for sparse films
-        # Only apply if: past stabilization point (non_anchor >= 5) AND pool still large AND low density
         if non_anchor >= 5 and 10 < len(cands) <= 100 and consecutive < 1:
-            # Quick density check: count narrative attributes in first 5 candidates
             sparse_count = 0
             DENSE_ATTRS = ['is_lost_and_found_child', 'is_love_triangle', 'is_partition_backdrop',
                           'is_dance_heavy', 'has_heist', 'is_sports_film', 'has_courtroom', 'is_sci_fi',
@@ -424,7 +464,6 @@ class GameEngine:
                 if sum(1 for attr in DENSE_ATTRS if m.get(attr)) <= 2:
                     sparse_count += 1
 
-            # If 4+ of top 5 candidates are sparse, boost actor question scoring
             if sparse_count >= 4:
                 actor_boost = lambda q: (
                     self._information_gain(cands, q) * 1.5
@@ -434,18 +473,15 @@ class GameEngine:
                                        'q_salman', 'q_dhanush', 'q_suriya', 'q_kajal', 'q_nayanthara'))
                     else self._information_gain(cands, q)
                 )
-                return max(splitting, key=actor_boost)
+                best_q = max(splitting, key=actor_boost)
+                self._log_question_reasoning(session, best_q, "actor question for sparse films")
+                return best_q
 
         # Discriminating field strategy: Priority-ordered placement across 3 phases
-        # Phase 1 (Q1-10): Actor | Phase 2 (Q10-20): Actress/Director | Phase 3 (Q20-30): Music Director
-        # Rotate based on what's not been asked yet
-
-        # Count non-anchor Qs to determine phase
         current_non_anchor = len([qid for qid in session.asked
                                  if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS])
         current_phase = 0 if current_non_anchor < 10 else (1 if current_non_anchor < 20 else 2)
 
-        # Check which discrim fields have been asked
         discrim_asked = {'actor': False, 'actress': False, 'director': False, 'music': False}
         for qid in session.asked:
             if qid.startswith("q_actor_"):
@@ -457,18 +493,16 @@ class GameEngine:
             elif qid.startswith("q_music_"):
                 discrim_asked['music'] = True
 
-        # Determine which field to ask based on phase and priority
         priority_field = None
-        if current_phase == 0 and not discrim_asked['actor']:  # Phase 1: Priority is actor
+        if current_phase == 0 and not discrim_asked['actor']:
             priority_field = 'actor'
-        elif current_phase == 1 and not discrim_asked['actress'] and not discrim_asked['director']:  # Phase 2: actress or director
+        elif current_phase == 1 and not discrim_asked['actress'] and not discrim_asked['director']:
             priority_field = 'actress' if not discrim_asked['actress'] else 'director'
-        elif current_phase == 2 and not discrim_asked['music']:  # Phase 3: music director
+        elif current_phase == 2 and not discrim_asked['music']:
             priority_field = 'music'
-        elif current_phase == 1 and not discrim_asked['director'] and discrim_asked['actress']:  # Phase 2 fallback: director if actress done
+        elif current_phase == 1 and not discrim_asked['director'] and discrim_asked['actress']:
             priority_field = 'director'
-        elif current_phase == 2 and discrim_asked['music']:  # Phase 3 rotation: go back to earlier fields if music done
-            # Rotate through actress, director, actor in that order
+        elif current_phase == 2 and discrim_asked['music']:
             if not discrim_asked['actress']:
                 priority_field = 'actress'
             elif not discrim_asked['director']:
@@ -476,7 +510,6 @@ class GameEngine:
             elif not discrim_asked['actor']:
                 priority_field = 'actor'
 
-        # If we have a priority field, filter to it
         if priority_field and splitting:
             field_map = {
                 "actor": lambda q: q.id.startswith("q_actor_"),
@@ -487,9 +520,22 @@ class GameEngine:
 
             priority_qs = [q for q in splitting if field_map[priority_field](q)]
             if priority_qs:
-                return max(priority_qs, key=lambda q: self._information_gain(cands, q))
+                best_q = max(priority_qs, key=lambda q: self._information_gain(cands, q))
+                self._log_question_reasoning(session, best_q, f"{priority_field} discriminator (phase {current_phase})")
+                return best_q
 
-        return max(splitting, key=lambda q: self._information_gain(cands, q))
+        best_q = max(splitting, key=lambda q: self._information_gain(cands, q))
+        self._log_question_reasoning(session, best_q, "best information gain")
+        return best_q
+
+    def _log_question_reasoning(self, session: Session, question: Question, reason: str) -> None:
+        """Log why we selected this question."""
+        session.reasoning_log.append({
+            "turn": len(session.asked) + 1,
+            "question_id": question.id,
+            "reasoning": reason,
+            "candidates_remaining": len(session.candidates),
+        })
 
     @staticmethod
     def _is_identifying(question: Question) -> bool:
