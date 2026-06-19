@@ -180,7 +180,7 @@ QUESTIONS.extend([
              _attr_true("has_village_setting"), weight=0.3),
 
     # Otherworldly / mythology / superpowers
-    Question("q_supernatural",  "Does it involve gods, supernatural beings, or the afterlife?",
+    Question("q_supernatural",  "Does it involve supernatural elements like gods, ghosts, spirits, or reincarnation?",
              _attr_true("has_supernatural"), weight=0.3),
     Question("q_superpowers",   "Does a character have superhuman or magical powers?",
              _attr_true("has_superpowers"), weight=0.3),
@@ -228,12 +228,8 @@ QUESTIONS.extend([
     # Phase 2.2: Wider coverage for Hindi/Tamil/Telugu disambiguation
     Question("q_separated_family", "Are the main characters searching for separated or lost family members?",
              _attr_true("is_lost_and_found_child"), weight=0.3),
-    Question("q_love_triangle",    "Is there a love triangle where multiple characters pursue the same person?",
-             _attr_true("is_love_triangle"), weight=0.3),
     Question("q_reluctant_romance", "Is the main romance about one person pursuing a reluctant partner?",
              _attr_true("is_unrequited_love_turnaround"), weight=0.3),
-    Question("q_reincarnation",    "Does the plot involve ghosts, spirits, or reincarnation?",
-             _attr_true("is_reincarnation_rebirth"), weight=0.3),
     Question("q_partition_era",    "Is this set in pre-1947 British-ruled India (colonial or partition era)?",
              _attr_true("is_partition_backdrop"), weight=0.3),
     Question("q_dance_heavy",      "Does the film heavily feature elaborate dance sequences or musical numbers?",
@@ -244,12 +240,10 @@ QUESTIONS.extend([
              _attr_true("is_sacrifice_ending"), weight=0.3),
 
     # Phase 3: Additional discrimination questions (5 more — removed duplicates)
-    Question("q_scifi_fantasy",      "Does the film involve sci-fi, fantasy, or supernatural worlds?",
+    Question("q_scifi_fantasy",      "Does it involve sci-fi, fantasy, magic, or supernatural worlds?",
              _attr_true("is_sci_fi"), weight=0.3),
     Question("q_single_protagonist", "Is the story tightly focused on one main character's journey?",
              _attr_true("has_single_protagonist"), weight=0.3),
-    Question("q_female_lead",        "Is the protagonist or central character female?",
-             _attr_true("has_female_lead"), weight=0.3),
     Question("q_ensemble_large",     "Does the film have a large ensemble cast with multiple major characters?",
              _attr_true("is_ensemble_cast"), weight=0.3),
 
@@ -262,10 +256,6 @@ QUESTIONS.extend([
              _attr_true("has_investigation_plot"), weight=0.3),
     Question("q_friendship_focus",   "Is friendship or brotherhood the emotional core (rather than romance)?",
              _attr_true("has_friendship_focus"), weight=0.3),
-    Question("q_parent_child",       "Are parent-child relationships central to the plot?",
-             _attr_true("has_parent_child_arc"), weight=0.3),
-    Question("q_supernatural_magic", "Does the film involve ghosts, magic, or the supernatural (beyond reincarnation)?",
-             _attr_true("has_supernatural_elements"), weight=0.3),
     Question("q_sequel_franchise",   "Is this a sequel, prequel, or part of a film franchise/series?",
              _attr_true("is_sequel_or_franchise"), weight=0.3),
 
