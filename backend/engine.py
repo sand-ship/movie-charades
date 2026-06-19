@@ -6,8 +6,9 @@ import uuid
 from typing import Optional
 from pathlib import Path
 
-from questions import (QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS,
+from questions import (QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS,
                        GENRE_QUESTION_IDS, ENDING_QUESTION_IDS, SETTING_QUESTION_IDS, VILLAIN_QUESTION_IDS)
+import questions  # Import module to access QUESTIONS at runtime (for dynamic actor/director Qs)
 from reasoning import CotReasoner
 
 # Load engine hints for adaptive questioning strategy
@@ -197,7 +198,7 @@ class GameEngine:
         genre_answered = bool(asked & GENRE_QUESTION_IDS)
         suppress_genre = genre_answered or (non_anchor < GENRE_HOLDOFF)
 
-        unanswered = [q for q in QUESTIONS
+        unanswered = [q for q in questions.QUESTIONS
                       if q.id not in asked
                       and q.id not in LANGUAGE_QUESTION_IDS
                       and q.id not in ERA_QUESTION_IDS
@@ -566,7 +567,7 @@ class GameEngine:
                 return QUESTION_MAP[qid]
 
         # Try fuzzy match against all questions
-        for q in QUESTIONS:
+        for q in questions.QUESTIONS:
             if actor_name.lower() in q.text.lower() and q.id.startswith(("q_actor_", "q_actress_")):
                 return q
 
