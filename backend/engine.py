@@ -654,6 +654,16 @@ class GameEngine:
         if not session.history:
             return False
         last = set(session.history.pop())
+
+        # Decrement maybe_count if we're undoing maybes
+        for qid in last:
+            if session.answers.get(qid) == "maybe":
+                session.maybe_count = max(0, session.maybe_count - 1)
+
+        # Reset exhausted flag if we freed up a maybe slot
+        if session.maybe_count < 5:
+            session.maybe_exhausted = False
+
         session.asked = [q for q in session.asked if q not in last]
         for qid in last:
             session.answers.pop(qid, None)
