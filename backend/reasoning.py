@@ -57,43 +57,31 @@ class CotReasoner:
         top_actors = sorted(actors_freq.items(), key=lambda x: -x[1])[:5]
         top_directors = sorted(directors_freq.items(), key=lambda x: -x[1])[:3]
 
-        prompt = f"""Analyze this film selection space strategically with focus on GENRE-AWARE DISCRIMINATION.
+        prompt = f"""Analyze this film selection space strategically.
 
 CANDIDATES ({len(candidates)} films):
 {', '.join(candidate_titles)}
 
-KNOWN FACTS:
+KNOWN FACTS (YES answers):
 {json.dumps(known_answers, indent=2)}
-
-ACTOR DISTRIBUTION (How films cluster by lead):
-{json.dumps(dict(top_actors), indent=2)}
-
-DIRECTOR DISTRIBUTION:
-{json.dumps(dict(top_directors), indent=2)}
 
 QUESTIONS ASKED: {question_count}
 
-Your strategic task:
+Your task: Identify what VARIES WITHIN the known constraints.
 
-1. GENRE-AWARE PATTERNS: What varies WITHIN the known genre?
-   (E.g., if action: military vs crime vs romance-action? If comedy: slapstick vs romantic vs family?)
+1. GENRE-AWARE PATTERNS: What differs between these films?
+   (E.g., if all action: military vs crime vs romance-action?)
+   (E.g., if all 2020s Hindi: patriotic vs crime vs romantic?)
 
-2. ACTOR/DIRECTOR DISCRIMINATION: Which people would best split the pool?
-   - Which actor appears in 40% of films? (less discriminating)
-   - Which actor appears in 20-30%? (high discriminating power)
-   - Is there a director who exclusively makes a subtype?
+2. CONTRADICTIONS: Do any YES answers conflict?
+   (E.g., patriotic + gangster is unusual — they occupy different spaces)
 
-3. SEQUENCE STRATEGY: Should we ask about actors NOW or wait?
-   - If pool > 100 AND genre unclear: prioritize genre/plot first
-   - If pool 30-100 AND genre clear: actor Qs now (high discriminator)
-   - If pool < 30: ask about the specific actor who splits most
+3. SEQUENCE: Should we unlock actor questions NOW or wait?
+   - Pool > 100: ask plot/trope questions first
+   - Pool 30-100: ready for actor questions
+   - Pool < 30: endgame — final discriminators
 
-4. WHICH ACTOR/DIRECTOR TO TARGET:
-   - Not the most common (too broad)
-   - The one that cleanly separates film types
-   - E.g., if Akshay dominates patriotic films, ask about him FIRST
-
-Be specific: name films and actors and explain the split."""
+Be specific: name films and explain what separates them."""
 
         try:
             response = self.client.messages.create(
@@ -107,11 +95,7 @@ Be specific: name films and actors and explain the split."""
                 "full_reasoning": reasoning,
                 "patterns": self._extract_section(reasoning, "GENRE-AWARE", 2),
                 "genre_analysis": self._extract_section(reasoning, "varies WITHIN", 3),
-                "actor_discriminators": self._extract_section(reasoning, "ACTOR/DIRECTOR DISCRIMINATION", 4),
-                "sequence_strategy": self._extract_section(reasoning, "SEQUENCE STRATEGY", 3),
-                "should_unlock_actors": "NOW" in reasoning.upper() or "IMMEDIATE" in reasoning.upper(),
-                "target_actor": self._extract_actor_name(reasoning),
-                "strategy": self._extract_section(reasoning, "SEQUENCE", 2),
+                "strategy": self._extract_section(reasoning, "SEQUENCE STRATEGY", 3),
             }
             self.reasoning_history.append({"turn": question_count, "analysis": analysis})
             return analysis

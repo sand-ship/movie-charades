@@ -284,24 +284,16 @@ class GameEngine:
         elif current_phase == 1:  # Phase 2: actress/director (no music)
             splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
-        # ASK TARGET ACTOR: If strategic analysis identified a discriminating actor, ask about them specifically
-        if session.strategic_analysis and session.strategic_analysis.get("target_actor"):
-            target = session.strategic_analysis["target_actor"]
-            # Find question about this actor
-            actor_q = self._find_actor_question(target)
-            if actor_q and actor_q.id in [q.id for q in splitting]:
-                self._log_question_reasoning(session, actor_q,
-                    f"strategic discriminator: {target} splits {len(cands)} candidates")
-                return actor_q
-
-        # Force actor at Q10 if not asked yet (fallback)
-        if len(non_anchor_qs) >= 10:
+        # ACTOR SELECTION: Pick best actor question by information gain (once unlocked)
+        if can_ask_actors:
+            # Only ask actor if we haven't asked one yet (avoid multiple actor Qs in a row)
             actor_asked = any(qid.startswith(("q_actor_", "q_actress_")) for qid in session.asked)
-            if not actor_asked and can_ask_actors:
+            if not actor_asked:
                 actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
                 if actor_qs:
                     best_q = max(actor_qs, key=lambda q: self._information_gain(cands, q))
-                    self._log_question_reasoning(session, best_q, "forced actor at Q10")
+                    self._log_question_reasoning(session, best_q,
+                        f"best actor by information gain ({len(cands)} candidates)")
                     return best_q
 
 
@@ -378,11 +370,6 @@ class GameEngine:
                     aligned = [q for q in confirm if q.evaluate(cands[0]) if len(cands) > 0]
                     pool = aligned if aligned else confirm
                     return max(pool, key=lambda q: self._information_gain(cands, q))
-                # If no follow-up clarification possible, force actor question to break tie
-                if can_ask_actors:
-                    all_actors = [q for q in unanswered if q.id.startswith(("q_actor_", "q_actress_"))]
-                    if all_actors:
-                        return max(all_actors, key=lambda q: self._information_gain(cands, q))
 
         # When pool == 1 and we haven't hit the minimum yet, ask confirming
         # questions — builds suspense, lets the player verify before the reveal.
@@ -432,26 +419,8 @@ class GameEngine:
             non_persons = [q for q in splitting
                           if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))]
 
-        # Actor discrimination enabled early (Q5+, 15+ candidates)?
-        # But respect consecutive actor limit (breathe with plot questions between)
-        if can_ask_actors:
-            # Check consecutive actor limit BEFORE asking actors
-            consecutive = 0
-            for qid in session.asked[::-1]:
-                if qid.startswith(("q_actor_", "q_actress_", "q_director_", "q_music_")):
-                    consecutive += 1
-                else:
-                    break
-
-            # Only ask actor if not at consecutive limit
-            if consecutive < MAX_CONSECUTIVE_ACTOR_QS:
-                actors_in_splitting = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
-                if actors_in_splitting:
-                    return max(actors_in_splitting, key=lambda q: self._information_gain(cands, q))
-                # If no actors split, ask ANY unanswered actor question (direct identification)
-                all_actors = [q for q in unanswered if q.id.startswith(("q_actor_", "q_actress_"))]
-                if all_actors:
-                    return max(all_actors, key=lambda q: self._information_gain(cands, q))
+        # NOTE: Actor selection is handled earlier (lines 288-297) with "1 actor max" rule.
+        # This old block is disabled to avoid asking multiple actors.
 
         # Prefer generic questions before discriminating fields unlocked
         if non_persons:
