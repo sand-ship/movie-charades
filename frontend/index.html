@@ -43,11 +43,14 @@
     @keyframes spin { to { transform: rotate(360deg); } }
 
     /* ── Mini animations for gameplay ── */
-    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
-    @keyframes slideIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes shimmer { 0%, 100% { box-shadow: 0 0 12px rgba(229,9,20,0.4); } 50% { box-shadow: 0 0 24px rgba(229,9,20,0.8); } }
-    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
-    @keyframes glow { 0%, 100% { filter: drop-shadow(0 0 8px rgba(245,197,24,0.3)); } 50% { filter: drop-shadow(0 0 16px rgba(245,197,24,0.7)); } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    @keyframes slideIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes shimmer { 0%, 100% { box-shadow: 0 0 8px currentColor, inset 0 0 8px rgba(255,255,255,0.1); } 50% { box-shadow: 0 0 24px currentColor, inset 0 0 16px rgba(255,255,255,0.2); } }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    @keyframes glow { 0%, 100% { filter: drop-shadow(0 0 8px rgba(245,197,24,0.4)); } 50% { filter: drop-shadow(0 0 20px rgba(245,197,24,0.9)); } }
+    @keyframes wiggle { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(1deg); } 75% { transform: rotate(-1deg); } }
+    @keyframes float-up { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes spin-glow { 0%, 100% { filter: drop-shadow(0 0 6px rgba(245,197,24,0.4)); } 50% { filter: drop-shadow(0 0 16px rgba(245,197,24,0.8)); } }
 
 
     .filmstrip {
@@ -79,12 +82,12 @@
 
     .lamp {
       font-size: 5.5rem; user-select: none;
-      animation: float 3s ease-in-out infinite;
-      filter: drop-shadow(0 0 24px rgba(245,197,24,0.6));
+      animation: float 3.5s ease-in-out infinite, spin-glow 3s ease-in-out infinite;
+      filter: drop-shadow(0 0 24px rgba(245,197,24,0.8));
     }
     @keyframes float {
       0%, 100% { transform: translateY(0); }
-      50%       { transform: translateY(-14px); }
+      50%       { transform: translateY(-16px); }
     }
 
     /* ── card (projection screen) ── */
@@ -102,8 +105,8 @@
     .question-num  { font-family: 'Oswald', sans-serif; font-size: 0.8rem; color: var(--gold); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 14px; }
     .question-text { font-family: 'Oswald', sans-serif; font-size: 1.6rem; font-weight: 600; line-height: 1.35; min-height: 64px; animation: slideIn 0.5s ease 0.1s both; }
 
-    .progress-wrap { width: 100%; background: rgba(255,255,255,0.08); border-radius: 999px; height: 8px; margin-top: 22px; overflow: hidden; }
-    .progress-bar  { height: 100%; border-radius: 999px; box-shadow: 0 0 14px currentColor; transition: width 0.5s ease, background-color 0.6s ease; animation: shimmer 2s ease infinite; }
+    .progress-wrap { width: 100%; background: rgba(255,255,255,0.08); border-radius: 999px; height: 9px; margin-top: 22px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.3); }
+    .progress-bar  { height: 100%; border-radius: 999px; box-shadow: 0 0 14px currentColor, inset 0 1px 2px rgba(255,255,255,0.2); transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.7s ease; animation: shimmer 1.8s ease-in-out infinite; }
 
     /* Dynamic progress bar colors: gray → blue → green → lime → yellow → orange → red → white-hot */
     .progress-bar.p0   { background-color: #9ca3af; }
@@ -123,17 +126,18 @@
       flex: 1; max-width: 170px; padding: 16px 12px;
       border: none; border-radius: 14px;
       font-size: 1.02rem; font-weight: 700; letter-spacing: 0.3px; color: #fff;
-      cursor: pointer; transition: transform 0.1s, box-shadow 0.15s, opacity 0.2s;
-      animation: slideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+      cursor: pointer; transition: transform 0.12s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease, opacity 0.2s;
+      animation: slideIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
     }
-    #btn-yes { animation-delay: 0.05s; }
-    #btn-no { animation-delay: 0.1s; }
-    #btn-unsure { animation-delay: 0.15s; }
-    button:active { transform: scale(0.92); animation: bounce 0.3s ease; }
+    #btn-yes { animation-delay: 0.08s; }
+    #btn-no { animation-delay: 0.14s; }
+    #btn-unsure { animation-delay: 0.2s; }
+    button:active { transform: scale(0.88); }
     button:disabled { opacity: 0.4; cursor: default; }
-    button:not(:disabled):hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.65); }
-    .btn-yes:not(:disabled):hover { animation: glow 1.5s ease infinite; }
-    .btn-no:not(:disabled):hover { animation: glow 1.5s ease infinite; }
+    button:not(:disabled):hover { transform: translateY(-5px); box-shadow: 0 14px 36px rgba(0,0,0,0.7); filter: brightness(1.15); }
+    button:not(:disabled):hover:before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%); border-radius: inherit; pointer-events: none; }
+    .btn-yes:not(:disabled) { animation: spin-glow 2s ease-in-out infinite; }
+    .btn-no:not(:disabled) { animation: spin-glow 2.2s ease-in-out infinite; }
 
     .btn-yes    { background: linear-gradient(135deg, #1db954, #11823c); }
     .btn-no     { background: linear-gradient(135deg, var(--red), var(--red-deep)); }
@@ -212,8 +216,16 @@
       background: rgba(255,255,255,0.06); color: #fff; border-radius: 12px;
       font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.5px;
       border: 1px solid rgba(229,9,20,0.30);
+      animation: slideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+      transition: all 0.2s ease;
     }
-    .picker-btn:not(:disabled):hover { background: rgba(229,9,20,0.18); border-color: var(--gold); color: var(--gold); transform: translateY(-3px); }
+    .picker-btn:nth-child(1) { animation-delay: 0.05s; }
+    .picker-btn:nth-child(2) { animation-delay: 0.1s; }
+    .picker-btn:nth-child(3) { animation-delay: 0.15s; }
+    .picker-btn:nth-child(4) { animation-delay: 0.2s; }
+    .picker-btn:nth-child(5) { animation-delay: 0.25s; }
+    .picker-btn:nth-child(6) { animation-delay: 0.3s; }
+    .picker-btn:not(:disabled):hover { background: rgba(229,9,20,0.22); border-color: var(--gold); color: var(--gold); transform: translateY(-4px); box-shadow: 0 8px 20px rgba(229,9,20,0.35); filter: brightness(1.2); }
 
     /* ── guess cards ── */
     .guesses { display: flex; flex-direction: column; gap: 12px; width: 100%; }
