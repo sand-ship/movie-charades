@@ -252,35 +252,54 @@ class GameEngine:
                 if aligned:
                     return max(aligned, key=lambda q: self._information_gain(cands, q))
 
-        # Enforce phase gating: restrict discriminating questions by phase
-        # Phase 1 (Q1-10): Actor only | Phase 2 (Q10-20): Actress/Director | Phase 3 (Q20+): Music
+        # DYNAMIC ACTOR/DIRECTOR GATING: Uses strategic analysis, not fixed Q-numbers
         non_anchor_qs = [qid for qid in session.asked
                          if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS]
-        current_phase = 0 if len(non_anchor_qs) < 10 else (1 if len(non_anchor_qs) < 20 else 2)
 
-        if current_phase == 0:  # Phase 1: only actor Qs
+        # Strategic unlock: Ask about actors if:
+        # 1. Strategic analysis says so (should_unlock_actors=True)
+        # 2. OR pool is small (≤30) and generic questions exhausted
+        # 3. OR Q count forces it (Q20+ for actress/director, Q30+ for music)
+        should_unlock_strategically = False
+        if session.strategic_analysis:
+            should_unlock_strategically = session.strategic_analysis.get("should_unlock_actors", False)
+
+        can_ask_actors = (
+            should_unlock_strategically or
+            (len(non_anchor_qs) >= 5 and len(cands) <= 30) or
+            len(non_anchor_qs) >= 10
+        )
+
+        # Determine phase based on strategic guidance or Q-count
+        if session.strategic_analysis and session.strategic_analysis.get("should_unlock_actors"):
+            current_phase = 0  # Force actor phase early if strategic
+        else:
+            current_phase = 0 if len(non_anchor_qs) < 10 else (1 if len(non_anchor_qs) < 20 else 2)
+
+        if current_phase == 0:  # Phase 1: actors take priority
             splitting = [q for q in splitting if not q.id.startswith(("q_actress_", "q_director_", "q_music_"))]
-        elif current_phase == 1:  # Phase 2: actress/director only (no music yet)
+        elif current_phase == 1:  # Phase 2: actress/director (no music)
             splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
-        # ACTOR UNLOCK: Relax gating for regional cinema where actors discriminate well
-        can_ask_actors = False
+        # ASK TARGET ACTOR: If strategic analysis identified a discriminating actor, ask about them specifically
+        if session.strategic_analysis and session.strategic_analysis.get("target_actor"):
+            target = session.strategic_analysis["target_actor"]
+            # Find question about this actor
+            actor_q = self._find_actor_question(target)
+            if actor_q and actor_q.id in [q.id for q in splitting]:
+                self._log_question_reasoning(session, actor_q,
+                    f"strategic discriminator: {target} splits {len(cands)} candidates")
+                return actor_q
 
-        # Unlock actors at Q6+ if: 3+ NOs (rare film) OR 2-3 unsures (ambiguous film)
-        if len(non_anchor_qs) >= 5:
-            first_five = non_anchor_qs[:5]
-            nos = sum(1 for qid in first_five if session.answers.get(qid) == "no")
-            unsures = sum(1 for qid in first_five if session.answers.get(qid) == "maybe")
-            if nos >= 3 or 2 <= unsures <= 3:
-                can_ask_actors = True
-
-        # Force actor at Q10 if not asked yet
+        # Force actor at Q10 if not asked yet (fallback)
         if len(non_anchor_qs) >= 10:
             actor_asked = any(qid.startswith(("q_actor_", "q_actress_")) for qid in session.asked)
-            if not actor_asked:
+            if not actor_asked and can_ask_actors:
                 actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
                 if actor_qs:
-                    return max(actor_qs, key=lambda q: self._information_gain(cands, q))
+                    best_q = max(actor_qs, key=lambda q: self._information_gain(cands, q))
+                    self._log_question_reasoning(session, best_q, "forced actor at Q10")
+                    return best_q
 
 
         # After person question YES, suppress all person Qs for 1-2 turns for breathing room
@@ -527,6 +546,29 @@ class GameEngine:
         best_q = max(splitting, key=lambda q: self._information_gain(cands, q))
         self._log_question_reasoning(session, best_q, "best information gain")
         return best_q
+
+    def _find_actor_question(self, actor_name: str) -> Optional[Question]:
+        """Find a question about a specific actor/actress."""
+        # Normalize name for question ID (lowercase, spaces->underscores)
+        normalized = actor_name.lower().replace(" ", "_").replace(".", "").replace("'", "")
+
+        # Try different question ID patterns
+        patterns = [
+            f"q_actor_{normalized}",
+            f"q_actress_{normalized}",
+            f"q_{normalized}",
+        ]
+
+        for qid in patterns:
+            if qid in QUESTION_MAP:
+                return QUESTION_MAP[qid]
+
+        # Try fuzzy match against all questions
+        for q in QUESTIONS:
+            if actor_name.lower() in q.text.lower() and q.id.startswith(("q_actor_", "q_actress_")):
+                return q
+
+        return None
 
     def _log_question_reasoning(self, session: Session, question: Question, reason: str) -> None:
         """Log why we selected this question."""

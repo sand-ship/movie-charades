@@ -24,12 +24,16 @@ class CotReasoner:
     def analyze_candidate_space(self, candidates: list, answers: dict, question_count: int) -> dict:
         """
         Analyze the candidate film space to understand what varies and what discriminates.
+        Includes genre-aware analysis and actor/director distribution.
 
         Returns: {
-            'patterns': str,           # Key patterns observed across candidates
-            'discriminators': list,    # Features that vary significantly
-            'strategy': str,           # Strategic direction for next questions
-            'reasoning': str,          # Full chain-of-thought
+            'patterns': str,
+            'discriminators': list,
+            'strategy': str,
+            'genre_analysis': str,     # What varies WITHIN the genre?
+            'actor_discriminators': list, # Which actors discriminate most?
+            'should_unlock_actors': bool, # Time to ask actor Qs?
+            'reasoning': str,
         }
         """
         if not self.client or len(candidates) > 50:
@@ -38,41 +42,76 @@ class CotReasoner:
         candidate_titles = [f"{m.get('title')} ({m.get('year')})" for m in candidates[:12]]
         known_answers = {k: v for k, v in answers.items() if v == "yes"}
 
-        prompt = f"""Analyze this film selection space strategically.
+        # Analyze actor/director distribution
+        actors_freq = {}
+        directors_freq = {}
+        for m in candidates:
+            for actor in (m.get('lead_actors') or []):
+                actors_freq[actor] = actors_freq.get(actor, 0) + 1
+            for actor in ([m.get('lead_actor')] if m.get('lead_actor') else []):
+                actors_freq[actor] = actors_freq.get(actor, 0) + 1
+            dir_name = m.get('director')
+            if dir_name:
+                directors_freq[dir_name] = directors_freq.get(dir_name, 0) + 1
 
-REMAINING CANDIDATES ({len(candidates)} films):
+        top_actors = sorted(actors_freq.items(), key=lambda x: -x[1])[:5]
+        top_directors = sorted(directors_freq.items(), key=lambda x: -x[1])[:3]
+
+        prompt = f"""Analyze this film selection space strategically with focus on GENRE-AWARE DISCRIMINATION.
+
+CANDIDATES ({len(candidates)} films):
 {', '.join(candidate_titles)}
 
-WHAT WE KNOW (YES answers):
-{json.dumps(known_answers, indent=2) if known_answers else 'Only anchor questions answered'}
+KNOWN FACTS:
+{json.dumps(known_answers, indent=2)}
 
-QUESTIONS ASKED SO FAR: {question_count}
+ACTOR DISTRIBUTION (How films cluster by lead):
+{json.dumps(dict(top_actors), indent=2)}
 
-Your task: Identify what VARIES across these candidates and what would DISCRIMINATE them best.
+DIRECTOR DISTRIBUTION:
+{json.dumps(dict(top_directors), indent=2)}
 
-Think through:
-1. What's similar about all these films? (anchors our search)
-2. What differs between them? (what we're trying to discriminate)
-3. What questions would best separate them into distinct groups?
-4. What chains of reasoning would narrow the pool most efficiently?
-5. What assumptions might we be making that are wrong?
+QUESTIONS ASKED: {question_count}
 
-Be specific: name actual films and explain why a question matters for THIS exact set."""
+Your strategic task:
+
+1. GENRE-AWARE PATTERNS: What varies WITHIN the known genre?
+   (E.g., if action: military vs crime vs romance-action? If comedy: slapstick vs romantic vs family?)
+
+2. ACTOR/DIRECTOR DISCRIMINATION: Which people would best split the pool?
+   - Which actor appears in 40% of films? (less discriminating)
+   - Which actor appears in 20-30%? (high discriminating power)
+   - Is there a director who exclusively makes a subtype?
+
+3. SEQUENCE STRATEGY: Should we ask about actors NOW or wait?
+   - If pool > 100 AND genre unclear: prioritize genre/plot first
+   - If pool 30-100 AND genre clear: actor Qs now (high discriminator)
+   - If pool < 30: ask about the specific actor who splits most
+
+4. WHICH ACTOR/DIRECTOR TO TARGET:
+   - Not the most common (too broad)
+   - The one that cleanly separates film types
+   - E.g., if Akshay dominates patriotic films, ask about him FIRST
+
+Be specific: name films and actors and explain the split."""
 
         try:
             response = self.client.messages.create(
                 model=self.model_name,
-                max_tokens=600,
+                max_tokens=800,
                 messages=[{"role": "user", "content": prompt}],
             )
             reasoning = response.content[0].text
 
-            # Parse the reasoning into structured parts
             analysis = {
                 "full_reasoning": reasoning,
-                "patterns": self._extract_section(reasoning, "similar", 2),
-                "discriminators": self._extract_section(reasoning, "differ", 3),
-                "strategy": self._extract_section(reasoning, "best separate", 3),
+                "patterns": self._extract_section(reasoning, "GENRE-AWARE", 2),
+                "genre_analysis": self._extract_section(reasoning, "varies WITHIN", 3),
+                "actor_discriminators": self._extract_section(reasoning, "ACTOR/DIRECTOR DISCRIMINATION", 4),
+                "sequence_strategy": self._extract_section(reasoning, "SEQUENCE STRATEGY", 3),
+                "should_unlock_actors": "NOW" in reasoning.upper() or "IMMEDIATE" in reasoning.upper(),
+                "target_actor": self._extract_actor_name(reasoning),
+                "strategy": self._extract_section(reasoning, "SEQUENCE", 2),
             }
             self.reasoning_history.append({"turn": question_count, "analysis": analysis})
             return analysis
@@ -186,11 +225,30 @@ What does this tell us? What was surprising? What does it imply about the film?
         return ""
 
     @staticmethod
+    def _extract_actor_name(text: str) -> Optional[str]:
+        """Try to extract recommended actor name from reasoning."""
+        # Look for patterns like "ask about [Actor Name]" or "[Actor] would split"
+        import re
+        patterns = [
+            r"ask about ([A-Z][a-z]+ [A-Z][a-z]+)",
+            r"([A-Z][a-z]+ [A-Z][a-z]+) would.*split",
+            r"TARGET.*?([A-Z][a-z]+ [A-Z][a-z]+)",
+        ]
+        for pattern in patterns:
+            match = re.search(pattern, text)
+            if match:
+                return match.group(1)
+        return None
+
+    @staticmethod
     def _fallback_analysis(candidates: list, answers: dict, question_count: int) -> dict:
         """Fallback when LLM is unavailable."""
         return {
             "full_reasoning": f"Analyzing {len(candidates)} candidates after {question_count} questions",
             "patterns": "Multiple candidates match current answers",
             "discriminators": "Need targeted plot/trope questions",
+            "genre_analysis": "Analyzing genre-specific variations",
+            "actor_discriminators": "Actor distribution being analyzed",
+            "should_unlock_actors": len(candidates) < 100,
             "strategy": "Focus on story elements that vary across remaining films",
         }
