@@ -6,7 +6,8 @@ import uuid
 from typing import Optional
 from pathlib import Path
 
-from questions import QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS, GENRE_QUESTION_IDS
+from questions import (QUESTIONS, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS,
+                       GENRE_QUESTION_IDS, ENDING_QUESTION_IDS, SETTING_QUESTION_IDS, VILLAIN_QUESTION_IDS)
 
 # Load engine hints for adaptive questioning strategy
 try:
@@ -160,6 +161,13 @@ class GameEngine:
                       and q.id not in ERA_QUESTION_IDS
                       and (not suppress_genre or q.id not in GENRE_QUESTION_IDS)
                       and self._is_question_available(q, session.answers)]
+
+        suppress_ending = bool(asked & ENDING_QUESTION_IDS)
+        suppress_setting = bool(asked & SETTING_QUESTION_IDS)
+        if suppress_ending:
+            unanswered = [q for q in unanswered if q.id not in ENDING_QUESTION_IDS]
+        if suppress_setting:
+            unanswered = [q for q in unanswered if q.id not in SETTING_QUESTION_IDS]
 
         # Suppress questions incompatible with confirmed genre
         # Comedy films don't have: patriarchy, gritty, crime, gangster themes
@@ -503,16 +511,16 @@ class GameEngine:
 
         session.answers[question_id] = answer
 
-        # Auto-answer "no" to siblings of mutually-exclusive groups. A film has
-        # exactly one language, one era, and one lead music director.
-        # Genre is NOT mutually exclusive (a film can be comedy AND drama), so we
-        # never auto-no genre siblings — that was eliminating multi-genre films.
         if answer == "yes":
             group: Optional[set] = None
             if question_id in LANGUAGE_QUESTION_IDS:
                 group = LANGUAGE_QUESTION_IDS
             elif question_id in ERA_QUESTION_IDS:
                 group = ERA_QUESTION_IDS
+            elif question_id in ENDING_QUESTION_IDS:
+                group = ENDING_QUESTION_IDS
+            elif question_id in SETTING_QUESTION_IDS:
+                group = SETTING_QUESTION_IDS
             if group:
                 for sibling_id in group:
                     if sibling_id != question_id and sibling_id not in session.asked:
@@ -521,10 +529,7 @@ class GameEngine:
                         added.append(sibling_id)
 
 
-        session.history.append(added)  # record this turn so Back can undo it
-        # Soft pruning: rescore the whole pool and keep every movie within one
-        # disagreement of the best fit. No single answer permanently removes a
-        # candidate, so a movie wrongly demoted early can recover later.
+        session.history.append(added)
         self._prune(session)
 
     def undo_last(self, session: Session) -> bool:
@@ -622,9 +627,9 @@ class GameEngine:
 
     def _fit(self, movie: dict, session: Session) -> tuple[int, int]:
         """(agreements, answered) over substantive yes/no/unsure answers — excludes
-        the language/era/genre pickers, so confidence reflects discriminating questions.
-        'unsure' answers count as half-agreement when they match."""
-        group = LANGUAGE_QUESTION_IDS | ERA_QUESTION_IDS | GENRE_QUESTION_IDS
+        mutually-exclusive anchor groups, so confidence reflects core discriminating questions."""
+        group = (LANGUAGE_QUESTION_IDS | ERA_QUESTION_IDS | GENRE_QUESTION_IDS |
+                 ENDING_QUESTION_IDS | SETTING_QUESTION_IDS)
         agree = answered = 0
         for qid, ans in session.answers.items():
             if qid in group:

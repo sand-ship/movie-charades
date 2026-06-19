@@ -60,12 +60,11 @@ QUESTIONS: list[Question] = [
     Question("q_songs",     "Are songs/music a key part of the film?",          _attr_eq("has_songs", True)),
     Question("q_female",    "Is the main character female?",                    _attr_eq("lead_gender", "female")),
     Question("q_social",    "Does it carry a strong social message?",           _attr_eq("has_social_message", True)),
-    Question("q_true",      "Is it based on a true story?",                     _attr_eq("is_based_on_true_story", True)),
+    Question("q_true",      "Is it based on a true story or biography?",        lambda m: m.get('is_based_on_true_story') or m.get('is_biographical')),
     Question("q_franchise", "Is it part of a series or franchise?",             _attr_eq("is_franchise", True)),
     Question("q_remake",    "Is it a remake of another film?",                  _attr_eq("is_remake", True)),
     Question("q_sports",    "Is it a sports film?",                             _attr_eq("is_sports_film", True)),
     Question("q_historical","Is it set in a historical period?",                _attr_eq("is_historical", True)),
-    Question("q_bio",       "Is it a biographical film?",                       _attr_eq("is_biographical", True)),
     Question("q_horror",    "Does it have horror elements?",                    _attr_eq("is_horror", True)),
     Question("q_pan_india",  "Was it a pan-India blockbuster?",                  _attr_eq("is_pan_india_blockbuster", True)),
     Question("q_family",     "Is it a family-friendly film?",                    _attr_eq("is_family_film", True)),
@@ -78,7 +77,6 @@ QUESTIONS: list[Question] = [
     Question("q_infidelity",     "Does it involve infidelity or an affair?",          _attr_eq("has_infidelity", True)),
     Question("q_rural_setting",  "Is it set in a rural area?",                        _attr_eq("has_rural_setting", True)),
     Question("q_urban_setting",  "Is the story set in a city or metropolitan area?",  _attr_eq("has_urban_setting", True)),
-    Question("q_double_role",    "Does the lead play a double role or two characters?", _attr_eq("has_double_role", True)),
     Question("q_conman",         "Does the plot involve conmen or con artists?",      _attr_eq("has_conman", True)),
     Question("q_class_pretense", "Does the protagonist pretend to be from a different class/background?", _attr_eq("has_class_pretense", True)),
     Question("q_costar_sanjay_dutt", "Does Sanjay Dutt appear in the film?", _actor_appears("Sanjay Dutt")),
@@ -270,15 +268,7 @@ QUESTIONS.extend([
     Question("q_sacrifice_ending", "Does the climax involve a significant sacrifice or tragic ending?",
              _attr_true("is_sacrifice_ending"), weight=0.3),
 
-    # Phase 3: Additional discrimination questions (8 more)
-    Question("q_heist_con",         "Does the plot involve a heist, con, theft, or elaborate scheme?",
-             _attr_true("has_heist"), weight=0.3),
-    Question("q_sports_competition", "Is the central plot about sports, competition, or winning a contest?",
-             _attr_true("is_sports_film"), weight=0.3),
-    Question("q_true_story",         "Is this based on real events or a true story?",
-             _attr_true("is_based_on_true_story"), weight=0.3),
-    Question("q_courtroom_legal",    "Does the film feature significant courtroom scenes or legal conflict?",
-             _attr_true("has_courtroom"), weight=0.3),
+    # Phase 3: Additional discrimination questions (5 more — removed duplicates)
     Question("q_scifi_fantasy",      "Does the film involve sci-fi, fantasy, or supernatural worlds?",
              _attr_true("is_sci_fi"), weight=0.3),
     Question("q_single_protagonist", "Is the story tightly focused on one main character's journey?",
@@ -288,17 +278,13 @@ QUESTIONS.extend([
     Question("q_ensemble_large",     "Does the film have a large ensemble cast with multiple major characters?",
              _attr_true("is_ensemble_cast"), weight=0.3),
 
-    # Phase 4: Tier 2 discrimination (10 questions targeting mid-rated film distinctions)
+    # Phase 4: Tier 2 discrimination (9 questions targeting mid-rated film distinctions)
     Question("q_wedding_marriage",   "Is a wedding, marriage, or engagement a major plot point?",
              _attr_true("has_wedding_plot"), weight=0.3),
-    Question("q_period_historical",  "Is the film set in a historical period (not contemporary)?",
-             _attr_true("is_period_film"), weight=0.3),
     Question("q_crime_protagonist",  "Is the protagonist a criminal, gangster, or morally grey character?",
              _attr_true("has_anti_hero_protagonist"), weight=0.3),
     Question("q_investigation",      "Does the film involve a murder, investigation, or mystery to solve?",
              _attr_true("has_investigation_plot"), weight=0.3),
-    Question("q_urban_setting",      "Is the film primarily set in a major city or metropolitan area?",
-             _attr_true("is_urban_setting"), weight=0.3),
     Question("q_friendship_focus",   "Is friendship or brotherhood the emotional core (rather than romance)?",
              _attr_true("has_friendship_focus"), weight=0.3),
     Question("q_parent_child",       "Are parent-child relationships central to the plot?",
@@ -446,3 +432,6 @@ ERA_QUESTION_IDS: set[str]      = {'q_classic', 'q_90s', 'q_2000s', 'q_2010s', '
 GENRE_QUESTION_IDS: set[str]    = {'q_genre_action', 'q_genre_comedy', 'q_genre_romance',
                                     'q_genre_drama', 'q_genre_social', 'q_genre_historical',
                                     'q_genre_horror', 'q_genre_scifi'}
+ENDING_QUESTION_IDS: set[str]   = {'q_happy_ending', 'q_tragic_ending', 'q_ambiguous_ending'}
+SETTING_QUESTION_IDS: set[str]  = {'q_rural_setting', 'q_urban_setting', 'q_abroad'}
+VILLAIN_QUESTION_IDS: set[str]  = {'q_villain', 'q_strict_antagonist'}

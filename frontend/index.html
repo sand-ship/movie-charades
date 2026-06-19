@@ -286,8 +286,9 @@
   const ERA_IDS      = new Set(['q_classic','q_90s','q_2000s','q_2010s','q_2020s']);
   const GENRE_IDS    = new Set(['q_genre_picker','q_genre_action','q_genre_comedy','q_genre_romance',
                                  'q_genre_drama','q_genre_social','q_genre_historical','q_genre_horror','q_genre_scifi']);
+  const ENDING_IDS   = new Set(['q_happy_ending','q_tragic_ending','q_ambiguous_ending']);
+  const SETTING_IDS  = new Set(['q_rural_setting','q_urban_setting','q_abroad']);
 
-  // Fallback options if backend returns group:null (stale server or version mismatch)
   const GROUP_OPTIONS = {
     language: [
       {id:'q_hindi',label:'Hindi'},{id:'q_tamil',label:'Tamil'},{id:'q_telugu',label:'Telugu'},
@@ -306,6 +307,16 @@
       {id:'q_genre_horror',label:'Horror/Supernatural'},
       {id:'q_genre_scifi',label:'Sci-Fi/Fantasy'},
     ],
+    ending: [
+      {id:'q_happy_ending',label:'Happy / Satisfying'},
+      {id:'q_tragic_ending',label:'Sad / Bittersweet'},
+      {id:'q_ambiguous_ending',label:'Ambiguous / Open'},
+    ],
+    setting: [
+      {id:'q_rural_setting',label:'Rural Area'},
+      {id:'q_urban_setting',label:'City / Metro'},
+      {id:'q_abroad',label:'Outside India'},
+    ],
   };
 
   function resolveGroup(q) {
@@ -313,6 +324,8 @@
     if (LANGUAGE_IDS.has(q.id)) return 'language';
     if (ERA_IDS.has(q.id))      return 'era';
     if (GENRE_IDS.has(q.id))    return 'genre';
+    if (ENDING_IDS.has(q.id))   return 'ending';
+    if (SETTING_IDS.has(q.id))  return 'setting';
     return null;
   }
 
@@ -458,8 +471,8 @@
     handleResponse(data);
   }
 
-  // ── picker (language / era / genre) ──────────────────────────────────
-  const PICKER_LABELS = { language: 'Step 1 of 2 · Language', era: 'Step 2 of 2 · Era', genre: 'Theme' };
+  // ── picker (language / era / genre / ending / setting) ──────────────────────────────────
+  const PICKER_LABELS = { language: 'Step 1 of 2 · Language', era: 'Step 2 of 2 · Era', genre: 'Theme', ending: 'Ending Type', setting: 'Setting' };
   function renderPicker(q, remaining) {
     document.getElementById('picker-num').textContent  = PICKER_LABELS[q.group] || q.group;
     document.getElementById('picker-text').textContent = q.text;

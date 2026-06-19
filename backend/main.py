@@ -15,7 +15,9 @@ from fastapi.responses import StreamingResponse, FileResponse
 from pydantic import BaseModel
 
 from engine import GameEngine
-from questions import LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS, GENRE_QUESTION_IDS, QUESTION_MAP, make_star_questions
+from questions import (LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS, GENRE_QUESTION_IDS,
+                       ENDING_QUESTION_IDS, SETTING_QUESTION_IDS, VILLAIN_QUESTION_IDS,
+                       QUESTION_MAP, make_star_questions)
 
 # ── load data ────────────────────────────────────────────────────────────
 DATA_PATH = Path(__file__).parent / "data" / "movies.json"
