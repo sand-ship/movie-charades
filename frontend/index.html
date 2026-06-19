@@ -120,7 +120,7 @@
     .btn-unsure.maybe-2 { background: linear-gradient(135deg, #b45309, #92400e); }
     .btn-unsure.maybe-3 { background: linear-gradient(135deg, #92400e, #6b7280); }
     .btn-unsure.maybe-4 { background: linear-gradient(135deg, #6b7280, #4b5563); }
-    .btn-unsure.maybe-5 { background: linear-gradient(135deg, #4b5563, #2d3748); opacity: 0.5; }
+    .btn-unsure.maybe-5 { background: #6b7280; opacity: 0.4; cursor: not-allowed !important; }
 
     .maybe-indicator { font-size: 0.75rem; color: #f59e0b; margin-top: 2px; }
     .maybe-exhausted-msg { color: #f59e0b; font-size: 0.9rem; margin-bottom: 12px; text-align: center; }
@@ -335,8 +335,7 @@
     if (LANGUAGE_IDS.has(q.id)) return 'language';
     if (ERA_IDS.has(q.id))      return 'era';
     if (GENRE_IDS.has(q.id))    return 'genre';
-    if (ENDING_IDS.has(q.id))   return 'ending';
-    if (SETTING_IDS.has(q.id))  return 'setting';
+    // Ending and setting questions are regular yes/no/maybe, not pickers
     return null;
   }
 
