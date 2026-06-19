@@ -48,6 +48,8 @@ class Session:
         self.last_guesses: list[dict] = []  # most recent top_guesses() output
         self.reasoning_log: list[dict] = []  # COT reasoning per turn
         self.strategic_analysis: Optional[dict] = None  # current strategic guidance
+        self.maybe_count: int = 0  # Track unsure answers (max 5)
+        self.maybe_exhausted: bool = False  # True after 5 maybes
 
     def remaining_count(self) -> int:
         return len(self.candidates)
@@ -589,13 +591,39 @@ class GameEngine:
 
     def apply_answer(self, session: Session, question_id: str, answer: str) -> None:
         """answer: 'yes' | 'no' | 'unsure'
-        'unsure' is recorded and scored as weak signal (0.5x weight compared to hard yes/no)."""
+        Limits maybes to 5, then requires yes/no. Auto-clarifies ambiguous maybes with COT."""
         added = [question_id]
         session.asked.append(question_id)
 
-        # Map 'unsure' to 'maybe' for internal consistency with scoring logic
+        # Map 'unsure' to 'maybe' for internal consistency
         if answer == "unsure":
             answer = "maybe"
+
+        # Track maybes and handle exhaustion
+        if answer == "maybe":
+            if session.maybe_count >= 5:
+                # Exhausted: force clarification via COT
+                q = QUESTION_MAP.get(question_id)
+                clarified = self.reasoner.clarify_maybe(
+                    question_id=question_id,
+                    question_text=q.text if q else "?",
+                    existing_answers=session.answers,
+                )
+                # Use clarified answer instead of maybe
+                if clarified in ("yes", "no"):
+                    answer = clarified
+                    session.reasoning_log.append({
+                        "turn": len(session.asked),
+                        "type": "maybe_exhausted",
+                        "question": question_id,
+                        "clarified_to": answer,
+                        "reasoning": "Player exhausted 5 maybes; COT disambiguated"
+                    })
+                else:
+                    # Still unclear, use maybe but mark as forced
+                    session.maybe_exhausted = True
+            else:
+                session.maybe_count += 1
 
         session.answers[question_id] = answer
 

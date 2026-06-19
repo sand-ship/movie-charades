@@ -176,6 +176,45 @@ REASONING: [2-3 sentences on why this question matters]"""
         except Exception:
             return None
 
+    def clarify_maybe(self, question_id: str, question_text: str, existing_answers: dict) -> str:
+        """
+        When player exhausts maybes (5 used), disambiguate with COT.
+        Returns: "yes" or "no" based on contradiction analysis.
+        """
+        if not self.client:
+            return "maybe"  # Fallback
+
+        yes_answers = {k: v for k, v in existing_answers.items() if v == "yes"}
+        maybe_answers = {k: v for k, v in existing_answers.items() if v == "maybe"}
+
+        prompt = f"""Player has used 5 unsure answers and is now forced to decide on this one.
+
+QUESTION: {question_text}
+QUESTION_ID: {question_id}
+
+THEIR YES ANSWERS (confident):
+{json.dumps(yes_answers, indent=2)}
+
+THEIR MAYBE ANSWERS (uncertain):
+{json.dumps(maybe_answers, indent=2)}
+
+Based on what they ARE confident about, would they most likely answer YES or NO to this question?
+
+Consider: If they said YES to [list], they probably mean YES/NO to this question.
+
+ANSWER ONLY: YES or NO (not maybe)"""
+
+        try:
+            response = self.client.messages.create(
+                model=self.model_name,
+                max_tokens=100,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            text = response.content[0].text.strip().upper()
+            return "yes" if "YES" in text else "no"
+        except Exception:
+            return "maybe"
+
     def reflect_on_answer(self, question_id: str, answer: str, expected: Optional[str], candidates_before: int, candidates_after: int) -> dict:
         """
         Reflect on an answer: Was it expected? What does it mean?

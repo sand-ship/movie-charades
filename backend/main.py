@@ -233,9 +233,11 @@ def _session_state(session, include_reasoning: bool = False) -> dict:
         "remaining_candidates": remaining,
         "confidence": confidence,
         "can_go_back": len(session.history) > 0,
+        "maybe_count": session.maybe_count,
+        "maybe_exhausted": session.maybe_exhausted,
     }
     if include_reasoning and session.reasoning_log:
-        state["reasoning_log"] = session.reasoning_log[-5:]  # Last 5 reasoning entries
+        state["reasoning_log"] = session.reasoning_log[-5:]
         if session.strategic_analysis:
             state["strategic_guidance"] = session.strategic_analysis.get("strategy", "")
     return state

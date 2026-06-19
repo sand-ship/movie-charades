@@ -112,7 +112,18 @@
 
     .btn-yes    { background: linear-gradient(135deg, #1db954, #11823c); }
     .btn-no     { background: linear-gradient(135deg, var(--red), var(--red-deep)); }
-    .btn-unsure { background: linear-gradient(135deg, #f59e0b, #d97706); }
+    .btn-unsure { background: linear-gradient(135deg, #f59e0b, #d97706); transition: background 0.3s ease; }
+
+    /* Maybe button exhaustion gradient: orange → gray */
+    .btn-unsure.maybe-0 { background: linear-gradient(135deg, #f59e0b, #d97706); }
+    .btn-unsure.maybe-1 { background: linear-gradient(135deg, #d97706, #b45309); }
+    .btn-unsure.maybe-2 { background: linear-gradient(135deg, #b45309, #92400e); }
+    .btn-unsure.maybe-3 { background: linear-gradient(135deg, #92400e, #6b7280); }
+    .btn-unsure.maybe-4 { background: linear-gradient(135deg, #6b7280, #4b5563); }
+    .btn-unsure.maybe-5 { background: linear-gradient(135deg, #4b5563, #2d3748); opacity: 0.5; }
+
+    .maybe-indicator { font-size: 0.75rem; color: #f59e0b; margin-top: 2px; }
+    .maybe-exhausted-msg { color: #f59e0b; font-size: 0.9rem; margin-bottom: 12px; text-align: center; }
 
     .btn-primary {
       flex: unset; max-width: 280px; padding: 18px 30px;
@@ -410,9 +421,18 @@
     handleResponse(data);
   }
 
-  // ── route response to right screen ────────────────────────────────────
   function handleResponse(data) {
     state.canBack = !!data.can_go_back;
+    state.maybeCount = data.maybe_count || 0;
+    state.maybeExhausted = data.maybe_exhausted || false;
+
+    // Update maybe button gradient (orange 0/5 → gray 5/5)
+    const unsureBtn = document.getElementById('btn-unsure');
+    if (unsureBtn) {
+      unsureBtn.className = `btn-unsure maybe-${state.maybeCount}`;
+      unsureBtn.disabled = state.maybeExhausted;
+    }
+
     if (data.phase === 'guess' || data.guesses) {
       renderGuesses(data.guesses);
       return;
@@ -428,16 +448,27 @@
       q.options = q.options || GROUP_OPTIONS[grp];
       renderPicker(q, data.remaining_candidates);
     } else {
-      renderQuestion(q, data.remaining_candidates);
+      renderQuestion(q, data.remaining_candidates, state.maybeExhausted);
     }
   }
 
-  // ── yes/no question ───────────────────────────────────────────────────
-  function renderQuestion(q, remaining, confidence) {
+  function renderQuestion(q, remaining, maybeExhausted) {
     document.getElementById('q-num').textContent  = `Question ${state.userQNum + 1}`;
     document.getElementById('q-text').textContent = q.text;
     document.getElementById('progress').style.width = `${(state.userQNum / 18) * 100}%`;
-    document.getElementById('candidates-info').textContent = '';
+
+    // Show warning if maybes exhausted
+    const infoEl = document.getElementById('candidates-info');
+    if (maybeExhausted) {
+      infoEl.innerHTML = '<div class="maybe-exhausted-msg">🔒 You\'ve used all 5 uncertain answers. Please pick YES or NO.</div>';
+      document.getElementById('btn-unsure').disabled = true;
+    } else if (state.maybeCount > 0) {
+      const remaining = 5 - state.maybeCount;
+      infoEl.innerHTML = `<div class="maybe-indicator">Uncertain answers remaining: ${remaining}/5</div>`;
+    } else {
+      infoEl.textContent = '';
+    }
+
     setYesNoEnabled(true);
     document.getElementById('back-question').classList.toggle('hidden', !state.canBack);
     show('question');
