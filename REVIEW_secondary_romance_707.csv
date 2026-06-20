@@ -1,0 +1,1172 @@
+title,year,language,primary_genre,genres,director,lead_actor,has_love_triangle,review_notes
+Johny Mera Naam,1970,Hindi,Action,"Action, Crime, Drama, Romance, Musical",Vijay Anand,Dev Anand,True,Verify if romance subplot is significant enough to tag as has_romance
+Jaanbaaz,1986,Hindi,Action,"Action, Crime, Drama, Romance",Feroz Khan,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Shree 420,1955,Hindi,Comedy,"Comedy, Drama, Romance, Musical",Raj Kapoor,Raj Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Awara,1951,Hindi,Drama,"Drama, Romance, Crime, Musical",Raj Kapoor,Raj Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Mera Naam Joker,1970,Hindi,Drama,"Drama, Musical, Romance",Raj Kapoor,Raj Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Puthiya Mugham,1990,Tamil,Drama,"Drama, Romance",Shekar,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Donga Ramudu,1955,Telugu,action,"action, drama, adventure, romance",C. Pullaiah,N.T. Rama Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Nadodi Mannan,1958,Tamil,action,"action, adventure, romance, drama, musical, fantasy",M. A. Thirumugam,M. G. Ramachandran,True,Verify if romance subplot is significant enough to tag as has_romance
+Sholay,1975,Hindi,action,"action, adventure, drama, comedy, romance, thriller",Ramesh Sippy,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Amar Akbar Anthony,1977,Hindi,action,"action, comedy, drama, family, musical, romance",Manmohan Desai,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Aadu Puli Attam,1977,Tamil,action,"action, romance, drama, comedy",S. P. Muthuraman,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Dharam Veer,1977,Hindi,action,"action, adventure, fantasy, romance, musical, family",Manmohan Desai,Dharmendra,False,Verify if romance subplot is significant enough to tag as has_romance
+Parvarish,1977,Hindi,action,"action, drama, family, comedy, romance",Manmohan Desai,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Bairavi,1978,Tamil,action,"action, drama, romance",S. P. Muthuraman,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Vishwanath,1978,Hindi,action,"action, drama, romance, musical",Subhash Ghai,Shatrughan Sinha,True,Verify if romance subplot is significant enough to tag as has_romance
+Mr. Natwarlal,1979,Hindi,action,"action, comedy, romance, drama, crime, musical",Rakesh Kumar,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Driver Ramudu,1979,Telugu,action,"action, comedy, drama, romance",K. Raghavendra Rao,N. T. Rama Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Shaan,1980,Hindi,action,"action, adventure, crime, comedy, romance, thriller",Ramesh Sippy,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Johnny,1980,Tamil,action,"action, drama, romance",V. C. Sekhar,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Murattu Kaalai,1980,Tamil,action,"action, comedy, romance, drama",S. P. Muthuraman,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Nyayam Kavali,1980,Telugu,action,"action, drama, romance",N. Shankar,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Nootrukku Nooru,1981,Tamil,action,"action, drama, romance",S. P. Muthuraman,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Kondaveeti Simham,1981,Telugu,action,"action, drama, romance",Vijaya Bapineedu,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Naseeb,1981,Hindi,action,"action, comedy, romance, drama, musical, adventure",Manmohan Desai,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Savaal,1981,Tamil,action,"action, romance, drama",S. P. Muthuraman,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Maga Maharaju,1981,Telugu,action,"action, drama, romance",K. Bapaiah,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Rocky,1981,Hindi,action,"action, romance, drama, musical",Sunil Dutt,Sanjay Dutt,False,Verify if romance subplot is significant enough to tag as has_romance
+Ooriki Monagadu,1981,Telugu,action,"action, drama, romance",K. Raghavendra Rao,Krishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Bobbili Puli,1982,Telugu,action,"action, drama, romance",Dasari Narayana Rao,N. T. Rama Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Khaidi,1983,Telugu,action,"action, drama, romance",A. Kodandarami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Coolie,1983,Hindi,action,"action, drama, comedy, romance",Manmohan Desai,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Velli Thirai,1983,Tamil,action,"action, drama, romance",Rajasekhar,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Bhargava Ramudu,1983,Telugu,action,"action, drama, romance, family",Vijaya Bapineedu,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Thambikku Entha Ooru,1984,Tamil,action,"action, comedy, romance, drama",R. Sundarrajan,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Valaiyosai,1984,Tamil,action,"action, romance, drama, comedy",K. S. Gopalakrishnan,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Challenge,1984,Telugu,action,"action, drama, romance",Vijaya Bapineedu,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Nallavanukku Nallavan,1984,Tamil,action,"action, comedy, romance, drama, family",S. P. Muthuraman,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Trisulam,1984,Telugu,action,"action, drama, romance",Dasari Narayana Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Mard,1985,Hindi,action,"action, adventure, drama, romance",Manmohan Desai,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Padikkadavan,1985,Tamil,action,"action, comedy, romance, drama",Rajasekhar,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Aayanaki Iddaru,1985,Telugu,action,"action, comedy, romance, drama",S.P. Muthuraman,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Agni Parvatam,1985,Telugu,action,"action, romance, drama",K. Bapaiah,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Kothalo Rayi Gundello Pranam,1985,Telugu,action,"action, drama, romance, comedy",Dasari Narayana Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Prathighatana,1985,Telugu,action,"action, drama, romance",T. Raghunath,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Oomai Vizhigal,1986,Tamil,action,"action, drama, romance, thriller",P. Bharathiraja,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Eetti,1986,Tamil,action,"action, drama, romance",K. Bhagyaraj,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Mr. Bharath,1986,Tamil,action,"action, drama, romance",S. P. Muthuraman,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Simhasanam,1986,Telugu,action,"action, drama, romance",K. Bapaiah,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Veta,1986,Telugu,action,"action, romance, drama",K. Bapaiah,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Nippulanti Manishi,1986,Telugu,action,"action, drama, romance",A. Kodandarami Reddy,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Sultanat,1986,Hindi,action,"action, romance, drama",Mukul Anand,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Nayakudu,1987,Telugu,action,"action, drama, romance",Raghavendra Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Jebu Donga,1987,Telugu,action,"action, comedy, romance, drama",A. Kodandarami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Velaikaran,1987,Tamil,action,"action, comedy, romance, drama",S. P. Muthuraman,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Donga Mogudu,1987,Telugu,action,"action, drama, romance, comedy",A. Kodandarami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Pasivadi Pranam,1987,Telugu,action,"action, drama, romance, musical",K. Bapaiah,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Dacait,1987,Hindi,action,"action, drama, romance, crime",Rahul Rawail,Sunny Deol,False,Verify if romance subplot is significant enough to tag as has_romance
+Pratigya,1987,Hindi,action,"action, drama, romance",Raj N. Sippy,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Brahma Nayudu,1987,Telugu,action,"action, drama, romance, family",A. Kodandarami Reddy,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Rettai Vaal Kuruvi,1987,Tamil,action,"action, comedy, romance, drama",Balu Mahendra,Mohan,True,Verify if romance subplot is significant enough to tag as has_romance
+Tezaab,1988,Hindi,action,"action, romance, drama, thriller, musical",N. Chandra,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Soorasamharam,1988,Tamil,action,"action, drama, romance",P. Vasu,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Agni Natchathiram,1988,Tamil,action,"action, drama, romance, family",Mani Ratnam,Prabhu,True,Verify if romance subplot is significant enough to tag as has_romance
+Aakhari Poratam,1988,Telugu,action,"action, drama, romance",K. Raghavendra Rao,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Dharmathin Thalaivan,1988,Tamil,action,"action, drama, romance",S. P. Muthuraman,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Manchi Donga,1988,Telugu,action,"action, romance, drama, adventure",A. Kodandarami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Yateem,1988,Hindi,action,"action, drama, romance",J.P. Dutta,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Ram Lakhan,1989,Hindi,action,"action, drama, crime, romance, family",Subhash Ghai,Jackie Shroff,True,Verify if romance subplot is significant enough to tag as has_romance
+Rajathi Raja,1989,Tamil,action,"action, comedy, romance, drama",S. P. Muthuraman,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+State Rowdy,1989,Telugu,action,"action, drama, romance",A. Kodanda Rami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Vetri Vizha,1989,Tamil,action,"action, romance, drama, thriller",Prathap K. Pothen,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Rajadhi Raja,1989,Tamil,action,"action, comedy, romance, drama",S. P. Muthuraman,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Toofan,1989,Hindi,action,"action, romance, drama",Ketan Desai,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Rajadhiraja,1989,Telugu,action,"action, drama, romance, adventure",A. Kodandarami Reddy,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Thaai Naadu,1989,Tamil,action,"action, drama, romance",R. Aravindraj,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Keladi Kanmani,1990,Tamil,action,"action, comedy, romance, drama",Rajiv Menon,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Panakkaran,1990,Tamil,action,"action, comedy, romance, drama, family",S. P. Muthuraman,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Bobbili Raja,1990,Telugu,action,"action, comedy, romance, drama, family",Raghavendra Rao,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Kondaveeti Donga,1990,Telugu,action,"action, romance, drama, musical",Raghavendra Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Poru Gadu,1990,Telugu,action,"action, drama, romance",Dasari Narayana Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Baaghi: A Rebel for Love,1990,Hindi,action,"action, romance, drama",Deepak S. Shivdasani,Salman Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+Kodama Simham,1990,Telugu,action,"action, drama, romance",A. Kodandarami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Prema Khaidi,1990,Telugu,action,"action, romance, comedy, drama",A. Kodandarami Reddy,Chiranjeevi,False,Verify if romance subplot is significant enough to tag as has_romance
+Aaj Ka Arjun,1990,Hindi,action,"action, drama, romance",K. Ravi Shankar,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Kishen Kanhaiya,1990,Hindi,action,"action, comedy, romance, drama",Rakesh Roshan,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Jagadeka Veerudu Athiloka Sundari,1990,Telugu,action,"action, fantasy, romance",K. Raghavendra Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Thalapathi,1991,Tamil,action,"action, drama, crime, romance",Mani Ratnam,Rajinikanth,False,Verify if romance subplot is significant enough to tag as has_romance
+Hum,1991,Hindi,action,"action, drama, romance, musical",Mukul Anand,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Azhagan,1991,Tamil,action,"action, romance, drama, thriller",Mani Ratnam,Mammootty,True,Verify if romance subplot is significant enough to tag as has_romance
+Gang Leader,1991,Telugu,action,"action, comedy, romance, drama, musical",K. Raghavendra Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Rowdy Alludu,1991,Telugu,action,"action, comedy, romance, drama, family",A. Kodandarami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Phool Aur Kaante,1991,Hindi,action,"action, romance, drama, thriller",Kuku Kohli,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Saugandh,1991,Hindi,action,"action, romance, thriller, crime",Raj N. Sippy,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Chaitanya,1991,Telugu,action,"action, romance, drama",Prathap K. Pothan,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Balaraju,1991,Telugu,action,"action, romance, drama, musical",K. Raghavendra Rao,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Gharana Mogudu,1992,Telugu,action,"action, comedy, romance, drama, family, musical",K. Raghavendra Rao,Chiranjeevi,False,Verify if romance subplot is significant enough to tag as has_romance
+Annaamalai,1992,Tamil,action,"action, drama, romance, comedy",Suresh Krissna,Rajinikanth,False,Verify if romance subplot is significant enough to tag as has_romance
+Mannan,1992,Tamil,action,"action, romance, comedy, drama",Rajasekhar,Rajinikanth,False,Verify if romance subplot is significant enough to tag as has_romance
+Aapattbandavudu,1992,Telugu,action,"action, drama, romance",A. Kodanda Rami Reddy,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Golimaar,1992,Telugu,action,"action, drama, romance",A. Kodandarami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Khuda Gawah,1992,Hindi,action,"action, drama, romance, historical, adventure",Mukul S. Anand,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Jigar,1992,Hindi,action,"action, romance, drama",Farogh Siddique,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Deedar,1992,Hindi,action,"action, romance, drama",Pramod Chakravorty,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Killer,1992,Telugu,action,"action, romance, thriller",Fazil,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Annamalai,1992,Tamil,action,"action, drama, romance, comedy",Suresh Krissna,Rajinikanth,False,Verify if romance subplot is significant enough to tag as has_romance
+Nishchaiy,1992,Hindi,action,"action, romance, drama",T. Rama Rao,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Aapadbandhavudu,1992,Telugu,action,"action, drama, romance, family",K.S. Ravi Kumar,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Jagadeka Veerudu Vikramarka,1992,Telugu,action,"action, comedy, romance, adventure, fantasy",Rajasekhar,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Vishwatma,1992,Hindi,action,"action, thriller, crime, romance",Rajiv Rai,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Chanti,1992,Telugu,action,"action, romance, comedy, drama",A. Kodandarami Reddy,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Sundarakanda,1992,Telugu,action,"action, drama, comedy, romance",P. Chandrasekhar Reddy,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Gentleman,1993,Tamil,action,"action, thriller, crime, romance",S. Shankar,Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Thiruda Thiruda,1993,Tamil,action,"action, comedy, romance, adventure, thriller",Mani Ratnam,Prashanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Ejaman,1993,Tamil,action,"action, drama, romance, family",V. Sekar,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Valli,1993,Tamil,action,"action, romance, drama",Rajiv Menon,Vijayakanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Uzhaippali,1993,Tamil,action,"action, drama, romance, musical",K. S. Ravikumar,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Mutha Mestri,1993,Telugu,action,"action, drama, romance",A. Kodanda Rami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Donga Alludu,1993,Telugu,action,"action, comedy, romance, drama",A. Kodandarami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Bangaru Bullodu,1993,Telugu,action,"action, comedy, romance, drama, family",K. Raghavendra Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Divya Shakti,1993,Hindi,action,"action, romance, drama",Sameer Malkan,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Platform,1993,Hindi,action,"action, drama, romance",Deepak Pawar,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Sangraam,1993,Hindi,action,"action, romance, drama",Mehul Kumar,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Bedardi,1993,Hindi,action,"action, romance, drama, thriller",Deepak Shivdasani,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Amaravathi,1993,Tamil,action,"action, romance, drama",Selvaa,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Dil Ki Baazi,1993,Hindi,action,"action, romance, thriller, drama",Anil Ganguly,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Waqt Hamara Hai,1993,Hindi,action,"action, comedy, romance",Bharat Rangachary,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Sainik,1993,Hindi,action,"action, romance, drama",Sikandar Bharti,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Rakshana,1993,Telugu,action,"action, romance, drama",Uppalapati Narayana Rao,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Varasudu,1993,Telugu,action,"action, comedy, romance, drama, family",E. V. V. Satyanarayana,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Yejaman,1993,Tamil,action,"action, drama, romance, family",R. V. Udayakumar,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Sendhoorapandi,1993,Tamil,action,"action, drama, romance",R. V. Udayakumar,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Pembarolata,1993,Telugu,action,"action, romance, drama, musical",A. Kodandarami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Roop Ki Rani Choron Ka Raja,1993,Hindi,action,"action, romance, comedy, adventure",Satish Kaushik,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Khalnayak,1993,Hindi,action,"action, drama, crime, romance, musical",Subhash Ghai,Sanjay Dutt,True,Verify if romance subplot is significant enough to tag as has_romance
+Lootere,1993,Hindi,action,"action, adventure, romance, thriller",Priyadarshan,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Kshatriya,1993,Hindi,action,"action, drama, romance, family",J.P. Dutta,Sunny Deol,False,Verify if romance subplot is significant enough to tag as has_romance
+Mohra,1994,Hindi,action,"action, thriller, romance, crime",Rajiv Rai,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Kadhalan,1994,Tamil,action,"action, romance, comedy, musical, drama",Shankar,Prabhu Deva,False,Verify if romance subplot is significant enough to tag as has_romance
+Gharana Bullodu,1994,Telugu,action,"action, comedy, romance, drama, family",A. Kodandarami Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Allari Alludu,1994,Telugu,action,"action, comedy, romance, family",Kovelamudi Raghavendra Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Kondapalli Raja,1994,Telugu,action,"action, romance, comedy, drama",Suresh Krishna,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Suhaag,1994,Hindi,action,"action, drama, romance, family",Kuku Kohli,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Vijaypath,1994,Hindi,action,"action, romance, drama, thriller",Farogh Siddique,Ajay Devgn,False,Verify if romance subplot is significant enough to tag as has_romance
+Jai Kishen,1994,Hindi,action,"action, romance, drama",Sunil Agnihotri,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Main Khiladi Tu Anari,1994,Hindi,action,"action, comedy, romance",Sameer Malkan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Criminal,1994,Telugu,action,"action, thriller, romance, drama",Mahesh Bhatt,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Veera,1994,Tamil,action,"action, romance, comedy, drama",Suresh Krissna,Rajinikanth,False,Verify if romance subplot is significant enough to tag as has_romance
+Vishnu,1994,Tamil,action,"action, comedy, romance, drama",K. S. Ravikumar,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Insaniyat,1994,Hindi,action,"action, drama, romance",T. Rama Rao,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Imtihaan,1994,Hindi,action,"action, romance, drama, thriller",Partho Ghosh,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Karan Arjun,1995,Hindi,action,"action, drama, romance, fantasy, family",Rakesh Roshan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Muthu,1995,Tamil,action,"action, comedy, romance, drama, musical",K. S. Ravikumar,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Spadikam,1995,Malayalam,action,"action, drama, romance, family",Bhadran,Mohanlal,True,Verify if romance subplot is significant enough to tag as has_romance
+Baasha,1995,Tamil,action,"action, drama, romance, crime",Suresh Krissna,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Indira,1995,Tamil,action,"action, romance, drama, thriller",Suresh Krissna,Arvind Swamy,True,Verify if romance subplot is significant enough to tag as has_romance
+Aasai,1995,Tamil,action,"action, romance, thriller, drama",Suresh Krissna,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Gundaraj,1995,Hindi,action,"action, romance, drama",Guddu Dhanoa,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Haqeeqat,1995,Hindi,action,"action, romance, drama, thriller",Kuku Kohli,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Sabse Bada Khiladi,1995,Hindi,action,"action, comedy, romance, thriller, crime",Umesh Mehra,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Trimurti,1995,Hindi,action,"action, drama, romance, crime",Mukul Anand,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ravanudainatey,1995,Telugu,action,"action, drama, romance",Dasari Narayana Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Iddaru Mitrulu,1995,Telugu,action,"action, comedy, romance, drama",S. V. Krishna Reddy,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Nippu Ravva,1995,Telugu,action,"action, drama, romance",A. Kodandarami Reddy,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Takkar,1995,Hindi,action,"action, thriller, romance",Guddu Dhanoa,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Barsaat,1995,Hindi,action,"action, romance, drama, thriller",Rajkumar Santoshi,Sunny Deol,False,Verify if romance subplot is significant enough to tag as has_romance
+Naadodi Thendral,1995,Tamil,action,"action, drama, romance",Hari,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Engirundho Vandhan,1995,Tamil,action,"action, romance, drama",T. Rajendar,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Jeet,1996,Hindi,action,"action, romance, drama, thriller",Raj Kanwar,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Krishna,1996,Telugu,action,"action, romance, drama, comedy",A. Kodanda Rami Reddy,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Khiladiyon Ka Khiladi,1996,Hindi,action,"action, thriller, romance",Umesh Mehra,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Ramudochadu,1996,Telugu,action,"action, comedy, romance, drama",A. Kodandarami Reddy,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Maanbumigu Maruthanayagam,1996,Tamil,action,"action, drama, romance",S. A. Chandrasekhar,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Sivasakthi,1996,Tamil,action,"action, comedy, romance, drama",Suresh Krissna,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Thammudu,1997,Telugu,action,"action, comedy, romance, drama",Puri Jagannadh,Pawan Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ratchagan,1997,Tamil,action,"action, thriller, crime, romance",K. S. Ravikumar,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Koyla,1997,Hindi,action,"action, romance, drama, thriller",Rakesh Roshan,Shah Rukh Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+Itihaas,1997,Hindi,action,"action, romance, drama",Partho Ghosh,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Auzaar,1997,Hindi,action,"action, romance, drama, thriller",Sohail Khan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Hitler,1997,Telugu,action,"action, comedy, romance, drama, family",K. Raghavendra Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Ziddi,1997,Hindi,action,"action, thriller, romance",Guddu Dhanoa,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Lahoo Ke Do Rang,1997,Hindi,action,"action, drama, romance, thriller",Mahesh Bhatt,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Vallal,1997,Tamil,action,"action, drama, romance",Raj Kapoor,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Periya Manushan,1997,Tamil,action,"action, drama, romance",A. Jagannathan,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Pagaivan,1997,Tamil,action,"action, drama, romance",K. Subash,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Soldier,1998,Hindi,action,"action, romance, thriller",Abbas-Mastan,Bobby Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Anbazhagan,1998,Tamil,action,"action, comedy, romance, drama",K. S. Ravikumar,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Aval Varuvala,1998,Tamil,action,"action, romance, comedy, drama",R. Sundarrajan,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Ghulam,1998,Hindi,action,"action, romance, drama, thriller",Vikram Bhatt,Aamir Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Major Saab,1998,Hindi,action,"action, drama, romance",Tinnu Anand,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Suswagatham,1998,Telugu,action,"action, comedy, romance, drama, family",K. Raghavendra Rao,Pawan Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Bandhan,1998,Hindi,action,"action, romance, drama, family",K. Muralimohana Rao,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Quila,1998,Hindi,action,"action, romance, drama, thriller",Mani Shankar,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Rasaiyya,1998,Tamil,action,"action, drama, romance",Sakthi Chidambaram,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Baadshah,1999,Hindi,action,"action, comedy, romance, thriller",Abbas Alibhai Burmawalla,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Padayappa,1999,Tamil,action,"action, drama, romance, family",K. S. Ravikumar,Rajinikanth,False,Verify if romance subplot is significant enough to tag as has_romance
+Vaali,1999,Tamil,action,"action, romance, drama, thriller",Linguswamy,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Abhimanyu,1999,Telugu,action,"action, romance, drama",Puri Jagannadh,Tarun,True,Verify if romance subplot is significant enough to tag as has_romance
+Samarasimha Reddy,1999,Telugu,action,"action, drama, romance, family",S.V. Krishna Reddy,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Hogi Pyaar Ki Jeet,1999,Hindi,action,"action, romance, drama, thriller",P. Vasu,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Amarkalam,1999,Tamil,action,"action, romance, drama",Saran,Ajith Kumar,False,Verify if romance subplot is significant enough to tag as has_romance
+Jaanwar,1999,Hindi,action,"action, romance, drama, musical",Suneel Darshan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Seetharama Raju,1999,Telugu,action,"action, drama, romance",Y. V. S. Chowdary,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Pagalvan,1999,Tamil,action,"action, comedy, romance, drama",Kasthuri Raja,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Nomu,1999,Telugu,action,"action, drama, romance, family",K. Raghavendra Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Sneham Kosam,1999,Telugu,action,"action, romance, drama, musical",A. Kodandarami Reddy,Chiranjeevi,False,Verify if romance subplot is significant enough to tag as has_romance
+Nee Kosam,1999,Telugu,action,"action, romance, drama",P. Chandrasekhar Reddy,Ravi Teja,False,Verify if romance subplot is significant enough to tag as has_romance
+Ponnu Veetukkaran,1999,Tamil,action,"action, comedy, romance, drama, family",Guru Dhanapal,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Azhagarsamy,1999,Tamil,action,"action, comedy, romance, drama",Sakthi Chidambaram,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Badshah,1999,Hindi,action,"action, comedy, romance",Harshavardhan Kulkarni,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Josh,2000,Hindi,action,"action, drama, romance, musical",Mansoor Khan,Shah Rukh Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+Deewane,2000,Hindi,action,"action, romance, drama",Harry Baweja,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Mugavaree,2000,Tamil,action,"action, romance, drama, comedy",V. Z. Durai,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Yuvaraju,2000,Telugu,action,"action, romance, comedy, drama, family",Y.V.S. Chowdary,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Vamsi,2000,Telugu,action,"action, romance, drama",B. Gopal,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Unnai Thedi,2000,Tamil,action,"action, romance, drama",K. Subash,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Mission Kashmir,2000,Hindi,action,"action, drama, thriller, romance",Vidhu Vinod Chopra,Hrithik Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Pukar,2000,Hindi,action,"action, romance, thriller, drama",Rajkumar Santoshi,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Kalisundam Raa,2000,Telugu,action,"action, romance, drama, comedy",Gunasekhar,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Puratchikkaaran,2000,Tamil,action,"action, drama, romance",Guru Dhanapal,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Jayam Manadera,2000,Telugu,action,"action, fantasy, romance",S.S. Rajamouli,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Student No. 1,2001,Telugu,action,"action, romance, drama, comedy",S.S. Rajamouli,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Friends,2001,Tamil,action,"action, comedy, romance, drama",Siddique,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Narasimha Naidu,2001,Telugu,action,"action, drama, romance",S.V. Krishna Reddy,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Kaasi,2001,Telugu,action,"action, drama, romance",Gunasekhar,Pawan Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Dheena,2001,Tamil,action,"action, comedy, romance, thriller",A.R. Murugadoss,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Eduruleni Manishi,2001,Telugu,action,"action, romance, drama, thriller",Jonnalagadda Srinivasa Rao,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Badri,2001,Tamil,action,"action, romance, comedy",Boopathy Pandian,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Student No.1,2001,Telugu,action,"action, romance, drama, musical",S.S. Rajamouli,Jr NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Kasam,2001,Hindi,action,"action, romance, drama",Guddu Dhanoa,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Dhill,2001,Tamil,action,"action, romance, thriller",Dharani,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Idiot,2002,Telugu,action,"action, comedy, romance, drama",Puri Jagannadh,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Khadgam,2002,Telugu,action,"action, thriller, crime, romance",S.S. Rajamouli,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Run,2002,Tamil,action,"action, romance, comedy, thriller",N. Rajasekar,R. Madhavan,False,Verify if romance subplot is significant enough to tag as has_romance
+Jayam,2002,Telugu,action,"action, romance, drama",Teja,Nithin,True,Verify if romance subplot is significant enough to tag as has_romance
+Indra,2002,Telugu,action,"action, drama, romance, musical",S.S. Rajamouli,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Santhosham,2002,Telugu,action,"action, romance, comedy, drama",N. Shankar,Nagarjuna Akkineni,True,Verify if romance subplot is significant enough to tag as has_romance
+Takkari Donga,2002,Telugu,action,"action, comedy, romance, adventure",Nandini Reddi,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Aval Peyar Thamizharasi,2002,Tamil,action,"action, romance, comedy, drama",K. Selva Kumar,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Youth,2002,Tamil,action,"action, romance, drama",S. J. Suryah,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Aadi,2002,Telugu,action,"action, romance, drama",V. V. Vinayak,Jr NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Eeswar,2002,Telugu,action,"action, romance, drama, comedy",S. V. Krishna Reddy,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Chennakesava Reddy,2002,Telugu,action,"action, drama, romance",A. Kodandarami Reddy,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Maa Tujhhe Salaam,2002,Hindi,action,"action, drama, romance",Deepak Shivdasani,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Maha Nadigan,2002,Tamil,action,"action, drama, romance",Sakthi Chidambaram,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Gemini,2002,Tamil,action,"action, thriller, crime, romance",Saran,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Samurai,2002,Tamil,action,"action, romance, drama",Chimbu Deven,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Bobby,2002,Telugu,action,"action, romance, comedy",Puri Jagannadh,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Okkadu,2003,Telugu,action,"action, romance, thriller, drama",Gunasekhar,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Simhadri,2003,Telugu,action,"action, romance, drama, fantasy",S.S. Rajamouli,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Kaakha Kaakha,2003,Tamil,action,"action, romance, thriller, drama",Gautham Menon,Suriya,False,Verify if romance subplot is significant enough to tag as has_romance
+Thirumalai,2003,Tamil,action,"action, romance, comedy, drama",Boopathy Pandian,Vijay,False,Verify if romance subplot is significant enough to tag as has_romance
+Dhool,2003,Tamil,action,"action, romance, comedy, drama",Boopathy Pandian,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Kaaka Kaaka,2003,Tamil,action,"action, romance, thriller, drama",Gautham Menon,Suriya,True,Verify if romance subplot is significant enough to tag as has_romance
+Neeraj,2003,Tamil,action,"action, romance, drama",Vijay Milton,Shaam,True,Verify if romance subplot is significant enough to tag as has_romance
+Okkade,2003,Telugu,action,"action, romance, drama",Puri Jagannadh,Nagarjuna Akkineni,True,Verify if romance subplot is significant enough to tag as has_romance
+Amma Nanna O Tamila Ammayi,2003,Telugu,action,"action, comedy, romance, drama, family",Puri Jagannadh,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Subbu,2003,Telugu,action,"action, romance, drama",Puri Jagannadh,Jr NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Naaga,2003,Telugu,action,"action, fantasy, adventure, romance",S.S. Rajamouli,Jr NTR,False,Verify if romance subplot is significant enough to tag as has_romance
+Raghavendra,2003,Telugu,action,"action, drama, romance",G. Nageswara Reddy,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+The Hero: Love Story of a Spy,2003,Hindi,action,"action, romance, thriller",Anil Sharma,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Main Hoon Na,2004,Hindi,action,"action, comedy, romance, drama, musical",Farah Khan,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ghilli,2004,Tamil,action,"action, romance, thriller, comedy",Dharani,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Mass,2004,Telugu,action,"action, comedy, romance",Raghava Lawrence,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Chellamae,2004,Tamil,action,"action, romance, drama",Suresh Krishna,Vishal,True,Verify if romance subplot is significant enough to tag as has_romance
+Perazhagan,2004,Tamil,action,"action, drama, romance, family",Hari,Suriya,True,Verify if romance subplot is significant enough to tag as has_romance
+Jai,2004,Telugu,action,"action, romance, drama",Teja,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Arjun,2004,Telugu,action,"action, romance, drama",Gunasekhar,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Samba,2004,Telugu,action,"action, drama, romance",S.S. Rajamouli,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Venky,2004,Telugu,action,"action, comedy, romance",Surender Reddy,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Attagasam,2004,Tamil,action,"action, romance, drama",Saran,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Virumaandi,2004,Tamil,action,"action, drama, crime, thriller, romance",Kamal Haasan,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Aadhi,2004,Tamil,action,"action, romance, comedy",Hari,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Madurey,2004,Tamil,action,"action, romance, comedy",Boopathy Pandian,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Andhrawala,2004,Telugu,action,"action, romance, comedy",Lawrence,Jr NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Adavi Ramudu,2004,Telugu,action,"action, romance, drama",Ramana,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Snehithudu,2004,Telugu,action,"action, drama, romance",Puri Jagannadh,Balakrishna,False,Verify if romance subplot is significant enough to tag as has_romance
+Ab Tumhare Hawale Watan Saathiyo,2004,Hindi,action,"action, drama, war, romance",Anil Sharma,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Pudhukottaiyilirundhu Saravanan,2004,Tamil,action,"action, comedy, romance, drama",S. S. Stanley,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+M. Kumaran Son of Mahalakshmi,2004,Tamil,action,"action, comedy, romance, drama, family",M. Raja,Jayam Ravi,True,Verify if romance subplot is significant enough to tag as has_romance
+Kovil,2004,Tamil,action,"action, romance, drama, comedy",Hari,Silambarasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Kuthu,2004,Tamil,action,"action, romance, comedy, musical",A. Venkatesh,Silambarasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Fida,2004,Hindi,action,"action, romance, thriller",Ken Ghosh,Shahid Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Athadu,2005,Telugu,action,"action, thriller, romance, drama",Trivikram Srinivas,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Bunny,2005,Telugu,action,"action, comedy, romance",Devaraj Mohan,Allu Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Chatrapathi,2005,Telugu,action,"action, romance, drama",S.S. Rajamouli,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Bhadra,2005,Telugu,action,"action, romance, comedy, drama",S.S. Rajamouli,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Munna,2005,Telugu,action,"action, romance, drama",Vamsi Paidipally,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Ayya,2005,Tamil,action,"action, comedy, romance, drama",Hari,Sarath Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Majaa,2005,Tamil,action,"action, comedy, romance",Boopathy Pandian,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Sandakozhi,2005,Tamil,action,"action, romance, drama",Lingusamy,Vishal,True,Verify if romance subplot is significant enough to tag as has_romance
+Sivakasi,2005,Tamil,action,"action, drama, romance, family",Perarasu,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Adhi,2005,Tamil,action,"action, romance, comedy",K. V. Anand,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Jai Chiranjeeva,2005,Telugu,action,"action, comedy, romance, drama",K. Raghavendra Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Super,2005,Telugu,action,"action, comedy, romance, drama",Puri Jagannadh,Nagarjuna Akkineni,True,Verify if romance subplot is significant enough to tag as has_romance
+Ji,2005,Tamil,action,"action, romance, thriller",N. Lingusamy,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Thirupaachi,2005,Tamil,action,"action, romance, comedy, drama",Boopathy Pandian,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Chakram,2005,Telugu,action,"action, romance, comedy",Mani Sharma,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Aaru,2005,Tamil,action,"action, romance, thriller",Hari,Suriya,True,Verify if romance subplot is significant enough to tag as has_romance
+Balu,2005,Telugu,action,"action, comedy, romance, drama",Anil Ravipudi,Pawan Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Daas,2005,Tamil,action,"action, romance, drama",Sakthi Chidambaram,Jayam Ravi,True,Verify if romance subplot is significant enough to tag as has_romance
+Thotti Jaya,2005,Tamil,action,"action, drama, romance",Durai,Silambarasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Raam,2005,Tamil,action,"action, romance, drama",Ameer,Jiiva,True,Verify if romance subplot is significant enough to tag as has_romance
+Deewane Huye Paagal,2005,Hindi,action,"action, comedy, romance",Vikram Bhatt,Shahid Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Dhoom 2,2006,Hindi,action,"action, thriller, crime, comedy, romance, adventure",Sanjay Gadhvi,Hrithik Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Krrish,2006,Hindi,action,"action, romance, sci-fi, fantasy, adventure, family",Rakesh Roshan,Hrithik Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Pokiri,2006,Telugu,action,"action, thriller, crime, romance",Puri Jagannadh,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Vikramarkudu,2006,Telugu,action,"action, comedy, romance, drama",S.S. Rajamouli,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Sainikudu,2006,Telugu,action,"action, romance, thriller",Gunasekhar,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Saravana,2006,Tamil,action,"action, romance, drama, comedy",N. Rajasekar,Vijay,False,Verify if romance subplot is significant enough to tag as has_romance
+Bangaram,2006,Telugu,action,"action, romance, drama",Puri Jagannadh,Pawan Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Annavaram,2006,Telugu,action,"action, drama, romance, comedy",Bhimaneni Srinivasa Rao,Pawan Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ashok,2006,Telugu,action,"action, romance, comedy, drama",S.S. Rajamouli,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Varalaru,2006,Tamil,action,"action, drama, romance, thriller",K. S. Ravikumar,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Happy,2006,Telugu,action,"action, comedy, romance",A. Karunakaran,Allu Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Stalin,2006,Telugu,action,"action, drama, comedy, romance",S.S. Rajamouli,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Okka Magaadu,2006,Telugu,action,"action, drama, romance",Ravi Raja Pinisetty,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Lakshmi,2006,Telugu,action,"action, drama, romance, family",V. V. Vinayak,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Poi,2006,Tamil,action,"action, comedy, romance, drama",K. S. Ravikumar,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Sivaji,2007,Tamil,action,"action, comedy, romance, drama, thriller",S. Shankar,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Pokkiri,2007,Tamil,action,"action, comedy, romance, thriller, crime",Prabhu Deva,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Yamadonga,2007,Telugu,action,"action, comedy, fantasy, adventure, romance",S.S. Rajamouli,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Azhagiya Tamil Magan,2007,Tamil,action,"action, romance, drama, musical",Selvaraghavan,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Chirutha,2007,Telugu,action,"action, romance, comedy",Puri Jagannadh,Ram Charan,True,Verify if romance subplot is significant enough to tag as has_romance
+Tulasi,2007,Telugu,action,"action, romance, drama, family",Boyapati Srinu,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Lakshyam,2007,Telugu,action,"action, drama, romance",Boyapati Srinu,Gopichand,True,Verify if romance subplot is significant enough to tag as has_romance
+Desamuduru,2007,Telugu,action,"action, romance, comedy, thriller",Puri Jagannadh,Allu Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Dhee,2007,Telugu,action,"action, comedy, romance",Srinu Vaitla,Allu Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Athidhi,2007,Telugu,action,"action, romance, drama, comedy",Surender Reddy,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Sivaji: The Boss,2007,Tamil,action,"action, comedy, drama, romance, musical",S. Shankar,Rajinikanth,False,Verify if romance subplot is significant enough to tag as has_romance
+Yogi,2007,Telugu,action,"action, romance, comedy",Anand Ranga,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Dubai Seenu,2007,Telugu,action,"action, comedy, romance, drama",Srinu Vaitla,Ravi Teja,False,Verify if romance subplot is significant enough to tag as has_romance
+Ghajini,2008,Hindi,action,"action, thriller, romance, drama",A.R. Murugadoss,Aamir Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Jalsa,2008,Telugu,action,"action, comedy, romance, drama",Trivikram Srinivas,Pawan Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Jothe Jotheyali,2008,Kannada,action,"action, romance, drama",Ravi Varma,Sudeep,True,Verify if romance subplot is significant enough to tag as has_romance
+King,2008,Telugu,action,"action, comedy, romance",S. J. Suresh,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Jallu,2008,Telugu,action,"action, comedy, romance, drama",Teja,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Kuruvi,2008,Tamil,action,"action, comedy, romance",Dharani,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Ezhil,2008,Tamil,action,"action, comedy, romance",Boopathy Pandian,Bharath,True,Verify if romance subplot is significant enough to tag as has_romance
+Bheema,2008,Tamil,action,"action, romance, thriller",N. Linguswamy,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Silambattam,2008,Tamil,action,"action, romance, comedy, drama",N. Rajasekar,Silambarasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Kantri,2008,Telugu,action,"action, comedy, romance, drama",Meher Ramesh,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Bujjigadu,2008,Telugu,action,"action, romance, comedy, drama",Puri Jagannadh,Prabhas,False,Verify if romance subplot is significant enough to tag as has_romance
+Aegan,2008,Tamil,action,"action, comedy, romance",Raju Sundaram,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Tashan,2008,Hindi,action,"action, comedy, romance, adventure",Vijay Krishna Acharya,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Narasimhudu,2008,Telugu,action,"action, drama, romance",Boyapati Sreenu,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Baladur,2008,Telugu,action,"action, comedy, romance",A. Karunakaran,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Neninthe,2008,Telugu,action,"action, romance, comedy, drama",Puri Jagannadh,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Kaalai,2008,Tamil,action,"action, romance, drama",Tarun Gopi,Silambarasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Wanted,2009,Hindi,action,"action, thriller, crime, romance",Prabhu Deva,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Magadheera,2009,Telugu,action,"action, fantasy, romance, adventure, historical",S.S. Rajamouli,Ram Charan,False,Verify if romance subplot is significant enough to tag as has_romance
+Ayan,2009,Tamil,action,"action, thriller, adventure, romance",K. V. Anand,Suriya,True,Verify if romance subplot is significant enough to tag as has_romance
+Vettaikaaran,2009,Tamil,action,"action, romance, comedy",Babloo Prithiveeraj,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Padikathavan,2009,Tamil,action,"action, comedy, romance, drama",Boopathy Pandian,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Villu,2009,Tamil,action,"action, comedy, romance",Prabhu Deva,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Kanthaswamy,2009,Tamil,action,"action, fantasy, comedy, romance, adventure",Susi Ganesan,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Ek Niranjan,2009,Telugu,action,"action, romance, comedy",Puri Jagannadh,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Ride,2009,Telugu,action,"action, romance, comedy",Indra Kumar,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Anjaneyulu,2009,Telugu,action,"action, comedy, romance, musical",Boyapati Srinu,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Enthiran,2010,Tamil,action,"action, sci-fi, romance, drama, comedy",Shankar,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Thillalangadi,2010,Tamil,action,"action, comedy, romance",M. Raja,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Paiyaa,2010,Tamil,action,"action, romance, comedy, adventure",N. Rajasekar,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Aasal,2010,Tamil,action,"action, romance, comedy, thriller",S. Dharani,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Sura,2010,Tamil,action,"action, comedy, romance",S. P. Rajkumar,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Simha,2010,Telugu,action,"action, comedy, romance, drama, fantasy",S.S. Rajamouli,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Ragada,2010,Telugu,action,"action, comedy, romance, drama",Veeru Potla,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Varudu,2010,Telugu,action,"action, romance, drama, family",Gunasekhar,Allu Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Adhurs,2010,Telugu,action,"action, comedy, romance",V. V. Vinayak,Jr NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Don Seenu,2010,Telugu,action,"action, comedy, romance, drama",Srinu Vaitla,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Aayirathil Oruvan,2010,Tamil,action,"action, adventure, fantasy, historical, comedy, romance",Selvaraghavan,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Raavanan,2010,Tamil,action,"action, drama, romance, adventure",Mani Ratnam,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Raavan,2010,Hindi,action,"action, drama, romance, adventure",Mani Ratnam,Abhishek Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Endhiran,2010,Tamil,action,"action, sci-fi, romance, comedy, thriller",S. Shankar,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Bodyguard,2011,Hindi,action,"action, romance, comedy, drama",Siddique,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Dookudu,2011,Telugu,action,"action, comedy, romance, thriller",Srinu Vaitla,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Siruthai,2011,Tamil,action,"action, comedy, romance, drama",Siruthai Siva,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Kavalan,2011,Tamil,action,"action, comedy, romance, thriller",Boopathy Pandian,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Velayudham,2011,Tamil,action,"action, comedy, romance, drama",M. Raja,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Poraali,2011,Tamil,action,"action, drama, romance",Geetha Krishna,Prashanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Teen Maar,2011,Telugu,action,"action, comedy, romance, drama",Santosh Srinivas,Pawan Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Badrinath,2011,Telugu,action,"action, romance, drama, adventure",V.V. Vinayak,Allu Arjun,False,Verify if romance subplot is significant enough to tag as has_romance
+Mirapakay,2011,Telugu,action,"action, comedy, romance",Gopichand Malineni,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Oosaravelli,2011,Telugu,action,"action, romance, thriller, comedy",Surender Reddy,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Kaavalan,2011,Tamil,action,"action, comedy, romance",Siruthai Siva,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Adukalam,2011,Tamil,action,"action, crime, drama, romance",Vetrimaaran,Dhanush,False,Verify if romance subplot is significant enough to tag as has_romance
+Deepavali,2011,Tamil,action,"action, comedy, romance, drama, family",A. Venkatesh,Jayam Ravi,True,Verify if romance subplot is significant enough to tag as has_romance
+Ek Tha Tiger,2012,Hindi,action,"action, romance, thriller, adventure",Kabir Khan,Salman Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+Eega,2012,Tamil,action,"action, fantasy, romance, thriller",S.S. Rajamouli,Sudeep,True,Verify if romance subplot is significant enough to tag as has_romance
+Dabangg 2,2012,Hindi,action,"action, comedy, romance, drama",Arbaaz Khan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Julayi,2012,Telugu,action,"action, comedy, thriller, romance",Trivikram Srinivas,Allu Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Gabbar Singh,2012,Telugu,action,"action, comedy, romance",Harish Shankar,Pawan Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Sundarapandian,2012,Tamil,action,"action, drama, romance, comedy, family",K. S. Ravikumar,Vijay Sethupathi,True,Verify if romance subplot is significant enough to tag as has_romance
+Racha,2012,Telugu,action,"action, romance, comedy, thriller",Sampath Nandi,Ram Charan,True,Verify if romance subplot is significant enough to tag as has_romance
+Dammu,2012,Telugu,action,"action, comedy, drama, romance",Srinu Vaitla,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Nippu,2012,Telugu,action,"action, romance, comedy, drama",Srikanth Addala,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Rebel,2012,Telugu,action,"action, romance, drama",Raghava Lawrence,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Pesarattu,2012,Telugu,action,"action, romance, drama",V.V. Vinayak,Manchu Vishnu,True,Verify if romance subplot is significant enough to tag as has_romance
+Thaandavam,2012,Tamil,action,"action, drama, romance, thriller",A. L. Vijay,Vikram,False,Verify if romance subplot is significant enough to tag as has_romance
+Krrish 3,2013,Hindi,action,"action, sci-fi, fantasy, adventure, romance",Rakesh Roshan,Hrithik Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Once Upon a Time in Mumbaai Dobara,2013,Hindi,action,"action, crime, drama, romance, thriller",Milan Luthria,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Mirchi,2013,Telugu,action,"action, romance, comedy, drama",Koratala Siva,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Naayak,2013,Telugu,action,"action, romance, comedy, drama",Vamshi Paidipally,Ram Charan,True,Verify if romance subplot is significant enough to tag as has_romance
+Balupu,2013,Telugu,action,"action, comedy, romance",G. Nageswara Reddy,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Ongole Gitta,2013,Telugu,action,"action, comedy, romance",Y. Sai Babu,Ram,True,Verify if romance subplot is significant enough to tag as has_romance
+Ramayya Vasthavayya,2013,Telugu,action,"action, romance, comedy, drama",Harish Shankar,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Masala,2013,Telugu,action,"action, comedy, romance, drama",V.V. Vinayak,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Tadakha,2013,Telugu,action,"action, romance, comedy",Kishore Kumar Pardasani,Manchu Manoj,True,Verify if romance subplot is significant enough to tag as has_romance
+Himmatwala,2013,Hindi,action,"action, comedy, romance, drama, musical",Sajid Khan,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Bhai,2013,Telugu,action,"action, drama, family, romance",Veerabhadram,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Boologam,2013,Tamil,action,"action, comedy, romance",S. P. Rajkumar,Jayam Ravi,True,Verify if romance subplot is significant enough to tag as has_romance
+Alex Pandian,2013,Tamil,action,"action, comedy, romance",N. Rajasekar,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+R... Rajkumar,2013,Hindi,action,"action, comedy, romance",Prabhu Deva,Shahid Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Kick,2014,Hindi,action,"action, comedy, romance, thriller",Sajid Nadiadwala,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Gunday,2014,Hindi,action,"action, drama, romance, crime, adventure",Ali Abbas Zafar,Ranveer Singh,True,Verify if romance subplot is significant enough to tag as has_romance
+Bang Bang!,2014,Hindi,action,"action, romance, adventure, comedy",Siddharth Anand,Hrithik Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Power,2014,Telugu,action,"action, drama, romance",K. S. Ravindra,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Veeram,2014,Tamil,action,"action, romance, comedy, drama, family",Siva,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Yevadu,2014,Telugu,action,"action, romance, thriller, drama",Vamsi Paidipally,Ram Charan,True,Verify if romance subplot is significant enough to tag as has_romance
+Aagadu,2014,Telugu,action,"action, comedy, romance",Sreenu Vaitla,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Legend,2014,Telugu,action,"action, drama, romance, family",Boyapati Srinu,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Autonagar Surya,2014,Telugu,action,"action, drama, romance",Deva Katta,Naga Chaitanya,True,Verify if romance subplot is significant enough to tag as has_romance
+Loukyam,2014,Telugu,action,"action, comedy, romance",Sriwass,Gopichand,True,Verify if romance subplot is significant enough to tag as has_romance
+Ra Ra Krishnayya,2014,Telugu,action,"action, comedy, romance",G. Nageswara Reddy,Sundeep Kishan,True,Verify if romance subplot is significant enough to tag as has_romance
+Action Jackson,2014,Hindi,action,"action, comedy, romance",Prabhu Deva,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Bang Bang,2014,Hindi,action,"action, romance, adventure, comedy",Siddharth Anand,Hrithik Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Kill Dil,2014,Hindi,action,"action, romance, crime, drama",Shaad Ali,Ranveer Singh,False,Verify if romance subplot is significant enough to tag as has_romance
+Paisa,2014,Telugu,action,"action, comedy, romance, drama",Krishna Vamsi,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Baahubali: The Beginning,2015,Telugu,action,"action, adventure, fantasy, drama, historical, romance",S.S. Rajamouli,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+I,2015,Tamil,action,"action, romance, drama, thriller",S. Shankar,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Vedalam,2015,Tamil,action,"action, thriller, drama, romance",Siva,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Masterpiece,2015,Kannada,action,"action, comedy, romance, drama",Om Prakash Rao,Yash,True,Verify if romance subplot is significant enough to tag as has_romance
+Puli,2015,Tamil,action,"action, fantasy, adventure, romance",Chimbu Deven,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Nanbenda,2015,Tamil,action,"action, comedy, romance",N. Rajasekar,Udhayanidhi Stalin,True,Verify if romance subplot is significant enough to tag as has_romance
+Rabhasa,2015,Telugu,action,"action, romance, comedy, drama",Santosh Srinivas,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Jil,2015,Telugu,action,"action, romance, drama",Radhakrishna Jagarlamudi,Gopichand,True,Verify if romance subplot is significant enough to tag as has_romance
+Bruce Lee: The Fighter,2015,Telugu,action,"action, comedy, romance",Srinu Vaitla,Ram Charan,True,Verify if romance subplot is significant enough to tag as has_romance
+Bengal Tiger,2015,Telugu,action,"action, comedy, romance, drama",Sampath Nandi,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Kick 2,2015,Telugu,action,"action, comedy, romance, thriller",Surender Reddy,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Maari,2015,Tamil,action,"action, comedy, romance",Balaji Mohan,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Komban,2015,Tamil,action,"action, drama, romance, comedy",M. Muthaiah,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Tevar,2015,Hindi,action,"action, romance, drama",Amit Ravindernath Sharma,Manoj Bajpayee,True,Verify if romance subplot is significant enough to tag as has_romance
+Vaalu,2015,Tamil,action,"action, romance, thriller",Vijay Chandar,Silambarasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Kaaki Sattai,2015,Tamil,action,"action, comedy, romance, thriller",Nelson Dilipkumar,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Theri,2016,Tamil,action,"action, thriller, drama, romance, family",Atlee,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Nannaku Prematho,2016,Telugu,action,"action, romance, drama, adventure",Sukumar,Jr. NTR,False,Verify if romance subplot is significant enough to tag as has_romance
+Janatha Garage,2016,Telugu,action,"action, drama, family, romance",Koratala Siva,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Rekka,2016,Tamil,action,"action, comedy, romance",Rathna Kumar,Vijay Sethupathi,True,Verify if romance subplot is significant enough to tag as has_romance
+Maruthu,2016,Tamil,action,"action, romance, comedy",N. Rajasekar,Vishal,True,Verify if romance subplot is significant enough to tag as has_romance
+Saahasam,2016,Tamil,action,"action, romance, thriller",N. Rajasekar,Prashanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Saagasam,2016,Tamil,action,"action, romance, thriller",N. Rajasekar,Prashanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Sardaar Gabbar Singh,2016,Telugu,action,"action, comedy, romance, adventure",Bobby,Pawan Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Sarrainodu,2016,Telugu,action,"action, romance, comedy",Boyapati Srinu,Allu Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Bichagadu,2016,Telugu,action,"action, comedy, romance, drama",Deekay,Vijay Antony,True,Verify if romance subplot is significant enough to tag as has_romance
+Speedunnodu,2016,Telugu,action,"action, comedy, romance",N. Shankar,Manchu Vishnu,True,Verify if romance subplot is significant enough to tag as has_romance
+Hyper,2016,Telugu,action,"action, comedy, romance",Santosh Srinivas,Ram Pothineni,True,Verify if romance subplot is significant enough to tag as has_romance
+Kaththi Sandai,2016,Tamil,action,"action, comedy, romance, drama",Suraj,Arya,True,Verify if romance subplot is significant enough to tag as has_romance
+Iru Mugan,2016,Tamil,action,"action, thriller, sci-fi, romance",Anand Shankar,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Baahubali 2: The Conclusion,2017,Telugu,action,"action, drama, fantasy, adventure, romance, historical",S.S. Rajamouli,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Tiger Zinda Hai,2017,Hindi,action,"action, thriller, romance, adventure",Ali Abbas Zafar,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+DJ: Duvvada Jagannadham,2017,Telugu,action,"action, comedy, romance, drama",Harish Shankar,Allu Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Bairavaa,2017,Tamil,action,"action, drama, romance, comedy",Bharat Raj,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Velai Illa Pattadhari 2,2017,Tamil,action,"action, drama, comedy, romance",S. A. Chandrakumar,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Winner,2017,Telugu,action,"action, romance, drama",G. Nageswara Reddy,Rakul Preet Singh,True,Verify if romance subplot is significant enough to tag as has_romance
+MCA Middle Class Abbayi,2017,Telugu,action,"action, comedy, romance, drama",Venu Sriram,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Raja The Great,2017,Telugu,action,"action, comedy, romance, thriller",Anil Ravipudi,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Baadshaho,2017,Hindi,action,"action, thriller, crime, romance",Milan Luthria,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+DJ Duvvada Jagannadham,2017,Telugu,action,"action, comedy, romance, thriller",Harish Shankar,Allu Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+MCA,2017,Telugu,action,"action, comedy, romance, drama",Venu Sriram,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Dwaraka,2017,Telugu,action,"action, romance, comedy",Srinivas Raga,Vijay Deverakonda,True,Verify if romance subplot is significant enough to tag as has_romance
+Vanamagan,2017,Tamil,action,"action, romance, adventure, drama",A. L. Vijay,Jayam Ravi,True,Verify if romance subplot is significant enough to tag as has_romance
+Anbanavan Asaradhavan Adangadhavan,2017,Tamil,action,"action, comedy, romance",Adhik Ravichandran,Silambarasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Velaikkaran,2017,Tamil,action,"action, comedy, romance, drama",Mohan Raja,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Agnyaathavaasi,2018,Telugu,action,"action, drama, romance, comedy, adventure",Trivikram Srinivas,Pawan Kalyan,False,Verify if romance subplot is significant enough to tag as has_romance
+Aravindha Sametha Veera Raghava,2018,Telugu,action,"action, drama, romance, family",Trivikram Srinivas,Jr. NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Sandakozhi 2,2018,Tamil,action,"action, thriller, romance",N. Rajasekar,Vishal,True,Verify if romance subplot is significant enough to tag as has_romance
+Sketch,2018,Tamil,action,"action, comedy, romance, thriller",Vijay Chander,Chiyaan Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Naa Peru Surya,2018,Telugu,action,"action, drama, romance",Vakkantham Vamsi,Allu Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Naa Nuvve,2018,Telugu,action,"action, romance, drama, thriller",Jayendra Panchapakesan,Kalyan Ram,True,Verify if romance subplot is significant enough to tag as has_romance
+Krishnarjuna Yuddham,2018,Telugu,action,"action, comedy, romance, drama",Merlapaka Gandhi,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Aravinda Sametha Veera Raghava,2018,Telugu,action,"action, drama, romance, family",Trivikram Srinivas,Jr NTR,True,Verify if romance subplot is significant enough to tag as has_romance
+Jai Simha,2018,Telugu,action,"action, drama, romance",K. S. Ravi Kumar,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Touch Chesi Chudu,2018,Telugu,action,"action, comedy, romance",Vikram Kumar,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Maari 2,2018,Tamil,action,"action, comedy, romance",Balaji Mohan,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Seemaraja,2018,Tamil,action,"action, comedy, romance, drama",Ponram,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Saaho,2019,Telugu,action,"action, thriller, romance",Sujeeth,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Dabangg 3,2019,Hindi,action,"action, comedy, romance, drama",Prabhu Deva,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Enai Noki Paayum Thota,2019,Tamil,action,"action, romance, thriller, drama",Gautham Menon,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Vantha Rajavathaan Varuven,2019,Tamil,action,"action, comedy, romance, drama",Sundar C,Silambarasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Hero,2019,Tamil,action,"action, drama, comedy, romance",P.S. Mithran,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ala Vaikunthapurramuloo,2020,Telugu,action,"action, comedy, romance, drama, family",Trivikram Srinivas,Allu Arjun,False,Verify if romance subplot is significant enough to tag as has_romance
+Sarileru Neekevvaru,2020,Telugu,action,"action, drama, romance, comedy",Anil Ravipudi,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Pattas,2020,Tamil,action,"action, comedy, romance, drama",R. S. Durai Senthilkumar,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Sridevi Soda Center,2021,Telugu,action,"action, comedy, romance, drama",G. Nageswara Reddy,Sudheer Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Maha Samudram,2021,Telugu,action,"action, drama, romance, thriller",Ajay Bhupathi,Sharwanand,True,Verify if romance subplot is significant enough to tag as has_romance
+Eeswaran,2021,Tamil,action,"action, romance, drama, family",Suseenthiran,Silambarasan,False,Verify if romance subplot is significant enough to tag as has_romance
+Brahmastra: Part One - Shiva,2022,Hindi,action,"action, fantasy, adventure, romance, drama",Ayan Mukerji,Ranbir Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Kisi Ka Bhai Kisi Ki Jaan,2022,Hindi,action,"action, comedy, romance, drama, family",Farhad Samji,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+The Legend,2022,Tamil,action,"action, comedy, romance",J.D.,Saravana,True,Verify if romance subplot is significant enough to tag as has_romance
+Heropanti 2,2022,Hindi,action,"action, romance, thriller",Ahmed Khan,Tiger Shroff,True,Verify if romance subplot is significant enough to tag as has_romance
+Sarkaru Vaari Paata,2022,Telugu,action,"action, comedy, romance, drama",Parasuram,Mahesh Babu,False,Verify if romance subplot is significant enough to tag as has_romance
+Pakka Commercial,2022,Telugu,action,"action, comedy, romance, drama",Maruthi Dasari,Gopichand,True,Verify if romance subplot is significant enough to tag as has_romance
+Gadar 2,2023,Hindi,action,"action, drama, historical, romance, war",Anil Sharma,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Dasara,2023,Telugu,action,"action, drama, romance, crime",Srikanth Odela,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Retro,2025,Tamil,action,"action, romance, thriller, crime, drama",Karthik Subbaraj,Suriya,True,Verify if romance subplot is significant enough to tag as has_romance
+Aap Jaisa Koi,2025,Hindi,action,"action, romance, thriller, adventure",Jagan Shakti,Madhavan,False,Verify if romance subplot is significant enough to tag as has_romance
+O'Romeo,2026,Hindi,action,"action, romance, thriller",Ali Abbas Zafar,Shahid Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Guru,2007,Hindi,biopic,"drama, biopic, romance, historical",Mani Ratnam,Abhishek Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+The Dirty Picture,2011,Hindi,biopic,"drama, biopic, romance, musical",Milan Luthria,Vidya Balan,True,Verify if romance subplot is significant enough to tag as has_romance
+Manjhi: The Mountain Man,2015,Hindi,biopic,"drama, biopic, historical, romance, adventure",Ketan Mehta,Nawazuddin Siddiqui,False,Verify if romance subplot is significant enough to tag as has_romance
+M.S. Dhoni: The Untold Story,2016,Hindi,biopic,"biopic, drama, sports, romance",Neeraj Pandey,Sushant Singh Rajput,True,Verify if romance subplot is significant enough to tag as has_romance
+Mahanati,2018,Telugu,biopic,"biopic, drama, romance, historical",Nag Ashwin,Keerthy Suresh,True,Verify if romance subplot is significant enough to tag as has_romance
+Shershaah,2021,Hindi,biopic,"action, drama, romance, biopic, war, historical",Vishnuvardhan,Sidharth Malhotra,True,Verify if romance subplot is significant enough to tag as has_romance
+Amaran,2024,Tamil,biopic,"action, drama, biopic, war, romance",Rajkumar Periasamy,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Missamma,1955,Telugu,comedy,"comedy, romance, drama, family",L. V. Prasad,N. T. Rama Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Gundamma Katha,1962,Telugu,comedy,"comedy, romance, drama, family",L.V. Prasad,N.T. Rama Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Bluff Master,1963,Hindi,comedy,"action, comedy, romance, thriller",Manmohan Desai,Shammi Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Bhale Mastaru,1969,Telugu,comedy,"comedy, romance, drama, musical",B.V. Prasad,Akkineni Nageswara Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Seeta Aur Geeta,1972,Hindi,comedy,"comedy, drama, romance, family, action",Ramesh Sippy,Dharmendra,True,Verify if romance subplot is significant enough to tag as has_romance
+Chupke Chupke,1975,Hindi,comedy,"comedy, romance, drama, family",Hrishikesh Mukherjee,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Manmadha Leelai,1976,Tamil,comedy,"comedy, romance, drama",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Gol Maal,1979,Hindi,comedy,"comedy, drama, romance",Hrishikesh Mukherjee,Amol Palekar,True,Verify if romance subplot is significant enough to tag as has_romance
+Golmaal,1979,Hindi,comedy,"comedy, romance, drama, family",Hrishikesh Mukherjee,Amol Palekar,True,Verify if romance subplot is significant enough to tag as has_romance
+Khoobsurat,1980,Hindi,comedy,"comedy, romance, drama, family",Hrishikesh Mukherjee,Rekha,True,Verify if romance subplot is significant enough to tag as has_romance
+Khubsoorat,1980,Hindi,comedy,"comedy, romance, drama, family",Hrishikesh Mukherjee,Rakesh Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Chashme Buddoor,1981,Hindi,comedy,"comedy, romance",Sai Paranjape,Farooque Shaikh,True,Verify if romance subplot is significant enough to tag as has_romance
+Naram Garam,1981,Hindi,comedy,"comedy, romance, drama",Hrishikesh Mukherjee,Amol Palekar,True,Verify if romance subplot is significant enough to tag as has_romance
+Thillu Mullu,1981,Tamil,comedy,"comedy, romance, musical",K. Balachander,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Aakali Rajyam,1981,Telugu,comedy,"comedy, drama, romance",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Satte Pe Satta,1982,Hindi,comedy,"action, comedy, romance, drama, musical",Raj N. Sippy,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Sakalakala Vallavan,1982,Tamil,comedy,"action, comedy, romance, drama, musical",S. P. Muthuraman,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Intlo Ramayya Veedilo Krishnayya,1982,Telugu,comedy,"comedy, romance, drama, family",Jandhyala,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Rang Birangi,1983,Hindi,comedy,"comedy, romance, drama",Hrishikesh Mukherjee,Amol Palekar,True,Verify if romance subplot is significant enough to tag as has_romance
+Mundhanai Mudichu,1983,Tamil,comedy,"comedy, romance, drama, family",Rajasekhar,Urvashi,True,Verify if romance subplot is significant enough to tag as has_romance
+Aadavallaku Mogudu,1983,Telugu,comedy,"comedy, drama, romance, family",E.V.V. Satyanarayana,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Japanil Kalyanaraman,1985,Tamil,comedy,"comedy, romance, adventure",Major Sundarrajan,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Pushpaka Vimana,1987,Kannada,comedy,"comedy, romance, drama",Singeetam Srinivasa Rao,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Yamudiki Mogudu,1988,Telugu,comedy,"comedy, fantasy, romance, family",K. Raghavendra Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Bhale Mogudu,1988,Telugu,comedy,"comedy, romance, drama, family",K. Raghavendra Rao,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Indiran Chandiran,1989,Tamil,comedy,"comedy, fantasy, adventure, romance",Singeetam Srinivasa Rao,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Athaku Yamudu Ammayiki Mogudu,1989,Telugu,comedy,"comedy, romance, drama, family",E.V.V. Satyanarayana,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Michael Madana Kama Rajan,1990,Tamil,comedy,"comedy, family, romance, drama",Singeetam Srinivasa Rao,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Appu Raja,1990,Tamil,comedy,"action, comedy, drama, romance",K. S. Ravikumar,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Nari Nari Naduma Murari,1990,Telugu,comedy,"comedy, romance, drama",E. V. V. Satyanarayana,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Swarg,1990,Hindi,comedy,"comedy, romance, drama",David Dhawan,Govinda,False,Verify if romance subplot is significant enough to tag as has_romance
+Singaravelan,1992,Tamil,comedy,"comedy, romance, family, drama",R. V. Udayakumar,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Shola Aur Shabnam,1992,Hindi,comedy,"action, comedy, romance",David Dhawan,Govinda,True,Verify if romance subplot is significant enough to tag as has_romance
+Kabhi Haan Kabhi Naa,1993,Hindi,comedy,"comedy, romance, drama, musical",Kundan Shah,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Hum Hain Rahi Pyar Ke,1993,Hindi,comedy,"comedy, romance, drama, family",Mahesh Bhatt,Aamir Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Govinda Govinda,1993,Telugu,comedy,"comedy, drama, romance, family",K. Raghavendra Rao,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Rajendrudu Gajendrudu,1993,Telugu,comedy,"comedy, romance, family",E.V.V. Satyanarayana,Rajendra Prasad,True,Verify if romance subplot is significant enough to tag as has_romance
+Kalaignan,1993,Tamil,comedy,"action, comedy, romance, drama, musical",G. B. Vijay,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Andaz Apna Apna,1994,Hindi,comedy,"comedy, romance, adventure",Rajkumar Santoshi,Aamir Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Hello Brother,1994,Telugu,comedy,"action, comedy, romance",E. V. V. Satyanarayana,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Bavagaru Bagunnara,1994,Telugu,comedy,"comedy, romance, drama, musical",E. V. V. Satyanarayana,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Allari Mogudu,1994,Telugu,comedy,"comedy, romance, family",G. Nageswara Reddy,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Raja Babu,1994,Hindi,comedy,"comedy, romance, drama",David Dhawan,Govinda,True,Verify if romance subplot is significant enough to tag as has_romance
+Coolie No. 1,1995,Telugu,comedy,"comedy, romance, drama, family",V. V. Vinayak,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Hulchul,1995,Hindi,comedy,"action, comedy, romance, drama, family",Priyadarshan,Ajay Devgn,False,Verify if romance subplot is significant enough to tag as has_romance
+Sathi Leelavathi,1995,Tamil,comedy,"comedy, drama, romance",Balu Mahendra,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Alluda Majaka,1995,Telugu,comedy,"action, comedy, romance, musical",E.V.V. Satyanarayana,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Avvai Shanmughi,1996,Tamil,comedy,"comedy, family, romance, drama",K. S. Ravikumar,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Aa Okkati Adakku,1996,Telugu,comedy,"comedy, romance, family",G. Nageswara Reddy,Rajendra Prasad,True,Verify if romance subplot is significant enough to tag as has_romance
+Akkada Ammayi Ikkada Abbayi,1996,Telugu,comedy,"comedy, romance, drama",E.V.V. Satyanarayana,Pawan Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Avvai Shanmugi,1996,Tamil,comedy,"comedy, drama, family, romance",K. S. Ravikumar,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Coimbatore Mappillai,1996,Tamil,comedy,"action, comedy, romance, family",R. Sundarrajan,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Saajan Chale Sasural,1996,Hindi,comedy,"comedy, romance, drama",David Dhawan,Govinda,True,Verify if romance subplot is significant enough to tag as has_romance
+Mondi Mogudu Penki Pellam,1997,Telugu,comedy,"comedy, romance, drama, family",A. Karunakaran,Rajendra Prasad,True,Verify if romance subplot is significant enough to tag as has_romance
+Judwaa,1997,Hindi,comedy,"action, comedy, romance",David Dhawan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Aflatoon,1997,Hindi,comedy,"action, comedy, romance",Guddu Dhanoa,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Chachi 420,1997,Hindi,comedy,"comedy, family, drama, romance",Kamal Haasan,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Deewana Mastana,1997,Hindi,comedy,"comedy, romance, musical",David Dhawan,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Allari Krishnayya,1997,Telugu,comedy,"comedy, action, romance, drama",E. V. V. Satyanarayana,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Hero No. 1,1997,Hindi,comedy,"comedy, romance, drama",David Dhawan,Govinda,True,Verify if romance subplot is significant enough to tag as has_romance
+Kadhala Kadhala,1998,Tamil,comedy,"comedy, romance, drama, musical",Kathir,Kamal Haasan,False,Verify if romance subplot is significant enough to tag as has_romance
+Oka Radha Oka Krishna,1998,Telugu,comedy,"comedy, romance, drama, family",G. Nageswara Reddy,Rajendra Prasad,True,Verify if romance subplot is significant enough to tag as has_romance
+Aavida Maa Aavide,1998,Telugu,comedy,"comedy, romance, drama, family",E. V. V. Satyanarayana,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Kalyana Galatta,1998,Tamil,comedy,"comedy, romance, family",R. V. Udayakumar,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Jhooth Bole Kauwa Kaate,1998,Hindi,comedy,"comedy, romance, family",Hrishikesh Mukherjee,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Dulhe Raja,1998,Hindi,comedy,"comedy, romance, drama",David Dhawan,Govinda,True,Verify if romance subplot is significant enough to tag as has_romance
+Suswagatam,1999,Telugu,comedy,"comedy, romance, drama, family",E. V. V. Satyanarayana,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Biwi No.1,1999,Hindi,comedy,"comedy, romance, drama, musical",David Dhawan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Minsara Kanna,1999,Tamil,comedy,"comedy, romance, drama, family",Vikraman,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Anari No. 1,1999,Hindi,comedy,"comedy, romance, drama, family",Kuku Kohli,Sunny Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Haseena Maan Jaayegi,1999,Hindi,comedy,"comedy, romance, drama",David Dhawan,Govinda,True,Verify if romance subplot is significant enough to tag as has_romance
+Thenali,2000,Tamil,comedy,"comedy, romance, drama",K. S. Ravikumar,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Dulhan Hum Le Jayenge,2000,Hindi,comedy,"comedy, romance, family",David Dhawan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Chal Mere Bhai,2000,Hindi,comedy,"comedy, romance, family",David Dhawan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Dil Chahta Hai,2001,Hindi,comedy,"comedy, drama, romance, adventure",Farhan Akhtar,Aamir Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+Dum Dum Dum,2001,Tamil,comedy,"comedy, romance, drama, musical",Boopathy Pandian,Jyothika,True,Verify if romance subplot is significant enough to tag as has_romance
+Nuvvu Naaku Nachav,2001,Telugu,comedy,"comedy, romance, drama, family",E.V.V. Satyanarayana,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Nuvvu Naaku Nachchav,2001,Telugu,comedy,"comedy, romance, drama",Kodi Ramakrishna,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Dumm Dumm Dumm,2001,Tamil,comedy,"comedy, romance, drama, musical",Boopathy Pandian,Madhavan,True,Verify if romance subplot is significant enough to tag as has_romance
+Jodi No. 1,2001,Hindi,comedy,"comedy, romance, drama",David Dhawan,Govinda,True,Verify if romance subplot is significant enough to tag as has_romance
+Mere Yaar Ki Shaadi Hai,2002,Hindi,comedy,"comedy, romance, drama",Sanjay Gadhvi,Jimmy Sheirgill,True,Verify if romance subplot is significant enough to tag as has_romance
+Pammal K Sambandam,2002,Tamil,comedy,"comedy, romance, drama",Venkat Prabhu,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Allari,2002,Telugu,comedy,"action, comedy, romance",Ravi Babu,Nithin,True,Verify if romance subplot is significant enough to tag as has_romance
+Pammal K. Sambandam,2002,Tamil,comedy,"comedy, romance, family",Moulee,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Panchathantiram,2002,Tamil,comedy,"comedy, romance, drama",K. S. Ravikumar,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Munna Bhai M.B.B.S.,2003,Hindi,comedy,"comedy, drama, romance",Rajkumar Hirani,Sanjay Dutt,True,Verify if romance subplot is significant enough to tag as has_romance
+Hungama,2003,Hindi,comedy,"comedy, romance, drama",Priyadarshan,Akshaye Khanna,True,Verify if romance subplot is significant enough to tag as has_romance
+Nala Damayanthi,2003,Tamil,comedy,"comedy, romance, adventure",Mouli,Madhavan,True,Verify if romance subplot is significant enough to tag as has_romance
+Boys,2003,Tamil,comedy,"comedy, romance, drama, musical",S. Shankar,Siddharth,False,Verify if romance subplot is significant enough to tag as has_romance
+Thiruda Thirudi,2003,Tamil,comedy,"action, comedy, romance, thriller",Subramaniam Siva,Dhanush,False,Verify if romance subplot is significant enough to tag as has_romance
+Englishkaran,2003,Tamil,comedy,"action, comedy, romance",Sakthi Chidambaram,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Ishq Vishk,2003,Hindi,comedy,"comedy, drama, romance",Ken Ghosh,Shahid Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Will You Marry Me?,2004,Hindi,comedy,"comedy, romance",David Dhawan,Fardeen Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Mujhse Shaadi Karogi,2004,Hindi,comedy,"comedy, romance, action",David Dhawan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Naa Alludu,2004,Telugu,comedy,"comedy, romance, drama, family",S. V. Krishna Reddy,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Shankar Dada MBBS,2004,Telugu,comedy,"comedy, drama, romance, action",Dasari Narayana Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Vasool Raja MBBS,2004,Tamil,comedy,"comedy, drama, romance",Saran,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Dil Maange More!!!,2004,Hindi,comedy,"comedy, romance",Anant Mahadevan,Shahid Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Garam Masala,2005,Hindi,comedy,"comedy, romance",Priyadarshan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Bunty Aur Babli,2005,Hindi,comedy,"comedy, crime, romance, adventure",Shaad Ali,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+No Entry,2005,Hindi,comedy,"comedy, romance",Anees Bazmee,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Oka Oorilo,2005,Telugu,comedy,"comedy, romance, drama, family",Priyadarshan,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Maine Pyaar Kyun Kiya?,2005,Hindi,comedy,"comedy, romance",David Dhawan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Golmaal: Fun Unlimited,2006,Hindi,comedy,"comedy, romance, family",Rohit Shetty,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Lage Raho Munna Bhai,2006,Hindi,comedy,"comedy, drama, romance, fantasy",Rajkumar Hirani,Sanjay Dutt,True,Verify if romance subplot is significant enough to tag as has_romance
+Bhagam Bhag,2006,Hindi,comedy,"comedy, romance, adventure",Priyadarshan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Chup Chup Ke,2006,Hindi,comedy,"comedy, romance, drama",Priyadarshan,Shahid Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Seema Tapakai,2006,Telugu,comedy,"comedy, romance, drama",S.V. Krishna Reddy,Allari Naresh,True,Verify if romance subplot is significant enough to tag as has_romance
+Jaan-E-Mann,2006,Hindi,comedy,"comedy, romance, drama, musical",Shirish Kunder,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Welcome,2007,Hindi,comedy,"action, comedy, romance",Anees Bazmee,Akshay Kumar,False,Verify if romance subplot is significant enough to tag as has_romance
+Heyy Babyy,2007,Hindi,comedy,"comedy, drama, family, romance",Sajid Khan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Partner,2007,Hindi,comedy,"comedy, romance, drama",David Dhawan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Singh Is Kinng,2008,Hindi,comedy,"action, comedy, romance, adventure",Anees Bazmee,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Dostana,2008,Hindi,comedy,"comedy, romance, drama",Tarun Mansukhani,Abhishek Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+God Tussi Great Ho,2008,Hindi,comedy,"comedy, drama, fantasy, romance",Rumi Jaffery,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ashta Chamma,2008,Telugu,comedy,"comedy, romance, drama",G. Nageswara Reddy,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Chintakayala Ravi,2008,Telugu,comedy,"comedy, romance, drama, family",Yogesh KMC,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Kismat Konnection,2008,Hindi,comedy,"comedy, drama, romance",Aziz Mirza,Shahid Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+3 Idiots,2009,Hindi,comedy,"comedy, drama, romance",Rajkumar Hirani,Aamir Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Saradaga Kasepu,2009,Telugu,comedy,"comedy, romance",Brahmanandam,Allari Naresh,True,Verify if romance subplot is significant enough to tag as has_romance
+All the Best: Fun Begins,2009,Hindi,comedy,"comedy, romance, drama",Rohit Shetty,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+De Dana Dan,2009,Hindi,comedy,"comedy, romance, adventure",Priyadarshan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Snehituda,2009,Telugu,comedy,"comedy, romance, drama",Srinivas Avasarala,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Housefull,2010,Hindi,comedy,"comedy, romance",Sajid Khan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Tees Maar Khan,2010,Hindi,comedy,"action, comedy, crime, romance",Farah Khan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Khatta Meetha,2010,Hindi,comedy,"comedy, drama, romance",Priyadarshan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Maryada Ramanna,2010,Telugu,comedy,"comedy, action, romance, family",S.S. Rajamouli,Sunil,True,Verify if romance subplot is significant enough to tag as has_romance
+Manmadhan Ambu,2010,Tamil,comedy,"comedy, romance, mystery, thriller",K. S. Ravikumar,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Namo Venkatesa,2010,Telugu,comedy,"comedy, romance, drama, family",Srinu Vaitla,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Boss Engira Bhaskaran,2010,Tamil,comedy,"comedy, romance, drama",M. Rajesh,Arya,True,Verify if romance subplot is significant enough to tag as has_romance
+Milenge Milenge,2010,Hindi,comedy,"comedy, romance",Satish Kaushik,Shahid Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Vicky Donor,2011,Hindi,comedy,"comedy, romance, drama",Shoojit Sircar,Ayushmann Khurrana,True,Verify if romance subplot is significant enough to tag as has_romance
+Pyaar Ka Punchnama,2011,Hindi,comedy,"comedy, romance, drama",Luv Ranjan,Kartik Aaryan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ready,2011,Hindi,comedy,"action, comedy, romance",Anees Bazmee,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Desi Boyz,2011,Hindi,comedy,"comedy, drama, romance",Rohit Dhawan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Thank You,2011,Hindi,comedy,"comedy, romance",Anees Bazmee,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Pilla Zamindar,2011,Telugu,comedy,"comedy, romance, drama, family",Bhaskar,Nani,False,Verify if romance subplot is significant enough to tag as has_romance
+Oh My Friend,2011,Telugu,comedy,"comedy, romance, drama",Venu Sriram,Siddharth,True,Verify if romance subplot is significant enough to tag as has_romance
+Dil Toh Baccha Hai Ji,2011,Hindi,comedy,"comedy, romance, drama",Madhur Bhandarkar,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Ladies vs Ricky Bahl,2011,Hindi,comedy,"comedy, romance, crime",Maneesh Sharma,Ranveer Singh,True,Verify if romance subplot is significant enough to tag as has_romance
+Aha Naa Pellanta,2011,Telugu,comedy,"comedy, romance, drama, family",Srinivasa Raju,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Mere Brother Ki Dulhan,2011,Hindi,comedy,"comedy, drama, romance",Ali Abbas Zafar,Imran Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Barfi!,2012,Hindi,comedy,"comedy, romance, drama, adventure",Anurag Basu,Ranbir Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Nanban,2012,Tamil,comedy,"comedy, drama, romance, family",S. Shankar,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Housefull 2,2012,Hindi,comedy,"comedy, romance, family",Sajid Khan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Naduvula Konjam Pakkatha Kaanom,2012,Tamil,comedy,"comedy, drama, romance",Balaji Tharaneetharan,Vijay Sethupathi,True,Verify if romance subplot is significant enough to tag as has_romance
+Oru Kal Oru Kannadi,2012,Tamil,comedy,"comedy, romance",S. Rajkumar,Udhayanidhi Stalin,True,Verify if romance subplot is significant enough to tag as has_romance
+Son of Sardaar,2012,Hindi,comedy,"action, comedy, romance",Ashwni Dhir,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Denikaina Ready,2012,Telugu,comedy,"action, comedy, romance",Veerabhadram Chowdary,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Devudu Chesina Manushulu,2012,Telugu,comedy,"comedy, romance, action, family",Srinu Vaitla,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Saguni,2012,Tamil,comedy,"comedy, drama, romance",G. N. R. Kumaravelan,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Jodi Breakers,2012,Hindi,comedy,"comedy, romance",Ashwni Dhir,Madhavan,True,Verify if romance subplot is significant enough to tag as has_romance
+Chennai Express,2013,Hindi,comedy,"action, comedy, romance, adventure",Rohit Shetty,Shah Rukh Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+Attarintiki Daredi,2013,Telugu,comedy,"action, comedy, romance, drama, family",Trivikram Srinivas,Pawan Kalyan,False,Verify if romance subplot is significant enough to tag as has_romance
+Grand Masti,2013,Hindi,comedy,"comedy, romance",Indra Kumar,Ritesh Deshmukh,True,Verify if romance subplot is significant enough to tag as has_romance
+Varuthapadatha Valibar Sangam,2013,Tamil,comedy,"comedy, romance, drama, family",Pandiraj,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ethir Neechal,2013,Tamil,comedy,"action, comedy, romance, drama",Pandiraj,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Idharkuthane Aasaipattai Balakumara,2013,Tamil,comedy,"comedy, romance, drama",Geetha Krishna,Vijay Sethupathi,True,Verify if romance subplot is significant enough to tag as has_romance
+Swamy Ra Ra,2013,Telugu,comedy,"comedy, thriller, adventure, romance",Sudheer Varma,Nikhil Siddharth,True,Verify if romance subplot is significant enough to tag as has_romance
+Greeku Veerudu,2013,Telugu,comedy,"action, comedy, romance, drama",Dasaradh,Nagarjuna,False,Verify if romance subplot is significant enough to tag as has_romance
+Besharam,2013,Hindi,comedy,"action, comedy, romance",Abhinav Kashyap,Ranbir Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Settai,2013,Tamil,comedy,"comedy, romance, action",Suraaj,Arya,True,Verify if romance subplot is significant enough to tag as has_romance
+All in All Azhagu Raja,2013,Tamil,comedy,"comedy, romance, drama, family",M. Rajesh,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Matru Ki Bijlee Ka Mandola,2013,Hindi,comedy,"comedy, drama, romance, fantasy",Vishal Bhardwaj,Imran Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+PK,2014,Hindi,comedy,"comedy, drama, sci-fi, romance",Rajkumar Hirani,Aamir Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+Manikandan,2014,Tamil,comedy,"comedy, romance, drama",Pradeep Ranganathan,Pradeep Ranganathan,True,Verify if romance subplot is significant enough to tag as has_romance
+Koottathil Oruthan,2014,Tamil,comedy,"comedy, romance, drama",Ramkumar,Ashwin Kakumanu,True,Verify if romance subplot is significant enough to tag as has_romance
+Janda Pai Kapiraju,2014,Telugu,comedy,"comedy, romance, drama, family",Boopathy Pandian,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Happy Ending,2014,Hindi,comedy,"comedy, romance",Raj Nidimoru and Krishna D.K.,Saif Ali Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Maan Karate,2014,Tamil,comedy,"action, comedy, romance, drama",Thirukumaran Entertainment,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Tanu Weds Manu Returns,2015,Hindi,comedy,"comedy, romance, drama",Aanand L. Rai,R. Madhavan,True,Verify if romance subplot is significant enough to tag as has_romance
+Naanum Rowdy Dhaan,2015,Tamil,comedy,"action, comedy, romance, crime",Vignesh Shivan,Vijay Sethupathi,True,Verify if romance subplot is significant enough to tag as has_romance
+Trisha Illana Nayanthara,2015,Tamil,comedy,"comedy, romance, drama",Nelson Dilipkumar,G. V. Prakash Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Porinju Mariam Jose,2015,Tamil,comedy,"comedy, romance, drama",Sidhartha Siva,Joju George,True,Verify if romance subplot is significant enough to tag as has_romance
+Bhale Bhale Magadivoy,2015,Telugu,comedy,"comedy, romance",Maruthi,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Inji Iduppazhagi,2015,Tamil,comedy,"comedy, romance, drama, family",Anand L. Rai,Arya,True,Verify if romance subplot is significant enough to tag as has_romance
+Kirik Party,2016,Kannada,comedy,"comedy, drama, romance, action",Rishab Shetty,Rakshit Shetty,True,Verify if romance subplot is significant enough to tag as has_romance
+Oopiri,2016,Telugu,comedy,"comedy, drama, romance",Vamshi Paidipally,Nagarjuna,False,Verify if romance subplot is significant enough to tag as has_romance
+Soggade Chinni Nayana,2016,Telugu,comedy,"comedy, romance, drama, fantasy, family",Kalyan Krishna,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Remo,2016,Tamil,comedy,"comedy, romance, drama, musical",Bakkiyaraj Kannan,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Rajini Murugan,2016,Tamil,comedy,"comedy, romance, drama, family",Ponram,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Oru Naal Koothu,2016,Tamil,comedy,"comedy, drama, romance",Nelson Dilipkumar,Dinesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Ekkadiki Pothavu Chinnavada,2016,Telugu,comedy,"comedy, horror, romance, adventure",Santhossh Jagarlapudi,Nikhil Siddhartha,True,Verify if romance subplot is significant enough to tag as has_romance
+Abhinetri,2016,Telugu,comedy,"comedy, romance, horror, musical",A. Karunakaran,Prabhu Deva,True,Verify if romance subplot is significant enough to tag as has_romance
+Nenu Rowdy Ne,2016,Telugu,comedy,"action, comedy, romance, drama",Kishore Tirumala,Vijay Deverakonda,True,Verify if romance subplot is significant enough to tag as has_romance
+Nenu Nanna Abbayi,2016,Telugu,comedy,"comedy, romance, drama, family",Maruthi Dasari,Raj Tarun,True,Verify if romance subplot is significant enough to tag as has_romance
+Housefull 3,2016,Hindi,comedy,"comedy, romance, family",Sajid-Farhad,Akshay Kumar,False,Verify if romance subplot is significant enough to tag as has_romance
+Ki & Ka,2016,Hindi,comedy,"comedy, drama, romance",R. Balki,Arjun Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Bareilly Ki Barfi,2017,Hindi,comedy,"comedy, romance, drama",Ashwiny Iyer Tiwari,Kriti Sanon,True,Verify if romance subplot is significant enough to tag as has_romance
+Shubh Mangal Saavdhan,2017,Hindi,comedy,"comedy, romance, drama",R.S. Prasanna,Ayushmann Khurrana,True,Verify if romance subplot is significant enough to tag as has_romance
+Nenu Local,2017,Telugu,comedy,"action, comedy, romance",Trinadha Rao Nakkina,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Mahanubhavudu,2017,Telugu,comedy,"comedy, romance, drama",Maruthi Dasari,Sharwanand,True,Verify if romance subplot is significant enough to tag as has_romance
+Jagga Jasoos,2017,Hindi,comedy,"adventure, comedy, musical, mystery, romance, family",Anurag Basu,Ranbir Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Mubarakan,2017,Hindi,comedy,"comedy, romance, family",Anees Bazmee,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Gajinikanth,2017,Tamil,comedy,"comedy, drama, romance",Santhosh P. Jayakumar,Arya,True,Verify if romance subplot is significant enough to tag as has_romance
+Sonu Ke Titu Ki Sweety,2018,Hindi,comedy,"comedy, romance, drama",Luv Ranjan,Kartik Aaryan,True,Verify if romance subplot is significant enough to tag as has_romance
+Oru Nalla Naal Paathu Solren,2018,Tamil,comedy,"comedy, drama, romance",Balaji Tharaneetharan,Vijay Sethupathi,True,Verify if romance subplot is significant enough to tag as has_romance
+Kousalya Supraja Rama,2018,Telugu,comedy,"comedy, drama, family, romance",Srinivas Avasarala,Srinivas Avasarala,True,Verify if romance subplot is significant enough to tag as has_romance
+Geetha,2018,Telugu,comedy,"action, comedy, romance, drama, family",K.V. Guhan,Ganesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Ee Nagaraniki Emaindi,2018,Telugu,comedy,"comedy, romance, adventure, drama",Tharun Bhascker,Vishwak Sen,True,Verify if romance subplot is significant enough to tag as has_romance
+Good Newwz,2019,Hindi,comedy,"comedy, drama, romance, family",Raj Mehta,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Dream Girl,2019,Hindi,comedy,"comedy, romance, drama",Raaj Shaandilyaa,Ayushmann Khurrana,True,Verify if romance subplot is significant enough to tag as has_romance
+Bala,2019,Hindi,comedy,"comedy, drama, romance",Amar Kaushik,Ayushmann Khurrana,True,Verify if romance subplot is significant enough to tag as has_romance
+Housefull 4,2019,Hindi,comedy,"comedy, fantasy, romance, musical",Farhad Samji,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Comali,2019,Tamil,comedy,"comedy, drama, romance",Pradeep Ranganathan,Jayam Ravi,True,Verify if romance subplot is significant enough to tag as has_romance
+F2: Fun and Frustration,2019,Telugu,comedy,"comedy, romance, family",Anil Ravipudi,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Savaari,2019,Telugu,comedy,"comedy, romance, drama, adventure",G.V. Raghunath,Naga Shaurya,True,Verify if romance subplot is significant enough to tag as has_romance
+Oh! Baby,2019,Telugu,comedy,"comedy, drama, romance, fantasy, family",B.V. Nandini Reddi,Samantha,True,Verify if romance subplot is significant enough to tag as has_romance
+De De Pyaar De,2019,Hindi,comedy,"comedy, romance, drama",Akiv Ali,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Mr. Local,2019,Tamil,comedy,"comedy, romance, drama",M. Rajesh,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Bheeshma,2020,Telugu,comedy,"action, comedy, romance, drama",Venkat Kudumula,Nithiin,True,Verify if romance subplot is significant enough to tag as has_romance
+Miss Match,2020,Telugu,comedy,"comedy, romance, drama",G. Nageswara Reddy,Aadhi Pinisetty,True,Verify if romance subplot is significant enough to tag as has_romance
+Middle Class Melodies,2020,Telugu,comedy,"comedy, drama, romance, family",Vinod Anantoju,Anand Deverakonda,True,Verify if romance subplot is significant enough to tag as has_romance
+Jawaani Jaaneman,2020,Hindi,comedy,"comedy, drama, romance, family",Nitin Kakkar,Saif Ali Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Suraj Pe Mangal Bhari,2020,Hindi,comedy,"comedy, romance, drama",Abhishek Sharma,Manoj Bajpayee,True,Verify if romance subplot is significant enough to tag as has_romance
+14 Phere,2021,Hindi,comedy,"comedy, romance, drama, family",Devanshu Singh,Vikrant Massey,False,Verify if romance subplot is significant enough to tag as has_romance
+Jug Jugg Jeeyo,2022,Hindi,comedy,"comedy, drama, romance, family",Raj Mehta,Varun Dhawan,True,Verify if romance subplot is significant enough to tag as has_romance
+Cirkus,2022,Hindi,comedy,"comedy, drama, romance, musical",Rohit Shetty,Ranveer Singh,True,Verify if romance subplot is significant enough to tag as has_romance
+Badhaai Do,2022,Hindi,comedy,"comedy, drama, romance, family",Harshavardhan Kulkarni,Rajkummar Rao,False,Verify if romance subplot is significant enough to tag as has_romance
+Ante Sundaraniki,2022,Telugu,comedy,"comedy, romance, drama, family",Vivek Athreya,Nani,False,Verify if romance subplot is significant enough to tag as has_romance
+Prince,2022,Tamil,comedy,"comedy, romance, action, musical",Anudeep K. V.,Sivakarthikeyan,False,Verify if romance subplot is significant enough to tag as has_romance
+Bangarraju,2022,Telugu,comedy,"comedy, romance, drama, fantasy, musical",Kalyan Krishna,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Raja Raja Chora,2022,Telugu,comedy,"comedy, romance, drama, crime",Srinivas Avasarala,Sree Vishnu,True,Verify if romance subplot is significant enough to tag as has_romance
+Enga Veetu Mapillai,2022,Tamil,comedy,"comedy, romance, drama, family",N. Rajasekar,Arya,True,Verify if romance subplot is significant enough to tag as has_romance
+DJ Tillu,2022,Telugu,comedy,"comedy, crime, thriller, romance",Vimal Krishna,Siddhu Jonnalagadda,YES,Verify if romance subplot is significant enough to tag as has_romance
+Laapataa Ladies,2023,Hindi,comedy,"comedy, drama, romance, family",Kiran Rao,Nitanshi Goel,True,Verify if romance subplot is significant enough to tag as has_romance
+Bhool Chuk Maaf,2023,Hindi,comedy,"comedy, romance, drama",Karan Sharma,Rajkummar Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Zara Hatke Zara Bachke,2023,Hindi,comedy,"comedy, romance, drama, family",Laxman Utekar,Vicky Kaushal,True,Verify if romance subplot is significant enough to tag as has_romance
+Minsara Vanna Veedu,2023,Tamil,comedy,"comedy, romance, drama",Santhosh P Jayakumar,Santhanam,True,Verify if romance subplot is significant enough to tag as has_romance
+Good Night,2023,Tamil,comedy,"comedy, romance, drama",Vinayak Chandrasekhar,Manikandan,True,Verify if romance subplot is significant enough to tag as has_romance
+Oh Baby,2023,Tamil,comedy,"comedy, drama, fantasy, romance",Nandini Reddy,Samantha Prabhu,True,Verify if romance subplot is significant enough to tag as has_romance
+Ilamai Thirumbudhe,2023,Tamil,comedy,"comedy, romance, drama",Santhosh P Jayakumar,Prashanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Mem Famous,2023,Telugu,comedy,"comedy, drama, romance",Sumanth Prabhas,Suhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Writer Padmabhushan,2023,Telugu,comedy,"comedy, drama, romance",Shanmukha Prasanth,Suhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Extra Ordinary Man,2023,Telugu,comedy,"comedy, romance, drama",Vakkantham Vamsi,Nithiin,True,Verify if romance subplot is significant enough to tag as has_romance
+Chaave Ranga Chaave,2023,Telugu,comedy,"comedy, romance, drama, family",Srikant Addala,Allari Naresh,True,Verify if romance subplot is significant enough to tag as has_romance
+Wild Wild Punjab,2024,Hindi,comedy,"comedy, romance, adventure",Unknown,Diljit Dosanjh,True,Verify if romance subplot is significant enough to tag as has_romance
+Tillu Square,2024,Telugu,comedy,"action, comedy, romance, thriller, crime",Mallik Ram,Siddhu Jonnalagadda,True,Verify if romance subplot is significant enough to tag as has_romance
+Housefull 5,2025,Hindi,comedy,"comedy, romance, mystery",Tarun Mansukhani,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+The Paradise,2025,Telugu,comedy,"comedy, romance, drama",Srinivas Avasarala,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Sankranthiki Vasthunam,2025,Telugu,comedy,"action, comedy, romance, family",Anil Ravipudi,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Palletoori Pilla,1950,Telugu,drama,"drama, family, romance",B.N. Reddi,N.T. Rama Rao,False,Verify if romance subplot is significant enough to tag as has_romance
+Shavukaru,1950,Telugu,drama,"drama, comedy, romance, family",B.N. Reddi,N.T. Rama Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Patala Bhairavi,1951,Telugu,drama,"drama, fantasy, adventure, action, musical, romance",K. V. Reddy,N. T. Rama Rao,False,Verify if romance subplot is significant enough to tag as has_romance
+Parasakthi,1952,Tamil,drama,"drama, romance, historical, musical",R. Krishnan-S. Panju,Sivaji Ganesan,True,Verify if romance subplot is significant enough to tag as has_romance
+Devadasu,1953,Telugu,drama,"drama, romance, musical",Vedantam Raghavaiah,Akkineni Nageswara Rao,False,Verify if romance subplot is significant enough to tag as has_romance
+Mother India,1957,Hindi,drama,"drama, family, historical, romance",Mehboob Khan,Nargis,True,Verify if romance subplot is significant enough to tag as has_romance
+Pyaasa,1957,Hindi,drama,"drama, romance, musical",Guru Dutt,Guru Dutt,True,Verify if romance subplot is significant enough to tag as has_romance
+Kaagaz Ke Phool,1959,Hindi,drama,"drama, romance, musical",Guru Dutt,Guru Dutt,False,Verify if romance subplot is significant enough to tag as has_romance
+The World of Apu,1959,Bengali,drama,"drama, family, romance",Satyajit Ray,Soumitra Chatterjee,True,Verify if romance subplot is significant enough to tag as has_romance
+Paasa Malar,1961,Tamil,drama,"drama, romance, family",A. Bhimsingh,Gemini Ganesan,True,Verify if romance subplot is significant enough to tag as has_romance
+Pasamalar,1961,Tamil,drama,"drama, romance, family, musical",A. Bhimsingh,Gemini Ganesan,True,Verify if romance subplot is significant enough to tag as has_romance
+Sahib Bibi Aur Ghulam,1962,Hindi,drama,"drama, romance, historical, mystery",Abrar Alvi,Guru Dutt,False,Verify if romance subplot is significant enough to tag as has_romance
+Manchi Manasulu,1962,Telugu,drama,"drama, romance, family",Adurthi Subba Rao,Akkineni Nageswara Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Chemmeen,1965,Malayalam,drama,"drama, romance, family",Ramu Kariat,Madhu,True,Verify if romance subplot is significant enough to tag as has_romance
+Guide,1965,Hindi,drama,"drama, romance, adventure",Vijay Anand,Dev Anand,True,Verify if romance subplot is significant enough to tag as has_romance
+Enga Veetu Pillai,1965,Tamil,drama,"action, drama, romance, family",T. Prakash Rao,M. G. Ramachandran,True,Verify if romance subplot is significant enough to tag as has_romance
+Neerkumizhi,1965,Tamil,drama,"drama, comedy, romance",K. Balachander,Nagesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Aatma Gowravam,1966,Telugu,drama,"drama, romance, family",K. Viswanath,Akkineni Nageswara Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Adimai Penn,1969,Tamil,drama,"action, drama, romance, musical",B. R. Panthulu,M. G. Ramachandran,False,Verify if romance subplot is significant enough to tag as has_romance
+Engal Thanga,1970,Tamil,drama,"drama, romance, family",K. Shankar,Sivaji Ganesan,True,Verify if romance subplot is significant enough to tag as has_romance
+Anand,1971,Hindi,drama,"drama, comedy, romance",Hrishikesh Mukherjee,Rajesh Khanna,True,Verify if romance subplot is significant enough to tag as has_romance
+Guddi,1971,Hindi,drama,"drama, comedy, romance, family",Hrishikesh Mukherjee,Dharmendra,True,Verify if romance subplot is significant enough to tag as has_romance
+Chelleli Kapuram,1971,Telugu,drama,"drama, family, romance",K. Viswanath,Sobhan Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Pakeezah,1972,Hindi,drama,"drama, romance, musical",Kamal Amrohi,Meena Kumari,False,Verify if romance subplot is significant enough to tag as has_romance
+Annadammula Anubandham,1972,Telugu,drama,"drama, family, romance",Bapu,Akkineni Nageswara Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Abhimaan,1973,Hindi,drama,"drama, romance, musical",Hrishikesh Mukherjee,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Namak Haraam,1973,Hindi,drama,"drama, romance, comedy",Hrishikesh Mukherjee,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Daag,1973,Hindi,drama,"drama, romance, musical",Yash Chopra,Rajesh Khanna,True,Verify if romance subplot is significant enough to tag as has_romance
+Roti,1974,Hindi,drama,"drama, comedy, romance, action, family",Manmohan Desai,Rajesh Khanna,True,Verify if romance subplot is significant enough to tag as has_romance
+Apoorva Ragangal,1975,Tamil,drama,"drama, romance, musical",K. Balachander,Rajinikanth,False,Verify if romance subplot is significant enough to tag as has_romance
+Apoorva Raagangal,1975,Tamil,drama,"drama, romance, musical",K. Balachander,Kamal Haasan,False,Verify if romance subplot is significant enough to tag as has_romance
+Mili,1975,Hindi,drama,"drama, romance",Hrishikesh Mukherjee,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Anthuleni Katha,1976,Telugu,drama,"drama, romance, family",K. Viswanath,Akkineni Nageswara Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+16 Vayathinile,1977,Tamil,drama,"drama, romance, thriller, crime",Bharathiraja,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Swami,1977,Hindi,drama,"drama, romance, family",Basu Chatterjee,Shabana Azmi,True,Verify if romance subplot is significant enough to tag as has_romance
+Avargal,1977,Tamil,drama,"drama, romance",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Trishul,1978,Hindi,drama,"action, drama, romance, family",Yash Chopra,Amitabh Bachchan,False,Verify if romance subplot is significant enough to tag as has_romance
+Mullum Malarum,1978,Tamil,drama,"drama, romance, family",J. Mahendran,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Aval Appadithan,1978,Tamil,drama,"drama, romance, comedy",K. Balachander,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Priya,1978,Tamil,drama,"drama, romance, thriller",K. Balachander,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Muqaddar Ka Sikandar,1978,Hindi,drama,"drama, romance, action, musical, crime",Prakash Mehra,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Manidharil Ithanai Nirangala,1978,Tamil,drama,"drama, romance, comedy",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Thappu Thalangal,1978,Tamil,drama,"drama, romance, family",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Kizhakke Pogum Rail,1978,Tamil,drama,"drama, romance, adventure",Bharathiraja,Sudhakar,True,Verify if romance subplot is significant enough to tag as has_romance
+Azhiyadha Kolangal,1979,Tamil,drama,"drama, romance, thriller",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Sigappukkal Mookkuthi,1979,Tamil,drama,"drama, romance, comedy",Valampuri Somanathan,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Punadhirallu,1979,Telugu,drama,"drama, romance, family",V. Madhusudhan Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Idi Katha Kaadu,1979,Telugu,drama,"drama, comedy, romance",Dasari Narayana Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Manchi Manushulu,1979,Telugu,drama,"drama, family, romance",Dasari Narayana Rao,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Sahasame Jeevitham,1979,Telugu,drama,"action, drama, romance, family",Dasari Narayana Rao,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Azhiyatha Kolangal,1979,Tamil,drama,"drama, romance",Balu Mahendra,Pratap Pothen,False,Verify if romance subplot is significant enough to tag as has_romance
+Uthiripookkal,1979,Tamil,drama,"drama, romance, thriller",J. Mahendran,Sarath Babu,False,Verify if romance subplot is significant enough to tag as has_romance
+Nool Veli,1980,Tamil,drama,"drama, romance, thriller",K. Balachander,Vijayakumar,False,Verify if romance subplot is significant enough to tag as has_romance
+Oru Oodal Kural,1980,Tamil,drama,"drama, romance, musical",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Nizhalgal,1980,Tamil,drama,"drama, romance, thriller",P. Bharathiraja,Rajinikanth,False,Verify if romance subplot is significant enough to tag as has_romance
+Sankarabharanam,1980,Telugu,drama,"drama, musical, romance",K. Viswanath,J. V. Somayajulu,True,Verify if romance subplot is significant enough to tag as has_romance
+Varumayin Niram Sivappu,1980,Tamil,drama,"drama, romance, musical",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Pranalata,1980,Telugu,drama,"drama, romance, family",Dasari Narayana Rao,Chiranjeevi,False,Verify if romance subplot is significant enough to tag as has_romance
+Meendum Kokila,1981,Tamil,drama,"drama, romance, musical",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Lawaaris,1981,Hindi,drama,"drama, action, comedy, romance, musical",Prakash Mehra,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ellam Inbamayyam,1981,Tamil,drama,"drama, romance, comedy",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Yaarana,1981,Hindi,drama,"drama, romance, musical, action",Rakesh Kumar,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+47 Natkal,1981,Tamil,drama,"drama, romance, thriller",K. Balachander,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Saptapadi,1981,Telugu,drama,"drama, romance, musical, family",K. Viswanath,Girish,True,Verify if romance subplot is significant enough to tag as has_romance
+Arth,1982,Hindi,drama,"drama, romance",Mahesh Bhatt,Shabana Azmi,True,Verify if romance subplot is significant enough to tag as has_romance
+Bemisal,1982,Hindi,drama,"drama, romance, family",Hrishikesh Mukherjee,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Payanangal Mudivathillai,1982,Tamil,drama,"drama, romance, thriller",K. Balachander,Sivakumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Moondram Pirai,1982,Tamil,drama,"drama, romance",Balu Mahendra,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Engeyo Ketta Kural,1982,Tamil,drama,"drama, romance, mystery",K. Balachander,Sujatha,True,Verify if romance subplot is significant enough to tag as has_romance
+Subhalekha,1982,Telugu,drama,"drama, romance, family, musical",K. Viswanath,Chandra Mohan,True,Verify if romance subplot is significant enough to tag as has_romance
+Vazhvey Maayam,1982,Tamil,drama,"drama, romance, family",P. Bharathiraja,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Mangamma Gari Manavadu,1982,Telugu,drama,"drama, romance, family, comedy",Dasari Narayana Rao,Chiranjeevi,False,Verify if romance subplot is significant enough to tag as has_romance
+Devatha,1982,Telugu,drama,"drama, action, family, romance",Dasari Narayana Rao,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Bemisaal,1982,Hindi,drama,"drama, romance, family",Hrishikesh Mukherjee,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Poikkal Kuthirai,1983,Tamil,drama,"action, drama, romance",P. Bharathiraja,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Sagara Sangamam,1983,Telugu,drama,"drama, musical, romance, family",K. Viswanath,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Sadma,1983,Hindi,drama,"drama, romance",Balu Mahendra,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Abhilasha,1983,Telugu,drama,"action, romance, drama",V. Madhusudhana Rao,Chiranjeevi,False,Verify if romance subplot is significant enough to tag as has_romance
+Masoom,1983,Hindi,drama,"drama, family, romance",Shekhar Kapur,Naseeruddin Shah,True,Verify if romance subplot is significant enough to tag as has_romance
+Sitaara,1984,Telugu,drama,"drama, romance, musical, family",K. Viswanath,Bhanupriya,True,Verify if romance subplot is significant enough to tag as has_romance
+Oka Chinna Maata,1984,Telugu,drama,"drama, romance, family, musical",K. Viswanath,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Sharaabi,1984,Hindi,drama,"drama, comedy, romance, musical",Prakash Mehra,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Pudhumai Penn,1984,Tamil,drama,"drama, romance, family",Bharathiraja,Pandiyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ram Teri Ganga Maili,1985,Hindi,drama,"drama, romance, musical, family",Raj Kapoor,Mandakini,False,Verify if romance subplot is significant enough to tag as has_romance
+Vijetha,1985,Telugu,drama,"action, romance, drama, family",Bapu,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Mangamma Sabadham,1985,Tamil,drama,"action, drama, romance",K. Vijayan,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Uyarndha Ullam,1985,Tamil,drama,"action, drama, romance, family",S. P. Muthuraman,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Muddula Krishna,1985,Telugu,drama,"drama, romance, family, musical",K. Raghavendra Rao,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Janam,1985,Hindi,drama,"drama, romance, thriller",Mahesh Bhatt,Kumar Gaurav,True,Verify if romance subplot is significant enough to tag as has_romance
+Muthal Mariyathai,1985,Tamil,drama,"drama, romance, family",Bharathiraja,Sivaji Ganesan,False,Verify if romance subplot is significant enough to tag as has_romance
+Punnagai Mannan,1986,Tamil,drama,"drama, romance, musical",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ninaivellam Nithya,1986,Tamil,drama,"drama, romance, thriller, mystery",K. Balachander,Sivakumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Sirivennela,1986,Telugu,drama,"drama, romance, musical, family",K. Viswanath,Sarvadaman D. Banerjee,True,Verify if romance subplot is significant enough to tag as has_romance
+Swathi Mutyam,1986,Telugu,drama,"drama, romance, family",K. Viswanath,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Swathi Muthyam,1986,Telugu,drama,"drama, romance, family",K. Viswanath,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Naam,1986,Hindi,drama,"drama, romance, musical, crime",Mahesh Bhatt,Sanjay Dutt,True,Verify if romance subplot is significant enough to tag as has_romance
+Kadalora Kavithaigal,1986,Tamil,drama,"drama, romance, family",Bharathiraja,Sathyaraj,False,Verify if romance subplot is significant enough to tag as has_romance
+Vedham Pudhithu,1987,Tamil,drama,"drama, romance, family",Mani Ratnam,Mohan,False,Verify if romance subplot is significant enough to tag as has_romance
+Karthigai,1987,Tamil,drama,"action, romance, drama, family",K. Bhagyaraj,Prabhu,True,Verify if romance subplot is significant enough to tag as has_romance
+Swayam Krushi,1987,Telugu,drama,"drama, musical, romance, family",K. Viswanath,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Inti Guttu,1987,Telugu,drama,"drama, family, romance",Dasari Narayana Rao,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Sitarama Kalyanam,1987,Telugu,drama,"drama, romance, family, musical",K. Viswanath,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Nandanavanam,1987,Telugu,drama,"drama, romance, family",K. Raghavendra Rao,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Kaash,1987,Hindi,drama,"drama, romance, thriller",Mahesh Bhatt,Jackie Shroff,True,Verify if romance subplot is significant enough to tag as has_romance
+Manathil Uruthi Vendum,1987,Tamil,drama,"drama, romance, musical",K. Balachander,S. P. Balasubrahmanyam,True,Verify if romance subplot is significant enough to tag as has_romance
+Rudraveena,1988,Telugu,drama,"drama, musical, romance, family",K. Viswanath,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Rao Gari Illu,1988,Telugu,drama,"action, drama, family, romance",K. Bapaiah,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+En Bommukutty Ammavukku,1988,Tamil,drama,"drama, romance, comedy, family",Fazil,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Pudhu Pudhu Arthangal,1989,Tamil,drama,"drama, romance",K. Balachander,Revathi,True,Verify if romance subplot is significant enough to tag as has_romance
+Eeshwar,1989,Hindi,drama,"drama, action, romance, family",K. Bapaiah,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Muddula Mavayya,1989,Telugu,drama,"drama, family, comedy, romance",K. Raghavendra Rao,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Kizhakku Vasal,1990,Tamil,drama,"drama, romance, action",P. Bharathiraja,Raghuvaran,False,Verify if romance subplot is significant enough to tag as has_romance
+Muvva Gopaludu,1990,Telugu,drama,"action, drama, romance, family",K. Raghavendra Rao,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Nadigan,1990,Tamil,drama,"drama, comedy, romance",P. Vasu,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Saudagar,1991,Hindi,drama,"drama, romance, action, family",Subhash Ghai,Dilip Kumar,False,Verify if romance subplot is significant enough to tag as has_romance
+Seetharamaiah Gari Manavaralu,1991,Telugu,drama,"drama, family, romance, comedy",Madhusudhana Rao,Akkineni Nageswara Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Pudhu Manithan,1991,Tamil,drama,"drama, action, romance",Manivannan,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Beta,1992,Hindi,drama,"drama, romance, action, musical, family",Indra Kumar,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Thevar Magan,1992,Tamil,drama,"drama, action, crime, romance, family",Bharathan,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Pattali,1992,Tamil,drama,"action, drama, romance, musical",P. Bharathiraja,Rajinikanth,False,Verify if romance subplot is significant enough to tag as has_romance
+Theivamagan,1992,Tamil,drama,"drama, family, romance, action",P. Vasu,Vijayakanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Raju Ban Gaya Gentleman,1992,Hindi,drama,"drama, romance, comedy",Aziz Mirza,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Naalaiya Theerpu,1992,Tamil,drama,"drama, action, romance",R. V. Udayakumar,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Dharma Chakram,1993,Telugu,drama,"drama, romance, family",A. Kodandarami Reddy,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Nammavar,1994,Tamil,drama,"action, drama, romance, comedy",K. S. Ravikumar,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Aaditi,1994,Telugu,drama,"drama, romance, family",Mani Ratnam inspired,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Thai Maaman,1994,Tamil,drama,"action, drama, romance, family",Guru Dhanapal,Sathyaraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Nattamai,1994,Tamil,drama,"drama, family, romance, comedy",Bharathiraja,Sarath Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Akele Hum Akele Tum,1995,Hindi,drama,"drama, romance, musical",Mansoor Khan,Aamir Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Ram Jaane,1995,Hindi,drama,"action, drama, crime, romance",Rajiv Mehra,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Maaman Magal,1995,Tamil,drama,"drama, romance, family",Guru Dhanapal,Sathyaraj,False,Verify if romance subplot is significant enough to tag as has_romance
+Subhapradam,1995,Telugu,drama,"drama, romance, family",Gunasekhar,Jagapati Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Inaindha Kaigal,1996,Tamil,drama,"drama, romance, family",Santhana Bharathi,Karthik,True,Verify if romance subplot is significant enough to tag as has_romance
+Khamoshi: The Musical,1996,Hindi,drama,"drama, romance, musical, family",Sanjay Leela Bhansali,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Pavithra Bandham,1996,Telugu,drama,"drama, romance, family",K. Raghavendra Rao,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Iruvar,1997,Tamil,drama,"drama, historical, romance, musical, biopic",Mani Ratnam,Mohanlal,True,Verify if romance subplot is significant enough to tag as has_romance
+Suryavamsam,1997,Telugu,drama,"drama, family, romance, action",K. Raghavendra Rao,Venkatesh,False,Verify if romance subplot is significant enough to tag as has_romance
+Aayana,1997,Telugu,drama,"drama, romance, family",A. Karunakaran,Akkineni Nageswara Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Judaai,1997,Hindi,drama,"drama, romance, comedy, family",Raj Kanwar,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Virasat,1997,Hindi,drama,"drama, romance, action, family",Priyadarshan,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Sindhooram,1997,Telugu,drama,"drama, action, romance",Krishna Vamsi,Ravi Teja,True,Verify if romance subplot is significant enough to tag as has_romance
+Anthapuram,1998,Telugu,drama,"drama, romance, crime, thriller",Krishna Vamsi,Prakash Raj,False,Verify if romance subplot is significant enough to tag as has_romance
+Zakhm,1998,Hindi,drama,"drama, romance, thriller",Mahesh Bhatt,Ajay Devgn,False,Verify if romance subplot is significant enough to tag as has_romance
+Vasantha Vasal,1998,Tamil,drama,"drama, romance, family",N. Maharajan,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Hum Saath-Saath Hain,1999,Hindi,drama,"drama, family, romance, musical",Sooraj R. Barjatya,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Mudhalvan,1999,Tamil,drama,"action, drama, thriller, romance",S. Shankar,Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Sooryavansham,1999,Hindi,drama,"action, drama, family, romance",K. Raghavendra Rao,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Sethu,1999,Tamil,drama,"romance, drama, thriller, action",Bala,Vikram,False,Verify if romance subplot is significant enough to tag as has_romance
+Refugee,2000,Hindi,drama,"action, romance, drama, war",J.P. Dutta,Hrithik Roshan,False,Verify if romance subplot is significant enough to tag as has_romance
+Annayya,2000,Telugu,drama,"action, drama, family, romance, comedy",S.V. Krishna Reddy,Chiranjeevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Maa Babu,2000,Telugu,drama,"drama, family, romance, action",K. Raghavendra Rao,Balakrishna,True,Verify if romance subplot is significant enough to tag as has_romance
+Kabhi Khushi Kabhie Gham,2001,Hindi,drama,"drama, romance, family, musical, comedy",Karan Johar,Shah Rukh Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+Sometimes Happiness Sometimes Sadness...,2001,Hindi,drama,"drama, romance, family, musical",Karan Johar,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Monsoon Wedding,2001,Hindi,drama,"drama, romance, comedy, family",Mira Nair,Naseeruddin Shah,True,Verify if romance subplot is significant enough to tag as has_romance
+Lajja,2001,Hindi,drama,"drama, action, adventure, romance",Rajkumar Santoshi,Madhuri Dixit,True,Verify if romance subplot is significant enough to tag as has_romance
+Murari,2001,Telugu,drama,"action, romance, drama, fantasy",Krishna Vamsi,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Chori Chori Chupke Chupke,2001,Hindi,drama,"drama, romance, family",Abbas-Mustan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Nandha,2001,Tamil,drama,"action, drama, romance",Bala,Suriya,False,Verify if romance subplot is significant enough to tag as has_romance
+Zubeidaa,2001,Hindi,drama,"drama, romance, historical, musical",Shyam Benegal,Manoj Bajpayee,False,Verify if romance subplot is significant enough to tag as has_romance
+Nanda,2001,Tamil,drama,"drama, action, romance",Bala,Suriya,True,Verify if romance subplot is significant enough to tag as has_romance
+Kabhi Khushi Kabhie Gham...,2001,Hindi,drama,"drama, family, musical, romance",Karan Johar,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Devdas,2002,Hindi,drama,"drama, romance, musical",Sanjay Leela Bhansali,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Shakti: The Power,2002,Hindi,drama,"action, drama, romance, thriller",Krishna Vamsi,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Kannathil Muthamittal,2002,Tamil,drama,"drama, romance, war, family, adventure",Mani Ratnam,Madhavan,True,Verify if romance subplot is significant enough to tag as has_romance
+Koi... Mil Gaya,2003,Hindi,drama,"sci-fi, fantasy, drama, family, romance, adventure",Rakesh Roshan,Hrithik Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Anbe Sivam,2003,Tamil,drama,"drama, comedy, romance, adventure",Sundar C,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Baghban,2003,Hindi,drama,"drama, romance, family",Ravi Chopra,Amitabh Bachchan,True,Verify if romance subplot is significant enough to tag as has_romance
+Kadhal Konden,2003,Tamil,drama,"romance, drama, thriller",Selvaraghavan,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Koi Mil Gaya,2003,Hindi,drama,"sci-fi, fantasy, drama, family, romance",Rakesh Roshan,Hrithik Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Kadhal Kondein,2003,Tamil,drama,"drama, romance, thriller, crime",Selvaraghavan,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Chokher Bali,2003,Hindi,drama,"drama, romance",Rituparno Ghosh,Prasenjit Chatterjee,True,Verify if romance subplot is significant enough to tag as has_romance
+Swades,2004,Hindi,drama,"drama, romance, family",Ashutosh Gowariker,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Autograph,2004,Tamil,drama,"drama, romance, comedy",Cheran,Cheran,True,Verify if romance subplot is significant enough to tag as has_romance
+Aayitha Ezhuthu,2004,Tamil,drama,"action, drama, thriller, romance",Mani Ratnam,Suriya,False,Verify if romance subplot is significant enough to tag as has_romance
+Sankranthi,2004,Telugu,drama,"drama, comedy, family, romance",S. V. Krishna Reddy,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Yuva,2004,Hindi,drama,"action, drama, romance, thriller",Mani Ratnam,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Raincoat,2004,Hindi,drama,"drama, romance",Rituparno Ghosh,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Aaytha Ezhuthu,2004,Tamil,drama,"action, drama, romance, thriller",Mani Ratnam,Madhavan,False,Verify if romance subplot is significant enough to tag as has_romance
+Water,2005,Hindi,drama,"drama, historical, romance",Deepa Mehta,Seema Biswas,False,Verify if romance subplot is significant enough to tag as has_romance
+Thavamai Thavamirundhu,2005,Tamil,drama,"drama, family, romance",Cheran,Rajkiran,True,Verify if romance subplot is significant enough to tag as has_romance
+Main Aisa Hi Hoon,2005,Hindi,drama,"drama, family, romance",Harry Baweja,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Kyon Ki,2005,Hindi,drama,"drama, romance, thriller",Priyadarshan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Rang De Basanti,2006,Hindi,drama,"drama, historical, action, thriller, romance",Rakeysh Omprakash Mehra,Aamir Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Omkara,2006,Hindi,drama,"drama, crime, thriller, romance",Vishal Bhardwaj,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+The Namesake,2006,Hindi,drama,"drama, romance, family",Mira Nair,Irrfan Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Classmates,2006,Malayalam,drama,"drama, romance, comedy, thriller",Lal Jose,Prithviraj,True,Verify if romance subplot is significant enough to tag as has_romance
+Veyil,2006,Tamil,drama,"drama, romance, family",Vasanth,Bharath,True,Verify if romance subplot is significant enough to tag as has_romance
+Veyyil,2006,Tamil,drama,"drama, action, romance, adventure",Vasanthabalan,Bharath,True,Verify if romance subplot is significant enough to tag as has_romance
+Dollar Dreams,2006,Telugu,drama,"drama, comedy, romance",Sekhar Kammula,Krishnudu,False,Verify if romance subplot is significant enough to tag as has_romance
+Life in a... Metro,2007,Hindi,drama,"drama, romance, comedy",Anurag Basu,Irrfan Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Happy Days,2007,Telugu,drama,"drama, comedy, romance",Sekhar Kammula,Varun Sandesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Paruthiveeran,2007,Tamil,drama,"action, romance, drama",Ameer Sultan,Karthi,False,Verify if romance subplot is significant enough to tag as has_romance
+Rock On!!,2008,Hindi,drama,"drama, musical, romance",Abhishek Kapoor,Farhan Akhtar,True,Verify if romance subplot is significant enough to tag as has_romance
+Vaaranam Aayiram,2008,Tamil,drama,"drama, romance, action, musical",Gautham Vasudev Menon,Suriya,True,Verify if romance subplot is significant enough to tag as has_romance
+Fashion,2008,Hindi,drama,"drama, romance",Madhur Bhandarkar,Priyanka Chopra,True,Verify if romance subplot is significant enough to tag as has_romance
+Kuselan,2008,Tamil,drama,"comedy, drama, romance",P. Vasu,Rajinikanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Slumdog Millionaire,2008,Hindi,drama,"drama, romance, thriller, crime, adventure",Danny Boyle,Anil Kapoor,False,Verify if romance subplot is significant enough to tag as has_romance
+Wake Up Sid,2009,Hindi,drama,"drama, comedy, romance",Ayan Mukerji,Ranbir Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Dev.D,2009,Hindi,drama,"drama, romance, comedy",Anurag Kashyap,Abhay Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Luck By Chance,2009,Hindi,drama,"drama, romance, comedy",Zoya Akhtar,Farhan Akhtar,True,Verify if romance subplot is significant enough to tag as has_romance
+Naadodigal,2009,Tamil,drama,"drama, romance, action",Samuthirakani,Samuthirakani,False,Verify if romance subplot is significant enough to tag as has_romance
+Nadodigal,2009,Tamil,drama,"drama, romance, action",Samuthirakani,Samuthirakani,False,Verify if romance subplot is significant enough to tag as has_romance
+Naa Oopiri,2009,Telugu,drama,"drama, romance, comedy, family",G. Venu Gopal,Nagarjuna Akkineni,True,Verify if romance subplot is significant enough to tag as has_romance
+London Dreams,2009,Hindi,drama,"drama, musical, romance",Vipul Shah,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+My Name Is Khan,2010,Hindi,drama,"drama, romance, adventure",Karan Johar,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Once Upon a Time in Mumbaai,2010,Hindi,drama,"crime, drama, thriller, action, romance",Milan Luthria,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Guzaarish,2010,Hindi,drama,"drama, romance, musical",Sanjay Leela Bhansali,Hrithik Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Raajneeti,2010,Hindi,drama,"drama, crime, thriller, action, romance",Prakash Jha,Ranbir Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Angadi Theru,2010,Tamil,drama,"drama, romance",Vasanthabalan,Mahesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Leader,2010,Telugu,drama,"drama, romance, thriller",Sekhar Kammula,Rana Daggubati,True,Verify if romance subplot is significant enough to tag as has_romance
+Zindagi Na Milegi Dobara,2011,Hindi,drama,"drama, comedy, romance, adventure",Zoya Akhtar,Hrithik Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Rockstar,2011,Hindi,drama,"drama, romance, musical",Imtiaz Ali,Ranbir Kapoor,False,Verify if romance subplot is significant enough to tag as has_romance
+Vaanam,2011,Tamil,drama,"drama, action, romance, family",Boopathy Pandian,Silambarasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Mayakkam Enna,2011,Tamil,drama,"drama, romance, comedy",Selvaraghavan,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Deiva Thirumagal,2011,Tamil,drama,"drama, family, romance",A. L. Vijay,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Veppam,2011,Tamil,drama,"drama, romance, action, thriller",Gautham Menon (inspired),Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Dhobi Ghat,2011,Hindi,drama,"drama, romance",Aamir Khan,Aamir Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Mausam,2011,Hindi,drama,"drama, romance",Pankaj Kapur,Shahid Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+English Vinglish,2012,Hindi,drama,"drama, comedy, romance, family",Gauri Shinde,Sridevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Ustad Hotel,2012,Malayalam,drama,"drama, romance, family, comedy",Anwar Rasheed,Unknown,True,Verify if romance subplot is significant enough to tag as has_romance
+Naan Ee,2012,Tamil,drama,"action, romance, drama, fantasy",S.S. Rajamouli,Sudeep,True,Verify if romance subplot is significant enough to tag as has_romance
+Valkai,2012,Tamil,drama,"drama, romance, family",K. S. Gopalakrishnan,Anand Aravindakshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Manam Kothi Paravai,2012,Tamil,drama,"drama, romance, comedy",Seenu Ramasamy,Silambarasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Life Is Beautiful,2012,Telugu,drama,"drama, comedy, romance",Sekhar Kammula,Vijay Deverakonda,True,Verify if romance subplot is significant enough to tag as has_romance
+Marina,2012,Tamil,drama,"drama, romance, comedy",Pandiraj,Sivakarthikeyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Teri Meri Kahaani,2012,Hindi,drama,"drama, romance",Kunal Kohli,Shahid Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+The Lunchbox,2013,Hindi,drama,"drama, romance",Ritesh Batra,Irrfan Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Maryan,2013,Tamil,drama,"action, romance, drama, adventure",Bharath Bala,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Kadal,2013,Tamil,drama,"drama, romance, adventure",Mani Ratnam,Arya,False,Verify if romance subplot is significant enough to tag as has_romance
+Seethamma Vakitlo Sirimalle Chettu,2013,Telugu,drama,"drama, family, romance, comedy",Srikanth Addala,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Highway,2014,Hindi,drama,"drama, romance, adventure",Imtiaz Ali,Alia Bhatt,False,Verify if romance subplot is significant enough to tag as has_romance
+Bengaluru Days,2014,Malayalam,drama,"drama, comedy, romance, family",Anjali Menon,Unknown,True,Verify if romance subplot is significant enough to tag as has_romance
+Jai Ho,2014,Hindi,drama,"action, drama, romance",Sohail Khan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Bangalore Days,2014,Malayalam,drama,"drama, romance, comedy, family",Anjali Menon,Nivin Pauly,True,Verify if romance subplot is significant enough to tag as has_romance
+Velaiilla Pattadhari,2014,Tamil,drama,"drama, comedy, romance, action",Velraj,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Velai Illa Pattadhari,2014,Tamil,drama,"drama, comedy, romance, musical",Velraj,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Madras,2014,Tamil,drama,"action, drama, romance",Pa. Ranjith,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Govindudu Andarivadele,2014,Telugu,drama,"drama, action, romance, family",Krishna Vamsi,Ram Charan,True,Verify if romance subplot is significant enough to tag as has_romance
+Manam,2014,Telugu,drama,"romance, drama, fantasy, family",Vikram Kumar,Nagarjuna Akkineni,True,Verify if romance subplot is significant enough to tag as has_romance
+Pannaiyarum Padminiyum,2014,Tamil,drama,"drama, romance, thriller, crime",S. U. Arun Kumar,Vijay Sethupathi,False,Verify if romance subplot is significant enough to tag as has_romance
+Piku,2015,Hindi,drama,"drama, comedy, romance",Shoojit Sircar,Deepika Padukone,True,Verify if romance subplot is significant enough to tag as has_romance
+Tamasha,2015,Hindi,drama,"drama, romance, comedy",Imtiaz Ali,Ranbir Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Masaan,2015,Hindi,drama,"drama, romance",Neeraj Ghaywan,Vicky Kaushal,False,Verify if romance subplot is significant enough to tag as has_romance
+Dil Dhadakne Do,2015,Hindi,drama,"drama, comedy, romance, family",Zoya Akhtar,Ranveer Singh,False,Verify if romance subplot is significant enough to tag as has_romance
+Srimanthudu,2015,Telugu,drama,"action, drama, romance, family",Koratala Siva,Mahesh Babu,False,Verify if romance subplot is significant enough to tag as has_romance
+S/O Satyamurthy,2015,Telugu,drama,"drama, comedy, romance, family, action",Trivikram Srinivas,Allu Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Thanga Magan,2015,Tamil,drama,"action, comedy, romance, drama, family",Velraj,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Bombay Velvet,2015,Hindi,drama,"drama, crime, romance, thriller, historical, musical",Anurag Kashyap,Ranbir Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Yevade Subramanyam,2015,Telugu,drama,"drama, romance, adventure",Nag Ashwin,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Orange Mittai,2015,Tamil,drama,"drama, romance, comedy",Biju Viswanath,Vijay Sethupathi,True,Verify if romance subplot is significant enough to tag as has_romance
+Dear Zindagi,2016,Hindi,drama,"drama, romance",Gauri Shinde,Alia Bhatt,True,Verify if romance subplot is significant enough to tag as has_romance
+Kapoor & Sons,2016,Hindi,drama,"drama, romance, family",Shakun Batra,Fawad Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Joker,2016,Tamil,drama,"drama, comedy, romance",Raju Murugan,Guru Somasundaram,True,Verify if romance subplot is significant enough to tag as has_romance
+Brahmotsavam,2016,Telugu,drama,"drama, family, romance, comedy",Srikanth Addala,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Thozha,2016,Tamil,drama,"drama, comedy, romance, family",Vamshi Paidipally,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Dharma Durai,2016,Tamil,drama,"drama, romance, family",Seenu Ramasamy,Vijay Sethupathi,True,Verify if romance subplot is significant enough to tag as has_romance
+Thaarai Thappattai,2016,Tamil,drama,"drama, musical, romance",Bala,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Arjun Reddy,2017,Telugu,drama,"drama, romance",Sandeep Reddy Vanga,Vijay Deverakonda,True,Verify if romance subplot is significant enough to tag as has_romance
+Toilet - Ek Prem Katha,2017,Hindi,drama,"comedy, drama, romance, family",Shree Narayan Singh,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Tubelight,2017,Hindi,drama,"drama, war, family, romance",Kabir Khan,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Karuppan,2017,Tamil,drama,"drama, romance, action, comedy",Pandiraj,Vijay Sethupathi,False,Verify if romance subplot is significant enough to tag as has_romance
+Shatamanam Bhavati,2017,Telugu,drama,"drama, family, romance, comedy",Satish Vegesna,Sharwanand,True,Verify if romance subplot is significant enough to tag as has_romance
+Satamanam Bhavati,2017,Telugu,drama,"drama, romance, family, comedy",Satish Vegesna,Sharwanand,True,Verify if romance subplot is significant enough to tag as has_romance
+Toilet: Ek Prem Katha,2017,Hindi,drama,"comedy, drama, romance, family",Shree Narayan Singh,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Pa Paandi,2017,Tamil,drama,"drama, romance, family, adventure",Dhanush,Dhanush,False,Verify if romance subplot is significant enough to tag as has_romance
+Pariyerum Perumal,2018,Tamil,drama,"drama, romance, crime",Mari Selvaraj,Kathir,False,Verify if romance subplot is significant enough to tag as has_romance
+Zero,2018,Hindi,drama,"drama, romance, comedy, sci-fi",Aanand L. Rai,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Rangasthalam,2018,Telugu,drama,"action, drama, romance, historical",Sukumar,Ram Charan,True,Verify if romance subplot is significant enough to tag as has_romance
+October,2018,Hindi,drama,"drama, romance",Shoojit Sircar,Varun Dhawan,True,Verify if romance subplot is significant enough to tag as has_romance
+Bharat Ane Nenu,2018,Telugu,drama,"action, drama, romance, comedy",Koratala Siva,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Kadaikutty Singam,2018,Tamil,drama,"drama, comedy, family, romance",Pandiraj,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Fanney Khan,2018,Hindi,drama,"drama, comedy, musical, romance",Atul Manjrekar,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+C/o Kancharapalem,2018,Telugu,drama,"drama, romance, anthology",Venkatesh Maha,Subba Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Kumbalangi Nights,2019,Malayalam,drama,"drama, romance, comedy, family",Madhu C. Narayanan,Fahadh Faasil,True,Verify if romance subplot is significant enough to tag as has_romance
+Chhichhore,2019,Hindi,drama,"drama, comedy, romance",Nitesh Tiwari,Sushant Singh Rajput,True,Verify if romance subplot is significant enough to tag as has_romance
+Gully Boy,2019,Hindi,drama,"drama, musical, romance",Zoya Akhtar,Ranveer Singh,True,Verify if romance subplot is significant enough to tag as has_romance
+Bharat,2019,Hindi,drama,"drama, romance, adventure, historical",Ali Abbas Zafar,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Student of the Year 2,2019,Hindi,drama,"action, romance, drama, comedy",Punit Malhotra,Tiger Shroff,True,Verify if romance subplot is significant enough to tag as has_romance
+Kalank,2019,Hindi,drama,"drama, romance, historical, musical",Abhishek Varman,Varun Dhawan,True,Verify if romance subplot is significant enough to tag as has_romance
+Viswasam,2019,Tamil,drama,"action, drama, family, romance",Siva,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Maharshi,2019,Telugu,drama,"drama, action, romance, family",Vamshi Paidipally,Mahesh Babu,False,Verify if romance subplot is significant enough to tag as has_romance
+Kabir Singh,2019,Hindi,drama,"drama, romance, action",Sandeep Reddy Vanga,Shahid Kapoor,False,Verify if romance subplot is significant enough to tag as has_romance
+Namma Veettu Pillai,2019,Tamil,drama,"drama, action, romance, family, comedy",Pandiraj,Sivakarthikeyan,False,Verify if romance subplot is significant enough to tag as has_romance
+Majili,2019,Telugu,drama,"drama, romance, sports",Shiva Nirvana,Naga Chaitanya,True,Verify if romance subplot is significant enough to tag as has_romance
+Prati Roju Pandaage,2019,Telugu,drama,"drama, comedy, family, romance",Maruthi Dasari,Sai Dharam Tej,True,Verify if romance subplot is significant enough to tag as has_romance
+Thappad,2020,Hindi,drama,"drama, romance",Anubhav Sinha,Taapsee Pannu,True,Verify if romance subplot is significant enough to tag as has_romance
+Gypsy,2020,Tamil,drama,"drama, adventure, romance, thriller",Raju Murugan,Jiiva,True,Verify if romance subplot is significant enough to tag as has_romance
+Kasada Tabara,2021,Tamil,drama,"drama, comedy, romance, thriller",Chimbu Deven,Harish Kalyan,True,Verify if romance subplot is significant enough to tag as has_romance
+Gamanam,2021,Telugu,drama,"drama, romance, family",Sujana Rao,Shiva Kandukuri,True,Verify if romance subplot is significant enough to tag as has_romance
+Kondapolam,2021,Telugu,drama,"drama, romance, adventure",Krish Jagarlamudi,Vaisshnav Tej,True,Verify if romance subplot is significant enough to tag as has_romance
+Konda Polam,2021,Telugu,drama,"drama, romance, adventure",Krish Jagarlamudi,Vaisshnav Tej,True,Verify if romance subplot is significant enough to tag as has_romance
+Laal Singh Chaddha,2022,Hindi,drama,"drama, comedy, romance, historical, adventure",Advait Chandan,Aamir Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Gehraiyaan,2022,Hindi,drama,"drama, romance, thriller",Shakun Batra,Deepika Padukone,True,Verify if romance subplot is significant enough to tag as has_romance
+Raksha Bandhan,2022,Hindi,drama,"comedy, drama, romance, family",Aanand L. Rai,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Natchathiram Nagargirathu,2022,Tamil,drama,"romance, drama, musical",Pa. Ranjith,Dushara Vijayan,False,Verify if romance subplot is significant enough to tag as has_romance
+Oke Oka Jeevitham,2022,Telugu,drama,"drama, sci-fi, romance, comedy",Shree Karthick,Sharwanand,True,Verify if romance subplot is significant enough to tag as has_romance
+Viruman,2022,Tamil,drama,"action, drama, romance, family",M. Muthaiah,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Natchathiram Nagargiradhu,2022,Tamil,drama,"drama, romance, comedy, musical",Pa. Ranjith,Kalidas Jayaram,True,Verify if romance subplot is significant enough to tag as has_romance
+Dunki,2023,Hindi,drama,"comedy, drama, adventure, romance",Rajkumar Hirani,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Lust Stories 2,2023,Hindi,drama,"drama, romance",Konkona Sen Sharma,Tamannaah Bhatia,True,Verify if romance subplot is significant enough to tag as has_romance
+Varisu,2023,Tamil,drama,"drama, action, comedy, family, romance",Vamsi Paidipally,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Kho Gaye Hum Kahan,2023,Hindi,drama,"drama, comedy, romance",Arjun Varain Singh,Ananya Panday,True,Verify if romance subplot is significant enough to tag as has_romance
+Bawaal,2023,Hindi,drama,"drama, romance, historical, war",Nitesh Tiwari,Varun Dhawan,True,Verify if romance subplot is significant enough to tag as has_romance
+Vaathi,2023,Tamil,drama,"action, drama, romance",Venugopal Sreenivasan,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Meiyazhagan,2024,Tamil,drama,"drama, romance, family",C. Prem Kumar,Arvind Swamy,True,Verify if romance subplot is significant enough to tag as has_romance
+Guntur Kaaram,2024,Telugu,drama,"drama, romance, family",Trivikram Srinivas,Mahesh Babu,True,Verify if romance subplot is significant enough to tag as has_romance
+Family Star,2024,Telugu,drama,"drama, romance, comedy, family",Parasuram,Vijay Deverakonda,True,Verify if romance subplot is significant enough to tag as has_romance
+Metro In Dino,2025,Hindi,drama,"drama, romance, comedy",Anurag Basu,Pankaj Tripathi,True,Verify if romance subplot is significant enough to tag as has_romance
+Mughal-E-Azam,1960,Hindi,historical,"historical, drama, romance, musical, war",K. Asif,Dilip Kumar,False,Verify if romance subplot is significant enough to tag as has_romance
+O Seeta Katha,1974,Telugu,historical,"drama, romance, historical, fantasy, musical",Bapu,Shyam,True,Verify if romance subplot is significant enough to tag as has_romance
+Earth,1998,Hindi,historical,"drama, historical, romance, war",Deepa Mehta,Aamir Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Hey Ram,2000,Hindi,historical,"drama, historical, thriller, crime, romance",Kamal Haasan,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Aśoka,2001,Hindi,historical,"action, romance, drama, historical, adventure",Santosh Sivan,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Asoka,2001,Hindi,historical,"action, romance, historical, drama, war, adventure",Santosh Sivan,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Pinjar,2003,Hindi,historical,"drama, romance, historical, war",Chandra Prakash Dwivedi,Manoj Bajpayee,False,Verify if romance subplot is significant enough to tag as has_romance
+Kisna: The Warrior Poet,2005,Hindi,historical,"action, romance, drama, historical, war, adventure",Subhash Ghai,Vivek Oberoi,False,Verify if romance subplot is significant enough to tag as has_romance
+Jodhaa Akbar,2008,Hindi,historical,"historical, romance, drama, action, musical",Ashutosh Gowariker,Hrithik Roshan,False,Verify if romance subplot is significant enough to tag as has_romance
+Veer,2010,Hindi,historical,"action, adventure, historical, romance",Anil Sharma,Salman Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+Kaaviya Thalaivan,2014,Tamil,historical,"drama, historical, musical, romance",Vasantha Balan,Siddharth,True,Verify if romance subplot is significant enough to tag as has_romance
+Bajirao Mastani,2015,Hindi,historical,"historical, romance, drama, war, musical, action",Sanjay Leela Bhansali,Ranveer Singh,True,Verify if romance subplot is significant enough to tag as has_romance
+Kanche,2015,Telugu,historical,"war, romance, historical, drama",Krish Jagarlamudi,Varun Tej,True,Verify if romance subplot is significant enough to tag as has_romance
+Mohenjo Daro,2016,Hindi,historical,"action, adventure, romance, historical, drama",Ashutosh Gowariker,Hrithik Roshan,False,Verify if romance subplot is significant enough to tag as has_romance
+Rangoon,2017,Hindi,historical,"drama, romance, war, historical, thriller",Vishal Bhardwaj,Saif Ali Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Padmaavat,2018,Hindi,historical,"historical, drama, romance, action, war, musical",Sanjay Leela Bhansali,Deepika Padukone,True,Verify if romance subplot is significant enough to tag as has_romance
+Panipat,2019,Hindi,historical,"action, drama, historical, war, romance",Ashutosh Gowariker,Sanjay Dutt,True,Verify if romance subplot is significant enough to tag as has_romance
+Ponniyin Selvan: I,2022,Tamil,historical,"action, drama, historical, adventure, romance",Mani Ratnam,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Ponniyin Selvan: Part 1,2022,Tamil,historical,"action, drama, historical, adventure, romance",Mani Ratnam,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Ponniyin Selvan I,2022,Tamil,historical,"action, drama, historical, adventure, romance",Mani Ratnam,Jayam Ravi,True,Verify if romance subplot is significant enough to tag as has_romance
+Ponniyin Selvan: Part I,2022,Tamil,historical,"action, drama, historical, adventure, romance",Mani Ratnam,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Ponniyin Selvan: II,2023,Tamil,historical,"action, drama, historical, romance, adventure",Mani Ratnam,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Ponniyin Selvan II,2023,Tamil,historical,"action, drama, historical, adventure, romance",Mani Ratnam,Jayam Ravi,True,Verify if romance subplot is significant enough to tag as has_romance
+Ponniyin Selvan: Part II,2023,Tamil,historical,"action, drama, historical, romance, adventure",Mani Ratnam,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Nagina,1986,Hindi,horror,"fantasy, romance, drama, horror, action",Harmesh Malhotra,Sridevi,True,Verify if romance subplot is significant enough to tag as has_romance
+Pisasu,2014,Tamil,horror,"horror, drama, romance",Mysskin,Naga,True,Verify if romance subplot is significant enough to tag as has_romance
+Stree,2018,Hindi,horror,"horror, comedy, romance, mystery",Amar Kaushik,Rajkummar Rao,True,Verify if romance subplot is significant enough to tag as has_romance
+Taxiwaala,2018,Telugu,horror,"action, comedy, romance, horror, thriller",Rahul Sankrityan,Vijay Deverakonda,True,Verify if romance subplot is significant enough to tag as has_romance
+The Raja Saab,2025,Telugu,horror,"horror, comedy, romance, action",Maruthi,Prabhas,True,Verify if romance subplot is significant enough to tag as has_romance
+Thamma,2025,Hindi,horror,"comedy, horror, romance",Aditya Sarpotdar,Ayushmann Khurrana,True,Verify if romance subplot is significant enough to tag as has_romance
+Mr India,1987,Hindi,sci-fi,"sci-fi, action, comedy, romance, fantasy, adventure, family",Shekhar Kapur,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Jo Jeeta Wohi Sikandar,1992,Hindi,sports,"drama, sports, romance, comedy",Mansoor Khan,Aamir Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Sye,2004,Telugu,sports,"action, drama, sports, romance",S.S. Rajamouli,Nithin,True,Verify if romance subplot is significant enough to tag as has_romance
+Ta Ra Rum Pum,2007,Hindi,sports,"action, romance, drama, family, sports",Siddharth Anand,Saif Ali Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Bheemili Kabaddi Jattu,2010,Telugu,sports,"sports, comedy, drama, romance",Tatineni Satya,Nani,True,Verify if romance subplot is significant enough to tag as has_romance
+Sultan,2016,Hindi,sports,"action, drama, sports, romance",Ali Abbas Zafar,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Irudhi Suttru,2016,Tamil,sports,"sports, drama, romance",Sudha Kongara,Madhavan,True,Verify if romance subplot is significant enough to tag as has_romance
+Mukkabaaz,2017,Hindi,sports,"sports, romance, drama, action",Anurag Kashyap,Vineet Kumar Singh,False,Verify if romance subplot is significant enough to tag as has_romance
+Natpe Thunai,2019,Tamil,sports,"action, comedy, romance, sports",Parthiban Desingu,Hiphop Tamizha,True,Verify if romance subplot is significant enough to tag as has_romance
+A1 Express,2021,Telugu,sports,"sports, action, drama, romance",Dennis Jeevan Kanukolanu,Sundeep Kishan,True,Verify if romance subplot is significant enough to tag as has_romance
+Teesri Manzil,1966,Hindi,thriller,"thriller, mystery, romance, musical",Vijay Anand,Shammi Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Moondru Mudichu,1976,Tamil,thriller,"drama, romance, thriller, crime",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Kan Simittamal,1979,Tamil,thriller,"drama, thriller, romance",K. Balachander,Kamal Haasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Karz,1980,Hindi,thriller,"drama, thriller, romance, musical, mystery",Subhash Ghai,Rishi Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Parinda,1989,Hindi,thriller,"crime, drama, thriller, action, romance",Vidhu Vinod Chopra,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Darr,1990,Hindi,thriller,"thriller, romance, drama",Yash Chopra,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Sadak,1991,Hindi,thriller,"action, romance, drama, thriller, crime",Mahesh Bhatt,Sanjay Dutt,True,Verify if romance subplot is significant enough to tag as has_romance
+Nirnayam,1991,Telugu,thriller,"action, thriller, romance, drama",Priyadarshan,Nagarjuna,True,Verify if romance subplot is significant enough to tag as has_romance
+Kurbaan,1991,Hindi,thriller,"action, romance, drama, thriller",Deepak Bahry,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+100 Days,1991,Hindi,thriller,"action, mystery, thriller, horror, romance",Partho Ghosh,Jackie Shroff,True,Verify if romance subplot is significant enough to tag as has_romance
+Roja,1992,Tamil,thriller,"romance, drama, thriller, musical, action",Mani Ratnam,Arvind Swamy,True,Verify if romance subplot is significant enough to tag as has_romance
+Baazigar,1993,Hindi,thriller,"action, thriller, crime, romance, drama",Abbas Alibhai Burmawalla,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Sir,1993,Hindi,thriller,"action, thriller, drama, romance",Mahesh Bhatt,Naseeruddin Shah,False,Verify if romance subplot is significant enough to tag as has_romance
+Anjaam,1994,Hindi,thriller,"thriller, drama, romance, crime",Rahul Rawail,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Kshana Kshanam,1994,Telugu,thriller,"action, comedy, romance, thriller, adventure",Ram Gopal Varma,Venkatesh,True,Verify if romance subplot is significant enough to tag as has_romance
+Bombay,1995,Tamil,thriller,"romance, drama, historical, musical, thriller",Mani Ratnam,Arvind Swamy,False,Verify if romance subplot is significant enough to tag as has_romance
+Jaan,1996,Hindi,thriller,"action, thriller, romance, drama",Mahesh Bhatt,Ajay Devgn,True,Verify if romance subplot is significant enough to tag as has_romance
+Gupt: The Hidden Truth,1997,Hindi,thriller,"thriller, mystery, romance, drama, musical",Rajiv Rai,Bobby Deol,True,Verify if romance subplot is significant enough to tag as has_romance
+Nerrukku Ner,1997,Tamil,thriller,"action, thriller, romance, drama",Vasanth,Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Nerukku Ner,1997,Tamil,thriller,"action, thriller, romance",Vasanth,Suriya,True,Verify if romance subplot is significant enough to tag as has_romance
+Dil Se..,1998,Hindi,thriller,"romance, thriller, drama, musical",Mani Ratnam,Shah Rukh Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+Duplicate,1998,Hindi,thriller,"action, thriller, comedy, romance",Mahesh Bhatt,Shah Rukh Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Muthalvan,1999,Tamil,thriller,"action, drama, thriller, romance",S. Shankar,Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Mast,1999,Hindi,thriller,"romance, thriller, drama",Ram Gopal Varma,Aftab Shivdasani,True,Verify if romance subplot is significant enough to tag as has_romance
+Khiladi 420,2000,Hindi,thriller,"action, thriller, comedy, romance",Neeraj Vora,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Oke Okkadu,2001,Telugu,thriller,"action, romance, thriller, drama",Mani Ratnam,Arjun,True,Verify if romance subplot is significant enough to tag as has_romance
+Ajnabee,2001,Hindi,thriller,"thriller, crime, romance, drama",Abbas-Mustan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Tumko Na Bhool Paayenge,2002,Hindi,thriller,"action, romance, thriller, drama",Pankaj Parashar,Salman Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Maqbool,2003,Hindi,thriller,"crime, drama, thriller, romance",Vishal Bhardwaj,Irrfan Khan,False,Verify if romance subplot is significant enough to tag as has_romance
+Aitraaz,2004,Hindi,thriller,"drama, thriller, romance, crime",Abbas-Mastan,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Manmadhan,2004,Tamil,thriller,"thriller, romance, drama, mystery",A. J. Murugan,Silambarasan,True,Verify if romance subplot is significant enough to tag as has_romance
+Musafir,2004,Hindi,thriller,"action, thriller, crime, romance",Sanjay Gupta,Sanjay Dutt,True,Verify if romance subplot is significant enough to tag as has_romance
+Aparichitudu,2005,Telugu,thriller,"action, thriller, drama, romance, mystery",S. Shankar,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Rendu,2006,Tamil,thriller,"action, romance, thriller, drama",A. J. Murugan,Jiiva,True,Verify if romance subplot is significant enough to tag as has_romance
+Pachaikili Muthucharam,2007,Tamil,thriller,"thriller, crime, drama, romance",Boopathy Pandian,R. Madhavan,True,Verify if romance subplot is significant enough to tag as has_romance
+Race,2008,Hindi,thriller,"action, thriller, romance, crime",Abbas Alibhai Burmawalla,Akshay Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Dhaam Dhoom,2008,Tamil,thriller,"action, thriller, romance",Vinodh Srinivasan,Jayam Ravi,True,Verify if romance subplot is significant enough to tag as has_romance
+Karthik Calling Karthik,2010,Hindi,thriller,"thriller, drama, romance, mystery",Vijay Lalwani,Farhan Akhtar,True,Verify if romance subplot is significant enough to tag as has_romance
+Ishqiya,2010,Hindi,thriller,"crime, thriller, comedy, romance, drama",Abhishek Chaubey,Naseeruddin Shah,True,Verify if romance subplot is significant enough to tag as has_romance
+Dam 999,2011,Malayalam,thriller,"drama, thriller, action, romance",Sohan Roy,Renji Panicker,True,Verify if romance subplot is significant enough to tag as has_romance
+Ko,2011,Tamil,thriller,"action, thriller, romance, drama",K. V. Anand,Jiiva,True,Verify if romance subplot is significant enough to tag as has_romance
+180,2011,Tamil,thriller,"thriller, drama, romance",Jayendra Panchapakesan,Siddharth,True,Verify if romance subplot is significant enough to tag as has_romance
+Ivan Veramathiri,2012,Tamil,thriller,"action, thriller, crime, romance",Mysskin,Vikram Prabhu,True,Verify if romance subplot is significant enough to tag as has_romance
+Agent Vinod,2012,Hindi,thriller,"action, thriller, romance, adventure",Sriram Raghavan,Saif Ali Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Race 2,2013,Hindi,thriller,"action, thriller, romance, crime",Abbas Alibhai Burmawalla,Saif Ali Khan,True,Verify if romance subplot is significant enough to tag as has_romance
+Neram,2013,Tamil,thriller,"comedy, romance, thriller",Alphonse Putharen,Nivin Pauly,True,Verify if romance subplot is significant enough to tag as has_romance
+Sahasam,2013,Telugu,thriller,"action, adventure, thriller, romance",Chandra Sekhar Yeleti,Prashanth,True,Verify if romance subplot is significant enough to tag as has_romance
+Ek Villain,2014,Hindi,thriller,"action, thriller, romance, drama",Mohit Suri,Sidharth Malhotra,True,Verify if romance subplot is significant enough to tag as has_romance
+Yaan,2014,Tamil,thriller,"action, thriller, romance",Ravi K. Chandran,Jiiva,True,Verify if romance subplot is significant enough to tag as has_romance
+Naan Sigappu Manithan,2014,Tamil,thriller,"action, thriller, romance, drama",Thiru,Vishal,True,Verify if romance subplot is significant enough to tag as has_romance
+RangiTaranga,2015,Kannada,thriller,"mystery, thriller, horror, romance, drama",Anup Bhandari,Unknown,True,Verify if romance subplot is significant enough to tag as has_romance
+Vai Raja Vai,2015,Tamil,thriller,"comedy, thriller, mystery, romance",Aishwarya R. Dhanush,Gautham Karthik,True,Verify if romance subplot is significant enough to tag as has_romance
+Yennai Arindhaal,2015,Tamil,thriller,"action, thriller, romance, drama, crime",Gautham Menon,Ajith Kumar,True,Verify if romance subplot is significant enough to tag as has_romance
+Anegan,2015,Tamil,thriller,"action, romance, thriller, mystery, drama",K. V. Anand,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Thodari,2016,Tamil,thriller,"action, thriller, romance, adventure",Prabhu Solomon,Dhanush,True,Verify if romance subplot is significant enough to tag as has_romance
+Kaabil,2017,Hindi,thriller,"action, drama, thriller, romance, crime",Sanjay Gupta,Hrithik Roshan,True,Verify if romance subplot is significant enough to tag as has_romance
+Theeran Athikaram Ondru,2017,Tamil,thriller,"action, crime, thriller, drama, romance",H. Vinoth,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Ivan Thanthiran,2017,Tamil,thriller,"action, comedy, thriller, mystery, romance",Santhosh P Jayakumar,Gautham Karthik,True,Verify if romance subplot is significant enough to tag as has_romance
+LIE,2017,Telugu,thriller,"action, thriller, romance",Hanu Raghavapudi,Nithiin,True,Verify if romance subplot is significant enough to tag as has_romance
+Theeran Adhigaaram Ondru,2017,Tamil,thriller,"action, thriller, crime, drama, romance",H. Vinoth,Karthi,True,Verify if romance subplot is significant enough to tag as has_romance
+Raazi,2018,Hindi,thriller,"thriller, drama, historical, romance, war",Meghna Gulzar,Vicky Kaushal,False,Verify if romance subplot is significant enough to tag as has_romance
+Saheb Biwi Aur Gangster 3,2018,Hindi,thriller,"action, drama, thriller, crime, romance",Tigmanshu Dhulia,Sanjay Dutt,True,Verify if romance subplot is significant enough to tag as has_romance
+Thadam,2019,Tamil,thriller,"thriller, crime, mystery, action, romance",Magizh Thirumeni,Arun Vijay,True,Verify if romance subplot is significant enough to tag as has_romance
+Malang,2020,Hindi,thriller,"action, thriller, romance, drama, crime",Mohit Suri,Anil Kapoor,True,Verify if romance subplot is significant enough to tag as has_romance
+Sadak 2,2020,Hindi,thriller,"drama, thriller, romance, action",Mahesh Bhatt,Sanjay Dutt,True,Verify if romance subplot is significant enough to tag as has_romance
+Maestro,2021,Telugu,thriller,"thriller, mystery, comedy, romance",Merlapaka Gandhi,Nithiin,True,Verify if romance subplot is significant enough to tag as has_romance
+Ek Villain Returns,2022,Hindi,thriller,"action, thriller, romance, crime",Mohit Suri,John Abraham,True,Verify if romance subplot is significant enough to tag as has_romance
+Dhruva Natchathiram,2023,Tamil,thriller,"action, thriller, crime, romance",Gautham Vasudev Menon,Vikram,True,Verify if romance subplot is significant enough to tag as has_romance
+Khufiya,2023,Hindi,thriller,"thriller, drama, romance, crime",Vishal Bhardwaj,Ali Fazal,True,Verify if romance subplot is significant enough to tag as has_romance
+Merry Christmas,2024,Hindi,thriller,"thriller, crime, mystery, romance",Sriram Raghavan,Vijay Sethupathi,True,Verify if romance subplot is significant enough to tag as has_romance
