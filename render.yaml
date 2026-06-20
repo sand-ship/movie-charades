@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: indian-movie-charades
+    runtime: python
+    buildCommand: "pip install --no-cache-dir -r backend/requirements.txt"
+    startCommand: "cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+    staticPublishPath: frontend
+    routes:
+      - type: rewrite
+        source: /api/*
+        destination: /api$1
+      - type: rewrite
+        source: /*
+        destination: /index.html
