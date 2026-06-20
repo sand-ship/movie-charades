@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <style>
     :root{
       --red:#e50914; --red-deep:#8c0610; --gold:#f5c518; --ink:#0a0506;
@@ -171,6 +172,16 @@
       font-size: 0.82rem; font-weight: 600; letter-spacing: 0.5px;
     }
     .btn-back:not(:disabled):hover { color: var(--gold); border-color: var(--gold); transform: translateY(-2px); }
+
+    .btn-screenshot {
+      flex: unset; max-width: unset; padding: 10px 16px;
+      background: transparent; color: var(--gold);
+      border: 1px solid var(--gold); border-radius: 10px;
+      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.5px;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .btn-screenshot:hover { background: rgba(245,197,24,0.1); transform: translateY(-2px); }
+    .btn-screenshot:active { transform: scale(0.95); }
 
     .stumper-input {
       width: 100%; max-width: 360px; padding: 14px 16px;
@@ -345,6 +356,7 @@
       <p class="info" id="stumper-thanks"></p>
     </div>
     <button class="btn-primary" style="margin-top:8px" onclick="playAgain()">🔄 Play Again</button>
+    <button class="btn-screenshot" id="screenshot-btn" onclick="downloadScreenshot()" style="margin-top:6px">📸 Screenshot Result</button>
   </div>
 </div>
 
@@ -724,6 +736,43 @@
   function playAgain() {
     state = { sessionId: null, questionId: null, userQNum: 0 };
     show('idle');
+  }
+
+  async function downloadScreenshot() {
+    const btn = document.getElementById('screenshot-btn');
+    const originalText = btn.textContent;
+    btn.textContent = '⏳ Capturing...';
+    btn.disabled = true;
+
+    try {
+      const resultCard = document.getElementById('screen-result');
+      const canvas = await html2canvas(resultCard, {
+        allowTaint: true,
+        useCORS: true,
+        backgroundColor: '#150406',
+      });
+
+      const link = document.createElement('a');
+      const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, '-');
+      link.href = canvas.toDataURL('image/png');
+      link.download = `movie-charades-result-${timestamp}.png`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      btn.textContent = '✅ Downloaded!';
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.disabled = false;
+      }, 2000);
+    } catch (err) {
+      console.error('Screenshot failed:', err);
+      btn.textContent = '❌ Failed';
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.disabled = false;
+      }, 2000);
+    }
   }
 
   function cap(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
