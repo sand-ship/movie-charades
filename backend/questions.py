@@ -288,6 +288,8 @@ QUESTIONS.extend([
              _attr_eq("director", "Puri Jagannadh"), weight=1.0),
     Question("q_dir_mani_ratnam",     "Is it directed by Mani Ratnam?",
              _attr_eq("director", "Mani Ratnam"), weight=1.0),
+    Question("q_dir_singeetam",        "Is it directed by Singeetam Srinivasa Rao?",
+             _attr_eq("director", "Singeetam Srinivasa Rao"), weight=1.0),
 
     # Phase 6: Additional prolific actors (identified from failure analysis)
     Question("q_pawan_kalyan",        "Does it star Pawan Kalyan?",
