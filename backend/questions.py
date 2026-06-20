@@ -388,6 +388,26 @@ QUESTIONS.extend([
     # Suspense
     Question("q_suspense_thriller",      "Does it build tension through suspense or a cat-and-mouse plot?",
              _attr_true("has_suspense_thriller"), weight=0.3),
+
+    # Series & franchise discrimination (for franchises with identical primary tags)
+    Question("q_series_opener",         "Is it the first film in a series or franchise?",
+             _attr_true("is_series_opener"), weight=0.3),
+    Question("q_series_sequel",         "Is it a direct sequel to another film?",
+             _attr_true("is_series_sequel"), weight=0.3),
+    Question("q_series_crossover",      "Does it involve a crossover with another film series or universe?",
+             _attr_true("is_series_crossover"), weight=0.3),
+
+    # Additional narrative discrimination for indistinguishable series
+    Question("q_political_corruption",  "Does the plot center on political corruption or reform?",
+             _attr_true("has_political_corruption"), weight=0.3),
+    Question("q_buddy_comedy",          "Is it primarily a buddy comedy?",
+             _attr_true("has_buddy_comedy"), weight=0.3),
+    Question("q_ensemble_comedy",       "Is it an ensemble comedy with multiple comedy tracks?",
+             _attr_true("has_ensemble_comedy"), weight=0.3),
+    Question("q_family_comedy",         "Is the humor centered on family chaos or domestic situations?",
+             _attr_true("has_family_comedy"), weight=0.3),
+    Question("q_crossover_event",       "Does it feature a crossover event or shared universe?",
+             _attr_true("has_crossover"), weight=0.3),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
