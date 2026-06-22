@@ -366,25 +366,27 @@ def stumped(req: StumpedRequest):
     # Also log to games table as a stumped outcome
     if session:
         session.was_stumped = True  # Mark to prevent duplicate wrong_guess row
-        top = session.last_guesses[0] if session.last_guesses else {}
-        # Show only top 3 options presented to player
-        options_presented = [c.get("title") for c in session.last_guesses[:3]]
-        _game_insert({
-            "session_id": req.session_id,
-            "ts": datetime.datetime.utcnow().isoformat() + "Z",
-            "outcome": "stumped",
-            "stumper_name": title,
-            "guessed_movie_id": top.get("id"),
-            "guessed_movie_title": top.get("title"),
-            "player_film_id": None,  # will be filled if player tells us
-            "correct_option_rank": None,  # will be filled once we know which option
-            "options_presented": options_presented,
-            "yes_answers": yes_answers,
-            "all_answers": dict(session.answers),
-            "questions_asked": list(session.asked),
-            "remaining_candidates": session.remaining_count(),
-            "question_count": session.question_count(),
-        })
+
+    # Use guesses from session if available
+    top = (session.last_guesses[0] if session and session.last_guesses else {})
+    options_presented = [c.get("title") for c in (session.last_guesses[:3] if session else [])]
+
+    _game_insert({
+        "session_id": req.session_id,
+        "ts": datetime.datetime.utcnow().isoformat() + "Z",
+        "outcome": "stumped",
+        "stumper_name": title,
+        "guessed_movie_id": top.get("id"),
+        "guessed_movie_title": top.get("title"),
+        "player_film_id": None,  # will be filled if player tells us
+        "correct_option_rank": None,  # will be filled once we know which option
+        "options_presented": options_presented,
+        "yes_answers": yes_answers,
+        "all_answers": all_answers,
+        "questions_asked": questions_asked,
+        "remaining_candidates": remaining_candidates,
+        "question_count": question_count,
+    })
 
     return {"status": "ok"}
 
