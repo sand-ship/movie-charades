@@ -367,7 +367,8 @@ def stumped(req: StumpedRequest):
     if session:
         session.was_stumped = True  # Mark to prevent duplicate wrong_guess row
         top = session.last_guesses[0] if session.last_guesses else {}
-        options_presented = [c.get("title") for c in session.candidates]
+        # Show only top 3 options presented to player
+        options_presented = [c.get("title") for c in session.last_guesses[:3]]
         _game_insert({
             "session_id": req.session_id,
             "ts": datetime.datetime.utcnow().isoformat() + "Z",
@@ -376,6 +377,7 @@ def stumped(req: StumpedRequest):
             "guessed_movie_id": top.get("id"),
             "guessed_movie_title": top.get("title"),
             "player_film_id": None,  # will be filled if player tells us
+            "correct_option_rank": None,  # will be filled once we know which option
             "options_presented": options_presented,
             "yes_answers": yes_answers,
             "all_answers": dict(session.answers),
@@ -407,6 +409,18 @@ def submit_feedback(req: FeedbackRequest):
 
     top = session.last_guesses[0] if session.last_guesses else {}
     yes_answers = sorted(q for q, a in session.answers.items() if a == "yes")
+
+    # Show only top 3 options presented to player
+    options_presented = [c.get("title") for c in session.last_guesses[:3]]
+
+    # Calculate rank of correct option if known
+    correct_option_rank = None
+    if req.correct_movie_id and session.last_guesses:
+        for i, guess in enumerate(session.last_guesses[:3], 1):
+            if guess.get("id") == req.correct_movie_id:
+                correct_option_rank = i
+                break
+
     _game_insert({
         "session_id": req.session_id,
         "ts": datetime.datetime.utcnow().isoformat() + "Z",
@@ -414,6 +428,8 @@ def submit_feedback(req: FeedbackRequest):
         "guessed_movie_id": top.get("id"),
         "guessed_movie_title": top.get("title"),
         "player_film_id": req.correct_movie_id,
+        "correct_option_rank": correct_option_rank,
+        "options_presented": options_presented,
         "yes_answers": yes_answers,
         "all_answers": dict(session.answers),
         "questions_asked": list(session.asked),
