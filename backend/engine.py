@@ -51,6 +51,7 @@ class Session:
         self.strategic_analysis: Optional[dict] = None  # current strategic guidance
         self.maybe_count: int = 0  # Track unsure answers (max 5)
         self.maybe_exhausted: bool = False  # True after 5 maybes
+        self.was_stumped: bool = False  # Track if game was already marked stumped
 
     def remaining_count(self) -> int:
         return len(self.candidates)

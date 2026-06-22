@@ -365,15 +365,17 @@ def stumped(req: StumpedRequest):
 
     # Also log to games table as a stumped outcome
     if session:
+        session.was_stumped = True  # Mark to prevent duplicate wrong_guess row
         top = session.last_guesses[0] if session.last_guesses else {}
         options_presented = [c.get("title") for c in session.candidates]
         _game_insert({
+            "session_id": req.session_id,
             "ts": datetime.datetime.utcnow().isoformat() + "Z",
             "outcome": "stumped",
             "stumper_name": title,
             "guessed_movie_id": top.get("id"),
             "guessed_movie_title": top.get("title"),
-            "correct_movie_id": None,  # unknown until player submits
+            "player_film_id": None,  # will be filled if player tells us
             "options_presented": options_presented,
             "yes_answers": yes_answers,
             "all_answers": dict(session.answers),
@@ -398,14 +400,20 @@ def submit_feedback(req: FeedbackRequest):
     session = engine.get_session(req.session_id)
     if not session:
         raise HTTPException(status_code=404, detail="Session not found")
+
+    # Skip if already logged as stumped (don't create duplicate row)
+    if session.was_stumped:
+        return {"status": "ok", "was_correct": req.was_correct, "note": "already_stumped"}
+
     top = session.last_guesses[0] if session.last_guesses else {}
     yes_answers = sorted(q for q, a in session.answers.items() if a == "yes")
     _game_insert({
+        "session_id": req.session_id,
         "ts": datetime.datetime.utcnow().isoformat() + "Z",
         "outcome": "correct" if req.was_correct else "wrong_guess",
         "guessed_movie_id": top.get("id"),
         "guessed_movie_title": top.get("title"),
-        "correct_movie_id": req.correct_movie_id,
+        "player_film_id": req.correct_movie_id,
         "yes_answers": yes_answers,
         "all_answers": dict(session.answers),
         "questions_asked": list(session.asked),
