@@ -271,8 +271,7 @@ class GameEngine:
 
         can_ask_actors = (
             should_unlock_strategically or
-            (len(non_anchor_qs) >= 3 and len(cands) <= 50) or
-            len(non_anchor_qs) >= 7
+            len(non_anchor_qs) >= 6
         )
 
         # Determine phase based on strategic guidance or Q-count
