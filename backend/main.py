@@ -366,12 +366,15 @@ def stumped(req: StumpedRequest):
     # Also log to games table as a stumped outcome
     if session:
         top = session.last_guesses[0] if session.last_guesses else {}
+        options_presented = [c.get("title") for c in session.candidates]
         _game_insert({
             "ts": datetime.datetime.utcnow().isoformat() + "Z",
             "outcome": "stumped",
+            "stumper_name": title,
             "guessed_movie_id": top.get("id"),
             "guessed_movie_title": top.get("title"),
             "correct_movie_id": None,  # unknown until player submits
+            "options_presented": options_presented,
             "yes_answers": yes_answers,
             "all_answers": dict(session.answers),
             "questions_asked": list(session.asked),
