@@ -16,6 +16,10 @@ CREATE INDEX idx_games_session_id ON games(session_id);
 -- Create index on outcome for filtering
 CREATE INDEX idx_games_outcome ON games(outcome);
 
+-- Add stumper_name and options_presented for stumped games
+ALTER TABLE games ADD COLUMN IF NOT EXISTS stumper_name TEXT;
+ALTER TABLE games ADD COLUMN IF NOT EXISTS options_presented TEXT[];
+
 -- Drop the stumpers table (no longer needed)
 -- DROP TABLE IF EXISTS stumpers;
 
