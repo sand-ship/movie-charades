@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import math
+import random
 import uuid
 from typing import Optional
 from pathlib import Path
@@ -285,16 +286,19 @@ class GameEngine:
         elif current_phase == 1:  # Phase 2: actress/director (no music)
             splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
-        # ACTOR SELECTION: Pick best actor question by information gain (once unlocked)
+        # ACTOR SELECTION: Pick from top 3 actors by information gain (once unlocked)
         if can_ask_actors:
             # Only ask actor if we haven't asked one yet (avoid multiple actor Qs in a row)
             actor_asked = any(qid.startswith(("q_actor_", "q_actress_")) for qid in session.asked)
             if not actor_asked:
                 actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
                 if actor_qs:
-                    best_q = max(actor_qs, key=lambda q: self._information_gain(cands, q))
+                    # Rank by information gain and pick random from top 3
+                    ranked = sorted(actor_qs, key=lambda q: self._information_gain(cands, q), reverse=True)
+                    top_n = min(3, len(ranked))
+                    best_q = random.choice(ranked[:top_n])
                     self._log_question_reasoning(session, best_q,
-                        f"best actor by information gain ({len(cands)} candidates)")
+                        f"actor from top-{top_n} by information gain ({len(cands)} candidates)")
                     return best_q
 
 
