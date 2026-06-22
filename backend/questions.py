@@ -372,8 +372,10 @@ QUESTIONS.extend([
     # Ending type
     Question("q_happy_ending",           "Does it have a happy or satisfying ending?",
              _attr_true("has_happy_ending"), weight=0.3),
-    Question("q_tragic_ending",          "Does it have a sad, tragic, or bittersweet ending?",
+    Question("q_tragic_ending",          "Does it have a sad or tragic ending?",
              _attr_true("has_tragic_ending"), weight=0.3),
+    Question("q_bittersweet_ending",     "Does it have a bittersweet ending (mixed emotions—some joy, some loss)?",
+             _attr_true("has_bittersweet_ending"), weight=0.3),
     Question("q_ambiguous_ending",       "Does it have an ambiguous or open-ended ending?",
              _attr_true("has_ambiguous_ending"), weight=0.3),
 
