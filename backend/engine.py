@@ -530,11 +530,13 @@ class GameEngine:
                 return best_q
 
         # STRATEGIC ROUTING: Filter by current strategy before final selection
-        # Late game (pool < 50): prioritize discriminators that separate remaining films
-        if pool_size < 50:
-            strategy_filtered = self._filter_by_strategy(splitting, "DEPTH_TARGETED", session)
-            if strategy_filtered:
-                splitting = strategy_filtered
+        # When pool is large but has cast/crew questions: ask those first (they eliminate fast)
+        # Late game (pool < 200): prioritize cast/crew (actor, actress, director) discriminators
+        if pool_size < 200:
+            actor_actress_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))]
+            if actor_actress_qs:
+                # Prioritize cast/crew: they're hard filters with high elimination power
+                splitting = actor_actress_qs
 
         # Final selection: best information gain from (possibly filtered) pool
         if splitting:
