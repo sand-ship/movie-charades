@@ -276,7 +276,7 @@ def answer_question(req: AnswerRequest):
         engine.apply_answer(session, req.question_id, req.answer)
 
     if engine.should_guess(session):
-        guesses = engine.top_guesses(session)
+        guesses = engine.top_guesses(session, n=5)
         return {
             **_session_state(session),
             "phase": "guess",
@@ -369,7 +369,7 @@ def stumped(req: StumpedRequest):
 
     # Use guesses from session if available
     top = (session.last_guesses[0] if session and session.last_guesses else {})
-    options_presented = [c.get("title") for c in (session.last_guesses[:3] if session else [])]
+    options_presented = [c.get("title") for c in (session.last_guesses[:5] if session else [])]
 
     _game_insert({
         "session_id": req.session_id,
@@ -412,8 +412,8 @@ def submit_feedback(req: FeedbackRequest):
     top = session.last_guesses[0] if session.last_guesses else {}
     yes_answers = sorted(q for q, a in session.answers.items() if a == "yes")
 
-    # Show only top 3 options presented to player
-    options_presented = [c.get("title") for c in session.last_guesses[:3]]
+    # Log top 5 options presented to player (in rank order)
+    options_presented = [c.get("title") for c in session.last_guesses[:5]]
 
     # Calculate rank of correct option if known
     correct_option_rank = None
