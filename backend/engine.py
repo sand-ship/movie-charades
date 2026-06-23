@@ -193,6 +193,16 @@ class GameEngine:
             return q
 
         cands = session.candidates
+        pool_size = len(cands) if cands else len(self.movies)
+
+        # STRATEGIC ROUTING: Adapt question strategy based on remaining pool size
+        # This ensures depth questions (actor/director) are prioritized when pool is small
+        if pool_size <= 50:
+            strategy = "DEPTH_TARGETED"
+        elif pool_size <= 500:
+            strategy = "MIXED"
+        else:
+            strategy = "BREADTH"
 
         # Genre picker joins the natural IG pool — but hold it back until we've
         # asked GENRE_HOLDOFF plot questions first (charades: describe before
@@ -519,9 +529,21 @@ class GameEngine:
                 self._log_question_reasoning(session, best_q, f"{priority_field} discriminator (phase {current_phase})")
                 return best_q
 
-        best_q = max(splitting, key=lambda q: self._information_gain(cands, q))
-        self._log_question_reasoning(session, best_q, "best information gain")
-        return best_q
+        # STRATEGIC ROUTING: Filter by current strategy before final selection
+        # Late game (pool < 50): prioritize discriminators that separate remaining films
+        if pool_size < 50:
+            strategy_filtered = self._filter_by_strategy(splitting, "DEPTH_TARGETED", session)
+            if strategy_filtered:
+                splitting = strategy_filtered
+
+        # Final selection: best information gain from (possibly filtered) pool
+        if splitting:
+            best_q = max(splitting, key=lambda q: self._information_gain(cands, q))
+            self._log_question_reasoning(session, best_q, f"best IG (pool={pool_size}, strategy={strategy})")
+            return best_q
+
+        # Fallback if no splitting questions remain: return None to trigger guess
+        return None
 
     def _find_actor_question(self, actor_name: str) -> Optional[Question]:
         """Find a question about a specific actor/actress."""
@@ -673,17 +695,36 @@ class GameEngine:
         return True
 
     def _prune(self, session: Session) -> None:
-        # Hard constraints first (decisive facts + genre), then soft scoring within them.
+        """Adaptive filtering: hard constraints → size-aware soft cutoff → scoring."""
+        # Phase 1: Hard eligibility (language, era, genre, lead actor)
         eligible = [m for m in self.movies if self._hard_ok(m, session) and self._genre_ok(m, session)]
         if not eligible:  # contradictory answers — don't wipe the board
             eligible = list(self.movies)
+
+        # Phase 2: Score all eligible films
         scored = [(m, self._score(m, session)) for m in eligible]
         max_score = max((s for _, s in scored), default=0.0)
         if max_score <= 0:
             session.candidates = eligible
             return
-        cutoff = max_score * SOFT_KEEP_RATIO
-        session.candidates = [m for m, s in scored if s >= cutoff]
+
+        # Adaptive cutoff: stricter as pool shrinks
+        pool_size = len(eligible)
+        if pool_size > 500:
+            keep_ratio = 0.04  # Early game: lenient (2500 → 100)
+        elif pool_size > 50:
+            keep_ratio = 0.02  # Mid game: moderate (100 → 2)
+        else:
+            keep_ratio = 0.005  # Late game: aggressive (force disambiguation)
+
+        cutoff = max_score * keep_ratio
+        candidates = [m for m, s in scored if s >= cutoff]
+
+        # If cutoff eliminated everything, keep top N to avoid dead end
+        if not candidates:
+            candidates = [m for m, _ in sorted(scored, key=lambda x: x[1], reverse=True)[:max(5, pool_size // 20)]]
+
+        session.candidates = candidates
 
     def should_guess(self, session: Session) -> bool:
         if session.question_count() >= MAX_QUESTIONS or session.remaining_count() == 0:
@@ -814,3 +855,55 @@ class GameEngine:
         # Higher scores = better match. Sorting by this in descending order
         # naturally ranks best matches first.
         return log_score
+
+    def _discriminator_power(self, q: Question, candidates: list[dict]) -> float:
+        """How well does this question separate THESE specific candidates?
+
+        Returns entropy reduction: how balanced is the split?
+        - 50/50 split = max entropy = best discrimination
+        - All match or all don't = 0 entropy = useless for this pool
+        """
+        if not candidates:
+            return 0.0
+
+        matches = sum(1 for m in candidates if q.evaluate(m))
+        non_matches = len(candidates) - matches
+
+        if matches == 0 or non_matches == 0:
+            return 0.0  # Doesn't discriminate
+
+        # Entropy: H(p) = -p*log2(p) - (1-p)*log2(1-p)
+        # Maximum at p=0.5 (50/50 split)
+        ratio = matches / len(candidates)
+        if ratio <= 0 or ratio >= 1:
+            return 0.0
+        entropy = -ratio * math.log2(ratio) - (1 - ratio) * math.log2(1 - ratio)
+
+        return entropy * q.weight  # Weight by question importance
+
+    def _filter_by_strategy(self, qs: list[Question], strategy: str, session: Session) -> list[Question]:
+        """Filter question pool by current game strategy (breadth vs depth)."""
+        if strategy == "BREADTH":
+            # Prefer: language, era, genre, director (broad discriminators)
+            return [q for q in qs if any(
+                q.id.startswith(prefix)
+                for prefix in ['q_hindi', 'q_tamil', 'q_telugu',
+                              'q_classic', 'q_90s', '2000s', 'q_2010s', 'q_2020s',
+                              'q_genre_', 'q_director_']
+            )]
+
+        elif strategy == "DEPTH_TARGETED":
+            # Prefer: actor, actress, director (hard filters with elimination power)
+            actor_actress_dir = [q for q in qs if any(
+                q.id.startswith(prefix)
+                for prefix in ['q_actor_', 'q_actress_', 'q_dir_']
+            )]
+            return actor_actress_dir if actor_actress_dir else qs  # Fallback to all
+
+        elif strategy == "SURGICAL":
+            # Only discriminator questions that actually split remaining candidates
+            cands = session.candidates or self.movies
+            return [q for q in qs if self._discriminator_power(q, cands) > 0.3]
+
+        # MIXED: use all questions
+        return qs
