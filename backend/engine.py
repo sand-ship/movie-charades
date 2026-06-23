@@ -810,6 +810,7 @@ class GameEngine:
                     log_score += 0.3 * w
                 # No penalty if doesn't match when player uncertain
 
-        # Convert from log-space to probability (exp for numerical stability)
-        # Ensure result is non-negative
-        return max(0.0, log_score)
+        # Return log-likelihood score (can be negative)
+        # Higher scores = better match. Sorting by this in descending order
+        # naturally ranks best matches first.
+        return log_score
