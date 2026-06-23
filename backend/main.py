@@ -276,21 +276,22 @@ def answer_question(req: AnswerRequest):
         engine.apply_answer(session, req.question_id, req.answer)
 
     if engine.should_guess(session):
-        guesses = engine.top_guesses(session, n=5)
+        engine.top_guesses(session, n=5)  # Log top 5 to DB
         return {
             **_session_state(session),
             "phase": "guess",
-            "guesses": guesses,
+            "guesses": session.last_guesses[:3],  # Show only top 3 to user
             "question": None,
         }
 
     question = engine.next_question(session)
     if question is None:
         # Ran out of questions — make best guess
+        engine.top_guesses(session, n=5)  # Log top 5 to DB
         return {
             **_session_state(session),
             "phase": "guess",
-            "guesses": engine.top_guesses(session),
+            "guesses": session.last_guesses[:3],  # Show only top 3 to user
             "question": None,
         }
     return {
