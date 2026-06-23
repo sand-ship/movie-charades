@@ -114,7 +114,7 @@ def make_star_questions(movies: list[dict]) -> list["Question"]:
         if name.strip().lower() in _SKIP:
             continue
         # Regional threshold (8+) if we have Telugu/Tamil/Kannada films, else global (15+)
-        threshold = 8 if has_regional else 15
+        threshold = 5  # Generate questions for any actor/actress with 5+ films
         if n >= threshold:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
             qs.append(Question(f"q_actor_{safe}", f"Does it star {name}?", _actor_appears(name)))
@@ -122,7 +122,7 @@ def make_star_questions(movies: list[dict]) -> list["Question"]:
     for name, n in actresses.items():
         if name.strip().lower() in _SKIP:
             continue
-        threshold = 8 if has_regional else 15
+        threshold = 5  # Generate questions for any actor/actress with 5+ films
         if n >= threshold:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
             qs.append(Question(f"q_actress_{safe}", f"Does it star the actress {name}?", _actor_appears(name)))
