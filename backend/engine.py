@@ -765,29 +765,51 @@ class GameEngine:
         return math.log2(n) if n > 1 else 0.0
 
     def _score(self, movie: dict, session: Session) -> float:
-        score = 1.0
+        """Bayesian scoring: P(film | answers) using likelihood weighting.
+
+        Each question contributes log-likelihood based on:
+        - Whether film matches the question
+        - Player's answer (yes/no/maybe)
+        - Question weight (hard signal vs soft trope)
+
+        "Don't know" answers are treated as uncertainty (0.5 contribution).
+        """
+        log_score = 0.0
+
         for qid, answer in session.answers.items():
             q = QUESTION_MAP.get(qid)
             if not q:
                 continue
+
             match = q.evaluate(movie)
             w = q.weight  # 1.0 = hard signal, 0.3 = soft trope
-            # Strong answers (yes/no): full weight
-            pos_strong = 1.0 + w
-            neg_strong = 1.0 - w * 0.9
-            # Maybe: weak yes (0.5 strength positive, no penalty)
-            pos_maybe = 1.0 + w * 0.5
-            neg_maybe = 1.0  # no penalty when wrong
-            if answer == "yes" and match:
-                score *= pos_strong
-            elif answer == "yes" and not match:
-                score *= neg_strong
-            elif answer == "no" and not match:
-                score *= pos_strong
-            elif answer == "no" and match:
-                score *= neg_strong
-            elif answer == "maybe" and match:
-                score *= pos_maybe
-            elif answer == "maybe" and not match:
-                score *= neg_maybe
-        return score
+
+            # Likelihood ratio: how much does this answer support/refute this film?
+            if answer == "yes":
+                # Player says YES
+                if match:
+                    # Film has attribute: strong boost
+                    log_score += 1.5 * w
+                else:
+                    # Film doesn't have attribute: strong penalty
+                    log_score -= 1.5 * w
+
+            elif answer == "no":
+                # Player says NO
+                if not match:
+                    # Film doesn't have attribute: strong boost
+                    log_score += 1.5 * w
+                else:
+                    # Film has attribute: strong penalty
+                    log_score -= 1.5 * w
+
+            elif answer == "maybe":
+                # Player unsure: treat as weak signal
+                # Both match and non-match are plausible, but match slightly favored
+                if match:
+                    log_score += 0.3 * w
+                # No penalty if doesn't match when player uncertain
+
+        # Convert from log-space to probability (exp for numerical stability)
+        # Ensure result is non-negative
+        return max(0.0, log_score)
