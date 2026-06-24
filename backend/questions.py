@@ -608,6 +608,57 @@ QUESTIONS.extend([
              _comparative('drama', 'gritty'), weight=0.3, genres={'drama'}),
     Question("q_comp_period_vs_contemporary", "Is it a period/historical drama rather than contemporary?",
              _comparative('true_story', 'drama'), weight=1.0, genres={'drama', 'historical'}),
+
+    # 2000s Hindi Action/Thriller sub-tropes for comprehensive cluster discrimination
+    # Patriotic/War cluster
+    Question("q_military_training_academy", "Is the protagonist in a military academy or military training?",
+             _attr_true("has_military_training_academy"), weight=1.0),
+    Question("q_young_soldier_protagonist", "Is the protagonist a young/inexperienced soldier?",
+             _attr_true("has_young_soldier_protagonist"), weight=0.3),
+    Question("q_kargil_war_setting",        "Is it set during the Kargil War or Indian military conflict?",
+             _attr_true("has_kargil_war_setting"), weight=1.0),
+
+    # Heist/Action cluster
+    Question("q_elaborate_heist_plan",      "Does it involve an elaborate heist or mastermind plan?",
+             _attr_true("has_elaborate_heist_plan"), weight=1.0),
+    Question("q_team_coordination",         "Does it focus on a team executing a coordinated plan?",
+             _attr_true("has_team_coordination"), weight=0.3),
+    Question("q_stylized_action_sequences", "Does it feature stylized action (parkour, CGI, dance-like choreography)?",
+             _attr_true("has_stylized_action_sequences"), weight=0.3),
+
+    # Crime Rise cluster
+    Question("q_crime_lord_protagonist",    "Is the protagonist a crime lord or criminal rising to power?",
+             _attr_true("has_crime_lord_protagonist"), weight=1.0),
+    Question("q_mafia_origin_story",        "Does it follow the origin story of a mafia or crime syndicate?",
+             _attr_true("has_mafia_origin_story"), weight=1.0),
+
+    # Crime Investigation cluster
+    Question("q_multi_protagonist_team",    "Does it feature an ensemble cast of multiple protagonists?",
+             _attr_true("has_multi_protagonist_team"), weight=0.3),
+    Question("q_police_intelligence_focus", "Is it focused on police or intelligence agency operations?",
+             _attr_true("has_police_or_intelligence_focus"), weight=1.0),
+    Question("q_patriotic_crime_angle",     "Does it blend patriotic themes with crime/underworld elements?",
+             _attr_true("has_patriotic_angle_mixed_with_crime"), weight=0.3),
+
+    # Psychological Thriller cluster
+    Question("q_psychological_twist",       "Does it have a major psychological twist or unreliable narrator?",
+             _attr_true("has_psychological_twist"), weight=1.0),
+    Question("q_dark_noir_atmosphere",      "Does it have a dark, noir, or gothic atmosphere?",
+             _attr_true("has_dark_atmosphere"), weight=0.3),
+
+    # Personal Vendetta cluster
+    Question("q_revenge_personal_loss",     "Is the revenge driven by personal loss or family tragedy?",
+             _attr_true("has_revenge_for_personal_loss"), weight=1.0),
+    Question("q_solo_vendetta_journey",     "Is the protagonist on a solo revenge journey?",
+             _attr_true("has_solo_protagonist_journey"), weight=0.3),
+    Question("q_emotional_climax_sacrifice", "Does it build to an emotional climax with sacrifice?",
+             _attr_true("has_emotional_climax_sacrifice"), weight=0.3),
+
+    # Romance Revenge cluster
+    Question("q_love_triangle_central",     "Is a love triangle or romantic betrayal the central conflict?",
+             _attr_true("has_love_triangle_central"), weight=1.0),
+    Question("q_betrayal_by_lover",         "Is the protagonist betrayed by their romantic partner?",
+             _attr_true("has_betrayal_by_lover"), weight=1.0),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
