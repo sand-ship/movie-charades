@@ -193,6 +193,18 @@ class GameEngine:
             self._log_question_reasoning(session, q, "structural question (protagonist count)")
             return q
 
+        # CRITICAL: Inject military vs police discriminator for patriotic action films
+        # Prevents Type B stumpers (multi-cluster large pools) by narrowing 119+ candidates early
+        if (session.answers.get("q_patriotic") == "yes" and
+            session.answers.get("q_genre_action") == "yes" and
+            "q_comp_military_vs_police" not in asked and
+            non_anchor >= 5):  # Ask after 5+ non-anchor questions
+            q = QUESTION_MAP.get("q_comp_military_vs_police")
+            if q:
+                self._log_question_reasoning(session, q,
+                    "patriotic action type discriminator (military/border vs urban police)")
+                return q
+
         cands = session.candidates
         pool_size = len(cands) if cands else len(self.movies)
 
