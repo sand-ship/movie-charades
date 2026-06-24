@@ -239,13 +239,13 @@ class GameEngine:
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
 
-        # CAST/CREW PRIORITY: Ask director/actress/actor questions first (hard filters)
-        # These eliminate candidates most effectively, so ask before generic attributes
-        cast_crew = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))]
-        if cast_crew:
-            best_q = max(cast_crew, key=lambda q: self._information_gain(cands, q))
-            self._log_question_reasoning(session, best_q, f"cast/crew hard filter (pool={pool_size})")
-            return best_q
+        # STRATEGIC GATING: Only prioritize cast/crew in late game (pool < 200)
+        # This prevents actor questions from dominating early game (BREADTH strategy)
+        # while maintaining their discriminating power when pool is small (MIXED/DEPTH)
+        if pool_size < 200:
+            actor_actress_dir = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))]
+            if actor_actress_dir:
+                splitting = actor_actress_dir
 
         # Genre-aware prioritization: primary → secondary → primary → generic → discriminating
         established_genres = self._get_established_genres(session)
