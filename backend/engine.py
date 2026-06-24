@@ -239,6 +239,23 @@ class GameEngine:
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
 
+        # Filter out genre-gated comparatives that don't match remaining candidates' primary genres
+        genres_in_pool = set()
+        for film in cands:
+            pg = film.get('primary_genre')
+            if pg:
+                genres_in_pool.add(pg)
+
+        if genres_in_pool:
+            filtered = []
+            for q in splitting:
+                # Keep questions with no genre restriction, or questions whose genres overlap with pool
+                if q.genres is None or (genres_in_pool & q.genres):
+                    filtered.append(q)
+            # Only apply filter if it doesn't eliminate all questions
+            if filtered:
+                splitting = filtered
+
         # NOTE: Cast/crew gating was here but removed—it was too aggressive, replacing
         # the entire splitting pool with ONLY actors/directors when pool < 200, which
         # removed all comparatives/tropes. Better to let the actor selection logic
@@ -544,25 +561,7 @@ class GameEngine:
                 self._log_question_reasoning(session, best_q, f"{priority_field} discriminator (phase {current_phase})")
                 return best_q
 
-        # Filter out genre-gated comparatives that don't match remaining candidates
-        if splitting:
-            genres_in_pool = set()
-            for film in cands:
-                pg = film.get('primary_genre')
-                if pg:
-                    genres_in_pool.add(pg)
-
-            filtered_splitting = []
-            for q in splitting:
-                # Keep questions with no genre restriction, or questions whose genres overlap with pool
-                if q.genres is None or (genres_in_pool and genres_in_pool & q.genres):
-                    filtered_splitting.append(q)
-
-            if not filtered_splitting:
-                filtered_splitting = splitting  # Fallback if all comparatives filtered out
-            splitting = filtered_splitting
-
-        # Final selection: best information gain from (possibly filtered) pool
+        # Final selection: best information gain from (filtered) pool
         if splitting:
             best_q = max(splitting, key=lambda q: self._information_gain(cands, q))
             self._log_question_reasoning(session, best_q, f"best IG (pool={pool_size}, strategy={strategy})")
