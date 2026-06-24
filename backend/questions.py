@@ -545,6 +545,37 @@ QUESTIONS.extend([
     Question("q_friendship_to_romance",    "Does the romance develop from an existing friendship or companionship?",
              _attr_true("is_friendship_to_romance"), weight=0.3),
 
+    # Film-specific sub-tropes for distinguishing similar films within clusters
+    # Hindi comedy cluster (Jhankaar Beats vs Chal Mere Bhai)
+    Question("q_meta_tribute_film",        "Is the film a meta-tribute or homage to a specific artist/work?",
+             _attr_true("is_meta_tribute"), weight=1.0),
+    Question("q_urban_slice_of_life",      "Is it an urban slice-of-life indie-style film?",
+             _attr_true("urban_slice_of_life"), weight=0.3),
+    Question("q_midlife_crisis_arc",       "Does the protagonist's midlife crisis or existential crisis drive the plot?",
+             _attr_true("has_midlife_crisis"), weight=0.3),
+
+    # Telugu action cluster (OG vs Double iSmart)
+    Question("q_neo_noir_aesthetic",       "Does it have a neo-noir or samurai/mob-boss cold-blooded aesthetic?",
+             _attr_true("has_neo_noir_aesthetic"), weight=1.0),
+    Question("q_scifi_gimmick",            "Does it rely on a sci-fi gimmick or technology plot device?",
+             _attr_true("has_scifi_gimmick"), weight=1.0),
+    Question("q_exile_and_return",         "Does the protagonist return from exile or after a long absence?",
+             _attr_true("has_exile_and_return"), weight=0.3),
+    Question("q_stoic_protagonist",        "Is the protagonist stoic, taciturn, and emotionally controlled?",
+             _attr_true("has_stoic_protagonist"), weight=0.3),
+    Question("q_unhinged_protagonist",     "Is the protagonist eccentric, unhinged, or erratic in behavior?",
+             _attr_true("has_unhinged_protagonist"), weight=0.3),
+
+    # Rajkumar Hirani films (PK vs 3 Idiots)
+    Question("q_alien_or_scifi_fish_out_of_water", "Is the protagonist an alien or fish-out-of-water sci-fi character?",
+             _attr_true("has_alien_or_scifi"), weight=1.0),
+    Question("q_academic_institutional_setting", "Is it set in an academic campus or educational institution?",
+             _attr_true("has_academic_setting"), weight=1.0),
+    Question("q_critique_religious_dogma", "Does it critique religious dogma or spiritual hypocrisy?",
+             _attr_true("has_religion_critique"), weight=0.3),
+    Question("q_road_trip_search",         "Is it structured around a road trip or search journey?",
+             _attr_true("has_road_trip"), weight=0.3),
+
     # Comparative/relational questions: compare two dimensions to discriminate similar films
     # These questions score BOTH dimensions (e.g., both action AND drama present) but weight differently
     Question("q_comp_action_vs_drama",     "Is it more action-focused than drama-focused?",
