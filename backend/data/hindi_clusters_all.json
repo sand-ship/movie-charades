@@ -1,0 +1,3460 @@
+[
+  {
+    "title": "Mohabbatein",
+    "year": 2000,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_01",
+    "cluster_name": "Institutional/Ideological Romance",
+    "cluster_differentiation_key": "Romance acts as a vehicle to challenge rigid societal, parental, or institutional hierarchies, often framed around strict boundaries vs. free love.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kaho Naa... Pyaar Hai",
+    "year": 2000,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_02",
+    "cluster_name": "Thriller-Crossed/Lookalike Romance",
+    "cluster_differentiation_key": "Romance is intercepted by crime syndicates or conspiracies, forcing a structural identity swap, twin trope, or revenge-driven plot shift.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Dhadkan",
+    "year": 2000,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_03",
+    "cluster_name": "Post-Marital/Obsessive Melodrama",
+    "cluster_differentiation_key": "Focuses on relationship shifts after marriage, complications from past lovers, intense emotional obsession, and structural family sacrifice.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Har Dil Jo Pyar Karega",
+    "year": 2000,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_04",
+    "cluster_name": "Sacrificial Triangle/Deception Romance",
+    "cluster_differentiation_key": "Features mistaken identities, accidental medical deception, and a core dynamic where best friends try to sacrifice their love for each other.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Hamara Dil Aapke Paas Hai",
+    "year": 2000,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_05",
+    "cluster_name": "Social-Stigma/Protective Romance",
+    "cluster_differentiation_key": "Romance blooms out of a protagonist sheltering the partner from societal ostracization, assault trauma, or localized criminal threats.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Yaadein",
+    "year": 2001,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_01",
+    "cluster_name": "Institutional/Ideological Romance",
+    "cluster_differentiation_key": "Romance acts as a vehicle to challenge rigid societal, parental, or institutional hierarchies, often framed around strict boundaries vs. free love.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Mujhse Dosti Karoge!",
+    "year": 2002,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_04",
+    "cluster_name": "Sacrificial Triangle/Deception Romance",
+    "cluster_differentiation_key": "Features mistaken identities, accidental medical deception, and a core dynamic where best friends try to sacrifice their love for each other.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Saathiya",
+    "year": 2002,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_03",
+    "cluster_name": "Post-Marital/Obsessive Melodrama",
+    "cluster_differentiation_key": "Focuses on relationship shifts after marriage, complications from past lovers, intense emotional obsession, and structural family sacrifice.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Na Tum Jaano Na Hum",
+    "year": 2002,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_04",
+    "cluster_name": "Sacrificial Triangle/Deception Romance",
+    "cluster_differentiation_key": "Features mistaken identities, accidental medical deception, and a core dynamic where best friends try to sacrifice their love for each other.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kal Ho Naa Ho",
+    "year": 2003,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_04",
+    "cluster_name": "Sacrificial Triangle/Deception Romance",
+    "cluster_differentiation_key": "Features mistaken identities, accidental medical deception, and a core dynamic where best friends try to sacrifice their love for each other.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Tere Naam",
+    "year": 2003,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_03",
+    "cluster_name": "Post-Marital/Obsessive Melodrama",
+    "cluster_differentiation_key": "Focuses on relationship shifts after marriage, complications from past lovers, intense emotional obsession, and structural family sacrifice.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Chalte Chalte",
+    "year": 2003,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_03",
+    "cluster_name": "Post-Marital/Obsessive Melodrama",
+    "cluster_differentiation_key": "Focuses on relationship shifts after marriage, complications from past lovers, intense emotional obsession, and structural family sacrifice.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kuch Naa Kaho",
+    "year": 2003,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_05",
+    "cluster_name": "Social-Stigma/Protective Romance",
+    "cluster_differentiation_key": "Romance blooms out of a protagonist sheltering the partner from societal ostracization, assault trauma, or localized criminal threats.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Chori Chori",
+    "year": 2003,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_06",
+    "cluster_name": "Urban-Comedic/Fake-Relationship Romance",
+    "cluster_differentiation_key": "Driven by dynamic screwball setups, situational lies, fake engagements, and breezy modern dialogue.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Main Prem Ki Diwani Hoon",
+    "year": 2003,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_04",
+    "cluster_name": "Sacrificial Triangle/Deception Romance",
+    "cluster_differentiation_key": "Features mistaken identities, accidental medical deception, and a core dynamic where best friends try to sacrifice their love for each other.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Veer-Zaara",
+    "year": 2004,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_07",
+    "cluster_name": "Cross-Border/Epic Romance",
+    "cluster_differentiation_key": "High-stakes, generational love stories trapped across international borders, political incarceration, and heavy separation mechanics.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Hum Tum",
+    "year": 2004,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_08",
+    "cluster_name": "Lovers-to-Friends-to-Lovers Arc",
+    "cluster_differentiation_key": "Grounded coming-of-age trajectory charting multiple casual encounters over several years, evolving from friction to deep platonic bond, then romance.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Paheli",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_09",
+    "cluster_name": "Folklore/Fantasy Romance",
+    "cluster_differentiation_key": "Features supernatural elements, ghosts taking human forms, heavy regional textures, or mythological tropes driving the courtship.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Parineeta",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_01",
+    "cluster_name": "Institutional/Ideological Romance",
+    "cluster_differentiation_key": "Romance acts as a vehicle to challenge rigid societal, parental, or institutional hierarchies, often framed around strict boundaries vs. free love.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Salaam Namaste",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_06",
+    "cluster_name": "Urban-Comedic/Fake-Relationship Romance",
+    "cluster_differentiation_key": "Driven by dynamic screwball setups, situational lies, fake engagements, and breezy modern dialogue.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Bewafaa",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_03",
+    "cluster_name": "Post-Marital/Obsessive Melodrama",
+    "cluster_differentiation_key": "Focuses on relationship shifts after marriage, complications from past lovers, intense emotional obsession, and structural family sacrifice.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Socha Na Tha",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_08",
+    "cluster_name": "Lovers-to-Friends-to-Lovers Arc",
+    "cluster_differentiation_key": "Grounded coming-of-age trajectory charting multiple casual encounters over several years, evolving from friction to deep platonic bond, then romance.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Fanaa",
+    "year": 2006,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_02",
+    "cluster_name": "Thriller-Crossed/Lookalike Romance",
+    "cluster_differentiation_key": "Romance is intercepted by crime syndicates or conspiracies, forcing a structural identity swap, twin trope, or revenge-driven plot shift.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Vivah",
+    "year": 2006,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_01",
+    "cluster_name": "Institutional/Ideological Romance",
+    "cluster_differentiation_key": "Romance acts as a vehicle to challenge rigid societal, parental, or institutional hierarchies, often framed around strict boundaries vs. free love.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Woh Lamhe",
+    "year": 2006,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_03",
+    "cluster_name": "Post-Marital/Obsessive Melodrama",
+    "cluster_differentiation_key": "Focuses on relationship shifts after marriage, complications from past lovers, intense emotional obsession, and structural family sacrifice.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Jab We Met",
+    "year": 2007,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_08",
+    "cluster_name": "Lovers-to-Friends-to-Lovers Arc",
+    "cluster_differentiation_key": "Grounded coming-of-age trajectory charting multiple casual encounters over several years, evolving from friction to deep platonic bond, then romance.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Namastey London",
+    "year": 2007,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_06",
+    "cluster_name": "Urban-Comedic/Fake-Relationship Romance",
+    "cluster_differentiation_key": "Driven by dynamic screwball setups, situational lies, fake engagements, and breezy modern dialogue.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Saawariya",
+    "year": 2007,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_02",
+    "cluster_name": "Melodramatic/Musical Romance",
+    "cluster_differentiation_key": "Driven by artistic ambition, deep personal insecurities, and intense musical expression with minimal action elements.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Cheeni Kum",
+    "year": 2007,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_01",
+    "cluster_name": "Institutional/Ideological Romance",
+    "cluster_differentiation_key": "Romance acts as a vehicle to challenge rigid societal, parental, or institutional hierarchies, often framed around strict boundaries vs. free love.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Rab Ne Bana Di Jodi",
+    "year": 2008,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_02",
+    "cluster_name": "Thriller-Crossed/Lookalike Romance",
+    "cluster_differentiation_key": "Romance is intercepted by crime syndicates or conspiracies, forcing a structural identity swap, twin trope, or revenge-driven plot shift.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Jaane Tu... Ya Jaane Na",
+    "year": 2008,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_08",
+    "cluster_name": "Lovers-to-Friends-to-Lovers Arc",
+    "cluster_differentiation_key": "Grounded coming-of-age trajectory charting multiple casual encounters over several years, evolving from friction to deep platonic bond, then romance.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Bachna Ae Haseeno",
+    "year": 2008,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_08",
+    "cluster_name": "Lovers-to-Friends-to-Lovers Arc",
+    "cluster_differentiation_key": "Grounded coming-of-age trajectory charting multiple casual encounters over several years, evolving from friction to deep platonic bond, then romance.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "U Me Aur Hum",
+    "year": 2008,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_03",
+    "cluster_name": "Post-Marital/Obsessive Melodrama",
+    "cluster_differentiation_key": "Focuses on relationship shifts after marriage, complications from past lovers, intense emotional obsession, and structural family sacrifice.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Ajab Prem Ki Ghazab Kahani",
+    "year": 2009,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_06",
+    "cluster_name": "Urban-Comedic/Fake-Relationship Romance",
+    "cluster_differentiation_key": "Driven by dynamic screwball setups, situational lies, fake engagements, and breezy modern dialogue.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Love Aaj Kal",
+    "year": 2009,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_08",
+    "cluster_name": "Lovers-to-Friends-to-Lovers Arc",
+    "cluster_differentiation_key": "Grounded coming-of-age trajectory charting multiple casual encounters over several years, evolving from friction to deep platonic bond, then romance.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Main Aurr Mrs Khanna",
+    "year": 2009,
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_03",
+    "cluster_name": "Post-Marital/Obsessive Melodrama",
+    "cluster_differentiation_key": "Focuses on relationship shifts after marriage, complications from past lovers, intense emotional obsession, and structural family sacrifice.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Hey Ram",
+    "year": 2000,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Fiza",
+    "year": 2000,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Astitva",
+    "year": 2000,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_02",
+    "cluster_name": "Domestic-Feminist/Identity Drama",
+    "cluster_differentiation_key": "Centers on internal household gender dynamics, individual female autonomy breakthroughs, marital friction, and societal double standards.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Lagaan: Once Upon a Time in India",
+    "year": 2001,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kabhi Khushi Kabhie Gham",
+    "year": 2001,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Monsoon Wedding",
+    "year": 2001,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Lajja",
+    "year": 2001,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_02",
+    "cluster_name": "Domestic-Feminist/Identity Drama",
+    "cluster_differentiation_key": "Centers on internal household gender dynamics, individual female autonomy breakthroughs, marital friction, and societal double standards.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Chori Chori Chupke Chupke",
+    "year": 2001,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Zubeidaa",
+    "year": 2001,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Chandni Bar",
+    "year": 2001,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty, slice-of-life exploration of societal fringes, crime rings, industry exploitation, and institutional failures.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Devdas",
+    "year": 2002,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Hum Tumhare Hain Sanam",
+    "year": 2002,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Baghban",
+    "year": 2003,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Pinjar",
+    "year": 2003,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Chokher Bali",
+    "year": 2003,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_02",
+    "cluster_name": "Domestic-Feminist/Identity Drama",
+    "cluster_differentiation_key": "Centers on internal household gender dynamics, individual female autonomy breakthroughs, marital friction, and societal double standards.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Swades",
+    "year": 2004,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Aitraaz",
+    "year": 2004,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_05",
+    "cluster_name": "Corporate/Legal/Institutional Crusade",
+    "cluster_differentiation_key": "High-intensity narratives revolving around industry scandals, intense courtroom procedures, workplace politics, or systemic legal targets.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Phir Milenge",
+    "year": 2004,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_05",
+    "cluster_name": "Corporate/Legal/Institutional Crusade",
+    "cluster_differentiation_key": "High-intensity narratives revolving around industry scandals, intense courtroom procedures, workplace politics, or systemic legal targets.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Raincoat",
+    "year": 2004,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_02",
+    "cluster_name": "Domestic-Feminist/Identity Drama",
+    "cluster_differentiation_key": "Centers on internal household gender dynamics, individual female autonomy breakthroughs, marital friction, and societal double standards.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Chameli",
+    "year": 2004,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty, slice-of-life exploration of societal fringes, crime rings, industry exploitation, and institutional failures.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Black",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_06",
+    "cluster_name": "Psychological/Overcoming-Adversity Drama",
+    "cluster_differentiation_key": "Tracks severe individual neurodiversity, medical boundaries, master-student bonds, and triumphant cognitive milestones.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Water",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Page 3",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty, slice-of-life exploration of societal fringes, crime rings, industry exploitation, and institutional failures.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Waqt: The Race Against Time",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Main Aisa Hi Hoon",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_06",
+    "cluster_name": "Psychological/Overcoming-Adversity Drama",
+    "cluster_differentiation_key": "Tracks severe individual neurodiversity, medical boundaries, master-student bonds, and triumphant cognitive milestones.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Kyon Ki",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_06",
+    "cluster_name": "Psychological/Overcoming-Adversity Drama",
+    "cluster_differentiation_key": "Tracks severe individual neurodiversity, medical boundaries, master-student bonds, and triumphant cognitive milestones.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Rang De Basanti",
+    "year": 2006,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kabhi Alvida Naa Kehna",
+    "year": 2006,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Omkara",
+    "year": 2006,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty, slice-of-life exploration of societal fringes, crime rings, industry exploitation, and institutional failures.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "The Namesake",
+    "year": 2006,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Being Cyrus",
+    "year": 2006,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty, slice-of-life exploration of societal fringes, crime rings, industry exploitation, and institutional failures.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Taare Zameen Par",
+    "year": 2007,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_06",
+    "cluster_name": "Psychological/Overcoming-Adversity Drama",
+    "cluster_differentiation_key": "Tracks severe individual neurodiversity, medical boundaries, master-student bonds, and triumphant cognitive milestones.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Chak De! India",
+    "year": 2007,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_05",
+    "cluster_name": "Corporate/Legal/Institutional Crusade",
+    "cluster_differentiation_key": "High-intensity narratives revolving around industry scandals, intense courtroom procedures, workplace politics, or systemic legal targets.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Guru",
+    "year": 2007,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_05",
+    "cluster_name": "Corporate/Legal/Institutional Crusade",
+    "cluster_differentiation_key": "High-intensity narratives revolving around industry scandals, intense courtroom procedures, workplace politics, or systemic legal targets.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Life in a... Metro",
+    "year": 2007,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty, slice-of-life exploration of societal fringes, crime rings, industry exploitation, and institutional failures.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Apne",
+    "year": 2007,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "No Smoking",
+    "year": 2007,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_06",
+    "cluster_name": "Psychological/Overcoming-Adversity Drama",
+    "cluster_differentiation_key": "Tracks severe individual neurodiversity, medical boundaries, master-student bonds, and triumphant cognitive milestones.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Rock On!!",
+    "year": 2008,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Fashion",
+    "year": 2008,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty, slice-of-life exploration of societal fringes, crime rings, industry exploitation, and institutional failures.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Halla Bol",
+    "year": 2008,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Sarkar Raj",
+    "year": 2008,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Slumdog Millionaire",
+    "year": 2008,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty, slice-of-life exploration of societal fringes, crime rings, industry exploitation, and institutional failures.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Wake Up Sid",
+    "year": 2009,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Dev.D",
+    "year": 2009,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty, slice-of-life exploration of societal fringes, crime rings, industry exploitation, and institutional failures.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Gulaal",
+    "year": 2009,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Billu",
+    "year": 2009,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Luck By Chance",
+    "year": 2009,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty, slice-of-life exploration of societal fringes, crime rings, industry exploitation, and institutional failures.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Paa",
+    "year": 2009,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_06",
+    "cluster_name": "Psychological/Overcoming-Adversity Drama",
+    "cluster_differentiation_key": "Tracks severe individual neurodiversity, medical boundaries, master-student bonds, and triumphant cognitive milestones.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "London Dreams",
+    "year": 2009,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "cluster_differentiation_key": "Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lineage pride dynamics.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "New York",
+    "year": 2009,
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state systems, or religious conflicts.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Dabangg",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Tees Maar Khan",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Aakrosh",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Veer",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Raavan",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_08",
+    "cluster_name": "Romantic-Action",
+    "cluster_differentiation_key": "Action sequences are structurally triggered and sustained by a central romantic bond; the high-stakes survival of the romantic pairing dictates the action layout.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Don 2",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_04",
+    "cluster_name": "Heist/Thriller",
+    "cluster_differentiation_key": "Centered completely around multi-layered con games, bank robberies, execution of complex tactical blueprints, and high-stakes financial crime loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Ra.One",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Bodyguard",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Singham",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Ready",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Yamla Pagla Deewana",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Dum Maaro Dum",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Ek Tha Tiger",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "cluster_differentiation_key": "Driven by intelligence networks, international coordinates, counter-terrorism tasks, state secrets, and cross-border deep-cover deployment.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Agneepath",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Rowdy Rathore",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Dabangg 2",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Gangs of Wasseypur 2",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Tezz",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_04",
+    "cluster_name": "Heist/Thriller",
+    "cluster_differentiation_key": "Centered completely around multi-layered con games, bank robberies, execution of complex tactical blueprints, and high-stakes financial crime loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Bol Bachchan",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Son of Sardaar",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Agent Vinod",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "cluster_differentiation_key": "Driven by intelligence networks, international coordinates, counter-terrorism tasks, state secrets, and cross-border deep-cover deployment.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Chakravyuh",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Department",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Chennai Express",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Special 26",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_04",
+    "cluster_name": "Heist/Thriller",
+    "cluster_differentiation_key": "Centered completely around multi-layered con games, bank robberies, execution of complex tactical blueprints, and high-stakes financial crime loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Dhoom 3",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_04",
+    "cluster_name": "Heist/Thriller",
+    "cluster_differentiation_key": "Centered completely around multi-layered con games, bank robberies, execution of complex tactical blueprints, and high-stakes financial crime loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Vishwaroopam",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "cluster_differentiation_key": "Driven by intelligence networks, international coordinates, counter-terrorism tasks, state secrets, and cross-border deep-cover deployment.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Krrish 3",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Race 2",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_04",
+    "cluster_name": "Heist/Thriller",
+    "cluster_differentiation_key": "Centered completely around multi-layered con games, bank robberies, execution of complex tactical blueprints, and high-stakes financial crime loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Once Upon a Time in Mumbaai Dobara",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Himmatwala",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Besharam",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Bullett Raja",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Policegiri",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Singh Saab the Great",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Shootout at Wadala",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Phata Poster Nikhla Hero",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "R... Rajkumar",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kick",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Gunday",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Happy New Year",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_04",
+    "cluster_name": "Heist/Thriller",
+    "cluster_differentiation_key": "Centered completely around multi-layered con games, bank robberies, execution of complex tactical blueprints, and high-stakes financial crime loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Holiday: A Soldier Is Never Off Duty",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_03",
+    "cluster_name": "Patriotic/Military Action",
+    "cluster_differentiation_key": "Focuses on real military regiments, tactical battlefield operations, high-pitch nationalism, and direct defense of sovereign borders.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Bang Bang!",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_08",
+    "cluster_name": "Romantic-Action",
+    "cluster_differentiation_key": "Action sequences are structurally triggered and sustained by a central romantic bond; the high-stakes survival of the romantic pairing dictates the action layout.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Ek Villain",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_08",
+    "cluster_name": "Romantic-Action",
+    "cluster_differentiation_key": "Action sequences are structurally triggered and sustained by a central romantic bond; the high-stakes survival of the romantic pairing dictates the action layout.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Jai Ho",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Mardaani",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Singham Returns",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Action Jackson",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kill Dil",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Baby",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "cluster_differentiation_key": "Driven by intelligence networks, international coordinates, counter-terrorism tasks, state secrets, and cross-border deep-cover deployment.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Dilwale",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Gabbar Is Back",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_07",
+    "cluster_name": "Vigilante/Personal Vendetta",
+    "cluster_differentiation_key": "Driven exclusively by cold, isolated, dark-toned retribution loops stemming from a tragic personal devastation or loss; strips out general public savior-complex tropes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Brothers",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_07",
+    "cluster_name": "Vigilante/Personal Vendetta",
+    "cluster_differentiation_key": "Driven exclusively by cold, isolated, dark-toned retribution loops stemming from a tragic personal devastation or loss; strips out general public savior-complex tropes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Phantom",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "cluster_differentiation_key": "Driven by intelligence networks, international coordinates, counter-terrorism tasks, state secrets, and cross-border deep-cover deployment.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Tevar",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_08",
+    "cluster_name": "Romantic-Action",
+    "cluster_differentiation_key": "Action sequences are structurally triggered and sustained by a central romantic bond; the high-stakes survival of the romantic pairing dictates the action layout.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Sultan",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Shivaay",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_07",
+    "cluster_name": "Vigilante/Personal Vendetta",
+    "cluster_differentiation_key": "Driven exclusively by cold, isolated, dark-toned retribution loops stemming from a tragic personal devastation or loss; strips out general public savior-complex tropes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Mohenjo Daro",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Ghayal Once Again",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_07",
+    "cluster_name": "Vigilante/Personal Vendetta",
+    "cluster_differentiation_key": "Driven exclusively by cold, isolated, dark-toned retribution loops stemming from a tragic personal devastation or loss; strips out general public savior-complex tropes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Raees",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Tiger Zinda Hai",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "cluster_differentiation_key": "Driven by intelligence networks, international coordinates, counter-terrorism tasks, state secrets, and cross-border deep-cover deployment.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kaabil",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_07",
+    "cluster_name": "Vigilante/Personal Vendetta",
+    "cluster_differentiation_key": "Driven exclusively by cold, isolated, dark-toned retribution loops stemming from a tragic personal devastation or loss; strips out general public savior-complex tropes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "The Ghazi Attack",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_03",
+    "cluster_name": "Patriotic/Military Action",
+    "cluster_differentiation_key": "Focuses on real military regiments, tactical battlefield operations, high-pitch nationalism, and direct defense of sovereign borders.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Baadshaho",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_04",
+    "cluster_name": "Heist/Thriller",
+    "cluster_differentiation_key": "Centered completely around multi-layered con games, bank robberies, execution of complex tactical blueprints, and high-stakes financial crime loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Sarkar 3",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Bhoomi",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_07",
+    "cluster_name": "Vigilante/Personal Vendetta",
+    "cluster_differentiation_key": "Driven exclusively by cold, isolated, dark-toned retribution loops stemming from a tragic personal devastation or loss; strips out general public savior-complex tropes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Naam Shabana",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "cluster_differentiation_key": "Driven by intelligence networks, international coordinates, counter-terrorism tasks, state secrets, and cross-border deep-cover deployment.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Race 3",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_04",
+    "cluster_name": "Heist/Thriller",
+    "cluster_differentiation_key": "Centered completely around multi-layered con games, bank robberies, execution of complex tactical blueprints, and high-stakes financial crime loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Raid",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Thugs of Hindostan",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Manikarnika\u2014The Queen of Jhansi",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_03",
+    "cluster_name": "Patriotic/Military Action",
+    "cluster_differentiation_key": "Focuses on real military regiments, tactical battlefield operations, high-pitch nationalism, and direct defense of sovereign borders.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Simmba",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Saheb Biwi Aur Gangster 3",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Satyameva Jayate",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_07",
+    "cluster_name": "Vigilante/Personal Vendetta",
+    "cluster_differentiation_key": "Driven exclusively by cold, isolated, dark-toned retribution loops stemming from a tragic personal devastation or loss; strips out general public savior-complex tropes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "War",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "cluster_differentiation_key": "Driven by intelligence networks, international coordinates, counter-terrorism tasks, state secrets, and cross-border deep-cover deployment.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kesari",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_03",
+    "cluster_name": "Patriotic/Military Action",
+    "cluster_differentiation_key": "Focuses on real military regiments, tactical battlefield operations, high-pitch nationalism, and direct defense of sovereign borders.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Student of the Year 2",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "cluster_differentiation_key": "Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd-pleasing stunts, heavy punchlines, and star service.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Dabangg 3",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "cluster_differentiation_key": "Protagonist operates strictly under official law enforcement machinery, focusing on institutional corruption, police procedures, and state-backed field operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Uri: The Surgical Strike",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_03",
+    "cluster_name": "Patriotic/Military Action",
+    "cluster_differentiation_key": "Focuses on real military regiments, tactical battlefield operations, high-pitch nationalism, and direct defense of sovereign borders.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Laal Kaptaan",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_07",
+    "cluster_name": "Vigilante/Personal Vendetta",
+    "cluster_differentiation_key": "Driven exclusively by cold, isolated, dark-toned retribution loops stemming from a tragic personal devastation or loss; strips out general public savior-complex tropes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Panipat",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_03",
+    "cluster_name": "Patriotic/Military Action",
+    "cluster_differentiation_key": "Focuses on real military regiments, tactical battlefield operations, high-pitch nationalism, and direct defense of sovereign borders.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Blank",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "cluster_differentiation_key": "Driven by intelligence networks, international coordinates, counter-terrorism tasks, state secrets, and cross-border deep-cover deployment.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Sonchiriya",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "cluster_differentiation_key": "Traces the structural rise and internal operational mechanics of organized mafia cartels, turf control wars, and illegal black-market industries.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Band Baaja Baaraat",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_01",
+    "cluster_name": "Modern Slice-of-Life/Workplace Romance",
+    "cluster_differentiation_key": "Focuses on urban youth, career goals, start-up environments, business-partner dynamics, and contemporary relationship dilemmas.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Kites",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_02",
+    "cluster_name": "High-Stakes Thriller/Fugitive Romance",
+    "cluster_differentiation_key": "Romance is cross-hatched with dangerous crime families, chase sequences, border-crossings, and survival dynamics.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Anjaana Anjaani",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_03",
+    "cluster_name": "Melodramatic/Angst-Driven Romance",
+    "cluster_differentiation_key": "Heavy focus on existential crisis, mental health loops, tragedy, terminal issues, or emotional codependency setups.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Tanu Weds Manu",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_04",
+    "cluster_name": "Small-Town/Cultural Marriage Comedy",
+    "cluster_differentiation_key": "Grounded in non-metropolitan Indian cultural settings, dealing with heavy family interference, wedding logistics, and colorful regional archetypes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Jab Tak Hai Jaan",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_03",
+    "cluster_name": "Melodramatic/Angst-Driven Romance",
+    "cluster_differentiation_key": "Heavy focus on existential crisis, mental health loops, tragedy, terminal issues, or emotional codependency setups.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Student of the Year",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_05",
+    "cluster_name": "Coming-of-Age Campus Triangle",
+    "cluster_differentiation_key": "Set within highly stylized high school or college environments, pivoting entirely on peer competition, friendship breakdowns, and youthful love loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Cocktail",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_01",
+    "cluster_name": "Modern Slice-of-Life/Workplace Romance",
+    "cluster_differentiation_key": "Focuses on urban youth, career goals, start-up environments, business-partner dynamics, and contemporary relationship dilemmas.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Yeh Jawaani Hai Deewani",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_01",
+    "cluster_name": "Modern Slice-of-Life/Workplace Romance",
+    "cluster_differentiation_key": "Focuses on urban youth, career goals, start-up environments, business-partner dynamics, and contemporary relationship dilemmas.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Aashiqui 2",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_03",
+    "cluster_name": "Melodramatic/Angst-Driven Romance",
+    "cluster_differentiation_key": "Heavy focus on existential crisis, mental health loops, tragedy, terminal issues, or emotional codependency setups.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Raanjhnaa",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_03",
+    "cluster_name": "Melodramatic/Angst-Driven Romance",
+    "cluster_differentiation_key": "Heavy focus on existential crisis, mental health loops, tragedy, terminal issues, or emotional codependency setups.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Goliyon Ki Rasleela Ram-Leela",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_02",
+    "cluster_name": "High-Stakes Thriller/Fugitive Romance",
+    "cluster_differentiation_key": "Romance is cross-hatched with dangerous crime families, chase sequences, border-crossings, and survival dynamics.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Lootera",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_02",
+    "cluster_name": "High-Stakes Thriller/Fugitive Romance",
+    "cluster_differentiation_key": "Romance is cross-hatched with dangerous crime families, chase sequences, border-crossings, and survival dynamics.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "2 States",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_04",
+    "cluster_name": "Small-Town/Cultural Marriage Comedy",
+    "cluster_differentiation_key": "Grounded in non-metropolitan Indian cultural settings, dealing with heavy family interference, wedding logistics, and colorful regional archetypes.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Hasee Toh Phasee",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_01",
+    "cluster_name": "Modern Slice-of-Life/Workplace Romance",
+    "cluster_differentiation_key": "Focuses on urban youth, career goals, start-up environments, business-partner dynamics, and contemporary relationship dilemmas.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Humpty Sharma Ki Dulhania",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_04",
+    "cluster_name": "Small-Town/Cultural Marriage Comedy",
+    "cluster_differentiation_key": "Grounded in non-metropolitan Indian cultural settings, dealing with heavy family interference, wedding logistics, and colorful regional archetypes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Prem Ratan Dhan Payo",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_04",
+    "cluster_name": "Small-Town/Cultural Marriage Comedy",
+    "cluster_differentiation_key": "Grounded in non-metropolitan Indian cultural settings, dealing with heavy family interference, wedding logistics, and colorful regional archetypes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Dum Laga Ke Haisha",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_04",
+    "cluster_name": "Small-Town/Cultural Marriage Comedy",
+    "cluster_differentiation_key": "Grounded in non-metropolitan Indian cultural settings, dealing with heavy family interference, wedding logistics, and colorful regional archetypes.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Roy",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_02",
+    "cluster_name": "High-Stakes Thriller/Fugitive Romance",
+    "cluster_differentiation_key": "Romance is cross-hatched with dangerous crime families, chase sequences, border-crossings, and survival dynamics.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Ae Dil Hai Mushkil",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_03",
+    "cluster_name": "Melodramatic/Angst-Driven Romance",
+    "cluster_differentiation_key": "Heavy focus on existential crisis, mental health loops, tragedy, terminal issues, or emotional codependency setups.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Sanam Teri Kasam",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_03",
+    "cluster_name": "Melodramatic/Angst-Driven Romance",
+    "cluster_differentiation_key": "Heavy focus on existential crisis, mental health loops, tragedy, terminal issues, or emotional codependency setups.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Befikre",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_01",
+    "cluster_name": "Modern Slice-of-Life/Workplace Romance",
+    "cluster_differentiation_key": "Focuses on urban youth, career goals, start-up environments, business-partner dynamics, and contemporary relationship dilemmas.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Jab Harry Met Sejal",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_01",
+    "cluster_name": "Modern Slice-of-Life/Workplace Romance",
+    "cluster_differentiation_key": "Focuses on urban youth, career goals, start-up environments, business-partner dynamics, and contemporary relationship dilemmas.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Badrinath Ki Dulhania",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_04",
+    "cluster_name": "Small-Town/Cultural Marriage Comedy",
+    "cluster_differentiation_key": "Grounded in non-metropolitan Indian cultural settings, dealing with heavy family interference, wedding logistics, and colorful regional archetypes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kedarnath",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_03",
+    "cluster_name": "Melodramatic/Angst-Driven Romance",
+    "cluster_differentiation_key": "Heavy focus on existential crisis, mental health loops, tragedy, terminal issues, or emotional codependency setups.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Manmarziyaan",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_01",
+    "cluster_name": "Modern Slice-of-Life/Workplace Romance",
+    "cluster_differentiation_key": "Focuses on urban youth, career goals, start-up environments, business-partner dynamics, and contemporary relationship dilemmas.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "My Name Is Khan",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Udaan",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Guzaarish",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Raajneeti",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Rann",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Paathshaala",
+    "year": 2010,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Zindagi Na Milegi Dobara",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Rockstar",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "The Dirty Picture",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Dhobi Ghat",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Aarakshan",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "That Girl in Yellow Boots",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "7 Khoon Maaf",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Mausam",
+    "year": 2011,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "English Vinglish",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Shahid",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Miss Lovely",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Teri Meri Kahaani",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Heroine",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "The Lunchbox",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Kai Po Che!",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Ugly",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Satyagraha",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Queen",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Haider",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Highway",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Piku",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Bajrangi Bhaijaan",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Talvar",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Tamasha",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Masaan",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Dil Dhadakne Do",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Manjhi: The Mountain Man",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Bombay Velvet",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Shamitabh",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Dangal",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Pink",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Airlift",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Dear Zindagi",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Udta Punjab",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kapoor & Sons",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Neerja",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Aligarh",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Traffic",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Secret Superstar",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Parmanu: The Story Of Pokhran",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Tubelight",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Newton",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Rangoon",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Chef",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Mitti",
+    "year": 2017,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Sanju",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Zero",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Pad Man",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Mulk",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "October",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Hichki",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Fanney Khan",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Baazaar",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Mohalla Assi",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Bhonsle",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Pataakha",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Chhichhore",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Gully Boy",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "cluster_differentiation_key": "Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethics, crime structures, or city fringe operations.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Super 30",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Article 15",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Bharat",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Chhapaak",
+    "year": 2020,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Kalank",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Section 375",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "cluster_differentiation_key": "Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices, or intense legal courtroom procedural systems.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "no",
+      "has_villain": "yes"
+    }
+  },
+  {
+    "title": "Mission Mangal",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "cluster_differentiation_key": "Focuses heavily on structural historical milestones, severe geo-political transitions, systemic discrimination, state mechanisms, or multi-layered community clashes.",
+    "tags": {
+      "has_action_scenes": "no",
+      "has_songs_music": "yes",
+      "has_villain": "no"
+    }
+  },
+  {
+    "title": "Kabir Singh",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "cluster_differentiation_key": "Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, parent-child dynamics, and identity configuration loops.",
+    "tags": {
+      "has_action_scenes": "yes",
+      "has_songs_music": "yes",
+      "has_villain": "yes"
+    }
+  }
+]

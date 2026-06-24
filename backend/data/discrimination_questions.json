@@ -1,0 +1,4796 @@
+[
+  {
+    "question_id": "DISC_0001",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "question": "Which Hindi cluster is: Focuses heavily on structural historical milestones, severe geo-political transitions, riots, state ",
+    "difficulty": "medium",
+    "example_films": [
+      "Lagaan: Once Upon a Time in India",
+      "Rang De Basanti"
+    ]
+  },
+  {
+    "question_id": "DISC_0002",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "question": "Political/Historical/Socio-Religious Drama films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Lagaan: Once Upon a Time in India",
+      "Rang De Basanti"
+    ]
+  },
+  {
+    "question_id": "DISC_0003",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_01",
+    "cluster_name": "Political/Historical/Socio-Religious Drama",
+    "question": "Distinguish Political/Historical/Socio-Religious Drama by key marker: Focuses heavily on structural historical milestones, severe geo-political transi",
+    "difficulty": "hard",
+    "example_films": [
+      "Lagaan: Once Upon a Time in India",
+      "Rang De Basanti",
+      "Swades"
+    ]
+  },
+  {
+    "question_id": "DISC_0004",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_02",
+    "cluster_name": "Domestic-Feminist/Identity Drama",
+    "question": "Which Hindi cluster is: Centers on internal household gender dynamics, individual female autonomy breakthroughs, marital fri",
+    "difficulty": "medium",
+    "example_films": [
+      "Lajja",
+      "Raincoat"
+    ]
+  },
+  {
+    "question_id": "DISC_0005",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_02",
+    "cluster_name": "Domestic-Feminist/Identity Drama",
+    "question": "Domestic-Feminist/Identity Drama films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Lajja",
+      "Raincoat"
+    ]
+  },
+  {
+    "question_id": "DISC_0006",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_02",
+    "cluster_name": "Domestic-Feminist/Identity Drama",
+    "question": "Distinguish Domestic-Feminist/Identity Drama by key marker: Centers on internal household gender dynamics, individual female autonomy breakt",
+    "difficulty": "hard",
+    "example_films": [
+      "Lajja",
+      "Raincoat",
+      "Astitva"
+    ]
+  },
+  {
+    "question_id": "DISC_0007",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "question": "Which Hindi cluster is: Tracks deep structural household estrangements, intense patriarchal friction, class divides, and lin",
+    "difficulty": "medium",
+    "example_films": [
+      "Kabhi Khushi Kabhie Gham",
+      "Devdas"
+    ]
+  },
+  {
+    "question_id": "DISC_0008",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "question": "Multi-Generational Family/Patriarchal Drama films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kabhi Khushi Kabhie Gham",
+      "Devdas"
+    ]
+  },
+  {
+    "question_id": "DISC_0009",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_03",
+    "cluster_name": "Multi-Generational Family/Patriarchal Drama",
+    "question": "Distinguish Multi-Generational Family/Patriarchal Drama by key marker: Tracks deep structural household estrangements, intense patriarchal friction, cl",
+    "difficulty": "hard",
+    "example_films": [
+      "Kabhi Khushi Kabhie Gham",
+      "Devdas",
+      "Wake Up Sid"
+    ]
+  },
+  {
+    "question_id": "DISC_0010",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "question": "Which Hindi cluster is: Gritty, slice-of-life exploration of societal fringes, crime rings, industry exploitation, and insti",
+    "difficulty": "medium",
+    "example_films": [
+      "Dev.D",
+      "Omkara"
+    ]
+  },
+  {
+    "question_id": "DISC_0011",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "question": "Grounded Institutional/Underbelly Drama films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Dev.D",
+      "Omkara"
+    ]
+  },
+  {
+    "question_id": "DISC_0012",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "question": "Distinguish Grounded Institutional/Underbelly Drama by key marker: Gritty, slice-of-life exploration of societal fringes, crime rings, industry exp",
+    "difficulty": "hard",
+    "example_films": [
+      "Dev.D",
+      "Omkara",
+      "Life in a... Metro"
+    ]
+  },
+  {
+    "question_id": "DISC_0013",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_05",
+    "cluster_name": "Corporate/Legal/Institutional Crusade",
+    "question": "Which Hindi cluster is: High-intensity narratives revolving around industry scandals, intense courtroom procedures, workplac",
+    "difficulty": "medium",
+    "example_films": [
+      "Chak De! India",
+      "Guru"
+    ]
+  },
+  {
+    "question_id": "DISC_0014",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_05",
+    "cluster_name": "Corporate/Legal/Institutional Crusade",
+    "question": "Corporate/Legal/Institutional Crusade films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Chak De! India",
+      "Guru"
+    ]
+  },
+  {
+    "question_id": "DISC_0015",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_05",
+    "cluster_name": "Corporate/Legal/Institutional Crusade",
+    "question": "Distinguish Corporate/Legal/Institutional Crusade by key marker: High-intensity narratives revolving around industry scandals, intense courtroom ",
+    "difficulty": "hard",
+    "example_films": [
+      "Chak De! India",
+      "Guru",
+      "Aitraaz"
+    ]
+  },
+  {
+    "question_id": "DISC_0016",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_06",
+    "cluster_name": "Psychological/Overcoming-Adversity Drama",
+    "question": "Which Hindi cluster is: Tracks severe individual neurodiversity, medical boundaries, master-student bonds, and triumphant co",
+    "difficulty": "medium",
+    "example_films": [
+      "Taare Zameen Par",
+      "Black"
+    ]
+  },
+  {
+    "question_id": "DISC_0017",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_06",
+    "cluster_name": "Psychological/Overcoming-Adversity Drama",
+    "question": "Psychological/Overcoming-Adversity Drama films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Taare Zameen Par",
+      "Black"
+    ]
+  },
+  {
+    "question_id": "DISC_0018",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_DRA_06",
+    "cluster_name": "Psychological/Overcoming-Adversity Drama",
+    "question": "Distinguish Psychological/Overcoming-Adversity Drama by key marker: Tracks severe individual neurodiversity, medical boundaries, master-student bond",
+    "difficulty": "hard",
+    "example_films": [
+      "Taare Zameen Par",
+      "Black",
+      "Paa"
+    ]
+  },
+  {
+    "question_id": "DISC_0019",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_01",
+    "cluster_name": "Institutional/Ideological Romance",
+    "question": "Which Hindi cluster is: Romance acts as a vehicle to challenge rigid societal, parental, or institutional hierarchies, often",
+    "difficulty": "medium",
+    "example_films": [
+      "Mohabbatein",
+      "Parineeta"
+    ]
+  },
+  {
+    "question_id": "DISC_0020",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_01",
+    "cluster_name": "Institutional/Ideological Romance",
+    "question": "Institutional/Ideological Romance films typically: features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Mohabbatein",
+      "Parineeta"
+    ]
+  },
+  {
+    "question_id": "DISC_0021",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_01",
+    "cluster_name": "Institutional/Ideological Romance",
+    "question": "Distinguish Institutional/Ideological Romance by key marker: Romance acts as a vehicle to challenge rigid societal, parental, or institutiona",
+    "difficulty": "hard",
+    "example_films": [
+      "Mohabbatein",
+      "Parineeta",
+      "Vivah"
+    ]
+  },
+  {
+    "question_id": "DISC_0022",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_02",
+    "cluster_name": "Melodramatic/Musical Romance",
+    "question": "Which Hindi cluster is: Driven by artistic ambition, deep personal insecurities, and intense musical expression with minimal",
+    "difficulty": "medium",
+    "example_films": [
+      "Rab Ne Bana Di Jodi",
+      "Fanaa"
+    ]
+  },
+  {
+    "question_id": "DISC_0023",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_02",
+    "cluster_name": "Melodramatic/Musical Romance",
+    "question": "Melodramatic/Musical Romance films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Rab Ne Bana Di Jodi",
+      "Fanaa"
+    ]
+  },
+  {
+    "question_id": "DISC_0024",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_02",
+    "cluster_name": "Melodramatic/Musical Romance",
+    "question": "Distinguish Melodramatic/Musical Romance by key marker: Driven by artistic ambition, deep personal insecurities, and intense musical exp",
+    "difficulty": "hard",
+    "example_films": [
+      "Rab Ne Bana Di Jodi",
+      "Fanaa",
+      "Kaho Naa... Pyaar Hai"
+    ]
+  },
+  {
+    "question_id": "DISC_0025",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_03",
+    "cluster_name": "Post-Marital/Obsessive Melodrama",
+    "question": "Which Hindi cluster is: Focuses on relationship shifts after marriage, complications from past lovers, intense emotional obs",
+    "difficulty": "medium",
+    "example_films": [
+      "Tere Naam",
+      "Chalte Chalte"
+    ]
+  },
+  {
+    "question_id": "DISC_0026",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_03",
+    "cluster_name": "Post-Marital/Obsessive Melodrama",
+    "question": "Post-Marital/Obsessive Melodrama films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Tere Naam",
+      "Chalte Chalte"
+    ]
+  },
+  {
+    "question_id": "DISC_0027",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_03",
+    "cluster_name": "Post-Marital/Obsessive Melodrama",
+    "question": "Distinguish Post-Marital/Obsessive Melodrama by key marker: Focuses on relationship shifts after marriage, complications from past lovers, i",
+    "difficulty": "hard",
+    "example_films": [
+      "Tere Naam",
+      "Chalte Chalte",
+      "Dhadkan"
+    ]
+  },
+  {
+    "question_id": "DISC_0028",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_04",
+    "cluster_name": "Sacrificial Triangle/Deception Romance",
+    "question": "Which Hindi cluster is: Features mistaken identities, accidental medical deception, and a core dynamic where best friends tr",
+    "difficulty": "medium",
+    "example_films": [
+      "Kal Ho Naa Ho",
+      "Mujhse Dosti Karoge!"
+    ]
+  },
+  {
+    "question_id": "DISC_0029",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_04",
+    "cluster_name": "Sacrificial Triangle/Deception Romance",
+    "question": "Sacrificial Triangle/Deception Romance films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kal Ho Naa Ho",
+      "Mujhse Dosti Karoge!"
+    ]
+  },
+  {
+    "question_id": "DISC_0030",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_04",
+    "cluster_name": "Sacrificial Triangle/Deception Romance",
+    "question": "Distinguish Sacrificial Triangle/Deception Romance by key marker: Features mistaken identities, accidental medical deception, and a core dynamic w",
+    "difficulty": "hard",
+    "example_films": [
+      "Kal Ho Naa Ho",
+      "Mujhse Dosti Karoge!",
+      "Har Dil Jo Pyar Karega"
+    ]
+  },
+  {
+    "question_id": "DISC_0031",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_05",
+    "cluster_name": "Social-Stigma/Protective Romance",
+    "question": "Which Hindi cluster is: Romance blooms out of a protagonist sheltering the partner from societal ostracization, assault trau",
+    "difficulty": "medium",
+    "example_films": [
+      "Kuch Naa Kaho",
+      "Hamara Dil Aapke Paas Hai"
+    ]
+  },
+  {
+    "question_id": "DISC_0032",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_05",
+    "cluster_name": "Social-Stigma/Protective Romance",
+    "question": "Social-Stigma/Protective Romance films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kuch Naa Kaho",
+      "Hamara Dil Aapke Paas Hai"
+    ]
+  },
+  {
+    "question_id": "DISC_0033",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_05",
+    "cluster_name": "Social-Stigma/Protective Romance",
+    "question": "Distinguish Social-Stigma/Protective Romance by key marker: Romance blooms out of a protagonist sheltering the partner from societal ostraci",
+    "difficulty": "hard",
+    "example_films": [
+      "Kuch Naa Kaho",
+      "Hamara Dil Aapke Paas Hai"
+    ]
+  },
+  {
+    "question_id": "DISC_0034",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_06",
+    "cluster_name": "Urban-Comedic/Fake-Relationship Romance",
+    "question": "Which Hindi cluster is: Driven by dynamic screwball setups, situational lies, fake engagements, and breezy modern dialogue.",
+    "difficulty": "medium",
+    "example_films": [
+      "Namastey London",
+      "Ajab Prem Ki Ghazab Kahani"
+    ]
+  },
+  {
+    "question_id": "DISC_0035",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_06",
+    "cluster_name": "Urban-Comedic/Fake-Relationship Romance",
+    "question": "Urban-Comedic/Fake-Relationship Romance films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Namastey London",
+      "Ajab Prem Ki Ghazab Kahani"
+    ]
+  },
+  {
+    "question_id": "DISC_0036",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_06",
+    "cluster_name": "Urban-Comedic/Fake-Relationship Romance",
+    "question": "Distinguish Urban-Comedic/Fake-Relationship Romance by key marker: Driven by dynamic screwball setups, situational lies, fake engagements, and bree",
+    "difficulty": "hard",
+    "example_films": [
+      "Namastey London",
+      "Ajab Prem Ki Ghazab Kahani",
+      "Salaam Namaste"
+    ]
+  },
+  {
+    "question_id": "DISC_0037",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_07",
+    "cluster_name": "Cross-Border/Epic Romance",
+    "question": "Which Hindi cluster is: High-stakes, generational love stories trapped across international borders, political incarceration",
+    "difficulty": "medium",
+    "example_films": [
+      "Veer-Zaara"
+    ]
+  },
+  {
+    "question_id": "DISC_0038",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_07",
+    "cluster_name": "Cross-Border/Epic Romance",
+    "question": "Distinguish Cross-Border/Epic Romance by key marker: High-stakes, generational love stories trapped across international borders, pol",
+    "difficulty": "hard",
+    "example_films": [
+      "Veer-Zaara"
+    ]
+  },
+  {
+    "question_id": "DISC_0039",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_08",
+    "cluster_name": "Lovers-to-Friends-to-Lovers Arc",
+    "question": "Which Hindi cluster is: Grounded coming-of-age trajectory charting multiple casual encounters over several years, evolving f",
+    "difficulty": "medium",
+    "example_films": [
+      "Jab We Met",
+      "Jaane Tu... Ya Jaane Na"
+    ]
+  },
+  {
+    "question_id": "DISC_0040",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_08",
+    "cluster_name": "Lovers-to-Friends-to-Lovers Arc",
+    "question": "Lovers-to-Friends-to-Lovers Arc films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Jab We Met",
+      "Jaane Tu... Ya Jaane Na"
+    ]
+  },
+  {
+    "question_id": "DISC_0041",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_08",
+    "cluster_name": "Lovers-to-Friends-to-Lovers Arc",
+    "question": "Distinguish Lovers-to-Friends-to-Lovers Arc by key marker: Grounded coming-of-age trajectory charting multiple casual encounters over sever",
+    "difficulty": "hard",
+    "example_films": [
+      "Jab We Met",
+      "Jaane Tu... Ya Jaane Na",
+      "Love Aaj Kal"
+    ]
+  },
+  {
+    "question_id": "DISC_0042",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_09",
+    "cluster_name": "Folklore/Fantasy Romance",
+    "question": "Which Hindi cluster is: Features supernatural elements, ghosts taking human forms, heavy regional textures, or mythological ",
+    "difficulty": "medium",
+    "example_films": [
+      "Paheli"
+    ]
+  },
+  {
+    "question_id": "DISC_0043",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_00_ROM_09",
+    "cluster_name": "Folklore/Fantasy Romance",
+    "question": "Distinguish Folklore/Fantasy Romance by key marker: Features supernatural elements, ghosts taking human forms, heavy regional textur",
+    "difficulty": "hard",
+    "example_films": [
+      "Paheli"
+    ]
+  },
+  {
+    "question_id": "DISC_0044",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "question": "Which Hindi cluster is: Protagonist operates strictly under official law enforcement machinery, focusing on institutional co",
+    "difficulty": "medium",
+    "example_films": [
+      "Dabangg",
+      "Raid"
+    ]
+  },
+  {
+    "question_id": "DISC_0045",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "question": "Cop/Police Action films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Dabangg",
+      "Raid"
+    ]
+  },
+  {
+    "question_id": "DISC_0046",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "question": "Distinguish Cop/Police Action by key marker: Protagonist operates strictly under official law enforcement machinery, focusing",
+    "difficulty": "hard",
+    "example_films": [
+      "Dabangg",
+      "Raid",
+      "Dabangg 3"
+    ]
+  },
+  {
+    "question_id": "DISC_0047",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "question": "Which Hindi cluster is: Driven by intelligence networks, international coordinates, counter-terrorism tasks, state secrets, ",
+    "difficulty": "medium",
+    "example_films": [
+      "Baby",
+      "Vishwaroopam"
+    ]
+  },
+  {
+    "question_id": "DISC_0048",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "question": "Spy/Espionage films typically: has explicit action, features antagonist",
+    "difficulty": "easy",
+    "example_films": [
+      "Baby",
+      "Vishwaroopam"
+    ]
+  },
+  {
+    "question_id": "DISC_0049",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_02",
+    "cluster_name": "Spy/Espionage",
+    "question": "Distinguish Spy/Espionage by key marker: Driven by intelligence networks, international coordinates, counter-terrorism ta",
+    "difficulty": "hard",
+    "example_films": [
+      "Baby",
+      "Vishwaroopam",
+      "Ek Tha Tiger"
+    ]
+  },
+  {
+    "question_id": "DISC_0050",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_03",
+    "cluster_name": "Patriotic/Military Action",
+    "question": "Which Hindi cluster is: Focuses on real military regiments, tactical battlefield operations, high-pitch nationalism, and dir",
+    "difficulty": "medium",
+    "example_films": [
+      "Holiday: A Soldier Is Never Off Duty",
+      "Kesari"
+    ]
+  },
+  {
+    "question_id": "DISC_0051",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_03",
+    "cluster_name": "Patriotic/Military Action",
+    "question": "Patriotic/Military Action films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Holiday: A Soldier Is Never Off Duty",
+      "Kesari"
+    ]
+  },
+  {
+    "question_id": "DISC_0052",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_03",
+    "cluster_name": "Patriotic/Military Action",
+    "question": "Distinguish Patriotic/Military Action by key marker: Focuses on real military regiments, tactical battlefield operations, high-pitch ",
+    "difficulty": "hard",
+    "example_films": [
+      "Holiday: A Soldier Is Never Off Duty",
+      "Kesari",
+      "Manikarnika\u2014The Queen of Jhansi"
+    ]
+  },
+  {
+    "question_id": "DISC_0053",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_04",
+    "cluster_name": "Heist/Thriller",
+    "question": "Which Hindi cluster is: Centered completely around multi-layered con games, bank robberies, execution of complex tactical bl",
+    "difficulty": "medium",
+    "example_films": [
+      "Special 26",
+      "Don 2"
+    ]
+  },
+  {
+    "question_id": "DISC_0054",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_04",
+    "cluster_name": "Heist/Thriller",
+    "question": "Heist/Thriller films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Special 26",
+      "Don 2"
+    ]
+  },
+  {
+    "question_id": "DISC_0055",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_04",
+    "cluster_name": "Heist/Thriller",
+    "question": "Distinguish Heist/Thriller by key marker: Centered completely around multi-layered con games, bank robberies, execution of",
+    "difficulty": "hard",
+    "example_films": [
+      "Special 26",
+      "Don 2",
+      "Dhoom 3"
+    ]
+  },
+  {
+    "question_id": "DISC_0056",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "question": "Which Hindi cluster is: Traces the structural rise and internal operational mechanics of organized mafia cartels, turf contr",
+    "difficulty": "medium",
+    "example_films": [
+      "Gunday",
+      "Raees"
+    ]
+  },
+  {
+    "question_id": "DISC_0057",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "question": "Underworld/Crime-Rise films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Gunday",
+      "Raees"
+    ]
+  },
+  {
+    "question_id": "DISC_0058",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_05",
+    "cluster_name": "Underworld/Crime-Rise",
+    "question": "Distinguish Underworld/Crime-Rise by key marker: Traces the structural rise and internal operational mechanics of organized mafia",
+    "difficulty": "hard",
+    "example_films": [
+      "Gunday",
+      "Raees",
+      "Agneepath"
+    ]
+  },
+  {
+    "question_id": "DISC_0059",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "question": "Which Hindi cluster is: Larger-than-life escapist blockbusters prioritizing direct commercial gravity, gravity-defying crowd",
+    "difficulty": "medium",
+    "example_films": [
+      "Kick",
+      "Chennai Express"
+    ]
+  },
+  {
+    "question_id": "DISC_0060",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "question": "Mass Action Hero/Comedy films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kick",
+      "Chennai Express"
+    ]
+  },
+  {
+    "question_id": "DISC_0061",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_06",
+    "cluster_name": "Mass Action Hero/Comedy",
+    "question": "Distinguish Mass Action Hero/Comedy by key marker: Larger-than-life escapist blockbusters prioritizing direct commercial gravity, g",
+    "difficulty": "hard",
+    "example_films": [
+      "Kick",
+      "Chennai Express",
+      "Sultan"
+    ]
+  },
+  {
+    "question_id": "DISC_0062",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_07",
+    "cluster_name": "Vigilante/Personal Vendetta",
+    "question": "Which Hindi cluster is: Driven exclusively by cold, isolated, dark-toned retribution loops stemming from a tragic personal d",
+    "difficulty": "medium",
+    "example_films": [
+      "Kaabil",
+      "Gabbar Is Back"
+    ]
+  },
+  {
+    "question_id": "DISC_0063",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_07",
+    "cluster_name": "Vigilante/Personal Vendetta",
+    "question": "Vigilante/Personal Vendetta films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kaabil",
+      "Gabbar Is Back"
+    ]
+  },
+  {
+    "question_id": "DISC_0064",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_07",
+    "cluster_name": "Vigilante/Personal Vendetta",
+    "question": "Distinguish Vigilante/Personal Vendetta by key marker: Driven exclusively by cold, isolated, dark-toned retribution loops stemming from",
+    "difficulty": "hard",
+    "example_films": [
+      "Kaabil",
+      "Gabbar Is Back",
+      "Brothers"
+    ]
+  },
+  {
+    "question_id": "DISC_0065",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_08",
+    "cluster_name": "Romantic-Action",
+    "question": "Which Hindi cluster is: Action sequences are structurally triggered and sustained by a central romantic bond; the high-stake",
+    "difficulty": "medium",
+    "example_films": [
+      "Bang Bang!",
+      "Ek Villain"
+    ]
+  },
+  {
+    "question_id": "DISC_0066",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_08",
+    "cluster_name": "Romantic-Action",
+    "question": "Romantic-Action films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Bang Bang!",
+      "Ek Villain"
+    ]
+  },
+  {
+    "question_id": "DISC_0067",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ACT_08",
+    "cluster_name": "Romantic-Action",
+    "question": "Distinguish Romantic-Action by key marker: Action sequences are structurally triggered and sustained by a central romantic ",
+    "difficulty": "hard",
+    "example_films": [
+      "Bang Bang!",
+      "Ek Villain",
+      "Tevar"
+    ]
+  },
+  {
+    "question_id": "DISC_0068",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "question": "Which Hindi cluster is: Focuses heavily on structural historical milestones, severe geo-political transitions, systemic disc",
+    "difficulty": "medium",
+    "example_films": [
+      "My Name Is Khan",
+      "Bajrangi Bhaijaan"
+    ]
+  },
+  {
+    "question_id": "DISC_0069",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "question": "Socio-Political/Historical Scale Drama films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "My Name Is Khan",
+      "Bajrangi Bhaijaan"
+    ]
+  },
+  {
+    "question_id": "DISC_0070",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_01",
+    "cluster_name": "Socio-Political/Historical Scale Drama",
+    "question": "Distinguish Socio-Political/Historical Scale Drama by key marker: Focuses heavily on structural historical milestones, severe geo-political transi",
+    "difficulty": "hard",
+    "example_films": [
+      "My Name Is Khan",
+      "Bajrangi Bhaijaan",
+      "Airlift"
+    ]
+  },
+  {
+    "question_id": "DISC_0071",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "question": "Which Hindi cluster is: Centers on internal household manipulation, personal freedom breakthroughs, domestic friction, paren",
+    "difficulty": "medium",
+    "example_films": [
+      "Dangal",
+      "Queen"
+    ]
+  },
+  {
+    "question_id": "DISC_0072",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "question": "Domestic/Identity/Coming-of-Age Drama films typically: has explicit action, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Dangal",
+      "Queen"
+    ]
+  },
+  {
+    "question_id": "DISC_0073",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_02",
+    "cluster_name": "Domestic/Identity/Coming-of-Age Drama",
+    "question": "Distinguish Domestic/Identity/Coming-of-Age Drama by key marker: Centers on internal household manipulation, personal freedom breakthroughs, dome",
+    "difficulty": "hard",
+    "example_films": [
+      "Dangal",
+      "Queen",
+      "Piku"
+    ]
+  },
+  {
+    "question_id": "DISC_0074",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "question": "Which Hindi cluster is: Tracks complex cognitive limitations, heavy physical disability constraints, ethical medical choices",
+    "difficulty": "medium",
+    "example_films": [
+      "Pink",
+      "Talvar"
+    ]
+  },
+  {
+    "question_id": "DISC_0075",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "question": "Psychological/Medical/Legal Crusade Drama films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Pink",
+      "Talvar"
+    ]
+  },
+  {
+    "question_id": "DISC_0076",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_03",
+    "cluster_name": "Psychological/Medical/Legal Crusade Drama",
+    "question": "Distinguish Psychological/Medical/Legal Crusade Drama by key marker: Tracks complex cognitive limitations, heavy physical disability constraints, eth",
+    "difficulty": "hard",
+    "example_films": [
+      "Pink",
+      "Talvar",
+      "Mulk"
+    ]
+  },
+  {
+    "question_id": "DISC_0077",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "question": "Which Hindi cluster is: Gritty slice-of-life examination targeting corporate underbellies, industrial decay, journalism ethi",
+    "difficulty": "medium",
+    "example_films": [
+      "Gully Boy",
+      "Masaan"
+    ]
+  },
+  {
+    "question_id": "DISC_0078",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "question": "Grounded Institutional/Underbelly Drama films typically: has explicit action, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Gully Boy",
+      "Masaan"
+    ]
+  },
+  {
+    "question_id": "DISC_0079",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_DRA_04",
+    "cluster_name": "Grounded Institutional/Underbelly Drama",
+    "question": "Distinguish Grounded Institutional/Underbelly Drama by key marker: Gritty slice-of-life examination targeting corporate underbellies, industrial de",
+    "difficulty": "hard",
+    "example_films": [
+      "Gully Boy",
+      "Masaan",
+      "Udta Punjab"
+    ]
+  },
+  {
+    "question_id": "DISC_0080",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_01",
+    "cluster_name": "Modern Slice-of-Life/Workplace Romance",
+    "question": "Which Hindi cluster is: Focuses on urban youth, career goals, start-up environments, business-partner dynamics, and contempo",
+    "difficulty": "medium",
+    "example_films": [
+      "Yeh Jawaani Hai Deewani",
+      "Jab Harry Met Sejal"
+    ]
+  },
+  {
+    "question_id": "DISC_0081",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_01",
+    "cluster_name": "Modern Slice-of-Life/Workplace Romance",
+    "question": "Modern Slice-of-Life/Workplace Romance films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Yeh Jawaani Hai Deewani",
+      "Jab Harry Met Sejal"
+    ]
+  },
+  {
+    "question_id": "DISC_0082",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_01",
+    "cluster_name": "Modern Slice-of-Life/Workplace Romance",
+    "question": "Distinguish Modern Slice-of-Life/Workplace Romance by key marker: Focuses on urban youth, career goals, start-up environments, business-partner dy",
+    "difficulty": "hard",
+    "example_films": [
+      "Yeh Jawaani Hai Deewani",
+      "Jab Harry Met Sejal",
+      "Band Baaja Baaraat"
+    ]
+  },
+  {
+    "question_id": "DISC_0083",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_02",
+    "cluster_name": "High-Stakes Thriller/Fugitive Romance",
+    "question": "Which Hindi cluster is: Romance is cross-hatched with dangerous crime families, chase sequences, border-crossings, and survi",
+    "difficulty": "medium",
+    "example_films": [
+      "Goliyon Ki Rasleela Ram-Leela",
+      "Lootera"
+    ]
+  },
+  {
+    "question_id": "DISC_0084",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_02",
+    "cluster_name": "High-Stakes Thriller/Fugitive Romance",
+    "question": "High-Stakes Thriller/Fugitive Romance films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Goliyon Ki Rasleela Ram-Leela",
+      "Lootera"
+    ]
+  },
+  {
+    "question_id": "DISC_0085",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_02",
+    "cluster_name": "High-Stakes Thriller/Fugitive Romance",
+    "question": "Distinguish High-Stakes Thriller/Fugitive Romance by key marker: Romance is cross-hatched with dangerous crime families, chase sequences, border-",
+    "difficulty": "hard",
+    "example_films": [
+      "Goliyon Ki Rasleela Ram-Leela",
+      "Lootera",
+      "Kites"
+    ]
+  },
+  {
+    "question_id": "DISC_0086",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_03",
+    "cluster_name": "Melodramatic/Angst-Driven Romance",
+    "question": "Which Hindi cluster is: Heavy focus on existential crisis, mental health loops, tragedy, terminal issues, or emotional codep",
+    "difficulty": "medium",
+    "example_films": [
+      "Jab Tak Hai Jaan",
+      "Aashiqui 2"
+    ]
+  },
+  {
+    "question_id": "DISC_0087",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_03",
+    "cluster_name": "Melodramatic/Angst-Driven Romance",
+    "question": "Melodramatic/Angst-Driven Romance films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Jab Tak Hai Jaan",
+      "Aashiqui 2"
+    ]
+  },
+  {
+    "question_id": "DISC_0088",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_03",
+    "cluster_name": "Melodramatic/Angst-Driven Romance",
+    "question": "Distinguish Melodramatic/Angst-Driven Romance by key marker: Heavy focus on existential crisis, mental health loops, tragedy, terminal issues",
+    "difficulty": "hard",
+    "example_films": [
+      "Jab Tak Hai Jaan",
+      "Aashiqui 2",
+      "Raanjhnaa"
+    ]
+  },
+  {
+    "question_id": "DISC_0089",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_04",
+    "cluster_name": "Small-Town/Cultural Marriage Comedy",
+    "question": "Which Hindi cluster is: Grounded in non-metropolitan Indian cultural settings, dealing with heavy family interference, weddi",
+    "difficulty": "medium",
+    "example_films": [
+      "2 States",
+      "Prem Ratan Dhan Payo"
+    ]
+  },
+  {
+    "question_id": "DISC_0090",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_04",
+    "cluster_name": "Small-Town/Cultural Marriage Comedy",
+    "question": "Small-Town/Cultural Marriage Comedy films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "2 States",
+      "Prem Ratan Dhan Payo"
+    ]
+  },
+  {
+    "question_id": "DISC_0091",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_04",
+    "cluster_name": "Small-Town/Cultural Marriage Comedy",
+    "question": "Distinguish Small-Town/Cultural Marriage Comedy by key marker: Grounded in non-metropolitan Indian cultural settings, dealing with heavy family",
+    "difficulty": "hard",
+    "example_films": [
+      "2 States",
+      "Prem Ratan Dhan Payo",
+      "Dum Laga Ke Haisha"
+    ]
+  },
+  {
+    "question_id": "DISC_0092",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_05",
+    "cluster_name": "Coming-of-Age Campus Triangle",
+    "question": "Which Hindi cluster is: Set within highly stylized high school or college environments, pivoting entirely on peer competitio",
+    "difficulty": "medium",
+    "example_films": [
+      "Student of the Year"
+    ]
+  },
+  {
+    "question_id": "DISC_0093",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_10_ROM_05",
+    "cluster_name": "Coming-of-Age Campus Triangle",
+    "question": "Distinguish Coming-of-Age Campus Triangle by key marker: Set within highly stylized high school or college environments, pivoting entirel",
+    "difficulty": "hard",
+    "example_films": [
+      "Student of the Year"
+    ]
+  },
+  {
+    "question_id": "DISC_0094",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_90_01",
+    "cluster_name": "Vigilante/Personal Retribution",
+    "question": "Which Hindi cluster is: Protagonist bypasses law enforcement to exact physical retribution against corporate/political elite",
+    "difficulty": "medium",
+    "example_films": [
+      "Baazigar",
+      "Krantiveer"
+    ]
+  },
+  {
+    "question_id": "DISC_0095",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_01",
+    "cluster_name": "Vigilante/Personal Retribution",
+    "question": "Vigilante/Personal Retribution films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Baazigar",
+      "Krantiveer"
+    ]
+  },
+  {
+    "question_id": "DISC_0096",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_01",
+    "cluster_name": "Vigilante/Personal Retribution",
+    "question": "Distinguish Vigilante/Personal Retribution by key marker: Protagonist bypasses law enforcement to exact physical retribution against corpo",
+    "difficulty": "hard",
+    "example_films": [
+      "Baazigar",
+      "Krantiveer",
+      "Mohra"
+    ]
+  },
+  {
+    "question_id": "DISC_0097",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_90_02",
+    "cluster_name": "Underworld/Gangster-Rise",
+    "question": "Which Hindi cluster is: Tracks criminal syndication, urban mafia operations, territorial drug warfare, and internal cartel p",
+    "difficulty": "medium",
+    "example_films": [
+      "Vaastav: The Reality",
+      "Hum"
+    ]
+  },
+  {
+    "question_id": "DISC_0098",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_02",
+    "cluster_name": "Underworld/Gangster-Rise",
+    "question": "Underworld/Gangster-Rise films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Vaastav: The Reality",
+      "Hum"
+    ]
+  },
+  {
+    "question_id": "DISC_0099",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_02",
+    "cluster_name": "Underworld/Gangster-Rise",
+    "question": "Distinguish Underworld/Gangster-Rise by key marker: Tracks criminal syndication, urban mafia operations, territorial drug warfare, a",
+    "difficulty": "hard",
+    "example_films": [
+      "Vaastav: The Reality",
+      "Hum",
+      "Jeet"
+    ]
+  },
+  {
+    "question_id": "DISC_0100",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_90_03",
+    "cluster_name": "Cop/Police Action",
+    "question": "Which Hindi cluster is: Focuses on procedural law enforcement machinery, departmental rules, and targeted counter-crime task",
+    "difficulty": "medium",
+    "example_films": [
+      "Sarfarosh",
+      "Kanoon"
+    ]
+  },
+  {
+    "question_id": "DISC_0101",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_03",
+    "cluster_name": "Cop/Police Action",
+    "question": "Cop/Police Action films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Sarfarosh",
+      "Kanoon"
+    ]
+  },
+  {
+    "question_id": "DISC_0102",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_03",
+    "cluster_name": "Cop/Police Action",
+    "question": "Distinguish Cop/Police Action by key marker: Focuses on procedural law enforcement machinery, departmental rules, and targete",
+    "difficulty": "hard",
+    "example_films": [
+      "Sarfarosh",
+      "Kanoon",
+      "Naajayaz"
+    ]
+  },
+  {
+    "question_id": "DISC_0103",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_90_04",
+    "cluster_name": "Patriotic/Military/Espionage",
+    "question": "Which Hindi cluster is: Military operations, state intelligence defense loops, cross-border tactical warfare, or state espio",
+    "difficulty": "medium",
+    "example_films": [
+      "Border",
+      "Soldier"
+    ]
+  },
+  {
+    "question_id": "DISC_0104",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_04",
+    "cluster_name": "Patriotic/Military/Espionage",
+    "question": "Patriotic/Military/Espionage films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Border",
+      "Soldier"
+    ]
+  },
+  {
+    "question_id": "DISC_0105",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_04",
+    "cluster_name": "Patriotic/Military/Espionage",
+    "question": "Distinguish Patriotic/Military/Espionage by key marker: Military operations, state intelligence defense loops, cross-border tactical war",
+    "difficulty": "hard",
+    "example_films": [
+      "Border",
+      "Soldier",
+      "Khuda Gawah"
+    ]
+  },
+  {
+    "question_id": "DISC_0106",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_90_05",
+    "cluster_name": "Masala/Action-Comedy/Double-Role",
+    "question": "Which Hindi cluster is: Features comic elements, explicit identity swaps, identical twin tropes, and high-camp stylized acti",
+    "difficulty": "medium",
+    "example_films": [
+      "Baadshah",
+      "Hulchul"
+    ]
+  },
+  {
+    "question_id": "DISC_0107",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_05",
+    "cluster_name": "Masala/Action-Comedy/Double-Role",
+    "question": "Masala/Action-Comedy/Double-Role films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Baadshah",
+      "Hulchul"
+    ]
+  },
+  {
+    "question_id": "DISC_0108",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_05",
+    "cluster_name": "Masala/Action-Comedy/Double-Role",
+    "question": "Distinguish Masala/Action-Comedy/Double-Role by key marker: Features comic elements, explicit identity swaps, identical twin tropes, and hig",
+    "difficulty": "hard",
+    "example_films": [
+      "Baadshah",
+      "Hulchul",
+      "Duplicate"
+    ]
+  },
+  {
+    "question_id": "DISC_0109",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_90_06",
+    "cluster_name": "Romantic-Action Hybrid",
+    "question": "Which Hindi cluster is: Action is directly triggered by parental or social opposition to a central romantic pairing, usually",
+    "difficulty": "medium",
+    "example_films": [
+      "Sadak",
+      "Sangraam"
+    ]
+  },
+  {
+    "question_id": "DISC_0110",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_06",
+    "cluster_name": "Romantic-Action Hybrid",
+    "question": "Romantic-Action Hybrid films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Sadak",
+      "Sangraam"
+    ]
+  },
+  {
+    "question_id": "DISC_0111",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_06",
+    "cluster_name": "Romantic-Action Hybrid",
+    "question": "Distinguish Romantic-Action Hybrid by key marker: Action is directly triggered by parental or social opposition to a central roman",
+    "difficulty": "hard",
+    "example_films": [
+      "Sadak",
+      "Sangraam",
+      "Jaan"
+    ]
+  },
+  {
+    "question_id": "DISC_0112",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_90_07",
+    "cluster_name": "Feudal/Rural Blood-Feud",
+    "question": "Which Hindi cluster is: Set within rural landscapes, pitting oppressed villagers or family units against tyrannical landlord",
+    "difficulty": "medium",
+    "example_films": [
+      "Karan Arjun",
+      "Koyla"
+    ]
+  },
+  {
+    "question_id": "DISC_0113",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_07",
+    "cluster_name": "Feudal/Rural Blood-Feud",
+    "question": "Feudal/Rural Blood-Feud films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Karan Arjun",
+      "Koyla"
+    ]
+  },
+  {
+    "question_id": "DISC_0114",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_90_07",
+    "cluster_name": "Feudal/Rural Blood-Feud",
+    "question": "Distinguish Feudal/Rural Blood-Feud by key marker: Set within rural landscapes, pitting oppressed villagers or family units against",
+    "difficulty": "hard",
+    "example_films": [
+      "Karan Arjun",
+      "Koyla",
+      "Itihaas"
+    ]
+  },
+  {
+    "question_id": "DISC_0115",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_01",
+    "cluster_name": "Cop / Police Procedural",
+    "question": "Which Tamil cluster is: Grounded law enforcement machinery focusing completely on institutional setups, tactical tracking, d",
+    "difficulty": "medium",
+    "example_films": [
+      "Kaakha Kaakha",
+      "Saamy"
+    ]
+  },
+  {
+    "question_id": "DISC_0116",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_01",
+    "cluster_name": "Cop / Police Procedural",
+    "question": "Cop / Police Procedural films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kaakha Kaakha",
+      "Saamy"
+    ]
+  },
+  {
+    "question_id": "DISC_0117",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_01",
+    "cluster_name": "Cop / Police Procedural",
+    "question": "Distinguish Cop / Police Procedural by key marker: Grounded law enforcement machinery focusing completely on institutional setups, ",
+    "difficulty": "hard",
+    "example_films": [
+      "Kaakha Kaakha",
+      "Saamy",
+      "Kaaka Kaaka"
+    ]
+  },
+  {
+    "question_id": "DISC_0118",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_02",
+    "cluster_name": "Mass Hero Action Blockbuster",
+    "question": "Which Tamil cluster is: Star-fronted crowd-pleasers balancing heightened character swagger, high fan service, and neighborho",
+    "difficulty": "medium",
+    "example_films": [
+      "Sivaji",
+      "Pokkiri"
+    ]
+  },
+  {
+    "question_id": "DISC_0119",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_02",
+    "cluster_name": "Mass Hero Action Blockbuster",
+    "question": "Mass Hero Action Blockbuster films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Sivaji",
+      "Pokkiri"
+    ]
+  },
+  {
+    "question_id": "DISC_0120",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_02",
+    "cluster_name": "Mass Hero Action Blockbuster",
+    "question": "Distinguish Mass Hero Action Blockbuster by key marker: Star-fronted crowd-pleasers balancing heightened character swagger, high fan ser",
+    "difficulty": "hard",
+    "example_films": [
+      "Sivaji",
+      "Pokkiri",
+      "Ayya"
+    ]
+  },
+  {
+    "question_id": "DISC_0121",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_03",
+    "cluster_name": "Vigilante / Retribution",
+    "question": "Which Tamil cluster is: Isolated characters or rogue setups operating strictly outside the legal system to address social ex",
+    "difficulty": "medium",
+    "example_films": [
+      "Kanthaswamy",
+      "Citizen"
+    ]
+  },
+  {
+    "question_id": "DISC_0122",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_03",
+    "cluster_name": "Vigilante / Retribution",
+    "question": "Vigilante / Retribution films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kanthaswamy",
+      "Citizen"
+    ]
+  },
+  {
+    "question_id": "DISC_0123",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_03",
+    "cluster_name": "Vigilante / Retribution",
+    "question": "Distinguish Vigilante / Retribution by key marker: Isolated characters or rogue setups operating strictly outside the legal system ",
+    "difficulty": "hard",
+    "example_films": [
+      "Kanthaswamy",
+      "Citizen",
+      "Puratchikkaaran"
+    ]
+  },
+  {
+    "question_id": "DISC_0124",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_04",
+    "cluster_name": "Crime / Underworld Syndicate",
+    "question": "Which Tamil cluster is: Pivots around local gang hierarchies, underworld protocols, black market operations, or local turf e",
+    "difficulty": "medium",
+    "example_films": [
+      "Billa",
+      "Ayan"
+    ]
+  },
+  {
+    "question_id": "DISC_0125",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_04",
+    "cluster_name": "Crime / Underworld Syndicate",
+    "question": "Crime / Underworld Syndicate films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Billa",
+      "Ayan"
+    ]
+  },
+  {
+    "question_id": "DISC_0126",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_04",
+    "cluster_name": "Crime / Underworld Syndicate",
+    "question": "Distinguish Crime / Underworld Syndicate by key marker: Pivots around local gang hierarchies, underworld protocols, black market operati",
+    "difficulty": "hard",
+    "example_films": [
+      "Billa",
+      "Ayan",
+      "Bheema"
+    ]
+  },
+  {
+    "question_id": "DISC_0127",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_05",
+    "cluster_name": "Patriotic / Nationalist Counter-Terror",
+    "question": "Which Tamil cluster is: Narrative features high cross-border espionage setups, corporate bio-security threads, intelligence ",
+    "difficulty": "medium",
+    "example_films": [
+      "Dasavathaaram",
+      "Peranmai"
+    ]
+  },
+  {
+    "question_id": "DISC_0128",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_05",
+    "cluster_name": "Patriotic / Nationalist Counter-Terror",
+    "question": "Patriotic / Nationalist Counter-Terror films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Dasavathaaram",
+      "Peranmai"
+    ]
+  },
+  {
+    "question_id": "DISC_0129",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_05",
+    "cluster_name": "Patriotic / Nationalist Counter-Terror",
+    "question": "Distinguish Patriotic / Nationalist Counter-Terror by key marker: Narrative features high cross-border espionage setups, corporate bio-security th",
+    "difficulty": "hard",
+    "example_films": [
+      "Dasavathaaram",
+      "Peranmai",
+      "Dasavatharam"
+    ]
+  },
+  {
+    "question_id": "DISC_0130",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_06",
+    "cluster_name": "Romantic / Domestic Melodrama Hybrid",
+    "question": "Which Tamil cluster is: Driven primarily by individual aspirations, career or creative struggles, and strong emotional or ro",
+    "difficulty": "medium",
+    "example_films": [
+      "Friends",
+      "Ezhil"
+    ]
+  },
+  {
+    "question_id": "DISC_0131",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_06",
+    "cluster_name": "Romantic / Domestic Melodrama Hybrid",
+    "question": "Romantic / Domestic Melodrama Hybrid films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Friends",
+      "Ezhil"
+    ]
+  },
+  {
+    "question_id": "DISC_0132",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_06",
+    "cluster_name": "Romantic / Domestic Melodrama Hybrid",
+    "question": "Distinguish Romantic / Domestic Melodrama Hybrid by key marker: Driven primarily by individual aspirations, career or creative struggles, and st",
+    "difficulty": "hard",
+    "example_films": [
+      "Friends",
+      "Ezhil",
+      "Neeraj"
+    ]
+  },
+  {
+    "question_id": "DISC_0133",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_07",
+    "cluster_name": "Heist / High-Octane Chase Thriller",
+    "question": "Which Tamil cluster is: High-velocity narrative setups relying primarily on complex escape loops, chasing sequences, city tr",
+    "difficulty": "medium",
+    "example_films": [
+      "Ghilli",
+      "Kuruvi"
+    ]
+  },
+  {
+    "question_id": "DISC_0134",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_07",
+    "cluster_name": "Heist / High-Octane Chase Thriller",
+    "question": "Heist / High-Octane Chase Thriller films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Ghilli",
+      "Kuruvi"
+    ]
+  },
+  {
+    "question_id": "DISC_0135",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ACT_07",
+    "cluster_name": "Heist / High-Octane Chase Thriller",
+    "question": "Distinguish Heist / High-Octane Chase Thriller by key marker: High-velocity narrative setups relying primarily on complex escape loops, chasin",
+    "difficulty": "hard",
+    "example_films": [
+      "Ghilli",
+      "Kuruvi",
+      "Chellamae"
+    ]
+  },
+  {
+    "question_id": "DISC_0136",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_BIO_ACT_01",
+    "cluster_name": "Historical Chronicle / Lineage Pride",
+    "question": "Which Tamil cluster is: Structured entirely around local historical leadership profiles, rural community roots, real-life fi",
+    "difficulty": "medium",
+    "example_films": [
+      "Pasumpon"
+    ]
+  },
+  {
+    "question_id": "DISC_0137",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_BIO_ACT_01",
+    "cluster_name": "Historical Chronicle / Lineage Pride",
+    "question": "Distinguish Historical Chronicle / Lineage Pride by key marker: Structured entirely around local historical leadership profiles, rural community",
+    "difficulty": "hard",
+    "example_films": [
+      "Pasumpon"
+    ]
+  },
+  {
+    "question_id": "DISC_0138",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_COM_ACT_01",
+    "cluster_name": "Slapstick Deception Masala",
+    "question": "Which Tamil cluster is: Action configurations are packed tightly with hyper-exaggerated physical gags, situational double id",
+    "difficulty": "medium",
+    "example_films": [
+      "Thiruda Thirudi",
+      "Englishkaran"
+    ]
+  },
+  {
+    "question_id": "DISC_0139",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_COM_ACT_01",
+    "cluster_name": "Slapstick Deception Masala",
+    "question": "Slapstick Deception Masala films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Thiruda Thirudi",
+      "Englishkaran"
+    ]
+  },
+  {
+    "question_id": "DISC_0140",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_COM_ACT_01",
+    "cluster_name": "Slapstick Deception Masala",
+    "question": "Distinguish Slapstick Deception Masala by key marker: Action configurations are packed tightly with hyper-exaggerated physical gags, s",
+    "difficulty": "hard",
+    "example_films": [
+      "Thiruda Thirudi",
+      "Englishkaran"
+    ]
+  },
+  {
+    "question_id": "DISC_0141",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_COM_ACT_02",
+    "cluster_name": "Historical Satire / Twin Flip Comedy",
+    "question": "Which Tamil cluster is: Period setup mocking royal dynasties, incorporating multi-role structural tracking and camp sword-pl",
+    "difficulty": "medium",
+    "example_films": [
+      "Imsai Arasan 23am Pulikesi"
+    ]
+  },
+  {
+    "question_id": "DISC_0142",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_COM_ACT_02",
+    "cluster_name": "Historical Satire / Twin Flip Comedy",
+    "question": "Distinguish Historical Satire / Twin Flip Comedy by key marker: Period setup mocking royal dynasties, incorporating multi-role structural tracki",
+    "difficulty": "hard",
+    "example_films": [
+      "Imsai Arasan 23am Pulikesi"
+    ]
+  },
+  {
+    "question_id": "DISC_0143",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_DRA_ACT_01",
+    "cluster_name": "Grounded Realism / Domestic Tragedy",
+    "question": "Which Tamil cluster is: Character-driven narratives featuring hyper-realistic, raw, and gritty action sequences triggered by",
+    "difficulty": "medium",
+    "example_films": [
+      "Vaaranam Aayiram",
+      "Paruthiveeran"
+    ]
+  },
+  {
+    "question_id": "DISC_0144",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_DRA_ACT_01",
+    "cluster_name": "Grounded Realism / Domestic Tragedy",
+    "question": "Grounded Realism / Domestic Tragedy films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Vaaranam Aayiram",
+      "Paruthiveeran"
+    ]
+  },
+  {
+    "question_id": "DISC_0145",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_DRA_ACT_01",
+    "cluster_name": "Grounded Realism / Domestic Tragedy",
+    "question": "Distinguish Grounded Realism / Domestic Tragedy by key marker: Character-driven narratives featuring hyper-realistic, raw, and gritty action se",
+    "difficulty": "hard",
+    "example_films": [
+      "Vaaranam Aayiram",
+      "Paruthiveeran",
+      "Virumandi"
+    ]
+  },
+  {
+    "question_id": "DISC_0146",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_DRA_ACT_02",
+    "cluster_name": "Psychological/Obsessive Drama Hybrid",
+    "question": "Which Tamil cluster is: Explores deep mental fragmentation, trauma, alienation, or obsessive behavior patterns where sudden ",
+    "difficulty": "medium",
+    "example_films": [
+      "Naan Kadavul",
+      "Kadhal Kondein"
+    ]
+  },
+  {
+    "question_id": "DISC_0147",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_DRA_ACT_02",
+    "cluster_name": "Psychological/Obsessive Drama Hybrid",
+    "question": "Psychological/Obsessive Drama Hybrid films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Naan Kadavul",
+      "Kadhal Kondein"
+    ]
+  },
+  {
+    "question_id": "DISC_0148",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_DRA_ACT_02",
+    "cluster_name": "Psychological/Obsessive Drama Hybrid",
+    "question": "Distinguish Psychological/Obsessive Drama Hybrid by key marker: Explores deep mental fragmentation, trauma, alienation, or obsessive behavior pa",
+    "difficulty": "hard",
+    "example_films": [
+      "Naan Kadavul",
+      "Kadhal Kondein"
+    ]
+  },
+  {
+    "question_id": "DISC_0149",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_DRA_ACT_03",
+    "cluster_name": "Socio-Political / Multi-Linear Drama",
+    "question": "Which Tamil cluster is: Pivots around public administration, student elections, multi-perspective plotlines, or young citize",
+    "difficulty": "medium",
+    "example_films": [
+      "Aayitha Ezhuthu",
+      "Aaytha Ezhuthu"
+    ]
+  },
+  {
+    "question_id": "DISC_0150",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_DRA_ACT_03",
+    "cluster_name": "Socio-Political / Multi-Linear Drama",
+    "question": "Socio-Political / Multi-Linear Drama films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Aayitha Ezhuthu",
+      "Aaytha Ezhuthu"
+    ]
+  },
+  {
+    "question_id": "DISC_0151",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_DRA_ACT_03",
+    "cluster_name": "Socio-Political / Multi-Linear Drama",
+    "question": "Distinguish Socio-Political / Multi-Linear Drama by key marker: Pivots around public administration, student elections, multi-perspective plotli",
+    "difficulty": "hard",
+    "example_films": [
+      "Aayitha Ezhuthu",
+      "Aaytha Ezhuthu"
+    ]
+  },
+  {
+    "question_id": "DISC_0152",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_HOR_ACT_01",
+    "cluster_name": "Supernatural Lore / Dissociative Haunting",
+    "question": "Which Tamil cluster is: Explores ancient regional entities, ancestral estates, psychological fractures, and high-impact clim",
+    "difficulty": "medium",
+    "example_films": [
+      "Chandramukhi"
+    ]
+  },
+  {
+    "question_id": "DISC_0153",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_HOR_ACT_01",
+    "cluster_name": "Supernatural Lore / Dissociative Haunting",
+    "question": "Distinguish Supernatural Lore / Dissociative Haunting by key marker: Explores ancient regional entities, ancestral estates, psychological fractures, ",
+    "difficulty": "hard",
+    "example_films": [
+      "Chandramukhi"
+    ]
+  },
+  {
+    "question_id": "DISC_0154",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ROM_ACT_01",
+    "cluster_name": "Sacrificial Romance / Protective Stunts",
+    "question": "Which Tamil cluster is: Stakes are entirely dictated by aiding other star-crossed pairs or preserving a secret emotional com",
+    "difficulty": "medium",
+    "example_films": [
+      "Unakkum Enakkum",
+      "Shahjahan"
+    ]
+  },
+  {
+    "question_id": "DISC_0155",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ROM_ACT_01",
+    "cluster_name": "Sacrificial Romance / Protective Stunts",
+    "question": "Sacrificial Romance / Protective Stunts films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Unakkum Enakkum",
+      "Shahjahan"
+    ]
+  },
+  {
+    "question_id": "DISC_0156",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ROM_ACT_01",
+    "cluster_name": "Sacrificial Romance / Protective Stunts",
+    "question": "Distinguish Sacrificial Romance / Protective Stunts by key marker: Stakes are entirely dictated by aiding other star-crossed pairs or preserving a ",
+    "difficulty": "hard",
+    "example_films": [
+      "Unakkum Enakkum",
+      "Shahjahan",
+      "Jay Jay"
+    ]
+  },
+  {
+    "question_id": "DISC_0157",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ROM_ACT_02",
+    "cluster_name": "Melancholic Port/Seafaring Alliance",
+    "question": "Which Tamil cluster is: Atmospheric, slower courtship patterns framed against maritime landscapes or geographic constraints ",
+    "difficulty": "medium",
+    "example_films": [
+      "Iyarkai"
+    ]
+  },
+  {
+    "question_id": "DISC_0158",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ROM_ACT_02",
+    "cluster_name": "Melancholic Port/Seafaring Alliance",
+    "question": "Distinguish Melancholic Port/Seafaring Alliance by key marker: Atmospheric, slower courtship patterns framed against maritime landscapes or geo",
+    "difficulty": "hard",
+    "example_films": [
+      "Iyarkai"
+    ]
+  },
+  {
+    "question_id": "DISC_0159",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ROM_ACT_03",
+    "cluster_name": "Campus Courtship / Friction Comedy",
+    "question": "Which Tamil cluster is: Breezy urban screwball dynamics or college ego wars where physical standoffs emerge as defensive ext",
+    "difficulty": "medium",
+    "example_films": [
+      "Vallavan",
+      "Inimel"
+    ]
+  },
+  {
+    "question_id": "DISC_0160",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ROM_ACT_03",
+    "cluster_name": "Campus Courtship / Friction Comedy",
+    "question": "Campus Courtship / Friction Comedy films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Vallavan",
+      "Inimel"
+    ]
+  },
+  {
+    "question_id": "DISC_0161",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_ROM_ACT_03",
+    "cluster_name": "Campus Courtship / Friction Comedy",
+    "question": "Distinguish Campus Courtship / Friction Comedy by key marker: Breezy urban screwball dynamics or college ego wars where physical standoffs eme",
+    "difficulty": "hard",
+    "example_films": [
+      "Vallavan",
+      "Inimel",
+      "Sachein"
+    ]
+  },
+  {
+    "question_id": "DISC_0162",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_THR_ACT_01",
+    "cluster_name": "Psychological Horror / Mind-Game Thriller",
+    "question": "Which Tamil cluster is: Features psychotic projections, hallucinatory breakdowns, multi-role delusion arcs, and highly styli",
+    "difficulty": "medium",
+    "example_films": [
+      "Anniyan",
+      "Aalavandhan"
+    ]
+  },
+  {
+    "question_id": "DISC_0163",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_THR_ACT_01",
+    "cluster_name": "Psychological Horror / Mind-Game Thriller",
+    "question": "Psychological Horror / Mind-Game Thriller films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Anniyan",
+      "Aalavandhan"
+    ]
+  },
+  {
+    "question_id": "DISC_0164",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_THR_ACT_01",
+    "cluster_name": "Psychological Horror / Mind-Game Thriller",
+    "question": "Distinguish Psychological Horror / Mind-Game Thriller by key marker: Features psychotic projections, hallucinatory breakdowns, multi-role delusion ar",
+    "difficulty": "hard",
+    "example_films": [
+      "Anniyan",
+      "Aalavandhan"
+    ]
+  },
+  {
+    "question_id": "DISC_0165",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_THR_ACT_02",
+    "cluster_name": "Serial Killer / Vigilante Thriller",
+    "question": "Which Tamil cluster is: Driven entirely by structured, calculated patterns of executions tracking moral decay, specific pers",
+    "difficulty": "medium",
+    "example_films": [
+      "Manmadhan",
+      "Vettaiyaadu Vilaiyaadu"
+    ]
+  },
+  {
+    "question_id": "DISC_0166",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_THR_ACT_02",
+    "cluster_name": "Serial Killer / Vigilante Thriller",
+    "question": "Serial Killer / Vigilante Thriller films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Manmadhan",
+      "Vettaiyaadu Vilaiyaadu"
+    ]
+  },
+  {
+    "question_id": "DISC_0167",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_THR_ACT_02",
+    "cluster_name": "Serial Killer / Vigilante Thriller",
+    "question": "Distinguish Serial Killer / Vigilante Thriller by key marker: Driven entirely by structured, calculated patterns of executions tracking moral ",
+    "difficulty": "hard",
+    "example_films": [
+      "Manmadhan",
+      "Vettaiyaadu Vilaiyaadu",
+      "Evano Oruvan"
+    ]
+  },
+  {
+    "question_id": "DISC_0168",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_00_THR_ACT_03",
+    "cluster_name": "Slick Crime / Underworld Escape",
+    "question": "Which Tamil cluster is: High-velocity tracking configurations mapping mafia networks, unexpected parentage lines, smuggling ",
+    "difficulty": "medium",
+    "example_films": [
+      "Arinthum Ariyamalum",
+      "Polladhavan"
+    ]
+  },
+  {
+    "question_id": "DISC_0169",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_THR_ACT_03",
+    "cluster_name": "Slick Crime / Underworld Escape",
+    "question": "Slick Crime / Underworld Escape films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Arinthum Ariyamalum",
+      "Polladhavan"
+    ]
+  },
+  {
+    "question_id": "DISC_0170",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_00_THR_ACT_03",
+    "cluster_name": "Slick Crime / Underworld Escape",
+    "question": "Distinguish Slick Crime / Underworld Escape by key marker: High-velocity tracking configurations mapping mafia networks, unexpected parenta",
+    "difficulty": "hard",
+    "example_films": [
+      "Arinthum Ariyamalum",
+      "Polladhavan",
+      "Saroja"
+    ]
+  },
+  {
+    "question_id": "DISC_0171",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "question": "Which Tamil cluster is: Grounded or high-octane police procedurals focusing on departmental networks and official tactical o",
+    "difficulty": "medium",
+    "example_films": [
+      "Theeran Athikaram Ondru",
+      "Sethupathi"
+    ]
+  },
+  {
+    "question_id": "DISC_0172",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "question": "Cop/Police Action films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Theeran Athikaram Ondru",
+      "Sethupathi"
+    ]
+  },
+  {
+    "question_id": "DISC_0173",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_01",
+    "cluster_name": "Cop/Police Action",
+    "question": "Distinguish Cop/Police Action by key marker: Grounded or high-octane police procedurals focusing on departmental networks and",
+    "difficulty": "hard",
+    "example_films": [
+      "Theeran Athikaram Ondru",
+      "Sethupathi",
+      "Singam II"
+    ]
+  },
+  {
+    "question_id": "DISC_0174",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_02",
+    "cluster_name": "Mass Hero Action",
+    "question": "Which Tamil cluster is: Star-fronted crowd-pleasers prioritizing massive theatrical screen presence, heavy punchlines, and s",
+    "difficulty": "medium",
+    "example_films": [
+      "Mersal",
+      "Bigil"
+    ]
+  },
+  {
+    "question_id": "DISC_0175",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_02",
+    "cluster_name": "Mass Hero Action",
+    "question": "Mass Hero Action films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Mersal",
+      "Bigil"
+    ]
+  },
+  {
+    "question_id": "DISC_0176",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_02",
+    "cluster_name": "Mass Hero Action",
+    "question": "Distinguish Mass Hero Action by key marker: Star-fronted crowd-pleasers prioritizing massive theatrical screen presence, hea",
+    "difficulty": "hard",
+    "example_films": [
+      "Mersal",
+      "Bigil",
+      "Kabali"
+    ]
+  },
+  {
+    "question_id": "DISC_0177",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_03",
+    "cluster_name": "Vigilante/Revenge",
+    "question": "Which Tamil cluster is: Individual retribution loops targeting precise traumas or executing street justice from outside the ",
+    "difficulty": "medium",
+    "example_films": [
+      "Asuran",
+      "Kaththi"
+    ]
+  },
+  {
+    "question_id": "DISC_0178",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_03",
+    "cluster_name": "Vigilante/Revenge",
+    "question": "Vigilante/Revenge films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Asuran",
+      "Kaththi"
+    ]
+  },
+  {
+    "question_id": "DISC_0179",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_03",
+    "cluster_name": "Vigilante/Revenge",
+    "question": "Distinguish Vigilante/Revenge by key marker: Individual retribution loops targeting precise traumas or executing street justi",
+    "difficulty": "hard",
+    "example_films": [
+      "Asuran",
+      "Kaththi",
+      "Theri"
+    ]
+  },
+  {
+    "question_id": "DISC_0180",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_04",
+    "cluster_name": "Crime/Underworld",
+    "question": "Which Tamil cluster is: Focuses on raw local gang rivalries, street-level execution, mafia hierarchies, and dark crime polit",
+    "difficulty": "medium",
+    "example_films": [
+      "Vikram Vedha",
+      "Vada Chennai"
+    ]
+  },
+  {
+    "question_id": "DISC_0181",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_04",
+    "cluster_name": "Crime/Underworld",
+    "question": "Crime/Underworld films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Vikram Vedha",
+      "Vada Chennai"
+    ]
+  },
+  {
+    "question_id": "DISC_0182",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_04",
+    "cluster_name": "Crime/Underworld",
+    "question": "Distinguish Crime/Underworld by key marker: Focuses on raw local gang rivalries, street-level execution, mafia hierarchies, ",
+    "difficulty": "hard",
+    "example_films": [
+      "Vikram Vedha",
+      "Vada Chennai",
+      "Aadukalam"
+    ]
+  },
+  {
+    "question_id": "DISC_0183",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_05",
+    "cluster_name": "Patriotic/Nationalist",
+    "question": "Which Tamil cluster is: Plots moving through counter-terrorism operations, cross-border infiltration, intelligence agencies,",
+    "difficulty": "medium",
+    "example_films": [
+      "Thuppakki",
+      "Kaithi"
+    ]
+  },
+  {
+    "question_id": "DISC_0184",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_05",
+    "cluster_name": "Patriotic/Nationalist",
+    "question": "Patriotic/Nationalist films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Thuppakki",
+      "Kaithi"
+    ]
+  },
+  {
+    "question_id": "DISC_0185",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_05",
+    "cluster_name": "Patriotic/Nationalist",
+    "question": "Distinguish Patriotic/Nationalist by key marker: Plots moving through counter-terrorism operations, cross-border infiltration, in",
+    "difficulty": "hard",
+    "example_films": [
+      "Thuppakki",
+      "Kaithi",
+      "Vivegam"
+    ]
+  },
+  {
+    "question_id": "DISC_0186",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_06",
+    "cluster_name": "Romantic-Action",
+    "question": "Which Tamil cluster is: Action mechanics and survival conflicts are directly driven by a primary romantic subplot or protect",
+    "difficulty": "medium",
+    "example_films": [
+      "Engeyum Eppodhum",
+      "Remo"
+    ]
+  },
+  {
+    "question_id": "DISC_0187",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_06",
+    "cluster_name": "Romantic-Action",
+    "question": "Romantic-Action films typically: has explicit action, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Engeyum Eppodhum",
+      "Remo"
+    ]
+  },
+  {
+    "question_id": "DISC_0188",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_06",
+    "cluster_name": "Romantic-Action",
+    "question": "Distinguish Romantic-Action by key marker: Action mechanics and survival conflicts are directly driven by a primary romanti",
+    "difficulty": "hard",
+    "example_films": [
+      "Engeyum Eppodhum",
+      "Remo",
+      "Rekka"
+    ]
+  },
+  {
+    "question_id": "DISC_0189",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_07",
+    "cluster_name": "Heist/Thriller",
+    "question": "Which Tamil cluster is: Meticulously maps sophisticated scams, complex robbery blueprints, security system breaches, or clev",
+    "difficulty": "medium",
+    "example_films": [
+      "Mankatha",
+      "Vai Raja Vai"
+    ]
+  },
+  {
+    "question_id": "DISC_0190",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_07",
+    "cluster_name": "Heist/Thriller",
+    "question": "Heist/Thriller films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Mankatha",
+      "Vai Raja Vai"
+    ]
+  },
+  {
+    "question_id": "DISC_0191",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_07",
+    "cluster_name": "Heist/Thriller",
+    "question": "Distinguish Heist/Thriller by key marker: Meticulously maps sophisticated scams, complex robbery blueprints, security syst",
+    "difficulty": "hard",
+    "example_films": [
+      "Mankatha",
+      "Vai Raja Vai",
+      "Thaana Serndha Koottam"
+    ]
+  },
+  {
+    "question_id": "DISC_0192",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_08",
+    "cluster_name": "High-Octane Chase/Stunt",
+    "question": "Which Tamil cluster is: High-concept designs featuring sci-fi devices, convoluted time dynamics, heavy survival runs, or tec",
+    "difficulty": "medium",
+    "example_films": [
+      "Enthiran",
+      "2.0"
+    ]
+  },
+  {
+    "question_id": "DISC_0193",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_08",
+    "cluster_name": "High-Octane Chase/Stunt",
+    "question": "High-Octane Chase/Stunt films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Enthiran",
+      "2.0"
+    ]
+  },
+  {
+    "question_id": "DISC_0194",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_10_ACT_08",
+    "cluster_name": "High-Octane Chase/Stunt",
+    "question": "Distinguish High-Octane Chase/Stunt by key marker: High-concept designs featuring sci-fi devices, convoluted time dynamics, heavy s",
+    "difficulty": "hard",
+    "example_films": [
+      "Enthiran",
+      "2.0",
+      "Eega"
+    ]
+  },
+  {
+    "question_id": "DISC_0195",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_01",
+    "cluster_name": "Cop / Police Procedural",
+    "question": "Which Tamil cluster is: Grounded law enforcement machinery focusing on tracking kidnapping industries, forensic clues, and f",
+    "difficulty": "medium",
+    "example_films": [
+      "Pulan Visaranai",
+      "Walter Vetrivel"
+    ]
+  },
+  {
+    "question_id": "DISC_0196",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_01",
+    "cluster_name": "Cop / Police Procedural",
+    "question": "Cop / Police Procedural films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Pulan Visaranai",
+      "Walter Vetrivel"
+    ]
+  },
+  {
+    "question_id": "DISC_0197",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_01",
+    "cluster_name": "Cop / Police Procedural",
+    "question": "Distinguish Cop / Police Procedural by key marker: Grounded law enforcement machinery focusing on tracking kidnapping industries, f",
+    "difficulty": "hard",
+    "example_films": [
+      "Pulan Visaranai",
+      "Walter Vetrivel",
+      "Kaaval Geethai"
+    ]
+  },
+  {
+    "question_id": "DISC_0198",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_02",
+    "cluster_name": "Mass Hero Action Blockbuster",
+    "question": "Which Tamil cluster is: Star-fronted crowd-pleaser prioritizing high screen charisma, distinct style signature punchlines, a",
+    "difficulty": "medium",
+    "example_films": [
+      "Muthu",
+      "Padayappa"
+    ]
+  },
+  {
+    "question_id": "DISC_0199",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_02",
+    "cluster_name": "Mass Hero Action Blockbuster",
+    "question": "Mass Hero Action Blockbuster films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Muthu",
+      "Padayappa"
+    ]
+  },
+  {
+    "question_id": "DISC_0200",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_02",
+    "cluster_name": "Mass Hero Action Blockbuster",
+    "question": "Distinguish Mass Hero Action Blockbuster by key marker: Star-fronted crowd-pleaser prioritizing high screen charisma, distinct style sig",
+    "difficulty": "hard",
+    "example_films": [
+      "Muthu",
+      "Padayappa",
+      "Ejaman"
+    ]
+  },
+  {
+    "question_id": "DISC_0201",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_03",
+    "cluster_name": "Vigilante / Revenge Retribution",
+    "question": "Which Tamil cluster is: Individual or lookalike/twin mechanics executing an elaborate, calculated physical retribution seque",
+    "difficulty": "medium",
+    "example_films": [
+      "Indian",
+      "Kadhalan"
+    ]
+  },
+  {
+    "question_id": "DISC_0202",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_03",
+    "cluster_name": "Vigilante / Revenge Retribution",
+    "question": "Vigilante / Revenge Retribution films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Indian",
+      "Kadhalan"
+    ]
+  },
+  {
+    "question_id": "DISC_0203",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_03",
+    "cluster_name": "Vigilante / Revenge Retribution",
+    "question": "Distinguish Vigilante / Revenge Retribution by key marker: Individual or lookalike/twin mechanics executing an elaborate, calculated physic",
+    "difficulty": "hard",
+    "example_films": [
+      "Indian",
+      "Kadhalan",
+      "Gentleman"
+    ]
+  },
+  {
+    "question_id": "DISC_0204",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_04",
+    "cluster_name": "Crime / Underworld Syndicate",
+    "question": "Which Tamil cluster is: Immerses into local mafia territories, parallel street justice, deep friendship allegiances, and gan",
+    "difficulty": "medium",
+    "example_films": [
+      "Thalapathi",
+      "Baasha"
+    ]
+  },
+  {
+    "question_id": "DISC_0205",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_04",
+    "cluster_name": "Crime / Underworld Syndicate",
+    "question": "Crime / Underworld Syndicate films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Thalapathi",
+      "Baasha"
+    ]
+  },
+  {
+    "question_id": "DISC_0206",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_04",
+    "cluster_name": "Crime / Underworld Syndicate",
+    "question": "Distinguish Crime / Underworld Syndicate by key marker: Immerses into local mafia territories, parallel street justice, deep friendship ",
+    "difficulty": "hard",
+    "example_films": [
+      "Thalapathi",
+      "Baasha",
+      "Amarkalam"
+    ]
+  },
+  {
+    "question_id": "DISC_0207",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_05",
+    "cluster_name": "Patriotic / Nationalist Counter-Terror",
+    "question": "Which Tamil cluster is: Maps intelligence agency tactical setups, deep-cover operations, border defense protocols, or anti-t",
+    "difficulty": "medium",
+    "example_films": [
+      "Kurudhipunal",
+      "Kuruthipunal"
+    ]
+  },
+  {
+    "question_id": "DISC_0208",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_05",
+    "cluster_name": "Patriotic / Nationalist Counter-Terror",
+    "question": "Patriotic / Nationalist Counter-Terror films typically: has explicit action, features antagonist",
+    "difficulty": "easy",
+    "example_films": [
+      "Kurudhipunal",
+      "Kuruthipunal"
+    ]
+  },
+  {
+    "question_id": "DISC_0209",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_05",
+    "cluster_name": "Patriotic / Nationalist Counter-Terror",
+    "question": "Distinguish Patriotic / Nationalist Counter-Terror by key marker: Maps intelligence agency tactical setups, deep-cover operations, border defense ",
+    "difficulty": "hard",
+    "example_films": [
+      "Kurudhipunal",
+      "Kuruthipunal"
+    ]
+  },
+  {
+    "question_id": "DISC_0210",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_06",
+    "cluster_name": "Romantic Melodrama / Domestic Hybrid",
+    "question": "Which Tamil cluster is: Conflict anchors tightly on deep familial trauma, domestic health constraints, or protective romanti",
+    "difficulty": "medium",
+    "example_films": [
+      "Indira",
+      "Valli"
+    ]
+  },
+  {
+    "question_id": "DISC_0211",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_06",
+    "cluster_name": "Romantic Melodrama / Domestic Hybrid",
+    "question": "Romantic Melodrama / Domestic Hybrid films typically: features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Indira",
+      "Valli"
+    ]
+  },
+  {
+    "question_id": "DISC_0212",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_06",
+    "cluster_name": "Romantic Melodrama / Domestic Hybrid",
+    "question": "Distinguish Romantic Melodrama / Domestic Hybrid by key marker: Conflict anchors tightly on deep familial trauma, domestic health constraints, o",
+    "difficulty": "hard",
+    "example_films": [
+      "Indira",
+      "Valli",
+      "Keladi Kanmani"
+    ]
+  },
+  {
+    "question_id": "DISC_0213",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_07",
+    "cluster_name": "Heist / High-Octane Chase Thriller",
+    "question": "Which Tamil cluster is: Completely centered around complex theft blueprints, escaping networks, tracking government currency",
+    "difficulty": "medium",
+    "example_films": [
+      "Vaali",
+      "Thiruda Thiruda"
+    ]
+  },
+  {
+    "question_id": "DISC_0214",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_07",
+    "cluster_name": "Heist / High-Octane Chase Thriller",
+    "question": "Heist / High-Octane Chase Thriller films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Vaali",
+      "Thiruda Thiruda"
+    ]
+  },
+  {
+    "question_id": "DISC_0215",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_90_ACT_07",
+    "cluster_name": "Heist / High-Octane Chase Thriller",
+    "question": "Distinguish Heist / High-Octane Chase Thriller by key marker: Completely centered around complex theft blueprints, escaping networks, tracking",
+    "difficulty": "hard",
+    "example_films": [
+      "Vaali",
+      "Thiruda Thiruda",
+      "Aasai"
+    ]
+  },
+  {
+    "question_id": "DISC_0216",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_01",
+    "cluster_name": "Traditional / Socio-Cultural Divide Romance",
+    "question": "Which Tamil cluster is: Courtship heavily restricted by hyper-conservative family setups, rural lineage hierarchies, or seve",
+    "difficulty": "medium",
+    "example_films": [
+      "Mynaa",
+      "Kizhakku Cheemayile"
+    ]
+  },
+  {
+    "question_id": "DISC_0217",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_01",
+    "cluster_name": "Traditional / Socio-Cultural Divide Romance",
+    "question": "Traditional / Socio-Cultural Divide Romance films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Mynaa",
+      "Kizhakku Cheemayile"
+    ]
+  },
+  {
+    "question_id": "DISC_0218",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_01",
+    "cluster_name": "Traditional / Socio-Cultural Divide Romance",
+    "question": "Distinguish Traditional / Socio-Cultural Divide Romance by key marker: Courtship heavily restricted by hyper-conservative family setups, rural lineage ",
+    "difficulty": "hard",
+    "example_films": [
+      "Mynaa",
+      "Kizhakku Cheemayile",
+      "Karuththamma"
+    ]
+  },
+  {
+    "question_id": "DISC_0219",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_02",
+    "cluster_name": "Psychological / Melodramatic Obsession",
+    "question": "Which Tamil cluster is: Pivots on deep mental fragmentation, unconventional attachment styles, intense psychological trauma,",
+    "difficulty": "medium",
+    "example_films": [
+      "3",
+      "Priyanka"
+    ]
+  },
+  {
+    "question_id": "DISC_0220",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_02",
+    "cluster_name": "Psychological / Melodramatic Obsession",
+    "question": "Psychological / Melodramatic Obsession films typically: has explicit action, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "3",
+      "Priyanka"
+    ]
+  },
+  {
+    "question_id": "DISC_0221",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_02",
+    "cluster_name": "Psychological / Melodramatic Obsession",
+    "question": "Distinguish Psychological / Melodramatic Obsession by key marker: Pivots on deep mental fragmentation, unconventional attachment styles, intense p",
+    "difficulty": "hard",
+    "example_films": [
+      "3",
+      "Priyanka",
+      "Ispade Rajavum Idhaya Raniyum"
+    ]
+  },
+  {
+    "question_id": "DISC_0222",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_03",
+    "cluster_name": "Musical / Artistic Love Triangle",
+    "question": "Which Tamil cluster is: Driven entirely by shared creative pursuits, anonymous devotion, sibling sacrifices, and heavy focus",
+    "difficulty": "medium",
+    "example_films": [
+      "Minsara Kanavu",
+      "Duet"
+    ]
+  },
+  {
+    "question_id": "DISC_0223",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_03",
+    "cluster_name": "Musical / Artistic Love Triangle",
+    "question": "Musical / Artistic Love Triangle films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Minsara Kanavu",
+      "Duet"
+    ]
+  },
+  {
+    "question_id": "DISC_0224",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_03",
+    "cluster_name": "Musical / Artistic Love Triangle",
+    "question": "Distinguish Musical / Artistic Love Triangle by key marker: Driven entirely by shared creative pursuits, anonymous devotion, sibling sacrifi",
+    "difficulty": "hard",
+    "example_films": [
+      "Minsara Kanavu",
+      "Duet",
+      "En Swasa Kaatre"
+    ]
+  },
+  {
+    "question_id": "DISC_0225",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_04",
+    "cluster_name": "Urban / Elite Multi-Perspective Romance",
+    "question": "Which Tamil cluster is: Set within upscale city layers; deals with fast-paced youth lifestyle milestones, casual friction, a",
+    "difficulty": "medium",
+    "example_films": [
+      "Kandukondain Kandukondain",
+      "Vinnaithaandi Varuvaayaa"
+    ]
+  },
+  {
+    "question_id": "DISC_0226",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_04",
+    "cluster_name": "Urban / Elite Multi-Perspective Romance",
+    "question": "Urban / Elite Multi-Perspective Romance films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kandukondain Kandukondain",
+      "Vinnaithaandi Varuvaayaa"
+    ]
+  },
+  {
+    "question_id": "DISC_0227",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_04",
+    "cluster_name": "Urban / Elite Multi-Perspective Romance",
+    "question": "Distinguish Urban / Elite Multi-Perspective Romance by key marker: Set within upscale city layers; deals with fast-paced youth lifestyle milestones",
+    "difficulty": "hard",
+    "example_films": [
+      "Kandukondain Kandukondain",
+      "Vinnaithaandi Varuvaayaa",
+      "Kaadhalar Dhinam"
+    ]
+  },
+  {
+    "question_id": "DISC_0228",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_05",
+    "cluster_name": "Commercial Masala / Screwball Romance",
+    "question": "Which Tamil cluster is: Blends high-camp comedic subplots, mock active deceptions, and situational rescue stunts inside the ",
+    "difficulty": "medium",
+    "example_films": [
+      "Kaadhal Mannan",
+      "Jeans"
+    ]
+  },
+  {
+    "question_id": "DISC_0229",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_05",
+    "cluster_name": "Commercial Masala / Screwball Romance",
+    "question": "Commercial Masala / Screwball Romance films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kaadhal Mannan",
+      "Jeans"
+    ]
+  },
+  {
+    "question_id": "DISC_0230",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_05",
+    "cluster_name": "Commercial Masala / Screwball Romance",
+    "question": "Distinguish Commercial Masala / Screwball Romance by key marker: Blends high-camp comedic subplots, mock active deceptions, and situational rescu",
+    "difficulty": "hard",
+    "example_films": [
+      "Kaadhal Mannan",
+      "Jeans",
+      "Alli Arjuna"
+    ]
+  },
+  {
+    "question_id": "DISC_0231",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_06",
+    "cluster_name": "Sacrificial / Altruistic Romance",
+    "question": "Which Tamil cluster is: Protagonist actively sacrifices personal romantic desires to repair wider family estrangements or br",
+    "difficulty": "medium",
+    "example_films": [
+      "Yaaradi Nee Mohini",
+      "Ninaivirukkum Varai"
+    ]
+  },
+  {
+    "question_id": "DISC_0232",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_06",
+    "cluster_name": "Sacrificial / Altruistic Romance",
+    "question": "Sacrificial / Altruistic Romance films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Yaaradi Nee Mohini",
+      "Ninaivirukkum Varai"
+    ]
+  },
+  {
+    "question_id": "DISC_0233",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_06",
+    "cluster_name": "Sacrificial / Altruistic Romance",
+    "question": "Distinguish Sacrificial / Altruistic Romance by key marker: Protagonist actively sacrifices personal romantic desires to repair wider family",
+    "difficulty": "hard",
+    "example_films": [
+      "Yaaradi Nee Mohini",
+      "Ninaivirukkum Varai",
+      "Poove Unakkaga"
+    ]
+  },
+  {
+    "question_id": "DISC_0234",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_07",
+    "cluster_name": "Grounded Campus / Friends-to-Lovers Arc",
+    "question": "Which Tamil cluster is: Delineates deep coming-of-age realities, academic transitions, unexpressed adolescent longing, and s",
+    "difficulty": "medium",
+    "example_films": [
+      "96",
+      "Mounam Pesiyadhe"
+    ]
+  },
+  {
+    "question_id": "DISC_0235",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_07",
+    "cluster_name": "Grounded Campus / Friends-to-Lovers Arc",
+    "question": "Grounded Campus / Friends-to-Lovers Arc films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "96",
+      "Mounam Pesiyadhe"
+    ]
+  },
+  {
+    "question_id": "DISC_0236",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_07",
+    "cluster_name": "Grounded Campus / Friends-to-Lovers Arc",
+    "question": "Distinguish Grounded Campus / Friends-to-Lovers Arc by key marker: Delineates deep coming-of-age realities, academic transitions, unexpressed adole",
+    "difficulty": "hard",
+    "example_films": [
+      "96",
+      "Mounam Pesiyadhe",
+      "7G Rainbow Colony"
+    ]
+  },
+  {
+    "question_id": "DISC_0237",
+    "question_type": "cluster_identification",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_08",
+    "cluster_name": "Post-Marital Realistic Friction",
+    "question": "Which Tamil cluster is: Traces realistic domestic struggles following an elopement, corporate lifestyle workloads, communica",
+    "difficulty": "medium",
+    "example_films": [
+      "Alaipayuthey",
+      "Sillunu Oru Kaadhal"
+    ]
+  },
+  {
+    "question_id": "DISC_0238",
+    "question_type": "attribute_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_08",
+    "cluster_name": "Post-Marital Realistic Friction",
+    "question": "Post-Marital Realistic Friction films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Alaipayuthey",
+      "Sillunu Oru Kaadhal"
+    ]
+  },
+  {
+    "question_id": "DISC_0239",
+    "question_type": "cluster_discrimination",
+    "language": "Tamil",
+    "cluster_id": "TA_ROM_08",
+    "cluster_name": "Post-Marital Realistic Friction",
+    "question": "Distinguish Post-Marital Realistic Friction by key marker: Traces realistic domestic struggles following an elopement, corporate lifestyle ",
+    "difficulty": "hard",
+    "example_films": [
+      "Alaipayuthey",
+      "Sillunu Oru Kaadhal",
+      "Anbe Aaruyire"
+    ]
+  },
+  {
+    "question_id": "DISC_0240",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_01",
+    "cluster_name": "Mass Hero Blockbuster",
+    "question": "Which Telugu cluster is: Larger-than-life commercial star vehicle engineered around family protection, heavy punchlines, and ",
+    "difficulty": "medium",
+    "example_films": [
+      "Jalsa",
+      "Bunny"
+    ]
+  },
+  {
+    "question_id": "DISC_0241",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_01",
+    "cluster_name": "Mass Hero Blockbuster",
+    "question": "Mass Hero Blockbuster films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Jalsa",
+      "Bunny"
+    ]
+  },
+  {
+    "question_id": "DISC_0242",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_01",
+    "cluster_name": "Mass Hero Blockbuster",
+    "question": "Distinguish Mass Hero Blockbuster by key marker: Larger-than-life commercial star vehicle engineered around family protection, he",
+    "difficulty": "hard",
+    "example_films": [
+      "Jalsa",
+      "Bunny",
+      "King"
+    ]
+  },
+  {
+    "question_id": "DISC_0243",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_02",
+    "cluster_name": "Cop/Police Procedural",
+    "question": "Which Telugu cluster is: Protagonist operates strictly through real police uniform machinery, field tactics, and administrati",
+    "difficulty": "medium",
+    "example_films": [
+      "Pokiri",
+      "Vikramarkudu"
+    ]
+  },
+  {
+    "question_id": "DISC_0244",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_02",
+    "cluster_name": "Cop/Police Procedural",
+    "question": "Cop/Police Procedural films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Pokiri",
+      "Vikramarkudu"
+    ]
+  },
+  {
+    "question_id": "DISC_0245",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_02",
+    "cluster_name": "Cop/Police Procedural",
+    "question": "Distinguish Cop/Police Procedural by key marker: Protagonist operates strictly through real police uniform machinery, field tacti",
+    "difficulty": "hard",
+    "example_films": [
+      "Pokiri",
+      "Vikramarkudu",
+      "Lakshmi Narasimha"
+    ]
+  },
+  {
+    "question_id": "DISC_0246",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_03",
+    "cluster_name": "Faction/Rayalaseema Revenge",
+    "question": "Which Telugu cluster is: Driven by multi-generational blood feuds, land oppression, regional power struggles, and brutal fami",
+    "difficulty": "medium",
+    "example_films": [
+      "Simhadri",
+      "Chatrapathi"
+    ]
+  },
+  {
+    "question_id": "DISC_0247",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_03",
+    "cluster_name": "Faction/Rayalaseema Revenge",
+    "question": "Faction/Rayalaseema Revenge films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Simhadri",
+      "Chatrapathi"
+    ]
+  },
+  {
+    "question_id": "DISC_0248",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_03",
+    "cluster_name": "Faction/Rayalaseema Revenge",
+    "question": "Distinguish Faction/Rayalaseema Revenge by key marker: Driven by multi-generational blood feuds, land oppression, regional power strugg",
+    "difficulty": "hard",
+    "example_films": [
+      "Simhadri",
+      "Chatrapathi",
+      "Mass"
+    ]
+  },
+  {
+    "question_id": "DISC_0249",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_04",
+    "cluster_name": "Nationalist/Counter-Terrorism",
+    "question": "Which Telugu cluster is: Narrative moves directly through military units, state intelligence cells, cross-border infiltration",
+    "difficulty": "medium",
+    "example_films": [
+      "Khadgam",
+      "Jai"
+    ]
+  },
+  {
+    "question_id": "DISC_0250",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_04",
+    "cluster_name": "Nationalist/Counter-Terrorism",
+    "question": "Nationalist/Counter-Terrorism films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Khadgam",
+      "Jai"
+    ]
+  },
+  {
+    "question_id": "DISC_0251",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_04",
+    "cluster_name": "Nationalist/Counter-Terrorism",
+    "question": "Distinguish Nationalist/Counter-Terrorism by key marker: Narrative moves directly through military units, state intelligence cells, cross",
+    "difficulty": "hard",
+    "example_films": [
+      "Khadgam",
+      "Jai",
+      "Vijayendra Varma"
+    ]
+  },
+  {
+    "question_id": "DISC_0252",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_05",
+    "cluster_name": "Vigilante/Systemic Cleanse",
+    "question": "Which Telugu cluster is: Protagonist steps outside regular administrative loops or single-handedly exploits state rules to sy",
+    "difficulty": "medium",
+    "example_films": [
+      "Sainikudu",
+      "Oke Okkadu"
+    ]
+  },
+  {
+    "question_id": "DISC_0253",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_05",
+    "cluster_name": "Vigilante/Systemic Cleanse",
+    "question": "Vigilante/Systemic Cleanse films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Sainikudu",
+      "Oke Okkadu"
+    ]
+  },
+  {
+    "question_id": "DISC_0254",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_05",
+    "cluster_name": "Vigilante/Systemic Cleanse",
+    "question": "Distinguish Vigilante/Systemic Cleanse by key marker: Protagonist steps outside regular administrative loops or single-handedly exploi",
+    "difficulty": "hard",
+    "example_films": [
+      "Sainikudu",
+      "Oke Okkadu",
+      "Tagore"
+    ]
+  },
+  {
+    "question_id": "DISC_0255",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_06",
+    "cluster_name": "Romantic-Action Hybrid",
+    "question": "Which Telugu cluster is: Action beats and structural conflicts are triggered entirely by romantic rivalries, star-crossed com",
+    "difficulty": "medium",
+    "example_films": [
+      "Okkadu",
+      "Arya"
+    ]
+  },
+  {
+    "question_id": "DISC_0256",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_06",
+    "cluster_name": "Romantic-Action Hybrid",
+    "question": "Romantic-Action Hybrid films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Okkadu",
+      "Arya"
+    ]
+  },
+  {
+    "question_id": "DISC_0257",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_06",
+    "cluster_name": "Romantic-Action Hybrid",
+    "question": "Distinguish Romantic-Action Hybrid by key marker: Action beats and structural conflicts are triggered entirely by romantic rivalri",
+    "difficulty": "hard",
+    "example_films": [
+      "Okkadu",
+      "Arya",
+      "Varsham"
+    ]
+  },
+  {
+    "question_id": "DISC_0258",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_07",
+    "cluster_name": "Campus/Youth Rebellion Action",
+    "question": "Which Telugu cluster is: Set within student ecosystems, mapping academic redemptions, student gang rivalries, or youth standi",
+    "difficulty": "medium",
+    "example_films": [
+      "Student No. 1",
+      "Idiot"
+    ]
+  },
+  {
+    "question_id": "DISC_0259",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_07",
+    "cluster_name": "Campus/Youth Rebellion Action",
+    "question": "Campus/Youth Rebellion Action films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Student No. 1",
+      "Idiot"
+    ]
+  },
+  {
+    "question_id": "DISC_0260",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_07",
+    "cluster_name": "Campus/Youth Rebellion Action",
+    "question": "Distinguish Campus/Youth Rebellion Action by key marker: Set within student ecosystems, mapping academic redemptions, student gang rivalr",
+    "difficulty": "hard",
+    "example_films": [
+      "Student No. 1",
+      "Idiot",
+      "Munna"
+    ]
+  },
+  {
+    "question_id": "DISC_0261",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_08",
+    "cluster_name": "Socio-Fantasy/Supernatural Action",
+    "question": "Which Telugu cluster is: Features high-concept world-building anchored on divine intervention, regional lore, generational cu",
+    "difficulty": "medium",
+    "example_films": [
+      "Magadheera",
+      "Yamadonga"
+    ]
+  },
+  {
+    "question_id": "DISC_0262",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_08",
+    "cluster_name": "Socio-Fantasy/Supernatural Action",
+    "question": "Socio-Fantasy/Supernatural Action films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Magadheera",
+      "Yamadonga"
+    ]
+  },
+  {
+    "question_id": "DISC_0263",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_08",
+    "cluster_name": "Socio-Fantasy/Supernatural Action",
+    "question": "Distinguish Socio-Fantasy/Supernatural Action by key marker: Features high-concept world-building anchored on divine intervention, regional l",
+    "difficulty": "hard",
+    "example_films": [
+      "Magadheera",
+      "Yamadonga",
+      "Murari"
+    ]
+  },
+  {
+    "question_id": "DISC_0264",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_09",
+    "cluster_name": "Slick Heist/Con Thriller",
+    "question": "Which Telugu cluster is: Maps sophisticated robbery blueprints, train journeys, deceptive traps, security system cracking, or",
+    "difficulty": "medium",
+    "example_films": [
+      "Athadu",
+      "Super"
+    ]
+  },
+  {
+    "question_id": "DISC_0265",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_09",
+    "cluster_name": "Slick Heist/Con Thriller",
+    "question": "Slick Heist/Con Thriller films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Athadu",
+      "Super"
+    ]
+  },
+  {
+    "question_id": "DISC_0266",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_00_ACT_09",
+    "cluster_name": "Slick Heist/Con Thriller",
+    "question": "Distinguish Slick Heist/Con Thriller by key marker: Maps sophisticated robbery blueprints, train journeys, deceptive traps, security",
+    "difficulty": "hard",
+    "example_films": [
+      "Athadu",
+      "Super",
+      "Venky"
+    ]
+  },
+  {
+    "question_id": "DISC_0267",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_01",
+    "cluster_name": "Mass Hero Blockbuster",
+    "question": "Which Telugu cluster is: Star vehicle built specifically around stylized magnetism, signature punchlines, and explicit fan-se",
+    "difficulty": "medium",
+    "example_films": [
+      "Dookudu",
+      "Brindavanam"
+    ]
+  },
+  {
+    "question_id": "DISC_0268",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_01",
+    "cluster_name": "Mass Hero Blockbuster",
+    "question": "Mass Hero Blockbuster films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Dookudu",
+      "Brindavanam"
+    ]
+  },
+  {
+    "question_id": "DISC_0269",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_01",
+    "cluster_name": "Mass Hero Blockbuster",
+    "question": "Distinguish Mass Hero Blockbuster by key marker: Star vehicle built specifically around stylized magnetism, signature punchlines,",
+    "difficulty": "hard",
+    "example_films": [
+      "Dookudu",
+      "Brindavanam",
+      "Attarintiki Daredi"
+    ]
+  },
+  {
+    "question_id": "DISC_0270",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_02",
+    "cluster_name": "Cop/Police Action",
+    "question": "Which Telugu cluster is: Protagonist operates within institutional police forces, executing tactical investigation strategies",
+    "difficulty": "medium",
+    "example_films": [
+      "Temper",
+      "Dhruva"
+    ]
+  },
+  {
+    "question_id": "DISC_0271",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_02",
+    "cluster_name": "Cop/Police Action",
+    "question": "Cop/Police Action films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Temper",
+      "Dhruva"
+    ]
+  },
+  {
+    "question_id": "DISC_0272",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_02",
+    "cluster_name": "Cop/Police Action",
+    "question": "Distinguish Cop/Police Action by key marker: Protagonist operates within institutional police forces, executing tactical inve",
+    "difficulty": "hard",
+    "example_films": [
+      "Temper",
+      "Dhruva",
+      "Pataas"
+    ]
+  },
+  {
+    "question_id": "DISC_0273",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_03",
+    "cluster_name": "Revenge/Vendetta",
+    "question": "Which Telugu cluster is: Driven entirely by deep personal devastation, family honor, or raw regional blood feuds.",
+    "difficulty": "medium",
+    "example_films": [
+      "Rangasthalam",
+      "Mirchi"
+    ]
+  },
+  {
+    "question_id": "DISC_0274",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_03",
+    "cluster_name": "Revenge/Vendetta",
+    "question": "Revenge/Vendetta films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Rangasthalam",
+      "Mirchi"
+    ]
+  },
+  {
+    "question_id": "DISC_0275",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_03",
+    "cluster_name": "Revenge/Vendetta",
+    "question": "Distinguish Revenge/Vendetta by key marker: Driven entirely by deep personal devastation, family honor, or raw regional bloo",
+    "difficulty": "hard",
+    "example_films": [
+      "Rangasthalam",
+      "Mirchi",
+      "Aravindha Sametha Veera Raghava"
+    ]
+  },
+  {
+    "question_id": "DISC_0276",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_04",
+    "cluster_name": "Crime/Underworld",
+    "question": "Which Telugu cluster is: Plunges into local mafia territories, gang cartels, street execution, and criminal empire mechanics.",
+    "difficulty": "medium",
+    "example_films": [
+      "Businessman",
+      "Gaddalakonda Ganesh"
+    ]
+  },
+  {
+    "question_id": "DISC_0277",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_04",
+    "cluster_name": "Crime/Underworld",
+    "question": "Crime/Underworld films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Businessman",
+      "Gaddalakonda Ganesh"
+    ]
+  },
+  {
+    "question_id": "DISC_0278",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_04",
+    "cluster_name": "Crime/Underworld",
+    "question": "Distinguish Crime/Underworld by key marker: Plunges into local mafia territories, gang cartels, street execution, and crimin",
+    "difficulty": "hard",
+    "example_films": [
+      "Businessman",
+      "Gaddalakonda Ganesh",
+      "Autonagar Surya"
+    ]
+  },
+  {
+    "question_id": "DISC_0279",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_05",
+    "cluster_name": "Pan-India/Crossover",
+    "question": "Which Telugu cluster is: Visual spectacle epics engineered with cross-regional scale, heavy budgets, and high-production valu",
+    "difficulty": "medium",
+    "example_films": [
+      "Baahubali: The Beginning",
+      "Baahubali 2: The Conclusion"
+    ]
+  },
+  {
+    "question_id": "DISC_0280",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_05",
+    "cluster_name": "Pan-India/Crossover",
+    "question": "Pan-India/Crossover films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Baahubali: The Beginning",
+      "Baahubali 2: The Conclusion"
+    ]
+  },
+  {
+    "question_id": "DISC_0281",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_05",
+    "cluster_name": "Pan-India/Crossover",
+    "question": "Distinguish Pan-India/Crossover by key marker: Visual spectacle epics engineered with cross-regional scale, heavy budgets, and ",
+    "difficulty": "hard",
+    "example_films": [
+      "Baahubali: The Beginning",
+      "Baahubali 2: The Conclusion",
+      "Saaho"
+    ]
+  },
+  {
+    "question_id": "DISC_0282",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_06",
+    "cluster_name": "Vigilante Justice",
+    "question": "Which Telugu cluster is: Hero utilizes a rogue parallel setup outside the judiciary to cleanse institutional/corporate corrup",
+    "difficulty": "medium",
+    "example_films": [
+      "Bharat Ane Nenu",
+      "Srimanthudu"
+    ]
+  },
+  {
+    "question_id": "DISC_0283",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_06",
+    "cluster_name": "Vigilante Justice",
+    "question": "Vigilante Justice films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Bharat Ane Nenu",
+      "Srimanthudu"
+    ]
+  },
+  {
+    "question_id": "DISC_0284",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_06",
+    "cluster_name": "Vigilante Justice",
+    "question": "Distinguish Vigilante Justice by key marker: Hero utilizes a rogue parallel setup outside the judiciary to cleanse institutio",
+    "difficulty": "hard",
+    "example_films": [
+      "Bharat Ane Nenu",
+      "Srimanthudu",
+      "Janatha Garage"
+    ]
+  },
+  {
+    "question_id": "DISC_0285",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_07",
+    "cluster_name": "Romantic-Action Hybrid",
+    "question": "Which Telugu cluster is: Action layouts, conflicts, and stakes are strictly dictated and triggered by a central romance threa",
+    "difficulty": "medium",
+    "example_films": [
+      "Darling",
+      "Naa Nuvve"
+    ]
+  },
+  {
+    "question_id": "DISC_0286",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_07",
+    "cluster_name": "Romantic-Action Hybrid",
+    "question": "Romantic-Action Hybrid films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Darling",
+      "Naa Nuvve"
+    ]
+  },
+  {
+    "question_id": "DISC_0287",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_07",
+    "cluster_name": "Romantic-Action Hybrid",
+    "question": "Distinguish Romantic-Action Hybrid by key marker: Action layouts, conflicts, and stakes are strictly dictated and triggered by a c",
+    "difficulty": "hard",
+    "example_films": [
+      "Darling",
+      "Naa Nuvve",
+      "Badrinath"
+    ]
+  },
+  {
+    "question_id": "DISC_0288",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_08",
+    "cluster_name": "High-Octane Chase/Heist",
+    "question": "Which Telugu cluster is: High-concept plots revolving around cerebral mind-games, clever con prints, technical tasks, or chas",
+    "difficulty": "medium",
+    "example_films": [
+      "1: Nenokkadine",
+      "Julayi"
+    ]
+  },
+  {
+    "question_id": "DISC_0289",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_08",
+    "cluster_name": "High-Octane Chase/Heist",
+    "question": "High-Octane Chase/Heist films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "1: Nenokkadine",
+      "Julayi"
+    ]
+  },
+  {
+    "question_id": "DISC_0290",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_10_ACT_08",
+    "cluster_name": "High-Octane Chase/Heist",
+    "question": "Distinguish High-Octane Chase/Heist by key marker: High-concept plots revolving around cerebral mind-games, clever con prints, tech",
+    "difficulty": "hard",
+    "example_films": [
+      "1: Nenokkadine",
+      "Julayi",
+      "Nannaku Prematho"
+    ]
+  },
+  {
+    "question_id": "DISC_0291",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_01",
+    "cluster_name": "Cop/Police Procedural",
+    "question": "Which Telugu cluster is: Protagonist operates within an official law enforcement system, battling institutional bias, politic",
+    "difficulty": "medium",
+    "example_films": [
+      "Karthavyam",
+      "Ankusham"
+    ]
+  },
+  {
+    "question_id": "DISC_0292",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_01",
+    "cluster_name": "Cop/Police Procedural",
+    "question": "Cop/Police Procedural films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Karthavyam",
+      "Ankusham"
+    ]
+  },
+  {
+    "question_id": "DISC_0293",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_01",
+    "cluster_name": "Cop/Police Procedural",
+    "question": "Distinguish Cop/Police Procedural by key marker: Protagonist operates within an official law enforcement system, battling institu",
+    "difficulty": "hard",
+    "example_films": [
+      "Karthavyam",
+      "Ankusham",
+      "Golimaar"
+    ]
+  },
+  {
+    "question_id": "DISC_0294",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_02",
+    "cluster_name": "Forest/Wilderness Romantic Action",
+    "question": "Which Telugu cluster is: Set primarily within forest or rural landscapes, blending high-stakes star-crossed romance with surv",
+    "difficulty": "medium",
+    "example_films": [
+      "Bobbili Raja"
+    ]
+  },
+  {
+    "question_id": "DISC_0295",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_02",
+    "cluster_name": "Forest/Wilderness Romantic Action",
+    "question": "Distinguish Forest/Wilderness Romantic Action by key marker: Set primarily within forest or rural landscapes, blending high-stakes star-cross",
+    "difficulty": "hard",
+    "example_films": [
+      "Bobbili Raja"
+    ]
+  },
+  {
+    "question_id": "DISC_0296",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_03",
+    "cluster_name": "Vigilante/Robin Hood Justice",
+    "question": "Which Telugu cluster is: Protagonist adopts a rogue persona to single-handedly dismantle corrupt systemic cartels and redistr",
+    "difficulty": "medium",
+    "example_films": [
+      "Kondaveeti Donga",
+      "Khaidi No.786"
+    ]
+  },
+  {
+    "question_id": "DISC_0297",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_03",
+    "cluster_name": "Vigilante/Robin Hood Justice",
+    "question": "Vigilante/Robin Hood Justice films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kondaveeti Donga",
+      "Khaidi No.786"
+    ]
+  },
+  {
+    "question_id": "DISC_0298",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_03",
+    "cluster_name": "Vigilante/Robin Hood Justice",
+    "question": "Distinguish Vigilante/Robin Hood Justice by key marker: Protagonist adopts a rogue persona to single-handedly dismantle corrupt systemic",
+    "difficulty": "hard",
+    "example_films": [
+      "Kondaveeti Donga",
+      "Khaidi No.786",
+      "Raja Vikramarka"
+    ]
+  },
+  {
+    "question_id": "DISC_0299",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_04",
+    "cluster_name": "Rebellious/Socio-Political Outflow",
+    "question": "Which Telugu cluster is: Grounded narratives explicitly addressing structural exploitation, class warfare, or grassroots revo",
+    "difficulty": "medium",
+    "example_films": [
+      "Aapattbandavudu",
+      "Major Chandrakanth"
+    ]
+  },
+  {
+    "question_id": "DISC_0300",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_04",
+    "cluster_name": "Rebellious/Socio-Political Outflow",
+    "question": "Rebellious/Socio-Political Outflow films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Aapattbandavudu",
+      "Major Chandrakanth"
+    ]
+  },
+  {
+    "question_id": "DISC_0301",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_04",
+    "cluster_name": "Rebellious/Socio-Political Outflow",
+    "question": "Distinguish Rebellious/Socio-Political Outflow by key marker: Grounded narratives explicitly addressing structural exploitation, class warfare",
+    "difficulty": "hard",
+    "example_films": [
+      "Aapattbandavudu",
+      "Major Chandrakanth",
+      "Pedarayudu"
+    ]
+  },
+  {
+    "question_id": "DISC_0302",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_05",
+    "cluster_name": "Stylized Frontier/Western Action",
+    "question": "Which Telugu cluster is: Incorporates stylized horse-chase mechanics, bounty hunts, and cowboy/frontier iconography tailored ",
+    "difficulty": "medium",
+    "example_films": [
+      "Kodama Simham"
+    ]
+  },
+  {
+    "question_id": "DISC_0303",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_05",
+    "cluster_name": "Stylized Frontier/Western Action",
+    "question": "Distinguish Stylized Frontier/Western Action by key marker: Incorporates stylized horse-chase mechanics, bounty hunts, and cowboy/frontier i",
+    "difficulty": "hard",
+    "example_films": [
+      "Kodama Simham"
+    ]
+  },
+  {
+    "question_id": "DISC_0304",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_06",
+    "cluster_name": "Romantic Fugitive/Class Divide",
+    "question": "Which Telugu cluster is: Action is entirely triggered by an eloping romantic couple fleeing from high-society landlords or cr",
+    "difficulty": "medium",
+    "example_films": [
+      "Bangaru Bullodu",
+      "Muddhamandaram"
+    ]
+  },
+  {
+    "question_id": "DISC_0305",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_06",
+    "cluster_name": "Romantic Fugitive/Class Divide",
+    "question": "Romantic Fugitive/Class Divide films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Bangaru Bullodu",
+      "Muddhamandaram"
+    ]
+  },
+  {
+    "question_id": "DISC_0306",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_06",
+    "cluster_name": "Romantic Fugitive/Class Divide",
+    "question": "Distinguish Romantic Fugitive/Class Divide by key marker: Action is entirely triggered by an eloping romantic couple fleeing from high-soc",
+    "difficulty": "hard",
+    "example_films": [
+      "Bangaru Bullodu",
+      "Muddhamandaram",
+      "Ramudochadu"
+    ]
+  },
+  {
+    "question_id": "DISC_0307",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_07",
+    "cluster_name": "Fantasy/Socio-Mythological Spectacle",
+    "question": "Which Telugu cluster is: Features divine intervention, magical artifacts, celestial entities descending to earth, and VFX-hea",
+    "difficulty": "medium",
+    "example_films": [
+      "Devi",
+      "Nomu"
+    ]
+  },
+  {
+    "question_id": "DISC_0308",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_07",
+    "cluster_name": "Fantasy/Socio-Mythological Spectacle",
+    "question": "Fantasy/Socio-Mythological Spectacle films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Devi",
+      "Nomu"
+    ]
+  },
+  {
+    "question_id": "DISC_0309",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_07",
+    "cluster_name": "Fantasy/Socio-Mythological Spectacle",
+    "question": "Distinguish Fantasy/Socio-Mythological Spectacle by key marker: Features divine intervention, magical artifacts, celestial entities descending t",
+    "difficulty": "hard",
+    "example_films": [
+      "Devi",
+      "Nomu",
+      "Bhairava Dweepam"
+    ]
+  },
+  {
+    "question_id": "DISC_0310",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_08",
+    "cluster_name": "Urban Neighborhood/Brotherhood Mass",
+    "question": "Which Telugu cluster is: Pivots around local neighborhood camaraderie, street justice, or family assassination setups that ac",
+    "difficulty": "medium",
+    "example_films": [
+      "Gang Leader",
+      "Mutha Mestri"
+    ]
+  },
+  {
+    "question_id": "DISC_0311",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_08",
+    "cluster_name": "Urban Neighborhood/Brotherhood Mass",
+    "question": "Urban Neighborhood/Brotherhood Mass films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Gang Leader",
+      "Mutha Mestri"
+    ]
+  },
+  {
+    "question_id": "DISC_0312",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_08",
+    "cluster_name": "Urban Neighborhood/Brotherhood Mass",
+    "question": "Distinguish Urban Neighborhood/Brotherhood Mass by key marker: Pivots around local neighborhood camaraderie, street justice, or family assassin",
+    "difficulty": "hard",
+    "example_films": [
+      "Gang Leader",
+      "Mutha Mestri",
+      "Krishna"
+    ]
+  },
+  {
+    "question_id": "DISC_0313",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_09",
+    "cluster_name": "Identity Swap/Action Comedy Masala",
+    "question": "Which Telugu cluster is: Relies entirely on lookalike deceptions, identical twins, or multi-role frameworks balancing slapsti",
+    "difficulty": "medium",
+    "example_films": [
+      "Gharana Mogudu",
+      "Hello Brother"
+    ]
+  },
+  {
+    "question_id": "DISC_0314",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_09",
+    "cluster_name": "Identity Swap/Action Comedy Masala",
+    "question": "Identity Swap/Action Comedy Masala films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Gharana Mogudu",
+      "Hello Brother"
+    ]
+  },
+  {
+    "question_id": "DISC_0315",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_09",
+    "cluster_name": "Identity Swap/Action Comedy Masala",
+    "question": "Distinguish Identity Swap/Action Comedy Masala by key marker: Relies entirely on lookalike deceptions, identical twins, or multi-role framewor",
+    "difficulty": "hard",
+    "example_films": [
+      "Gharana Mogudu",
+      "Hello Brother",
+      "Rowdy Alludu"
+    ]
+  },
+  {
+    "question_id": "DISC_0316",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_10",
+    "cluster_name": "High-Speed Chase/Slick Thriller",
+    "question": "Which Telugu cluster is: Prioritizes automotive stunt layouts, structural asset tracking, smuggling rings, and fast paced tec",
+    "difficulty": "medium",
+    "example_films": [
+      "Kshana Kshanam",
+      "Chaitanya"
+    ]
+  },
+  {
+    "question_id": "DISC_0317",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_10",
+    "cluster_name": "High-Speed Chase/Slick Thriller",
+    "question": "High-Speed Chase/Slick Thriller films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kshana Kshanam",
+      "Chaitanya"
+    ]
+  },
+  {
+    "question_id": "DISC_0318",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_10",
+    "cluster_name": "High-Speed Chase/Slick Thriller",
+    "question": "Distinguish High-Speed Chase/Slick Thriller by key marker: Prioritizes automotive stunt layouts, structural asset tracking, smuggling rings",
+    "difficulty": "hard",
+    "example_films": [
+      "Kshana Kshanam",
+      "Chaitanya",
+      "Killer"
+    ]
+  },
+  {
+    "question_id": "DISC_0319",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_11",
+    "cluster_name": "Sports/Youth Rebellion Drama",
+    "question": "Which Telugu cluster is: Pivots around academic failure, sibling dynamics, personal redemption, and structured boxing or athl",
+    "difficulty": "medium",
+    "example_films": [
+      "Thammudu"
+    ]
+  },
+  {
+    "question_id": "DISC_0320",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_90_ACT_11",
+    "cluster_name": "Sports/Youth Rebellion Drama",
+    "question": "Distinguish Sports/Youth Rebellion Drama by key marker: Pivots around academic failure, sibling dynamics, personal redemption, and struc",
+    "difficulty": "hard",
+    "example_films": [
+      "Thammudu"
+    ]
+  },
+  {
+    "question_id": "DISC_0321",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_01",
+    "cluster_name": "Screwball / Polygamous & Domestic Farce",
+    "question": "Which Telugu cluster is: Driven by chaotic domestic relationships, romantic dilemmas, multi-partner friction, or complicated ",
+    "difficulty": "medium",
+    "example_films": [
+      "Allari Mogudu",
+      "F2: Fun and Frustration"
+    ]
+  },
+  {
+    "question_id": "DISC_0322",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_01",
+    "cluster_name": "Screwball / Polygamous & Domestic Farce",
+    "question": "Screwball / Polygamous & Domestic Farce films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Allari Mogudu",
+      "F2: Fun and Frustration"
+    ]
+  },
+  {
+    "question_id": "DISC_0323",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_01",
+    "cluster_name": "Screwball / Polygamous & Domestic Farce",
+    "question": "Distinguish Screwball / Polygamous & Domestic Farce by key marker: Driven by chaotic domestic relationships, romantic dilemmas, multi-partner frict",
+    "difficulty": "hard",
+    "example_films": [
+      "Allari Mogudu",
+      "F2: Fun and Frustration",
+      "President Gari Pellam"
+    ]
+  },
+  {
+    "question_id": "DISC_0324",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_02",
+    "cluster_name": "Satirical Con / Compulsive Liar Comedy",
+    "question": "Which Telugu cluster is: Pivots around eccentric protagonists, elaborate situational lies, bet frameworks, or quick-witted pr",
+    "difficulty": "medium",
+    "example_films": [
+      "Gopala Gopala",
+      "Bhale Bhale Magadivoy"
+    ]
+  },
+  {
+    "question_id": "DISC_0325",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_02",
+    "cluster_name": "Satirical Con / Compulsive Liar Comedy",
+    "question": "Satirical Con / Compulsive Liar Comedy films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Gopala Gopala",
+      "Bhale Bhale Magadivoy"
+    ]
+  },
+  {
+    "question_id": "DISC_0326",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_02",
+    "cluster_name": "Satirical Con / Compulsive Liar Comedy",
+    "question": "Distinguish Satirical Con / Compulsive Liar Comedy by key marker: Pivots around eccentric protagonists, elaborate situational lies, bet frameworks",
+    "difficulty": "hard",
+    "example_films": [
+      "Gopala Gopala",
+      "Bhale Bhale Magadivoy",
+      "April 1 Vidudala"
+    ]
+  },
+  {
+    "question_id": "DISC_0327",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_03",
+    "cluster_name": "Slick Crime / Heist & Caper Comedy",
+    "question": "Which Telugu cluster is: Blends humor with high-stakes robbery layouts, accidental thefts, smuggler chases, or amateur con lo",
+    "difficulty": "medium",
+    "example_films": [
+      "Agent Sai Srinivasa Athreya",
+      "Govinda Govinda"
+    ]
+  },
+  {
+    "question_id": "DISC_0328",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_03",
+    "cluster_name": "Slick Crime / Heist & Caper Comedy",
+    "question": "Slick Crime / Heist & Caper Comedy films typically: has explicit action, features antagonist",
+    "difficulty": "easy",
+    "example_films": [
+      "Agent Sai Srinivasa Athreya",
+      "Govinda Govinda"
+    ]
+  },
+  {
+    "question_id": "DISC_0329",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_03",
+    "cluster_name": "Slick Crime / Heist & Caper Comedy",
+    "question": "Distinguish Slick Crime / Heist & Caper Comedy by key marker: Blends humor with high-stakes robbery layouts, accidental thefts, smuggler chase",
+    "difficulty": "hard",
+    "example_films": [
+      "Agent Sai Srinivasa Athreya",
+      "Govinda Govinda",
+      "Maryada Ramanna"
+    ]
+  },
+  {
+    "question_id": "DISC_0330",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_04",
+    "cluster_name": "High-Camp Masala / Slapstick Multi-Role",
+    "question": "Which Telugu cluster is: Features hyper-exaggerated physical gags, absurd situations (e.g., animal sidekicks), identity swaps",
+    "difficulty": "medium",
+    "example_films": [
+      "Auto Ramudu",
+      "Rajendrudu Gajendrudu"
+    ]
+  },
+  {
+    "question_id": "DISC_0331",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_04",
+    "cluster_name": "High-Camp Masala / Slapstick Multi-Role",
+    "question": "High-Camp Masala / Slapstick Multi-Role films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Auto Ramudu",
+      "Rajendrudu Gajendrudu"
+    ]
+  },
+  {
+    "question_id": "DISC_0332",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_04",
+    "cluster_name": "High-Camp Masala / Slapstick Multi-Role",
+    "question": "Distinguish High-Camp Masala / Slapstick Multi-Role by key marker: Features hyper-exaggerated physical gags, absurd situations (e.g., animal sideki",
+    "difficulty": "hard",
+    "example_films": [
+      "Auto Ramudu",
+      "Rajendrudu Gajendrudu",
+      "Allari Krishnayya"
+    ]
+  },
+  {
+    "question_id": "DISC_0333",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_05",
+    "cluster_name": "Urban Class / Witty Dialogue & Rom-Com",
+    "question": "Which Telugu cluster is: Prioritizes sophisticated urban banter, slice-of-life family bonding, and observational humor over l",
+    "difficulty": "medium",
+    "example_films": [
+      "Oopiri",
+      "Nuvvu Naaku Nachav"
+    ]
+  },
+  {
+    "question_id": "DISC_0334",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_05",
+    "cluster_name": "Urban Class / Witty Dialogue & Rom-Com",
+    "question": "Urban Class / Witty Dialogue & Rom-Com films typically: includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Oopiri",
+      "Nuvvu Naaku Nachav"
+    ]
+  },
+  {
+    "question_id": "DISC_0335",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_05",
+    "cluster_name": "Urban Class / Witty Dialogue & Rom-Com",
+    "question": "Distinguish Urban Class / Witty Dialogue & Rom-Com by key marker: Prioritizes sophisticated urban banter, slice-of-life family bonding, and observ",
+    "difficulty": "hard",
+    "example_films": [
+      "Oopiri",
+      "Nuvvu Naaku Nachav",
+      "Oka Oorilo"
+    ]
+  },
+  {
+    "question_id": "DISC_0336",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_06",
+    "cluster_name": "Horror / Supernatural Comedy",
+    "question": "Which Telugu cluster is: Blends comedic subplots with ghost hauntings, paranormal events, or ancient regional entity metrics.",
+    "difficulty": "medium",
+    "example_films": [
+      "Soggade Chinni Nayana",
+      "Ekkadiki Pothavu Chinnavada"
+    ]
+  },
+  {
+    "question_id": "DISC_0337",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_06",
+    "cluster_name": "Horror / Supernatural Comedy",
+    "question": "Horror / Supernatural Comedy films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Soggade Chinni Nayana",
+      "Ekkadiki Pothavu Chinnavada"
+    ]
+  },
+  {
+    "question_id": "DISC_0338",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_COM_06",
+    "cluster_name": "Horror / Supernatural Comedy",
+    "question": "Distinguish Horror / Supernatural Comedy by key marker: Blends comedic subplots with ghost hauntings, paranormal events, or ancient regi",
+    "difficulty": "hard",
+    "example_films": [
+      "Soggade Chinni Nayana",
+      "Ekkadiki Pothavu Chinnavada",
+      "Abhinetri"
+    ]
+  },
+  {
+    "question_id": "DISC_0339",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_01",
+    "cluster_name": "Traditional / Family-Opposition Romance",
+    "question": "Which Telugu cluster is: Courtship heavily bound by traditional rural values, where the primary barrier is ancestral ego or j",
+    "difficulty": "medium",
+    "example_films": [
+      "Nuvvostanante Nenoddantana",
+      "Manchi Rozu"
+    ]
+  },
+  {
+    "question_id": "DISC_0340",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_01",
+    "cluster_name": "Traditional / Family-Opposition Romance",
+    "question": "Traditional / Family-Opposition Romance films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Nuvvostanante Nenoddantana",
+      "Manchi Rozu"
+    ]
+  },
+  {
+    "question_id": "DISC_0341",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_01",
+    "cluster_name": "Traditional / Family-Opposition Romance",
+    "question": "Distinguish Traditional / Family-Opposition Romance by key marker: Courtship heavily bound by traditional rural values, where the primary barrier i",
+    "difficulty": "hard",
+    "example_films": [
+      "Nuvvostanante Nenoddantana",
+      "Manchi Rozu",
+      "Mukunda"
+    ]
+  },
+  {
+    "question_id": "DISC_0342",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_02",
+    "cluster_name": "Musical / Melodramatic Romance",
+    "question": "Which Telugu cluster is: Traversals of star-crossed love where musical scores and high-decibel heartbreak override physical c",
+    "difficulty": "medium",
+    "example_films": [
+      "Premalayam",
+      "Premi"
+    ]
+  },
+  {
+    "question_id": "DISC_0343",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_02",
+    "cluster_name": "Musical / Melodramatic Romance",
+    "question": "Musical / Melodramatic Romance films typically: features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Premalayam",
+      "Premi"
+    ]
+  },
+  {
+    "question_id": "DISC_0344",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_02",
+    "cluster_name": "Musical / Melodramatic Romance",
+    "question": "Distinguish Musical / Melodramatic Romance by key marker: Traversals of star-crossed love where musical scores and high-decibel heartbreak",
+    "difficulty": "hard",
+    "example_films": [
+      "Premalayam",
+      "Premi",
+      "Nee Jathaga Nenundali"
+    ]
+  },
+  {
+    "question_id": "DISC_0345",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_03",
+    "cluster_name": "Slick / High-Stakes Action-Romance",
+    "question": "Which Telugu cluster is: Romance intercepts dangerous systemic threats, state machinery, or criminal elements, leading to hig",
+    "difficulty": "medium",
+    "example_films": [
+      "Premikudu",
+      "Okka Ammayi Thappa"
+    ]
+  },
+  {
+    "question_id": "DISC_0346",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_03",
+    "cluster_name": "Slick / High-Stakes Action-Romance",
+    "question": "Slick / High-Stakes Action-Romance films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Premikudu",
+      "Okka Ammayi Thappa"
+    ]
+  },
+  {
+    "question_id": "DISC_0347",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_03",
+    "cluster_name": "Slick / High-Stakes Action-Romance",
+    "question": "Distinguish Slick / High-Stakes Action-Romance by key marker: Romance intercepts dangerous systemic threats, state machinery, or criminal elem",
+    "difficulty": "hard",
+    "example_films": [
+      "Premikudu",
+      "Okka Ammayi Thappa",
+      "Preminchukundam Raa"
+    ]
+  },
+  {
+    "question_id": "DISC_0348",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_04",
+    "cluster_name": "Festive / Joint-Family Celebration",
+    "question": "Which Telugu cluster is: Blossoms inside dynamic multi-generational households; priority lies on reconciling family bonds rat",
+    "difficulty": "medium",
+    "example_films": [
+      "A..Aa",
+      "Srirastu Subhamastu"
+    ]
+  },
+  {
+    "question_id": "DISC_0349",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_04",
+    "cluster_name": "Festive / Joint-Family Celebration",
+    "question": "Festive / Joint-Family Celebration films typically: has explicit action, features antagonist, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "A..Aa",
+      "Srirastu Subhamastu"
+    ]
+  },
+  {
+    "question_id": "DISC_0350",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_04",
+    "cluster_name": "Festive / Joint-Family Celebration",
+    "question": "Distinguish Festive / Joint-Family Celebration by key marker: Blossoms inside dynamic multi-generational households; priority lies on reconcil",
+    "difficulty": "hard",
+    "example_films": [
+      "A..Aa",
+      "Srirastu Subhamastu",
+      "Pelli Sandadi"
+    ]
+  },
+  {
+    "question_id": "DISC_0351",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_05",
+    "cluster_name": "Screwball Comedy / Deception Romance",
+    "question": "Which Telugu cluster is: Driven by mistaken identity, complex situational lies, fake engagements, and high-tempo comedic subp",
+    "difficulty": "medium",
+    "example_films": [
+      "Geetha Govindam",
+      "Naa Istam"
+    ]
+  },
+  {
+    "question_id": "DISC_0352",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_05",
+    "cluster_name": "Screwball Comedy / Deception Romance",
+    "question": "Screwball Comedy / Deception Romance films typically: has explicit action, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Geetha Govindam",
+      "Naa Istam"
+    ]
+  },
+  {
+    "question_id": "DISC_0353",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_05",
+    "cluster_name": "Screwball Comedy / Deception Romance",
+    "question": "Distinguish Screwball Comedy / Deception Romance by key marker: Driven by mistaken identity, complex situational lies, fake engagements, and hig",
+    "difficulty": "hard",
+    "example_films": [
+      "Geetha Govindam",
+      "Naa Istam",
+      "Manmadhudu 2"
+    ]
+  },
+  {
+    "question_id": "DISC_0354",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_06",
+    "cluster_name": "Grounded coming-of-age / Angst Romance",
+    "question": "Which Telugu cluster is: Pivots on individual growth, internal emotional hesitations, silent adoration, and realistic youth m",
+    "difficulty": "medium",
+    "example_films": [
+      "Kushi",
+      "Bommarillu"
+    ]
+  },
+  {
+    "question_id": "DISC_0355",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_06",
+    "cluster_name": "Grounded coming-of-age / Angst Romance",
+    "question": "Grounded coming-of-age / Angst Romance films typically: has explicit action, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Kushi",
+      "Bommarillu"
+    ]
+  },
+  {
+    "question_id": "DISC_0356",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_06",
+    "cluster_name": "Grounded coming-of-age / Angst Romance",
+    "question": "Distinguish Grounded coming-of-age / Angst Romance by key marker: Pivots on individual growth, internal emotional hesitations, silent adoration, a",
+    "difficulty": "hard",
+    "example_films": [
+      "Kushi",
+      "Bommarillu",
+      "Fidaa"
+    ]
+  },
+  {
+    "question_id": "DISC_0357",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_07",
+    "cluster_name": "Friends-to-Lovers Arc",
+    "question": "Which Telugu cluster is: Charts a prolonged history of platonic attachment, localized college transitions, and the friction o",
+    "difficulty": "medium",
+    "example_films": [
+      "Nuvve Kavali",
+      "Vunnadhi Okate Zindagi"
+    ]
+  },
+  {
+    "question_id": "DISC_0358",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_07",
+    "cluster_name": "Friends-to-Lovers Arc",
+    "question": "Friends-to-Lovers Arc films typically: has explicit action, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Nuvve Kavali",
+      "Vunnadhi Okate Zindagi"
+    ]
+  },
+  {
+    "question_id": "DISC_0359",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_07",
+    "cluster_name": "Friends-to-Lovers Arc",
+    "question": "Distinguish Friends-to-Lovers Arc by key marker: Charts a prolonged history of platonic attachment, localized college transitions",
+    "difficulty": "hard",
+    "example_films": [
+      "Nuvve Kavali",
+      "Vunnadhi Okate Zindagi",
+      "Nuvvakosam"
+    ]
+  },
+  {
+    "question_id": "DISC_0360",
+    "question_type": "cluster_identification",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_08",
+    "cluster_name": "Urban / Corporate Workplace Romance",
+    "question": "Which Telugu cluster is: Pivots on modern city landscapes, professional environments, witty gender friction, and sleek stylis",
+    "difficulty": "medium",
+    "example_films": [
+      "Manmadhudu",
+      "Pelli Choopulu"
+    ]
+  },
+  {
+    "question_id": "DISC_0361",
+    "question_type": "attribute_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_08",
+    "cluster_name": "Urban / Corporate Workplace Romance",
+    "question": "Urban / Corporate Workplace Romance films typically: has explicit action, includes musical sequences",
+    "difficulty": "easy",
+    "example_films": [
+      "Manmadhudu",
+      "Pelli Choopulu"
+    ]
+  },
+  {
+    "question_id": "DISC_0362",
+    "question_type": "cluster_discrimination",
+    "language": "Telugu",
+    "cluster_id": "TE_ROM_08",
+    "cluster_name": "Urban / Corporate Workplace Romance",
+    "question": "Distinguish Urban / Corporate Workplace Romance by key marker: Pivots on modern city landscapes, professional environments, witty gender fricti",
+    "difficulty": "hard",
+    "example_films": [
+      "Manmadhudu",
+      "Pelli Choopulu",
+      "Mr. Majnu"
+    ]
+  }
+]

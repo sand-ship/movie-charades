@@ -11,6 +11,7 @@ from questions import (QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTI
                        GENRE_QUESTION_IDS, ENDING_QUESTION_IDS, SETTING_QUESTION_IDS, VILLAIN_QUESTION_IDS)
 import questions  # Import module to access QUESTIONS at runtime (for dynamic actor/director Qs)
 from reasoning import CotReasoner
+from cluster_discrimination import get_discriminator
 
 # Load engine hints for adaptive questioning strategy
 try:
@@ -472,6 +473,31 @@ class GameEngine:
             if subs:
                 return max(subs, key=lambda q: self._information_gain(cands, q))
 
+        # CLUSTER DISCRIMINATION: Inject when candidates cluster in same narrative type
+        # This catches stumper patterns (multiple similar films not yet differentiated)
+        if 2 <= len(cands) <= 20:
+            discriminator = get_discriminator()
+            candidate_clusters = discriminator.get_candidate_clusters(cands)
+
+            # If all candidates belong to one cluster, inject discrimination
+            if len(candidate_clusters) == 1 and len(candidate_clusters) > 0:
+                disc_qs = discriminator.get_cluster_discrimination_questions(cands, asked)
+                if disc_qs:
+                    # Convert discrimination question JSON to Question-like object
+                    disc_q = disc_qs[0]  # Pick first discrimination question
+                    self._log_question_reasoning(session, None,
+                        f"cluster discrimination (all {len(cands)} candidates in {disc_q['cluster_name']})")
+                    # Return a synthetic question object for the discrimination question
+                    # This will be handled in main.py with special logic
+                    synthetic_q = type('Q', (), {
+                        'id': disc_q['question_id'],
+                        'text': disc_q['question'],
+                        'cluster_based': True,
+                        'cluster_id': disc_q['cluster_id'],
+                        'cluster_name': disc_q['cluster_name']
+                    })()
+                    return synthetic_q
+
         # Endgame: once pool is small, exhaust soft tropes first — they describe
         # the film's personality better than a name ever could.
         if len(cands) <= ENDGAME_POOL:
@@ -827,6 +853,11 @@ class GameEngine:
             })
         session.last_guesses = result
         return result
+
+    def analyze_stumper(self, session: Session, stumped_title: str) -> dict:
+        """Analyze why a stumper occurred and what differentiation was missed."""
+        discriminator = get_discriminator()
+        return discriminator.analyze_stumper(stumped_title, session.candidates, session.last_guesses)
 
     def _fit(self, movie: dict, session: Session) -> tuple[int, int]:
         """(agreements, answered) over substantive yes/no/unsure answers — excludes

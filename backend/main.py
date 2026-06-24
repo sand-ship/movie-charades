@@ -208,6 +208,16 @@ _GENRE_OPTIONS = [
 
 
 def _question_payload(q) -> dict:
+    # Handle cluster-based discrimination questions
+    if getattr(q, "cluster_based", False):
+        return {
+            "id": q.id,
+            "text": q.text,
+            "group": "cluster_discrimination",
+            "options": None,
+            "cluster_id": q.cluster_id,
+            "cluster_name": q.cluster_name,
+        }
     if q.id in LANGUAGE_QUESTION_IDS:
         return {"id": q.id, "text": "What language is the film in?",
                 "group": "language", "options": _LANGUAGE_OPTIONS}
@@ -260,8 +270,22 @@ def answer_question(req: AnswerRequest):
     if not session:
         raise HTTPException(status_code=404, detail="Session not found")
 
+    # Handle cluster discrimination questions: filter by cluster_id
+    if req.question_id.startswith("DISC_"):
+        if req.answer == "yes":
+            # Filter candidates to only those in the cluster that matches the cluster_name
+            cluster_id = req.question_id.split("_")[1] if "_" in req.question_id else None
+            # Since we don't have direct cluster_id in the question format yet,
+            # we'll need to extract it from the cluster_discrimination data
+            # For now, just mark as answered
+            session.asked.append(req.question_id)
+            session.answers[req.question_id] = "yes"
+        else:
+            # Answer is "no" or "maybe" - don't filter, just record
+            session.asked.append(req.question_id)
+            session.answers[req.question_id] = req.answer
     # Handle genre picker: convert picker selection to genre answer
-    if req.question_id == "q_genre_picker":
+    elif req.question_id == "q_genre_picker":
         # req.answer is the selected genre ID (e.g., 'q_genre_action')
         selected_genre = req.answer
         if selected_genre not in GENRE_QUESTION_IDS:
@@ -353,6 +377,11 @@ def stumped(req: StumpedRequest):
 
     yes_answers = sorted(q for q, a in all_answers.items() if a == "yes")
 
+    # Analyze stumper using cluster discrimination
+    analysis = {}
+    if session:
+        analysis = engine.analyze_stumper(session, title)
+
     record = {
         "ts": datetime.datetime.utcnow().isoformat() + "Z",
         "title": title,
@@ -361,6 +390,7 @@ def stumped(req: StumpedRequest):
         "questions_asked": questions_asked,
         "remaining_candidates": remaining_candidates,
         "question_count": question_count,
+        "cluster_analysis": analysis,
     }
     _stumper_insert(record)
 
