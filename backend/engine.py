@@ -296,6 +296,43 @@ class GameEngine:
 
         # If genre-aware block found nothing, fall through to other questions (don't return None)
 
+        # SUB-GENRE ROUTING: Once a genre is confirmed, qualify with other genres
+        # This establishes the genre blend (romance+action, romance+drama, etc.)
+        confirmed_genres = set()
+        for qid in GENRE_QUESTION_IDS:
+            if session.answers.get(qid) == "yes":
+                # Map q_genre_romance → 'romance', q_genre_action → 'action', etc.
+                genre = qid.replace("q_genre_", "")
+                confirmed_genres.add(genre)
+
+        if confirmed_genres:
+            # After any genre is confirmed, ask other genre questions to establish mix
+            # This helps route to appropriate comparatives
+            unasked_genre_qs = [q for q in splitting
+                               if q.id in GENRE_QUESTION_IDS and q.id not in session.asked]
+            if unasked_genre_qs and len(confirmed_genres) == 1:
+                # Single genre confirmed: ask other genres to establish sub-genre mix
+                best_q = max(unasked_genre_qs, key=lambda q: self._information_gain(cands, q))
+                self._log_question_reasoning(session, best_q,
+                    f"sub-genre qualification (confirmed: {confirmed_genres})")
+                return best_q
+
+            # After multiple genres confirmed, prioritize comparatives that match the blend
+            if len(confirmed_genres) > 1 and splitting:
+                # Find comparatives applicable to the confirmed genre set
+                matched_comparatives = []
+                for q in splitting:
+                    if q.id.startswith("q_comp_"):
+                        # Check if question's genres overlap with confirmed genres
+                        if q.genres is None or (confirmed_genres & q.genres):
+                            matched_comparatives.append(q)
+
+                if matched_comparatives:
+                    best_q = max(matched_comparatives, key=lambda q: self._information_gain(cands, q))
+                    self._log_question_reasoning(session, best_q,
+                        f"comparative for genre blend {confirmed_genres}")
+                    return best_q
+
         # DYNAMIC ACTOR/DIRECTOR GATING: Uses strategic analysis, not fixed Q-numbers
         non_anchor_qs = [qid for qid in session.asked
                          if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS]
