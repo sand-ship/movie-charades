@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Lakshya",
+    "year": 2004,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_01",
+    "cluster_name": "Military Career/Institutional Action",
+    "cluster_differentiation_key": "Focuses on military institutions, officer career progression, procedural military ops, institutional hierarchy."
+  },
+  {
+    "title": "Khuda Gawah",
+    "year": 1992,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_01",
+    "cluster_name": "Military Career/Institutional Action",
+    "cluster_differentiation_key": "Focuses on military institutions, officer career progression, procedural military ops, institutional hierarchy."
+  },
+  {
+    "title": "Diljale",
+    "year": 1996,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_01",
+    "cluster_name": "Military Career/Institutional Action",
+    "cluster_differentiation_key": "Focuses on military institutions, officer career progression, procedural military ops, institutional hierarchy."
+  },
+  {
+    "title": "Tahalka",
+    "year": 1992,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_01",
+    "cluster_name": "Military Career/Institutional Action",
+    "cluster_differentiation_key": "Focuses on military institutions, officer career progression, procedural military ops, institutional hierarchy."
+  },
+  {
+    "title": "Vishwatma",
+    "year": 1992,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_01",
+    "cluster_name": "Military Career/Institutional Action",
+    "cluster_differentiation_key": "Focuses on military institutions, officer career progression, procedural military ops, institutional hierarchy."
+  },
+  {
+    "title": "Major Saab",
+    "year": 1998,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_01",
+    "cluster_name": "Military Career/Institutional Action",
+    "cluster_differentiation_key": "Focuses on military institutions, officer career progression, procedural military ops, institutional hierarchy."
+  },
+  {
+    "title": "Border",
+    "year": 1997,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_01",
+    "cluster_name": "Military Career/Institutional Action",
+    "cluster_differentiation_key": "Focuses on military institutions, officer career progression, procedural military ops, institutional hierarchy."
+  },
+  {
+    "title": "Border",
+    "year": 1997,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_02",
+    "cluster_name": "War/Border Conflict",
+    "cluster_differentiation_key": "Large-scale warfare, cross-border conflict, military campaigns, historical/actual war events."
+  },
+  {
+    "title": "LOC: Kargil",
+    "year": null,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_02",
+    "cluster_name": "War/Border Conflict",
+    "cluster_differentiation_key": "Large-scale warfare, cross-border conflict, military campaigns, historical/actual war events."
+  },
+  {
+    "title": "Kachche Dhaage",
+    "year": 1999,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_02",
+    "cluster_name": "War/Border Conflict",
+    "cluster_differentiation_key": "Large-scale warfare, cross-border conflict, military campaigns, historical/actual war events."
+  },
+  {
+    "title": "Sainik",
+    "year": 1993,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_02",
+    "cluster_name": "War/Border Conflict",
+    "cluster_differentiation_key": "Large-scale warfare, cross-border conflict, military campaigns, historical/actual war events."
+  },
+  {
+    "title": "Soldier",
+    "year": 1998,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_02",
+    "cluster_name": "War/Border Conflict",
+    "cluster_differentiation_key": "Large-scale warfare, cross-border conflict, military campaigns, historical/actual war events."
+  },
+  {
+    "title": "Holiday: A Soldier Is Never Off Duty",
+    "year": 2014,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_03",
+    "cluster_name": "Counter-Terrorism/Special Ops",
+    "cluster_differentiation_key": "Counter-terrorism operations, intelligence agencies, tactical missions, covert operations."
+  },
+  {
+    "title": "Uri: The Surgical Strike",
+    "year": 2019,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_03",
+    "cluster_name": "Counter-Terrorism/Special Ops",
+    "cluster_differentiation_key": "Counter-terrorism operations, intelligence agencies, tactical missions, covert operations."
+  },
+  {
+    "title": "Raazi",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_03",
+    "cluster_name": "Counter-Terrorism/Special Ops",
+    "cluster_differentiation_key": "Counter-terrorism operations, intelligence agencies, tactical missions, covert operations."
+  },
+  {
+    "title": "Baby",
+    "year": 2015,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_03",
+    "cluster_name": "Counter-Terrorism/Special Ops",
+    "cluster_differentiation_key": "Counter-terrorism operations, intelligence agencies, tactical missions, covert operations."
+  },
+  {
+    "title": "Airlift",
+    "year": 2016,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_03",
+    "cluster_name": "Counter-Terrorism/Special Ops",
+    "cluster_differentiation_key": "Counter-terrorism operations, intelligence agencies, tactical missions, covert operations."
+  },
+  {
+    "title": "The Legend of Bhagat Singh",
+    "year": 2002,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_04",
+    "cluster_name": "Freedom Fighter/Historical Patriotism",
+    "cluster_differentiation_key": "Historical freedom fighters, independence struggle, pre-partition narratives, revolutionary themes."
+  },
+  {
+    "title": "Mangal Pandey: The Rising",
+    "year": 2005,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_04",
+    "cluster_name": "Freedom Fighter/Historical Patriotism",
+    "cluster_differentiation_key": "Historical freedom fighters, independence struggle, pre-partition narratives, revolutionary themes."
+  },
+  {
+    "title": "Sardar Udham",
+    "year": 2021,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_04",
+    "cluster_name": "Freedom Fighter/Historical Patriotism",
+    "cluster_differentiation_key": "Historical freedom fighters, independence struggle, pre-partition narratives, revolutionary themes."
+  },
+  {
+    "title": "Rang De Basanti",
+    "year": 2006,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_04",
+    "cluster_name": "Freedom Fighter/Historical Patriotism",
+    "cluster_differentiation_key": "Historical freedom fighters, independence struggle, pre-partition narratives, revolutionary themes."
+  },
+  {
+    "title": "Pathaan",
+    "year": 2023,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_05",
+    "cluster_name": "Spy Thriller/Espionage",
+    "cluster_differentiation_key": "International espionage, spy missions, intelligence networks, undercover operations with patriotic motive."
+  },
+  {
+    "title": "Raazi",
+    "year": 2018,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_05",
+    "cluster_name": "Spy Thriller/Espionage",
+    "cluster_differentiation_key": "International espionage, spy missions, intelligence networks, undercover operations with patriotic motive."
+  },
+  {
+    "title": "Agent Vinod",
+    "year": 2012,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_05",
+    "cluster_name": "Spy Thriller/Espionage",
+    "cluster_differentiation_key": "International espionage, spy missions, intelligence networks, undercover operations with patriotic motive."
+  },
+  {
+    "title": "Madras Cafe",
+    "year": 2013,
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_05",
+    "cluster_name": "Spy Thriller/Espionage",
+    "cluster_differentiation_key": "International espionage, spy missions, intelligence networks, undercover operations with patriotic motive."
+  }
+]

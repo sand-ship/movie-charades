@@ -4792,5 +4792,154 @@
       "Pelli Choopulu",
       "Mr. Majnu"
     ]
+  },
+  {
+    "question_id": "DISC_0363",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_01",
+    "cluster_name": "Military Career/Institutional Action",
+    "question": "Is the film primarily about a military officer's career progression and institutional challenges?",
+    "difficulty": "medium",
+    "example_films": [
+      "Lakshya",
+      "Khuda Gawah",
+      "Diljale"
+    ]
+  },
+  {
+    "question_id": "DISC_0364",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_02",
+    "cluster_name": "War/Border Conflict",
+    "question": "Does the film depict large-scale warfare or actual historical border conflicts?",
+    "difficulty": "medium",
+    "example_films": [
+      "Border",
+      "LOC: Kargil",
+      "Sainik"
+    ]
+  },
+  {
+    "question_id": "DISC_0365",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_03",
+    "cluster_name": "Counter-Terrorism/Special Ops",
+    "question": "Is the film focused on counter-terrorism or special military operations against terrorism?",
+    "difficulty": "medium",
+    "example_films": [
+      "Holiday",
+      "Uri: The Surgical Strike",
+      "Baby"
+    ]
+  },
+  {
+    "question_id": "DISC_0366",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_04",
+    "cluster_name": "Freedom Fighter/Historical Patriotism",
+    "question": "Is the film centered on historical freedom fighters or independence struggle narratives?",
+    "difficulty": "medium",
+    "example_films": [
+      "The Legend of Bhagat Singh",
+      "Mangal Pandey",
+      "Sardar Udham"
+    ]
+  },
+  {
+    "question_id": "DISC_0367",
+    "question_type": "cluster_identification",
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_05",
+    "cluster_name": "Spy Thriller/Espionage",
+    "question": "Is the film primarily a spy thriller or espionage narrative with patriotic undertones?",
+    "difficulty": "medium",
+    "example_films": [
+      "Pathaan",
+      "Raazi",
+      "Agent Vinod"
+    ]
+  },
+  {
+    "question_id": "DISC_0368",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_01",
+    "cluster_name": "Military Career/Institutional Action",
+    "question": "Does the film emphasize military training sequences and institutional hierarchy?",
+    "difficulty": "easy",
+    "example_films": [
+      "Lakshya",
+      "Khuda Gawah"
+    ]
+  },
+  {
+    "question_id": "DISC_0369",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_02",
+    "cluster_name": "War/Border Conflict",
+    "question": "Does the film feature large-scale battle sequences and military strategy?",
+    "difficulty": "easy",
+    "example_films": [
+      "Border",
+      "LOC: Kargil"
+    ]
+  },
+  {
+    "question_id": "DISC_0370",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_03",
+    "cluster_name": "Counter-Terrorism/Special Ops",
+    "question": "Does the film feature tactical operations and specialized military teams?",
+    "difficulty": "easy",
+    "example_films": [
+      "Holiday",
+      "Uri"
+    ]
+  },
+  {
+    "question_id": "DISC_0371",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_04",
+    "cluster_name": "Freedom Fighter/Historical Patriotism",
+    "question": "Is the film set in the pre-independence era or focused on revolutionary history?",
+    "difficulty": "easy",
+    "example_films": [
+      "The Legend of Bhagat Singh",
+      "Mangal Pandey"
+    ]
+  },
+  {
+    "question_id": "DISC_0372",
+    "question_type": "attribute_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_05",
+    "cluster_name": "Spy Thriller/Espionage",
+    "question": "Does the film feature undercover operations and international intrigue?",
+    "difficulty": "easy",
+    "example_films": [
+      "Pathaan",
+      "Raazi"
+    ]
+  },
+  {
+    "question_id": "DISC_0373",
+    "question_type": "cluster_discrimination",
+    "language": "Hindi",
+    "cluster_id": "HI_PAT_01",
+    "cluster_name": "Military Career/Institutional Action",
+    "question": "Distinguish Military Career films by: protagonist's personal journey vs institutional duty focus?",
+    "difficulty": "hard",
+    "example_films": [
+      "Lakshya",
+      "Khuda Gawah",
+      "Diljale"
+    ]
   }
 ]
