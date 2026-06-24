@@ -546,21 +546,21 @@ QUESTIONS.extend([
              _comparative('war', 'crime'), weight=1.0),
     Question("q_comp_social_vs_entertain", "Is it more socially conscious/message-driven than pure entertainment?",
              _comparative('social', 'comedy'), weight=1.0),
-    Question("q_comp_romance_vs_action",   "Is the romance central, or is action/conflict the main drive?",
+    Question("q_comp_romance_vs_action",   "Is it more romance-focused than action-focused?",
              _comparative('romance', 'action'), weight=0.3),
-    Question("q_comp_drama_vs_songs",      "Is it more drama-heavy or more focused on songs/entertainment?",
+    Question("q_comp_drama_vs_songs",      "Is it more drama-heavy than focused on songs/entertainment?",
              _comparative('drama', 'songs'), weight=0.3),
 
     # Additional comparative questions for high-density clusters (2020s action)
-    Question("q_comp_underdog_vs_antihero", "Is the protagonist an underdog/redemption arc, or a morally grey anti-hero?",
+    Question("q_comp_underdog_vs_antihero", "Is the protagonist more of an underdog/redemption arc than a morally grey anti-hero?",
              _comparative('underdog', 'anti_hero'), weight=1.0),
-    Question("q_comp_brotherhood_vs_solo", "Is male friendship/brotherhood central, or is the protagonist a lone anti-hero?",
+    Question("q_comp_brotherhood_vs_solo", "Is male friendship/brotherhood more central than the protagonist acting as a lone anti-hero?",
              _comparative('brotherhood', 'anti_hero'), weight=1.0),
-    Question("q_comp_true_vs_fictional",   "Is it rooted in historical/real events, or a contemporary fictional narrative?",
+    Question("q_comp_true_vs_fictional",   "Is it more rooted in historical/real events than in contemporary fictional narrative?",
              _comparative('true_story', 'crime'), weight=1.0),
     Question("q_comp_patriotic_vs_crime",  "Is patriotic/nationalist sentiment more central than criminal underworld?",
              _comparative('patriotic', 'crime'), weight=1.0),
-    Question("q_comp_gritty_vs_inspiring", "Is it gritty/dark in tone, or inspirational/uplifting?",
+    Question("q_comp_gritty_vs_inspiring", "Is it more gritty/dark in tone than inspirational/uplifting?",
              _comparative('gritty', 'underdog'), weight=0.3),
 ])
 
