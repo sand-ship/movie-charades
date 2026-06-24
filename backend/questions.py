@@ -598,6 +598,11 @@ QUESTIONS.extend([
              _comparative('true_story', 'crime'), weight=1.0, genres={'historical', 'war', 'drama', 'action', 'thriller'}),
     Question("q_comp_patriotic_vs_crime",  "Is patriotic/nationalist sentiment more central than criminal underworld?",
              _comparative('patriotic', 'crime'), weight=1.0, genres={'action', 'thriller', 'crime', 'war', 'historical'}),
+
+    # CRITICAL: High-priority discriminator for patriotic action films (prevents Type B stumpers)
+    Question("q_comp_military_vs_police",  "Is it more about military/border conflict than urban police or anti-corruption?",
+             _comparative('military', 'crime'), weight=1.5, genres={'action', 'war', 'thriller'}),
+
     Question("q_comp_gritty_vs_inspiring", "Is it more gritty/dark in tone than inspirational/uplifting?",
              _comparative('gritty', 'underdog'), weight=0.3, genres={'action', 'thriller', 'crime', 'drama'}),
 
