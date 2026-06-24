@@ -475,7 +475,7 @@ class GameEngine:
 
         # CLUSTER DISCRIMINATION: Inject when candidates cluster in same narrative type
         # This catches stumper patterns (multiple similar films not yet differentiated)
-        if 2 <= len(cands) <= 20:
+        if 2 <= len(cands) <= 50:  # Expanded range: trigger earlier (up to 50 candidates)
             discriminator = get_discriminator()
             candidate_clusters = discriminator.get_candidate_clusters(cands)
 
@@ -497,6 +497,25 @@ class GameEngine:
                         'cluster_name': disc_q['cluster_name']
                     })()
                     return synthetic_q
+
+            # Also trigger if 20-50% of candidates share same top cluster (high concentration)
+            elif len(candidate_clusters) > 1 and 20 <= len(cands) <= 50:
+                top_cluster = max(candidate_clusters.items(), key=lambda x: x[1])[0]
+                concentration = candidate_clusters[top_cluster] / len(cands)
+                if concentration >= 0.5:  # If 50%+ in one cluster
+                    disc_qs = discriminator.get_cluster_discrimination_questions(cands, asked)
+                    if disc_qs:
+                        disc_q = disc_qs[0]
+                        self._log_question_reasoning(session, None,
+                            f"cluster discrimination (high concentration: {concentration:.0%} in {disc_q['cluster_name']})")
+                        synthetic_q = type('Q', (), {
+                            'id': disc_q['question_id'],
+                            'text': disc_q['question'],
+                            'cluster_based': True,
+                            'cluster_id': disc_q['cluster_id'],
+                            'cluster_name': disc_q['cluster_name']
+                        })()
+                        return synthetic_q
 
         # Endgame: once pool is small, exhaust soft tropes first — they describe
         # the film's personality better than a name ever could.
