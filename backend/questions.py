@@ -273,7 +273,7 @@ QUESTIONS.extend([
     Question("q_double_role",    "Does the lead actor play a double role?",
              _attr_true("has_double_role"), weight=0.3),
     Question("q_college_film",   "Is a significant part of the film set in college or university?",
-             _attr_true("is_college_film"), weight=0.3),
+             _attr_true("is_college_film"), weight=1.0),  # Boosted: key discriminator for South Indian romance
     Question("q_parent_child",   "Is the parent-child relationship a central emotional thread?",
              _attr_true("has_parent_child_drama"), weight=0.3),
     Question("q_cop_or_law",     "Is the protagonist a cop, lawyer, or judge?",
@@ -536,6 +536,14 @@ QUESTIONS.extend([
              _attr_true("is_elder_statesman"), weight=0.3),
     Question("q_balakrishna_action_era", "Is it from Balakrishna's action hero era (1990-2005)?",
              _attr_true("is_action_hero_era"), weight=0.3),
+
+    # South Indian romance sub-discriminators (2000s-2010s Telugu/Tamil romance clusters)
+    Question("q_coming_of_age_romance",    "Is the protagonist's coming-of-age or self-discovery central to the love story?",
+             _attr_true("is_coming_of_age_romance"), weight=1.0),
+    Question("q_family_approval_subplot",  "Is the central conflict about family approval or parental disapproval of the romance?",
+             _attr_true("has_family_approval_conflict"), weight=1.0),
+    Question("q_friendship_to_romance",    "Does the romance develop from an existing friendship or companionship?",
+             _attr_true("is_friendship_to_romance"), weight=0.3),
 
     # Comparative/relational questions: compare two dimensions to discriminate similar films
     # These questions score BOTH dimensions (e.g., both action AND drama present) but weight differently
