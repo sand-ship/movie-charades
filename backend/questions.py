@@ -11,6 +11,7 @@ class Question:
     evaluate: Callable[[dict], bool]
     weight: float = 1.0  # 1.0 = hard signal (2×/0.1×), 0.3 = soft trope (1.3×/0.77×)
     requires: tuple[str, str] | list[tuple[str, str]] | None = None  # Single (q_id, answer) or list with OR logic
+    genres: set[str] | None = None  # Primary genres this question applies to; None = all genres
 
 
 def _attr_eq(attr: str, value: Any) -> Callable[[dict], bool]:
@@ -539,27 +540,27 @@ QUESTIONS.extend([
     # Comparative/relational questions: compare two dimensions to discriminate similar films
     # These questions score BOTH dimensions (e.g., both action AND drama present) but weight differently
     Question("q_comp_action_vs_drama",     "Is it more action-focused than drama-focused?",
-             _comparative('action', 'drama'), weight=1.0),
+             _comparative('action', 'drama'), weight=1.0, genres={'action', 'thriller', 'crime', 'war'}),
     Question("q_comp_war_vs_crime",        "Is it more about military/war conflict than criminal underworld?",
-             _comparative('war', 'crime'), weight=1.0),
+             _comparative('war', 'crime'), weight=1.0, genres={'action', 'thriller', 'crime', 'war'}),
     Question("q_comp_social_vs_entertain", "Is it more socially conscious/message-driven than pure entertainment?",
-             _comparative('social', 'comedy'), weight=1.0),
+             _comparative('social', 'comedy'), weight=1.0, genres={'drama', 'social', 'action', 'thriller'}),
     Question("q_comp_romance_vs_action",   "Is it more romance-focused than action-focused?",
-             _comparative('romance', 'action'), weight=0.3),
+             _comparative('romance', 'action'), weight=0.3),  # Universal: applies to any mix of romance+action
     Question("q_comp_drama_vs_songs",      "Is it more drama-heavy than focused on songs/entertainment?",
-             _comparative('drama', 'songs'), weight=0.3),
+             _comparative('drama', 'songs'), weight=0.3),  # Universal: applies to any genre
 
     # Additional comparative questions for high-density clusters (2020s action)
     Question("q_comp_underdog_vs_antihero", "Is the protagonist more of an underdog/redemption arc than a morally grey anti-hero?",
-             _comparative('underdog', 'anti_hero'), weight=1.0),
+             _comparative('underdog', 'anti_hero'), weight=1.0, genres={'action', 'thriller', 'crime', 'drama'}),
     Question("q_comp_brotherhood_vs_solo", "Is male friendship/brotherhood more central than the protagonist acting as a lone anti-hero?",
-             _comparative('brotherhood', 'anti_hero'), weight=1.0),
+             _comparative('brotherhood', 'anti_hero'), weight=1.0, genres={'action', 'thriller', 'crime', 'drama'}),
     Question("q_comp_true_vs_fictional",   "Is it more rooted in historical/real events than in contemporary fictional narrative?",
-             _comparative('true_story', 'crime'), weight=1.0),
+             _comparative('true_story', 'crime'), weight=1.0, genres={'historical', 'war', 'drama', 'action', 'thriller'}),
     Question("q_comp_patriotic_vs_crime",  "Is patriotic/nationalist sentiment more central than criminal underworld?",
-             _comparative('patriotic', 'crime'), weight=1.0),
+             _comparative('patriotic', 'crime'), weight=1.0, genres={'action', 'thriller', 'crime', 'war', 'historical'}),
     Question("q_comp_gritty_vs_inspiring", "Is it more gritty/dark in tone than inspirational/uplifting?",
-             _comparative('gritty', 'underdog'), weight=0.3),
+             _comparative('gritty', 'underdog'), weight=0.3, genres={'action', 'thriller', 'crime', 'drama'}),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}

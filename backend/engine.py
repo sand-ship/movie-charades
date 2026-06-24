@@ -544,6 +544,24 @@ class GameEngine:
                 self._log_question_reasoning(session, best_q, f"{priority_field} discriminator (phase {current_phase})")
                 return best_q
 
+        # Filter out genre-gated comparatives that don't match remaining candidates
+        if splitting:
+            genres_in_pool = set()
+            for film in cands:
+                pg = film.get('primary_genre')
+                if pg:
+                    genres_in_pool.add(pg)
+
+            filtered_splitting = []
+            for q in splitting:
+                # Keep questions with no genre restriction, or questions whose genres overlap with pool
+                if q.genres is None or (genres_in_pool and genres_in_pool & q.genres):
+                    filtered_splitting.append(q)
+
+            if not filtered_splitting:
+                filtered_splitting = splitting  # Fallback if all comparatives filtered out
+            splitting = filtered_splitting
+
         # Final selection: best information gain from (possibly filtered) pool
         if splitting:
             best_q = max(splitting, key=lambda q: self._information_gain(cands, q))
