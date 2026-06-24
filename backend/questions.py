@@ -659,6 +659,59 @@ QUESTIONS.extend([
              _attr_true("has_love_triangle_central"), weight=1.0),
     Question("q_betrayal_by_lover",         "Is the protagonist betrayed by their romantic partner?",
              _attr_true("has_betrayal_by_lover"), weight=1.0),
+
+    # 2000s Hindi Action sub-cluster questions (comprehensive tagging - 46 films)
+    # Patriotic/War cluster discriminators
+    Question("q_terrorism_backdrop",        "Does it involve terrorism or radicalization as backdrop?",
+             _attr_true("has_terrorism_backdrop"), weight=1.0),
+    Question("q_vigilante_justice",         "Is vigilante justice central to the plot?",
+             _attr_true("has_vigilante_justice"), weight=0.3),
+    Question("q_border_infiltration",       "Does it involve cross-border infiltration or military operations?",
+             _attr_true("has_border_infiltration"), weight=1.0),
+
+    # Heist/Action cluster discriminators
+    Question("q_heist_elaborate_plan",      "Does the plot center on a carefully planned heist or con?",
+             _attr_true("has_bank_heist"), weight=1.0),
+    Question("q_gambling_games_stakes",     "Are deadly gambling games or survival stakes central?",
+             _attr_true("has_deadly_gambling"), weight=0.3),
+    Question("q_ensemble_betrayal_twist",   "Does it feature a betrayal reveal among an ensemble cast?",
+             _attr_true("has_ensemble_betrayal"), weight=0.3),
+
+    # Crime Rise cluster discriminators
+    Question("q_twin_identity_swap",        "Does it involve twins or identity swapping?",
+             _attr_true("has_identical_twins_clash"), weight=1.0),
+    Question("q_shakespearean_tragedy",     "Does it adapt Shakespearean tragedy (Macbeth, etc.)?",
+             _attr_true("has_shakespearean_adaptation"), weight=0.3),
+    Question("q_con_artist_protagonist",    "Is the protagonist a con artist or identity faker?",
+             _attr_true("has_con_artist_identity_swap"), weight=0.3),
+
+    # Crime Investigation cluster discriminators
+    Question("q_anti_terrorism_procedural", "Is it an anti-terrorism or counter-intelligence procedural?",
+             _attr_true("has_anti_terrorist_cell"), weight=1.0),
+    Question("q_kidnapping_industry_focus", "Does it focus on the kidnapping/abduction industry?",
+             _attr_true("has_kidnapping_industry"), weight=0.3),
+    Question("q_serial_killer_investigation", "Is it centered on investigating a serial killer?",
+             _attr_true("has_hitchhiker_serial_killer"), weight=1.0),
+
+    # Psychological Thriller cluster discriminators
+    Question("q_unreliable_narrator_twist", "Does it feature an unreliable narrator or perspective?",
+             _attr_true("has_unreliable_narrator"), weight=1.0),
+    Question("q_surrealist_dystopia",       "Does it have surrealist, dystopian, or Kafkaesque elements?",
+             _attr_true("has_surrealist_dystopia"), weight=0.3),
+
+    # Personal Vendetta cluster discriminators
+    Question("q_amnesia_or_memory_loss",    "Does memory loss or amnesia drive the plot?",
+             _attr_true("has_anterograde_amnesia"), weight=1.0),
+    Question("q_one_day_authority_twist",   "Is the protagonist given authority for just one day?",
+             _attr_true("has_one_day_chief_minister"), weight=0.3),
+    Question("q_undercover_cop_masquerade", "Is an undercover cop or masquerade central to plot?",
+             _attr_true("has_undercover_cop_masquerade"), weight=1.0),
+
+    # Romance Revenge cluster discriminators
+    Question("q_romantic_frame_up",         "Is the protagonist framed or betrayed by a romantic partner?",
+             _attr_true("has_romantic_framing_setup"), weight=1.0),
+    Question("q_inter_gang_romance",        "Is romance between members of rival gangs/groups central?",
+             _attr_true("has_inter_gang_sibling_romance"), weight=0.3),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
