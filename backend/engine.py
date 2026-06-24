@@ -908,3 +908,114 @@ class GameEngine:
 
         # MIXED: use all questions
         return qs
+
+    @staticmethod
+    def _infer_intensity(film: dict) -> dict[str, float]:
+        """Infer intensity scores (0-10) from existing film fields.
+
+        Maps primary_genre, genres list, and has_* flags to dimensions:
+        - Primary genre match: 9
+        - In genres list: 6
+        - has_* flag set: bumps to at least 6-8
+        - Default (not present): 2
+
+        Used for comparative questions: "Is it more X-focused than Y?"
+        """
+        primary_str = (film.get('primary_genre') or '').lower()
+        genres = set(g.lower() for g in (film.get('genres') or []))
+
+        intensity = {
+            'action': 2.0,
+            'drama': 2.0,
+            'war': 2.0,
+            'crime': 2.0,
+            'romance': 2.0,
+            'comedy': 2.0,
+            'songs': 2.0,
+            'social': 2.0,
+            'underdog': 2.0,
+            'brotherhood': 2.0,
+            'gritty': 2.0,
+            'patriotic': 2.0,
+            'true_story': 2.0,
+            'anti_hero': 2.0,
+        }
+
+        # Check genres list (score 6)
+        if 'action' in genres or 'thriller' in genres:
+            intensity['action'] = 6.0
+        if 'drama' in genres:
+            intensity['drama'] = 6.0
+        if 'war' in genres or 'military' in genres:
+            intensity['war'] = 6.0
+        if 'crime' in genres:
+            intensity['crime'] = 6.0
+        if 'romance' in genres or 'love' in genres:
+            intensity['romance'] = 6.0
+        if 'comedy' in genres:
+            intensity['comedy'] = 6.0
+        if 'musical' in genres or 'music' in genres:
+            intensity['songs'] = 6.0
+
+        # Check primary genre (score 9)
+        if 'action' in primary_str or 'thriller' in primary_str:
+            intensity['action'] = 9.0
+        if 'drama' in primary_str:
+            intensity['drama'] = 9.0
+        if 'war' in primary_str or 'military' in primary_str:
+            intensity['war'] = 9.0
+        if 'crime' in primary_str:
+            intensity['crime'] = 9.0
+        if 'romance' in primary_str or 'love' in primary_str:
+            intensity['romance'] = 9.0
+        if 'comedy' in primary_str:
+            intensity['comedy'] = 9.0
+        if 'historical' in primary_str:
+            # Historical context suggests drama + possible conflict
+            intensity['drama'] = max(intensity['drama'], 7.0)
+            intensity['war'] = max(intensity['war'], 7.0)
+
+        # Explicit has_* flags (overrides and enhancements)
+        if film.get('has_songs'):
+            intensity['songs'] = 9.0
+        if film.get('has_social_message'):
+            intensity['social'] = 8.0
+            intensity['drama'] = max(intensity['drama'], 7.0)
+
+        # Military/war-related flags
+        if film.get('has_military_plot') or film.get('is_patriotic_sacrifice'):
+            intensity['war'] = max(intensity['war'], 7.0)
+
+        # Crime/gangster-related flags
+        if film.get('has_gangster_world') or film.get('has_criminal_underworld'):
+            intensity['crime'] = max(intensity['crime'], 8.0)
+
+        # Romance intensity
+        if film.get('has_love_triangle') or film.get('has_forbidden_love'):
+            intensity['romance'] = max(intensity['romance'], 6.0)
+
+        # Underdog/redemption arc
+        if film.get('has_underdog_story') or film.get('has_underdog'):
+            intensity['underdog'] = max(intensity['underdog'], 8.0)
+
+        # Brotherhood/camaraderie
+        if film.get('has_brothers_in_arms') or film.get('has_buddy_bond'):
+            intensity['brotherhood'] = max(intensity['brotherhood'], 7.0)
+
+        # Gritty/dark/cynical tone
+        if film.get('has_gritty_realism') or film.get('is_dark_cynical'):
+            intensity['gritty'] = max(intensity['gritty'], 8.0)
+
+        # Patriotic/nationalist themes
+        if film.get('is_patriotic_film') or film.get('has_patriotic_sacrifice'):
+            intensity['patriotic'] = max(intensity['patriotic'], 8.0)
+
+        # True story/biographical
+        if film.get('is_based_on_true_story') or film.get('is_biographical'):
+            intensity['true_story'] = max(intensity['true_story'], 9.0)
+
+        # Anti-hero protagonist
+        if film.get('is_anti_hero') or film.get('has_morally_grey_lead'):
+            intensity['anti_hero'] = max(intensity['anti_hero'], 8.0)
+
+        return intensity

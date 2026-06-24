@@ -161,6 +161,107 @@ def _attr_true(attr: str) -> Callable[[dict], bool]:
     return lambda m: m.get(attr) is True
 
 
+def _infer_intensity(film: dict) -> dict[str, float]:
+    """Infer intensity scores (0-10) from existing film fields.
+    Mirrors GameEngine._infer_intensity() for use in question evaluators."""
+    primary_str = (film.get('primary_genre') or '').lower()
+    genres = set(g.lower() for g in (film.get('genres') or []))
+
+    intensity = {
+        'action': 2.0, 'drama': 2.0, 'war': 2.0, 'crime': 2.0,
+        'romance': 2.0, 'comedy': 2.0, 'songs': 2.0, 'social': 2.0,
+        'underdog': 2.0, 'brotherhood': 2.0, 'gritty': 2.0, 'patriotic': 2.0,
+        'true_story': 2.0, 'anti_hero': 2.0,
+    }
+
+    # Check genres list
+    if 'action' in genres or 'thriller' in genres:
+        intensity['action'] = 6.0
+    if 'drama' in genres:
+        intensity['drama'] = 6.0
+    if 'war' in genres or 'military' in genres:
+        intensity['war'] = 6.0
+    if 'crime' in genres:
+        intensity['crime'] = 6.0
+    if 'romance' in genres or 'love' in genres:
+        intensity['romance'] = 6.0
+    if 'comedy' in genres:
+        intensity['comedy'] = 6.0
+    if 'musical' in genres or 'music' in genres:
+        intensity['songs'] = 6.0
+
+    # Check primary genre
+    if 'action' in primary_str or 'thriller' in primary_str:
+        intensity['action'] = 9.0
+    if 'drama' in primary_str:
+        intensity['drama'] = 9.0
+    if 'war' in primary_str or 'military' in primary_str:
+        intensity['war'] = 9.0
+    if 'crime' in primary_str:
+        intensity['crime'] = 9.0
+    if 'romance' in primary_str or 'love' in primary_str:
+        intensity['romance'] = 9.0
+    if 'comedy' in primary_str:
+        intensity['comedy'] = 9.0
+    if 'historical' in primary_str:
+        intensity['drama'] = max(intensity['drama'], 7.0)
+        intensity['war'] = max(intensity['war'], 7.0)
+
+    # Explicit flags
+    if film.get('has_songs'):
+        intensity['songs'] = 9.0
+    if film.get('has_social_message'):
+        intensity['social'] = 8.0
+        intensity['drama'] = max(intensity['drama'], 7.0)
+
+    # Military/war-related flags
+    if film.get('has_military_plot') or film.get('is_patriotic_sacrifice'):
+        intensity['war'] = max(intensity['war'], 7.0)
+
+    # Crime/gangster-related flags
+    if film.get('has_gangster_world') or film.get('has_criminal_underworld'):
+        intensity['crime'] = max(intensity['crime'], 8.0)
+
+    # Romance intensity
+    if film.get('has_love_triangle') or film.get('has_forbidden_love'):
+        intensity['romance'] = max(intensity['romance'], 6.0)
+
+    # Underdog/redemption arc
+    if film.get('has_underdog_story') or film.get('has_underdog'):
+        intensity['underdog'] = max(intensity['underdog'], 8.0)
+
+    # Brotherhood/camaraderie
+    if film.get('has_brothers_in_arms') or film.get('has_buddy_bond'):
+        intensity['brotherhood'] = max(intensity['brotherhood'], 7.0)
+
+    # Gritty/dark/cynical tone
+    if film.get('has_gritty_realism') or film.get('is_dark_cynical'):
+        intensity['gritty'] = max(intensity['gritty'], 8.0)
+
+    # Patriotic/nationalist themes
+    if film.get('is_patriotic_film') or film.get('has_patriotic_sacrifice'):
+        intensity['patriotic'] = max(intensity['patriotic'], 8.0)
+
+    # True story/biographical
+    if film.get('is_based_on_true_story') or film.get('is_biographical'):
+        intensity['true_story'] = max(intensity['true_story'], 9.0)
+
+    # Anti-hero protagonist
+    if film.get('is_anti_hero') or film.get('has_morally_grey_lead'):
+        intensity['anti_hero'] = max(intensity['anti_hero'], 8.0)
+
+    return intensity
+
+
+def _comparative(dim1: str, dim2: str) -> Callable[[dict], bool]:
+    """Create evaluator for comparative questions: "Is it more dim1 than dim2?"
+    Returns True if dim1_intensity > dim2_intensity."""
+    def f(film: dict) -> bool:
+        intensity = _infer_intensity(film)
+        return intensity.get(dim1, 2.0) > intensity.get(dim2, 2.0)
+    return f
+
+
 # Soft trope questions (weight=0.3): nudge confidence, never hard-eliminate.
 # Fields default to False/None for untagged movies so "no" answers are free.
 QUESTIONS.extend([
@@ -436,6 +537,31 @@ QUESTIONS.extend([
              _attr_true("is_elder_statesman"), weight=0.3),
     Question("q_balakrishna_action_era", "Is it from Balakrishna's action hero era (1990-2005)?",
              _attr_true("is_action_hero_era"), weight=0.3),
+
+    # Comparative/relational questions: compare two dimensions to discriminate similar films
+    # These questions score BOTH dimensions (e.g., both action AND drama present) but weight differently
+    Question("q_comp_action_vs_drama",     "Is it more action-focused than drama-focused?",
+             _comparative('action', 'drama'), weight=1.0),
+    Question("q_comp_war_vs_crime",        "Is it more about military/war conflict than criminal underworld?",
+             _comparative('war', 'crime'), weight=1.0),
+    Question("q_comp_social_vs_entertain", "Is it more socially conscious/message-driven than pure entertainment?",
+             _comparative('social', 'comedy'), weight=1.0),
+    Question("q_comp_romance_vs_action",   "Is the romance central, or is action/conflict the main drive?",
+             _comparative('romance', 'action'), weight=0.3),
+    Question("q_comp_drama_vs_songs",      "Is it more drama-heavy or more focused on songs/entertainment?",
+             _comparative('drama', 'songs'), weight=0.3),
+
+    # Additional comparative questions for high-density clusters (2020s action)
+    Question("q_comp_underdog_vs_antihero", "Is the protagonist an underdog/redemption arc, or a morally grey anti-hero?",
+             _comparative('underdog', 'anti_hero'), weight=1.0),
+    Question("q_comp_brotherhood_vs_solo", "Is male friendship/brotherhood central, or is the protagonist a lone anti-hero?",
+             _comparative('brotherhood', 'anti_hero'), weight=1.0),
+    Question("q_comp_true_vs_fictional",   "Is it rooted in historical/real events, or a contemporary fictional narrative?",
+             _comparative('true_story', 'crime'), weight=1.0),
+    Question("q_comp_patriotic_vs_crime",  "Is patriotic/nationalist sentiment more central than criminal underworld?",
+             _comparative('patriotic', 'crime'), weight=1.0),
+    Question("q_comp_gritty_vs_inspiring", "Is it gritty/dark in tone, or inspirational/uplifting?",
+             _comparative('gritty', 'underdog'), weight=0.3),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
