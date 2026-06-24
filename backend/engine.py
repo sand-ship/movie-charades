@@ -239,16 +239,15 @@ class GameEngine:
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
 
-        # STRATEGIC GATING: Only prioritize cast/crew in late game (pool < 200)
-        # This prevents actor questions from dominating early game (BREADTH strategy)
-        # while maintaining their discriminating power when pool is small (MIXED/DEPTH)
-        if pool_size < 200:
-            actor_actress_dir = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_", "q_dir_"))]
-            if actor_actress_dir:
-                splitting = actor_actress_dir
+        # NOTE: Cast/crew gating was here but removed—it was too aggressive, replacing
+        # the entire splitting pool with ONLY actors/directors when pool < 200, which
+        # removed all comparatives/tropes. Better to let the actor selection logic
+        # (lines 314+) handle prioritization naturally via can_ask_actors gating.
 
         # Genre-aware prioritization: primary → secondary → primary → generic → discriminating
+        # NOTE: Genre preference is soft — if no aligned questions exist, continue to other questions
         established_genres = self._get_established_genres(session)
+        genre_question_asked = False
         if established_genres:
             non_anchor_qs = [qid for qid in session.asked
                            if qid not in LANGUAGE_QUESTION_IDS and qid not in ERA_QUESTION_IDS]
@@ -258,6 +257,7 @@ class GameEngine:
             if q_count < 5:
                 aligned = self._get_genre_aligned_questions(established_genres, splitting)
                 if aligned:
+                    genre_question_asked = True
                     return max(aligned, key=lambda q: self._information_gain(cands, q))
 
             # Phase 2 (Q5-7): One secondary genre question (if multiple genres confirmed)
@@ -267,13 +267,17 @@ class GameEngine:
                 secondary_genres = established_genres - {primary_genre}
                 secondary_aligned = self._get_genre_aligned_questions(secondary_genres, splitting)
                 if secondary_aligned:
+                    genre_question_asked = True
                     return max(secondary_aligned, key=lambda q: self._information_gain(cands, q))
 
             # Phase 3 (Q7-10): Another primary genre question
             elif q_count < 10:
                 aligned = self._get_genre_aligned_questions(established_genres, splitting)
                 if aligned:
+                    genre_question_asked = True
                     return max(aligned, key=lambda q: self._information_gain(cands, q))
+
+        # If genre-aware block found nothing, fall through to other questions (don't return None)
 
         # DYNAMIC ACTOR/DIRECTOR GATING: Uses strategic analysis, not fixed Q-numbers
         non_anchor_qs = [qid for qid in session.asked
@@ -450,14 +454,17 @@ class GameEngine:
             self._log_question_reasoning(session, best_q, "generic plot/trope question")
             return best_q
 
+        # If we got here, non_persons was empty but splitting might have actors/directors
         # Only reach actor/director questions if generic questions exhausted AND (threshold met OR after Q15)
         # DESPERATE ESCALATION: After Q30, force actors/directors regardless of pool size
         if not can_ask_actors and not directors_enabled:
             if len(non_anchor_qs) >= 30:
                 can_ask_actors = True
                 directors_enabled = True
-            else:
-                return None
+
+        # If actors/directors are still not enabled and we have no generic questions, give up
+        if not can_ask_actors and not directors_enabled and not non_persons:
+            return None
         consecutive = 0
         for qid in session.asked[::-1]:
             if qid.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_")):
