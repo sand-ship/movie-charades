@@ -231,15 +231,6 @@ class GameEngine:
                                        "q_gangster_world", "q_suspense_thriller", "q_investigation"}
             unanswered = [q for q in unanswered if q.id not in incompatible_with_comedy]
 
-        # Romance films don't have: action-heavy, crime, gritty, patriotic, war themes
-        if session.answers.get("q_genre_romance") == "yes":
-            incompatible_with_romance = {"q_villain", "q_gangster_world", "q_suspense_thriller",
-                                        "q_investigation", "q_revenge", "q_comp_action_vs_drama",
-                                        "q_comp_gritty_vs_inspiring", "q_comp_patriotic_vs_crime",
-                                        "q_comp_war_vs_crime", "q_comp_underdog_vs_antihero",
-                                        "q_comp_brotherhood_vs_solo", "q_gritty_realism"}
-            unanswered = [q for q in unanswered if q.id not in incompatible_with_romance]
-
         # Limit music director questions (ask max 2, they're rarely discriminating)
         music_asked = sum(1 for qid in session.asked if qid.startswith("q_music_"))
         if music_asked >= 2:
