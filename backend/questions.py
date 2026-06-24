@@ -569,6 +569,14 @@ QUESTIONS.extend([
              _comparative('patriotic', 'crime'), weight=1.0, genres={'action', 'thriller', 'crime', 'war', 'historical'}),
     Question("q_comp_gritty_vs_inspiring", "Is it more gritty/dark in tone than inspirational/uplifting?",
              _comparative('gritty', 'underdog'), weight=0.3, genres={'action', 'thriller', 'crime', 'drama'}),
+
+    # Drama-specific comparatives for discriminating within drama clusters
+    Question("q_comp_family_vs_social",     "Is it more focused on family dynamics than social/political messaging?",
+             _comparative('drama', 'social'), weight=1.0, genres={'drama', 'social'}),
+    Question("q_comp_emotional_vs_realistic", "Is it more melodramatic/emotional than grounded/realistic?",
+             _comparative('drama', 'gritty'), weight=0.3, genres={'drama'}),
+    Question("q_comp_period_vs_contemporary", "Is it a period/historical drama rather than contemporary?",
+             _comparative('true_story', 'drama'), weight=1.0, genres={'drama', 'historical'}),
 ])
 
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
