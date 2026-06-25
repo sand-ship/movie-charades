@@ -11,12 +11,12 @@ These questions help the game guess your film by its main story type.
 
 ---
 
-## 2. **Lookalike Twin** 👥
-**Question:** "Does the hero use a twin or double for tricks?"
+## 2. **Secret Identity** 🦸
+**Question:** "Does the hero have a secret identity (like Superman or Spider-Man)?"
 
-**Meaning:** The hero has a twin brother or looks exactly like someone else. He uses this double identity to confuse bad guys or play tricks.
+**Meaning:** By day, the hero is a normal person. But secretly, they have another identity where they fight crime or injustice with special powers or a different persona.
 
-**Example:** Good twin is a police officer, bad twin is a criminal. They keep confusing each other.
+**Example:** A common man becomes a vigilante at night to fight corrupt officials. Or an ordinary student is secretly a superhero.
 
 ---
 
@@ -30,7 +30,7 @@ These questions help the game guess your film by its main story type.
 ---
 
 ## 4. **Frontier Western** 🤠🐴
-**Question:** "Are there horses, cowboys, or desert/western setting?"
+**Question:** "Is the setting a desert/western town with horses or outlaws?"
 
 **Meaning:** The movie looks like an old American Western movie. Has horses, deserts, bounty hunters, and gunfights.
 
@@ -39,9 +39,9 @@ These questions help the game guess your film by its main story type.
 ---
 
 ## 5. **Neighborhood Brotherhood** 👥🤝
-**Question:** "Is it about street friends fighting together?"
+**Question:** "Are a group of male friends or gang members the central unit of the story?"
 
-**Meaning:** A group of friends from the same neighborhood stick together. They fight against crime or help each other survive in dangerous streets.
+**Meaning:** A group of friends from the same neighborhood stick together. They are the main focus of the story—fighting together, supporting each other, or rising up as a crew.
 
 **Example:** Four childhood friends from a poor neighborhood become heroes to protect their street.
 
