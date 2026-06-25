@@ -374,26 +374,35 @@ class GameEngine:
         elif current_phase == 1:  # Phase 2: actress/director (no music)
             splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
-        # ACTOR SELECTION: After lead actor confirmed, ask about co-stars to narrow within filmography
+        # ACTOR SELECTION: After actor confirmed, prioritize director/genre/actress before co-stars
         if can_ask_actors:
             actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
             if actor_qs:
-                # Check if just confirmed a lead actor → prioritize co-stars next
+                # If just asked an actor, skip immediately asking another actor
+                # Instead, ask director/genre/other dimensions to narrow within that actor's filmography
                 if session.asked:
                     last_qid = session.asked[-1]
-                    last_ans = session.answers.get(last_qid)
-                    if last_qid.startswith(("q_actor_", "q_actress_")) and last_ans == "yes":
-                        # Just confirmed a lead: ask about other actors to narrow co-stars
-                        other_actors = [q for q in actor_qs if q.id != last_qid]
-                        if other_actors:
-                            ranked = sorted(other_actors, key=lambda q: self._information_gain(cands, q), reverse=True)
-                            top_n = min(3, len(ranked))
-                            best_q = random.choice(ranked[:top_n])
-                            self._log_question_reasoning(session, best_q,
-                                f"co-star after confirming {last_qid} (narrow within filmography)")
-                            return best_q
+                    if last_qid.startswith(("q_actor_", "q_actress_")):
+                        # Last was actor: try director/genre/other dimensions first
+                        non_actor = [q for q in splitting
+                                    if not q.id.startswith(("q_actor_", "q_actress_"))
+                                    and q.id not in LANGUAGE_QUESTION_IDS
+                                    and q.id not in ERA_QUESTION_IDS]
+                        if non_actor:
+                            # Prefer director to narrow filmography
+                            directors = [q for q in non_actor if q.id.startswith("q_dir_")]
+                            if directors:
+                                best = max(directors, key=lambda q: self._information_gain(cands, q))
+                                self._log_question_reasoning(session, best,
+                                    f"director after actor (narrow filmography)")
+                                return best
+                            # Then other dimensions
+                            best = max(non_actor, key=lambda q: self._information_gain(cands, q))
+                            self._log_question_reasoning(session, best,
+                                f"non-actor dimension after actor (narrow filmography)")
+                            return best
 
-                # No recent lead confirmation: ask a lead actor
+                # No recent actor question: ask a lead actor
                 ranked = sorted(actor_qs, key=lambda q: self._information_gain(cands, q), reverse=True)
                 top_n = min(3, len(ranked))
                 best_q = random.choice(ranked[:top_n])
