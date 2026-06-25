@@ -311,9 +311,9 @@
       </div>
     </div>
     <div class="btn-row">
-      <button class="btn-yes"    onclick="answer('yes')"     id="btn-yes">✅ Yes</button>
-      <button class="btn-no"     onclick="answer('no')"      id="btn-no">❌ No</button>
-      <button class="btn-unsure" onclick="answer('unsure')"  id="btn-unsure">🤔 Unsure</button>
+      <button class="btn-yes"    onclick="answer('yes', this)"     id="btn-yes">✅ Yes</button>
+      <button class="btn-no"     onclick="answer('no', this)"      id="btn-no">❌ No</button>
+      <button class="btn-unsure" onclick="answer('unsure', this)"  id="btn-unsure">🤔 Unsure</button>
     </div>
     <button class="btn-back hidden" id="back-question" onclick="goBack()">← Back · change my last answer</button>
     <p class="info" id="candidates-info"></p>
@@ -566,12 +566,14 @@
     show('question');
   }
 
-  async function answer(ans) {
+  async function answer(ans, btn) {
     setYesNoEnabled(false);
     state.userQNum++;
     // Animate button press
-    event.target.style.animation = 'none';
-    setTimeout(() => event.target.style.animation = '', 10);
+    if (btn) {
+      btn.style.animation = 'none';
+      setTimeout(() => btn.style.animation = '', 10);
+    }
     document.getElementById('q-text').innerHTML = 'Thinking<span class="dots"></span>';
 
     const res = await fetch(`${API}/game/answer`, {
