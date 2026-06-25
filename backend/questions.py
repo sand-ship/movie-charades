@@ -67,6 +67,7 @@ QUESTIONS: list[Question] = [
     Question("q_sports",    "Is it a sports film?",                             _attr_eq("is_sports_film", True)),
     Question("q_historical","Is it set in a historical period - 1947/medieval/prehistoric?",                _attr_eq("is_historical", True)),
     Question("q_horror",    "Does it have horror elements?",                    _attr_eq("is_horror", True)),
+    Question("q_time_travel", "Does the movie involve time travel or alternate timelines?", _attr_eq("has_time_travel", True), weight=1.5),
     Question("q_pan_india",  "Was it a pan-India blockbuster?",                  _attr_eq("is_pan_india_blockbuster", True)),
     Question("q_family",     "Is it a family-friendly film?",                    _attr_eq("is_family_film", True)),
     Question("q_anti_hero",      "Is the lead character a morally grey anti-hero?",  _attr_eq("is_anti_hero", True)),
