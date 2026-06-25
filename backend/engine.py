@@ -260,7 +260,7 @@ class GameEngine:
         if actor_confirmed and director_confirmed and len(cands) <= 10:
             # Few candidates left with actor+director confirmed: prioritize plot archetypes first
             archetypes = [q for q in unanswered
-                         if q.id in ("q_romantic_fugitive", "q_lookalike_twin", "q_cop_protagonist",
+                         if q.id in ("q_romantic_fugitive", "q_secret_identity", "q_cop_protagonist",
                                     "q_frontier_western", "q_neighborhood_brotherhood",
                                     "q_faction_feud", "q_divine_intervention")]
             if archetypes:
