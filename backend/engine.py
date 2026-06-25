@@ -249,6 +249,24 @@ class GameEngine:
         if music_asked >= 2:
             unanswered = [q for q in unanswered if not q.id.startswith("q_music_")]
 
+        # NARROWING STRATEGY: After actor+director confirmed, prioritize sub-tropes/plot specifics
+        actor_confirmed = any(session.answers.get(qid) == "yes"
+                             for qid in session.asked
+                             if qid.startswith(("q_actor_", "q_actress_")))
+        director_confirmed = any(session.answers.get(qid) == "yes"
+                                for qid in session.asked
+                                if qid.startswith("q_dir_"))
+
+        if actor_confirmed and director_confirmed and len(cands) <= 10:
+            # Few candidates left with actor+director confirmed: ask about plot specifics
+            plot_tropes = [q for q in unanswered
+                          if q.id in ("q_love_triangle", "q_revenge", "q_mistaken_identity",
+                                     "q_forbidden_love", "q_enemy_friend", "q_betrayal",
+                                     "q_class_conflict", "q_kidnapping", "q_duel",
+                                     "q_sacrifice_ending", "q_infidelity", "q_conman")]
+            if plot_tropes:
+                unanswered = plot_tropes  # Prioritize plot questions
+
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
 
