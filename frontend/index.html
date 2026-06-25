@@ -700,8 +700,10 @@
           posterImg.style.display = 'block';
         }
       } catch (e) {
-        // Silently fail if poster fetch fails; show without poster
+        console.error('Poster fetch error:', e);
       }
+    } else {
+      console.log('No tmdb_id for:', g.title);
     }
   }
 
