@@ -526,18 +526,6 @@ QUESTIONS.extend([
     Question("q_crossover_event",       "Does it feature a crossover event or shared universe?",
              _attr_true("has_crossover"), weight=0.3),
 
-    # Actor career phase discrimination (for prolific actors with low tag diversity)
-    Question("q_actor_early_career",    "Is it from the actor's early career phase?",
-             _attr_true("is_early_career"), weight=0.3),
-    Question("q_vijay_mass_action",     "Is it from Vijay's mass action hero phase (2006-2012)?",
-             _attr_true("is_mass_action_phase"), weight=0.3),
-    Question("q_vijay_peak",            "Is it from Vijay's peak popularity era (2012-2018)?",
-             _attr_true("is_peak_popularity"), weight=0.3),
-    Question("q_chiranjeevi_megastar",  "Is it from Chiranjeevi's megastar era (1985-1995)?",
-             _attr_true("is_megastar_era"), weight=0.3),
-    Question("q_chiranjeevi_comeback",  "Is it from Chiranjeevi's comeback phase (post-1995)?",
-             _attr_true("is_comeback_phase"), weight=0.3),
-
     # PLOT ARCHETYPE DISCRIMINATORS (for narrowing within filmography)
     Question("q_romantic_fugitive", "Do the lovers run away together from family?",
              _attr_eq("has_romantic_fugitive", True), weight=1.2),
