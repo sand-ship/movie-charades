@@ -45,6 +45,13 @@ def _actor_appears(name: str) -> Callable[[dict], bool]:
                      name in (m.get('lead_actresses') or []))
 
 
+def _actor_appears_anywhere(name: str) -> Callable[[dict], bool]:
+    """Check if actor/actress appears in film (lead or supporting)."""
+    return lambda m: (_actor_appears(name)(m) or
+                     name in (m.get('co_stars') or []) or
+                     name in (m.get('supporting_actors') or []))
+
+
 QUESTIONS: list[Question] = [
     Question("q_hindi",     "Is it a Hindi film?",                              _attr_eq("language", "Hindi")),
     Question("q_tamil",     "Is it a Tamil film?",                              _attr_eq("language", "Tamil")),
@@ -115,11 +122,10 @@ def make_star_questions(movies: list[dict]) -> list["Question"]:
     for name, n in actors.items():
         if name.strip().lower() in _SKIP:
             continue
-        # Regional threshold (8+) if we have Telugu/Tamil/Kannada films, else global (15+)
         threshold = 2  # Generate questions for any actor/actress with 2+ films
         if n >= threshold:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
-            qs.append(Question(f"q_actor_{safe}", f"Does it star {name}?", _actor_appears(name)))
+            qs.append(Question(f"q_actor_{safe}", f"Does {name} appear in it?", _actor_appears_anywhere(name)))
 
     for name, n in actresses.items():
         if name.strip().lower() in _SKIP:
@@ -127,7 +133,7 @@ def make_star_questions(movies: list[dict]) -> list["Question"]:
         threshold = 2  # Generate questions for any actor/actress with 2+ films
         if n >= threshold:
             safe = name.lower().replace(' ', '_').replace('.', '').replace("'", '')
-            qs.append(Question(f"q_actress_{safe}", f"Does it star the actress {name}?", _actor_appears(name)))
+            qs.append(Question(f"q_actress_{safe}", f"Does the actress {name} appear in it?", _actor_appears_anywhere(name)))
 
     for name, n in directors.items():
         if name.strip().lower() in _SKIP:
