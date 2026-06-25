@@ -249,7 +249,7 @@ class GameEngine:
         if music_asked >= 2:
             unanswered = [q for q in unanswered if not q.id.startswith("q_music_")]
 
-        # NARROWING STRATEGY: After actor+director confirmed, prioritize sub-tropes/plot specifics
+        # NARROWING STRATEGY: After actor+director confirmed, prioritize plot archetypes
         actor_confirmed = any(session.answers.get(qid) == "yes"
                              for qid in session.asked
                              if qid.startswith(("q_actor_", "q_actress_")))
@@ -258,14 +258,21 @@ class GameEngine:
                                 if qid.startswith("q_dir_"))
 
         if actor_confirmed and director_confirmed and len(cands) <= 10:
-            # Few candidates left with actor+director confirmed: ask about plot specifics
-            plot_tropes = [q for q in unanswered
-                          if q.id in ("q_love_triangle", "q_revenge", "q_mistaken_identity",
-                                     "q_forbidden_love", "q_enemy_friend", "q_betrayal",
-                                     "q_class_conflict", "q_kidnapping", "q_duel",
-                                     "q_sacrifice_ending", "q_infidelity", "q_conman")]
-            if plot_tropes:
-                unanswered = plot_tropes  # Prioritize plot questions
+            # Few candidates left with actor+director confirmed: prioritize plot archetypes first
+            archetypes = [q for q in unanswered
+                         if q.id in ("q_romantic_fugitive", "q_lookalike_twin", "q_cop_protagonist",
+                                    "q_frontier_western", "q_neighborhood_brotherhood",
+                                    "q_faction_feud", "q_divine_intervention")]
+            if archetypes:
+                unanswered = archetypes  # Prioritize plot archetypes
+            else:
+                # Fall back to generic plot tropes if archetypes exhausted
+                plot_tropes = [q for q in unanswered
+                              if q.id in ("q_love_triangle", "q_revenge", "q_mistaken_identity",
+                                         "q_forbidden_love", "q_enemy_friend", "q_betrayal",
+                                         "q_class_conflict")]
+                if plot_tropes:
+                    unanswered = plot_tropes
 
         splitting = [q for q in unanswered
                      if 0 < sum(1 for m in cands if q.evaluate(m)) < len(cands)]
