@@ -260,6 +260,7 @@
 
     /* ── result ── */
     .result-icon  { font-size: 4.5rem; filter: drop-shadow(0 0 20px rgba(245,197,24,0.5)); }
+    .result-poster { max-width: 180px; height: 270px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 20px rgba(229,9,20,0.4); margin: 8px 0; }
     .result-title { font-family: 'Oswald', sans-serif; font-size: 1.7rem; font-weight: 700; margin-top: 12px; }
     .result-sub   { color: var(--muted); font-size: 0.95rem; margin-top: 6px; }
 
@@ -347,6 +348,7 @@
   <div id="screen-result" class="hidden" style="width:100%;display:flex;flex-direction:column;align-items:center;gap:20px">
     <div class="card" style="display:flex;flex-direction:column;align-items:center;gap:8px">
       <div class="result-icon"  id="result-icon">🎉</div>
+      <img class="result-poster" id="result-poster" src="" alt="Movie poster" style="display:none" />
       <div class="result-title" id="result-title"></div>
       <div class="result-sub"   id="result-sub"></div>
     </div>
@@ -675,7 +677,7 @@
   }
 
   // player says it's RIGHT
-  function guessYes() {
+  async function guessYes() {
     triggerConfetti();
     const g = guessRound.list[guessRound.idx];
     sendFeedback(true, g.id);
@@ -684,6 +686,21 @@
     document.getElementById('result-icon').textContent  = '🎉';
     document.getElementById('result-title').textContent = `Got it! ${g.title}`;
     document.getElementById('result-sub').textContent   = `${cap(g.language)} · ${g.year} · ⭐ ${g.imdb_rating}`;
+
+    // Fetch poster from TMDB if tmdb_id exists
+    if (g.tmdb_id) {
+      const posterImg = document.getElementById('result-poster');
+      try {
+        const resp = await fetch(`https://api.themoviedb.org/3/movie/${g.tmdb_id}?api_key=29ac60742122554fc12f6cef99cd620d`);
+        const data = await resp.json();
+        if (data.poster_path) {
+          posterImg.src = `https://image.tmdb.org/t/p/w300${data.poster_path}`;
+          posterImg.style.display = 'block';
+        }
+      } catch (e) {
+        // Silently fail if poster fetch fails; show without poster
+      }
+    }
   }
 
   // player says it's WRONG → try the next guess, or concede
