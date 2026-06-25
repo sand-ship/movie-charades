@@ -541,8 +541,6 @@ QUESTIONS.extend([
     # PLOT ARCHETYPE DISCRIMINATORS (for narrowing within filmography)
     Question("q_romantic_fugitive", "Do the lovers run away together from family?",
              _attr_eq("has_romantic_fugitive", True), weight=1.2),
-    Question("q_lookalike_twin", "Does the plot involve the hero's twin or a look-alike character?",
-             _attr_eq("has_lookalike_twin_deception", True), weight=1.2),
     Question("q_secret_identity", "Does the hero have a secret identity (like Superman or Spider-Man)?",
              _attr_eq("has_secret_identity", True), weight=1.2),
     Question("q_cop_protagonist", "Is the hero a police officer?",
