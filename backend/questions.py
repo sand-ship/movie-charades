@@ -547,7 +547,7 @@ QUESTIONS.extend([
              _attr_eq("has_cop_protagonist", True), weight=1.2),
     Question("q_frontier_western", "Is the setting a desert/western town with horses or outlaws?",
              _attr_eq("has_frontier_elements", True), weight=1.1),
-    Question("q_neighborhood_brotherhood", "Are a group of male friends or gang members the central unit of the story?",
+    Question("q_neighborhood_brotherhood", "Is the story centered on a group of friends as a crew?",
              _attr_eq("has_neighborhood_brotherhood", True), weight=1.1),
     Question("q_faction_feud", "Is there a long family revenge or land war?",
              _attr_eq("has_faction_feud", True), weight=1.2),

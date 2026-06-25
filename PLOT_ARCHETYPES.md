@@ -38,10 +38,10 @@ These questions help the game guess your film by its main story type.
 
 ---
 
-## 5. **Neighborhood Brotherhood** 👥🤝
-**Question:** "Are a group of male friends or gang members the central unit of the story?"
+## 5. **Crew/Brotherhood** 👥🤝
+**Question:** "Is the story centered on a group of friends as a crew?"
 
-**Meaning:** A group of friends from the same neighborhood stick together. They are the main focus of the story—fighting together, supporting each other, or rising up as a crew.
+**Meaning:** A group of friends work together as a team. They are the main focus of the story—fighting together, supporting each other, and their friendship is what drives the plot.
 
 **Example:** Four childhood friends from a poor neighborhood become heroes to protect their street.
 
