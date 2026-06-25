@@ -414,14 +414,24 @@ class GameEngine:
                                     and q.id not in LANGUAGE_QUESTION_IDS
                                     and q.id not in ERA_QUESTION_IDS]
                         if non_actor:
-                            # Prefer director to narrow filmography
+                            # Prefer plot archetypes first to distinguish films by story type
+                            archetypes = [q for q in non_actor
+                                         if q.id in ("q_romantic_fugitive", "q_secret_identity", "q_cop_protagonist",
+                                                    "q_frontier_western", "q_neighborhood_brotherhood",
+                                                    "q_faction_feud", "q_divine_intervention")]
+                            if archetypes:
+                                best = max(archetypes, key=lambda q: self._information_gain(cands, q))
+                                self._log_question_reasoning(session, best,
+                                    f"plot archetype after actor (distinguish by story type)")
+                                return best
+                            # Then try director to narrow filmography
                             directors = [q for q in non_actor if q.id.startswith("q_dir_")]
                             if directors:
                                 best = max(directors, key=lambda q: self._information_gain(cands, q))
                                 self._log_question_reasoning(session, best,
                                     f"director after actor (narrow filmography)")
                                 return best
-                            # Then other dimensions
+                            # Finally other dimensions
                             best = max(non_actor, key=lambda q: self._information_gain(cands, q))
                             self._log_question_reasoning(session, best,
                                 f"non-actor dimension after actor (narrow filmography)")
