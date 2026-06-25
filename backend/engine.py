@@ -374,20 +374,32 @@ class GameEngine:
         elif current_phase == 1:  # Phase 2: actress/director (no music)
             splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
-        # ACTOR SELECTION: Pick from top 3 actors by information gain (once unlocked)
+        # ACTOR SELECTION: After lead actor confirmed, ask about co-stars to narrow within filmography
         if can_ask_actors:
-            # Only ask actor if we haven't asked one yet (avoid multiple actor Qs in a row)
-            actor_asked = any(qid.startswith(("q_actor_", "q_actress_")) for qid in session.asked)
-            if not actor_asked:
-                actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
-                if actor_qs:
-                    # Rank by information gain and pick random from top 3
-                    ranked = sorted(actor_qs, key=lambda q: self._information_gain(cands, q), reverse=True)
-                    top_n = min(3, len(ranked))
-                    best_q = random.choice(ranked[:top_n])
-                    self._log_question_reasoning(session, best_q,
-                        f"actor from top-{top_n} by information gain ({len(cands)} candidates)")
-                    return best_q
+            actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
+            if actor_qs:
+                # Check if just confirmed a lead actor → prioritize co-stars next
+                if session.asked:
+                    last_qid = session.asked[-1]
+                    last_ans = session.answers.get(last_qid)
+                    if last_qid.startswith(("q_actor_", "q_actress_")) and last_ans == "yes":
+                        # Just confirmed a lead: ask about other actors to narrow co-stars
+                        other_actors = [q for q in actor_qs if q.id != last_qid]
+                        if other_actors:
+                            ranked = sorted(other_actors, key=lambda q: self._information_gain(cands, q), reverse=True)
+                            top_n = min(3, len(ranked))
+                            best_q = random.choice(ranked[:top_n])
+                            self._log_question_reasoning(session, best_q,
+                                f"co-star after confirming {last_qid} (narrow within filmography)")
+                            return best_q
+
+                # No recent lead confirmation: ask a lead actor
+                ranked = sorted(actor_qs, key=lambda q: self._information_gain(cands, q), reverse=True)
+                top_n = min(3, len(ranked))
+                best_q = random.choice(ranked[:top_n])
+                self._log_question_reasoning(session, best_q,
+                    f"lead actor from top-{top_n} by information gain ({len(cands)} candidates)")
+                return best_q
 
 
         # After person question YES, suppress all person Qs for 1-2 turns for breathing room
