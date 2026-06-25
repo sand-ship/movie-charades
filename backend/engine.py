@@ -244,6 +244,14 @@ class GameEngine:
                                        "q_gangster_world", "q_suspense_thriller", "q_investigation"}
             unanswered = [q for q in unanswered if q.id not in incompatible_with_comedy]
 
+        # FIX #1: Suppress actor questions once one actor/actress is confirmed
+        # Once we know "Chiranjeevi", stop asking about Nagarjuna, Venkatesh, etc.
+        actor_confirmed = any(session.answers.get(qid) == "yes"
+                             for qid in session.asked
+                             if qid.startswith(("q_actor_", "q_actress_")))
+        if actor_confirmed:
+            unanswered = [q for q in unanswered if not q.id.startswith(("q_actor_", "q_actress_"))]
+
         # Limit music director questions (ask max 2, they're rarely discriminating)
         music_asked = sum(1 for qid in session.asked if qid.startswith("q_music_"))
         if music_asked >= 2:

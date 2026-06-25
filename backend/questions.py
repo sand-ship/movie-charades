@@ -273,50 +273,30 @@ def _comparative(dim1: str, dim2: str) -> Callable[[dict], bool]:
 # Soft trope questions (weight=0.3): nudge confidence, never hard-eliminate.
 # Fields default to False/None for untagged movies so "no" answers are free.
 QUESTIONS.extend([
-    Question("q_one_sided_love", "Is the love story primarily one-sided or unrequited?",
-             _attr_true("has_one_sided_love"), weight=0.3),
     Question("q_item_number",    "Does it feature a famous dance/item number?",
              _attr_true("has_item_number"), weight=0.3),
     Question("q_double_role",    "Does the lead actor play a double role?",
              _attr_true("has_double_role"), weight=0.3),
     Question("q_college_film",   "Is a significant part of the film set in college or university?",
              _attr_true("is_college_film"), weight=1.0),  # Boosted: key discriminator for South Indian romance
-    Question("q_parent_child",   "Is the parent-child relationship a central emotional thread?",
-             _attr_true("has_parent_child_drama"), weight=0.3),
-    Question("q_cop_or_law",     "Is the protagonist a cop, lawyer, or judge?",
-             _attr_true("has_police_or_law"), weight=0.3),
     Question("q_village_setting","Is the film primarily set in a village or rural area?",
              _attr_true("has_village_setting"), weight=0.3),
 
-    # Otherworldly / mythology / superpowers
-    Question("q_supernatural",  "Does it involve supernatural elements like gods, ghosts, spirits, or reincarnation?",
-             _attr_true("has_supernatural"), weight=0.3),
+    # Otherworldly / superpowers (removed mythology and supernatural as too niche)
     Question("q_superpowers",   "Does a character have superhuman or magical powers?",
              _attr_true("has_superpowers"), weight=0.3),
-    Question("q_mythology",     "Is it based on or inspired by Hindu mythology?",
-             _attr_true("is_mythology_based"), weight=0.3),
 
     # Kids / child protagonist
     Question("q_child_protag",  "Is a child the central character or hero of the story?",
              _attr_true("has_child_protagonist"), weight=0.3),
 
-    # More narrative tropes
+    # More narrative tropes (removed heist, period_drama, courtroom, flashback as low-value)
     Question("q_multiple_stories", "Does it follow multiple parallel storylines or characters?",
              _attr_true("has_multiple_storylines"), weight=0.3),
     Question("q_underdog",      "Is the lead an underdog fighting against the system or the odds in general?",
              _attr_true("has_underdog_story"), weight=0.3),
-    Question("q_heist",         "Does it involve a heist, con, or elaborate plan?",
-             _attr_true("has_heist"), weight=0.3),
-    Question("q_period_drama",  "Is it a period film set more than 50 years before its release?",
-             _attr_true("is_period_drama"), weight=0.3),
-    Question("q_courtroom",     "Does it feature a significant courtroom or trial scene?",
-             _attr_true("has_courtroom"), weight=0.3),
-    Question("q_flashback",     "Is a major portion of the story told through flashbacks?",
-             _attr_true("has_major_flashback"), weight=0.3),
 
-    # Storyline / narrative tropes
-    Question("q_mentor",        "Does the lead have a mentor or guru who shapes their journey?",
-             _attr_true("has_mentor_figure"), weight=0.3),
+    # Storyline / narrative tropes (removed mentor as redundant)
     Question("q_betrayal",      "Is a close friendship destroyed by betrayal?",
              _attr_true("has_friendship_betrayal"), weight=0.3),
     Question("q_mistaken_identity", "Does the plot hinge on the lead's mistaken identity or impersonation?",
@@ -334,23 +314,11 @@ QUESTIONS.extend([
     Question("q_patriotic",     "Does the film have strong patriotic or nationalist themes?",
              _attr_true("is_patriotic_film"), weight=0.3),
 
-    # Phase 2.2: Wider coverage for Hindi/Tamil/Telugu disambiguation
-    Question("q_separated_family", "Are the main characters searching for separated or lost family members?",
-             _attr_true("is_lost_and_found_child"), weight=0.3),
-    Question("q_reluctant_romance", "Is the main romance about one person pursuing a reluctant partner?",
-             _attr_true("is_unrequited_love_turnaround"), weight=0.3),
-    Question("q_partition_era",    "Is this set in pre-1947 British-ruled India (colonial or partition era)?",
-             _attr_true("is_partition_backdrop"), weight=0.3),
-    Question("q_dance_heavy",      "Does the film heavily feature elaborate dance sequences or musical numbers?",
-             _attr_true("is_dance_heavy"), weight=0.3),
-    Question("q_sibling_rivalry",  "Is sibling or brother rivalry a central plot element?",
-             _attr_true("is_brother_conflict"), weight=0.3),
+    # Phase 2.2: Wider coverage (removed separated_family, reluctant_romance, partition_era, dance_heavy, sibling_rivalry as too niche)
     Question("q_sacrifice_ending", "Does the climax involve a significant sacrifice or tragic ending?",
              _attr_true("is_sacrifice_ending"), weight=0.3),
 
-    # Phase 3: Additional discrimination questions (5 more — removed duplicates)
-    Question("q_scifi_fantasy",      "Does it involve sci-fi, fantasy, magic, or supernatural worlds?",
-             _attr_true("is_sci_fi"), weight=0.3),
+    # Phase 3: Additional discrimination questions (removed scifi_fantasy as redundant with q_scifi in main Qs)
     Question("q_single_protagonist", "Is the story tightly focused on one main character's journey?",
              _attr_true("has_single_protagonist"), weight=0.3),
     Question("q_ensemble_large",     "Does the film have a large ensemble cast with multiple major characters?",
