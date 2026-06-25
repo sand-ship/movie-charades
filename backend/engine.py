@@ -237,6 +237,14 @@ class GameEngine:
         if suppress_setting:
             unanswered = [q for q in unanswered if q.id not in SETTING_QUESTION_IDS]
 
+        # Suppress conflicting actor era questions once one is confirmed
+        if session.answers.get("q_balakrishna_action_era") == "yes":
+            unanswered = [q for q in unanswered if not q.id.startswith(("q_chiranjeevi", "q_actor_chiranjeevi"))]
+        if session.answers.get("q_chiranjeevi_megastar") == "yes":
+            unanswered = [q for q in unanswered if q.id != "q_balakrishna_action_era"]
+        if session.answers.get("q_rajini_superstar") == "yes":
+            unanswered = [q for q in unanswered if not q.id.startswith(("q_kamal_haasan", "q_actor_kamal"))]
+
         # Suppress questions incompatible with confirmed genre
         # Comedy films don't have: patriarchy, gritty, crime, gangster themes
         if session.answers.get("q_genre_comedy") == "yes":
