@@ -79,6 +79,28 @@ class GameEngine:
         return self._sessions.get(session_id)
 
     @staticmethod
+    def _extract_director_from_collab_q(collab_qid: str) -> Optional[str]:
+        """Extract director name from collaboration question ID.
+        Format: q_collab_{actor_name}_{director_name}
+        Uses collaboration graph to find matching director."""
+        from collaboration import get_graph
+        if not collab_qid.startswith("q_collab_"):
+            return None
+
+        # Try to find in QUESTION_MAP for the most reliable extraction
+        if collab_qid in QUESTION_MAP:
+            q = QUESTION_MAP[collab_qid]
+            # Extract from question text: "Did {actor} work with director {director}?"
+            text = q.text
+            if "with director" in text:
+                # "Did X work with director Y?" → extract Y
+                after_director = text.split("with director ")
+                if len(after_director) > 1:
+                    director = after_director[1].rstrip("?").strip()
+                    return director
+        return None
+
+    @staticmethod
     def _is_question_available(question: Question, answered: dict) -> bool:
         """Check if a question's requires conditions are met (OR logic for multiple)."""
         if question.requires is None:
@@ -441,12 +463,42 @@ class GameEngine:
                                     f"actor-director collaboration after actor (narrow filmography)")
                                 return best
                             # Then try generic director to narrow filmography
+                            # BUT: suppress directors already asked via collaboration questions
+                            directors_asked_via_collab = set()
+                            for qid in session.asked:
+                                if qid.startswith("q_collab_"):
+                                    director = self._extract_director_from_collab_q(qid)
+                                    if director:
+                                        directors_asked_via_collab.add(director.lower())
+
                             directors = [q for q in non_actor if q.id.startswith("q_dir_")]
-                            if directors:
-                                best = max(directors, key=lambda q: self._information_gain(cands, q))
+
+                            # Filter: remove director Qs for directors already asked via collaboration
+                            filtered_directors = []
+                            for q in directors:
+                                # Extract director name from question text
+                                director_text = q.text
+                                if "directed by" in director_text:
+                                    # "Is it directed by X?" → extract X
+                                    after_by = director_text.split("directed by ")
+                                    if len(after_by) > 1:
+                                        dir_name = after_by[1].rstrip("?").strip()
+                                        if dir_name.lower() not in directors_asked_via_collab:
+                                            filtered_directors.append(q)
+                                    else:
+                                        filtered_directors.append(q)
+                                else:
+                                    filtered_directors.append(q)
+
+                            if filtered_directors:
+                                best = max(filtered_directors, key=lambda q: self._information_gain(cands, q))
                                 self._log_question_reasoning(session, best,
-                                    f"director after actor (narrow filmography)")
+                                    f"director after actor (narrow filmography, skipping already-asked collaborators)")
                                 return best
+                            elif directors:
+                                # If all directors were already asked, try generic non-actor questions
+                                pass  # Fall through to finally clause
+
                             # Finally other dimensions
                             best = max(non_actor, key=lambda q: self._information_gain(cands, q))
                             self._log_question_reasoning(session, best,
