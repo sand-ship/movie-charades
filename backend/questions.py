@@ -698,6 +698,75 @@ QUESTIONS.extend([
              _attr_true("has_inter_gang_sibling_romance"), weight=0.3),
 ])
 
+
+def make_collaboration_questions(movies: list[dict]) -> list["Question"]:
+    """Generate actor-director collaboration questions from collaboration graph.
+    These narrow an actor's filmography by asking about their directors.
+    Example: "Did Shah Rukh Khan work with Karan Johar?"
+
+    Only ask for frequent collaborations (3+ films together) to maximize
+    discrimination value within filmographies.
+    """
+    from collaboration import get_graph
+    from collections import Counter
+
+    _SKIP = {"", "n/a", "na", "unknown", "none"}
+    graph = get_graph()
+
+    qs = []
+    _SAFE = lambda s: s.lower().replace(' ', '_').replace('.', '').replace("'", '')
+
+    # For each actor, add questions about their frequent collaborators (3+ films)
+    all_actors = Counter()
+    for m in movies:
+        if m.get('lead_actor'):
+            all_actors[m['lead_actor']] += 1
+        if m.get('lead_actress'):
+            all_actors[m['lead_actress']] += 1
+        if m.get('lead_actors'):
+            for actor in m['lead_actors']:
+                all_actors[actor] += 1
+
+    # Generate collaboration questions for prolific actors (4+ films)
+    for actor, actor_count in all_actors.items():
+        if actor.strip().lower() in _SKIP or actor_count < 4:
+            continue
+
+        # Get frequent collaborators (3+ films)
+        collaborators = graph.frequent_collaborators(actor, min_films=3)
+        if not collaborators:
+            continue
+
+        # Sort by frequency (most collaborations first)
+        for director in sorted(collaborators.keys(), key=lambda d: collaborators[d], reverse=True)[:5]:
+            collab_count = collaborators[director]
+            safe_actor = _SAFE(actor)
+            safe_dir = _SAFE(director)
+
+            def _has_actor_director_collab(actor_name: str, director_name: str) -> Callable[[dict], bool]:
+                """Evaluator: True if this film features the actor AND was directed by the director."""
+                return lambda m: (
+                    (m.get('lead_actor') == actor_name or
+                     m.get('lead_actress') == actor_name or
+                     actor_name in (m.get('lead_actors') or [])) and
+                    m.get('director') == director_name
+                )
+
+            q_id = f"q_collab_{safe_actor}_{safe_dir}"
+            q_text = f"Did {actor} work with director {director}?"
+
+            qs.append(Question(
+                q_id,
+                q_text,
+                _has_actor_director_collab(actor, director),
+                weight=1.2,  # High weight: strong discriminator within actor's filmography
+                requires=(f"q_actor_{safe_actor}", "yes") if f"q_actor_{safe_actor}" in [q.id for q in QUESTIONS] else
+                         (f"q_actress_{safe_actor}", "yes") if f"q_actress_{safe_actor}" in [q.id for q in QUESTIONS] else None
+            ))
+
+    return qs
+
+
 QUESTION_MAP: dict[str, Question] = {q.id: q for q in QUESTIONS}
 
 LANGUAGE_QUESTION_IDS: set[str] = {'q_hindi', 'q_tamil', 'q_telugu'}

@@ -432,7 +432,15 @@ class GameEngine:
                                 self._log_question_reasoning(session, best,
                                     f"plot archetype after actor (distinguish by story type)")
                                 return best
-                            # Then try director to narrow filmography
+                            # Then try actor-director collaboration questions to narrow filmography
+                            # (Q_collab questions are more specific than generic director Qs)
+                            collab_qs = [q for q in non_actor if q.id.startswith("q_collab_")]
+                            if collab_qs:
+                                best = max(collab_qs, key=lambda q: self._information_gain(cands, q))
+                                self._log_question_reasoning(session, best,
+                                    f"actor-director collaboration after actor (narrow filmography)")
+                                return best
+                            # Then try generic director to narrow filmography
                             directors = [q for q in non_actor if q.id.startswith("q_dir_")]
                             if directors:
                                 best = max(directors, key=lambda q: self._information_gain(cands, q))

@@ -17,7 +17,7 @@ from pydantic import BaseModel
 from engine import GameEngine
 from questions import (LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS, GENRE_QUESTION_IDS,
                        ENDING_QUESTION_IDS, SETTING_QUESTION_IDS, VILLAIN_QUESTION_IDS,
-                       QUESTION_MAP, make_star_questions)
+                       QUESTION_MAP, make_star_questions, make_collaboration_questions)
 
 # ── load data ────────────────────────────────────────────────────────────
 DATA_PATH = Path(__file__).parent / "data" / "movies.json"
@@ -29,6 +29,12 @@ from questions import QUESTIONS
 _star_qs = make_star_questions(movies)
 QUESTIONS.extend(_star_qs)
 for q in _star_qs:
+    QUESTION_MAP[q.id] = q
+
+# Register actor-director collaboration questions for filmography narrowing
+_collab_qs = make_collaboration_questions(movies)
+QUESTIONS.extend(_collab_qs)
+for q in _collab_qs:
     QUESTION_MAP[q.id] = q
 
 engine = GameEngine(movies)
