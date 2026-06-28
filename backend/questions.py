@@ -82,6 +82,7 @@ QUESTIONS: list[Question] = [
     Question("q_love_triangle",  "Does it feature a love triangle?",                  _attr_eq("has_love_triangle", True)),
     Question("q_revenge",        "Is the lead actor's revenge a central driving force in the plot?",   _attr_eq("has_revenge_plot", True)),
     Question("q_forbidden_love", "Is the romance opposed by family or society?",      _attr_eq("has_forbidden_love", True)),
+    Question("q_obsessive_pursuit", "Is obsessive or persistent romantic pursuit a central driver of the plot?", _attr_eq("pivots_on_obsession", True)),
     Question("q_protagonist_married", "Is the protagonist married?",                  _attr_eq("is_protagonist_married", True)),
     Question("q_infidelity",     "Does it involve infidelity or an affair?",          _attr_eq("has_infidelity", True)),
     Question("q_rural_setting",  "Is it set in a rural area?",                        _attr_eq("has_rural_setting", True)),
