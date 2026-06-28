@@ -274,6 +274,13 @@ class GameEngine:
         if actor_confirmed:
             unanswered = [q for q in unanswered if not q.id.startswith(("q_actor_", "q_actress_"))]
 
+            # DEDUP: Suppress generic director questions if collaboration questions exist for this actor
+            # Collaboration questions are strictly more informative (actor+director vs just director)
+            collab_qs_available = [q for q in unanswered if q.id.startswith("q_collab_")]
+            if collab_qs_available:
+                # Remove all generic director questions—collaboration questions will cover them
+                unanswered = [q for q in unanswered if not q.id.startswith("q_dir_")]
+
         # Limit music director questions (ask max 2, they're rarely discriminating)
         music_asked = sum(1 for qid in session.asked if qid.startswith("q_music_"))
         if music_asked >= 2:
