@@ -678,14 +678,12 @@ class GameEngine:
 
         # After 15 questions, director/actress/music questions become available
         # (earlier than Q25 to ensure escalation if pool still large)
-        if len(non_anchor_qs) >= 15:
-            directors_enabled = True
-            non_persons = [q for q in splitting
-                          if not q.id.startswith(("q_actor_",))]  # Keep q_actress_, q_dir_, q_music_
-        else:
-            directors_enabled = False
-            non_persons = [q for q in splitting
-                          if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))]
+        directors_enabled = len(non_anchor_qs) >= 15
+
+        # Non-persons filter: always exclude person questions to preserve breathing room logic
+        # Directors must only be asked via dedicated person-question gating (lines 440+), not as "generic"
+        non_persons = [q for q in splitting
+                      if not q.id.startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_"))]
 
         # NOTE: Actor selection is handled earlier (lines 288-297) with "1 actor max" rule.
         # This old block is disabled to avoid asking multiple actors.
