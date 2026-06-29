@@ -422,7 +422,7 @@ class GameEngine:
 
         can_ask_actors = (
             should_unlock_strategically or
-            len(non_anchor_qs) >= 6
+            len(non_anchor_qs) >= 15  # Require 15 questions before actors (was 6, too early!)
         )
 
         # Determine phase based on strategic guidance or Q-count
