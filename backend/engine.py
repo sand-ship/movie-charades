@@ -618,7 +618,8 @@ class GameEngine:
 
         # CLUSTER DISCRIMINATION: Inject when candidates cluster in same narrative type
         # This catches stumper patterns (multiple similar films not yet differentiated)
-        if 2 <= len(cands) <= 50:  # Expanded range: trigger earlier (up to 50 candidates)
+        # Expanded range: trigger earlier with large pools to prevent actor/director explosion
+        if 2 <= len(cands) <= 250:
             discriminator = get_discriminator()
             candidate_clusters = discriminator.get_candidate_clusters(cands)
 
@@ -785,10 +786,17 @@ class GameEngine:
                 return best_q
 
         # Final selection: best information gain from (filtered) pool
+        # Only ask questions with positive information gain; negative IG (trivial splits) means STOP
         if splitting:
-            best_q = max(splitting, key=lambda q: self._information_gain(cands, q))
-            self._log_question_reasoning(session, best_q, f"best IG (pool={pool_size}, strategy={strategy})")
-            return best_q
+            viable_qs = [q for q in splitting if self._information_gain(cands, q) > 0]
+            if viable_qs:
+                best_q = max(viable_qs, key=lambda q: self._information_gain(cands, q))
+                self._log_question_reasoning(session, best_q, f"best IG from viable questions (pool={pool_size})")
+                return best_q
+            # If all remaining questions have IG <= 0 (trivial splits), stop asking and trigger guess
+            # This prevents endless loops of "director X?" → "no" → "director Y?" → "no" ...
+            self._log_question_reasoning(session, None, f"all remaining questions have IG <= 0 (pool={pool_size}, trigger guess)")
+            return None
 
         # Fallback if no splitting questions remain: return None to trigger guess
         return None
