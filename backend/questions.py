@@ -306,7 +306,7 @@ QUESTIONS.extend([
     # More narrative tropes (removed heist, period_drama, courtroom, flashback as low-value)
     Question("q_multiple_stories", "Does it follow multiple parallel storylines or characters?",
              _attr_true("has_multiple_storylines"), weight=0.3),
-    Question("q_underdog",      "Is the lead an underdog fighting against the system or the odds in general?",
+    Question("q_underdog",      "Does the protagonist face opposition from family, society, or the system—trying to break a barrier?",
              _attr_true("has_underdog_story"), weight=0.3),
 
     # Storyline / narrative tropes (removed mentor as redundant)
