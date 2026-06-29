@@ -472,8 +472,6 @@ QUESTIONS.extend([
     # Director/production style
     Question("q_yrf_style",              "Does it have a Yash Raj Films aesthetic (grand, romantic, feel-good)?",
              _attr_true("is_yrf_style"), weight=0.3),
-    Question("q_intimate_indie",         "Is it intimate, personal, or indie in style (art film)?",
-             _attr_true("is_intimate_indie"), weight=0.3),
 
     # Suspense
     Question("q_suspense_thriller",      "Does it build tension through suspense or a cat-and-mouse plot?",
