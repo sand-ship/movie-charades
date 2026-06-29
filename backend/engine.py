@@ -437,7 +437,10 @@ class GameEngine:
             splitting = [q for q in splitting if not q.id.startswith("q_music_")]
 
         # ACTOR SELECTION: After actor confirmed, prioritize director/genre/actress before co-stars
-        if can_ask_actors:
+        # BUT: Never ask person question if last question was also a person question (MAX_CONSECUTIVE_ACTOR_QS)
+        last_was_person = (session.asked and
+                          session.asked[-1].startswith(("q_actor_", "q_actress_", "q_dir_", "q_music_")))
+        if can_ask_actors and not last_was_person:
             actor_qs = [q for q in splitting if q.id.startswith(("q_actor_", "q_actress_"))]
             if actor_qs:
                 # If just asked an actor, skip immediately asking another actor
