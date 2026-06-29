@@ -259,10 +259,11 @@
     .confidence  { font-family: 'Oswald', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--ink); background: var(--gold); border-radius: 999px; padding: 5px 12px; white-space: nowrap; }
 
     /* ── result ── */
-    .result-icon  { font-size: 4.5rem; filter: drop-shadow(0 0 20px rgba(245,197,24,0.5)); }
+    .result-icon  { font-size: 4.5rem; filter: drop-shadow(0 0 20px rgba(245,197,24,0.5)); margin-bottom: 12px; }
     .result-poster { max-width: 180px; height: 270px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 20px rgba(229,9,20,0.4); margin: 8px 0; }
-    .result-title { font-family: 'Oswald', sans-serif; font-size: 1.7rem; font-weight: 700; margin-top: 12px; }
-    .result-sub   { color: var(--muted); font-size: 0.95rem; margin-top: 6px; }
+    .result-label { font-family: 'Poppins', sans-serif; font-size: 0.9rem; color: var(--gold); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+    .result-title { font-family: 'Oswald', sans-serif; font-size: 1.8rem; font-weight: 600; margin-top: 0; }
+    .result-sub   { color: var(--muted); font-size: 0.95rem; margin-top: 8px; }
 
     .hidden { display: none !important; }
     .info { color: #c98c90; font-size: 0.85rem; text-align: center; letter-spacing: 0.5px; }
@@ -348,6 +349,7 @@
   <div id="screen-result" class="hidden" style="width:100%;display:flex;flex-direction:column;align-items:center;gap:20px">
     <div class="card" style="display:flex;flex-direction:column;align-items:center;gap:8px">
       <div class="result-icon"  id="result-icon">🎉</div>
+      <div class="result-label" id="result-label">Got it</div>
       <img class="result-poster" id="result-poster" src="" alt="Movie poster" style="display:none" />
       <div class="result-title" id="result-title"></div>
       <div class="result-sub"   id="result-sub"></div>
@@ -686,7 +688,8 @@
     document.getElementById('stumper-box').classList.add('hidden');
     show('result');
     document.getElementById('result-icon').textContent  = '🎉';
-    document.getElementById('result-title').textContent = `Got it! ${g.title}`;
+    document.getElementById('result-label').textContent = 'Got it';
+    document.getElementById('result-title').textContent = g.title;
     document.getElementById('result-sub').textContent   = `${cap(g.language)} · ${g.year} · ⭐ ${g.imdb_rating}`;
 
     // Fetch poster from TMDB if tmdb_id exists
