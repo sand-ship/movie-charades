@@ -498,27 +498,39 @@ class GameEngine:
                                     filtered_directors.append(q)
 
                             if filtered_directors:
-                                best = max(filtered_directors, key=lambda q: self._information_gain(cands, q))
-                                self._log_question_reasoning(session, best,
-                                    f"director after actor (narrow filmography, skipping already-asked collaborators)")
-                                return best
+                                # Only ask director if it has positive information gain
+                                dir_gains = {q.id: self._information_gain(cands, q) for q in filtered_directors}
+                                viable_dirs = [q for q in filtered_directors if dir_gains[q.id] > 0]
+                                if viable_dirs:
+                                    best = max(viable_dirs, key=lambda q: dir_gains[q.id])
+                                    self._log_question_reasoning(session, best,
+                                        f"director after actor (narrow filmography, skipping already-asked collaborators)")
+                                    return best
+                                # All directors have IG <= 0 (trivial splits): skip and fall through
                             elif directors:
                                 # If all directors were already asked, try generic non-actor questions
                                 pass  # Fall through to finally clause
 
-                            # Finally other dimensions
-                            best = max(non_actor, key=lambda q: self._information_gain(cands, q))
-                            self._log_question_reasoning(session, best,
-                                f"non-actor dimension after actor (narrow filmography)")
-                            return best
+                            # Finally other dimensions (only if positive IG)
+                            other_gains = {q.id: self._information_gain(cands, q) for q in non_actor}
+                            viable_other = [q for q in non_actor if other_gains[q.id] > 0]
+                            if viable_other:
+                                best = max(viable_other, key=lambda q: other_gains[q.id])
+                                self._log_question_reasoning(session, best,
+                                    f"non-actor dimension after actor (narrow filmography)")
+                                return best
+                            # All other dimensions have IG <= 0: skip and fall through
 
-                # No recent actor question: ask a lead actor
+                # No recent actor question: ask a lead actor (only if positive IG)
                 ranked = sorted(actor_qs, key=lambda q: self._information_gain(cands, q), reverse=True)
-                top_n = min(3, len(ranked))
-                best_q = random.choice(ranked[:top_n])
-                self._log_question_reasoning(session, best_q,
-                    f"lead actor from top-{top_n} by information gain ({len(cands)} candidates)")
-                return best_q
+                viable_actors = [q for q in ranked if self._information_gain(cands, q) > 0]
+                if viable_actors:
+                    top_n = min(3, len(viable_actors))
+                    best_q = random.choice(viable_actors[:top_n])
+                    self._log_question_reasoning(session, best_q,
+                        f"lead actor from top-{top_n} by information gain ({len(cands)} candidates)")
+                    return best_q
+                # All actors have IG <= 0 (trivial splits): skip and fall through
 
 
         # After person question YES, suppress all person Qs for 1-2 turns for breathing room
@@ -555,12 +567,15 @@ class GameEngine:
                                                          "q_dhanush", "q_suriya", "q_kajal", "q_akshay"))]
                     if generic_qs:
                         return max(generic_qs, key=lambda q: self._information_gain(cands, q))
-                # If 2+ generic questions: FORCE director/music (best discriminators for overlaps)
+                # If 2+ generic questions: prefer director/music only if they have positive IG
                 else:
                     director_music = [q for q in splitting
                                      if q.id.startswith(("q_director_", "q_music_"))]
                     if director_music:
-                        return max(director_music, key=lambda q: self._information_gain(cands, q))
+                        dm_gains = {q.id: self._information_gain(cands, q) for q in director_music}
+                        viable_dm = [q for q in director_music if dm_gains[q.id] > 0]
+                        if viable_dm:
+                            return max(viable_dm, key=lambda q: dm_gains[q.id])
 
         # If the last answer was "unsure", ask a confirmation question to convert to yes/no
         # This pins down uncertain answers and reduces candidate pool drift
