@@ -109,18 +109,23 @@ def _require_admin_key(key: Optional[str] = None) -> None:
 def _stumper_insert(record: dict) -> None:
     if _SUPA_URL and _SUPA_KEY:
         try:
-            httpx.post(
+            r = httpx.post(
                 f"{_SUPA_URL}/stumpers",
                 json={
                     "title": record["title"],
                     "yes_answers": record["yes_answers"],
+                    "all_answers": record["all_answers"],
+                    "questions_asked": record["questions_asked"],
                     "remaining_candidates": record["remaining_candidates"],
+                    "question_count": record["question_count"],
                 },
                 headers={**_SUPA_HEADERS, "Prefer": "return=minimal"},
                 timeout=5.0,
             )
-        except Exception:
-            pass
+            if r.status_code >= 400:
+                print(f"⚠️ Supabase stumpers insert failed: {r.status_code} {r.text}", flush=True)
+        except Exception as e:
+            print(f"⚠️ Supabase stumpers insert error: {e}", flush=True)
     else:
         with STUMPERS_LOG.open("a", encoding="utf-8") as f:
             f.write(json.dumps(record, ensure_ascii=False) + "\n")
