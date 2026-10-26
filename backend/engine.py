@@ -911,8 +911,11 @@ class GameEngine:
                 for sibling_id in group:
                     if sibling_id != question_id and sibling_id not in session.asked:
                         session.asked.append(sibling_id)
-                        session.answers[sibling_id] = "no"
                         added.append(sibling_id)
+                        # Era siblings are only marked asked: players mix up adjacent
+                        # decades, so a "yes" must not count as "no" for neighbours.
+                        if group is not ERA_QUESTION_IDS:
+                            session.answers[sibling_id] = "no"
 
 
         session.history.append(added)
@@ -943,7 +946,8 @@ class GameEngine:
     @staticmethod
     def _is_decisive(qid: str) -> bool:
         # Categorical facts a user is sure about: a "yes" here is a hard filter.
-        return (qid in LANGUAGE_QUESTION_IDS or qid in ERA_QUESTION_IDS
+        # Era is deliberately soft (see _era_adjustment): decades get confused.
+        return (qid in LANGUAGE_QUESTION_IDS
                 or qid.startswith(("q_actor_", "q_actress_", "q_dir_")))
 
     def _hard_ok(self, movie: dict, session: Session) -> bool:
@@ -1084,6 +1088,20 @@ class GameEngine:
     def _entropy(n: int) -> float:
         return math.log2(n) if n > 1 else 0.0
 
+    _ERA_ORDER = ("classic", "90s", "2000s", "2010s", "2020s")
+
+    def _era_adjustment(self, qid: str, movie: dict, match: bool) -> float:
+        """Soft era signal for a 'yes': full boost on a match, a mild penalty for an
+        adjacent decade (commonly mixed up), a firm penalty for a distant one."""
+        if match:
+            return 1.5
+        asked_era = qid[2:]  # q_90s -> 90s
+        try:
+            gap = abs(self._ERA_ORDER.index(asked_era) - self._ERA_ORDER.index(movie.get("era")))
+        except ValueError:
+            return -1.5
+        return -0.3 if gap == 1 else -1.5
+
     def _score(self, movie: dict, session: Session) -> float:
         """Bayesian scoring: P(film | answers) using likelihood weighting.
 
@@ -1103,6 +1121,10 @@ class GameEngine:
 
             match = q.evaluate(movie)
             w = q.weight  # 1.0 = hard signal, 0.3 = soft trope
+
+            if qid in ERA_QUESTION_IDS and answer == "yes":
+                log_score += self._era_adjustment(qid, movie, match)
+                continue
 
             # Likelihood ratio: how much does this answer support/refute this film?
             if answer == "yes":
