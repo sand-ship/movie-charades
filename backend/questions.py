@@ -597,8 +597,10 @@ QUESTIONS.extend([
              _comparative('gritty', 'underdog'), weight=0.3, genres={'action', 'thriller', 'crime', 'drama'}),
 
     # Drama-specific comparatives for discriminating within drama clusters
-    Question("q_comp_family_vs_social",     "Is it more focused on family dynamics than social/political messaging?",
-             _comparative('drama', 'social'), weight=1.0, genres={'drama', 'social'}),
+    # Id kept so logged games still replay; it now asks about family directly.
+    Question("q_comp_family_vs_social",     "Is a family relationship, such as parent and child or siblings, at the heart of the story?",
+             lambda m: bool(m.get('has_parent_child_drama') or m.get('has_parent_child_arc')),
+             weight=1.0, genres={'drama', 'social'}),
     Question("q_comp_emotional_vs_realistic", "Is it more melodramatic/emotional than grounded/realistic?",
              _comparative('drama', 'gritty'), weight=0.3, genres={'drama'}),
     Question("q_comp_period_vs_contemporary", "Is it a period/historical drama rather than contemporary?",
