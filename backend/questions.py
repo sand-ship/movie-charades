@@ -27,6 +27,18 @@ def _attr_gte(attr: str, value: float) -> Callable[[dict], bool]:
     return f
 
 
+_PRE_1990_ERAS = {"classic", "50s", "60s", "70s", "80s", "1950s", "1960s", "1980s"}
+
+
+def _is_pre_1990(m: dict) -> bool:
+    """Pre-1990 film. Data labels eras as '60s'/'70s'/'80s' (never 'classic'),
+    so go by release year and fall back to the era label."""
+    try:
+        return int(m.get("year")) < 1990
+    except (TypeError, ValueError):
+        return m.get("era") in _PRE_1990_ERAS
+
+
 def _has_multiple_protagonists(m: dict) -> bool:
     """Check if film has multiple prominent leads (co-leads, ensemble)."""
     lead_actors = m.get('lead_actors') or []
@@ -66,7 +78,7 @@ QUESTIONS: list[Question] = [
     Question("q_hindi",     "Is it a Hindi film?",                              _attr_eq("language", "Hindi")),
     Question("q_tamil",     "Is it a Tamil film?",                              _attr_eq("language", "Tamil")),
     Question("q_telugu",    "Is it a Telugu film?",                             _attr_eq("language", "Telugu")),
-    Question("q_classic",   "Was it released before 1990?",                     _attr_eq("era", "classic")),
+    Question("q_classic",   "Was it released before 1990?",                     _is_pre_1990),
     Question("q_90s",       "Was it released in the 90s?",                      _attr_eq("era", "90s")),
     Question("q_2000s",     "Was it released in the 2000s?",                    _attr_eq("era", "2000s")),
     Question("q_2010s",     "Was it released in the 2010s?",                    _attr_eq("era", "2010s")),

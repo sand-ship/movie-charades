@@ -7,7 +7,7 @@ import uuid
 from typing import Optional
 from pathlib import Path
 
-from questions import (QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS,
+from questions import (_is_pre_1990, QUESTION_MAP, Question, LANGUAGE_QUESTION_IDS, ERA_QUESTION_IDS,
                        GENRE_QUESTION_IDS, ENDING_QUESTION_IDS, SETTING_QUESTION_IDS, VILLAIN_QUESTION_IDS)
 import questions  # Import module to access QUESTIONS at runtime (for dynamic actor/director Qs)
 from reasoning import CotReasoner
@@ -1097,7 +1097,8 @@ class GameEngine:
             return 1.5
         asked_era = qid[2:]  # q_90s -> 90s
         try:
-            gap = abs(self._ERA_ORDER.index(asked_era) - self._ERA_ORDER.index(movie.get("era")))
+            movie_era = "classic" if _is_pre_1990(movie) else movie.get("era")
+            gap = abs(self._ERA_ORDER.index(asked_era) - self._ERA_ORDER.index(movie_era))
         except ValueError:
             return -1.5
         return -0.3 if gap == 1 else -1.5
