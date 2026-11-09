@@ -23,6 +23,7 @@ except (FileNotFoundError, json.JSONDecodeError):
 MAX_QUESTIONS = 35   # hard ceiling for game length (raised to accommodate director Qs)
 MAX_CONSECUTIVE_ACTOR_QS = 1  # limit actor Qs to 1 in a row for breathing room (force plot after each)
 MIN_QUESTIONS = 12   # minimum non-language/era questions before guessing
+IDENTITY_YES_BOOST = 4.5  # confirmed actor/actress/director match (vs 1.5 for a normal yes)
 GENRE_HOLDOFF = 0    # genre picker fires immediately after language/era for early pool narrowing
 ENDGAME_POOL = 8     # at/under this many candidates, prefer soft tropes over IG ordering
 
@@ -950,6 +951,15 @@ class GameEngine:
         return (qid in LANGUAGE_QUESTION_IDS
                 or qid.startswith(("q_actor_", "q_actress_", "q_dir_")))
 
+    @staticmethod
+    def _is_identity(qid: str) -> bool:
+        # Actor / actress / director: facts the player is sure about.
+        return qid.startswith(("q_actor_", "q_actress_", "q_dir_"))
+
+    def _has_confirmed_identity(self, session: Session) -> bool:
+        return any(ans == "yes" and self._is_identity(qid)
+                   for qid, ans in session.answers.items())
+
     def _hard_ok(self, movie: dict, session: Session) -> bool:
         """A movie is eligible only if it satisfies every decisive 'yes' answer
         (language / era / lead actor / lead actress / director). 'no' answers on
@@ -981,6 +991,13 @@ class GameEngine:
 
         # Phase 2: Score all eligible films
         scored = [(m, self._score(m, session)) for m in eligible]
+
+        # A confirmed actor/actress/director "yes" overrides earlier soft answers:
+        # every film that passed that hard filter stays in play (ranked by score)
+        # instead of being cut for mismatching mislabeled or misremembered tropes.
+        if self._has_confirmed_identity(session):
+            session.candidates = [m for m, _ in scored]
+            return
         max_score = max((s for _, s in scored), default=0.0)
         if max_score <= 0:
             session.candidates = eligible
@@ -1130,7 +1147,10 @@ class GameEngine:
             # Likelihood ratio: how much does this answer support/refute this film?
             if answer == "yes":
                 # Player says YES
-                if match:
+                if match and self._is_identity(qid):
+                    # Confirmed cast/director: outweighs several soft-trope misses
+                    log_score += IDENTITY_YES_BOOST
+                elif match:
                     # Film has attribute: strong boost
                     log_score += 1.5 * w
                 else:

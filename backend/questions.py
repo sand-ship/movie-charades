@@ -40,9 +40,10 @@ def _is_pre_1990(m: dict) -> bool:
 
 
 def _has_multiple_protagonists(m: dict) -> bool:
-    """Check if film has multiple prominent leads (co-leads, ensemble)."""
-    lead_actors = m.get('lead_actors') or []
-    return len(lead_actors) >= 2
+    """Two or more male leads (multistarrer). One hero + one heroine does not count.
+    Also true for films flagged is_multistarrer, whose co-leads may be missing
+    from lead_actors."""
+    return m.get('is_multistarrer') is True or len(m.get('lead_actors') or []) >= 2
 
 
 def _in(attr: str, *values: str) -> Callable[[dict], bool]:
@@ -64,11 +65,6 @@ def _actor_appears_anywhere(name: str) -> Callable[[dict], bool]:
                      name in (m.get('supporting_actors') or []))
 
 
-def _is_multistarrer(m: dict) -> bool:
-    """Check if film is a multistarrer with multiple co-leads."""
-    return m.get('is_multistarrer') is True or len(m.get('lead_actors') or []) >= 2
-
-
 def _has_reincarnation(m: dict) -> bool:
     """Check if film pivots on reincarnation or rebirth theme."""
     return m.get('has_reincarnation') is True or m.get('pivots_on_reincarnation') is True
@@ -83,8 +79,7 @@ QUESTIONS: list[Question] = [
     Question("q_2000s",     "Was it released in the 2000s?",                    _attr_eq("era", "2000s")),
     Question("q_2010s",     "Was it released in the 2010s?",                    _attr_eq("era", "2010s")),
     Question("q_2020s",     "Was it released after 2020?",                      _attr_eq("era", "2020s")),
-    Question("q_multiple_protagonists", "Does it have multiple leads?", _has_multiple_protagonists, weight=1.0),
-    Question("q_multistarrer",     "Is it a multistarrer with co-lead actors?",                     _is_multistarrer, weight=1.2),
+    Question("q_multiple_protagonists", "Are there two or more male leads?", _has_multiple_protagonists, weight=1.0),
     Question("q_reincarnation",    "Does the film pivot on reincarnation or rebirth?",              _has_reincarnation, weight=1.0),
     Question("q_villain",          "Does it feature a memorable villain?",                           _attr_eq("has_villain", True)),
     Question("q_strict_antagonist","Is the main conflict driven by a strict but well-meaning character\n(overprotective parent/sibling, authority figure) rather than a villain?",
