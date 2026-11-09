@@ -969,6 +969,12 @@ class GameEngine:
                 q = QUESTION_MAP.get(qid)
                 if q and not q.evaluate(movie):
                     return False
+            elif ans == "yes" and qid in ERA_QUESTION_IDS:
+                # Adjacent decades are commonly mixed up (stay soft, see
+                # _era_adjustment) but two or more decades away is a firm no.
+                gap = self._era_gap(qid, movie)
+                if gap is not None and gap >= 2:
+                    return False
         return True
 
     def _genre_ok(self, movie: dict, session: Session) -> bool:
@@ -1106,6 +1112,14 @@ class GameEngine:
         return math.log2(n) if n > 1 else 0.0
 
     _ERA_ORDER = ("classic", "90s", "2000s", "2010s", "2020s")
+
+    def _era_gap(self, qid: str, movie: dict) -> Optional[int]:
+        """Decades between the asked era and the film's (None if unknown)."""
+        movie_era = "classic" if _is_pre_1990(movie) else movie.get("era")
+        try:
+            return abs(self._ERA_ORDER.index(qid[2:]) - self._ERA_ORDER.index(movie_era))
+        except ValueError:
+            return None
 
     def _era_adjustment(self, qid: str, movie: dict, match: bool) -> float:
         """Soft era signal for a 'yes': full boost on a match, a mild penalty for an
