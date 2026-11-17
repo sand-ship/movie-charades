@@ -675,7 +675,7 @@
       n > 1 ? `My guess · ${guessRound.idx + 1} of ${n}` : 'My guess';
     document.getElementById('guess-q').textContent = `Is it “${g.title}” (${g.year})?`;
     document.getElementById('guess-meta').innerHTML =
-      `${cap(g.language)} · Dir: ${g.director || '—'} · ⭐ ${g.imdb_rating} · <b>${g.confidence}% sure</b>`;
+      `${cap(g.language)} · Dir: ${g.director || '—'} · ⭐ ${g.imdb_rating ?? "—"} · <b>${g.confidence}% sure</b>`;
     document.getElementById('guess-yes').disabled = false;
     document.getElementById('guess-no').disabled  = false;
   }
@@ -690,7 +690,7 @@
     document.getElementById('result-icon').textContent  = '🎉';
     document.getElementById('result-label').textContent = 'Got it';
     document.getElementById('result-title').textContent = g.title;
-    document.getElementById('result-sub').textContent   = `${cap(g.language)} · ${g.year} · ⭐ ${g.imdb_rating}`;
+    document.getElementById('result-sub').textContent   = `${cap(g.language)} · ${g.year} · ⭐ ${g.imdb_rating ?? "—"}`;
 
     // Fetch poster from TMDB if tmdb_id exists
     if (g.tmdb_id) {

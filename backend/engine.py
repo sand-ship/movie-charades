@@ -1061,7 +1061,7 @@ class GameEngine:
             result.append({
                 "id": m["id"], "title": m["title"], "year": m["year"],
                 "language": m["language"], "director": m["director"],
-                "lead_actor": m["lead_actor"], "imdb_rating": m["imdb_rating"],
+                "lead_actor": m["lead_actor"], "imdb_rating": m.get("imdb_rating"),
                 "confidence": conf,
             })
         session.last_guesses = result
